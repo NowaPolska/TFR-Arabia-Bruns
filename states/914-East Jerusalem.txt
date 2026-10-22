@@ -1,0 +1,31 @@
+state={
+	id=914
+	name="STATE_914"
+	
+	resources = {
+		steel = 10
+	}
+	
+	history = {
+		owner = ISR
+		
+		add_core_of = ISR
+		add_core_of = PAL
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			office_park = 1
+			power_plant = 1
+			arms_factory = 1
+		}
+		victory_points = { 13249 10 }
+	}
+	provinces={
+		13249 
+	}
+	manpower= 456300
+	buildings_max_level_factor=1.000
+	
+	state_category = large_city
+}

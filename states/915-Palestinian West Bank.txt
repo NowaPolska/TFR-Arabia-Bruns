@@ -1,0 +1,25 @@
+state={
+	id=915
+	name="STATE_915"
+	history = {
+		owner = PAL
+		add_core_of = PAL
+		add_claim_by = ISR
+		add_claim_by = HAM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = { 13250 3 }
+		victory_points = { 13247 5 }
+		victory_points = { 15014 1 }
+	}
+	provinces={
+		13247 13250 15014
+	}
+	manpower=2751100
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

@@ -1,0 +1,39 @@
+state = {
+	id = 811
+	name = "STATE_811"
+	
+	resources = {
+		steel = 4
+		oil = 7
+	}
+	
+	history = {
+		owner = HAM
+		add_core_of = HAM
+		add_core_of = PAL
+		add_claim_by = ISR
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 3
+			4088 = {
+				bunker = 5
+				coastal_bunker = 1
+			}
+			15008 = {
+			    bunker = 5
+			}
+		}
+		victory_points = { 4088 5 }
+		victory_points = { 15008 10 }
+	}
+
+	provinces = {
+		4088 15008
+	}
+
+	manpower = 2056250
+	buildings_max_level_factor = 1.000
+	state_category = city
+}

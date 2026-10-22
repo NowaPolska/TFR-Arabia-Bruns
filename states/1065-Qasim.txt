@@ -1,0 +1,24 @@
+state = {
+	id = 1065
+	name = "STATE_1065"
+	manpower = 1215858
+	state_category = large_town
+	
+	resources={
+		oil=1
+	}
+	
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		victory_points = { 4968 10 }
+		victory_points = { 14994 5 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		4968 10923 14994
+	}
+}
