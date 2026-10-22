@@ -1,0 +1,24 @@
+	category = {
+		name = "Super_Event"
+		soundeffects = {
+			TFR_se_sau_nuke_sevent
+		}
+	}
+	category = {
+		name = "Super_Event"
+		soundeffects = {
+			TFR_sau_arab_unifed
+		}
+	}
+	category = {
+		name = "Super_Event"
+		soundeffects = {
+			TFR_sau_nationalist
+		}
+	}
+	category = {
+		name = "Super_Event"
+		soundeffects = {
+			TFR_sau_unif
+		}
+	}

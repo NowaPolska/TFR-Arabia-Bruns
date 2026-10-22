@@ -1,0 +1,16 @@
+	sound = {
+		name = "TFR_se_sau_nuke_sevent"
+		file = "Super_Events/TFR_sau_nuke_sevent.wav"
+	}
+	sound = {
+		name = "TFR_sau_arab_unifed"
+		file = "Super_Events/TFR_sau_arab_unifed.wav"
+	}
+	sound = {
+		name = "TFR_sau_nationalist"
+		file = "Super_Events/TFR_sau_nationalist.wav"
+	}
+	sound = {
+		name = "TFR_sau_unif"
+		file = "Super_Events/TFR_sau_unif.wav"
+	}
