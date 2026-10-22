@@ -1,0 +1,211 @@
+###########################
+# Lebanese Republic Events
+###########################
+
+add_namespace = lebanon
+
+# 2020 Beirut explosion
+country_event = {
+	id = lebanon.1
+	title = lebanon.1.t
+	desc = lebanon.1.d
+	picture = GFX_report_beirut_explosion
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.1.a
+		add_stability = -0.05
+		add_manpower = -200
+		add_ideas = SOM_failed_state
+		news_event = {
+			id = news.182
+			hours = 1
+		}
+	}
+}
+
+# 2025 Electoral Session
+country_event = {
+	id = lebanon.3
+	title = lebanon.3.t
+	desc = lebanon.3.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.3.a
+	set_country_flag = Leb_election_race_beginns
+	activate_mission = LEB_Elections_results
+	SAU = {
+	activate_mission = SAU_Elections_results
+	
+	country_event = { id = saudi.99 hours = 1 }
+	}
+		LEB = {
+			set_variable = { var = leb_election_sau value = 27 }
+			set_variable = { var = leb_election_leb value = 41 }
+			set_variable = { var = leb_election_hez value = 32 }
+		}
+	}
+}
+# Lebanese Guy Wins
+country_event = {
+	id = lebanon.4
+	title = lebanon.4.t
+	desc = lebanon.4.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.4.a
+	promote_character = LEB_joseph_aoun_char
+	retire_character = LEB_michel_aoun_char
+	    add_popularity = {
+			popularity = 0.10
+			ideology = social_liberal
+		}
+	}
+}
+
+# Pro Saudi Guy wins
+country_event = {
+	id = lebanon.5
+	title = lebanon.5.t
+	desc = lebanon.5.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lebanon.5.a
+		
+		SAU = {
+			country_event = { id = saudi.100 days = 1 }
+		}
+		
+		retire_character = LEB_michel_aoun_char
+		retire_character = LEB_joseph_aoun_char
+		
+		recruit_character = LEB_Lesbianesegirl_char
+		promote_character = LEB_Lesbianesegirl_char
+		
+		set_politics = {
+			ruling_party = market_liberal
+			last_election = "2020.6.1"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		
+		add_popularity = {
+			popularity = 0.10
+			ideology = market_liberal
+		}
+	}
+}
+
+# Pro Hezbollah gooner wins
+country_event = {
+	id = lebanon.6
+	title = lebanon.6.t
+	desc = lebanon.6.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.6.a
+	retire_character = LEB_michel_aoun_char
+	retire_character = LEB_joseph_aoun_char
+	recruit_character = LEB_Hassan_Nasrallah_lebanono_char
+	promote_character = LEB_Hassan_Nasrallah_lebanono_char
+	country_event = { id = lebanon.8 days = 20 }
+	set_politics = {
+			ruling_party = authoritarian_democrat
+			last_election = "2025.1.9"
+			election_frequency = 48
+			elections_allowed = no
+			}
+			add_popularity = {
+			popularity = 0.30
+			ideology = authoritarian_democrat
+		}
+	}
+}
+
+#### Hezbollah-Lebanon unification
+country_event = {
+	id = lebanon.8
+	title = lebanon.8.t
+	desc = lebanon.8.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.8.a
+	hidden_effect = {
+	set_country_flag = hezbollah_in_lebanon
+	ISR = {
+	country_event = {
+	id = lebanon.7
+	days = 45
+	        }
+	    }
+	}
+	annex_country = { target = HEZ transfer_troops = yes }
+	remove_ideas = SOM_failed_state
+	remove_ideas = arab_league_member
+	add_ideas = HEZ_protectors_of_the_faith_protectors_of_the_reigon
+	add_ideas = HEZ_iranian_aid
+	set_country_flag = AOR_Member
+	add_stability = 0.25
+	news_event = {
+	id = news.2014
+	hours = 1
+	}
+	PER = {
+	add_to_faction = LEB
+	    }
+	}
+}
+
+#### FOR ISRAEL ####
+# Hezbollah wins 100% invasion chance
+country_event = {
+	id = lebanon.7
+	title = lebanon.7.t
+	desc = lebanon.7.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.7.a
+	news_event = { id = news.2015 days = 3 }
+	set_global_flag = iran_israel_war_active
+	activate_mission = iran_israel_war_countdown_ISR
+	add_ideas = ISR_iran_israel_war
+	declare_war_on = {
+        type = annex_everything
+        target = LEB
+    }
+	hidden_effect = {
+	PER = {
+	add_ideas = ISR_iran_israel_war
+	}
+	LEB = {
+	add_ideas = ISR_iran_israel_war
+	        }
+	    }
+	}
+}

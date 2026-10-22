@@ -1,0 +1,664 @@
+﻿###########################
+# Iranian Events
+###########################
+
+add_namespace = iran
+
+# Qasem Soleimani Assassinated
+country_event = {
+	id = iran.1
+	title = iran.1.t
+	desc = iran.1.d
+	picture = GFX_soleimani_dead 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	option = {
+	name = iran.1.a
+		add_stability = -0.03
+		add_political_power = -50
+		custom_effect_tooltip = death_of_soleimani
+		hidden_effect = {
+			retire_character = PER_qasem_soleimani_char
+		}
+	}
+}
+
+# Ukrainian Airliner Shotdown
+country_event = {
+	id = iran.2
+	title = iran.2.t
+	desc = iran.2.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	option = {
+	name = iran.2.a
+		add_stability = -0.05
+		add_political_power = -75
+		UKR = {
+			country_event = { id = ukraine.2 }
+		}
+	}
+}
+
+#Lord give Iran a break
+# 4.7 Earthquake 
+country_event = {
+	id = iran.3
+	title = iran.3.t
+	desc = iran.3.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		tag = PER
+		date >2020.1.1
+	}
+
+	option = {
+	name = iran.3.a
+		419 = {
+			add_manpower = -10
+		}
+	}
+}
+
+# First Corona Case
+country_event = {
+	id = iran.4
+	title = iran.4.t
+	desc = iran.4.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	option = {
+	name = iran.4.a
+		set_country_flag = PER_covid_first
+		unlock_decision_tooltip = monitor_outbreak_PER
+	}
+}
+
+# Vice President Contracts Corona
+country_event = {
+	id = iran.5
+	title = iran.5.t
+	desc = iran.5.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	option = {
+	name = iran.5.a
+	}
+}
+
+#Man tests positive on TV
+country_event = {
+	id = iran.6
+	title = iran.6.t
+	desc = iran.6.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	option = {
+	name = iran.6.a
+	}
+}
+
+#Volunteer Force from Iran
+country_event = {
+	id = iran.7
+	title = iran.7.t
+	desc = iran.7.d
+	picture = GFX_Generic_IRGC
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SAR
+	}
+
+	option = {
+	name = iran.7.a
+		load_oob = "SAR_iranian_volunteers"
+	}
+}
+
+#Iranians Bomb a City
+country_event = {
+	id = iran.8
+	title = iran.8.t
+	desc = iran.8.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {		
+			tag = SAU
+			tag = ROC
+			tag = AAR
+			tag = JAH
+		}
+	}
+
+	option = {
+	name = iran.8.a
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				industrial_complex > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Iranians Bomb a Training Camp
+country_event = {
+	id = iran.9
+	title = iran.9.t
+	desc = iran.9.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = JAH
+	}
+
+	option = {
+	name = iran.9.a
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}		
+	}
+}
+
+#Iranians Bomb an Oil Refinery
+country_event = {
+	id = iran.10
+	title = iran.10.t
+	desc = iran.10.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {		
+			tag = SAU
+			tag = ROC
+			tag = AAR
+			tag = JAH
+		}
+	}
+
+	option = {
+	name = iran.10.a
+		
+	}
+}
+
+#Covid Unemployment Protests
+country_event = {
+	id = iran.11
+	title = iran.11.t
+	desc = iran.11.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	option = {
+	name = iran.11.a
+		add_stability = -0.05
+		add_political_power = -75
+	}
+}
+
+#Intervention in Iraq
+country_event = {
+	id = iran.12
+	title = iran.12.t
+	desc = iran.12.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+	immediate = {
+		hidden_effect = {
+			news_event = { id = news.217 }
+			activate_mission = PER_iraqi_intervention_debug
+			PER = {
+				#add_ideas = PER_iraq_war
+				declare_war_on = { 
+					target = BUK 
+					type = annex_everything
+				}
+			}
+
+			BUK = {
+				add_ideas = BUK_iran_war
+				load_oob = "BUK_iran_war"
+			}
+		}
+	}
+
+	option = {
+		name = iran.12.a	
+	}
+}
+
+#BOZO!!! you didn't defeat iraq!!!!!
+country_event = {
+	id = iran.13
+	title = iran.13.t
+	desc = iran.13.d
+	picture = GFX_Generic_Battle_Abrams
+		
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = yes
+		
+	trigger = {
+		tag = PER
+	}
+		
+	immediate = {
+		hidden_effect = {
+			white_peace = IRQ
+			white_peace = BUK
+			white_peace = ISS
+			white_peace = ABK
+			BUK = {
+				diplomatic_relation = {
+					country = IRQ
+					relation = non_aggression_pact
+					active = no
+				}
+				diplomatic_relation = {
+					country = ABK
+					relation = non_aggression_pact
+					active = no
+				}			
+			}
+			ABK = {
+				diplomatic_relation = {
+					country = IRQ
+					relation = non_aggression_pact
+					active = no
+				}
+				diplomatic_relation = {
+					country = ISS
+					relation = non_aggression_pact
+					active = no
+				}			
+			}
+			ISS = {
+				diplomatic_relation = {
+					country = BUK
+					relation = non_aggression_pact
+					active = no
+				}
+				diplomatic_relation = {
+					country = IRQ
+					relation = non_aggression_pact
+					active = no
+				}	
+			}
+			IRQ = {
+				country_event = { id = iraq.7 days = 10 }
+			}
+		}
+	}
+}
+
+#SHUT THE FUCK UP PEBBLE IRAN WILL NOT ANNEX TURKMENESTAN
+
+#Battlefield 3
+country_event = {
+	id = iran.15
+	title = iran.15.t
+	desc = iran.15.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	option = {
+	name = iran.15.a
+
+		PER = { 
+			add_to_faction = HOU
+		}
+
+		HOU = { 
+			set_country_flag = AOR_Member
+		}
+	}
+}
+
+# Fuck the BLA
+country_event = {
+	id = iran.16
+	title = iran.16.t
+	desc = iran.16.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	immediate = {
+		hidden_effect = {
+			IRB = { 
+				add_state_core = 1322
+				add_state_core = 444
+				transfer_state = 1322
+				load_oob = "IRB_Intervention"
+			}
+			PER = { 
+				puppet = IRB
+			}
+			IRB = { 
+				set_political_party = {
+					ideology = nationalist
+					popularity = 100
+				}
+				set_politics = {
+					ruling_party = nationalist
+					elections_allowed = no
+				}
+				set_country_flag = AOR_Member
+			}
+		}
+	}
+
+	option = {
+	name = iran.16.a
+		declare_war_on = { 
+			target = BAL
+			type = annex_everything 
+		}
+	}
+}
+
+#Mobilization wave
+country_event = {
+	id = iran.17
+	title = iran.17.t
+	desc = iran.17.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+	}
+
+	immediate = {
+		hidden_effect = {
+
+		}
+	}
+
+	option = {
+	name = iran.17.a
+		load_oob = "PER_militia"
+	}
+}
+
+#Iran Intervenes in the gulf
+news_event = {
+	id = iran.18
+	title = iran.18.t
+	desc = iran.18.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+
+	}
+		
+	option = {
+		name = iran.18.a
+		
+	}
+}
+
+
+
+#kill balochistan
+country_event = {
+	id = iran.20
+	title = iran.20.t
+	desc = iran.20.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+
+	}
+		
+	option = {
+		name = iran.20.a	
+		declare_war_on = { 
+			target = BAL
+			type = annex_everything 
+		}
+	}
+}
+
+#kill balochistan
+country_event = {
+	id = iran.21
+	title = iran.21.t
+	desc = iran.21.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+
+	}
+		
+	option = {
+		name = iran.21.a	
+		declare_war_on = { 
+			target = QEM
+			type = annex_everything 
+		}
+		declare_war_on = { 
+			target = RIF
+			type = annex_everything 
+		}
+	}
+}
+#democracy in iran, just opposition doesn't go there so ofc hardliners win, what a bunch of loosers EAT A SALAD
+country_event = {
+	id = iran.22
+	title = iran.22.t
+	desc = iran.22.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+
+	}
+		
+	option = {
+		name = iran.22.a
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.075
+		}
+		add_ideas = PER_Raisi
+	}
+}
+
+#sad times
+country_event = {
+	id = iran.25
+	title = iran.25.t
+	desc = iran.25.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+		
+	option = {
+		name = iran.25.a
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.1
+		}
+		add_ideas = PER_Pezeshkian
+		set_party_name = {
+			ideology = conservative
+			long_name = PER_conservative2_party_long
+			name = PER_conservative2_party
+		}
+	}
+}
+
+#Iran Saudi war begining event
+country_event = {
+	id = iran.26
+	title = iran.26.t
+	desc = iran.26.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+	name = iran.26.a
+	capital_scope = {
+            create_unit = {
+                division = "name = \"Emergency Motorised Brigade\" division_template = \"Mechanized Brigade\" start_experience_factor = 0.5 start_equipment_factor = 0.9"
+                owner = PER
+                }
+			create_unit = {
+                division = "name = \"28th Tank Divion\" division_template = \"Armored Brigade\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+                owner = PER
+                }
+		    create_unit = {
+                division = "name = \"9. Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+                owner = PER
+                }
+			}
+		SAU = {
+		country_event = { id = iran.27 days = 2 }
+		}
+	}
+}
+#Iran closes strait of hormuz
+country_event = {
+	id = iran.27
+	title = iran.27.t
+	desc = iran.27.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+	name = iran.27.a
+	SAU = {
+	add_ideas = SAU_Strait_of_Hormuz_Blockade
+	    }
+    }
+}
+	
+	
+#STOP WITH THE IRAN CIRCLEJERK NO SHIA EMPIRE GET THE FUCK OUT DIE DIE DIE
+
+#69th iraqi civil war
+country_event = {
+	id = iran.23
+	title = iran.23.t
+	desc = iran.23.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+
+	}
+		
+	option = {
+		name = iran.23.a	
+		BUK = {
+			declare_war_on = { 
+				target = IRQ
+				type = annex_everything 
+			}
+		}
+	}
+}

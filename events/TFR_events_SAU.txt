@@ -1,0 +1,4499 @@
+﻿###########################
+# Saudi Arabian Events
+###########################
+add_namespace = saudi
+# Salman Infected
+country_event = {
+	id = saudi.1
+	title = saudi.1.t
+	desc = saudi.1.d
+	picture = GFX_Salman_Health_Failing
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	immediate = {
+		hidden_effect = {
+			add_country_leader_trait = hos_covid_positive
+		}
+	}
+	option = {
+		name = saudi.1.a
+		effect_tooltip = {
+			add_country_leader_trait = hos_covid_positive
+		}
+		SAU_init_loyalty_system = {
+    if = {
+        limit = { NOT = { has_variable = SAU_army_loyalty } }
+        set_variable = { SAU_army_loyalty = 50 }
+        set_variable = { SAU_public_opinion = 50 }
+        add_dynamic_modifier = { modifier = SAU_army_loyalty_modifier }
+        add_dynamic_modifier = { modifier = SAU_public_opinion_modifier }
+    }
+    SAU_update_loyalty_modifiers = yes
+	    }
+	}
+}
+
+# War in Yemen Failing
+country_event = {
+	id = saudi.2
+	title = saudi.2.t
+	desc = saudi.2.d
+	picture = GFX_Generic_Saudi_Soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	option = {
+		name = saudi.2.a
+	}
+}
+
+# Salman's health Failing
+country_event = {
+	id = saudi.3
+	title = saudi.3.t
+	desc = saudi.3.d
+	picture = GFX_Salman_Health_Failing
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	option = {
+		name = saudi.3.a
+	}
+}
+
+# Salman Croaks
+country_event = {
+	id = saudi.4
+	title = saudi.4.t
+	desc = saudi.4.d
+	picture = GFX_Salman_Funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = king_salman_dead
+			news_event = {
+				id = news.120
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = saudi.4.a
+		remove_ideas = SAU_salman_bin_abdulaziz_hog
+		add_ideas = vacant_hog
+		SAU_salman_bin_abdulaziz_char = {
+			retire = yes
+		    }
+	    }
+    }
+# Salman bin Abdulaziz killed
+country_event = {
+	id = saudi.5
+	title = saudi.5.t
+	desc = saudi.5.d
+	picture = report_event_equipment
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	option = {
+		name = saudi.5.a
+		set_temp_variable = {
+			var = income_var_temp
+			value = 70
+		}
+		add_income = yes
+	}
+}
+
+# Mohammed bin Salman Takes power
+country_event = {
+	id = saudi.6
+	title = saudi.6.t
+	desc = saudi.6.d
+	picture = GFX_Salman_Crowned
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	option = {
+		#Mohammed Salman
+		name = saudi.6.a
+		set_country_flag = king_mohammed_salman
+		add_ideas = SAU_Bin_Salman_hog
+	}
+}
+
+# Princes Protest
+country_event = {
+	id = saudi.7
+	title = saudi.7.t
+	desc = saudi.7.d
+	picture = GFX_Princes_Protest
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = saudi.24
+				days = 10
+			}
+			country_event = {
+				id = saudi.8
+				days = 35
+			}
+		}
+	}
+	option = {
+		name = saudi.7.a
+		add_ideas = SAU_Political_Unrest
+	}
+}
+
+# PMCs attempt to arrest Mohammed
+country_event = {
+	id = saudi.8
+	title = saudi.8.t
+	desc = saudi.8.d
+	picture = GFX_Saudi_Spec_Ops
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = saudi.18
+				days = 7
+			}
+		country_event = {
+	        id = saudi.37
+	        days = 5
+	        }
+		}
+	}
+	option = {
+		name = saudi.8.a
+	}
+}
+
+# Princes Rebel
+country_event = {
+	id = saudi.9
+	title = saudi.9.t
+	desc = saudi.9.d
+	picture = GFX_Generic_Saudi_Soldiers_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+		NOT = {
+			has_country_flag = saudi_coalition
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			PRC = {
+				country_event = {
+					id = china.334
+					days = 10
+				}
+			}
+			YEM = {
+			remove_ideas = SAU_Reliance_on_saudi_arabia
+			remove_ideas = SAU_Advisors_to_Yemen
+			}
+			remove_ideas = SAU_memories_of_royal_purge
+			remove_ideas = SAU_prince_pmcs
+			remove_ideas = ETH_chinese_investments
+			remove_ideas = ISR_Military_Advisors_to_Saudi_Arabia
+			remove_ideas = SAU_covid_hits_Arabia
+			remove_ideas = SAU_cripling_covid_cases
+			remove_ideas = SAU_devestating_covid_cases
+			remove_ideas = SAU_Political_Unrest
+			add_ideas = SAU_Partial_Anarchy
+			add_ideas = SAU_Army_Defections
+			set_global_flag = saudi_civil_war_flag
+			load_focus_tree = SAU_civil_war_tree
+			PER = {
+				country_event = {
+					id = iran.15
+					days = 105
+				}
+			}
+			country_event = {
+				id = Saudi.39
+				days = 27
+				}
+			country_event = {
+				id = saudi.98
+				days = 7
+			}
+			country_event = {
+			    id = saudi.102
+				days = 35
+			}
+			SAU = yes
+			set_global_flag = SAU_saudi_civil_war_global
+			dismantle_faction = yes
+			delete_unit_template_and_units = {
+				division_template = "Liwa Mudarae"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Alliwa Almikanikiu"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Liwa Alhujum Aljawiyi"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Fawj Albahria"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Liwa Almsha"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Sharikat Easkariat Khasa"
+			}
+			add_ideas = SAU_saudi_civil_war
+			add_ideas = SAU_Legitimate_Goverment
+			load_oob = "SAU_civil_war"
+			if = {
+	        limit = {
+		    has_country_flag = sau_spawn_pmcs
+	        }
+	        load_oob = "SAU_wagner"
+            }
+			ROC = {
+			    add_ideas = SAU_Extreme_Loyalty
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 1065
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 895
+				transfer_state = 679
+				transfer_state = 895
+				transfer_state = 1062
+				transfer_state = 678
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				load_oob = "ROC_2020"
+			}
+			SAR = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 1065
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 1067
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				set_temp_variable = {
+					var = income_var_temp
+					value = 500
+				}
+				add_income = yes
+				load_oob = "SAR_2020"
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = The_SAU_civil_war
+							option = SAR_win
+						}
+						NOT = {
+							has_global_flag = SAR_win_BUFF_APPLIED
+						}
+					}
+					set_global_flag = SAR_win_BUFF_APPLIED
+					SAR = { apply_war_buff_with_20_divisions = yes }
+				}
+			}
+			ARR = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 1065
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 1126
+				add_state_core = 678
+				add_state_core = 1067
+				transfer_state = 894
+				transfer_state = 1061
+				transfer_state = 1064
+				transfer_state = 893
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SAR
+					type = civil_war
+				}
+				add_ideas = ISR_Military_Advisors_to_Saudi_Arabia
+				load_oob = "ARR_2020"
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = The_SAU_civil_war
+							option = ARR_win
+						}
+						NOT = {
+							has_global_flag = ARR_win_BUFF_APPLIED
+						}
+					}
+					set_global_flag = ARR_win_BUFF_APPLIED
+					ARR = { apply_war_buff_with_20_divisions = yes }
+				}
+			}
+			JAH = {
+				inherit_technology = SAU
+				add_state_core = 1066
+				transfer_state = 1066
+				add_ideas = SAU_saudi_civil_war
+				country_event = {
+					id = saudi.10
+					days = 65
+					random_days = 30
+				}
+			}
+			PER = {
+				add_political_power = 250
+			}
+			news_event = {
+				id = news.114
+				hours = 6
+			}
+			add_named_threat = {
+				threat = 3
+				name = SAU_saudi_civil_war_threat
+			}
+		}
+	}
+	option = {
+		name = saudi.9.a
+	}
+}
+
+# Jihadist Uprising
+country_event = {
+	id = saudi.10
+	title = saudi.10.t
+	desc = saudi.10.d
+	picture = GFX_Mecca_Jihadists
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = JAH
+	}
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = news.119
+			}
+			JAH = {
+				add_popularity = {
+					ideology = nationalist
+					popularity = 1
+				}
+				set_politics = {
+					ruling_party = nationalist
+					elections_allowed = no
+				}
+				add_ideas = SAU_Extreme_Loyalty
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 1065
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 894
+				add_ideas = JAH_heirs_to_mohammed
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ARR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SAR
+					type = civil_war
+				}
+				load_oob = "JAH_2020"
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = The_SAU_civil_war
+							option = JAH_win
+						}
+						NOT = {
+							has_global_flag = JAH_win_BUFF_APPLIED
+						}
+					}
+					set_global_flag = JAH_win_BUFF_APPLIED
+					JAH = { apply_war_buff_with_20_divisions = yes }
+				}
+			}
+		}
+	}
+	option = {
+		name = saudi.10.a
+	}
+}
+
+# Shia Uprising
+country_event = {
+	id = saudi.11
+	title = saudi.11.t
+	desc = saudi.11.d
+	picture = GFX_Hezbollah_Hejaz
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+		date > 2020.11.1
+		has_global_flag = resistance_group_funded
+	}
+	immediate = {
+		hidden_effect = {
+			SAR = {
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 1067
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ARR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = JAH
+					type = civil_war
+				}
+				load_oob = "SAR_2020"
+			}
+		}
+	}
+	option = {
+		name = saudi.11.a
+	}
+}
+
+# Oil Deal Fails
+country_event = {
+	id = saudi.12
+	title = saudi.12.t
+	desc = saudi.12.d
+	picture = GFX_Oil_War
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	immediate = {
+		hidden_effect = {
+			USA = {
+				country_event = {
+					id = usa.7
+					days = 1
+				}
+			}
+			PRC = {
+				country_event = {
+					id = china.4
+					days = 1
+				}
+			}
+			JAP = {
+				country_event = {
+					id = jap.182
+					days = 1
+				}
+			}
+			COG = {
+				news_event = {
+					id = congo.1
+					days = 250
+				}
+			}
+			GER = {
+				country_event = {
+					id = germany.16
+					days = 1
+				}
+				country_event = {
+					id = germany.17
+					days = 25
+				}
+			}
+			SAU = {
+			    country_event = {
+				    id = saudi.103
+					days = 14
+				}
+			}
+			remove_ideas = SAU_petro_dollar
+		}
+	}
+	option = {
+		name = saudi.12.a
+		news_event = {
+			id = news.121
+			days = 1
+		}
+		effect_tooltip = {
+			remove_ideas = SAU_petro_dollar
+		}
+	}
+}
+
+# Salman Victorious
+country_event = {
+	id = saudi.13
+	title = saudi.13.t
+	desc = saudi.13.d
+	picture = report_event_equipment
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = SAU_saudi_civil_war_global
+			set_global_flag = SAU_saudi_civil_war_over_global
+			news_event = {
+				id = news.124
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = saudi.13.a
+	}
+}
+
+# Coalition Victorious
+country_event = {
+	id = saudi.14
+	title = saudi.14.t
+	desc = saudi.14.d
+	picture = report_event_equipment
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROC
+	}
+	immediate = {
+		hidden_effect = {
+		    load_focus_tree = generic_focus
+			set_cosmetic_tag = ROC_victory
+			clr_global_flag = SAU_saudi_civil_war_global
+			set_global_flag = SAU_saudi_civil_war_over_global
+			news_event = {
+				id = news.125
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = saudi.14.a
+
+	}
+}
+
+# Liberals Victorious
+country_event = {
+	id = saudi.15
+	title = saudi.15.t
+	desc = saudi.15.d
+	picture = report_event_equipment
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ARR
+	}
+	immediate = {
+		hidden_effect = {
+		    load_focus_tree = generic_focus
+			clr_global_flag = SAU_saudi_civil_war_global
+			set_global_flag = SAU_saudi_civil_war_over_global
+			news_event = {
+				id = news.126
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = saudi.15.a
+	}
+}
+
+# Jihadists Victorious
+country_event = {
+	id = saudi.16
+	title = saudi.16.t
+	desc = saudi.16.d
+	picture = report_event_equipment
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = JAH
+	}
+	immediate = {
+		hidden_effect = {
+		    load_focus_tree = generic_focus
+			clr_global_flag = SAU_saudi_civil_war_global
+			set_global_flag = SAU_saudi_civil_war_over_global
+			news_event = {
+				id = news.127
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = saudi.16.a
+	}
+}
+
+# Shia's Victorious
+country_event = {
+	id = saudi.17
+	title = saudi.17.t
+	desc = saudi.17.d
+	picture = report_event_equipment
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAR
+	}
+	immediate = {
+		hidden_effect = {
+		    load_focus_tree = generic_focus
+			set_cosmetic_tag = SAR_islamic_republic
+			clr_global_flag = SAU_saudi_civil_war_global
+			set_global_flag = SAU_saudi_civil_war_over_global
+			news_event = {
+				id = news.128
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = saudi.17.a
+	}
+}
+
+# Yahya Assiri Returns to Saudi Arabia
+country_event = {
+	id = saudi.18
+	title = saudi.18.t
+	desc = saudi.18.d
+	picture = GFX_Riyad_Protests_report
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = saudi.22
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = saudi.18.a
+	}
+}
+
+# PMCs attempt to arrest Mohammed
+country_event = {
+	id = saudi.19
+	title = saudi.19.t
+	desc = saudi.19.d
+	picture = GFX_Generic_Saudi_Soldiers_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+		has_country_flag = saudi_coalition
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = saudi.18
+				days = 14
+			}
+			country_event = {
+				id = saudi.20
+				days = 28
+			}
+		}
+	}
+	option = {
+		name = saudi.19.a
+		
+	}
+}
+
+# Princes Rebel
+country_event = {
+	id = saudi.20
+	title = saudi.20.t
+	desc = saudi.20.d
+	picture = GFX_Saudi_Spec_Ops
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+		has_country_flag = saudi_coalition
+	}
+	immediate = {
+		hidden_effect = {
+			PRC = {
+				country_event = {
+					id = china.334
+					days = 10
+				}
+			}
+			remove_ideas = SAU_memories_of_royal_purge
+			remove_ideas = ETH_chinese_investments
+			news_event = {
+				id = news.114
+				hours = 6
+			}
+			remove_ideas = SAU_prince_pmcs
+			PER = {
+				complete_national_focus = PER_saudi_civil_war
+				country_event = {
+					id = iran.15
+					days = 105
+				}
+			}
+			remove_unit_leader = 417
+			remove_unit_leader = 418
+			if = {
+				limit = {
+					is_ai = no
+				}
+				ROC = {
+					change_tag_from = ROOT
+				}
+			}
+			set_global_flag = SAU_saudi_civil_war_global
+			JAH = {
+				country_event = {
+					id = saudi.10
+					days = 65
+					random_days = 30
+				}
+			}
+			SAU = {
+				dismantle_faction = yes
+				delete_unit_template_and_units = {
+					division_template = "Liwa Mudarae"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Alliwa Almikanikiu"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Liwa Alhujum Aljawiyi"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Fawj Albahria"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Liwa Almsha"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Sharikat Easkariat Khasa"
+				}
+				load_oob = "SAU_civil_war"
+				add_ideas = SAU_saudi_civil_war
+			}
+			ROC = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1065
+				add_state_core = 1066
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 895
+				transfer_state = 679
+				transfer_state = 895
+				transfer_state = 1062
+				transfer_state = 678
+				load_oob = "ROC_2020"
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				ROC = yes
+			}
+			SAR = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 1065
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 1067
+				load_oob = "SAR_2020"
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				set_temp_variable = {
+					var = income_var_temp
+					value = 500
+				}
+				add_income = yes
+			}
+			ARR = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1065
+				add_state_core = 1066
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 1126
+				add_state_core = 678
+				add_state_core = 1067
+				transfer_state = 894
+				transfer_state = 1061
+				transfer_state = 1064
+				transfer_state = 1063
+				transfer_state = 893
+				load_oob = "ARR_2020"
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SAR
+					type = civil_war
+				}
+			}
+			JAH = {
+				inherit_technology = SAU
+				add_state_core = 1066
+				transfer_state = 1066
+				add_ideas = SAU_saudi_civil_war
+			}
+			PER = {
+				add_political_power = 1000
+			}
+			add_named_threat = {
+				threat = 3
+				name = SAU_saudi_civil_war_threat
+			}
+		}
+	}
+	option = {
+		name = saudi.20.a
+	}
+}
+
+# Princes Rebel, Liberal Preparations
+country_event = {
+	id = saudi.21
+	title = saudi.21.t
+	desc = saudi.21.d
+	picture = GFX_Generic_Saudi_Soldiers_2
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+		has_country_flag = saudi_liberals
+	}
+	immediate = {
+		hidden_effect = {	
+			PRC = {
+				country_event = {
+					id = china.334
+					days = 10
+				}
+			}
+			remove_ideas = SAU_memories_of_royal_purge
+			remove_ideas = ETH_chinese_investments
+			news_event = {
+				id = news.114
+				hours = 6
+			}
+			remove_ideas = SAU_prince_pmcs
+			PER = {
+				country_event = {
+					id = iran.15
+					days = 105
+				}
+				complete_national_focus = PER_saudi_civil_war
+			}
+			remove_unit_leader = 417
+			remove_unit_leader = 418
+			if = {
+				limit = {
+					is_ai = no
+				}
+				ARR = {
+					change_tag_from = ROOT
+				}
+			}
+			set_global_flag = SAU_saudi_civil_war_global
+			JAH = {
+				country_event = {
+					id = saudi.10
+					days = 65
+					random_days = 30
+				}
+			}
+			SAU = {
+				dismantle_faction = yes
+				delete_unit_template_and_units = {
+					division_template = "Liwa Mudarae"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Alliwa Almikanikiu"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Liwa Alhujum Aljawiyi"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Fawj Albahria"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Liwa Almsha"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Sharikat Easkariat Khasa"
+				}
+				load_oob = "SAU_civil_war"
+				add_ideas = SAU_saudi_civil_war
+			}
+			ROC = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 1065
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 895
+				transfer_state = 679
+				transfer_state = 895
+				transfer_state = 1062
+				transfer_state = 678
+				load_oob = "ROC_2020"
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+			}
+			SAR = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 1065
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1126
+				transfer_state = 1067
+				load_oob = "SAR_2020"
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				set_temp_variable = {
+					var = income_var_temp
+					value = 500
+				}
+				add_income = yes
+			}
+			ARR = {
+				inherit_technology = SAU
+				add_state_core = 894
+				add_state_core = 1063
+				add_state_core = 893
+				add_state_core = 1064
+				add_state_core = 1061
+				add_state_core = 679
+				add_state_core = 292
+				add_state_core = 1066
+				add_state_core = 895
+				add_state_core = 1062
+				add_state_core = 678
+				add_state_core = 1067
+				add_state_core = 1065
+				add_state_core = 1126
+				transfer_state = 894
+				transfer_state = 1061
+				transfer_state = 1064
+				transfer_state = 1063
+				transfer_state = 893
+				load_oob = "ARR_2020"
+				add_ideas = SAU_saudi_civil_war
+				declare_war_on = {
+					target = SAU
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ROC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SAR
+					type = civil_war
+				}
+				ARR = yes
+			}
+			JAH = {
+				inherit_technology = SAU
+				add_state_core = 1066
+				transfer_state = 1066
+				add_ideas = SAU_saudi_civil_war
+			}
+			PER = {
+				add_political_power = 1000
+			}
+			add_named_threat = {
+				threat = 3
+				name = SAU_saudi_civil_war_threat
+			}
+		}
+	}
+	option = {
+		name = saudi.21.a
+	}
+}
+
+# Protests in Riyadh
+country_event = {
+	id = saudi.22
+	title = saudi.22.t
+	desc = saudi.22.d
+	picture = GFX_Generic_Saudi_Soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SAU
+	}
+	option = {
+		name = saudi.22.a
+		news_event = {
+			id = news.152
+		}
+	}
+}
+
+# Support from the Internet
+country_event = {
+	id = saudi.23
+	title = saudi.23.t
+	desc = saudi.23.d
+	picture = GFX_Generic_Saudi_Soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ARR
+	}
+	option = {
+		name = saudi.23.a
+	}
+}
+
+# Safar al-Hawali calls Mohammed an Israeli puppet
+country_event = {
+	id = saudi.24
+	title = saudi.24.t
+	desc = saudi.24.d
+	picture = GFX_Israeli_Puppet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ARR
+	}
+	option = {
+		name = saudi.24.a
+	}
+}
+
+# Establishment of Emirate
+country_event = {
+	id = saudi.26
+	title = saudi.26.t
+	desc = saudi.26.d
+	picture = GFX_Israeli_Puppet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = saudi.26.a
+		ARR = {
+			set_cosmetic_tag = ARR_khalid
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+				last_election = "2020.1.1"
+				election_frequency = 48
+			}
+			create_country_leader = {
+				name = ENG_colin_weir_char
+				picture = "Colin Weir.dds"
+				ideology = military_democracy
+				traits = {
+				}
+			}
+		}
+	}
+}
+
+# Annexation of Mecca if one side won before the jihadist uprising (kingdom)
+country_event = {
+	id = saudi.27
+	title = saudi.27.t
+	desc = saudi.27.d
+	picture = GFX_Israeli_Puppet
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = SAU
+		SAU = {
+			has_idea = SAU_saudi_civil_war
+		}
+		NOT = {
+			country_exists = ARR
+			country_exists = ROC
+			country_exists = SAR
+			JAH = {
+				has_government = nationalist
+			}
+		}
+	}
+	option = {
+		name = saudi.27.a
+			SAU = {
+				annex_country = {
+					target = JAH
+			}
+		}
+	}
+}
+
+# Annexation of Mecca if one side won before the jihadist uprising (princes)
+country_event = {
+	id = saudi.28
+	title = saudi.28.t
+	desc = saudi.28.d
+	picture = GFX_Israeli_Puppet
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = ROC
+		ROC = {
+			has_idea = SAU_saudi_civil_war
+		}
+		NOT = {
+			country_exists = ARR
+			country_exists = SAU
+			country_exists = SAR
+			JAH = {
+				has_government = nationalist
+			}
+		}
+	}
+	option = {
+		name = saudi.28.a
+			ROC = {
+				annex_country = {
+					target = JAH
+			}
+		}
+	}
+}
+
+# Annexation of Mecca if one side won before the jihadist uprising (republic)
+country_event = {
+	id = saudi.29
+	title = saudi.29.t
+	desc = saudi.29.d
+	picture = GFX_Israeli_Puppet
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = ARR
+		ARR = {
+			has_idea = SAU_saudi_civil_war
+		}
+		NOT = {
+			country_exists = ROC
+			country_exists = SAU
+			country_exists = SAR
+			JAH = {
+				has_government = nationalist
+			}
+		}
+	}
+	option = {
+		name = saudi.29.a
+			ARR = {
+				annex_country = {
+					target = JAH
+			}
+		}
+	}
+}
+
+# Annexation of Mecca if one side won before the jihadist uprising (shiites)
+country_event = {
+	id = saudi.30
+	title = saudi.30.t
+	desc = saudi.30.d
+	picture = GFX_Israeli_Puppet
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = SAR
+		SAR = {
+			has_idea = SAU_saudi_civil_war
+		}
+		NOT = {
+			country_exists = ROC
+			country_exists = SAU
+			country_exists = ARR
+			JAH = {
+				has_government = nationalist
+			}
+		}
+	}
+	option = {
+		name = saudi.30.a
+			SAR = {
+				annex_country = {
+					target = JAH
+			}
+		}
+	}
+}
+
+#covid_19
+country_event = {
+    id = saudi.31
+	title = saudi.31.t
+	desc = saudi.31.d
+	picture = GFX_SAU_korona
+	fire_only_once = yes
+	trigger = {
+        tag = SAU
+        date > 2020.2.10
+    }
+	option = {
+	name = saudi.31.a
+	complete_national_focus = SAU_the_virus_in_Arabia
+	mark_focus_tree_layout_dirty = yes
+	add_ideas = SAU_covid_hits_Arabia
+	}
+}
+#intervention in libya
+country_event = {
+    id = saudi.32
+	title = saudi.32.t
+	desc = saudi.32.d
+	picture = GFX_SAU_libya_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+        tag = SAU
+    }
+	option = {
+	name = saudi.32.a
+	}
+    option = {
+	name = saudi.32.b
+	HRL = {
+	add_timed_idea = {
+    idea = SAU_Terror_Bombing_Houti
+	days = 365
+	    }
+	}
+}
+	option = {
+	name = saudi.32.c
+	HRL = {
+    add_timed_idea = {
+    idea = SAU_Advisors_to_Yemen
+	days = 365
+	        }
+	    }
+	}
+}
+#Oil for civs
+country_event = {
+    id = saudi.33
+    title = saudi.33.t
+    desc = saudi.33.d
+    picture = GFX_SAU_germany_oil
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.33.a # Deutschland sagt JA
+        GER = {
+        add_political_power = -100
+		add_timed_idea = {
+               idea = SAU_cheap_oil_from_saudi_arabia
+               days = 365
+            }
+		}
+        SAU = {
+            country_event = { id = saudi.34 }
+        }
+    }
+    option = {
+        name = saudi.33.b # Deutschland sagt NEIN
+        SAU = {
+            country_event = { id = saudi.35 }
+        }
+    }
+}
+
+# Rückmeldung an Saudi-Arabien: Deutschland hat JA gesagt
+country_event = {
+    id = saudi.34
+    title = saudi.34.t
+    desc = saudi.34.d
+    picture = GFX_SAU_germany_oil
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.34.a
+        GER = {
+            809 = {
+                add_resource = {
+                    type = oil
+                    amount = 12
+				}
+			}
+        }
+        SAU = {
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex 
+                    level = 1
+                    instant = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = office_park
+                    level = 1
+                    instant = yes
+                }
+            }
+        }
+    }
+}
+
+# Rückmeldung an Saudi-Arabien: Deutschland hat NEIN gesagt
+country_event = {
+    id = saudi.35
+    title = saudi.35.t
+    desc = saudi.35.d
+    picture = GFX_SAU_germany_oil
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.35.a
+        add_political_power = -1
+    }
+}
+
+# China Öl-Deal Event
+country_event = {
+    id = saudi.36
+    title = saudi.36.t
+    desc = saudi.36.d
+    picture = GFX_SAU_saudi_xi_oil
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.36.a
+        SAU = {
+		    country_event = { id = saudi.85 days = 1 }
+        }
+        PRC = {
+		    add_political_power = -100
+            add_timed_idea = {
+                idea = SAU_cheap_oil_from_saudi_arabia
+                days = 365
+            }
+        }
+    }
+	option = {
+	name = saudi.36.b
+	SAU = {
+	country_event = { id = saudi.86 days = 1 }
+	    }
+	}
+}
+#Fahd bin turki arrested
+country_event = {
+    id = saudi.37
+    title = saudi.37.t
+    desc = saudi.37.d
+    picture = GFX_SAU_traitor_event_one
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.37.a
+        retire_character = SAU_Fahd_bin_Turki_Al_Saud_char
+		}
+	}
+#Question of Reform, choose head of goverment #scraped
+#country_event = {
+    #id = saudi.38
+    #title = saudi.38.t
+    #desc = saudi.38.d
+    #picture = GFX_Salman_Crowned
+    
+    #is_triggered_only = yes
+    #fire_only_once = yes
+
+    #trigger = {
+       #tag = SAU
+       #date > 2020.6.3
+    #}
+
+    #option = {
+		#name = saudi.38.a
+		# add_ideas = YOUR_IDEA_HERE#
+	#}
+	#option = {
+		#name = saudi.38.b
+		# add_ideas = YOUR_OTHER_IDEA_HERE#
+	#}
+#}
+#Fahd bin turki breaks out of prison
+country_event = {
+    id = saudi.39
+    title = saudi.39.t
+    desc = saudi.39.d
+    picture = GFX_SAU_prison_breakout
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.39.a
+	add_stability = -0.05
+	add_war_support = -0.025
+	add_manpower = -127
+	random_list = {
+		50 = {
+			ARR = {
+				recruit_character = SAU_Fahd_bin_Turki_Al_Saud_char
+			}
+		}
+		50 = {
+			ROC = {
+				recruit_character = SAU_Fahd_bin_Turki_Al_Saud_char
+			    }
+		    }
+	    }
+    }
+}
+#Economic collapse
+country_event = {
+    id = saudi.40
+    title = saudi.40.t
+    desc = saudi.40.d
+    picture = GFX_SAU_ecoomic_collapse
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.40.a
+	add_stability = -0.1
+	add_war_support = -0.05
+	add_ideas = SAU_Economic_collapse
+	}
+}
+#Future of Kingdom focus event
+country_event = {
+    id = saudi.41
+    title = saudi.41.t
+    desc = saudi.41.d
+    picture = GFX_SAU_future_of_Arabia
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.41.a
+	complete_national_focus = SAU_Reform_is_Nesesary
+	}
+    option = {
+	name = saudi.41.b
+	complete_national_focus = SAU_The_Status_Que_Foreever_more
+	}
+}
+#Another Purge Event
+country_event = {
+    id = saudi.42
+    title = saudi.42.t
+    desc = saudi.42.d
+    picture = GFX_Generic_Saudi_Soldiers
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.42.a
+	add_manpower = -500 
+	add_days_mission_timeout = {
+				mission = SAU_liberal_preparations
+				days = 7
+		}
+	}
+}
+#Saudi constetution event nr 1, womans rigths
+country_event = {
+    id = saudi.43
+    title = saudi.43.t
+    desc = saudi.43.d
+    picture = GFX_SAU_womans_rigths
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.43.a
+	add_stability = 0.05
+	country_event = {
+		id = saudi.44
+			days = 1
+		}
+	}
+	option = {
+	name = saudi.43.b
+	add_stability = -0.05
+	add_ideas = medium_female
+	add_stability = -0.05
+	country_event = {
+		id = saudi.44
+			days = 1
+		}
+	set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.15
+		}
+		add_society_development = yes
+	}
+}
+# saudi consti event nr.2 Freedom of speach
+country_event = {
+    id = saudi.44
+    title = saudi.44.t
+    desc = saudi.44.d
+    picture = GFX_SAU_freedom_of_speah
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.44.a  #yes freedom of speach#
+	add_ideas = SAU_Saudi_consteution_1_top
+	country_event = {
+		id = saudi.45
+			days = 2
+		}
+	}
+	option = {
+	name = saudi.44.b #no freedom of speavh#
+	add_ideas = SAU_Saudi_consteution_1_bottom
+	country_event = {
+		id = saudi.45
+			days = 2
+		}
+	}
+}
+#Saudi constetution event nr.3 Influense of the Quran is the new constetution
+country_event = {
+    id = saudi.45
+    title = saudi.45.t
+    desc = saudi.45.d
+    picture = GFX_SAU_quran
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.45.a   # it shall be the foundation for everything #
+		country_event = {
+		id = saudi.46
+			days = 2
+		}
+        add_stability = 0.05
+        
+        set_temp_variable = { society_development_var_temp = -0.5 }
+        add_society_development = yes
+        
+        set_temp_variable = { academic_development_var_temp = -0.35 }
+        add_academic_development = yes
+    }
+    
+    option = {   # it shall be an important part for a majority of laws #
+        name = saudi.45.b
+		country_event = {
+		id = saudi.46
+			days = 2
+		}
+        add_political_power = -50
+        add_stability = -0.025
+        
+        set_temp_variable = { society_development_var_temp = -0.25 }
+        add_society_development = yes
+    }
+    
+    option = {   # it shall only be foundation of Religious laws! #
+        name = saudi.45.c
+		country_event = {
+		id = saudi.46
+			days = 2
+		}
+        add_stability = -0.075
+        add_war_support = -0.025
+        add_political_power = -100
+        
+        set_temp_variable = { society_development_var_temp = 0.35 }
+        add_society_development = yes
+        
+        set_temp_variable = { academic_development_var_temp = 0.35 }
+        add_academic_development = yes
+        
+        add_popularity = {
+            ideology = authoritarian_democrat
+            popularity = 0.05
+        }
+    }
+}
+#Saudi constetution event 4, Finnishing touches #LAST EVENT OF THE cAIN#
+country_event = {
+    id = saudi.46
+    title = saudi.46.t
+    desc = saudi.46.d
+    picture = GFX_SAU_tuff_tuff
+  
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.46.a
+        trigger = {
+            has_idea = SAU_Saudi_consteution_1_top
+        }
+        swap_ideas = {
+            remove_idea = SAU_Saudi_consteution_1_top
+            add_idea = SAU_Saudi_consteution_2_top
+        }
+    }
+
+    option = {
+        name = saudi.46.b
+        trigger = {
+            has_idea = SAU_Saudi_consteution_1_bottom
+        }
+        swap_ideas = {
+            remove_idea = SAU_Saudi_consteution_1_bottom
+            add_idea = SAU_Saudi_consteution_2_bottom
+        }
+    }
+}
+#end of covid, focuses get removed
+country_event = {
+    id = saudi.47
+    title = saudi.47.t
+    desc = saudi.47.d
+    picture = GFX_SAU_end_of_korona
+    
+    trigger = {
+	tag = SAU
+	}
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+	name = saudi.47.a
+	complete_national_focus = SAU_Ease_the_lockdowns
+	}
+}
+#""""""""""""Elections"""""""""""""""""#
+country_event = {
+    id = saudi.48
+    title = saudi.48.t
+    desc = saudi.48.d
+    picture = GFX_generic_elections
+    
+    trigger = {
+        tag = SAU
+    }
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.48.a #OMG we win with 101% of the votes damm is
+        
+        trigger = {
+            has_completed_focus = SAU_The_Status_Que_Foreever_more
+        }
+        
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.1
+        }
+        complete_national_focus = SAU_To_Rule_1000_years
+    }
+    
+    option = {
+        name = saudi.48.b #democracy but you can only vote one party 
+        
+        trigger = {
+            has_completed_focus = SAU_Reform_is_Nesesary
+        }
+        
+        add_popularity = {
+            ideology = authoritarian_democrat
+            popularity = 0.15
+        }
+        complete_national_focus = SAU_Forward_Arabia
+    }
+}
+#Flowers bloom even during Fire
+country_event = {
+    id = saudi.49
+    title = saudi.49.t  
+    desc = saudi.49.d   
+    picture = GFX_SAU_flower_during_fire
+    
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = saudi.49.a
+        add_stability = 0.05
+        
+        1126 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        
+        set_temp_variable = { industry_development_var_temp = 0.35 }
+        add_industry_development = yes
+    }
+}
+#Eu deals x2
+country_event = {
+    id = saudi.50
+	title = saudi.50.t
+	desc = saudi.50.d
+	picture = GFX_SAU_eu_deals
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.50.a
+	remove_ideas = SAU_The_Weels_of_the_Economy_spin_once_more
+	remove_ideas = SAU_Economic_stabilisation
+	}
+}
+#deal with Russia
+country_event = {
+    id = saudi.51
+	title = saudi.51.t
+	desc = saudi.51.d
+	picture = GFX_SAU_russia_deals
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.51.a
+	remove_ideas = SAU_The_Weels_of_the_Economy_spin_once_more
+	remove_ideas = SAU_Economic_stabilisation
+	}
+}
+#DEBUG ONLY change focus Tree
+country_event = {
+    id = saudi.52
+	title = saudi.52.t
+	desc = saudi.52.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.52.a
+	load_focus_tree = SAU_initial_tree
+	}
+    option = {
+	name = saudi.52.b
+	load_focus_tree = SAU_civil_war_tree
+	}
+	option = {
+	name = saudi.52.c
+	load_focus_tree = SAU_post_war_tree
+	}
+}
+#Beg for Support France, THIS EVENT IS FOR F*ance#
+country_event = {
+    id = saudi.53
+	title = saudi.53.t
+	desc = saudi.53.d
+	picture = GFX_SAU_future_of_Arabia
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.53.a  #YES
+	SAU = {
+	country_event = { id = saudi.55 }
+	}
+}
+    option = {
+	name = saudi.53.b #NO
+	SAU = {
+	country_event = { id = saudi.54 }
+	    }
+    }
+}
+#THEY SAID NO
+country_event = {
+    id = saudi.54
+	title = saudi.54.t
+	desc = saudi.54.d
+	picture = GFX_SAU_fra_sno
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.54.a
+	add_political_power = -10
+	add_stability = -0.01
+	}
+}
+#THEY SAID YES
+country_event = {
+    id = saudi.55
+	title = saudi.55.t
+	desc = saudi.55.d
+	picture = GFX_SAU_fra_sno
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.55.a
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_2
+		amount = 5000
+		producer = FRA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_2			
+		amount = 750
+		producer = FRA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_3
+		amount = 50
+		producer = FRA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_mechanized_equipment_2
+		amount = 350
+		producer = FRA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 150
+		producer = FRA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_2		
+		amount = 700
+		producer = FRA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_artillery_equipment_2
+		amount = 50
+		producer = FRA
+	    }
+    }
+}
+#Beg for Support Russia, THIS EVENT IS FOR R*ssia#
+country_event = {
+    id = saudi.56
+	title = saudi.56.t
+	desc = saudi.56.d
+	picture = GFX_SAU_future_of_Arabia
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.56.a  #YES
+	SAU = {
+	country_event = { id = saudi.58 }
+	}
+}
+    option = {
+	name = saudi.56.b #NO
+	SAU = {
+	country_event = { id = saudi.57 }
+	    }
+    }
+}
+#THEY SAID NO, Russia
+country_event = {
+    id = saudi.57
+	title = saudi.57.t
+	desc = saudi.57.d
+	picture = GFX_SAU_ruzzia_yes
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.57.a
+	add_political_power = -10
+	add_stability = -0.01
+	}
+}
+#THEY SAID YES, Russia
+country_event = {
+    id = saudi.58
+	title = saudi.58.t
+	desc = saudi.58.d
+	picture = GFX_SAU_ruzzia_yes
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.58.a
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 5000
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1			
+		amount = 750
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_2
+		amount = 50
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_mechanized_equipment_2
+		amount = 350
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 150
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_2		
+		amount = 700
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_artillery_equipment_2
+		amount = 50
+		producer = SOV
+	    }
+    }
+}
+#Beg for Support china, THIS EVENT IS FOR c*ina#
+country_event = {
+    id = saudi.59
+	title = saudi.59.t
+	desc = saudi.59.d
+	picture = GFX_SAU_future_of_Arabia
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.59.a  #YES
+	SAU = {
+	country_event = { id = saudi.61 }
+	}
+}
+    option = {
+	name = saudi.59.b #NO
+	SAU = {
+	country_event = { id = saudi.60 }
+	    }
+    }
+}
+#THEY SAID NO, china
+country_event = {
+    id = saudi.60
+	title = saudi.60.t
+	desc = saudi.60.d
+	picture = GFX_PRC_xi_jinping_cunning
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.60.a
+	add_political_power = -10
+	add_stability = -0.01
+	}
+}
+#THEY SAID YES, china
+country_event = {
+    id = saudi.61
+	title = saudi.61.t
+	desc = saudi.61.d
+	picture = GFX_PRC_xi_jinping_cunning
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.61.a
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 5000
+		producer = PRC
+	}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1			
+		amount = 750
+		producer = PRC
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_2
+		amount = 50
+		producer = PRC
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_mechanized_equipment_2
+		amount = 350
+		producer = PRC
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 150
+		producer = PRC
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_2		
+		amount = 700
+		producer = PRC
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_artillery_equipment_2
+		amount = 50
+		producer = PRC
+	    }
+    }
+}
+#End of the civil war
+country_event = {
+    id = saudi.63
+	title = saudi.63.t
+	desc = saudi.63.d
+	picture = GFX_SAU_war_won
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.63.a
+	load_focus_tree = SAU_post_war_tree
+	add_ideas = SAU_Post_War_Reconstrucktion
+	add_ideas = SAU_Batterted_Army
+	hidden_effect = {
+	remove_ideas = SAU_Economic_collapse
+	remove_ideas = SAU_The_Weels_of_the_Economy_spin_once_more
+	remove_ideas = SAU_Economic_stabilisation
+	remove_ideas = SAU_Slow_Economic_Recovery
+	    }
+	}
+}
+#resistance cells
+country_event = { 
+    id = saudi.64
+	title = saudi.64.t
+	desc = saudi.64.d
+	picture = GFX_SAU_resistane_ells
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.64.a
+	add_ideas = SAU_Resistance_cells
+    }
+}
+#Fate of Jordan
+country_event = {
+    id = saudi.65
+	title = saudi.65.t
+	desc = saudi.65.d
+	picture = GFX_SAU_jordan
+	
+	fire_only_once = yes
+  
+    trigger = {
+	tag = SAU
+	owns_state = 445
+	}
+	
+	option = {     #Occupation foreever
+	name = saudi.65.a
+	add_stability = -0.1
+	}
+	option = {
+	name = saudi.65.b   #make them a puppet
+	puppet = JOR
+	
+	JOR = {
+	transfer_state = 455
+	transfer_state = 1433
+	transfer_state = 1432
+	
+	retire_character = yes
+	recruit_character = JOR_Army_logo_char
+	promote_character = JOR_Army_logo_char
+	
+	set_country_flag = PSF_Member
+	    }
+	}
+}
+#FOR JORDAN, Arabia invites us to faction
+country_event = {
+    id = saudi.66
+	title = saudi.66.t
+	desc = saudi.66.d
+	picture = GFX_SAU_future_of_Arabia
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {     #sure
+	name = saudi.66.a
+	SAU = {
+	country_event = { id = saudi.67 days = 5 }
+	    }
+	}
+	option = {
+	name = saudi.66.b   #fuck you 
+	SAU = {
+	country_event = { id = saudi.68 days = 5 }    
+	        }
+	    }
+    }
+#Jordan joins our faction
+country_event = {  
+    id = saudi.67
+	title = saudi.67.t
+	desc = saudi.67.d
+	picture = GFX_SAU_jordan
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.67.a
+	add_to_faction = JOR
+	JOR = {
+	set_country_flag = PSF_Member
+	    }
+	}
+}
+#OPERATION ABDUL AZIS; invasion of jordan
+country_event = {  
+    id = saudi.68
+	title = saudi.68.t
+	desc = saudi.68.d
+	picture = GFX_SAU_jordan
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.68.a
+	declare_war_on = {
+    target = JOR
+    type = annex_everything
+	    }
+    }
+}
+#FATE OF IRAQ
+country_event = {  
+    id = saudi.69
+	title = saudi.69.t
+	desc = saudi.69.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.69.a  #create a loyal puppet state
+	puppet = SIQ
+	SIQ = {
+	transfer_state = 291
+	transfer_state = 1180
+	transfer_state = 1178
+	transfer_state = 675
+	transfer_state = 1181
+	transfer_state = 1179
+	transfer_state = 1177
+	transfer_state = 1176
+	transfer_state = 676
+	transfer_state = 815
+		
+	add_state_core = 291
+	add_state_core = 1180
+	add_state_core = 1178
+	add_state_core = 675
+	add_state_core = 1181
+	add_state_core = 1179
+	add_state_core = 1177
+	add_state_core = 1176
+	add_state_core = 676
+	add_state_core = 815
+
+    set_politics = {
+		ruling_party = authoritarian_democrat
+		last_election = "2015.5.24"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+    set_popularities = { 
+		nationalist = 20
+		conservative = 10
+		social_liberal = 10
+		market_liberal = 8
+		authoritarian_democrat = 40
+		social_democrat = 12
+	}
+	
+	set_country_flag = PSF_Member
+	    }
+	}
+}
+#War exaution
+country_event = {  
+    id = saudi.70
+	title = saudi.70.t
+	desc = saudi.70.d
+	picture = GFX_SAU_war_tired
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.70.a
+	add_stability = -0.15
+	add_war_support = -0.15
+	add_ideas = SAU_War_Exaution
+	}
+}
+#Israel wants to surrender
+country_event = {  
+    id = saudi.71
+	title = saudi.71.t
+	desc = saudi.71.d
+	picture = GFX_SAU_tel_aviv_depressed
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {  #We dont want to nuke mankind, so yes we accept
+	name = saudi.71.a
+	remove_ideas = SAU_Waiting_for_Response
+	white_peace = ISR
+	hidden_effect = {
+	country_event = { id = saudi.73 hours = 1 }
+	    }
+	}
+    option = {
+	name = saudi.71.b #We will fuck those Zionists Terrorists!, #THIS RESULTS IN THE NUKING OF THE WHOLE MIDDLE EAST
+	hidden_effect = {
+	country_event = { id = saudi.72 days = 1 }
+	    }
+	}
+}
+country_event = {   
+	id = saudi.72
+	title = saudi.72.t
+	desc = saudi.72.d
+	picture = GFX_SAU_its_over
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = saudi.72.a
+		white_peace = ISR
+        retire_country_leader = yes
+		recruit_character = SAU_Army_logo_char
+		promote_character = SAU_Army_logo_char
+		dismantle_faction = yes
+		add_ideas = lower_sociaty
+		add_ideas = lower_farming
+		add_ideas = low_industry
+		add_ideas = lower_poverty
+		add_ideas = low_military
+		add_ideas = radiated_land
+		hidden_effect = {
+		
+		delete_unit = {
+		disband = no
+		}
+
+		news_event = { id = news.2007}
+		
+		country_event = { id = saudi.90 days = 7 }
+		
+		country_event = { id = saudi.91 days = 14 }
+		
+		# --- NUKLEARSCHLÄGE AUF ALLE STATES ---
+		launch_nuke = {
+        province = 2097
+        controller = SIQ
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 13790
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 13795
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 13248
+        controller = ISR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 4206
+        controller = ISR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 7011
+        controller = EGY
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 13914
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 1896
+        controller = FIR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 7960
+        controller = UAE
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 8051
+        controller = QAT
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 2026
+        controller = FIR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 4076
+        controller = EGY
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 13651
+        controller = SYR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 10106
+        controller = SIQ
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 4111
+        controller = SYR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 792
+        controller = LEB
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 5073
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 12785
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 12702
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 2090
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 7151
+        controller = JOR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 10837
+        controller = PER
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 10904
+        controller = UAE
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 13271
+        controller = YEM
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 10760
+        controller = OMA
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 12702
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 4068
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 1065
+        controller = ISR
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 2057
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 12758
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 4968
+        controller = SAU
+        use_nuke = yes
+        }
+		launch_nuke = {
+        province = 8085
+        controller = KUW
+        use_nuke = yes
+        }
+		# --- TRANSFER STATES ---
+		SZZ = {
+		add_ideas = radiated_land
+			transfer_state = 811
+			transfer_state = 1111
+			transfer_state = 1033
+			transfer_state = 1032
+			transfer_state = 554
+			transfer_state = 928
+			transfer_state = 929
+			transfer_state = 915
+			transfer_state = 553
+			transfer_state = 454
+			transfer_state = 810
+			transfer_state = 914
+			transfer_state = 455
+			transfer_state = 1433
+			transfer_state = 1432
+			transfer_state = 893
+			transfer_state = 894
+			transfer_state = 1061
+			transfer_state = 679
+			transfer_state = 1066
+			transfer_state = 1062
+			transfer_state = 895
+			transfer_state = 1064
+			transfer_state = 1065
+			transfer_state = 1266
+			transfer_state = 656
+			transfer_state = 1067
+			transfer_state = 826
+			transfer_state = 1112
+			transfer_state = 812
+			transfer_state = 678
+			transfer_state = 1126
+			transfer_state = 881
+			transfer_state = 1180
+			transfer_state = 1178
+			transfer_state = 675
+			transfer_state = 292
+		}
+	FIR = {
+	transfer_state = 421
+	add_state_core = 421
+	}
+	EGY = {
+	delete_unit = {
+		disband = no
+	}
+	add_ideas = radiated_land
+	retire_country_leader = yes
+	recruit_character = EGY_mohammed_fari_hegazy
+	promote_character = EGY_mohammed_fari_hegazy
+	}
+	ISR = {
+	delete_unit = {
+		disband = no
+	}
+	add_ideas = radiated_land
+	retire_country_leader = yes
+	recruit_character = ISR_SAU_IDF_char
+	promote_character = ISR_SAU_IDF_char
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "2022.04.10"
+		election_frequency = 48
+		elections_allowed = no
+		}
+	set_popularities = {
+	nationalist = 60
+	authoritarian_democrat = 10
+	communist = 2
+	social_democrat = 3
+	conservative = 25
+	    }
+	}
+	FIA = {
+	every_state = {
+    limit = {
+	is_core_of = IRQ
+	}
+	add_core_of = FIA
+	}
+	add_ideas = radiated_land
+	transfer_state = 1179
+	add_state_core = 1179
+	remove_ideas = HEZ_iranian_aid
+	}
+	KUR = {
+	add_ideas = radiated_land
+	add_ideas = liberation_or_death
+	add_ideas = Iraqi_populare_resistance
+	transfer_state = 815
+	transfer_state = 676
+	add_state_core = 676
+	}
+	IRQ = {
+	add_ideas = radiated_land
+	add_ideas = death_to_imperialism
+	transfer_state = 1177
+	add_state_core = 1177
+	transfer_state = 291
+	transfer_state = 1176
+	retire_country_leader = yes
+	recruit_character = IRQ_othman_al_ghanmi_char
+	promote_character = IRQ_othman_al_ghanmi_char
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "2022.04.10"
+		election_frequency = 48
+		elections_allowed = no
+		}
+	set_popularities = {
+	nationalist = 50
+	authoritarian_democrat = 15
+	communist = 5
+	conservative = 30
+	    }
+	}
+	HTS = {
+	every_state = {
+    limit = {
+	is_core_of = SYR
+	}
+	add_core_of = HTS
+	}
+	disband_unit = {
+	disband = no
+	}
+	add_ideas = Back_with_vengence
+	add_ideas = Turkish_aid_pipeline
+	add_ideas = radiated_land
+	    transfer_state = 1034
+		transfer_state = 677
+		add_state_core = 1034
+		add_state_core = 677
+	}
+	HZK = {
+	every_state = {
+    limit = {
+	is_core_of = KUR
+	}
+	add_core_of = HZK
+	}
+	add_ideas = radiated_land
+	add_ideas = Iranian_Army_Reminants
+	   transfer_state = 1181
+	   add_state_core = 1181
+	}
+	FSA = {
+	add_ideas = unpopulare_rule
+	add_ideas = 17th_saudi_army
+	add_ideas = radiated_land
+	    transfer_state = 1108
+	    transfer_state = 1109
+		add_state_core = 1108
+		add_state_core = 1109
+	}
+	ROJ = {
+	every_state = {
+    limit = {
+	is_core_of = ISS
+	}
+	add_core_of = ROJ
+	}
+	add_ideas = radiated_land
+	add_ideas = Syrias_last_chance_of_salvation
+	    transfer_state = 814
+		add_state_core = 1028
+		add_state_core = 1029
+		set_politics = {
+		ruling_party = authoritarian_democrat
+		last_election = "2022.04.10"
+		election_frequency = 48
+		elections_allowed = no
+		}
+		set_popularities = {
+		communist = 10
+		libertarian_socialist = 12
+		social_democrat = 13
+		conservative = 10
+		authoritarian_democrat = 35
+		nationalist = 20
+		}
+	}
+	ISS = {
+	every_state = {
+    limit = {
+	is_core_of = SYR
+	}
+	add_core_of = ISS
+	}
+	    transfer_state = 1029
+        transfer_state = 1028
+        add_state_core = 1029
+		add_state_core = 1028
+		add_ideas = radiated_land
+		add_ideas = Annilation_of_degeracy
+		add_ideas = cult_of_death
+		add_ideas = Nato_Bombing_runs
+	}
+	SYR = {
+	remove_ideas = SYR_army_of_lions_idea
+	remove_ideas = SYR_syrian_economic_renewal
+	remove_ideas = SYR_assadism_idea
+	remove_ideas = arab_league_member
+	clr_country_flag = arab_league_member
+	add_ideas = SYR_russian_support
+	add_ideas = SYR_devistated_economy
+	add_ideas = radiated_land
+	add_ideas = Dreams_of_greater_syria
+	add_ideas = Assadist_reminanst
+	delete_unit = {
+		disband = no
+	}
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "2022.04.10"
+		election_frequency = 48
+		elections_allowed = no
+		}
+	set_popularities = {
+	nationalist = 60
+	authoritarian_democrat = 30
+	communist = 5
+	conservative = 5
+	    }
+	}
+	load_focus_tree = generic_focus
+	    }
+	}
+}
+
+#victory against Israel
+country_event = {  
+    id = saudi.73
+	title = saudi.73.t
+	desc = saudi.73.d
+	picture = GFX_SAU_end_of_israel
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = saudi.73.a
+	FSA = {
+	transfer_state = 881
+	add_state_core = 881
+	}
+	SAU = {
+	remove_ideas = SAU_Waiting_for_Response
+	}
+	puppet = ISR
+	ISR = {
+	
+	remove_ideas = SAU_Waiting_for_Response
+	set_politics = {
+		ruling_party = libertarian_socialist
+		last_election = "2022.04.10"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = { 
+		nationalist = 10
+		conservative = 18
+		authoritarian_democrat = 12
+		social_democrat = 12
+		libertarian_socialist = 48
+	}
+	set_party_name = {
+		ideology = libertarian_socialist
+		long_name = "Levantine council"
+		name = "Levantine council"
+	}
+	set_party_name = {
+		ideology = conservative
+		long_name = "United Arab Party"
+		name = "United Arab Party"
+	}
+	set_party_name = {
+		ideology = authoritarian_democrat
+		long_name = "christian national party"
+		name = "christian national party"
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = "Yewish Peoples Party"
+		name = "Yewish Peoples Party"
+	}
+	set_party_name = {
+		ideology = nationalist
+		long_name = "Saudi Arabian Armed Forces"
+		name = "Saudi Arabian Armed Forces"
+	}
+	add_to_faction = ISR
+	set_country_flag = PSF_Member
+	
+	transfer_state = 915
+	transfer_state = 811
+	transfer_state = 1112
+	transfer_state = 454
+	transfer_state = 914
+	transfer_state = 1110
+	transfer_state = 1111
+	transfer_state = 812
+	transfer_state = 810
+	
+	add_state_core = 915
+	add_state_core = 811
+	add_state_core = 810
+	    }
+	JOR = {
+	transfer_state = 455
+	    }
+	}
+}
+#Straigt of Hormuz blockade broken #REPLEAced WITH BETTER EVENT
+#country_event = {  
+    #id = saudi.74
+	#title = saudi.74.t
+	#desc = saudi.74.d
+	#picture = GFX_PRC_sea_blocade
+	
+	#fire_only_once = yes
+    #is_triggered_only = yes
+	
+	#option = {
+    #name = saudi.74.a
+	#remove_ideas = SAU_Strait_of_Hormuz_Blockade
+	#}
+#}
+#Straigt of Hormuz blockade remains # REPLEAced
+#country_event = {  
+    #id = saudi.75
+	#title = saudi.75.t
+	#desc = saudi.75.d
+	#picture = GFX_PRC_sea_blocade
+	
+	#fire_only_once = yes
+    #is_triggered_only = yes
+	
+	#option = {
+    #name = saudi.75.a
+	#add_war_support = -0.1
+	#add_manpower = -250
+	#}
+#}
+#Fate of Iran
+country_event = {
+	id = saudi.76
+	title = saudi.76.t
+	desc = saudi.76.d
+	picture = GFX_Iranian Intervention
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.76.a #create a loyal persian puppet
+		puppet = FIR
+		SIQ = {
+			transfer_state = 421
+			add_state_core = 421
+		}
+		FIR = {
+			transfer_state = 266
+			266 = {
+				add_core_of = FIR
+			}
+			transfer_state = 420
+			420 = {
+				add_core_of = FIR
+			}
+			transfer_state = 417
+			417 = {
+				add_core_of = FIR
+			}
+			transfer_state = 912
+			912 = {
+				add_core_of = FIR
+			}
+			transfer_state = 419
+			419 = {
+				add_core_of = FIR
+			}
+			transfer_state = 1327
+			1327 = {
+				add_core_of = FIR
+			}
+			transfer_state = 413
+			413 = {
+				add_core_of = FIR
+			}
+			transfer_state = 411
+			411 = {
+				add_core_of = FIR
+			}
+			transfer_state = 412
+			412 = {
+				add_core_of = FIR
+			}
+			transfer_state = 414
+			414 = {
+				add_core_of = FIR
+			}
+			transfer_state = 418
+			418 = {
+				add_core_of = FIR
+			}
+			transfer_state = 416
+			416 = {
+				add_core_of = FIR
+			}
+			transfer_state = 1326
+			1326 = {
+				add_core_of = FIR
+			}
+			transfer_state = 913
+			913 = {
+				add_core_of = FIR
+			}
+			transfer_state = 916
+			916 = {
+				add_core_of = FIR
+			}
+			transfer_state = 410
+			410 = {
+				add_core_of = FIR
+			}
+
+			set_politics = {
+				ruling_party = conservative
+				last_election = "2015.5.24"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+
+			set_popularities = {
+				nationalist = 1
+				conservative = 34
+				social_liberal = 17
+				market_liberal = 12
+				authoritarian_democrat = 21
+				social_democrat = 6
+				libertarian_socialist = 3
+				communist = 2
+				fascist = 4
+			}
+
+			set_country_flag = PSF_Member
+		}
+	}
+}
+	#option = {
+		#name = saudi.76.b #Loot, raid, destroy, balkanise
+		#puppet = QEM
+		#Puppet = RIF
+		#puppet = ZET
+		
+		#PER = {
+		#retire_country_leader = yes
+		#recruit_character = PER_modschtaba_chamenei_char
+		#promote_character = PER_modschtaba_chamenei_char
+		
+		#set_politics = {
+				#ruling_party = authoritarian_democrat
+				#last_election = "2015.5.24"
+				#election_frequency = 48
+				#elections_allowed = no
+			#}
+
+			#set_popularities = {
+				#nationalist = 40
+				#conservative = 15
+				#authoritarian_democrat = 21
+				#social_democrat = 2
+				#libertarian_socialist = 2
+				#communist = 9
+				#fascist = 16
+			#}
+			
+		#transfer_state = 266
+		#transfer_state = 419
+		#transfer_state = 411
+		#}
+		#FIR = {
+		#transfer_state = 412
+		#transfer_state = 916
+		
+		#add_state_core = 412
+		#add_state_core = 916
+		#}
+		#BAL = {
+		#transfer_state = 410
+			#410 = {
+			#add_core_of = BAL
+		#}
+		#transfer_state = 912
+			#916 = {
+			#add_core_of = BAL
+		#}
+		#transfer_state = 410
+			#912 = {
+			#add_core_of = BAL
+		#}
+	#}
+	    #ZET = {
+		#set_politics = {
+				ruling_party = authoritarian_democrat
+				last_election = "2015.5.24"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+
+			set_popularities = {
+				nationalist = 25
+				conservative = 25
+				authoritarian_democrat = 40
+				social_democrat = 4
+				libertarian_socialist = 4
+				communist = 1
+				fascist = 1
+			}
+        transfer_state = 414
+			414 = {
+			add_core_of = ZET
+			
+		set_country_flag = PSF_Member	
+		} 
+    }
+        AFA = {
+		transfer_state = 1326
+			1326 = {
+			add_core_of = AFA
+		} 
+		transfer_state = 913
+			913 = {
+			add_core_of = AFA
+		}
+		transfer_state = 416
+			416 = {
+			add_core_of = AFA
+		} 
+		transfer_state = 420
+			420 = {
+			add_core_of = AFA
+		} 
+	}
+	    IAI = {
+		transfer_state = 418
+			418 = {
+			add_core_of = IAI
+		}
+	}
+	    RIF = {
+		set_politics = {
+				ruling_party = nationalist
+				last_election = "2015.5.24"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+				nationalist = 60
+				conservative = 10
+				authoritarian_democrat = 15
+				fascist = 15
+			}
+		transfer_state = 417
+			417 = {
+			add_core_of = RIF
+		}
+		transfer_state = 1327
+			1327 = {
+			add_core_of = RIF
+			
+		set_country_flag = PSF_Member
+		}
+	}
+	    SIQ = {
+		transfer_state = 421
+		    421 = {
+			add_core_of = SIQ
+		}
+	}
+	    QEM = {
+		set_politics = {
+				ruling_party = conservative
+				last_election = "2015.5.24"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+
+			set_popularities = {
+				nationalist = 8
+				conservative = 25
+				social_liberal = 15
+				market_liberal = 12
+				authoritarian_democrat = 21
+				social_democrat = 6
+				libertarian_socialist = 7
+				communist = 2
+				fascist = 4
+			}
+		transfer_state = 413
+		    413 = {
+			add_core_of = QEM
+		}
+		
+		set_country_flag = PSF_Member
+		}
+	}
+}
+#FOR EGYPT ONLY
+#Anti saudi coalition forms
+country_event = {  
+	id = saudi.77
+	title = saudi.77.t
+	desc = saudi.77.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = saudi.77.a
+		
+		load_oob = EGY_war
+		
+		add_ideas = SAU_Egy_ASA_Leader
+		
+		create_faction = "Anti Saudi coalition"
+		
+		set_technology = {
+            amphibious_tank1 = 1
+        }
+		
+		hidden_effect = {
+			remove_faction_goal = faction_goal_the_atomic_race
+			add_faction_goal = faction_goal_placeholder_long_term
+			remove_faction_goal = faction_goal_a_military_base
+			add_faction_goal = faction_goal_placeholder_medium_term
+			add_faction_goal = faction_goal_placeholder_short_term
+		}
+		
+		add_to_faction = SUD
+		add_to_faction = ERI
+		add_to_faction = TUN
+		add_to_faction = MOR
+		add_to_faction = ALG
+		add_to_faction = MRT
+		add_to_faction = DJI
+		add_to_faction = TAL
+		
+		news_event = { id = news.2006 }
+		
+		if = {
+			limit = { country_exists = HRL }
+			add_to_faction = HRL
+		}
+		if = {
+			limit = { country_exists = LBA }
+			add_to_faction = LBA
+		}
+	SAU = {
+	country_event = { id = saudi.78 days = 3 }
+	    }
+	SUD = {
+	load_oob = "arab_saudi_war_good_divs"
+	    }
+	DJI = {
+	load_oob = "arab_saudi_war_good_divs"
+	    }
+	ERI = {
+	load_oob = "arab_saudi_war_good_divs"
+	    }
+	TUN = {
+	load_oob = "arab_saudi_war_good_divs"
+	    }
+	}
+}
+#OPERATION GREEN DUSK# INVASION OF SAUDI ARABIA#
+country_event = {  
+	id = saudi.80
+	title = saudi.80.t
+	desc = saudi.80.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = saudi.80.a
+	set_country_flag = saudi_arab_war
+	
+	news_event = { id = news.2008 }
+	
+	EGY = {
+	declare_war_on = {
+    target = SAU
+    type = annex_everything	
+	}
+	load_oob = "arab_saudi_war_good_divs"
+	load_oob = "egyptian_naval_invasion"
+	add_timed_idea = {
+	idea = SAU_Premptive_Strike
+	days = 160
+	    }
+	}
+	TAL = {
+	declare_war_on = {
+    target = FIR
+    type = annex_everything
+	}
+	add_timed_idea = {
+	idea = SAU_Premptive_Strike
+	days = 160
+	}
+	load_oob = "arab_saudi_war_good_divs"
+}
+    DJI = {
+	declare_war_on = {
+    target = SAU
+    type = annex_everything	
+	    }
+	}
+	ALG = {
+	declare_war_on = {
+    target = SAU
+    type = annex_everything	
+	}
+	add_timed_idea = {
+	idea = SAU_Premptive_Strike
+	days = 160
+	    }
+	load_oob = "arab_saudi_war_good_divs"
+	}
+	HRL = {
+	declare_war_on = {
+    target = SAU
+    type = annex_everything	
+	}
+	}
+	LBA = {
+	declare_war_on = {
+    target = SAU
+    type = annex_everything	
+	}
+	}
+	MOR = {
+	set_major = yes
+	load_oob = "arab_saudi_war_good_divs"
+	add_timed_idea = {
+	idea = SAU_Premptive_Strike
+	days = 160
+	    }
+	declare_war_on = {
+    target = SAU
+    type = annex_everything	
+	}
+	}
+	TUN = {
+	load_oob = "arab_saudi_war_good_divs"
+	declare_war_on = {
+    target = SAU
+    type = annex_everything	
+	}
+	add_timed_idea = {
+	idea = SAU_Premptive_Strike
+	days = 160
+	    }
+	    }
+	SAU = {
+	goto_province =  13795
+	    }
+	}
+}
+		
+#EVENT cAIN FOR SAUDI AFTER ANTI SAUDI cOALITION FORMS
+country_event = {  #we need to prepare...#
+	id = saudi.78
+	title = saudi.78.t
+	desc = saudi.78.d
+	picture = GFX_SAU_sekret
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = saudi.78.a
+	country_event = { id = saudi.79 days = 5 }
+	}
+}
+#unuseal egyptian naval manuvers in the Red see...#
+country_event = {  #we need to prepare...#
+	id = saudi.79
+	title = saudi.79.t
+	desc = saudi.79.d
+	picture = GFX_PRC_sea_blocade
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = saudi.79.a
+	EGY = {
+	country_event = { id = saudi.80 days = 10 }
+	    }
+	}
+}
+#Saudi arabia kicked out of the arab leage
+country_event = { 
+	id = saudi.81
+	title = saudi.81.t
+	desc = saudi.81.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = saudi.81.a
+	remove_ideas = arab_league_member
+	clr_country_flag = arab_league_member
+	}
+}
+#Event cain The Rihyad trails #Fate of the Hezbollah terrorist
+country_event = { 
+	id = saudi.82
+	title = saudi.82.t
+	desc = saudi.82.d
+	picture = GFX_SAU_fate_of_hez
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = saudi.82.a
+	add_manpower = -10
+	SAR = {
+	retire_country_leader = yes
+	}
+	add_popularity = {
+	ideology = fascist
+	popularity = -0.02
+	}
+	add_stability = 0.02
+	country_event = { id = saudi.83 days = 5 }
+	}
+}
+#Fate of the Libtards
+country_event = { 
+	id = saudi.83
+	title = saudi.83.t
+	desc = saudi.83.d
+	picture = GFX_FRA_saudi_liberals_win
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {   #Kill them all
+	name = saudi.83.a
+	add_manpower = -25
+	add_stability = 0.02
+	ARR = {
+	retire_country_leader = yes
+	}
+	add_popularity = {
+	ideology = social_liberal = -0.02
+	    }
+	country_event = { id = saudi.84 days = 5 }
+	}
+	option = { #arrest them and send the rest to exile
+	name = saudi.83.b
+	add_stability = -0.02
+	add_popularity = {
+	ideology = nationalist
+	popularity = 0.05
+	    }
+	country_event = { id = saudi.84 days = 5 }
+	}
+}
+#Fate of remaining traitors
+country_event = { 
+	id = saudi.84
+	title = saudi.84.t
+	desc = saudi.84.d
+	picture = GFX_SAU_fate_of_hez
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Kill them all
+	name = saudi.84.a
+	add_manpower = -250
+	add_stability = 0.05
+	}
+}
+#china says yes
+country_event = {
+    id = saudi.85
+    title = saudi.85.t
+    desc = saudi.85.d
+    picture = GFX_SAU_saudi_xi_oil
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.85.a
+        add_ideas = ETH_chinese_investments
+    }
+}
+#china says no
+country_event = {
+    id = saudi.86
+    title = saudi.86.t
+    desc = saudi.86.d
+    picture = GFX_SAU_saudi_xi_oil
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.86.a
+        add_political_power = -1
+    }
+}
+#fadh bin Turki captured alive
+country_event = {
+    id = saudi.87
+    title = saudi.87.t
+    desc = saudi.87.d
+    picture = SAU_traitor_event_one
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.87.a
+        add_stability = 0.05
+		add_manpower = -1
+    }
+}
+#DEBUG SUPER EVENT TEST EVENT
+country_event = {
+    id = saudi.88
+    title = saudi.88.t
+    desc = saudi.88.d
+    picture = GFX_SAU_saudi_xi_oil
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.88.a
+        hidden_effect = {
+        set_country_flag = SAU_nukleare_holocaust
+
+        scoped_sound_effect = TFR_se_sau_nuke_sevent
+		scoped_play_song = "one_minute_of_silence"
+        }
+    }
+}
+#super event 2
+country_event = {
+    id = saudi.89
+    title = saudi.89.t
+    desc = saudi.89.d
+    picture = GFX_SAU_kon_win_player
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.89.a
+        news_event = { id = news.2009 }
+		}
+	}
+#super event 3
+country_event = {
+    id = saudi.92
+    title = saudi.92.t
+    desc = saudi.92.d
+    picture = GFX_SAU_kon_win_player
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.92.a
+	news_event = { id = news.2011 }
+	}
+}
+	name = saudi.91.a
+#post nuke iraq and syria civil war plus army added
+country_event = {
+    id = saudi.90
+    title = saudi.90.t
+    desc = saudi.90.d
+    picture = GFX_SAU_war_tired
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	   name = saudi.90.a
+       ISS = { load_oob = "Isis_post_nuke" }
+        FSA = { load_oob = "free_syr_post_nuke" }
+        SYR = { load_oob = "syr_gov_post_nuke" }
+        HTS = { load_oob = "hts_post_nuke" }
+        ROJ = { load_oob = "rojava_post_nuke" }
+        KUR = { load_oob = "KUR_2020" }
+        HZK = { load_oob = "hezb_post_nuke" }
+        IRQ = { load_oob = "iraq_post_nuke" }
+        FIA = { load_oob = "islam_irq_post_nuke" }
+
+        # Syria (ISS, FSA, SYR, HTS, ROJ)
+        ISS = {
+            declare_war_on = { target = FSA type = annex_everything }
+            declare_war_on = { target = SYR type = annex_everything }
+            declare_war_on = { target = HTS type = annex_everything }
+            declare_war_on = { target = ROJ type = annex_everything }
+        }
+        FSA = {
+            declare_war_on = { target = SYR type = annex_everything }
+            declare_war_on = { target = HTS type = annex_everything }
+            declare_war_on = { target = ROJ type = annex_everything }
+        }
+        SYR = {
+            declare_war_on = { target = HTS type = annex_everything }
+            declare_war_on = { target = ROJ type = annex_everything }
+        }
+        HTS = {
+            declare_war_on = { target = ROJ type = annex_everything }
+        }
+
+        # Iraq (KUR, HZK, IRQ, FIA)
+        KUR = {
+            declare_war_on = { target = HZK type = annex_everything }
+            declare_war_on = { target = IRQ type = annex_everything }
+            declare_war_on = { target = FIA type = annex_everything }
+        }
+        HZK = {
+            declare_war_on = { target = IRQ type = annex_everything }
+            declare_war_on = { target = FIA type = annex_everything }
+        }
+        IRQ = {
+            declare_war_on = { target = FIA type = annex_everything }
+        }
+    }
+}
+#Egypt shatters
+country_event = {
+    id = saudi.91
+    title = saudi.91.t
+    desc = saudi.91.d
+    picture = GFX_SAU_war_tired
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.91.a
+	set_global_flag = middl_east_go_boom
+	news_event = { id = news.2010 }
+        MEK = {
+		    add_ideas = radiated_land
+			transfer_state = 813
+			transfer_state = 453
+			set_cosmetic_tag = EGY_Wilayah_Sina
+			load_oob = "MEK_2020"
+			every_state = {
+				limit = {
+				is_core_of = EGY
+				}
+				add_core_of = MEK
+				}
+				declare_war_on = {
+					target = EGY
+					type = civil_war
+				}
+			}
+		MUS = {
+		    add_ideas = radiated_land
+			transfer_state = 456
+			load_oob = "MUS_2020"
+			every_state = {
+				limit = {
+					is_core_of = EGY
+				}
+				add_core_of = MUS
+				}
+			    declare_war_on = {
+				target = MEK
+				type = civil_war
+				}
+				declare_war_on = {
+					target = EGY
+					type = civil_war
+				}
+			}
+		EKP = {
+		add_ideas = radiated_land
+		transfer_state = 452
+		transfer_state = 552
+		set_party_name = {
+		ideology = communist 
+		long_name = "communist party of Egypt"
+		name = "communist party of Egypt"
+	    }
+		set_party_name = {
+		ideology = libertarian_socialist
+		long_name = "Socialist Nassarist Party of Egypt"
+		name = "Socialist Nassarist Party of Egypt"
+	    }
+			load_oob = "kommi_egypt"
+			every_state = {
+				limit = {
+					is_core_of = EGY
+				}
+				add_core_of = EKP
+				}
+			    declare_war_on = {
+				target = MEK
+				type = civil_war
+				}
+				declare_war_on = {
+					target = EGY
+					type = civil_war
+				}
+				declare_war_on = {
+					target = MUS
+					type = civil_war
+				}
+			}
+		EUF = {
+		add_ideas = radiated_land
+	    transfer_state = 457
+		transfer_state = 447
+		set_party_name = {
+		ideology = conservative
+		long_name = "Wafd Party"
+		name = "Wafd Party"
+	        }
+			load_oob = "EUF_2020"
+			every_state = {
+				limit = {
+					is_core_of = EGY
+				}
+				add_core_of = EUF
+				}
+			    declare_war_on = {
+				target = MEK
+				type = civil_war
+				}
+				declare_war_on = {
+				target = EKP
+				type = civil_war
+				}
+				declare_war_on = {
+					target = EGY
+					type = civil_war
+				}
+				declare_war_on = {
+					target = MUS
+					type = civil_war
+				}
+			}
+		EGY = {
+		load_oob = "EGY_civil_war"
+		    }
+		}
+	}
+#EGYPT KILL SAUDI ARABIA PEAcE DEAL
+country_event = {
+    id = saudi.93
+    title = saudi.93.t
+    desc = saudi.93.d
+    picture = GFX_SAU_war_tired
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.93.a
+	EGY = {
+        white_peace = SAU
+        dismantle_faction = yes
+        create_faction = "Arabian Defensive League"
+            
+        remove_faction_goal = faction_goal_the_atomic_race
+        add_faction_goal = faction_goal_placeholder_long_term
+        remove_faction_goal = faction_goal_a_military_base
+        add_faction_goal = faction_goal_placeholder_medium_term
+        add_faction_goal = faction_goal_placeholder_short_term
+		
+		add_to_faction = EAR
+        add_to_faction = SAU
+        add_to_faction = LEB
+        add_to_faction = PAL
+        add_to_faction = JOR
+        add_to_faction = IRQ
+	}
+	SAU = {
+	dismantle_faction = yes
+	}
+	LEB = {
+	transfer_state = 792
+	transfer_state = 928
+	transfer_state = 929
+	}
+	PAL = {
+	transfer_state = 915
+	transfer_state = 811
+	transfer_state = 1015
+	transfer_state = 1112
+	transfer_state = 454
+	transfer_state = 914
+	transfer_state = 1110
+	transfer_state = 1111
+	transfer_state = 812
+	transfer_state = 810
+	}
+	JOR = {
+	transfer_state = 455
+	transfer_state = 1433
+	transfer_state = 1432
+	    }
+	IRQ = {
+	transfer_state = 291
+	transfer_state = 1180
+	transfer_state = 1178
+	transfer_state = 675
+	transfer_state = 1181
+	transfer_state = 1179
+	transfer_state = 1177
+	transfer_state = 1176
+	transfer_state = 676
+	transfer_state = 815
+	    }
+	SYR = {
+	transfer_state = 1033
+	transfer_state = 1032
+	transfer_state = 554
+	transfer_state = 1031
+	transfer_state = 1109
+	transfer_state = 1088
+	transfer_state = 1027
+	transfer_state = 677
+	transfer_state = 1034
+	transfer_state = 680
+	transfer_state = 1028
+	transfer_state = 1029
+	transfer_state = 814
+	transfer_state = 1108
+	transfer_state = 1030
+	transfer_state = 1035
+	
+	add_state_core = 1033
+    add_state_core = 1032
+	add_state_core = 554
+	add_state_core = 1031
+	add_state_core = 1109
+	add_state_core = 1088
+	add_state_core = 1027
+	add_state_core = 677
+	add_state_core = 1034
+	add_state_core = 680
+	add_state_core = 1028
+	add_state_core = 1029
+	add_state_core = 814
+	add_state_core = 1108
+	add_state_core = 1030
+	add_state_core = 1035
+	
+	set_politics = {
+			ruling_party = nationalist
+			last_election = "2022.04.10"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			nationalist = 40
+			conservative = 20
+			authoritarian_democrat = 40
+			}
+		}
+	}
+}
+
+#ISRAEL WINS AGAINST SAUDI ARABIA EVENT #unfinnished
+country_event = {
+    id = saudi.96
+    title = saudi.96.t
+    desc = saudi.96.d
+    picture = GFX_SAU_its_over
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.96.a
+		white_peace = FIR
+		white_peace = SAU
+    }
+}
+#####LEBANESE Elections MINIGAME FOR SAU PLAYER 
+#shows the player the minigame has started
+country_event = {
+    id = saudi.99
+    title = saudi.99.t
+    desc = saudi.99.d
+    picture = GFX_generic_elections
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.99.a
+		add_political_power = 1
+    }
+}
+#Pro saudi guy victory
+country_event = {
+    id = saudi.100
+    title = saudi.100.t
+    desc = saudi.100.d
+    picture = GFX_generic_elections
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.100.a
+		add_political_power = 50
+		add_to_faction = LEB
+		LEB = {
+		add_ideas = SAU_Saudi_Lebanese_cooperation
+		hidden_effect = {
+		set_country_flag = PSF_Member
+		    }
+		}
+    }
+}
+####2nd saudi civil war event + leader hot fix #will not be added at release
+#Here we go again...
+country_event = {
+    id = saudi.95
+    title = saudi.95.t
+    desc = saudi.95.d
+    picture = GFX_SAU_its_over
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.95.a
+		JAH = {
+        set_cosmetic_tag = JAH_secound_saudi_cw
+        }
+    }
+}
+##### FLAVOR EVENTS #####
+#End of campain event
+country_event = {
+    id = saudi.94
+    title = saudi.94.t
+    desc = saudi.94.d
+    picture = GFX_SAU_flavor_event_1
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.94.a
+	}
+}
+#Hezbollah al hejaz gets kirked
+country_event = {
+    id = saudi.97
+    title = saudi.97.t
+    desc = saudi.97.d
+    picture = GFX_SAU_hezbolahh_kirked_flavor_2
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.97.a
+		add_manpower = 1
+    }
+}
+#start of cw flavor event
+country_event = {
+    id = saudi.98
+    title = saudi.98.t
+    desc = saudi.98.d
+    picture = GFX_SAU_flavor_3
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.98.a
+		add_stability = 0.01
+    }
+}
+#Last ever event, tells player that content is le over
+country_event = {
+    id = saudi.101
+    title = saudi.101.t
+    desc = saudi.101.d
+    picture = GFX_SAU_future_of_Arabia
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.101.a
+    }
+}
+#flavor event 4, 1 month during civil war
+country_event = {
+    id = saudi.102
+    title = saudi.102.t
+    desc = saudi.102.d
+    picture = GFX_SAU_flavor_event_4
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.102.a
+    }
+}
+#flavor event 5, pre civil war, economic decline
+country_event = {
+    id = saudi.103
+    title = saudi.103.t
+    desc = saudi.103.d
+    picture = GFX_SAU_flavor_event_5
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.103.a
+		add_stability = -0.025
+    }
+}
+#Yemen/Iran/Saudi flavor events# saudi invasion of yemen
+country_event = {
+    id = saudi.104
+    title = saudi.104.t
+    desc = saudi.104.d
+    picture = GFX_SAU_invasion_of_yemen
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.104.a
+    }
+}
+#saudi - Iranian dogfigth
+country_event = {
+    id = saudi.105
+    title = saudi.105.t
+    desc = saudi.105.d
+    picture = GFX_SAU_dogfigth_flavor
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.105.a
+		PER = {
+		add_manpower = -1
+		}
+    }
+}
+#hormuz blockade broken
+country_event = {
+    id = saudi.106
+    title = saudi.106.t
+    desc = saudi.106.d
+    picture = GFX_SAU_straigt_hormuz_free
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.106.a
+		remove_ideas = SAU_Strait_of_Hormuz_Blockade
+    }
+}
+#hormuz blockade remains
+country_event = {
+    id = saudi.107
+    title = saudi.107.t
+    desc = saudi.107.d
+    picture = GFX_SAU_hormuz_defeat
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = saudi.107.a
+		add_war_support = -0.15
+		add_manpower = -7
+    }
+}
+#Post yemen invasion event
+country_event = {
+    id = saudi.108
+    title = saudi.108.t
+    desc = saudi.108.d
+    picture = GFX_SAU_yemen_houti_dead
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	    name = saudi.108.a
+		HOU = {
+		add_manpower = -569
+		}
+    }
+}
+#### PALESTINE/HAMAS EVENTS ####
+# October 7th #
+country_event = {
+    id = saudi.109
+    title = saudi.109.t
+    desc = saudi.109.d
+    picture = GFX_SAU_hamas_israel
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	    name = saudi.109
+		add_war_support = 0.35
+		add_manpower = 50000
+		add_ideas = PAL_final_intifada
+		news_event = { id = news.2021 hours = 1 }
+		declare_war_on = {
+        target = ISR
+        type = annex_everything
+	    }
+    }
+}
+# for palestine after syria invades israel, ask to join war
+country_event = {
+    id = saudi.110
+    title = saudi.110.t
+    desc = saudi.110.d
+    picture = GFX_SAU_hamas_israel
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { #yes we join
+	    name = saudi.110.a
+		SYR = {
+		add_to_faction = yes
+		}
+		add_war_support = 0.35
+		add_manpower = 50000
+		declare_war_on = {
+        target = ISR
+        type = annex_everything
+	    }
+    }
+	option = { #hell nag we aint joining
+	name = saudi.110.b 
+	add_stability = 0.25
+	add_political_power = 100
+	}
+}
+
+#### OHTER SAUD CIVIL WAR FACTION POST WAR CONTENT ####
+## Liberal Content
+# reformation of the penninculare shield forces
+country_event = {
+    id = saudi.111
+    title = saudi.111.t
+    desc = saudi.111.d
+    picture = GFX_Saudi_Spec_Ops
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+        name = saudi.111.a
+        create_faction = peninsula_defence_force
+        
+        hidden_effect = {
+		    set_country_flag = PSF_Member
+			remove_ideas = ISR_Military_Advisors_to_Saudi_Arabia
+            remove_faction_goal = faction_goal_the_atomic_race
+            add_faction_goal = faction_goal_placeholder_long_term
+            remove_faction_goal = faction_goal_a_military_base
+            add_faction_goal = faction_goal_placeholder_medium_term
+            add_faction_goal = faction_goal_placeholder_short_term
+            
+            KUW = { country_event = { id = saudi.112 } }
+            UAE = { country_event = { id = saudi.112 } }
+            OMA = { country_event = { id = saudi.112 } }
+            BAH = { country_event = { id = saudi.112 } }
+            QAT = { country_event = { id = saudi.112 } }
+        }
+    }
+}
+
+# Invitation of the PSF
+country_event = {
+    id = saudi.112
+    title = saudi.112.t
+    desc = saudi.112.d
+    picture = GFX_Saudi_Spec_Ops
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+        name = saudi.112.a # Yes
+        
+        FROM = {
+            add_to_faction = ROOT
+        }
+        
+		set_country_flag = PSF_Member
+		
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.05
+        }
+        
+        ai_chance = {
+            amount = 80
+        }
+    }
+    
+    option = {
+        name = saudi.112.b # No
+        add_political_power = -100
+        
+        add_opinion_modifier = {
+            target = ARR
+            modifier = strained_relations
+        }
+        
+        ARR = {
+            add_opinion_modifier = {
+                target = ROOT
+                modifier = strained_relations
+            }
+        }
+        
+        ai_chance = {
+            amount = 20
+        }
+    }
+}
+
+## ROC ( Royal saudi coalition ) Content 
+
+country_event = {
+    id = saudi.113
+    title = saudi.113.t
+    desc = saudi.113.d
+    picture = GFX_Saudi_Spec_Ops
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+        name = saudi.113.a
+		create_faction = peninsula_shield_force
+		set_country_flag = PSF_Member
+	    hidden_effect = {
+		remove_faction_goal = faction_goal_the_atomic_race
+		add_faction_goal = faction_goal_placeholder_long_term
+		remove_faction_goal = faction_goal_a_military_base
+		add_faction_goal = faction_goal_placeholder_medium_term
+		add_faction_goal = faction_goal_placeholder_short_term
+	}
+	add_to_faction = SAU
+	add_to_faction = KUW
+	add_to_faction = OMA
+	add_to_faction = UAE
+	add_to_faction = QAT
+	add_to_faction = BAH
+	}
+}
+
+#### GENERIC FOR ALL FACTIONS
+## invasion of houti yemen
+country_event = {
+    id = saudi.114
+    title = saudi.114.t
+    desc = saudi.114.d
+    picture = GFX_Saudi_Spec_Ops
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+	names = saudi.114
+	if = {
+        limit = {
+		tag = ARR
+		}
+		
+		HOU = {
+		leave_faction = yes
+		}
+		
+		ARR = {
+		declare_war_on = {
+			target = HOU
+			type = annex_everything
+		    }
+		}
+	}
+	if = {
+	    limit = {
+		tag = ROC
+		}
+		
+		HOU = {
+		leave_faction = yes
+		}
+		
+		ROC = {
+		declare_war_on = {
+			target = HOU
+			type = annex_everything
+			    }
+		    }
+		}
+	}
+}

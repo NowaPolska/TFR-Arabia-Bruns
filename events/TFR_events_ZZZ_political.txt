@@ -1,0 +1,555 @@
+﻿add_namespace = generic
+# You're A Cheater
+country_event = {
+	id = generic.0
+	title = generic.0.t
+	desc = generic.0.desc
+	picture = GFX_Development_Academic
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.0 immediate"
+		}
+	}
+	option = {
+		name = generic.0.a
+		add_manpower = -1
+	}
+}
+
+# Academic Development Increases
+country_event = {
+	id = generic.1
+	title = generic.1.t
+	desc = generic.1.desc
+	picture = GFX_Development_Academic
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = highest_academic
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.1 immediate"
+		}
+	}
+	option = {
+		name = generic.1.a
+	}
+}
+
+# Academic Development Decreases
+country_event = {
+	id = generic.2
+	title = generic.2.t
+	desc = generic.2.desc
+	picture = GFX_Development_Academic
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = lower_academic
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.2 immediate"
+		}
+	}
+	option = {
+		name = generic.2.a
+	}
+}
+
+# Academic Development Max
+country_event = {
+	id = generic.3
+	title = generic.3.t
+	desc = generic.3.desc
+	picture = GFX_Development_Academic
+	is_triggered_only = yes
+	trigger = {
+		has_idea = highest_academic
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.3 immediate"
+		}
+	}
+	option = {
+		name = generic_research_boost_idea
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				has_idea = generic_research_boost_idea
+			}
+			modify_timed_idea = {
+				idea = generic_research_boost_idea
+				days = 175
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = generic_research_boost_idea
+				days = 175
+			}
+		}
+	}
+}
+
+# Farming Development Increases
+country_event = {
+	id = generic.4
+	title = generic.4.t
+	desc = generic.4.desc
+	picture = GFX_Development_Farming
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = highest_farming
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.4 immediate"
+		}
+	}
+	option = {
+		name = generic.4.a
+	}
+}
+
+# Farming Development Decreases
+country_event = {
+	id = generic.5
+	title = generic.5.t
+	desc = generic.5.desc
+	picture = GFX_Development_Farming
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = lower_farming
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.5 immediate"
+		}
+	}
+	option = {
+		name = generic.5.a
+	}
+}
+
+# Farming Development Max
+country_event = {
+	id = generic.6
+	title = generic.6.t
+	desc = generic.6.desc
+	picture = GFX_Development_Farming
+	is_triggered_only = yes
+	trigger = {
+		has_idea = highest_farming
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.6 immediate"
+		}
+	}
+	option = {
+		name = generic_population_boost_idea
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				has_idea = generic_population_boost_idea
+			}
+			modify_timed_idea = {
+				idea = generic_population_boost_idea
+				days = 175
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = generic_population_boost_idea
+				days = 175
+			}
+		}
+	}
+}
+
+# Poverty Development Increases
+country_event = {
+	id = generic.7
+	title = generic.7.t
+	desc = generic.7.desc
+	picture = GFX_Academic_Poverty
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = highest_poverty
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.7 immediate"
+		}
+	}
+	option = {
+		name = generic.7.a
+	}
+}
+
+# Poverty Development Decreases
+country_event = {
+	id = generic.8
+	title = generic.8.t
+	desc = generic.8.desc
+	picture = GFX_Academic_Poverty
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = lower_poverty
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.8 immediate"
+		}
+	}
+	option = {
+		name = generic.8.a
+	}
+}
+
+# Poverty Development Max
+country_event = {
+	id = generic.9
+	title = generic.9.t
+	desc = generic.9.desc
+	picture = GFX_Academic_Poverty
+	is_triggered_only = yes
+	trigger = {
+		has_idea = highest_poverty
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.9 immediate"
+		}
+	}
+	option = {
+		name = generic_stability_boost_idea
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				has_idea = generic_stability_boost_idea
+			}
+			modify_timed_idea = {
+				idea = generic_stability_boost_idea
+				days = 175
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = generic_stability_boost_idea
+				days = 175
+			}
+		}
+	}
+}
+
+# Industrial Development Increases
+country_event = {
+	id = generic.10
+	title = generic.10.t
+	desc = generic.10.desc
+	picture = GFX_Development_Industry
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = highest_industry
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.10 immediate"
+		}
+	}
+	option = {
+		name = generic.10.a
+	}
+}
+
+# Industrial Development Decreases
+country_event = {
+	id = generic.11
+	title = generic.11.t
+	desc = generic.11.desc
+	picture = GFX_Development_Industry
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = lower_industry
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.11 immediate"
+		}
+	}
+	option = {
+		name = generic.11.a
+	}
+}
+
+# Industrial Development Max
+country_event = {
+	id = generic.12
+	title = generic.12.t
+	desc = generic.12.desc
+	picture = GFX_Development_Industry
+	is_triggered_only = yes
+	trigger = {
+		has_idea = highest_industry
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.12 immediate"
+		}
+	}
+	option = {
+		name = generic_construction_boost_idea
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				has_idea = generic_construction_boost_idea
+			}
+			modify_timed_idea = {
+				idea = generic_construction_boost_idea
+				days = 175
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = generic_construction_boost_idea
+				days = 175
+			}
+		}
+	}
+}
+
+# Military Development Increases
+country_event = {
+	id = generic.13
+	title = generic.13.t
+	desc = generic.13.desc
+	picture = GFX_Development_Military
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = highest_military
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.13 immediate"
+		}
+	}
+	option = {
+		name = generic.13.a
+	}
+}
+
+# Military Development Decreases
+country_event = {
+	id = generic.14
+	title = generic.14.t
+	desc = generic.14.desc
+	picture = GFX_Development_Military
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = lower_military
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.14 immediate"
+		}
+	}
+	option = {
+		name = generic.14.a
+	}
+}
+
+# Military Development Max
+country_event = {
+	id = generic.15
+	title = generic.15.t
+	desc = generic.15.desc
+	picture = GFX_Development_Military
+	is_triggered_only = yes
+	trigger = {
+		has_idea = highest_military
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.15 immediate"
+		}
+	}
+	option = {
+		name = generic_organization_boost_idea
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				has_idea = generic_organization_boost_idea
+			}
+			modify_timed_idea = {
+				idea = generic_organization_boost_idea
+				days = 175
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = generic_organization_boost_idea
+				days = 175
+			}
+		}
+	}
+}
+
+# Society Development Increases
+country_event = {
+	id = generic.16
+	title = generic.16.t
+	desc = generic.16.desc
+	picture = GFX_Development_Society
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = highest_society
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.16 immediate"
+		}
+	}
+	option = {
+		name = generic.16.a
+	}
+}
+
+# Society Development Decreases
+country_event = {
+	id = generic.17
+	title = generic.17.t
+	desc = generic.17.desc
+	picture = GFX_Development_Society
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_idea = lower_society
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.17 immediate"
+		}
+	}
+	option = {
+		name = generic.17.a
+	}
+}
+
+# Society Development Max
+country_event = {
+	id = generic.18
+	title = generic.18.t
+	desc = generic.18.desc
+	picture = GFX_Development_Society
+	is_triggered_only = yes
+	trigger = {
+		has_idea = highest_society
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.18 immediate"
+		}
+	}
+	option = {
+		name = generic_political_power_boost_idea
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				has_idea = generic_political_power_boost_idea
+			}
+			modify_timed_idea = {
+				idea = generic_political_power_boost_idea
+				days = 175
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = generic_political_power_boost_idea
+				days = 175
+			}
+		}
+	}
+}
+
+# Notification event that leader has been wounded
+unit_leader_event = {
+	id = generic.19
+	title = generic.19.t
+	desc = generic.19.d
+	picture = GFX_report_event_military_planning
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event generic.19 immediate"
+		}
+	}
+	option = {
+		name = unfortunate
+		effect_tooltip = {
+			FROM = {
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+#WARNING: Nation withouut Content
+country_event = {
+	id = generic.20
+	title = generic.20.t
+	desc = generic.20.d
+	picture = GFX_generic_fire
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+		NOT = {
+		tag = SAU
+		}
+	}
+	option = {
+		name = generic.20.a
+	}
+}

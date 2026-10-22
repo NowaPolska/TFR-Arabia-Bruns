@@ -1,0 +1,186 @@
+﻿add_namespace = romania
+
+#2024 elections
+country_event = {
+	id = romania.1
+	title = romania.1.t
+	desc = romania.1.d
+	picture = GFX_election
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = romania.1.a
+		 retire_country_leader = yes
+		recruit_character = ROM_Marcel_Ciolacu_char
+		promote_character = ROM_Marcel_Ciolacu_char
+		set_politics = {
+			ruling_party = social_democrat 
+			last_election = "2024.11.24"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = social_democrat 
+            popularity = 0.25
+        }
+	}
+	option = {
+	name = romania.1.b
+    retire_country_leader = yes
+		recruit_character = ROM_Calin_Georgescu_char
+		promote_character = ROM_Calin_Georgescu_char
+		set_politics = {
+			ruling_party = conservative
+			last_election = "2024.11.24"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.3
+        }
+	}
+	option = {
+	name = romania.1.c
+    retire_country_leader = yes
+		recruit_character = ROM_George_Simion_char
+		promote_character = ROM_George_Simion_char
+		set_politics = {
+			ruling_party = conservative
+			last_election = "2024.11.24"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.3
+        }
+	}
+	option = {
+	name = romania.1.e
+    retire_country_leader = yes
+		recruit_character = ROM_Ludovic_Orban_char
+		promote_character = ROM_Ludovic_Orban_char
+		set_politics = {
+			ruling_party = conservative
+			last_election = "2024.11.24"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.3
+        }
+	}
+	option = {
+	name = romania.1.f
+    retire_country_leader = yes
+		recruit_character = ROM_Diana_Șoșoacă_char
+		promote_character = ROM_Diana_Șoșoacă_char
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			last_election = "2024.11.24"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = authoritarian_democrat
+            popularity = 0.25
+        }
+	}
+	option = {
+	name = romania.1.g
+    retire_country_leader = yes
+		recruit_character = ROM_Nicolae_Ciucă_char
+		promote_character = ROM_Nicolae_Ciucă_char
+		set_politics = {
+			ruling_party = market_liberal
+			last_election = "2024.11.24"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.1
+        }
+	}
+}
+country_event = {
+	id = romania.2
+	title = romania.2.t
+	desc = romania.2.d
+	picture = GFX_election
+	
+	is_triggered_only = yes
+	
+	option = { #Monarchist civil War
+		name = romania.2.a
+        WLC = {
+        	transfer_state = 84
+        	transfer_state = 899
+        	declare_war_on = {
+				target = ROM
+				type = civil_war
+			}
+        }
+        ROM = {
+        	transfer_units_fraction= {
+				target = WLC
+				size = 0.5
+				stockpile_ratio = 0.3
+				army_ratio = 0.6
+				air_ratio = 0.3
+			}
+        }
+	}
+    
+}
+country_event = { #Pro-France Identitarian Coup
+	id = romania.3
+	title = romania.3.t
+	desc = romania.3.d
+	picture = GFX_election
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = romania.3.a
+		FAF = {
+			puppet = WLC
+		}
+       	set_politics = {
+			ruling_party = national_socialist
+			last_election = "2017.4.23"
+			election_frequency = 72
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = { #2025 Presidential Elections
+	id = romania.4
+	title = romania.4.t
+	desc = romania.4.d
+	picture = GFX_election
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = romania.4.a
+		promote_character = ROM_nicusor_dan_char
+       	set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+            ideology = social_liberal
+            popularity = 0.1
+        }
+		set_party_name = {
+			ideology = social_liberal
+			long_name = ROM_bolojan_cabinet_party
+			name = ROM_bolojan_cabinet_party
+		}
+	}
+}

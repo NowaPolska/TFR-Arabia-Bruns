@@ -1,0 +1,925 @@
+﻿add_namespace = poland
+
+#Sons of Pilsudski coup
+country_event = {
+	id = poland.1
+	title = poland.1.t
+	desc = poland.1.d
+	picture = GFX_polish_larp
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = POL_spirit_of_the_warsaw_uprising
+			set_party_name = { 
+				ideology = authoritarian_democrat  
+				name = PLD_authdem_association_of_army
+				long_name = PLD_authdem_association_of_army_long
+			}
+			set_party_name = { 
+				ideology = fascist
+				name = PLD_fascist_association_of_army 
+				long_name = PLD_fascist_association_of_army_long
+			}
+			set_party_name = { 
+				ideology = nationalist  
+				name = PLD_nationalist_association_of_army 
+				long_name = PLD_nationalist_association_of_army_long
+			}
+			add_ideas = {
+				lower_immigration
+				lower_education
+				low_race
+				medium_female
+				low_prison
+				highest_police
+				high_conscription
+				higher_female_service
+				medium_supervision
+				high_training
+				medium_racial_integration
+				religious_exemptions
+				permanent_mobilization
+				low_trade_autarky
+				higher_taxes
+				lower_interest_rates
+				lower_welfare
+				medium_safety
+				medium_academic
+				low_farming
+				low_poverty
+				medium_industry
+				medium_military
+				medium_society
+			}
+			if = {
+				limit = {
+					has_idea = visegrad_group_member
+				}
+				remove_ideas = visegrad_group_member
+			}
+			remove_ideas = POL_eurosceptic_divide_idea
+		}
+	}
+	
+	option = {
+		name = poland.1.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = nationalist
+			last_election = "2022.04.10"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_cosmetic_tag = PLD_National_Government
+		set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
+		add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var_temp = token:fascist }
+		add_to_coalition = yes
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.35
+		}
+	}
+}
+
+
+
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛        Election Events         ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+country_event = {    #2025 elections#
+	id = poland.2
+	title = poland.2.t
+	desc = poland.2.d
+	picture = GFX_generic_elections
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = poland.2.a
+		set_politics = {
+			ruling_party = social_liberal
+			last_election = "2025.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.10
+			ideology = social_liberal
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+			    factor = 0
+			    OR = {
+			        has_game_rule = {
+			            rule = The_PLD_25_Election
+			            option = The_PLD_25_Election_PiS
+			        }
+			    }
+			}
+		}
+		remove_ideas = PLD_Strong_PIS_Opposition
+    if = {
+        limit = {
+            has_idea = PLD_Dreams_of_Liberal_Hegemony
+        }
+        swap_ideas = {
+            remove_idea = PLD_Dreams_of_Liberal_Hegemony
+            add_idea = PLD_The_Polish_Liberal_Hegemon
+        }
+    }
+}
+	option = {
+		name = poland.2.b
+		promote_character = PLD_karol_nawrocki_char
+		set_politics = {
+			ruling_party = conservative
+			last_election = "2025.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.05
+			ideology = conservative
+		}
+		add_popularity = {
+			popularity = 0.05
+			ideology = authoritarian_democrat
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				add = 30
+				OR = {
+					SOV = {
+						has_government = communist
+					}
+					SOV = {
+						has_government = fascist
+					}
+				}
+			}
+			modifier = {
+			    factor = 0
+			    OR = {
+			        has_game_rule = {
+			            rule = The_PLD_25_Election
+			            option = The_PLD_25_Election_Civic_Platform
+			        }
+			    }
+			}
+		}
+	}
+	option = { 
+	name = poland.2.c
+	recruit_character = PLD_Magdalena_Biejat_char
+    promote_character = PLD_Magdalena_Biejat_char
+		set_politics = {
+			ruling_party = social_democrat
+			last_election = "2025.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.14
+			ideology = social_democrat
+		}
+		add_popularity = {
+			popularity = 0.03
+			ideology = libertarian_socialist
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = {
+	name = poland.2.e
+	recruit_character = PLD_Slawomir_Mentzen_char
+	promote_character = PLD_Slawomir_Mentzen_char
+	add_ideas = PLD_Mentzens_Agenda
+	    set_politics = {
+			ruling_party = authoritarian_democrat
+			last_election = "2025.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.15
+			ideology = authoritarian_democrat
+		}
+		add_popularity = {
+			popularity = 0.03
+			ideology = conservative
+		}
+		add_popularity = {
+			popularity = 0.01
+			ideology = fascist 
+		}
+		ai_chance = {
+			factor = 25
+			}
+	    }
+	}
+
+country_event = {
+	id = poland.3
+	title = poland.3.t
+	desc = poland.3.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = poland.3.a
+		set_politics = {
+			ruling_party = social_liberal
+			last_election = "2020.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.10
+			ideology = social_liberal
+		}
+		news_event = { id = news.2001 }
+		add_ideas = PLD_Unfrozen_EU_Funds
+		add_ideas = PLD_Dreams_of_Liberal_Hegemony
+		add_ideas = PLD_Strong_PIS_Opposition
+	}
+	option = {
+		name = poland.3.b
+		set_politics = {
+			ruling_party = conservative
+			last_election = "2020.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.075
+			ideology = conservative
+		}
+		add_popularity = {
+			popularity = 0.05
+			ideology = authoritarian_democrat
+		}
+		news_event = { id = news.2000 }
+		swap_ideas = {
+		remove_idea = PLD_Dudas_Presidency
+		add_idea = PLD_PIS_Entrenced
+		}
+	}
+    option = {
+	    name = poland.3.c
+		set_politics = {
+			ruling_party = social_democrat
+			last_election = "2020.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.2
+			ideology = social_democrat
+		}
+		add_popularity = {
+			popularity = 0.05
+			ideology = libertarian_socialist
+		}
+		news_event = { id = news.2003 }
+		add_ideas = high_safety
+		add_ideas = high_welfare
+		add_ideas = PLD_The_Workers_Dream
+		add_ideas = PLD_Strong_Social_safty_net
+		add_timed_idea = {
+		idea = PLD_strong_conservative_opposition
+		days = 365
+		}
+	}
+	option = {
+	    name = poland.3.e
+		set_party_name = { 
+		ideology = libertarian_socialist
+		long_name = "Unia Pracy"
+        name = "UP"
+		}
+		set_politics = {
+			ruling_party = libertarian_socialist
+			last_election = "2020.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.07
+			ideology = social_democrat
+		}
+		add_popularity = {
+			popularity = 0.2
+			ideology = libertarian_socialist
+		}
+		news_event = { id = news.2004 }
+		add_ideas = high_safety
+		add_ideas = high_welfare
+		add_ideas = PLD_The_Workers_Dream
+		add_ideas = PLD_Strong_Social_safty_net
+		add_timed_idea = {
+		idea = PLD_strong_conservative_opposition
+		days = 365
+		}
+	}
+    option = {
+	    name = poland.3.f
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			last_election = "2020.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.05
+			ideology = conservative
+		}
+		add_popularity = {
+			popularity = 0.25
+			ideology = authoritarian_democrat
+		}
+		add_popularity = {
+			popularity = 0.03
+			ideology = fascist
+		}
+		news_event = { id = news.2002 }
+		add_ideas = PLD_Fortress_Poland
+		add_ideas = PLD_Total_electoral_deadlock
+		add_ideas = PLD_Liberitarian_shock_therapy
+		add_ideas = low_taxes
+		add_ideas = low_welfare
+	}
+    option = {
+	    name = poland.3.g
+		set_politics = {
+			ruling_party = market_liberal
+			last_election = "2020.06.01"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_popularity = {
+			popularity = 0.17
+			ideology = market_liberal
+		}
+		add_popularity = {
+			popularity = 0.03
+			ideology = social_liberal
+		}
+		news_event = { id = news.2005 }
+		add_ideas = PLD_Polish_Agrarianism
+		add_ideas = PLD_Dis_united_PSL
+		#set_temp_variable = { coalition_partner_var_temp = token:social_liberal }#
+        #add_to_coalition = yes#
+	}
+}
+
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛      confederatia events       ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+country_event = {
+	id = poland.4
+	title = poland.4.t
+	desc = poland.4.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = PLD # Sorgt dafür, dass NUR Polen das Event bekommen kann
+		has_government = authoritarian_democrat
+		date > 2021.4.1
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = poland.4.a   #⬛Deal with the devil aka PIS⬛#
+		remove_ideas = PLD_Total_electoral_deadlock
+		add_ideas = PLD_confederatia_PIS_coalition_goverment
+		set_temp_variable = { coalition_partner_var_temp = token:conservative }
+        add_to_coalition = yes
+	}
+	option = {   
+	    name = poland.4.b  #⬛Fuck you PIS-tards (Bosak will resign after this)⬛#
+		add_popularity = {
+		popularity = -0.05
+		ideology = authoritarian_democrat
+		}
+		PLD = {
+		country_event = {
+			id = poland.5
+			days = 35
+		    }
+	    }
+    }
+}
+
+country_event = {  #Bosak Resigns#
+	id = poland.5
+	title = poland.5.t
+	desc = poland.5.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+	name = poland.5.a
+	add_stability = -0.05
+	retire_country_leader = yes
+	recruit_character = PLD_Anna_Brylka_char
+	promote_character = PLD_Anna_Brylka_char
+	remove_ideas = PLD_Fortress_Poland
+	remove_ideas = PLD_Liberitarian_shock_therapy
+	PLD = {
+	country_event = {
+		id = poland.6
+		days = 35
+	        }
+	    }
+    }
+}
+
+country_event = {  #How to end the dead lock?#
+	id = poland.6
+	title = poland.6.t
+	desc = poland.6.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = {    #make consession to the opposition#
+	name = poland.6.a
+	political_power = -150
+	add_stability = 0.1
+	remove_ideas = PLD_Total_electoral_deadlock
+	add_popularity = {
+	popularity = 0.03
+	ideology = social_liberal
+	}
+	add_popularity = {
+	popularity = 0.03
+	ideology = conservative
+	    }
+    }
+    option = {   #what if we just do fucking nothing#
+	name = poland.6.b
+	add_political_power = 75
+	PLD = {
+	country_event = {
+		id = poland.7
+		days = 100
+	        }
+	    }
+    }
+}
+
+country_event = {  #Anna impeached 
+	id = poland.7
+	title = poland.7.t
+	desc = poland.7.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	 
+	option = {
+	add_stability = -0.1
+    retire_country_leader = yes
+	recruit_character = PLD_polska_wappen_char
+	promote_character = PLD_polska_wappen_char
+	add_ideas = PLD_all_hope_gone
+	set_party_name = {
+	ideology = authoritarian_democrat
+	long_name = "Polish Emergency Goverment"
+    name = "Polish Emergency Goverment"
+	}
+	PLD = {
+	country_event = {
+		id = poland.8
+		days = 35
+		    }
+	    }
+	}
+}
+
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛  Braun and commi + other subpaths ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+country_event = {  #polish snap elections
+	id = poland.8
+	title = poland.8.t
+	desc = poland.8.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+    name = poland.8.a   #PIS saves poland
+	add_stability = 0.2
+	set_politics = {
+	ruling_party = conservative
+	}
+	add_popularity = {
+	popularity = 0.12
+	ideology = conservative
+	}
+	remove_ideas = PLD_all_hope_gone
+	add_timed_idea = {
+	idea = PLD_Healing_a_Broken_Nation
+	days = 365
+	    }
+    }
+	option = {
+	name = poland.8.b #KO saves poland
+	add_stability = 0.2
+	set_politics = {
+	ruling_party = social_liberal
+	}
+	add_popularity = {
+	popularity = 0.12
+	ideology = social_liberal
+	}
+	remove_ideas = PLD_all_hope_gone
+	add_timed_idea = {
+	idea = PLD_Healing_a_Broken_Nation
+	days = 365                                                            
+	    }                                     
+    }
+	option = {
+	name = poland.8.c #GAMER BRAUN WINS THE ElectionS AAXXAXAXAAXAXXAXAXAXAXXAXAXAXA SIGMA#    
+	set_country_flag = PLD_fascist_goverment
+	set_politics = {
+	ruling_party = fascist
+	}
+	add_popularity = {
+	popularity = 0.12
+	ideology = fascist
+	}
+	remove_ideas = PLD_all_hope_gone
+	add_ideas = PLD_the_Rise_of_Evil
+	add_ideas = PLD_Judeo_Bolshewik_Resistance
+	add_ideas = lower_immigration
+	add_ideas = higher_police
+	add_ideas = low_female
+	add_ideas = low_prison
+	add_ideas = lower_race
+	add_ideas = low_safety
+	add_ideas = low_welfare
+	add_ideas = low_racial_intergration
+	add_ideas = low_trade_autarky
+	#add_ideas = { ZZZ_presidential_dictatorship }#
+	add_ideas = { ZZZ_provisional_government }
+	add_ideas = { ZZZ_oligopolistic_capitalism }
+	add_ideas = lower_poverty
+	PLD = {
+	    country_event = {
+		id = poland.9
+		days = 35
+	        }
+	    }
+    }
+	option = {
+	name = poland.8.d  #commi dih yum yum so good#
+    set_country_flag = PLD_communist_goverment
+	set_party_name = {
+	ideology = communist
+	long_name = "Polska Zjednoczona Partia Robotnicza"
+    name = "PZPR"
+	}
+	set_party_name = {
+	ideology = totalitarian_socialist
+	long_name = "Partia Uni Bolshewitskoł Polski"
+    name = "PUBP"
+	}
+	set_temp_variable = { coalition_partner_var_temp = token:totalitarian_socialist }
+    add_to_coalition = yes
+	set_politics = {
+	ruling_party = communist
+	}
+	add_popularity = {
+	popularity = 0.12
+	ideology = communist
+	}
+	add_popularity = {
+	popularity = 0.05
+	ideology = totalitarian_socialist
+	}
+	remove_ideas = PLD_all_hope_gone
+	add_ideas = PLD_Bourgeoisie_Reactonary_Terrorism
+	add_ideas = PLD_Return_of_the_Red_Plague
+	add_ideas = PLD_Hyper_inflation
+	add_ideas = low_prison
+	add_ideas = high_female
+	add_ideas = high_safety
+	add_ideas = highest_police
+	add_ideas = low_race
+	add_ideas = low_trade
+	add_ideas = higher_interest_rates
+	add_ideas = lower_poverty
+	add_ideas = medium_academic
+	add_ideas = { ZZZ_planned_economy }
+	add_ideas = { ZZZ_provisional_government }
+	PLD = {
+	    country_event = {
+		id = poland.9
+		days = 35
+	        }
+	    }
+    }
+}
+
+country_event = {  #Army coup attemed
+	id = poland.9
+	title = poland.9.t
+	desc = poland.9.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {  #coup is succsefull
+	name = poland.9.a
+	add_stability = 0.25
+	add_popularity = {
+	popularity = 0.2
+	ideology = nationalist
+	}
+	set_politics = {
+	ruling_party = nationalist
+	}
+	remove_temp_variable = { coalition_partner_var_temp = token:totalitarian_socialist }
+    add_to_coalition = no
+	add_ideas = medium_poverty
+	add_ideas = { ZZZ_military_dictatorship }
+	add_ideas = { ZZZ_military_controlled_economy }
+	add_ideas = PLD_Healing_a_Broken_Nation
+	}
+    option = {  #Braun/commi survive coup#
+	name = poland.9.b
+	add_stability = 0.1
+	add_popularity = {
+	popularity = 0.1
+	ideology = communist
+	}
+	add_popularity = {
+	popularity = 0.1
+	ideology = fascist
+	}
+	if = {
+		limit = {
+			has_country_flag = PLD_fascist_goverment
+		}
+		PLD = {
+			country_event = {
+				id = poland.10
+				days = 35
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = PLD_communist_goverment
+		}
+		PLD = {
+			country_event = {
+				id = poland.11
+				days = 35
+			    }
+		    }
+	    }
+    }
+}
+
+country_event = {  #Braun tries to consolidate power
+	id = poland.10
+	title = poland.10.t
+	desc = poland.10.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {  #Braun is succsefull
+	name = poland.10.a
+	set_country_flag = PLD_Elections_blocked
+	add_stability = 0.2
+	remove_ideas = PLD_Judeo_Bolshewik_Resistance
+	remove_ideas = PLD_the_Rise_of_Evil
+	add_ideas = PLD_Fascism_with_polish_charactaristics
+	}
+    #option = { #Braun fails, poland falls into an civilwar
+	#name = poland.10.b
+	set_country_flag = PLD_Elections_blocked
+	add_stability = -0.3
+	add_political_power = -300
+	PLD = {
+	    country_event = {
+		id = poland.12
+		days = 35
+	        }
+	    }
+    }
+}
+
+country_event = {  #commies tries to consolidate power
+	id = poland.11
+	title = poland.11.t
+	desc = poland.11.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {  #commie is succsefull
+	name = poland.11.a
+	set_country_flag = PLD_Elections_blocked
+	add_stability = 0.2
+	remove_ideas = PLD_Bourgeoisie_Reactonary_Terrorism
+	remove_ideas = PLD_Hyper_inflation
+	add_ideas = PLD_Salvation_of_Poland
+	}
+    #option = { #commie fails, poland falls into an civilwar
+	#name = poland.11.b
+	set_country_flag = PLD_Elections_blocked
+	add_stability = -0.3
+	add_political_power = -300
+	PLD = {
+	    country_event = {
+		id = poland.12
+		days = 35
+	        }
+	    }	
+    }
+}
+	
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛     Polish  civilwar events      ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#	
+	
+#country_event = {  #⬛Polish civilwar beginns⬛#
+    #id = poland.12
+	#title = poland.12.t
+	#desc = poland.12.d
+	#picture = GFX_generic_elections
+	
+	fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+    name = poland.12.a
+
+    # --- Białystok (BPR) ---  #⬛country Terretory and armyies⬛#
+    BPR = {
+        transfer_state = 97
+        add_state_core = 97
+        load_oob = "BPR_2020"
+    }
+
+    # --- Slesia (SIL) ---
+    SIL = {
+        transfer_state = 67
+        add_state_core = 67
+        add_state_core = 66
+    }
+    
+	# --- Eu in Poland (EUP) ---
+	EUP = {
+	    transfer_state = 742
+		add_state_core = 742
+		load_oob = "EUP_2020"
+		add_ideas = EUP_European_Economic_Support
+	}
+	
+    # --- Masovia (MAV) ---
+	MAV = {
+	    transfer_state = 98
+		add_state_core = 98
+		add_ideas = MAV_70_Million_Zloty
+		add_ideas = MAV_Last_Reminants_of_PIS
+	}
+		
+	# --- Lizzard Union (LIZ) ---
+    LIZ = {
+	    transfer_state = 743
+		add_state_core = 743
+		add_state_core = 742
+		add_state_core = 86
+		add_ideas = LIZ_Figth_to_Save_Poland
+		load_oob = "LIZ_2020"
+		}
+	
+	# --- Polish Sal. Army (PLA) ---
+	PLA = {
+	    transfer_state = 88
+		add_state_core = 88
+		add_state_core = 90
+		add_state_core = 67
+		add_state_core = 92
+		add_state_core = 855
+		add_ideas = PLA_Polands_Last_Hope_of_Salvation
+		add_ideas = PLA_Dis_United_Front
+		}
+	
+	# --- Polish peoples Rep. (MLD) ---
+	MLD = {
+	    transfer_state = 85
+		add_state_core = 85
+		set_politics = {
+		ruling_party = communist
+		}
+		add_popularity = {
+		popularity = 0.3
+		ideology = communist
+		}
+        add_popularity = {
+		popularity = 0.1
+		ideology = totalitarian_socialist
+		}
+		set_temp_variable = { coalition_partner_var_temp = token:totalitarian_socialist }
+        add_to_coalition = yes
+    set_party_name = {
+    	ideology = libertarian_socialist 
+    	long_name = "Nowa lewica"
+    	name = "Nowa lewica"
+	}
+	set_party_name = {
+    	ideology = social_democrat 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = social_liberal 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+	   	ideology = market_liberal 
+    	long_name = SOV_outlawed_party
+		name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = conservative 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = authoritarian_democrat 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = nationalist 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = fascist 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = national_socialist 
+    	long_name = SOV_outlawed_party
+		name = SOV_outlawed_party
+	}
+	add_ideas = PLD_Salvation_of_Poland
+	add_ideas = PLD_Bourgeoisie_Reactonary_Terrorism
+	add_ideas = { ZZZ_planned_economy }
+	add_ideas = { ZZZ_communist_party_state }
+	}
+    
+	# --- Holy state of poland (HOP) ---
+	HOP = {
+	    transfer_state = 90
+		add_state_core = 90
+	}
+	
+	# --- Nowa Polska (NPL) ---
+	NPL = {
+	    transfer_state = 66
+		add_state_core = 66
+		add_state_core = 67
+	}
+	}
+}
+
+	    
+
+
+	
