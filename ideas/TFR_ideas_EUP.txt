@@ -1,0 +1,31 @@
+ideas = {
+    country = {
+	    EUP_European_Economic_Support = {
+	    picture = missing_picture
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.20
+				income_growth_factor = 0.15
+				consumer_goods_factor = -0.125
+				production_speed_buildings_factor = 0.125
+				production_speed_infrastructure_factor = 0.075
+				production_speed_industrial_complex_factor = 0.075
+				military_factory_donations = 4
+				industrial_park_donations = 6
+			}
+		}
+	}
+}	

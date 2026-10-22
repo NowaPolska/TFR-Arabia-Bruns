@@ -1,0 +1,2604 @@
+ideas = {	
+	hidden_ideas = {
+	
+		Additional_negative_gdp_fix = { #If any country is really bad at GDP managing and has negative GDP, feel free to add this modifier to them at the start in their respective history file!
+			allowed = {
+				always = no
+			}
+			modifier = {
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.50
+				battalion_upkeep_factor = -0.90
+			}
+		}
+		
+		#CHI_gdp_fix = {
+		#	allowed = {
+		#		always = no
+		#	}
+		#	modifier = {
+		#		#income_growth_factor = 0.1
+		#		business_value_factor = 0.58
+		#		personal_value_factor = 0.5
+		#	}
+		#}
+		
+		SOV_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				income_growth_factor = -0.0425
+				personal_value_factor = -0.08
+				personal_expense_factor = -0.57
+				#personal_expense = -0.05
+				military_factory_upkeep_factor = -0.23
+				dockyard_upkeep_factor = -0.2
+			}
+		}
+		
+		RAJ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.50
+				personal_value_factor = -0.42
+			}
+		}
+		
+		JAP_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.30
+				personal_value_factor = 0.22
+			}
+		}
+		
+		BRA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.75
+				income_growth_factor = 0.75
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		ENG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.1
+				personal_value_factor = 0.1
+				income_growth_factor = 0.1
+				expense_growth_factor = -0.1
+			}
+		}
+		
+		SAF_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = -0.85
+				expense_growth_factor = -0.85
+				#business_value_factor = -1.30
+				#personal_value_factor = -1.80
+				#personal_expense_factor = -1.85
+			}
+		}
+		
+		CFF_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = -0.85
+				expense_growth_factor = -0.85
+				#business_value_factor = -1.5
+				#business_value_factor = -1.5
+				#personal_expense_factor = -0.99
+			}
+		}
+		
+		EFF_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = -0.85
+				expense_growth_factor = -0.85
+				#business_value_factor = -1.5
+				#business_value_factor = -1.5
+				#personal_expense_factor = -0.99
+			}
+		}
+		
+		LES_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = -0.85
+				expense_growth_factor = -0.85
+				#business_value_factor = -1.5
+				#business_value_factor = -1.5
+				#personal_expense_factor = -0.99
+			}
+		}
+		
+		MEX_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.6
+				personal_value_factor = -0.6
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.35
+				income_growth_factor = 0.68
+				expense_growth_factor = -0.68
+			}
+		}
+					
+		CDJ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.6
+				personal_value_factor = -0.6
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.35
+				income_growth_factor = 0.68
+				expense_growth_factor = -0.68
+			}
+		}
+		
+		CAS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.6
+				personal_value_factor = -0.6
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.35
+				income_growth_factor = 0.68
+				expense_growth_factor = -0.68
+			}
+		}
+		
+		GUC_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.6
+				personal_value_factor = -0.6
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.35
+				income_growth_factor = 0.68
+				expense_growth_factor = -0.68
+			}
+		}
+		
+		LFM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.6
+				personal_value_factor = -0.6
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.35
+				income_growth_factor = 0.68
+				expense_growth_factor = -0.68
+			}
+		}
+		
+		ZAP_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.6
+				personal_value_factor = -0.6
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.35
+				income_growth_factor = 0.68
+				expense_growth_factor = -0.68
+			}
+		}
+		
+		TUR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		NGA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.40
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		INS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.42
+				personal_value_factor = -0.42
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		ITA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.4
+				personal_value_factor = 0.4
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		ETH_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				personal_expense_factor = -0.85
+				#business_value_factor = -0.97
+				#personal_value_factor = -0.95
+				#personal_expense_factor = -0.95
+				battalion_upkeep_factor = -0.5
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		TDF_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -0.97
+				#personal_value_factor = -0.95
+				#personal_expense_factor = -0.95
+				#military_spending_var = -0.5
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		CAN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.4
+				personal_value_factor = 0.4
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.15
+			}
+		}
+		
+		PER_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				personal_expense_factor = -0.95
+				battalion_upkeep_factor = -0.5
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		EGY_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.52
+				income_growth_factor = 0.90
+				expense_growth_factor = -0.90
+			}
+		}
+		
+		BAN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.62
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		CHI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.40
+				personal_value_factor = -0.45
+				personal_expense_factor = -0.05
+			}
+		}
+		
+		KOR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.25
+				personal_value_factor = 0.25
+			}
+		}
+		
+		AST_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.2
+				personal_value_factor = 0.2
+			}
+		}
+		
+		SPR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.15
+				personal_value_factor = 0.1
+				income_growth_factor = 0.15
+				expense_growth_factor = -0.1
+			}
+		}
+		
+		VIN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.53
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		PLD_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.58
+				personal_value_factor = -0.60
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		SAU_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.30
+				personal_value_factor = -0.30
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		ROC_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.30
+				personal_value_factor = -0.30
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		ARR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.30
+				personal_value_factor = -0.30
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		JAH_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.30
+				personal_value_factor = -0.30
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		SAR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.30
+				personal_value_factor = -0.30
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		PAK_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		UKR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.98
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.90
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		SIA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.80
+				personal_value_factor = -0.75
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		PHI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.98
+				personal_value_factor = -0.98
+				personal_expense_factor = -0.45
+				income_growth_factor = 0.90
+				expense_growth_factor = -0.90
+			}
+		}
+		
+		MAL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.70
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		ARG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.60
+				personal_value_factor = -0.65
+				income_growth_factor = 0.80
+				expense_growth_factor = -0.80
+			}
+		}
+		
+		COL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.85
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		CLS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.85
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		FRC_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.85
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		ELN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.85
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		SUD_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.02
+				personal_value_factor = -1.0
+				personal_expense_factor = -1.0
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		ROM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				income_growth_factor = 0.5
+				expense_growth_factor = -0.5
+			}
+		}
+		
+		ALG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.3
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		HOL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.95
+				personal_value_factor = 0.85
+			}
+		}
+		
+		PRU_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				income_growth_factor = 0.99
+				expense_growth_factor = -0.99
+			}
+		}
+		
+		UAE_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.22
+				personal_value_factor = -0.15
+			}
+		}
+		
+		UZB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.87
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		KEN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.67
+				income_growth_factor = 0.15
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		MOR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.50
+				income_growth_factor = 0.15
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		IRQ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		ABK_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		BUK_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		COG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.94
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		BDK_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.94
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		DRO_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.94
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		NDC_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.70
+				personal_value_factor = -0.70
+				personal_expense_factor = -0.70
+				#business_value_factor = -0.90
+				#personal_value_factor = -0.90
+				#personal_expense_factor = -0.90
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		M23_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		MMK_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.94
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+				
+		TZN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.81
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		RCO_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		SIG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.30
+				personal_value_factor = -0.25
+				income_growth_factor = 0.05
+				expense_growth_factor = -0.05
+			}
+		}
+		
+		CHL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.55
+				personal_value_factor = -0.50
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		BEL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.30
+				personal_value_factor = 0.25
+			}
+		}
+		
+		MON_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -1.33
+				personal_value_factor = -1.33
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		GRE_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.75
+				personal_value_factor = -0.7
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		KAZ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.42
+			}
+		}
+		
+		SRL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.63
+				income_growth_factor = 0.90
+				expense_growth_factor = -0.90
+			}
+		}
+		
+		BRM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.8
+				income_growth_factor = 0.8
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		SYR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.12
+				personal_value_factor = -0.99
+				personal_expense_factor = -1.10
+				income_growth_factor = 0.40
+				expense_growth_factor = -0.40
+			}
+		}
+		
+		POR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.55
+				personal_value_factor = -0.45
+				income_growth_factor = 0.15
+				expense_growth_factor = -0.15
+			}
+		}
+		
+		VEN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.8
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		BLR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.60
+				income_growth_factor = 0.75
+				expense_growth_factor = -0.75
+			}
+		}
+		
+		ANG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.50
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		UGA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.89
+				income_growth_factor = 0.80
+				expense_growth_factor = -0.80
+			}
+		}
+		
+		ISR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.23
+				personal_value_factor = 0.15
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		SER_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.90
+				income_growth_factor = 0.60
+				expense_growth_factor = -0.60
+			}
+		}
+		
+		DEN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.05
+			}
+		}
+		
+		AUS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.45
+				personal_value_factor = 0.35
+			}
+		}
+		
+		AZR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.70
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		AFG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.97
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				battalion_upkeep_factor = -0.90
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		TAL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				battalion_upkeep_factor = -0.90
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		SWI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 1.60
+				personal_value_factor = 1.50
+			}
+		}
+		
+		HUN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.60
+				personal_value_factor = -0.50
+				income_growth_factor = 0.20
+				expense_growth_factor = -0.20
+			}
+		}
+		
+		NEP_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.88
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		ECU_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.07
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		GHA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.62
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		PRK_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				#business_value_factor = -1.10
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				business_value_factor = -0.95
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+			}
+		}
+		
+		CAM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.82
+				income_growth_factor = 0.80
+				expense_growth_factor = -0.80
+			}
+		}
+		
+		MAD_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.16
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.2
+				expense_growth_factor = -0.2
+			}
+		}
+		
+		CMR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.85
+				income_growth_factor = 0.80
+				expense_growth_factor = -0.80
+			}
+		}
+		
+		JOR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.75
+				income_growth_factor = 0.40
+				expense_growth_factor = -0.40
+			}
+		}
+		
+		CZE_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.10
+				personal_value_factor = -0.10
+			}
+		}
+		
+		IVO_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.65
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		QAT_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.50
+				personal_value_factor = -0.50
+			}
+		}
+		
+		NZL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.20
+				personal_value_factor = 0.05
+			}
+		}
+		
+		MZB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		NOR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.80
+				personal_value_factor = 0.60
+			}
+		}
+		
+		GUA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.40
+				income_growth_factor = 0.98
+				expense_growth_factor = -0.98
+			}
+		}
+
+		MLI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.80
+				#business_value_factor = -0.99
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		BOL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.72
+				income_growth_factor = 0.15
+				expense_growth_factor = -0.15
+			}
+		}
+		
+		BUL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.70
+				personal_value_factor = -0.60
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		PNG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.03
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.50
+				expense_growth_factor = -0.50
+			}
+		}
+		
+		SEN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.90
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		IRE_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 1.15
+				personal_value_factor = 0.95
+			}
+		}
+		
+		ZAM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.94
+				income_growth_factor = 0.75
+				expense_growth_factor = -0.75
+			}
+		}
+		
+		TUN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.65
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		SLO_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.70
+				personal_value_factor = -0.60
+				income_growth_factor = 0.40
+				expense_growth_factor = -0.40
+			}
+		}
+		
+		FIN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.70
+				personal_value_factor = 0.60
+			}
+		}
+		
+		CUB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.50
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		MLW_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.08
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.90
+				expense_growth_factor = -0.90
+			}
+		}
+		
+		DOM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.85
+				income_growth_factor = 0.90
+				expense_growth_factor = -0.90
+			}
+		}
+		
+		NGR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.99
+				personal_value_factor = 0.99
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		ZIM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.08
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+			}
+		}
+		
+		SSD_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.14
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+			}
+		}
+		
+		COS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.90
+				personal_value_factor = -0.80
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		HON_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.80
+				income_growth_factor = 0.70
+				expense_growth_factor = -0.70
+			}
+		}
+		
+		PAR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.48
+				income_growth_factor = 0.90
+				expense_growth_factor = -0.90
+			}
+		}
+		
+		TMS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.20
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		ELS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.80
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		CRO_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.92
+				personal_value_factor = -0.90
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		RWA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.10
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				battalion_upkeep_factor = -0.95
+			}
+		}
+		
+		CHA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.03
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		KUW_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.25
+				personal_value_factor = -0.20
+			}
+		}
+		
+		LIT_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.90
+				personal_value_factor = -0.80
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		OMA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.70
+				personal_value_factor = -0.65
+			}
+		}
+		
+		URG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.80
+				personal_value_factor = -0.70
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		DAH_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.97
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.05
+				expense_growth_factor = -0.05
+			}
+		}
+		
+		TAJ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.08
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.70
+				expense_growth_factor = -0.70
+			}
+		}
+		
+		HEZ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.08
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.10
+			}
+		}
+		
+		VOL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.80
+				personal_value_factor = -0.80
+				personal_expense_factor = -0.80
+				#business_value_factor = -0.96
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		IAI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.10
+			}
+		}
+		
+		MLT_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.10
+			}
+		}
+		
+		AQI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.10
+			}
+		}
+		
+		GNA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -0.99
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.75
+				expense_growth_factor = -0.75
+			}
+		}
+		
+		BRD_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.05
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				battalion_upkeep_factor = -0.95
+			}
+		}
+		
+		LEB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.90
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		HRL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.60
+				personal_value_factor = -0.60
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		LBA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.08
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		PAN_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.70
+				personal_value_factor = -0.70
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		LAT_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.18
+				income_growth_factor = 0.40
+				expense_growth_factor = -0.40
+			}
+		}
+		
+		EQG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.09
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+			}
+		}
+		
+		NIC_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.03
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.80
+				expense_growth_factor = -0.80
+			}
+		}
+		
+		SIE_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.08
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		LAO_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.88
+				income_growth_factor = 0.45
+				expense_growth_factor = -0.45
+			}
+		}
+		
+		ROJ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.13
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		ERI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.19
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		PAL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.98
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.70
+				expense_growth_factor = -0.70
+			}
+		}
+		
+		TOG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.08
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.75
+				expense_growth_factor = -0.75
+			}
+		}
+		
+		BOS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.81
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.85
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		KYR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		MOL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.20
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		LUX_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.55
+				personal_value_factor = -0.55
+			}
+		}
+		
+		RCG_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.80
+				personal_value_factor = -0.80
+				personal_expense_factor = -0.80
+				#business_value_factor = -1.05
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.99
+				expense_growth_factor = -0.99
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		SLV_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.70
+				personal_value_factor = -0.70
+				income_growth_factor = 0.15
+				expense_growth_factor = -0.15
+			}
+		}
+		
+		GEO_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.02
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		JAM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.97
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.90
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		CAR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.70
+				personal_value_factor = -0.70
+				personal_expense_factor = -0.70
+				#business_value_factor = -0.99
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.75
+				expense_growth_factor = -0.75
+			}
+		}
+		
+		CPC_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.95
+				income_growth_factor = 0.99
+				expense_growth_factor = -0.99
+				income_growth_factor = 0.55
+				expense_growth_factor = -0.55
+			}
+		}
+		
+		MRT_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.09
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		LIB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+			}
+		}
+		
+		ALB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.95
+				battalion_upkeep_factor = -0.50
+				income_growth_factor = 0.15
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		SML_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				#business_value_factor = -1.16
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		EST_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.90
+				personal_value_factor = -0.95
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		NMB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.06
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		MAC_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.01
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		
+		KOS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.07
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.90
+				expense_growth_factor = -0.90
+			}
+		}
+		
+		HAI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.87
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		BOT_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.92
+				income_growth_factor = 0.30
+				expense_growth_factor = -0.30
+			}
+		}
+		
+		GAB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.92
+			}
+		}
+		
+		CYP_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.85
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.75
+			}
+		}
+		
+		YEM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.80
+				income_growth_factor = 0.99
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		AAS_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.80
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		HOU_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.80
+				income_growth_factor = 0.35
+				expense_growth_factor = -0.35
+			}
+		}
+		
+		GAM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.12
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+			}
+		}
+		
+		GYA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+			}
+		}
+		
+		GNB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.12
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+			}
+		}
+		
+		BHU_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -0.99
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.10
+				expense_growth_factor = -0.10
+			}
+		}
+		
+		MNT_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.11
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		SUR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		DJI_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -0.99
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		
+		ICE_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.80
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+			}
+		}
+		
+		SOM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		SHB_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.98
+				expense_growth_factor = -0.98
+			}
+		}
+		
+		BLZ_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+			}
+		}
+		
+		ARM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		DPR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		NOV_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+		KUR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.95
+				personal_value_factor = -0.95
+				personal_expense_factor = -0.30
+				income_growth_factor = 0.85
+				expense_growth_factor = -0.85
+			}
+		}
+		
+		NGK_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.16
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		YAM_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {#WILL FIX IT
+				business_value_factor = -0.90
+				personal_value_factor = -0.90
+				personal_expense_factor = -0.90
+				#business_value_factor = -1.20
+				#personal_value_factor = -0.99
+				#personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		KKP_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.11
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		TRA_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				battalion_upkeep_factor = -0.95
+				income_growth_factor = 0.95
+				expense_growth_factor = -1.05
+			}
+		}
+		
+		HUL_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.11
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		BPR_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.11
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		EUP_gdp_fix = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -1.11
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				income_growth_factor = 0.95
+				expense_growth_factor = -0.95
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,27 @@
+UAE_Intervention_in_Yemen = {
+    icon = decision_category_generic
+
+    allowed = {
+	    original_tag = UAE
+		OR = {
+        country_exists = YEM
+        country_exists = AAS
+        }
+    }
+
+
+    visible = {
+        original_tag = UAE
+    }
+}
+UAE_saudi_cw_news_events = {
+    icon = decision_category_generic
+	
+	allowed = {
+	country_exists = SAU
+	}
+	
+	visible = {
+        original_tag = UAE
+    }
+}

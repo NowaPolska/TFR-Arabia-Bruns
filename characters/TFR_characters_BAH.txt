@@ -1,0 +1,17 @@
+characters={
+	BAH_tfr_bahrain_char = {
+	name = "Hamad bin Isa Al Khalifa"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/BAH/tfr_bahrain.dds"
+			}
+		}
+		
+		country_leader={
+			desc=""
+			ideology = absolute_monarchist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

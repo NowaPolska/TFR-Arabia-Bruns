@@ -1,0 +1,638 @@
+covid_19_outbreak_PER = {
+
+	monitor_outbreak_PER = {
+
+		icon = china
+
+		available = {
+			has_country_flag =  PER_covid_first
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = income_var value = 2 }
+        }
+		
+		custom_cost_text = dx_more_than_1B
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+			has_country_flag =  PER_covid_first
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			custom_effect_tooltip = PRC_spend_1mil
+			subtract_from_variable  = { var = income_var value = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	release_prisoners_PER = {
+
+		icon = china
+
+		available = {
+			has_country_flag =  PER_covid_first
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = income_var value = 5 }
+        }
+		
+		custom_cost_text = dx_more_than_5B
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+			has_country_flag =  PER_covid_first
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			custom_effect_tooltip = PRC_spend_5mil
+			subtract_from_variable  = { var = income_var value = 5 }
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+}
+
+PER_saudi_civil_war_cat = {
+
+	PER_send_Advisors_to_yemen = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = PER
+		}
+
+		available = {
+			tag = PER
+			HOU = {
+				exists = yes
+				has_war = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+			
+		cost = 25
+
+		fire_only_once = no
+		cancel_if_not_visible = yes
+
+		days_remove = 3
+		days_re_enable = 75
+
+		remove_effect = {
+			HOU = {
+				add_timed_idea = {
+				idea = PER_Advisors_to_yemen
+				days = 75
+			}
+		}
+	}
+}
+    PER_anti_saudi_intervention = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = PER
+		}
+
+		available = {
+			HOU = {
+			OR = {
+			has_war_with = SAU
+			has_war_with = ARR
+			has_war_with = ROC
+			    }
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+			
+		cost = 100
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		
+		remove_effect = {
+		add_ideas = SAU_iran_dirrect_intervention_in_yemen
+			HOU = {
+				add_timed_idea = {
+				idea = SAU_houti_help_from_iran
+				days = 365
+				}
+			}
+		}
+	}
+	
+	# invite assad into the alliance
+	PER_anti_saudi_intervention = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = PER
+		}
+
+		available = {
+		is_at_war = no
+		    SYR = {
+			exists = yes
+			}
+			SAR = {
+			is_in_faction = yes
+			is_at_war = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+			
+		cost = 100
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		
+		remove_effect = {
+		PER = {
+		add_to_faction = SYR
+		}
+	}
+}
+		
+	PER_send_heavy_equipment = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = PER
+		}
+
+		available = {
+			tag = PER
+			SAR = {
+				exists = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+			
+		cost = 25
+
+		fire_only_once = no
+		cancel_if_not_visible = yes
+
+		days_remove = 15
+		days_re_enable = 15
+
+		remove_effect = {
+			SAR = {
+				add_equipment_to_stockpile = {type = motorized_equipment amount = 90 producer = PER }
+				add_equipment_to_stockpile = {type = mechanized_equipment amount = 40 producer = PER }
+				add_equipment_to_stockpile = {type = support_equipment amount = 60 producer = PER }
+			}
+		}
+	}
+	
+	PER_send_volunteer_force = {
+
+		icon = china
+
+		available = {
+			has_global_flag = SAU_saudi_civil_war_global
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			SAR = {
+				country_event = { id = iran.7 days = 5 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	PER_airstrike_jihadists = {
+
+		icon = china
+
+		available = {
+			has_global_flag = SAU_saudi_civil_war_global
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				JAH = {
+					random_list = {
+						6 = { 
+							country_event = { id = iran.8 days = 1 }
+						}
+						1 = {
+							country_event = { id = iran.9 days = 1 } 
+						}
+						3 = { 
+							country_event = { id = iran.10 days = 1 } 
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PER_airstrike_salman = {
+
+		icon = china
+
+		available = {
+			has_global_flag = SAU_saudi_civil_war_global
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				SAU = {
+					random_list = {
+						6 = { 
+							country_event = { id = iran.8 days = 1 }
+						}
+						1 = {
+							country_event = { id = iran.9 days = 1 } 
+						}
+						3 = { 
+							country_event = { id = iran.10 days = 1 } 
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PER_airstrike_liberals = {
+
+		icon = china
+
+		available = {
+			has_global_flag = SAU_saudi_civil_war_global
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				ARR = {
+					random_list = {
+						6 = { 
+							country_event = { id = iran.8 days = 1 }
+						}
+						1 = {
+							country_event = { id = iran.9 days = 1 } 
+						}
+						3 = { 
+							country_event = { id = iran.10 days = 1 } 
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	PER_airstrike_mutaib = {
+
+		icon = china
+
+		available = {
+			has_global_flag = SAU_saudi_civil_war_global
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = {
+				ROC = {
+					random_list = {
+						6 = { 
+							country_event = { id = iran.8 days = 1 }
+						}
+						1 = {
+							country_event = { id = iran.9 days = 1 } 
+						}
+						3 = { 
+							country_event = { id = iran.10 days = 1 } 
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	PER_create_yemen_islamic_republic = {
+
+		icon = china
+
+		available = {
+			HOU = {
+				has_war = no
+				exists = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			HOU = {
+				set_cosmetic_tag = HOU_islamic_republic
+				add_ideas = PER_islamic_republic_stronghold_idea
+				change_government_type_islamic_republic = yes
+				every_state = {
+					remove_core_of = YEM
+					remove_core_of = AAS
+				}
+			}
+			news_event = {
+				id = news.117
+				hours = 6
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	PER_gib_drones = {
+
+		icon = china
+
+		available = {
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = guided_missile_equipment_1
+				amount = 50
+				producer = PER
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = rocket_site
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}	
+	
+	PER_rebuild_yemen = {
+
+		icon = china
+
+		available = {
+			HOU = {
+				has_war = no
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			HOU = {
+				remove_ideas = HOU_famine
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	PER_create_arabian_islamic_republic = {
+
+		icon = china
+
+		available = {
+			SAR = {
+				has_war = no
+				exists = yes
+			}
+		}
+
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			SAR = {
+				set_cosmetic_tag = SAR_islamic_republic
+				add_ideas = PER_islamic_republic_stronghold_idea
+			}
+			PER = {
+			add_to_faction = SAR 
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+
+PER_iraq_intervention_category = {
+	PER_iraqi_intervention_debug = {
+		priority = 1
+		icon = GFX_SOV_decision_president_election_category
+		days_mission_timeout = 3500
+		fire_only_once = no
+		is_good = no
+		cancel_if_not_visible = yes
+		visible = {
+	
+		}
+		available = {
+			has_war = no
+			BUK = {
+				exists = no
+			}
+			ABK = {
+				exists = no
+			}
+		}
+		cancel_trigger = {
+			PER = {
+				casualties_k > 100
+			}
+		}
+		activation = {
+			always = no
+		}
+		complete_effect = {
+			set_country_flag = PER_increase_ambition_iraq
+		}
+		cancel_effect = {
+			add_war_support = -0.2
+			add_stability = -0.2
+			white_peace = BUK
+			white_peace = ABK
+			news_event = { id = news.335 }
+			country_event = { id = iran.25 days = 31 }
+			BUK = {
+				retire_character = IRQ_Salah_Mukhtar
+				annex_country = { target = IRQ transfer_troops = no }
+				country_event = { id = iraq.7 days = 7 }
+				country_event = { id = iraq.6 days = 14 }
+			}
+		}
+	}
+	PER_iraqi_intervention = {
+		available = {
+			tag = PER
+			IRQ = { exists = no }
+			FIA = { exists = no }
+		}
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		days_remove = 100
+		cost = 0
+		
+		remove_effect = {
+			news_event = { id = news.217 }
+			activate_mission = PER_iraqi_intervention_debug
+				declare_war_on = {
+					target = BUK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ABK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = IAI
+					type = annex_everything
+				}
+            BUK = {
+				add_ideas = BUK_iran_war
+				load_oob = "BUK_iran_war"
+			}
+			ABK = {
+				add_ideas = BUK_iran_war
+			}			
+		}
+    }
+}

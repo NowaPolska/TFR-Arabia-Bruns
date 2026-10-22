@@ -1,0 +1,812 @@
+	ideas = {
+		hidden_ideas = {
+			POL_i_hate_poland = {
+				picture = KAZ_close_ties_to_moscow
+				traits = {
+					ZZZ_blank_idea_trait
+				}
+				
+				allowed = {
+					always = no
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					surrender_limit = -0.5
+				}
+			}
+		}
+		country = {
+			POL_border_crisis = {
+				picture = POL_belarus_border_crisis
+			    traits = { 
+			        ZZZ_blank_idea_trait
+			    }
+			
+				allowed = { 
+					original_tag = POL
+				}
+			
+				removal_cost = -1
+				
+				modifier = {
+					political_power_gain = -0.25
+					stability_factor = -0.1
+				}
+			}
+			
+			POL_legacy_idea = {
+				picture = POL_legacy
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			
+				allowed = { 
+					original_tag = POL
+				}
+				
+				available = {
+					is_puppet = no
+				}
+			
+				removal_cost = -1
+				
+				modifier = {
+					political_power_gain = 0.1
+					army_defence_against_major_factor = 0.05
+					army_morale_factor = 0.075
+					surrender_limit = 0.1
+				}
+			}
+			
+			POL_eurosceptic_divide_idea = {
+				picture = POL_eurosceptic_divide
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			
+				allowed = { 
+					original_tag = POL
+				}
+				
+				available = {
+					is_puppet = no
+				}
+			
+				removal_cost = -1
+				
+				modifier = {
+					political_power_gain = -0.25
+					stability_factor = -0.1
+				}
+			}
+			
+			POL_nationalism_idea = {
+				picture = POL_polish_nationalism
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			
+				allowed = { 
+					original_tag = POL
+				}
+				
+				available = {
+					is_puppet = no
+				}
+			
+				removal_cost = -1
+				
+				modifier = {
+					conscription = 0.01
+					war_support_factor = 0.1
+					army_core_defence_factor = 0.1
+					army_core_attack_factor = 0.05
+				}
+			}
+			
+			POL_splintered_society_idea = {
+				picture = POL_splintered_society
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			
+				allowed = { 
+					original_tag = POL
+				}
+				
+				available = {
+					is_puppet = no
+				}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.05
+					misc_expense = 0.02
+					production_speed_buildings_factor = -0.2
+					poverty_development_monthly = -0.01
+				}
+			}
+			
+			POL_not_yet_lost_idea = {
+				picture = POL_Ideology_Drift_Defence
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			
+				allowed = { 
+					original_tag = POL
+				}
+			
+				removal_cost = -1
+				
+				modifier = {
+					army_core_defence_factor = 0.15
+					land_reinforce_rate = 0.05
+				}
+			}
+			POL_spirit_of_the_warsaw_uprising = {
+				picture = PDL_polish_military_gov_idea
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			
+				allowed = { 
+					original_tag = POL
+				}
+				
+				available = {
+					is_puppet = no
+				}
+			
+				removal_cost = -1
+				
+				modifier = {
+					army_core_defence_factor = 0.25
+					land_reinforce_rate = 0.10
+					weekly_manpower = 500
+					nationalist_drift = 0.10
+				}
+			}
+			PLD_reunified_once_more_idea = {
+				picture = POL_polish_nationalism
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_gain = -0.25
+					stability_factor = -0.05
+					army_core_defence_factor = 0.05
+					industrial_capacity_factory = -0.15
+					industrial_capacity_dockyard = -0.15
+					consumer_goods_factor = 0.3
+				}
+			}
+		    PLD_the_Polish_economic_miracle = {
+			    picture = PDL_polish_military_gov_idea
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+				}
+				
+				modifier = {
+				industrial_capacity_factory = 0.1
+			    production_speed_buildings_factor = 0.15
+			    production_factory_max_efficiency_factor = 0.05
+			    income_growth_factor = 0.05
+				consumer_goods_factor = -0.1
+				}
+			}
+		    PLD_Dudas_Presidency = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_country_leader = {
+						character = PLD_andrzej_duda_char
+					}
+				}
+				
+				modifier = {
+				political_power_factor = 0.15
+				war_support_factor = 0.1
+				stability_factor = -0.1
+				society_development_monthly = 0.01
+				conservative_drift = 0.03
+				social_liberal_drift = 0.03
+				authoritarian_democrat_drift = 0.01
+				social_democrat_drift = 0.01
+				market_liberal_drift = 0.01
+				}
+			}
+		    PLD_PIS_Entrenced = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = conservative
+				}
+				
+				modifier = {
+				political_power_factor = 0.2
+				war_support_factor = 0.15
+				stability_factor = -0.2
+				stability_weekly = 0.002
+				society_development_monthly = 0.005
+				industrial_development_monthly = 0.005
+				conservative_drift = 0.07
+				social_liberal_drift = 0.02
+				authoritarian_democrat_drift = 0.02
+				social_democrat_drift = 0.01
+				}
+			}
+		    PLD_Unfrozen_EU_Funds = {
+	            picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = social_liberal
+				}
+				
+				modifier = {
+				misc_expense = -0.05
+				income_growth_factor = 0.1
+				consumer_goods_factor = -0.075
+				}
+			}
+			PLD_Dreams_of_Liberal_Hegemony = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = social_liberal
+				}
+				
+				modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.15
+				social_liberal_drift = 0.05
+				diplomatic_relation_acceptance = 20
+                trade_opinion_factor = 0.15
+				}
+			}
+			PLD_Strong_PIS_Opposition = {
+		        picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = social_liberal
+				}
+				
+				modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_gain = -0.15
+				conservative_drift = 0.04
+				authoritarian_democrat_drift = 0.01
+				}
+			}
+		    PLD_The_Workers_Dream = {
+	            picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+	            is_puppet = no
+	            OR = {
+		        has_government = social_democrat
+		        has_government = libertarian_socialist
+	                }
+                }
+				
+				modifier = {
+				society_development_monthly = 0.01
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.1
+				social_democrat_drift = 0.05
+				libertarian_socialist_drift = 0.02
+				}
+			}
+			PLD_Strong_Social_safty_net = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+	            is_puppet = no
+	            OR = {
+		        has_government = social_democrat
+		        has_government = libertarian_socialist
+	                }
+                }
+				
+				modifier = {
+				political_power_gain = 0.1
+				misc_expense = 0.15
+				poverty_development_monthly = 0.03
+				}
+			}
+		    PLD_strong_conservative_opposition = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+	            is_puppet = no
+	            OR = {
+		        has_government = social_democrat
+		        has_government = libertarian_socialist
+	                }
+                }
+				
+				modifier = {
+				political_power_factor = -0.75
+				stability_factor = -0.2
+				stability_weekly = -0.002
+				conscription_factor = -0.5
+				conservative_drift = 0.06
+				authoritarian_democrat_drift = 0.03
+				fascist_drift = 0.01
+				}
+			}
+		    PLD_Fortress_Poland = {
+				picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = authoritarian_democrat
+				}
+				
+				modifier = {
+				army_core_defence_factor = 0.20
+				army_core_attack_factor = 0.1
+				war_support_factor = 0.2
+                conscription_factor = 0.10
+				consumer_goods_factor = 0.15
+				military_development_monthly = 0.02
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = -0.1
+				authoritarian_democrat_drift = 0.03
+				}
+			}
+			PLD_Total_electoral_deadlock = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = authoritarian_democrat
+				}
+				
+				modifier = {
+				political_power_factor = -1.0
+				stability_factor = -0.35
+				society_development_monthly = -0.01
+				conservative_drift = 0.03
+				social_democrat_drift = 0.02
+				social_liberal_drift = 0.03
+				market_liberal_drift = 0.01
+				libertarian_socialist_drift = 0.01
+				authoritarian_democrat_drift = -0.01
+				}
+			}
+			PLD_Liberitarian_shock_therapy = {
+                picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = authoritarian_democrat
+				}
+				
+				modifier = {  
+                consumer_goods_factor = -0.25
+                stability_factor = -0.15
+				income_growth_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				industrial_development_monthly = -0.01
+			    }
+			}
+		    PLD_Polish_Agrarianism = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = market_liberal
+				}
+				
+				modifier = {  
+				misc_expense = 0.05
+	            consumer_goods_factor = -0.1
+				farming_development_monthly = 0.05
+				society_development_monthly = 0.005
+				market_liberal_drift = 0.03
+				conservative_drift = 0.03
+				}
+			}
+			PLD_Dis_united_PSL = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = market_liberal
+				}
+				
+				modifier = {  
+				stability_factor = -0.2
+				political_power_factor = -0.5
+				authoritarian_democrat_drift = 0.02
+				social_democrat_drift = 0.02
+				social_liberal_drift = 0.02
+				libertarian_socialist_drift = 0.01
+				conservative_drift = 0.01
+				}
+			}
+		    PLD_confederatia_PIS_coalition_goverment = {
+	            picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = authoritarian_democrat
+				}
+				
+				modifier = {  
+				stability_factor = -0.15
+				political_power_gain = -0.1
+				conservative_drift = 0.05
+				authoritarian_democrat_drift = 0.05
+				}
+			}
+		    PLD_all_hope_gone = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+				}
+				
+				modifier = {
+				war_support_factor = -0.3
+				stability_factor = -0.3
+                society_development_monthly = -0.05
+				poverty_development_monthly = -0.075
+				political_power_factor = -1.2
+				authoritarian_democrat_drift = 0.03
+				fascist_drift = 0.06
+				national_socialist_drift = 0.01
+				conservative_drift = 0.01
+				social_liberal_drift = 0.01
+				libertarian_socialist_drift = 0.02
+				communist_drift = 0.03
+				totalitarian_socialist_drift = 0.02
+				}
+			}
+	        PLD_Healing_a_Broken_Nation = { 
+	            picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+				}
+				
+				modifier = {
+		        stability_weekly = 0.003
+				misc_expense = 0.2
+				consumer_goods_factor = 0.01
+				social_liberal_drift = 0.04
+				conservative_drift = 0.04
+				social_democrat_drift = 0.01
+				market_liberal_drift = 0.02
+				}
+			}
+		    PLD_the_Rise_of_Evil = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = fascist
+				}
+				
+				modifier = {
+				fascist_drift = 0.1
+				national_socialist_drift = 0.01
+				authoritarian_democrat_drift = 0.1
+				nationalist_drift = 0.03
+				stability_factor = -0.5
+				war_support_factor = -0.3
+				war_support_weekly = 0.01
+				stability_weekly = 0.01
+				society_development_monthly = -0.01
+				farming_development_monthly = -0.01
+				industrial_development_monthly = -0.01
+				poverty_development_monthly = -0.01
+				}
+			}
+		    PLD_Judeo_Bolshewik_Resistance = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = fascist
+				}
+				
+				modifier = {
+				political_power_factor = -0.5
+				stability_factor = -0.2
+				communist_drift = 0.02
+				totalitarian_socialist_drift = 0.03
+				social_democrat_drift = 0.01
+				social_liberal_drift = 0.01
+				market_liberal_drift = 0.01
+				}
+			}
+		    PLD_Return_of_the_Red_Plague = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = communist
+				}
+				
+				modifier = {
+	            communist_drift = 0.1
+				libertarian_socialist_drift = 0.03
+				totalitarian_socialist_drift = 0.02
+				social_democrat_drift = 0.01
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				society_development_monthly = -0.01
+				farming_development_monthly = -0.01
+				industrial_development_monthly = -0.01
+				poverty_development_monthly = -0.01
+                }
+			}
+			PLD_Bourgeoisie_Reactonary_Terrorism = {
+			picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = communist
+				}
+				
+				modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.1
+				stability_weekly = -0.002
+				fascist_drift = 0.05
+				national_socialist_drift = 0.01
+				authoritarian_democrat_drift = 0.03
+				nationalist_drift = 0.03
+				conservative_drift = 0.02
+				social_liberal_drift = 0.02
+	            }
+			}
+		    PLD_Hyper_inflation = {
+	        picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = communist
+				}
+				
+				modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.1
+				income_growth_factor = -0.1
+				income_growth_factor = -0.25
+				inflation_monthly_factor = 1
+				}
+			}
+		    PLD_Fascism_with_polish_charactaristics = {
+            picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = fascist
+				}
+				
+				modifier = {
+				war_support_factor = 0.25
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				consumer_goods_factor = 0.1
+				society_development_monthly = 0.005
+				production_speed_buildings_factor = 0.15
+				fascist_drift = 0.1
+				national_socialist_drift = 0.02
+				nationalist_drift = 0.04
+				}
+			}
+		    PLD_Salvation_of_Poland = {
+			picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = communist
+				}
+				
+				modifier = {
+			    communist_drift = 0.1
+				totalitarian_socialist_drift = 0.05
+				libertarian_socialist_drift = 0.02
+				social_democrat_drift = 0.01
+				stability_factor = 0.25
+				misc_expense = 0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = -0.075
+				inflation_monthly_factor = -0.1
+				poverty_development_monthly = 0.05
+				society_development_monthly = 0.05
+				}
+			}
+		    PLD_Mentzens_Agenda = {
+			picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = authoritarian_democrat
+				}
+				
+				modifier = {
+			    political_power_factor = -0.05
+			    stability_factor = -0.15
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.1
+				misc_expense = 0.15
+				social_liberal_drift = -0.01
+				market_liberal_drift = -0.01
+				}
+			}
+		    PLD_The_Polish_Liberal_Hegemon = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+					has_government = social_liberal
+				}
+				
+				modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.20
+				production_speed_buildings_factor = 0.15
+				production_speed_industrial_complex_factor = 0.2
+				consumer_goods_factor = 0.05
+				income_growth_factor = 0.15
+				social_liberal_drift = 0.1
+				market_liberal_drift = 0.03
+                trade_opinion_factor = 0.35
+				}
+			}
+		}
+	}
+	
+
+	
+	
+	 

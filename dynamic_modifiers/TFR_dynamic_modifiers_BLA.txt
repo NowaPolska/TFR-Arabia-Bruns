@@ -1,0 +1,18 @@
+	BLA_bp_influence_dynamic_modifier = {
+	
+		enable = { 
+			has_idea = BLA_two_miltias_one_army_idea 
+		}
+		
+		army_morale_factor = BLA_bp_influence_dynamic_var
+	}
+	
+	
+	BLA_noi_influence_dynamic_modifier = {
+	
+		enable = { 
+			has_idea = BLA_two_miltias_one_army_idea
+		}
+		
+		army_org_factor = BLA_noi_influence_dynamic_var
+	}

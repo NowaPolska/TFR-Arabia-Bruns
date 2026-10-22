@@ -1,0 +1,2404 @@
+SAU_civil_war_preparations = {
+	SAU_civil_war_countdown = {
+
+		priority = 1
+
+		icon = revolt
+			
+		available = {
+			NOT = {
+				original_tag = SAU
+				has_global_flag = SAU_saudi_civil_war_global
+			}
+		}
+
+		days_mission_timeout = 100
+
+		activation = {
+			original_tag = SAU
+			has_country_flag = king_mohammed_salman
+			NOT = {
+				has_global_flag = saudi_liberals
+				has_country_flag = saudi_coalition
+			}
+		}
+
+		visible = {
+	    hidden_trigger = {
+		NOT = {
+			has_global_flag = saudi_liberals
+			has_global_flag = saudi_coalition
+			has_country_flag = saudi_civil_war_over
+		        }
+	        }
+        }
+
+			
+			
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		is_good = no
+			
+		complete_effect = {
+		}
+			
+		timeout_effect = {
+			country_event = {
+				id = saudi.9
+			}
+			custom_effect_tooltip = saudi_civil_war_tt
+		}
+	}
+	
+	SAU_prince_rebellion_countdown = {
+
+		priority = 1
+
+		icon = revolt
+			
+		available = {
+			NOT = {
+				original_tag = SAU
+				has_global_flag = SAU_saudi_civil_war_global
+			}
+		}
+
+		days_mission_timeout = 100
+
+		activation = {
+			original_tag = SAU
+			has_country_flag = saudi_coalition
+			NOT = {
+				has_global_flag = saudi_liberals
+				has_country_flag = king_mohammed_salman
+			}
+		}
+
+		visible = {
+	    hidden_trigger = {
+		NOT = {
+			has_global_flag = saudi_liberals
+			has_global_flag = king_mohammed_salman
+			has_country_flag = saudi_civil_war_over
+		        }
+	       }
+       }
+			
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		is_good = no
+			
+		complete_effect = {
+		}
+			
+		timeout_effect = {
+			country_event = {
+				id = saudi.20
+			}
+			custom_effect_tooltip = prince_rebellion_tt
+		}
+	}
+	
+	SAU_liberal_preparations = {
+
+		priority = 1
+
+		icon = revolt
+			
+		available = {
+			NOT = {
+				original_tag = SAU
+				has_global_flag = SAU_saudi_civil_war_global
+			}
+		}
+
+		days_mission_timeout = 100
+
+		activation = {
+			original_tag = SAU
+			has_country_flag = saudi_liberals
+			NOT = {
+				has_global_flag = saudi_coalition
+				has_country_flag = king_mohammed_salman
+			}
+		}
+
+		visible = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = saudi_coalition
+					has_global_flag = king_mohammed_salman
+				}
+			}
+		}
+			
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		is_good = no
+			
+		complete_effect = {
+		}
+			
+		timeout_effect = {
+			country_event = {
+				id = saudi.21
+			}
+			custom_effect_tooltip = liberal_uprising_tt
+		}
+	}
+	
+	SAU_spread_disinfo = {
+		
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		visible = {
+			has_global_flag = king_salman_dead
+			has_country_flag = saudi_liberals
+		}
+
+		visible = {
+	    hidden_trigger = {
+		NOT = {
+			has_global_flag = saudi_coalition
+			has_global_flag = king_mohammed_salman
+			has_country_flag = saudi_civil_war_over
+		        }
+	        }
+        }
+
+		ai_will_do = {
+			factor = 10
+		}
+			
+		custom_cost_trigger = {
+			check_variable = { var = income_var value = 7 }
+		}
+		
+		custom_cost_text = dx_more_than_7
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+
+		days_remove = 20
+
+		complete_effect = {
+			set_country_flag = SAU_making_move
+		}
+
+		remove_effect = {
+			clr_country_flag = SAU_making_move
+			add_days_mission_timeout = {
+				mission = SAU_liberal_preparations
+				days = 14
+			}
+		}
+	}
+	
+	SAU_code_virus = {
+		
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		visible = {
+			has_global_flag = king_salman_dead
+			has_country_flag = saudi_liberals
+		}
+
+		available = {
+			has_country_flag = saudi_liberals
+			NOT = {
+				has_country_flag = SAU_making_move
+				has_country_flag = saudi_coalition
+				has_country_flag = king_mohammed_salman
+			}				
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+			
+		custom_cost_trigger = {
+			check_variable = { var = income_var value = 25 }
+		}
+		
+		custom_cost_text = dx_more_than_25B
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+
+		days_remove = 20
+
+		complete_effect = {
+			set_country_flag = SAU_making_move
+			custom_effect_tooltip = SAU_virus_tt
+		}
+
+		remove_effect = {
+			clr_country_flag = SAU_making_move
+			set_country_flag = SAU_virus_breach
+		}
+	}
+	
+	SAU_bribe_officers = {
+		
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		visible = {
+			has_global_flag = king_salman_dead
+		}
+
+		available = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = king_mohammed_salman
+					has_country_flag = saudi_coalition
+					has_country_flag = saudi_liberals
+				}
+			}
+			NOT = {
+				has_country_flag = SAU_making_move
+			}				
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+			
+		custom_cost_trigger = {
+			check_variable = { var = income_var value = 45 }
+		}
+		
+		custom_cost_text = dx_more_than_45B
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+
+		days_remove = 20
+
+		complete_effect = {
+			set_country_flag = SAU_making_move
+			custom_effect_tooltip = bribe_officers_tt
+			if = {
+				limit = {
+					has_country_flag = saudi_liberals
+				}
+				ARR = {
+					set_country_flag = bribed_officers
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = king_mohammed_salman
+				}
+				SAU = {
+					set_country_flag = bribed_officers
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = saudi_coalition
+				}
+				ROC = {
+					set_country_flag = bribed_officers
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = SAU_making_move
+			SAU_bribing_officers = yes
+		}
+	}
+	
+	SAU_alocate_heavy_equipment = {
+		
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		visible = {
+		has_global_flag = king_salman_dead
+		NOT = {
+			has_country_flag = saudi_civil_war_over
+		    }
+        }
+
+		available = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = saudi_liberals
+					has_country_flag = saudi_coalition
+					has_country_flag = king_mohammed_salman
+				}
+			}
+			NOT = {
+				has_country_flag = SAU_making_move
+			}				
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+			
+		custom_cost_trigger = {
+			check_variable = { var = income_var value = 25 }
+		}
+		
+		custom_cost_text = dx_more_than_25B
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+
+		days_remove = 16
+
+		complete_effect = {
+			set_country_flag = SAU_making_move
+			custom_effect_tooltip = SAU_storing_equipment
+		}
+
+		remove_effect = {
+			clr_country_flag = SAU_making_move
+			SAU_equipment_stored = yes
+		}
+	}
+	
+	SAU_contact_private_military_companies = {
+		
+		icon = ger_mefo_bills
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		visible = {
+			has_global_flag = king_salman_dead
+		}
+
+		available = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = saudi_coalition
+					has_country_flag = king_mohammed_salman
+				}
+			}
+			NOT = {
+				has_country_flag = SAU_making_move
+			}				
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+			
+		custom_cost_trigger = {
+			check_variable = { var = income_var value = 35 }
+		}
+		
+		custom_cost_text = dx_more_than_35B
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+
+		days_remove = 20
+
+		complete_effect = {
+			set_country_flag = SAU_making_move
+			custom_effect_tooltip = SAU_pmcs_tt
+			set_country_flag = sau_spawn_pmcs
+		}
+
+		remove_effect = {
+			clr_country_flag = SAU_making_move
+			SAU_contracting_pmcs = yes#
+		}
+	}
+	
+	SAU_arrest_mohammed = {
+		
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		visible = {
+			has_global_flag = king_salman_dead
+			has_country_flag = saudi_coalition
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SAU_making_move
+			}				
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+			
+		cost = 75
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+
+		days_remove = 15
+
+		complete_effect = {
+			set_country_flag = SAU_making_move
+		}
+
+		remove_effect = {
+			clr_country_flag = SAU_making_move
+			custom_effect_tooltip = begin_saudi_civil_war
+			country_event = { id = saudi.19 }
+		}
+	}
+}
+
+SAU_yemeni_civil_war = {
+	SAU_launch_border_skirmish = {
+	icon = GFX_decisions_SAU_border_skirmish_bp
+		
+		available = {
+			tag = SAU
+			controls_state = 1062
+		}
+
+		visible = {
+			tag = SAU
+			NOT = {
+				SAU = {
+					controls_state = 922
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		days_remove = 12
+		days_re_enable = 20
+
+		cost = 25
+		
+		fire_only_once = no
+		cancel_if_not_visible = yes
+			
+		remove_effect = {
+			start_border_war= {
+				change_state_after_war = no
+				attacker = { state = 1062
+					num_provinces = 1
+				}
+				defender = { state = 922
+					num_provinces = 1
+				}
+			}
+		}
+	}
+
+	
+	SAU_send_advisors_yemen = {
+	    icon = GFX_decisions_SAU_yemen_dp
+		
+		allowed = {
+		original_tag = SAU
+	    }
+		
+		available = {
+		tag = SAU
+		}
+		
+		ai_will_do = { 
+		    factor = 50
+		}
+		
+		cost = 75
+		
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		
+		days_remove = 1
+		days_re_enable = 90
+		
+		remove_effect = {
+		    YEM = {
+			add_timed_idea = {
+                idea = SAU_Advisors_to_Yemen
+                days = 200
+			}
+		}
+	}
+}
+		
+	SAU_send_guns = {
+		icon = GFX_decisions_SAU_yemen_dp
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		available = {
+			tag = SAU
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+			
+		cost = 50
+
+		fire_only_once = no
+		cancel_if_not_visible = yes
+
+		days_remove = 15
+		days_re_enable = 50
+
+		remove_effect = {
+			YEM = {
+				add_equipment_to_stockpile = {type = infantry_equipment_2 amount = 500 producer = SAU }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 1000 producer = SAU }
+				add_equipment_to_stockpile = {type = anti_tank_equipment amount = 250 producer = SAU }
+				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 100 producer = SAU }
+			}
+		}
+	}
+	
+	SAU_send_heavy_equipment = {
+		icon = GFX_decisions_SAU_yemen_dp
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		available = {
+			tag = SAU
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+			
+		cost = 60
+
+		fire_only_once = no
+		cancel_if_not_visible = yes
+
+		days_remove = 15
+		days_re_enable = 75
+
+		remove_effect = {
+			YEM = {
+				add_equipment_to_stockpile = {type = motorized_equipment amount = 200 producer = SAU }
+				add_equipment_to_stockpile = {type = modern_tank_chassis amount = 100 producer = SAU }
+				add_equipment_to_stockpile = {type = mechanized_equipment amount = 150 producer = SAU }
+				add_equipment_to_stockpile = {type = light_mechanized_equipment amount = 250 producer = SAU }
+			}
+		}
+	}
+	SAU_air_strike_houthi = {
+	icon = GFX_decisions_SAU_bomb_dp
+	
+	allowed = {
+		original_tag = SAU
+	    }
+		
+		available = {
+		tag = SAU
+		}
+		
+		ai_will_do = { 
+		    factor = 100
+		}
+		
+		cost = 50
+		
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		
+		days_remove = 1
+		days_re_enable = 90
+		
+		remove_effect = {
+		    HOU = {
+	        add_manpower = -75
+			add_timed_idea = {
+                idea = SAU_Terror_Bombing_Houti
+                days = 100
+			}
+		}
+	}
+}
+	
+	SAU_air_strike_sharia = {
+	icon = GFX_decisions_SAU_bomb_dp
+	
+	allowed = {
+		original_tag = SAU
+	    }
+		
+		available = {
+		tag = SAU
+		}
+		
+		ai_will_do = { 
+		    factor = 100
+		}
+		
+		cost = 50
+		
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		
+		days_remove = 1
+		days_re_enable = 90
+		
+		remove_effect = {
+		    AAS = {
+			add_timed_idea = {
+                idea = SAU_Terror_Bombing_Houti
+                days = 100
+			    }
+		    }
+	    }
+    }
+}
+SAU_reunification = {
+	SAU_saudi_reunification = {
+		allowed = {
+			OR = {
+				tag = ARR
+				tag = ROC
+				tag = SAR
+				tag = JAH
+			}
+		}
+		available = {
+	OR = {
+		NOT = { tag = SAU }
+	}
+	OR = {
+		AND = {
+			tag = SAR
+			NOT = {
+				country_exists = SAU
+				country_exists = ARR
+				country_exists = ROC
+				country_exists = JAH
+			}
+		}
+		AND = {
+			tag = ROC
+			NOT = {
+				country_exists = SAU
+				country_exists = ARR
+				country_exists = SAR
+				country_exists = JAH
+			}
+		}
+		AND = {
+			tag = ARR
+			NOT = {
+				country_exists = SAU
+				country_exists = ROC
+				country_exists = SAR
+				country_exists = JAH
+			}
+		}
+		AND = {
+			tag = JAH
+			NOT = {
+				country_exists = SAU
+				country_exists = ROC
+				country_exists = SAR
+				country_exists = ARR
+			    }
+		    }
+	    }
+    }
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		cost = 0
+	    remove_effect = {
+			remove_decision = SAU_reunification
+			remove_ideas = SAU_saudi_civil_war
+			if = {
+				limit = {
+					tag = ARR
+				}
+				ARR = {
+					set_capital = {
+						state = 1126
+					}
+					change_government_type_presidential_republic = yes
+					add_ideas = arab_league_member
+					country_event = {
+						id = saudi.15
+					}
+					country_event = {
+				    id = saudi.111
+					days = 7
+				    }
+				    country_event = {
+				    id = saudi.114
+				 	days = 400
+				    }
+				}
+				set_portraits = {
+					character = ARR_yahya_assiri_char
+					civilian = {
+						large = "gfx/leaders/ARR/Yahya Assiri1.dds"
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = ROC
+				}
+				ROC = {
+					set_cosmetic_tag = SAU
+					set_capital = {
+						state = 1126
+					}
+					add_ideas = arab_league_member
+					country_event = {
+						id = saudi.14
+					}
+					country_event = {
+					    id = saudi.113
+						days = 7
+					}
+					country_event = {
+					    id = saudi.114
+						days = 400
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SAR
+				}
+				SAR = {
+					set_capital = {
+						state = 1126
+					}
+					country_event = {
+						id = saudi.17
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = JAH
+				}
+				JAH = {
+					country_event = {
+						id = saudi.16
+					}
+				}
+			}
+		}
+	}
+}
+YEM_yemeni_civil_war = {
+	AAS_southern_victory = {
+
+		icon = china
+
+		available = {
+			AAS = {
+				has_war = no
+				exists = yes
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+			tag = AAS
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			AAS = {
+				set_cosmetic_tag = AAS_victory
+				every_state = {
+					if = {
+						limit = {
+							AND = {
+								is_core_of = AAS
+								is_core_of = YEM
+							}
+						}
+						remove_core_of = YEM
+						remove_core_of = HOU
+					}
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = AAS_STC_party_long
+					name = AAS_STC_party_short
+				}
+				change_government_type_presidential_republic = yes
+				add_ideas = {
+					AAS_rebuilding_the_south
+					arab_league_member
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.15
+				}
+				add_popularity = {
+					ideology = communist
+					popularity = 0.07
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.04
+				}
+			}
+			YEM = {
+				set_cosmetic_tag = YEM_AAS_victory
+				transfer_state = 919
+				transfer_state = 293
+				transfer_state = 922
+				transfer_state = 923
+				every_state = {
+					remove_core_of = HOU
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.05
+				}
+				set_capital = {
+					state = 919
+				}
+				add_ideas = YEM_1990_reversed
+			}
+			news_event = {
+				id = news.118
+				hours = 6
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}	
+}
+SAU_civil_war_decisions = {
+    
+    Entlist_British_Tank_Volenteers = {
+	icon = GFX_decisions_SAU_united_kingdom
+	
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Rely_On_Foren_Volenteers
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_civil_war_decision_active }
+        }
+            
+        ai_will_do = { 
+            factor = 100
+        }
+            
+        cost = 85
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 50
+            
+        complete_effect = {
+            set_country_flag = SAU_civil_war_decision_active
+        }
+
+        remove_effect = {
+            clr_country_flag = SAU_civil_war_decision_active
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"5th British Volenteer Tank Brigade\" division_template = \"5th British Volenteer Tank Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+                    owner = SAU
+                }
+            }
+        }
+    }
+
+    SAU_Entlist_Korean_Volenteers = {
+	icon = GFX_decisions_SAU_korea_dp
+	
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Rely_On_Foren_Volenteers
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_civil_war_decision_active }
+        }
+            
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 75
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 55
+            
+        complete_effect = {
+            set_country_flag = SAU_civil_war_decision_active
+        }
+
+        remove_effect = {
+            clr_country_flag = SAU_civil_war_decision_active
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"7th Korean Motorised Brigade\" division_template = \"7th Motorised Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+                    owner = SAU
+                }
+            }
+        }
+    }
+
+    SAU_Entlist_UAE_Volenteers = {
+	icon = GFX_decisions_SAU_uae_dp
+	
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Rely_On_Foren_Volenteers
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_civil_war_decision_active }
+        }
+            
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 75
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 30
+            
+        complete_effect = {
+            set_country_flag = SAU_civil_war_decision_active
+        }
+
+        remove_effect = {
+            clr_country_flag = SAU_civil_war_decision_active
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"Al-fuluq al-muharraka al-thaniya\" division_template = \"Al-fuluq al-muharraka al-thaniya\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+                    owner = SAU
+                }
+            }
+        }
+    }
+
+    SAU_Entlist_Saudi_Militia = {
+	icon = GFX_decisions_SAU_army_dp
+	
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_An_Saudi_Military
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_civil_war_decision_active }
+        }
+            
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 25
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 15
+            
+        complete_effect = {
+            set_country_flag = SAU_civil_war_decision_active
+        }
+
+        remove_effect = {
+            clr_country_flag = SAU_civil_war_decision_active
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"Firqa militiya\" division_template = \"Firqa militiya\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+                    owner = SAU
+                }
+            }
+        }
+    }
+
+    SAU_Build_A_New_Motorised_Division = {
+	icon = GFX_decisions_SAU_army_dp
+	
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_An_Saudi_Military
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_civil_war_decision_active }
+        }
+            
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 50
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 30
+            
+        complete_effect = {
+            set_country_flag = SAU_civil_war_decision_active
+        }
+
+        remove_effect = {
+            clr_country_flag = SAU_civil_war_decision_active
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"akbar Liwa Almsha\" division_template = \"akbar Liwa Almsha\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+                    owner = SAU
+                }
+            }
+        }
+    }
+
+    SAU_Build_an_Elite_Tank_Division = {
+	icon = GFX_decisions_SAU_army_dp
+	
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_An_Saudi_Military
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_civil_war_decision_active }
+        }
+            
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 75
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 40
+            
+        complete_effect = {
+            set_country_flag = SAU_civil_war_decision_active
+        }
+
+        remove_effect = {
+            clr_country_flag = SAU_civil_war_decision_active
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"Firqa al-dabbabat al-mumtaza\" division_template = \"Firqa al-dabbabat al-mumtaza\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+                    owner = SAU
+                }
+            }
+        }
+    }
+SAU_Plan_offensives = {
+    icon = GFX_decisions_SAU_offensive_dp
+     allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Destroy_the_Tratiors
+        }
+
+        available = {
+            tag = SAU
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+         cost = 50
+            
+   days_re_enable = 100
+    cancel_if_not_visible = yes
+    
+    days_remove = 100
+	
+	remove_effect = {
+	army_experience = 15
+	}
+	
+	modifier = {
+	army_attack_factor = 0.15
+	army_defence_factor = -0.075
+	}    
+}
+SAU_Plan_defence = {
+    icon = GFX_decisions_SAU_defend
+     allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Destroy_the_Tratiors
+        }
+
+        available = {
+            tag = SAU
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+       cost = 50
+            
+    days_re_enable = 100
+    cancel_if_not_visible = yes
+    
+    days_remove = 100
+	
+	remove_effect = {
+	army_experience = 15
+	}
+	
+	modifier = {
+	army_attack_factor = -0.05
+	army_defence_factor = 0.175
+	    }
+    }
+SAU_beg_France_for_Support = {
+     allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Beg_for_Support
+        }
+
+        available = {
+            tag = SAU
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 50
+            
+    fire_only_once = yes
+    cancel_if_not_visible = yes
+    
+    days_remove = 10
+	
+	remove_effect = {
+	FRA = {
+	country_event = { id = saudi.53 }
+	    }    
+    }
+}
+SAU_beg_Russia_for_Support = {
+     allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Beg_for_Support
+        }
+
+        available = {
+            tag = SAU
+			SOV = {
+			has_government = authoritarian_democrat
+			}
+		}
+        
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 50
+            
+    fire_only_once = yes
+    cancel_if_not_visible = yes
+    
+    days_remove = 10
+	
+	remove_effect = {
+	SOV = {
+	country_event = { id = saudi.56 }
+	    }    
+    }
+}
+SAU_beg_china_for_Support = {
+     allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+            has_completed_focus = SAU_Beg_for_Support
+        }
+
+        available = {
+            tag = SAU
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 50
+            
+    fire_only_once = yes
+    cancel_if_not_visible = yes
+    
+    days_remove = 10
+	
+	remove_effect = {
+	PRC = {
+	country_event = { id = saudi.59 }
+	        }    
+        }
+    }
+SAU_One_Last_counter_Attack = {
+    icon = GFX_decisions_SAU_steiners_dp
+ 
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war = yes
+			NOT = {
+			has_country_flag = saudi_civil_war_over
+			}
+        }
+
+        available = {
+            tag = SAU
+			surrender_progress > 0.85
+        }
+           
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 1
+        
+        remove_effect = {
+		    add_timed_idea = {
+			idea = SAU_Steiners_counterattack
+			days = 60
+			}
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"7. Firqa militiya\" division_template = \"Firqa militiya\" start_experience_factor = 0.5 start_equipment_factor = 0.9"
+                    owner = SAU
+                }
+				create_unit = {
+                    division = "name = \"8. Firqa militiya\" division_template = \"Firqa militiya\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+                    owner = SAU
+                }
+				create_unit = {
+                    division = "name = \"9. Firqa militiya\" division_template = \"Firqa militiya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+                    owner = SAU
+                }
+            }
+        }
+    }
+}
+Saudi_covid_decisions = {
+    covid_1 = {
+	icon = GFX_decisions_SAU_koronoa_dp
+        is_good = no
+        selectable_mission = no
+		fire_only_once = yes
+
+        activation = {
+            has_idea = SAU_covid_hits_Arabia
+        }
+		visible = {
+        has_idea = SAU_covid_hits_Arabia
+        } 
+        available = {
+            always = no
+        }
+		
+		cancel_trigger = {
+            NOT = { has_idea = SAU_covid_hits_Arabia }
+        }
+
+        days_mission_timeout = 50
+
+        timeout_effect = {
+            remove_ideas = SAU_covid_hits_Arabia
+            add_ideas = SAU_cripling_covid_cases
+        }
+    }
+    covid_2 = {
+	icon = GFX_decisions_SAU_koronoa_dp
+        is_good = no
+        selectable_mission = no
+		fire_only_once = yes
+
+        activation = {
+            has_idea = SAU_cripling_covid_cases
+        }
+		visible = {
+        has_idea = SAU_cripling_covid_cases
+        } 
+        available = {
+            always = no
+        }
+		
+		cancel_trigger = {
+            NOT = { has_idea = SAU_cripling_covid_cases }
+        }
+
+        days_mission_timeout = 50
+
+        timeout_effect = {
+            remove_ideas = SAU_cripling_covid_cases
+            add_ideas = SAU_devestating_covid_cases
+        }
+    }
+    SAU_Begin_Vaccene_Research = {
+	is_good = no
+	selectable_mission = no
+	fire_only_once = yes
+
+	activation = {
+		has_completed_focus = SAU_Begin_Vaccine_Research
+		NOT = { has_country_flag = SAU_vaccine_research_done }
+	}
+
+	cancel_trigger = {
+		NOT = { has_idea = SAU_cripling_covid_cases }
+		NOT = { has_idea = SAU_covid_hits_Arabia }
+		NOT = { has_idea = SAU_devestating_covid_cases }
+	}
+	cancel_effect = {
+		set_country_flag = SAU_vaccine_research_done
+	}
+
+	available = {
+		always = no
+	}
+
+	days_mission_timeout = 30
+	timeout_effect = {
+		remove_ideas = SAU_covid_hits_Arabia
+		remove_ideas = SAU_cripling_covid_cases
+		remove_ideas = SAU_devestating_covid_cases
+		add_timed_idea = {
+			idea = SAU_recovering_from_covid
+			days = 90
+		}
+		set_country_flag = SAU_vaccine_research_done
+	    }
+    }
+}
+
+#SAU_Nucleare_Programm = {
+
+    #nuke_progress_one = { #1/5#
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_completed_focus = SAU_Saudi_Nucleare_Programm
+        }
+            
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 100
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 75
+        
+		modifier = {
+	    misc_expense = 0.25
+	    }    
+		
+        remove_effect = {
+		add_ideas = SAU_nuke_progress_one
+        }
+	}
+    #nuke_progress_two = { #2/5#
+        allowed = {
+            tag = SAU
+        }
+        
+		activation = {
+		has_idea = SAU_nuke_progress_one
+		}
+		
+        visible = {
+            has_idea = SAU_nuke_progress_one
+        }
+
+            
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 125
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 100
+        
+		modifier = {
+	    misc_expense = 0.3
+	    }    
+		
+        remove_effect = {
+		swap_ideas = {
+		remove_idea = SAU_nuke_progress_one
+		add_idea =  SAU_nuke_progress_two 
+		}
+		
+		set_technology = {
+            nuclear_reactors1 = 1
+        }
+    }
+}
+#nuke_progress_tree = { #3/5#
+        allowed = {
+            tag = SAU
+        }
+        
+		activation = {
+		has_idea = SAU_nuke_progress_two
+		}
+		
+        visible = {
+            has_idea = SAU_nuke_progress_two
+        }
+
+            
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 150
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 100
+        
+		modifier = {
+	    misc_expense = 0.35
+	    }    
+		
+        remove_effect = {
+		swap_ideas = {
+		remove_idea = SAU_nuke_progress_two
+		add_idea = SAU_nuke_progress_tree
+		}
+	}
+}
+#nuke_progress_four = { #4/5#
+        allowed = {
+            tag = SAU
+        }
+        
+		activation = {
+		has_idea = SAU_nuke_progress_tree
+		}
+		
+        visible = {
+            has_idea = SAU_nuke_progress_tree
+        }
+
+            
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 200
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 175
+        
+		modifier = {
+	    misc_expense = 0.4
+	    }    
+		
+        remove_effect = {
+		swap_ideas = {
+		remove_idea = SAU_nuke_progress_tree
+		add_idea = SAU_nuke_progress_four
+		}
+	}
+}
+#nuke_progress_five = { #5/5# #here nuke tech unlock#
+        allowed = {
+            tag = SAU
+        }
+        
+		activation = {
+		has_idea = SAU_nuke_progress_four
+		}
+		
+        visible = {
+            has_idea = SAU_nuke_progress_four
+        }
+
+            
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 200
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 100
+        
+		modifier = {
+	    misc_expense = 0.45
+	    }    
+		
+        remove_effect = {
+		set_country_flag = sau_can_build_nukes
+		swap_ideas = {
+		remove_idea = SAU_nuke_progress_four
+		add_idea = SAU_nuke_progress_five
+		
+		add_nukes = 1
+		
+		set_technology = {
+					nukes = 1
+				}
+		    }
+		}
+	}
+	#sau_build_nuke = {
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+           sau_can_build_nukes
+        }
+
+         
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 100
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 75
+        
+		modifier = {
+	    misc_expense = 0.25
+	    }    
+		
+        remove_effect = {
+		add_nukes = 1
+		}
+	}
+}
+
+#SAU_Nuke_luanching_decisions = {
+    
+	#Readdy_to_luanch = { #unlocks the decisions for nuking#
+        allowed = {
+            tag = SAU
+        }
+		
+		available = {
+		has_war = yes
+		}
+		
+        visible = {
+            has_idea = SAU_nuke_progress_five
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 1
+        
+        remove_effect = {
+		set_country_flag = nukes_readdy
+		}
+	}
+	#Nuke_cairo = {
+	    allowed = {
+            tag = SAU
+        }
+        
+		available = {
+		num_of_nukes > 0
+		has_war_with = EGY
+		}
+		
+        visible = {
+            has_country_flag = nukes_readdy
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 5
+        
+        remove_effect = {
+		launch_nuke = {
+        province = 7011
+        controller = EGY
+        use_nuke = yes
+		    }
+        }
+	}
+	#Nuke_khartoum = {
+	    allowed = {
+            tag = SAU
+        }
+        
+		available = {
+		num_of_nukes > 0
+		has_war_with = SUD
+		}
+		
+        visible = {
+            has_country_flag = nukes_readdy
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 5
+        
+        remove_effect = {
+		launch_nuke = {
+        province = 14499
+        controller = SUD
+        use_nuke = yes
+		    }
+        }
+	}
+	#Nuke_Teheran = {
+	    allowed = {
+            tag = SAU
+        }
+        
+		available = {
+		num_of_nukes > 0
+		has_war_with = PER
+		}
+		
+        visible = {
+            has_country_flag = nukes_readdy
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 5
+        
+        remove_effect = {
+		launch_nuke = {
+        province = 14499
+        controller = SUD
+        use_nuke = yes
+		    }
+        }
+	}
+	#Nuke_Tripoli = {
+	    allowed = {
+            tag = SAU
+        }
+        
+		available = {
+		num_of_nukes > 0
+		has_war_with = SUD
+		}
+		
+        visible = {
+            has_country_flag = nukes_readdy
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 5
+        
+        remove_effect = {
+		launch_nuke = {
+        province = 1149
+		OR = {
+		controller = HRL
+		controller = LIB
+		}
+        use_nuke = yes
+		    }
+        }
+	}
+    #Nuke_Kabul = {
+	    allowed = {
+            tag = SAU
+        }
+        
+		available = {
+		num_of_nukes > 0
+		has_war_with = TAL
+		}
+		
+        visible = {
+            has_country_flag = nukes_readdy
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 5
+        
+        remove_effect = {
+		launch_nuke = {
+        province = 10737
+		controller = TAL
+        use_nuke = yes
+		    }
+        }
+	}
+	#Nuke_Tripoli = {
+	    allowed = {
+            tag = SAU
+        }
+        
+		available = {
+		num_of_nukes > 0
+		has_war_with = SUD
+		}
+		
+        visible = {
+            has_country_flag = nukes_readdy
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 5
+        
+        remove_effect = {
+		launch_nuke = {
+        province = 1149
+		OR = {
+		controller = HRL
+		controller = LIB
+		}
+        use_nuke = yes
+		    }
+        }
+	}
+    #Nuke_Ankara = {
+	    allowed = {
+            tag = SAU
+        }
+        
+		available = {
+		num_of_nukes > 0
+		has_war_with = TUR
+		}
+		
+        visible = {
+            has_country_flag = nukes_readdy
+			has_war_with = TUR
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 5
+        
+        remove_effect = {
+		launch_nuke = {
+        province = 10737
+		controller = TAL
+        use_nuke = yes
+		    }
+        }
+	}
+}
+#SAU_Joining_the_secound_European_war = {
+
+    #Revenge_for_chechnia = {
+        allowed = {
+            tag = SAU
+        }
+        
+        available = {
+            GER = {
+                has_war_with = SOV
+            }
+        }
+        
+        visible = {
+            has_completed_focus = SAU_Dreams_of_Arab_Unification
+        }
+        
+        cancel_trigger = {
+            has_war_with = GER
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 35
+        
+        remove_effect = {
+		GER = {
+            give_military_access = SAU
+            }
+            declare_war_on = {
+                target = SOV
+                type = annex_everything
+            }
+        }
+    }
+    
+    #End_European_Imperialism = {
+        allowed = {
+            tag = SAU
+        }
+        
+        available = {
+            GER = {
+                has_war_with = SOV
+            }
+        }
+        
+        visible = {
+            has_completed_focus = SAU_Dreams_of_Arab_Unification
+        }
+        
+        cancel_trigger = {
+            has_war_with = SOV
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        
+        days_remove = 35
+        
+        remove_effect = {
+		SOV = {
+            give_military_access = SAU
+            }
+            declare_war_on = {
+                target = GER
+                type = annex_everything
+            }
+        }
+    }
+}
+SAU_Saudi_Iran_war_decisions = {
+    SAU_Break_true_thier_lines = {
+	    icon = GFX_decisions_SAU_offensive_dp
+	
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war_with = PER
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_iran_war_decision_active }
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 76
+            
+        days_re_enable = 100
+        cancel_if_not_visible = yes
+        days_remove = 35
+
+        complete_effect = {
+            set_country_flag = SAU_iran_war_decision_active
+        }
+	
+        remove_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+            army_experience = 5
+        }
+
+        cancel_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+        }
+	
+        modifier = {
+            army_speed_factor = 0.1
+            breakthrough_factor = 0.125
+        }
+    }
+
+    SAU_Offensives_against_iran = {
+	icon = GFX_decisions_SAU_offensive_dp
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war_with = PER
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_iran_war_decision_active }
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 75
+            
+        days_re_enable = 100
+        cancel_if_not_visible = yes
+        days_remove = 35
+
+        complete_effect = {
+            set_country_flag = SAU_iran_war_decision_active
+        }
+	
+        remove_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+            army_experience = 5
+        }
+
+        cancel_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+        }
+	
+        modifier = {
+            army_attack_factor = 0.1
+        }
+    }
+
+    SAU_defences_against_iran = {
+	icon = GFX_decisions_SAU_defend
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war_with = PER
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_iran_war_decision_active }
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 75
+            
+        days_re_enable = 100
+        cancel_if_not_visible = yes
+        days_remove = 35
+
+        complete_effect = {
+            set_country_flag = SAU_iran_war_decision_active
+        }
+	
+        remove_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+            army_experience = 5
+        }
+
+        cancel_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+        }
+	
+        modifier = {
+            army_defence_factor = 0.1
+        }
+    }
+
+    SAU_bomb_iran = {
+	    icon = GFX_decisions_SAU_bomb_dp
+	   
+        allowed = {
+            tag = SAU
+        }
+        
+        visible = {
+            has_war_with = PER
+        }
+
+        available = {
+            tag = SAU
+            NOT = { has_country_flag = SAU_iran_war_decision_active }
+            PER = {
+                NOT = {
+                    has_idea = SAU_Terror_Bombing_Houti
+                }
+            }
+        }
+			
+        ai_will_do = { 
+            factor = 50
+        }
+            
+        cost = 75
+            
+        days_re_enable = 100
+        cancel_if_not_visible = yes
+        days_remove = 35
+
+        complete_effect = {
+            set_country_flag = SAU_iran_war_decision_active
+        }
+	
+        remove_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+            PER = {
+                add_timed_idea = {
+                    idea = SAU_Terror_Bombing_Houti
+                    days = 50
+                }
+            }
+        }
+
+        cancel_effect = {
+            clr_country_flag = SAU_iran_war_decision_active
+        }
+    }
+}
+
+#### YEMENI GOVERMENT decisions ####
+
+YEM_unification = {
+    
+	YEM_salvation_arrives = {
+	
+	icon = GFX_decisions_SAU_steiners_dp
+	   
+        allowed = {
+            tag = YEM
+        }
+        
+        visible = {
+            exists = yes
+        }
+
+        available = {
+		    YEM = {
+            has_war = no
+            exists = yes
+			}
+			NOT = {
+			has_government = nationalist
+			is_puppet = yes
+			}
+        }
+			
+        ai_will_do = { 
+            factor = 100
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        days_remove = 1
+
+        complete_effect = {
+		news_event = { id = news.2018 hours = 6 }
+		change_government_type_presidential_republic = yes
+		remove_ideas = SAU_Humanitarian_Hell
+		add_timed_idea = {
+		idea = SAU_yemen_Recovering_nation
+		days = 720
+		}
+		set_capital = {
+			state = 919
+			}
+		}
+	}
+	
+	HOU_we_win = {
+	
+	icon = GFX_decisions_SAU_steiners_dp
+	   
+        allowed = {
+            tag = HOU
+        }
+        
+        visible = {
+            exists = yes
+        }
+
+        available = {
+		    HOU = {
+            has_war = no
+            exists = yes
+			}
+        }
+			
+        ai_will_do = { 
+            factor = 100
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        days_remove = 1
+
+        complete_effect = {
+		remove_ideas = SAU_Humanitarian_Hell
+		remove_ideas = SAU_War_Exaution_yemen
+		remove_ideas = HOU_saudi_air_strikes
+		remove_ideas = HOU_famine
+		remove_ideas = SAU_southern_stonghold_of_the_revolution
+		add_ideas = SAU_southern_stonghold_of_the_revolution_win
+		add_timed_idea = {
+		idea = SAU_yemen_Recovering_nation
+		days = 720
+		}
+		set_capital = {
+			state = 919
+			}
+		}
+	}
+	
+	YEM_Fall_of_Sana = {
+	icon = GFX_decisions_SAU_steiners_dp
+	   
+        allowed = {
+            tag = YEM
+        }
+        
+        visible = {
+            exists = yes
+        }
+
+        available = {
+		    YEM = {
+            controls_state = 919
+			NOT = {
+			has_government = nationalist
+			is_puppet = yes
+			    }
+			}
+        }
+			
+        ai_will_do = { 
+            factor = 100
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        days_remove = 1
+
+        complete_effect = {
+		news_event = { id = news.2020 hours = 1 }
+	    }
+    }
+	
+	YEM_Fall_of_Aden = {
+	icon = GFX_decisions_SAU_steiners_dp
+	   
+        allowed = {
+            tag = YEM
+        }
+        
+        visible = {
+            exists = yes
+        }
+
+        available = {
+		    YEM = {
+            controls_state = 920
+			NOT = {
+			has_government = nationalist
+			is_puppet = yes
+			    }
+			}
+        }
+			
+        ai_will_do = { 
+            factor = 100
+        }
+            
+        cost = 0
+            
+        fire_only_once = yes
+        cancel_if_not_visible = yes
+        days_remove = 1
+
+        complete_effect = {
+		news_event = { id = news.2019 hours = 1 }
+	    }
+    }
+}

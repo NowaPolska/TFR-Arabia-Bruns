@@ -1,0 +1,28 @@
+gdp_debt_dynamic = {
+	enable = { 
+		always = yes 
+	}
+	production_speed_buildings_factor = debt_dynamic_var #Negative
+	industrial_capacity_factory = debt_dynamic_var
+	industrial_capacity_dockyard = debt_dynamic_var
+	research_speed_factor = debt_negative_research_factor_dynamic_var
+	fuel_gain_factor = debt_negative_research_factor_dynamic_var
+	military_development_monthly = debt_negative_development_factor_dynamic_var
+	stability_factor = debt_stability_factor_dynamic_var #Positive
+	production_factory_efficiency_gain_factor = debt_production_factor_dynamic_var
+	production_factory_max_efficiency_factor = debt_production_factor_dynamic_var
+	line_change_production_efficiency_factor = debt_production_factor_dynamic_var
+	income_growth_factor = debt_production_factor_dynamic_var
+	industrial_development_monthly = debt_development_factor_dynamic_var
+	academic_development_monthly = debt_development_factor_dynamic_var
+}
+
+inflation_dynamic = {
+	enable = { 
+		always = yes 
+	}
+	consumer_goods_factor = inflation_consumer_goods_factor_dynamic_var
+	production_factory_max_efficiency_factor = inflation_production_factory_max_efficiency_factor_dynamic_var
+	stability_factor = inflation_stability_factor_dynamic_var
+	production_speed_buildings_factor = inflation_production_speed_buildings_factor_dynamic_var
+}

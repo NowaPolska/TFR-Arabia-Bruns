@@ -1,0 +1,25 @@
+	ideas = {
+		country = {
+			PAL_final_intifada = {
+				picture = PAL_final_intifada_idea
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_org = 0.35
+					army_strength_factor = 1.5
+					max_dig_in_factor = 0.35
+					land_night_attack = 0.2
+					attrition = -0.25
+					pocket_penalty = -0.75
+				}
+			}
+		}
+	}

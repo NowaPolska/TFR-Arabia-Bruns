@@ -1,0 +1,421 @@
+USC_patriotic_economy_dynamic = {
+	icon = GFX_idea_USC_patriotic_economy
+	enable = {
+		tag = USC
+	}
+	political_power_gain = USC_economy_political_power_gain_dynamic_var
+	stability_factor = USC_economy_stability_factor_dynamic_var
+	stability_weekly = USC_economy_stability_weekly_dynamic_var
+	war_support_factor = USC_economy_war_support_factor_dynamic_var
+	war_support_weekly = USC_economy_war_support_weekly_dynamic_var
+	consumer_goods_factor = USC_economy_consumer_goods_factor_dynamic_var	#0.1
+	local_resources_factor = USC_economy_local_resources_factor_dynamic_var
+	global_building_slots_factor = USC_economy_global_building_slots_factor_dynamic_var
+	research_speed_factor = USC_economy_research_speed_factor_dynamic_var
+	compliance_growth = USC_economy_compliance_growth_dynamic_var
+	resistance_growth = USC_economy_resistance_growth_dynamic_var
+	resistance_decay = USC_economy_resistance_decay_dynamic_var
+	production_factory_max_efficiency_factor = USC_economy_production_factory_max_efficiency_factor_dynamic_var	# -0.1
+	production_factory_efficiency_gain_factor = USC_economy_production_factory_efficiency_gain_factor_dynamic_var
+	production_factory_start_efficiency_factor = USC_economy_production_factory_start_efficiency_factor_dynamic_var
+	line_change_production_efficiency_factor = USC_economy_line_change_production_efficiency_factor_dynamic_var
+	production_lack_of_resource_penalty_factor = USC_economy_production_lack_of_resource_penalty_factor_dynamic_var
+	conversion_cost_civ_to_mil_factor = USC_economy_conversion_cost_civ_to_mil_factor_dynamic_var
+	conversion_cost_mil_to_civ_factor = USC_economy_conversion_cost_mil_to_civ_factor_dynamic_var
+	production_speed_buildings_factor = USC_economy_production_speed_buildings_factor_dynamic_var
+	industrial_capacity_factory = USC_economy_industrial_capacity_factory_dynamic_var	#-0.2
+	industrial_capacity_dockyard = USC_economy_industrial_capacity_dockyard_dynamic_var	#-0.2
+	production_speed_infrastructure_factor = USC_economy_production_speed_infrastructure_factor_dynamic_var
+	production_speed_industrial_complex_factor = USC_economy_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_office_park_factor = USC_economy_production_speed_office_park_factor_dynamic_var
+	production_speed_rail_way_factor = USC_economy_production_speed_rail_way_factor_dynamic_var
+	production_speed_arms_factory_factor = USC_economy_production_speed_arms_factory_factor_dynamic_var
+	production_speed_dockyard_factor = USC_economy_production_speed_dockyard_factor_dynamic_var
+	production_speed_power_plant_factor = USC_economy_production_speed_power_plant_factor_dynamic_var
+	production_speed_nuclear_reactor_factor = USC_economy_production_speed_nuclear_reactor_factor_dynamic_var
+	industrial_development_monthly = USC_economy_industrial_development_monthly_dynamic_var
+	poverty_development_monthly = USC_economy_poverty_development_monthly_dynamic_var
+	farming_development_monthly = USC_economy_farming_development_monthly_dynamic_var
+	academic_development_monthly = USC_economy_academic_development_monthly_dynamic_var
+	society_development_monthly = USC_economy_society_development_monthly_dynamic_var
+	income_growth_factor = USC_economy_income_growth_factor_dynamic_var
+	expense_growth_factor = USC_economy_expense_growth_factor_dynamic_var
+	business_value_factor = USC_economy_business_value_factor_dynamic_var
+	personal_value_factor = USC_economy_personal_value_factor_dynamic_var
+	personal_expense_factor = USC_economy_personal_expense_factor_dynamic_var
+	tax_business_rate = USC_economy_tax_business_rate_dynamic_var
+	tax_personal_rate = USC_economy_tax_personal_rate_dynamic_var
+	interest_rate = USC_economy_interest_rate_dynamic_var
+	inflation_monthly = USC_economy_inflation_monthly_dynamic_var
+}
+
+USC_constitutional_congress_dynamic = {
+	icon = GFX_idea_USC_constitutional_congress
+	enable = {
+		tag = USC
+	}
+	political_power_gain = USC_politics_political_power_gain_dynamic_var	#-0.5
+	stability_factor = USC_politics_stability_factor_dynamic_var	#-0.1
+	stability_weekly = USC_politics_stability_weekly_dynamic_var	#-0.001
+	war_stability_factor = USC_politics_war_stability_factor_dynamic_var
+	party_popularity_stability_factor = USC_politics_party_popularity_stability_factor_dynamic_var
+	war_support_factor = USC_politics_war_support_factor_dynamic_var	#-0.1
+	war_support_weekly = USC_politics_war_support_weekly_dynamic_var
+	consumer_goods_factor = USC_politics_consumer_goods_factor_dynamic_var
+	personal_expense_factor = USC_politics_personal_expense_factor_dynamic_var	#-0.15
+	market_liberal_drift = USC_politics_market_liberal_drift_dynamic_var
+	conservative_drift = USC_politics_conservative_drift_dynamic_var
+	authoritarian_democrat_drift = USC_politics_authoritarian_democrat_drift_dynamic_var
+	nationalist_drift = USC_politics_nationalist_drift_dynamic_var
+	industrial_development_monthly = USC_politics_industrial_development_monthly_dynamic_var
+	poverty_development_monthly = USC_politics_poverty_development_monthly_dynamic_var
+	farming_development_monthly = USC_politics_farming_development_monthly_dynamic_var
+	academic_development_monthly = USC_politics_academic_development_monthly_dynamic_var
+	society_development_monthly = USC_politics_society_development_monthly_dynamic_var	#-0.03
+	battalion_upkeep_factor = USC_politics_battalion_upkeep_factor_dynamic_var
+	economy_cost_factor = USC_politics_economy_cost_factor_dynamic_var
+	business_value_factor = USC_politics_business_value_factor_dynamic_var
+	personal_value_factor = USC_politics_personal_value_factor_dynamic_var
+	opinion_gain_monthly_same_ideology_factor = USC_politics_opinion_gain_monthly_same_ideology_factor_dynamic_var
+	inflation_monthly = USC_politics_inflation_monthly_dynamic_var
+	drift_defence_factor = USC_politics_drift_defence_factor_dynamic_var
+	production_factory_efficiency_gain_factor = USC_politics_production_factory_efficiency_gain_factor_dynamic_var
+	industrial_capacity_factory = USC_politics_industrial_capacity_factory_dynamic_var
+	production_factory_start_efficiency_factor = USC_politics_production_factory_start_efficiency_factor_dynamic_var
+	tax_personal_rate = USC_politics_tax_personal_rate_dynamic_var
+	production_speed_industrial_complex_factor = USC_politics_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_office_park_factor = USC_politics_production_speed_office_park_factor_dynamic_var
+	production_speed_infrastructure_factor = USC_politics_production_speed_infrastructure_factor_dynamic_var
+	production_speed_buildings_factor = USC_politics_production_speed_buildings_factor_dynamic_var
+	repair_speed_factor = USC_politics_repair_speed_factor_dynamic_var
+	industry_free_repair_factor = USC_politics_industry_free_repair_factor_dynamic_var
+	compliance_growth = USC_politics_compliance_growth_dynamic_va
+	resistance_growth = USC_politics_resistance_growth_dynamic_var
+	resistance_decay = USC_politics_resistance_decay_dynamic_var
+	resistance_target = USC_politics_resistance_target_dynamic_var
+}
+
+USC_american_constitutional_army_dynamic = {
+	icon = GFX_idea_USC_professional_army
+	enable = {
+		tag = USC
+	}
+	political_power_gain = USC_military_political_power_gain_dynamic_var
+	war_support_factor = USC_military_war_support_factor_dynamic_var
+	war_support_weekly = USC_military_war_support_weekly_dynamic_var
+	war_stability_factor = USC_military_war_stability_factor_dynamic_var
+	weekly_casualties_war_support = USC_military_weekly_casualties_war_support_dynamic_var
+	weekly_convoys_war_support = USC_military_weekly_convoys_war_support_dynamic_var
+	weekly_bombing_war_support = USC_military_weekly_bombing_war_support_dynamic_var
+	experience_gain_army = USC_military_experience_gain_army_dynamic_var
+	experience_gain_army_factor = USC_military_experience_gain_army_factor_dynamic_var
+	experience_loss_factor = USC_military_experience_loss_factor_dynamic_var	#0.2
+	max_command_power = USC_military_max_command_power_dynamic_var
+	command_power_gain_mult = USC_military_command_power_gain_mult_dynamic_var
+	army_org_factor = USC_military_army_org_factor_dynamic_var	#-0.15
+	army_org_regain = USC_military_army_org_regain_dynamic_var
+	org_loss_when_moving = USC_military_org_loss_when_moving_dynamic_var
+	army_strength_factor = USC_military_army_strength_factor_dynamic_var
+	coordination_bonus = USC_military_coordination_bonus_dynamic_var
+	land_reinforce_rate = USC_military_land_reinforce_rate_dynamic_var
+	max_planning_factor = USC_military_max_planning_factor_dynamic_var
+	planning_speed = USC_military_planning_speed_dynamic_var
+	max_dig_in_factor = USC_military_max_dig_in_factor_dynamic_var
+	dig_in_speed_factor = USC_military_dig_in_speed_factor_dynamic_var
+	army_morale_factor = USC_military_army_morale_factor_dynamic_var
+	army_attack_factor = USC_military_army_attack_factor_dynamic_var	#-0.3
+	army_defence_factor = USC_military_army_defence_factor_dynamic_var	#-0.1
+	breakthrough_factor = USC_military_breakthrough_factor_dynamic_var
+	army_speed_factor = USC_military_army_speed_factor_dynamic_var
+	army_core_attack_factor = USC_military_army_core_attack_factor_dynamic_var
+	army_core_defence_factor = USC_military_army_core_defence_factor_dynamic_var
+	modifier_army_sub_unit_militia_attack_factor = USC_military_modifier_army_sub_unit_militia_attack_factor_dynamic_var
+	modifier_army_sub_unit_militia_defence_factor = USC_military_modifier_army_sub_unit_militia_defence_factor_dynamic_var
+	equipment_capture_factor = USC_military_equipment_capture_factor_dynamic_var
+	supply_consumption_factor = USC_military_supply_consumption_factor_dynamic_var
+	out_of_supply_factor = USC_military_out_of_supply_factor_dynamic_var
+	cas_damage_reduction = USC_military_cas_damage_reduction_dynamic_var
+	conscription_factor = USC_military_conscription_factor_dynamic_var
+	mobilization_speed = USC_military_mobilization_speed_dynamic_var
+	resistance_decay_on_our_occupied_states = USC_military_resistance_decay_on_our_occupied_states_dynamic_var
+	resistance_growth_on_our_occupied_states = USC_military_resistance_growth_on_our_occupied_states_dynamic_var
+	acclimatization_cold_climate_gain_factor = USC_military_acclimatization_cold_climate_gain_factor_dynamic_var
+	acclimatization_hot_climate_gain_factor = USC_military_acclimatization_hot_climate_gain_factor_dynamic_var
+	pocket_penalty = USC_military_pocket_penalty_dynamic_var
+	cat_old_land_doctrine_cost_factor = USC_military_land_doctrine_cost_factor_dynamic_var	#0.5
+	battalion_upkeep_factor = USC_military_battalion_upkeep_factor_dynamic_var
+	military_development_monthly = USC_military_development_monthly_dynamic_var
+	ai_focus_defense_factor = USC_military_ai_focus_defense_factor_dynamic_var	#5
+	rage_weekly = USC_military_rage_weekly_dynamic_var
+	resistance_damage_to_garrison = USC_military_resistance_damage_to_garrison_dynamic_var
+	training_time_army_factor = USC_military_training_time_army_factor_dynamic_var
+}
+
+USC_all_american_air_force_dynamic = {
+	icon = GFX_idea_air_support_focus
+	enable = {
+		tag = USC
+	}
+	experience_gain_air = USC_air_experience_gain_air_dynamic_var
+	experience_gain_air_factor = USC_air_experience_gain_air_factor_dynamic_var
+	air_wing_xp_loss_when_killed_factor = USC_air_wing_xp_loss_when_killed_factor_dynamic_var
+	max_command_power = USC_air_max_command_power_dynamic_var
+	air_attack_factor = USC_air_attack_factor_dynamic_var
+	air_defence_factor = USC_air_defence_factor_dynamic_var
+	air_agility_factor = USC_air_agility_factor_dynamic_var
+	air_accidents_factor = USC_air_accidents_factor_dynamic_var
+	air_mission_efficiency = USC_air_mission_efficiency_dynamic_var
+	air_superiority_efficiency = USC_air_superiority_efficiency_dynamic_var
+	air_weather_penalty = USC_air_weather_penalty_dynamic_var
+	army_bonus_air_superiority_factor = USC_air_army_bonus_air_superiority_factor_dynamic_var
+	ground_attack_factor = USC_air_ground_attack_factor_dynamic_var
+	production_speed_anti_air_building_factor = USC_air_production_speed_anti_air_building_factor_dynamic_var
+	production_speed_air_base_factor = USC_air_production_speed_air_base_factor_dynamic_var
+	air_manpower_requirement_factor = USC_air_manpower_requirement_factor_dynamic_var
+	air_untrained_pilots_penalty_factor = USC_air_untrained_pilots_penalty_factor_dynamic_var
+	cat_old_air_doctrine_cost_factor = USC_air_doctrine_cost_factor_dynamic_var
+	aircraft_upkeep_factor = USC_air_aircraft_upkeep_factor_dynamic_var
+	military_development_monthly = USC_air_military_development_monthly_dynamic_var
+}
+
+USC_nida_dynamic = {
+	icon = GFX_idea_USC_NIDA
+	enable = {
+		tag = USC
+	}
+	political_power_gain = USC_intelligence_political_power_gain_dynamic_var	#-0.2
+	operative_slot = USC_intelligence_operative_slot_dynamic_var
+	resistance_activity = USC_intelligence_resistance_activity_dynamic_var
+	resistance_target = USC_intelligence_resistance_target_dynamic_var	#0.1
+	compliance_gain = USC_intelligence_compliance_gain_dynamic_var
+	compliance_growth = USC_intelligence_compliance_growth_dynamic_var	#-0.2
+	resistance_growth = USC_intelligence_resistance_growth_dynamic_var	#0.2
+	resistance_decay = USC_intelligence_resistance_decay_dynamic_var	#-0.2
+	required_garrison_factor = USC_intelligence_required_garrison_factor_dynamic_var
+	resistance_damage_to_garrison = USC_intelligence_resistance_damage_to_garrison_dynamic_var
+	compliance_growth_on_our_occupied_states = USC_intelligence_compliance_growth_on_our_occupied_states_dynamic_var
+	resistance_decay_on_our_occupied_states = USC_intelligence_resistance_decay_on_our_occupied_states_dynamic_var
+	resistance_growth_on_our_occupied_states = USC_intelligence_resistance_growth_on_our_occupied_states_dynamic_var
+	resistance_damage_to_garrison_on_our_occupied_states = USC_intelligence_resistance_damage_to_garrison_on_our_occupied_states_dynamic_var
+	agency_upgrade_time = USC_intelligence_agency_upgrade_time_dynamic_var
+	decryption_factor = USC_intelligence_decryption_factor_dynamic_var
+	encryption_factor = USC_intelligence_encryption_factor_dynamic_var
+	intel_network_gain_factor = USC_intelligence_intel_network_gain_factor_dynamic_var
+}
+
+USC_trump_new_america_modifier = {
+	icon = GFX_idea_USC_trump_new_america_idea
+	# name = USC_trump_new_america_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = USC_trump_new_america_political_power_gain_var
+	stability_factor = USC_trump_new_america_stability_factor_var
+	army_morale_factor = USC_trump_new_america_army_morale_factor_var
+	society_development_monthly = USC_trump_new_america_society_development_monthly_var
+	authoritarian_democrat_drift = USC_trump_new_america_authoritarian_democrat_drift_var
+	resistance_activity = USC_trump_new_america_resistance_activity_var
+	poverty_development_monthly = USC_trump_new_america_poverty_development_monthly_var
+	personal_expense_factor = USC_trump_new_america_personal_expense_factor_var
+	political_power_cost = USC_trump_new_america_political_power_cost_var
+	income_growth_factor = USC_trump_new_america_income_growth_factor_var
+	army_org_regain = USC_trump_new_america_army_org_regain_var
+	compliance_growth = USC_trump_new_america_army_compliance_growth_var
+	academic_development_monthly = USC_trump_new_america_academic_development_monthly_var
+	war_support_factor = USC_trump_new_america_war_support_factor_var
+}
+
+USC_rage_dynamic = {
+	#icon = GFX_idea_USC_defense_production_act
+	enable = {
+		tag = USC
+	}
+	war_support_factor = USC_rage_war_support_factor_dynamic_var
+	army_morale_factor = USC_rage_army_morale_factor_dynamic_var
+	army_defence_factor = USC_rage_army_defence_factor_dynamic_var
+}
+
+USC_loyalty_lib_dynamic = {
+	#icon = GFX_idea_USC_defense_production_act
+	enable = {
+		tag = USC
+	}
+	income_growth_factor = USC_loyalty_lib_income_growth_factor_dynamic_var
+	tax_business_rate_factor = USC_loyalty_lib_tax_business_rate_factor_dynamic_var
+	consumer_goods_factor = USC_loyalty_lib_consumer_goods_factor_dynamic_var
+}
+
+USC_loyalty_con_dynamic = {
+	#icon = GFX_idea_USC_defense_production_act
+	enable = {
+		tag = USC
+	}
+	stability_factor = USC_loyalty_con_stability_factor_dynamic_var
+	political_power_gain = USC_loyalty_con_political_power_gain_dynamic_var
+	industrial_capacity_factory = USC_loyalty_con_industrial_capacity_factory_dynamic_var
+}
+
+USC_loyalty_mil_dynamic = {
+	#icon = GFX_idea_USC_defense_production_act
+	enable = {
+		tag = USC
+	}
+	war_stability_factor = USC_loyalty_mil_war_stability_factor_dynamic_var
+	army_attack_factor = USC_loyalty_mil_army_attack_factor_dynamic_var
+	command_power_gain_mult = USC_loyalty_mil_command_power_gain_mult_dynamic_var
+}
+
+USC_christian_conservatives_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_christian_conservatives_tt_idea
+	enable = {
+		OR = {
+			tag = USC
+			tag = USB
+		}
+	}
+	political_power_gain = -0.05
+	weekly_casualties_war_support = USC_min_faction_christian_weekly_casualties_war_support_var
+	mobilization_speed = USC_min_faction_christian_mobilization_speed_var
+	surrender_limit = USC_min_faction_christian_surrender_limit_var
+}
+
+USC_libertarian_party_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_libertarian_party_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.05
+	global_building_slots_factor = USC_min_faction_libertarian_global_building_slots_factor_var
+	industry_free_repair_factor = USC_min_faction_libertarian_industry_free_repair_factor_var
+	recon_factor = USC_min_faction_libertarian_recon_factor_var
+}
+
+USC_league_american_workers_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_league_american_workers_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.05
+	production_factory_start_efficiency_factor = USC_min_faction_league_american_workers_production_factory_start_efficiency_factor_var
+	industrial_capacity_factory = USC_min_faction_league_american_workers_industrial_capacity_factory_var
+	poverty_development_monthly = USC_min_faction_league_american_workers_poverty_development_monthly_var
+}
+
+USC_techno_rightists_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_techno_rightists_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.05
+	research_speed_factor = USC_min_faction_techno_rightists_research_speed_factor_var
+	business_value_factor = USC_min_faction_techno_rightists_business_value_factor_var
+	income_growth_factor = USC_min_faction_techno_rightists_income_growth_factor_var
+}
+
+USC_trump_democrats_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_trump_democrats_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.05
+	stability_factor = USC_min_faction_democrat_stability_factor_var
+	compliance_growth = USC_min_faction_democrat_compliance_growth_var
+	initiative_factor = USC_min_faction_democrat_initiative_factor_var
+}
+
+USC_leftists_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_leftist_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.05
+	production_speed_infrastructure_factor = USC_min_faction_leftist_production_speed_infrastructure_factor_var
+	production_factory_max_efficiency_factor = USC_min_faction_leftist_production_factory_max_efficiency_factor_var
+	army_attack_speed_factor = USC_min_faction_leftist_army_attack_speed_factor_var
+}
+
+USC_wignats_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_wignats_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.05
+	war_support_factor = USC_min_faction_nationalist_war_support_factor_var
+	resistance_decay = USC_min_faction_nationalist_resistance_decay_var
+	army_strength_factor = USC_min_faction_nationalist_army_strength_factor_var
+}
+
+USC_independents_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_independents_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.025
+	coordination_bonus = USC_min_faction_independent_coordination_bonus_var
+	research_speed_factor = USC_min_faction_independent_research_speed_factor_var
+}
+
+USC_maga_communists_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_independents_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.025
+	production_factory_efficiency_gain_factor = USC_min_faction_maga_communists_production_factory_efficiency_gain_factor_var
+	truck_attrition_factor = USC_min_faction_independent_truck_attrition_factor_var
+}
+
+USC_ultra_maga_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_ultra_maga_tt_idea
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.025
+	army_core_attack_factor = USC_min_faction_ultra_maga_army_core_attack_factor_var
+	cas_damage_reduction = USC_min_faction_ultra_maga_cas_damage_reduction_var
+}
+
+USC_megachurches_modifier = {
+	#icon = GFX_idea_USC_defense_production_act
+	# name = USC_megachurches_modifier
+	enable = {
+		tag = USC
+	}
+	political_power_gain = -0.025
+	income_growth_factor = USC_min_faction_megachurches_income_growth_factor_var
+	out_of_supply_factor = USC_min_faction_megachurches_out_of_supply_factor_var
+}
+
+USC_freedom_underground_state_dynamic = {
+	icon = GFX_idea_USC_rockies_defence
+	enable = {
+		always = no
+	}
+	resistance_target = 0.25
+	resistance_growth = 0.5
+	compliance_growth = -0.5
+	enemy_army_speed_factor = -0.25
+	local_non_core_supply_impact_factor = 0.25
+}
+
+USC_trump_offensive_modifier = {
+	icon = GFX_idea_USC_trump_offensive
+	enable = {
+		always = no
+	}
+	army_attack_factor = 0.25
+	army_defence_factor = 0.15
+	army_attack_speed_factor = 0.15
+	army_org_factor = 0.1
+	air_cas_present_factor = 0.3
+}

@@ -1,0 +1,20 @@
+ARR_Militia_decisions = {
+
+    allowed = {
+        original_tag = ARR
+    }
+    
+    visible = {
+        has_completed_focus = AAR_An_Militia_Army
+    }
+}
+ARR_Profesonal_Divs_spawning = {
+
+    allowed = {
+        original_tag = ARR
+    }
+    
+    visible = {
+        has_completed_focus = ARR_An_Profesonal_Army
+    }
+}

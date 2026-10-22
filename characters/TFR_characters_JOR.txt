@@ -1,0 +1,30 @@
+characters={
+	JOR_abdullah_ii_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/JOR/Abdullah II.png" 
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+		country_leader = {
+			ideology = islamic_democrat
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+	}
+    JOR_Army_logo_char = {
+	name = "Saudi Military Administration"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/JOR/Army_logo.png" 
+			}
+		}
+		country_leader = {
+        ideology = military_junta
+        expire = "1.1.1.1"
+        }
+	}
+}

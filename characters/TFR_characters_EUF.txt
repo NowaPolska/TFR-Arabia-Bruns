@@ -1,0 +1,27 @@
+characters={
+	EUF_Abdel_Sanad_Yamama_char = {
+	    name = "Abdel Sanad Yamama"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/EUF/Abdel_Sanad_Yamama.png"
+			}
+			army = {
+				large = "gfx/Leaders/EUF/Abdel_Sanad_Yamama.png"
+			}
+		}
+		country_leader={
+			ideology = right_centrist
+			expire="1.1.1.1"
+			id=-1
+		}
+		can_be_captured = no
+		corps_commander = {
+				traits = { Trickster }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+		}
+	}
+}

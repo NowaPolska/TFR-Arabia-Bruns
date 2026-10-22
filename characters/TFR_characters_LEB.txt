@@ -1,0 +1,112 @@
+characters={
+	LEB_michel_aoun_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_LEB_michel_aoun
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = left_populism
+		}
+		country_leader = {
+			ideology = christian_democracy
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+	}
+
+	LEB_joseph_aoun_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/LEB/Joseph_Aoun.png" 
+			}
+			army = {
+				large = "gfx/Leaders/LEB/Joseph_Aoun2.png" 
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = left_populism
+		}
+		country_leader = {
+			ideology = christian_democracy
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				#
+			}
+		}
+	}
+    
+	LEB_Lesbianesegirl_char = {
+	name = "Laury Haytayan"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/LEB/Lesbianesegirl.png" 
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+	}
+	
+    LEB_Hassan_Nasrallah_lebanono_char = {
+	name = "Hassan Nasrallah"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/LEB/Hassan_Nasrallah_lebanono.png" 
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+			traits={ HEZ_secretary_general_of_the_jihad_council }
+		}
+	}
+
+	HEZ_hassan_nashrallah_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/HEZ/Hassan Nasrallah.png" 
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+			traits={ HEZ_secretary_general_of_the_jihad_council }
+		}
+	}
+
+	
+}

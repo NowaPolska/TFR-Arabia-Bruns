@@ -1,0 +1,16 @@
+characters = {
+    HZK_Isa_Altsoy_char = {
+	name = "Isa Altosy"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/HZK/Isa_Altsoy.png"
+			}
+		}
+        
+		country_leader={
+			ideology = radical_nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

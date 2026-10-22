@@ -1,0 +1,16 @@
+characters = {
+		PLA_Piotr_Blazeusz_char = {
+		name = "Piotr Błazeusz"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLA/Piotr_Blazeusz.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = supervised_democracy
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	}

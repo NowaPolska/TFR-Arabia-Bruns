@@ -1,0 +1,190 @@
+	characters = {
+		ISR_reuven_rivlin_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Reuven Rivlin.png"
+				}
+			}
+			country_leader = {
+				ideology = national_conservativism_con
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}	
+		ISR_benjamin_netanyahu_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/ISR_benjamin_netanyahu.png"
+				}
+			}
+			country_leader = {
+				ideology = national_conservativism_con
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		ISR_isaac_herzog_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Isaac Herzog.png"
+				}
+			}
+			country_leader = {
+				ideology = progressivism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology = national_conservativism_con
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		ISR_Levantive_council_char = {
+		name= "Levantine council"
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Levantive_council.png"
+				}
+			}
+			country_leader = {
+				ideology = popular_front_socialism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		ISR_SAU_IDF_char = {
+		name= "Collapsed Authority"
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/SAU_IDF.png"
+				}
+			}
+			country_leader = {
+				ideology = military_junta
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+	    ISR_Moti_Almoz_char = {
+		name = "Moti Almoz"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ISR/generals/ISR_Moti_Almoz.png" 
+			}
+			army = {
+				large = "gfx/Leaders/ISR/generals/ISR_Moti_Almoz.png" 
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill= 2
+			attack_skill= 3
+			defense_skill= 1
+			planning_skill= 1
+			logistics_skill= 2
+			traits = {
+			}
+		}
+	}
+
+       ISR_Aviv_Kochavi_char = {
+	   name = "Aviv Kochavi"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ISR/generals/ISR_Aviv_Kochavi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/ISR/generals/ISR_Aviv_Kochavi.png" 
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+		skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			traits = { Brilliant_Strategist, Organizer, Aggressive_Assaulter }
+		}
+	    advisor = {
+        slot = army_chief          
+        idea_token = ISR_Aviv_Kochavi_advisor
+        
+        allowed = {
+            original_tag = ISR
+        }
+        
+        cost = 150         
+        
+        traits = {
+            army_chief_defensive_3
+        }
+        
+        ai_will_do = {
+            factor = 100
+        }
+    }
+}
+	    ISR_Herzi_Halevi_char = {
+		name = "Herzi Halevi"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ISR/generals/ISR_Herzi_Halevi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/ISR/generals/ISR_Herzi_Halevi.png" 
+			}
+		}
+		can_be_captured = no
+		field_marshal={
+			skill = 5
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { infantry_leader adaptable organizer engineer }
+		}
+	}
+	
+	ISR_Avi_Mizrahi_char = {
+		name = "Avi Mizrahi"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ISR/generals/ISR_Avi_Mizrahi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/ISR/generals/ISR_Avi_Mizrahi.png" 
+			}
+		}
+		can_be_captured = no
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+			traits = { infantry_leader desert_fox }
+		}
+	}
+	
+	ISR_Eran_Ortal_char = {
+		name = "Eran Ortal"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ISR/generals/ISR_Eran_Ortal.png" 
+			}
+			army = {
+				large = "gfx/Leaders/ISR/generals/ISR_Eran_Ortal.png" 
+			}
+		}
+		can_be_captured = no
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = { }
+		}
+	}

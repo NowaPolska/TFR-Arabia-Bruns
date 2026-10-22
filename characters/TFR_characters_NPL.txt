@@ -1,0 +1,16 @@
+characters = {
+		NPL_Max_Kolonko_char = {
+		name = "Max Kolonko"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/NPL/Max_Kolonko.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = digital_democracy
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	}

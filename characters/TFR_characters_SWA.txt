@@ -1,0 +1,48 @@
+characters = {
+SWA_Fahd_bin_Abdullah_Al_Mutair_char = {
+	    name = "Fahd bin Abdullah Al-Mutair"
+		portraits = {
+		
+		    civilian = {
+				large = "gfx/leaders/SWA/Fahd_bin_Abdullah_Al_Mutair.png"
+			}
+		
+            army = {
+                large = "gfx/leaders/SWA/Fahd_bin_Abdullah_Al_Mutair.png"
+            }
+        }
+		can_be_captured = no
+		corps_commander = {
+		    traits = {  Organizer, Engineer, Panzer_Leader, old_guard }
+            skill = 6                  
+            attack_skill = 6           
+            defense_skill = 4           
+            planning_skill = 2            
+            logistics_skill = 3   
+        }
+		
+		country_leader = {
+        ideology = military_junta
+        expire = "1.1.1.1"
+        }
+		
+	advisor = {
+			slot = high_command
+			idea_token = SWA_Fahd_bin_Abdullah_Al_Mutair_command
+			ledger = army
+			allowed = {
+				original_tag = SWA
+			}
+			
+			traits = {
+				army_cavalry_2
+			}
+			
+			cost = 75
+			
+			ai_will_do = {
+				base = 100
+			}
+		}
+	}
+}

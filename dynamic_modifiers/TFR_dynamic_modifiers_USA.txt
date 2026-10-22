@@ -1,0 +1,137 @@
+USA_the_movements_strength = {
+	enable = {
+		NOT = {
+			has_global_flag = USA_american_civil_war_global
+		}
+	}
+	stability_factor = USA_the_movement_states_var
+}
+
+USA_election_supporter_strength_dynamic = {
+	enable = {
+		NOT = {
+			has_global_flag = USA_american_civil_war_global
+		}
+	}
+	political_power_gain = USA_election_support_strength_dynamic_var
+}
+
+USA_election_opposistion_strength_dynamic = {
+	enable = {
+		NOT = {
+			has_global_flag = USA_american_civil_war_global
+		}
+	}
+	political_power_gain = USA_election_opposistion_strength_dynamic_var
+	stability_factor = USA_election_opposistion_strength_stability_dynamic_var
+}
+
+#States
+USA_coronavirus_state = {
+	icon = GFX_modifiers_generic_coronavirus
+	enable = {
+		NOT = {
+			has_global_flag = USA_american_civil_war_global
+		}
+	}
+	recruitable_population_factor = -0.5
+	#local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	MONTHLY_POPULATION = -0.5
+}
+
+USA_lawless_city_state_dynamic = {
+	icon = GFX_idea_NYP_lawless_city
+	enable = {
+		has_global_flag = USA_shattered_union_global
+	}
+	army_defence_factor = -0.33
+	recruitable_population_factor = -0.66
+	resistance_growth = 0.33
+	resistance_decay = -0.33
+}
+
+USA_battle_for_america_dynamic = {
+	#TODO Hazard: Make affected by variable
+	icon = GFX_idea_USA_battle_for_america
+	attacker_modifier = yes
+	enable = {
+		has_global_flag = USA_shattered_union_global
+	}
+	air_cas_present_factor = -0.25
+	#army_attack_factor = -0.1 #-0.33
+	enemy_army_speed_factor = -0.25
+	ground_attack_factor = -0.25
+	local_org_regain = -0.1
+}
+
+CAC_northwest_autonomy_dynamic = {
+	icon = GFX_modifiers_CAC_northwest_autonomy
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+	}
+	state_resources_factor = -0.05
+	recruitable_population_factor = 0.02
+	local_building_slots = -3
+	local_supplies = 0.08
+	mobilization_speed = 0.1
+}
+
+TNM_texan_autonomy_dynamic = {
+	icon = GFX_modifiers_texan_autonomy
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+	}
+	state_resources_factor = 0.05
+	recruitable_population_factor = 0.01
+	local_building_slots = -2
+	local_org_regain = 0.08
+	local_supplies = 0.1
+	mobilization_speed = -0.01
+}
+
+LOS_southern_autonomy_dynamic = {
+	icon = GFX_modifiers_confederate_republic
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+	}
+	state_resources_factor = -0.05
+	recruitable_population_factor = 0.02
+	local_building_slots = -2
+	local_supplies = -0.08
+	mobilization_speed = 0.1
+	state_production_speed_buildings_factor = 0.1
+}
+
+#Civil War
+USA_legitimacy_dynamic = {
+	enable = {
+		always = yes
+	}
+	stability_factor = legit_dynamic_var
+	army_attack_factor = legit_dynamic_var
+	army_defence_factor = legit_dynamic_var
+}
+
+USA_reconstruction_dynamic = {
+	icon = GFX_idea_USA_american_reconstruction
+	enable = {
+		always = yes
+	}
+	custom_modifier_tooltip = USA_reconstruction_modifier_tooltip
+	ai_get_ally_desire_factor = -300
+	ai_join_ally_desire_factor = -300
+	join_faction_tension = 1
+	industrial_capacity_factory = USA_reconstruction_industrial_capacity_factory_dynamic_var
+	industrial_capacity_dockyard = USA_reconstruction_industrial_capacity_dockyard_dynamic_var
+	production_speed_buildings_factor = USA_reconstruction_production_speed_buildings_factor_dynamic_var
+	army_org_factor = USA_reconstruction_army_org_factor_dynamic_var
+	personal_value_factor = USA_reconstruction_personal_value_factor_dynamic_var
+}

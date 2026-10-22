@@ -1,0 +1,428 @@
+characters={
+	PER_ali_hosseini_khamenei_char = {
+		portraits = {
+			civilian={
+				large = "gfx/Leaders/PER/PER_ali_hosseini_khamenei.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_ali_hosseini_khamenei.png"
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+			traits = {
+				hos_supreme_leader_iran
+			}
+		}
+		country_leader = {
+			ideology = islamic_democrat
+			traits = {
+				hos_supreme_leader_iran
+			}
+		}
+	}
+	
+	PER_modschtaba_chamenei_char = {
+	name = "Modschtaba Khamenei"
+		portraits = {
+			civilian={
+				large = "gfx/Leaders/PER/modschtaba_chamenei.png"
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+			traits = {
+				hos_supreme_leader_iran
+			}
+		}
+	}
+		
+	PER_qasem_soleimani_char = {
+		portraits = {
+			army = {
+				large = "gfx/Leaders/PER/PER_qasem_soleimani.png"
+			}
+		}
+		can_be_captured = no
+		field_marshal = {
+			traits = { 
+				brilliant_strategist 
+				war_hero 
+				organizer
+				politically_connected
+				media_personality
+				infantry_officer
+			}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	
+	PER_mohammad_ali_jafari_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PER/PER_mohammad_ali_jafari.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_mohammad_ali_jafari.png"
+			}
+		}
+		can_be_captured = no
+		field_marshal = {
+			traits = { 
+				brilliant_strategist 
+				war_hero 
+				organizer
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	PER_Yahya_Rahim_Safavi_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+			}
+		}
+		can_be_captured = no
+		field_marshal = {
+			traits = { 
+				
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	PER_Gholamhossein_Gheybparvar_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=1
+		}
+	}
+
+	PER_Esmail_Qaani_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+
+	IRB_Yahya_Rahim_Safavi_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+		can_be_captured = no
+		field_marshal = {
+			traits = { 
+				brilliant_strategist 
+				war_hero 
+				organizer
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	PER_mohammad_bagheri_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/Mohammad_Bagheri.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/Mohammad_Bagheri.png"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	
+	PER_hossein_salami_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/Hossein_Salami.dds"
+			}
+			army = {
+				large = "gfx/Leaders/PER/Hossein_Salami.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
+	PER_amir_ali_hajizadeh_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/Amir_Ali_Hajizadeh.dds"
+			}
+			army = {
+				large = "gfx/Leaders/PER/Amir_Ali_Hajizadeh.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
+	PER_abdolrahim_mousavi_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/Abdolrahim_Mousavi.dds"
+			}
+			army = {
+				large = "gfx/Leaders/PER/Abdolrahim_Mousavi.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	
+	PER_kioumars_heydari_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/Kioumars_Heydari.dds"
+			}
+			army = {
+				large = "gfx/Leaders/PER/Kioumars_Heydari.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+
+	HRZ_tawhid_ibrahim_begli_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PER/HRZ_tawhid_ibrahim_begli.png"
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+	}
+
+	AFG_Gholamhossein_Gheybparvar_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=1
+		}
+	}
+
+	IRQ_Esmail_Qaani_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	
+	AFA_mohammad_bagheri_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/PER/Mohammad_Bagheri.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/Mohammad_Bagheri.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+		
+	}
+	
+	VLA_esmail_qaani_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+			}
+			army = {
+				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+		can_be_captured = no
+		corps_commander={
+			skill = 2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	
+	ZET_ali_fadavi_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ZET/Ali Fadavi.dds"
+			}
+			army = {
+				large = "gfx/Leaders/ZET/Ali Fadavi.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	
+	AOI_sabuhi_mammadov_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/AOI/Sabuhi Mammadov.dds"
+			}
+		}
+		country_leader = {
+			ideology = oligarchist
+		}
+	}
+
+	AOI_mahmudali_chehregani_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/AOI/Mahmudali Chehregani.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	
+	QEM_habib_chaab_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/QEM/Habib Chaab.dds"
+			}
+		}
+		country_leader = {
+			ideology = islamic_democrat
+		}
+	}
+	
+	RIF_lur_provisional_council_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/RIF/Lurs.dds"
+			}
+		}
+		country_leader = {
+			ideology = autocrat
+		}
+	}
+
+}

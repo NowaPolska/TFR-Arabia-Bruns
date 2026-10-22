@@ -1,0 +1,70 @@
+	characters={
+		LIT_gitanas_nauseda_char = {
+			portraits={
+				civilian={
+					large = GFX_portrait_LIT_gitanas_nauseda
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=christian_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=left_populism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		
+		LIT_teisingumo_ausra_char = {
+			portraits={
+				civilian={
+					large = "gfx/leaders/LIT/Teisingumo Ausra.dds"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=oligarchist
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=reformist_socialism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		
+		LIT_andrius_mazuronis_char = {
+		name = "Andrius Mazuronis"
+			portraits={
+				civilian={
+					large = "gfx/leaders/LIT/andrius_mazuronis.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=centrist
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	    LIT_Ingrida_simonyte_char = {
+		name = "Ingrida Šimonytė"
+			portraits={
+				civilian={
+					large = "gfx/leaders/LIT/Ingrida_simonyte.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=christian_democracy
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	}

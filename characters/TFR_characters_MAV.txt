@@ -1,0 +1,18 @@
+characters={
+		PLD_Sasin_char = {
+		name = "Jacek Sasin"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/MAV/Sasin.png"
+				}
+			}
+			country_leader = {
+            ideology = oligarchist
+            expire = "1.1.1.1"
+            }
+            country_leader = {
+            ideology = national_conservativism_con
+            expire = "1.1.1.1"
+            }
+		}
+	}

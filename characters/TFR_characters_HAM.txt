@@ -1,0 +1,33 @@
+characters={  
+	HAM_ismail_haniyeh_char = {
+	    name = "Ismail Hainyeh"
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/HAM/HAM_ismail_haniyeh.png"
+				}
+			}
+			country_leader = {
+				ideology = radical_nationalism
+				traits = {
+					hos_commander_in_chief
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+	HAM_israel_win_char = {
+	    name = "Israeli Military Administration"
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/HAM/HAM_israel_win.png"
+				}
+			}
+			country_leader = {
+				ideology = military_democracy
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+	}

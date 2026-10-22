@@ -1,0 +1,9 @@
+GMA_Rural_Government = {
+	icon = GFX_modifiers_Rural_Government
+	enable = {
+		always = yes
+	}
+	state_resources_factor = 0.1
+	recruitable_population_factor = -0.05
+	state_production_speed_buildings_factor = 0.1
+}

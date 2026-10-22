@@ -1,0 +1,157 @@
+	characters={
+		SLO_zuzana_caputova_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Zuzana Čaputová.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=right_populism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=neoliberalism
+				expire="1.1.1.1"
+				id=-1
+			}	
+			country_leader={
+				desc=""
+				ideology=social_democracy
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=classical_liberalism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}	
+		SLO_ivan_korcok_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Ivan Korčok.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=right_populism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=neoliberalism
+				expire="1.1.1.1"
+				id=-1
+			}	
+			country_leader={
+				desc=""
+				ideology=social_democracy
+				expire="1.1.1.1"
+				id=-1
+			}		
+			country_leader={
+				desc=""
+				ideology=classical_liberalism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		SLO_marian_kotleba_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Marian_Kotleba.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=classical_fascism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		SLO_jozef_hrdlicka_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Jozef Hrdlička.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=marxism_leninism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=reformist_socialism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		SLO_robert_fico_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Robert Fico.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=hybrid_regime
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=left_populism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		SLO_Peter_Pellegrini_char = {
+		name = "Peter Pellegrini"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Peter_Pellegrini.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=social_democracy
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		SLO_Ivan_Korčok_char = {
+		name = "Ivan Korčok"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Ivan_Korčok.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=centrist
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		SLO_Igor_Matovič_char = {
+		name = "Igor Matovič"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SLO/Igor_Matovič.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=christian_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	}

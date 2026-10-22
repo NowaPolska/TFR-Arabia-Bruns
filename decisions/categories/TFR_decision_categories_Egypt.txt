@@ -1,0 +1,16 @@
+Egyptian_civil_war_reunifiation = {
+    
+	allowed = {
+	or = {
+    original_tag = EGY
+	original_tag = MUK
+    original_tag = EKP
+    original_tag = EGY
+    original_tag = EUF
+	    }
+    }
+    
+    visible = {
+	    has_global_flag = middl_east_go_boom
+    }
+}

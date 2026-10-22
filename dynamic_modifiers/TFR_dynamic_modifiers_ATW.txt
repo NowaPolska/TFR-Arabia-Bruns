@@ -1,0 +1,279 @@
+ATW_doctrine_of_destruction_dynamic = {
+	icon = GFX_idea_ATW_doctrine_of_destruction
+	enable = {
+		tag = ATW
+	}
+	political_power_gain = ATW_politics_political_power_gain_dynamic_var	#-1
+	stability_factor = ATW_politics_stability_factor_dynamic_var
+	stability_weekly = ATW_politics_stability_weekly_dynamic_var
+	war_stability_factor = ATW_politics_war_stability_factor_dynamic_var
+	party_popularity_stability_factor = ATW_politics_party_popularity_stability_factor_dynamic_var
+	war_support_factor = ATW_politics_war_support_factor_dynamic_var	#-0.15
+	war_support_weekly = ATW_politics_war_support_weekly_dynamic_var
+	personal_expense_factor = ATW_politics_personal_expense_factor_dynamic_var
+	desperation_weekly = ATW_politics_desperation_weekly_dynamic_var	#0.002
+	devotion_weekly = ATW_politics_devotion_weekly_dynamic_var
+	despair_weekly = ATW_politics_despair_weekly_dynamic_var
+	suspicion_weekly = ATW_politics_suspicion_weekly_dynamic_var
+	poverty_development_monthly = ATW_politics_poverty_development_monthly_dynamic_var	#-0.01
+	society_development_monthly = ATW_politics_society_development_monthly_dynamic_var	#-0.01
+	compliance_growth = ATW_politics_compliance_growth_dynamic_var
+	monthly_population = ATW_politics_monthly_population_dynamic_var
+}
+
+ATW_industrial_anarchy_dynamic = {
+	icon = GFX_idea_ATW_industrial_anarchy
+	enable = {
+		tag = ATW
+	}
+	political_power_gain = ATW_economy_political_power_gain_dynamic_var
+	stability_factor = ATW_economy_stability_factor_dynamic_var
+	stability_weekly = ATW_economy_stability_weekly_dynamic_var
+	war_support_factor = ATW_economy_war_support_factor_dynamic_var
+	war_support_weekly = ATW_economy_war_support_weekly_dynamic_var
+	consumer_goods_factor = ATW_economy_consumer_goods_factor_dynamic_var
+	local_resources_factor = ATW_economy_local_resources_factor_dynamic_var
+	global_building_slots_factor = ATW_economy_global_building_slots_factor_dynamic_var
+	research_speed_factor = ATW_economy_research_speed_factor_dynamic_var
+	production_factory_max_efficiency_factor = ATW_economy_production_factory_max_efficiency_factor_dynamic_var
+	production_factory_efficiency_gain_factor = ATW_economy_production_factory_efficiency_gain_factor_dynamic_var
+	production_factory_start_efficiency_factor = ATW_economy_production_factory_start_efficiency_factor_dynamic_var
+	line_change_production_efficiency_factor = ATW_economy_line_change_production_efficiency_factor_dynamic_var
+	production_lack_of_resource_penalty_factor = ATW_economy_production_lack_of_resource_penalty_factor_dynamic_var
+	conversion_cost_civ_to_mil_factor = ATW_economy_conversion_cost_civ_to_mil_factor_dynamic_var
+	conversion_cost_mil_to_civ_factor = ATW_economy_conversion_cost_mil_to_civ_factor_dynamic_var
+	industry_repair_factor = ATW_economy_industry_repair_factor_dynamic_var	#-0.9
+	production_speed_buildings_factor = ATW_economy_production_speed_buildings_factor_dynamic_var	#-0.3
+	industrial_capacity_factory = ATW_economy_industrial_capacity_factory_dynamic_var	#-0.3
+	industrial_capacity_dockyard = ATW_economy_industrial_capacity_dockyard_dynamic_var	#-0.3
+	production_speed_infrastructure_factor = ATW_economy_production_speed_infrastructure_factor_dynamic_var
+	production_speed_industrial_complex_factor = ATW_economy_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_office_park_factor = ATW_economy_production_speed_office_park_factor_dynamic_var
+	production_speed_rail_way_factor = ATW_economy_production_speed_rail_way_factor_dynamic_var
+	production_speed_arms_factory_factor = ATW_economy_production_speed_arms_factory_factor_dynamic_var
+	production_speed_dockyard_factor = ATW_economy_production_speed_dockyard_factor_dynamic_var
+	production_speed_power_plant_factor = ATW_economy_production_speed_power_plant_factor_dynamic_var
+	production_speed_nuclear_reactor_factor = ATW_economy_production_speed_nuclear_reactor_factor_dynamic_var
+	industrial_development_monthly = ATW_economy_industrial_development_monthly_dynamic_var
+	poverty_development_monthly = ATW_economy_poverty_development_monthly_dynamic_var
+	farming_development_monthly = ATW_economy_farming_development_monthly_dynamic_var
+	academic_development_monthly = ATW_economy_academic_development_monthly_dynamic_var
+	society_development_monthly = ATW_economy_society_development_monthly_dynamic_var
+	income_growth_factor = ATW_economy_income_growth_factor_dynamic_var
+	expense_growth_factor = ATW_economy_expense_growth_factor_dynamic_var
+	business_value_factor = ATW_economy_business_value_factor_dynamic_var
+	personal_value_factor = ATW_economy_personal_value_factor_dynamic_var
+	personal_expense_factor = ATW_economy_personal_expense_factor_dynamic_var
+	tax_business_rate = ATW_economy_tax_business_rate_dynamic_var
+	tax_personal_rate = ATW_economy_tax_personal_rate_dynamic_var
+	interest_rate = ATW_economy_interest_rate_dynamic_var
+	inflation_monthly_factor = ATW_economy_inflation_monthly_factor_dynamic_var
+}
+
+ATW_heralds_of_the_apocalypse_dynamic = {
+	icon = GFX_idea_ATW_heralds_of_the_apocalypse
+	enable = {
+		tag = ATW
+	}
+	political_power_gain = ATW_military_political_power_gain_dynamic_var
+	war_support_factor = ATW_military_war_support_factor_dynamic_var
+	war_support_weekly = ATW_military_war_support_weekly_dynamic_var
+	war_stability_factor = ATW_military_war_stability_factor_dynamic_var
+	weekly_casualties_war_support = ATW_military_weekly_casualties_war_support_dynamic_var
+	weekly_convoys_war_support = ATW_military_weekly_convoys_war_support_dynamic_var
+	weekly_bombing_war_support = ATW_military_weekly_bombing_war_support_dynamic_var
+	experience_gain_army = ATW_military_experience_gain_army_dynamic_var	#-0.25
+	experience_gain_army_factor = ATW_military_experience_gain_army_factor_dynamic_var	#-0.25
+	experience_loss_factor = ATW_military_experience_loss_factor_dynamic_var
+	max_command_power = ATW_military_max_command_power_dynamic_var
+	command_power_gain_mult = ATW_military_command_power_gain_mult_dynamic_var
+	army_org_factor = ATW_military_army_org_factor_dynamic_var	#-0.25
+	army_org_regain = ATW_military_army_org_regain_dynamic_var
+	org_loss_when_moving = ATW_military_org_loss_when_moving_dynamic_var
+	army_strength_factor = ATW_military_army_strength_factor_dynamic_var
+	coordination_bonus = ATW_military_coordination_bonus_dynamic_var
+	land_reinforce_rate = ATW_military_land_reinforce_rate_dynamic_var
+	max_planning_factor = ATW_military_max_planning_factor_dynamic_var
+	planning_speed = ATW_military_planning_speed_dynamic_var
+	max_dig_in_factor = ATW_military_max_dig_in_factor_dynamic_var
+	dig_in_speed_factor = ATW_military_dig_in_speed_factor_dynamic_var
+	army_morale_factor = ATW_military_army_morale_factor_dynamic_var
+	army_attack_factor = ATW_military_army_attack_factor_dynamic_var
+	army_defence_factor = ATW_military_army_defence_factor_dynamic_var
+	breakthrough_factor = ATW_military_breakthrough_factor_dynamic_var
+	army_speed_factor = ATW_military_army_speed_factor_dynamic_var
+	army_core_attack_factor = ATW_military_army_core_attack_factor_dynamic_var
+	army_core_defence_factor = ATW_military_army_core_defence_factor_dynamic_var
+	modifier_army_sub_unit_militia_attack_factor = ATW_military_modifier_army_sub_unit_militia_attack_factor_dynamic_var
+	modifier_army_sub_unit_militia_defence_factor = ATW_military_modifier_army_sub_unit_militia_defence_factor_dynamic_var
+	production_speed_air_base_factor = ATW_military_production_speed_air_base_factor_dynamic_var
+	production_speed_anti_air_building_factor = ATW_military_production_speed_anti_air_building_factor_dynamic_var
+	production_speed_bunker_factor = ATW_military_production_speed_bunker_factor_dynamic_var
+	production_speed_coastal_bunker_factor = ATW_military_production_speed_coastal_bunker_factor_dynamic_var
+	equipment_capture_factor = ATW_military_equipment_capture_factor_dynamic_var
+	supply_consumption_factor = ATW_military_supply_consumption_factor_dynamic_var
+	out_of_supply_factor = ATW_military_out_of_supply_factor_dynamic_var
+	attrition = ATW_military_attrition_dynamic_var
+	conscription_factor = ATW_military_conscription_factor_dynamic_var	#-0.5
+	mobilization_speed = ATW_military_mobilization_speed_dynamic_var	#-0.5
+	training_time_army_factor = ATW_military_training_time_army_factor_dynamic_var
+	resistance_target = ATW_military_resistance_target_dynamic_var
+	compliance_growth = ATW_military_compliance_growth_dynamic_var #-0.3
+	resistance_growth = ATW_military_resistance_growth_dynamic_var	#-0.3
+	resistance_decay = ATW_military_resistance_decay_dynamic_var	#0.3
+	required_garrison_factor = ATW_military_required_garrison_factor_dynamic_var
+	resistance_decay_on_our_occupied_states = ATW_military_resistance_decay_on_our_occupied_states_dynamic_var
+	resistance_growth_on_our_occupied_states = ATW_military_resistance_growth_on_our_occupied_states_dynamic_var
+	acclimatization_cold_climate_gain_factor = ATW_military_acclimatization_cold_climate_gain_factor_dynamic_var
+	acclimatization_hot_climate_gain_factor = ATW_military_acclimatization_hot_climate_gain_factor_dynamic_var
+	pocket_penalty = ATW_military_pocket_penalty_dynamic_var
+	cat_old_land_doctrine_cost_factor = ATW_military_land_doctrine_cost_factor_dynamic_var
+	battalion_upkeep_factor = ATW_military_battalion_upkeep_factor_dynamic_var
+	military_development_monthly = ATW_military_development_monthly_dynamic_var
+	surrender_limit = ATW_military_surrender_limit_dynamic_var
+}
+
+#Level of Mechanics
+
+ATW_desperation_dynamic = {
+	#icon = GFX_idea_generic_mass_homicide
+	enable = {
+		tag = ATW
+	}
+	army_attack_factor = ATW_desperation_army_attack_factor_dynamic_var
+	production_speed_arms_factory_factor = ATW_desperation_production_speed_arms_factory_factor_dynamic_var
+	production_factory_efficiency_gain_factor = ATW_desperation_production_factory_efficiency_gain_factor_dynamic_var
+	production_speed_industrial_complex_factor = ATW_desperation_production_speed_industrial_complex_factor_dynamic_var
+	research_speed_factor = ATW_desperation_research_speed_factor_dynamic_var
+}
+
+ATW_devotion_dynamic = {
+	#icon = GFX_idea_generic_mass_homicide
+	enable = {
+		tag = ATW
+	}
+	political_power_gain = ATW_devotion_political_power_gain_dynamic_var
+	army_defence_factor = ATW_devotion_army_defence_factor_dynamic_var
+	stability_factor = ATW_devotion_stability_factor_dynamic_var
+	conscription_factor = ATW_devotion_conscription_factor_dynamic_var
+	war_support_factor = ATW_devotion_war_support_factor_dynamic_var
+}
+
+ATW_despair_dynamic = {
+	#icon = GFX_idea_generic_mass_homicide
+	enable = {
+		tag = ATW
+	}
+	army_attack_factor = ATW_despair_army_attack_factor_dynamic_var
+	industrial_capacity_factory = ATW_despair_industrial_capacity_factory_dynamic_var
+	industrial_capacity_dockyard = ATW_despair_industrial_capacity_dockyard_dynamic_var
+	war_support_factor = ATW_despair_war_support_factor_dynamic_var
+	army_morale_factor = ATW_despair_army_morale_factor_dynamic_var
+	stability_factor = ATW_despair_stability_factor_dynamic_var
+}
+
+#States
+ATW_conservatory_state_dyanmic = {
+	icon = GFX_idea_generic_mass_homicide
+	enable = {
+		tag = ATW
+	}
+	resistance_target = -0.05
+	compliance_gain = 0.02
+	resistance_decay = 0.1
+	resistance_growth = -0.1
+}
+
+ATW_poisoned_water_supply_dynamic = {
+	icon = GFX_idea_ATW_doctrine_of_destruction
+	enable = {
+		tag = ATW
+	}
+	poverty_development_monthly = ATW_poison_water_poverty
+	society_development_monthly = ATW_poison_water_society
+	monthly_population = ATW_poison_water_monthly_pop
+	conscription_factor = ATW_poison_water_conscription
+	recruitable_population_factor = ATW_poison_water_recruitablepop
+	supply_factor = ATW_poison_water_supply
+	no_supply_grace = ATW_poison_water_grace
+	attrition = ATW_poison_water_attriction
+	local_org_regain = ATW_poison_water_localorg
+	local_factories = ATW_poison_water_localfact
+	army_speed_factor = ATW_poison_water_speed
+	army_org_factor = ATW_poison_water_org
+}
+
+ATW_wild_fires_dynamic = {
+	icon = GFX_idea_ATW_doctrine_of_destruction
+	enable = {
+		tag = ATW
+	}
+	poverty_development_monthly = ATW_wild_fire_poverty
+	society_development_monthly = ATW_wild_fire_society
+	monthly_population = ATW_wild_fire_monthly_pop
+	conscription_factor = ATW_wild_fire_conscription
+	recruitable_population_factor = ATW_wild_fire_recruitablepop
+	supply_factor = ATW_wild_fire_supply
+	no_supply_grace = ATW_wild_fire_grace
+	attrition = ATW_wild_fire_attriction
+	local_org_regain = ATW_wild_fire_localorg
+	local_factories = ATW_wild_fire_localfact
+	army_speed_factor = ATW_wild_fire_speed
+	army_org_factor = ATW_wild_fire_org
+	supply_node_range = ATW_wild_fire_supply_node
+	industry_repair_factor = ATW_wild_fire_repair
+	global_building_slots_factor = ATW_wild_fire_buildingslots
+	local_resources_factor = ATW_wild_fire_localresources
+	coordination_bonus = ATW_wild_fire_coordination
+	army_defence_factor = ATW_wild_fire_defense
+}
+
+ATW_chemical_hell_dynamic = {
+	icon = GFX_idea_ATW_doctrine_of_destruction
+	enable = {
+		tag = ATW
+	}
+	poverty_development_monthly = ATW_chemicals_poverty
+	society_development_monthly = ATW_chemicals_society
+	monthly_population = ATW_chemicals_monthly_pop
+	conscription_factor = ATW_chemicals_conscription
+	recruitable_population_factor = ATW_chemicals_recruitablepop
+	supply_factor = ATW_chemicals_supply
+	no_supply_grace = ATW_chemicals_grace
+	attrition = ATW_chemicals_attriction
+	local_org_regain = ATW_chemicals_localorg
+	local_factories = ATW_chemicals_localfact
+	army_speed_factor = ATW_chemicals_speed
+	army_org_factor = ATW_chemicals_org
+	supply_node_range = ATW_chemicals_supply_node
+	industry_repair_factor = ATW_chemicals_repair
+	global_building_slots_factor = ATW_chemicals_buildingslots
+	local_resources_factor = ATW_chemicals_localresources
+	coordination_bonus = ATW_chemicals_coordination
+	army_defence_factor = ATW_chemicals_defense
+}
+
+ATW_nuclear_armageddon_dynamic = {
+	icon = GFX_idea_ATW_doctrine_of_destruction
+	enable = {
+		tag = ATW
+	}
+	poverty_development_monthly = ATW_nuked_poverty
+	society_development_monthly = ATW_nuked_society
+	monthly_population = ATW_nuked_monthly_pop
+	conscription_factor = ATW_nuked_conscription
+	recruitable_population_factor = ATW_nuked_recruitablepop
+	supply_factor = ATW_nuked_supply
+	no_supply_grace = ATW_nuked_grace
+	attrition = ATW_nuked_attriction
+	local_org_regain = ATW_nuked_localorg
+	local_factories = ATW_nuked_localfact
+	army_speed_factor = ATW_nuked_speed
+	army_org_factor = ATW_nuked_org
+	supply_node_range = ATW_nuked_supply_node
+	industry_repair_factor = ATW_nuked_repair
+	global_building_slots_factor = ATW_nuked_buildingslots
+	local_resources_factor = ATW_nuked_localresources
+	coordination_bonus = ATW_nuked_coordination
+	army_defence_factor = ATW_nuked_defense
+}

@@ -1,0 +1,97 @@
+Egyptian_civil_war_reunifiation = {
+
+    EGY_victory_in_the_civil_war = {
+	
+	allowed = {
+	    original_tag = EGY
+	}
+	
+	available = {
+    tag = EGY
+    has_war = no
+    }
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 0
+	
+	fire_only_once = yes
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	
+	remove_effect = {
+	transfer_state = 1170
+	news_event = { id = news.2012 }
+	    }
+	}
+	
+    EKP_kommi_win = {
+	
+	allowed = {
+	    original_tag = EKP
+	}
+	
+	available = {
+    tag = EKP
+    has_war = no
+    }
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 0
+	
+	fire_only_once = yes
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	
+	remove_effect = {
+	transfer_state = 1170
+	if = {
+	   limit = {
+		SOV = {
+		has_global_flag = SOV_cprf_won
+		    }
+	    }
+	    country_event = { russia.3 days = 8 }
+    }
+	add_ideas = { ZZZ_planned_economy }
+	add_ideas = { ZZZ_communist_party_state }
+	remove_ideas = radiated_land
+	add_ideas = The_Revolution_Allways_wins
+	add_ideas = Rebuilding_our_home_land
+	news_event = { id = news.2013 }
+	    }
+	}
+    
+	EUF_wins_egypt = {
+	
+	allowed = {
+	    original_tag = EUF
+	}
+	
+	available = {
+    tag = EUF
+    has_war = no
+    }
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 0
+	
+	fire_only_once = yes
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	
+	remove_effect = {
+	transfer_state = 1170
+	set_cosmetic_tag = EUF_united
+	news_event = { id = news.2014 }
+	    }
+	}
+}

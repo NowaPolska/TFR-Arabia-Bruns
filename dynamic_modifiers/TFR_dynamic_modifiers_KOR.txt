@@ -1,0 +1,33 @@
+	KOR_seoul = {
+		icon = GFX_modifiers_KOR_seoul
+		
+		enable = { 
+			always = yes
+		}
+		remove_trigger = {
+		}
+		local_building_slots = -2
+		local_supplies = 0.025
+		mobilization_speed = -0.05
+		state_production_speed_dockyard_factor = 0.05
+		state_production_speed_naval_base_factor = 0.02
+		state_production_speed_coastal_bunker_factor = 0.025
+	}
+	
+	KOR_taegeuk_effects_dynamic = {
+	icon = GFX_idea_ATW_doctrine_of_destruction
+		enable = {
+			tag = KOR
+		}
+		industrial_capacity_factory = taegeuk_effects_national_support_industrial_capacity_factory
+		society_development_monthly = taegeuk_effects_national_support_society_development_monthly
+		
+		political_power_factor = taegeuk_effects_parliamentary_political_power_factor
+		personal_value_factor = taegeuk_effects_parliamentary_political_power_factor
+		
+		
+		war_support_factor = dominance_of_chaebols_national_support_personal_value_factor
+		stability_factor = dominance_of_chaebols_national_support_personal_value_factor
+		income_growth_factor = dominance_of_chaebols_national_support_personal_value_factor
+		
+	}

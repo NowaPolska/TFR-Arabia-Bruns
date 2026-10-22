@@ -1,0 +1,262 @@
+characters={
+	ROM_klaus_iohannis_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Klaus_Iohannis.png" 
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "1.1.1.1"
+		}
+		country_leader = {
+			ideology = social_democracy
+		}
+		country_leader = {
+			ideology = neoliberalism
+		}
+	}	
+	ROM_Calin_Georgescu_char = {
+	name = "Calin Georgescu"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Calin_Georgescu.png" 
+			}
+		}
+		country_leader = {
+			ideology = right_centrist
+			expire = "1.1.1.1"
+		}
+	}
+	ROM_George_Simion_char = {
+	name = "George Simion"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/George_Simion.png" 
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			expire = "1.1.1.1"
+		}
+	}
+	ROM_Ludovic_Orban_char = {
+	name = "Ludovic Orban"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Ludovic_Orban.png" 
+			}
+		}
+		country_leader = {
+			ideology = right_centrist
+			expire = "1.1.1.1"
+		}
+	}
+	ROM_Marcel_Ciolacu_char = {
+	name = "Marcel Ciolacu"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Marcel_Ciolacu.dds" 
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "1.1.1.1"
+		}
+	}
+    ROM_Diana_Șoșoacă_char = {
+	name = "Diana Șoșoacă"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Diana_Șoșoacă.png" 
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			expire = "1.1.1.1"
+		}
+	}
+    ROM_Nicolae_Ciucă_char = {
+	name = "Nicolae Ciucă"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Nicolae_Ciucă.png" 
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "1.1.1.1"
+		}
+	}			
+	ROM_nicusor_dan_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Nicușor_Dan.png" 
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "1.1.1.1"
+		}
+		country_leader = {
+			ideology = social_democracy
+		}
+		country_leader = {
+			ideology = centrism
+		}
+	}
+	ROM_tudor_ionescu_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Tudor Ionescu.png" 
+			}
+		}
+		country_leader = {
+			ideology = clerical_fascism
+		}
+	}
+	WLC_Tudor_Ionescu = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Tudor_Ionescu.dds" 
+			}
+		}
+		country_leader = {
+			ideology = identitarianism
+		}
+	}
+	WLC_Nicholas_Medforth_Mills = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/HUN/Nicholas_Medforth_Mills.png" 
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = christian_conservatism
+		}
+	}
+	ROM_mircea_chelaru_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Mircea_Chelaru.dds" 
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+		can_be_captured = no
+		field_marshal={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	ROM_constantin_rotaru_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Constantin Rotaru.png" 
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+	}
+	ROM_gigi_becali_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ROM/Gigi Becali.png" 
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+	}
+	ROM_Corneliu_Postu = {
+		portraits={
+			civilian={
+				large = "gfx/Leaders/ROM/Corneliu Postu.png"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	ROM_Daniel_Petrescu = {
+		portraits={
+			civilian={
+				large = "gfx/Leaders/ROM/Daniel Petrescu.png"
+			}
+		}
+		can_be_captured = no
+		field_marshal={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	ROM_Florea_Sas = {
+		portraits={
+			civilian={
+				large = "gfx/Leaders/ROM/Florea Sas.png"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	ROM_Gheorghita_Vlad = {
+		portraits={
+			civilian={
+				large = "gfx/Leaders/ROM/Gheorghita Vlad.png"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	ROM_Iulian_Berdila = {
+		portraits={
+			civilian={
+				large = "gfx/Leaders/ROM/Iulian Berdila.png"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	
+}

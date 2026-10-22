@@ -1,0 +1,199 @@
+SAU_civil_war_preparations = {
+	icon = Saudi-civilprep
+	picture = GFX_decision_cat_SAU_civilwarprep
+
+	allowed = {
+		original_tag = SAU
+	}
+	visible = {
+		NOT = {
+			has_global_flag = SAU_saudi_civil_war_global
+		}
+	}
+}
+
+SAU_yemeni_civil_war = {
+	icon = Saudi-civilprep
+	picture =  GFX_decision_category_SAU_yemen_war_dp
+
+	allowed = {
+		original_tag = SAU
+	}
+	visible = {
+		NOT = {
+			has_global_flag = king_salman_dead
+		}
+	}
+}
+
+SAU_reunification = {
+	icon = Saudi-civilprep
+	picture = GFX_decision_cat_SAU_civilwarprep
+
+	allowed = {
+		OR = {
+			tag = SAU
+			tag = SAR
+			tag = ARR
+			tag = ROC
+			tag = JAH
+		}
+	}
+	visible = {
+		has_idea = SAU_saudi_civil_war
+		OR = {
+			AND = {
+				tag = SAR
+				NOT = {
+					country_exists = SAU
+					country_exists = ARR
+					country_exists = ROC
+					country_exists = JAH
+				}
+			}
+			AND = {
+				tag = SAU
+				NOT = {
+					country_exists = SAR
+					country_exists = ARR
+					country_exists = ROC
+					country_exists = JAH
+				}
+			}
+			AND = {
+				tag = ROC
+				NOT = {
+					country_exists = SAU
+					country_exists = ARR
+					country_exists = SAR
+					country_exists = JAH
+				}
+			}
+			AND = {
+				tag = ARR
+				NOT = {
+					country_exists = SAU
+					country_exists = ROC
+					country_exists = SAR
+					country_exists = JAH
+				}
+			}
+			AND = {
+				tag = JAH
+				NOT = {
+					country_exists = SAU
+					country_exists = ROC
+					country_exists = SAR
+					country_exists = ARR
+				}
+			}
+		}
+	}
+}
+
+YEM_yemeni_civil_war = {
+	icon = russia
+
+	allowed = {
+		OR = {
+			tag = YEM
+			tag = HOU
+			tag = AAS
+		}
+	}
+	visible = {
+		OR = {
+			tag = YEM
+			tag = HOU
+			tag = AAS
+		}
+	}
+}
+SAU_civil_war_decisions = {
+    icon = GFX_decision_category_SAU_war
+
+	allowed = {
+		original_tag = SAU
+
+	}
+	visible = {
+		has_war = yes
+	}
+}
+Saudi_covid_decisions = {
+    icon = GFX_decisions_SAU_koronoa_dp
+
+    allowed = {
+        original_tag = SAU
+    }
+    
+    visible = {
+        has_idea = SAU_covid_hits_Arabia
+		has_idea = SAU_cripling_covid_cases
+		has_idea = SAU_devestating_covid_cases
+    }
+}
+#SAU_Nucleare_Programm = { #### scraped ####
+    #icon = russia
+
+   # allowed = {
+       # original_tag = SAU
+    #}
+    
+    #visible = {
+	#has_completed_focus = SAU_Saudi_Nucleare_Programm
+	#}
+#}
+#SAU_Nuke_luanching_decisions = {
+    #icon = russia
+
+    #allowed = {
+        #original_tag = SAU
+    #}
+    
+    #visible = {
+	#has_idea = SAU_nuke_progress_five
+	#}
+#}
+#SAU_Joining_the_secound_European_war = {
+    #allowed = {
+        #original_tag = SAU
+    #}
+    
+    #visible = {
+	#has_completed_focus = SAU_Dreams_of_Arab_Unification
+	#}
+#}
+SAU_Saudi_Iran_war_decisions = {
+icon = Saudi-civilprep
+picture = GFX_decision_category_SAU_iran_war
+allowed = {
+        original_tag = SAU
+    }
+    
+    visible = {
+	has_completed_focus = SAU_Operation_Abu_Musa_al_Ash_ari
+	SAU = {
+	has_war_with = PER
+	    }
+	}
+}
+YEM_unification = {
+    allowed = {
+	    OR = {
+        original_tag = YEM
+		original_tag = HOU
+		}
+    }
+    
+    visible = {
+	OR = {
+	HOU = {
+	exsists = yes
+	}
+	YEM = {
+	exsists = yes
+	        }
+	    }
+	}
+}

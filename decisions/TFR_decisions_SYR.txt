@@ -1,0 +1,804 @@
+	SYR_army_stats = {
+
+		SYR_reform_army = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				HTS = {
+					exists = no
+				}
+				date > 2022.01.01
+			}
+
+			visible = {
+				tag = SYR
+			}
+			
+			ai_will_do = {
+				base = 100
+			}
+			
+			fire_only_once = yes
+
+			cost = 20
+
+			complete_effect = {
+				remove_ideas = SYR_war_exhaustion
+				country_lock_all_division_template = no
+			}
+		}
+			
+		SYR_reform_army_2 = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				NOT = {
+					has_idea = SYR_war_exhaustion
+				}
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				base = 100
+			}
+
+			fire_only_once = yes
+
+			cost = 100
+			days_remove = 70
+			remove_effect = {
+				add_ideas = SYR_army_of_lions_idea
+				remove_ideas = SYR_inexperienced_generals
+				set_country_flag = SYR_reform_army_2_flag
+			}
+		}	
+		
+		SYR_cult_of_assad = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				has_country_flag = SYR_reform_army_2_flag
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				base = 100
+			}
+			
+			fire_only_once = yes
+
+			cost = 50
+			days_remove = 70
+			remove_effect = {
+				add_country_leader_trait = hos_lion_of_damascus
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.1
+				}
+			}
+		}
+		
+		SYR_hold_military_parade = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				tag = SYR
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+
+			fire_only_once = no
+			days_remove = 15
+			days_re_enable = 60
+
+			cost = 50
+
+			complete_effect = {
+				army_experience = 5
+			}
+		}	
+		
+		plan_operation_222 = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				tag = SYR
+				check_variable = { var = SYR_army value = 30 }
+			}
+
+			visible = {
+				tag = SYR
+				check_variable = { var = SYR_army value = 35 }
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			fire_only_once = yes
+
+			cost = 560
+
+			complete_effect = {
+				set_country_flag = operation_222_planed
+			}
+		}
+		
+		train_spec_ops = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				tag = SYR
+				check_variable = { var = SYR_army value = 30 }
+			}
+
+			visible = {
+				tag = SYR
+				has_country_flag = operation_222_planed
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			fire_only_once = yes
+
+			custom_cost_trigger = {
+				check_variable = { var = income_var value = 0.8 }
+			}
+			
+			custom_cost_text = dx_more_than_70M
+			
+			days_remove = 278
+
+			complete_effect = {
+				set_country_flag = spec_ops_trained
+			}
+		}
+		
+		meet_with_hassan = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				tag = SYR
+				check_variable = { var = SYR_army value = 30 }
+			}
+
+			visible = {
+				tag = SYR
+				has_country_flag = operation_222_planed
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			fire_only_once = yes
+
+			
+			custom_cost_text = dx_more_than_70M
+			
+			cost = 70
+
+			complete_effect = {
+				HEZ = {
+					country_event = { id = syria.6 days = 5 }
+				}
+			}
+		}
+		
+		launch_attack = {
+			icon = generic_prospect_for_resources
+
+			available = {
+				tag = SYR
+				check_variable = { var = SYR_army value = 30 }
+			}
+
+			visible = {
+				tag = SYR
+				has_country_flag = hez_join_offensive
+				has_country_flag = operation_222_planed
+			}
+
+			ai_will_do = {
+				factor = 5
+				modifier = {
+				factor = -5
+					USA = { has_civil_war = no}
+				}
+			}
+
+			fire_only_once = yes
+
+			cost = 170
+
+			complete_effect = {
+				set_country_flag = syrian_israeli_war
+				declare_war_on= { 
+					target = ISR
+					type = annex_everything 
+				}
+			}
+		}
+	}
+
+	SYR_rebuild_cities = {
+		SYR_covid_measures = {
+
+			priority = 1
+
+			icon = revolt
+			
+			available = {
+				NOT = {
+					original_tag = SYR
+					has_idea = low_covid_cases
+				}
+			}
+
+			days_mission_timeout = 200
+
+			activation = {
+				original_tag = SYR
+				has_idea = low_covid_cases
+				NOT = {
+					has_country_flag = SYR_covid_gone
+				}
+			}
+
+			visible = {
+				hidden_trigger = {
+					SYR = {
+						has_idea = low_covid_cases
+					}
+				}
+			}
+			
+			fire_only_once = yes
+			cancel_if_not_visible = yes
+			is_good = yes
+			
+			complete_effect = {
+			}
+			
+			timeout_effect = {
+				country_event = {
+					id = syria.15
+				}
+			}
+		}
+	
+		SYR_cancel_all_debt = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				
+			}
+
+			visible = {
+				tag = SYR
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = SYR_debt_russia
+					}
+				}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 10
+
+			cost = 50
+
+			complete_effect = {
+				set_country_flag = SYR_debt_cancelled
+			}
+			
+			remove_effect = {
+				custom_effect_tooltip = SYR_debt_cancel_tt
+				subtract_from_variable = { var = debt_var value = 2700 }
+			}
+		}
+	
+		SYR_ask_russia_for_economic_help = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				has_war = no
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				base = 100
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 35
+
+			cost = 50
+
+			complete_effect = {
+			}
+			
+			remove_effect = {
+				SOV = {
+					country_event = { id = russia.547 hours = 4 }
+				}
+			}
+		}	
+		
+		SYR_cement_assad_authority = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				has_war = no
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				base = 100
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 70
+
+			cost = 100
+
+			complete_effect = {
+			}
+			
+			remove_effect = {
+				add_ideas = SYR_assadism_idea
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.1
+				}
+			}
+		}
+
+		rebuild_damascus = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				#has_completed_focus = SYR_repair_economy
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 120
+
+			modifier = {
+				civilian_factory_use = 3
+			}
+			custom_cost_trigger = {
+				check_variable = { var = income_var value = 5 }
+			}
+			
+			custom_cost_text = dx_more_than_5B
+
+			complete_effect = {
+				subtract_from_variable = { var = income_var value = 5 }
+			}
+			
+			remove_effect = {
+			1032 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		rebuild_aleppo = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				#has_completed_focus = SYR_repair_economy
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 120
+
+			modifier = {
+				civilian_factory_use = 3
+			}
+			custom_cost_trigger = {
+				check_variable = { var = income_var value = 5 }
+			}
+			
+			custom_cost_text = dx_more_than_5B
+
+			complete_effect = {
+				subtract_from_variable = { var = income_var value = 5 }
+			}
+			
+			remove_effect = {
+			1034 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		rebuild_idlib = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				#has_completed_focus = SYR_repair_economy
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 120
+
+			modifier = {
+				civilian_factory_use = 3
+			}
+			
+			custom_cost_trigger = {
+				check_variable = { var = income_var value = 5 }
+			}
+			
+			custom_cost_text = dx_more_than_5B
+
+			complete_effect = {
+				subtract_from_variable = { var = income_var value = 5 }
+			}
+			
+			remove_effect = {
+			1027 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		rebuild_hama = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				#has_completed_focus = SYR_repair_economy
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 120
+
+			modifier = {
+				civilian_factory_use = 3
+			}
+			
+			custom_cost_trigger = {
+				check_variable = { var = income_var value = 5 }
+			}
+			
+			custom_cost_text = dx_more_than_5B
+
+			complete_effect = {
+				subtract_from_variable = { var = income_var value = 5 }
+			}
+			
+			remove_effect = {
+				1109 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		rebuild_homs = {
+			icon = GFX_decision_reconstruction
+
+			available = {
+				#has_completed_focus = SYR_repair_economy
+			}
+
+			visible = {
+				tag = SYR
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+
+			fire_only_once = yes
+			
+			
+			days_remove = 120
+
+			modifier = {
+				civilian_factory_use = 3
+			}
+			
+			custom_cost_trigger = {
+				check_variable = { var = income_var value = 5 }
+			}
+			
+			custom_cost_text = dx_more_than_5B
+
+			complete_effect = {
+				subtract_from_variable = { var = income_var value = 5 }
+			}
+			
+			remove_effect = {
+				554 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+    }
+	
+SYR_invade_Israel = {
+    
+	SYR_Opration_arab_salvation = {
+	
+	    available = {
+			has_war = no
+			NOT = {
+			has_country_flag = iran_israel_war_active
+			}
+			OR = {
+				has_global_flag = nato_nato_won_nato_war
+				has_global_flag = SOV_first_nato_war_victory
+			}
+		}
+
+		visible = {
+			tag = SYR
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 0
+		fire_only_once = yes
+		days_remove = 100
+
+		remove_effect = {
+			set_global_flag = syr_small_arab_israeli_war
+			create_faction = damascus_pact
+
+			hidden_effect = {
+				remove_faction_goal = faction_goal_the_atomic_race
+				add_faction_goal = faction_goal_placeholder_long_term
+				remove_faction_goal = faction_goal_a_military_base
+				add_faction_goal = faction_goal_placeholder_medium_term
+				add_faction_goal = faction_goal_placeholder_short_term
+			}
+
+			add_to_faction = JOR
+
+			if = {
+				limit = {
+					country_exists = HEZ
+					HEZ = { is_puppet = no }
+				}
+				add_to_faction = HEZ
+			}
+
+			if = {
+				limit = {
+					country_exists = LEB
+					LEB = { has_country_flag = hezbollah_in_lebanon }
+				}
+				LEB = { leave_faction = yes }
+				add_to_faction = LEB
+			}
+
+			declare_war_on = {
+				target = ISR
+				type = annex_everything
+			}
+
+			if = {
+				limit = {
+					country_exists = HEZ
+					HEZ = { is_puppet = no }
+				}
+				HEZ = {
+				    add_to_faction = yes
+					declare_war_on = {
+						target = ISR
+						type = annex_everything
+					}
+				}
+			}
+
+			PAL = {
+				country_event = { id = saudi.110 days = 7 }
+			}
+
+			ISR = {
+				country_event = { id = israel.14 days = 14 }
+				add_timed_idea = {
+					idea = ISR_figthing_Untill_the_Bitter_end
+					days = 30
+				}
+			}
+		}
+	}
+	
+    Arab_victory = {
+
+	available = {
+		has_war_with = ISR
+		has_global_flag = syr_small_arab_israeli_war
+		ISR = {
+			surrender_progress > 0.5
+		}
+	}
+
+	visible = {
+		tag = SYR
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	cost = 0
+	fire_only_once = yes
+	days_remove = 1
+
+	remove_effect = {
+		add_ideas = SAU_war_reperations_from_isr
+		clr_global_flag = syr_small_arab_israeli_war
+		dismantle_faction = yes
+		white_peace = ISR
+		transfer_state = 881
+		add_state_core = 881
+
+		if = {
+			limit = { country_exists = PAL }
+			PAL = {
+				add_ideas = SAU_war_reperations_from_isr
+				white_peace = ISR
+				transfer_state = 810
+				transfer_state = 811
+				transfer_state = 914
+			}
+		}
+
+		if = {
+			limit = { country_exists = HEZ }
+			HEZ = {
+				add_ideas = SAU_war_reperations_from_isr
+				white_peace = ISR
+			}
+		}
+
+		if = {
+			limit = { country_exists = LEB }
+			LEB = {
+				add_ideas = SAU_war_reperations_from_isr
+				if = {
+					limit = {
+						has_country_flag = hezbollah_in_lebanon
+					}
+					white_peace = ISR
+					leave_faction = yes
+					PER = {
+						add_to_faction = LEB
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = { country_exists = JOR }
+			JOR = {
+				add_ideas = SAU_war_reperations_from_isr
+				white_peace = ISR
+			}
+		}
+
+		1111 = {
+			set_demilitarized_zone = yes
+		}
+
+		ISR = {
+			add_ideas = SAU_Isr_reperations_to_the_arabs
+			add_war_support = -0.5
+			add_stability = -0.25
+			}
+		}
+	}
+}

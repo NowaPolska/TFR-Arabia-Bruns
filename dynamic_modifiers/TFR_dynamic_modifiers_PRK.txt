@@ -1,0 +1,41 @@
+    PRK_economic_sovereignty_modifier = {
+
+	    icon = GFX_idea_PRK_Economic_Sovereignty
+
+		enable = { 
+			tag = PRK
+			NOT = {
+				has_country_flag = PRK_Kim_Is_Dead
+			}
+		}
+		
+		production_factory_efficiency_gain_factor = PRK_economic_sovereignty_factory_efficiency_var
+		industrial_capacity_factory  = PRK_economic_sovereignty_factory_var
+		production_lack_of_resource_penalty_factor  = PRK_economic_sovereignty_lack_of_resource_var
+		production_factory_max_efficiency_factor = PRK_economic_sovereignty_factory_max_efficiency_var
+		income_growth_factor = PRK_economic_sovereignty_income_growth_var
+		industrial_capacity_dockyard  = PRK_economic_sovereignty_dockyard_var
+		misc_income = PRK_economic_sovereignty_misc_income_var
+	}
+	PRK_military_preparedness_modifier = {
+
+	    icon = GFX_idea_PRK_Military_Preparedness
+
+		enable = { 
+			tag = PRK
+			NOT = {
+				has_country_flag = PRK_Kim_Is_Dead
+			}
+		}
+		
+		army_core_defence_factor = PRK_military_preparedness_army_core_defence_var
+		army_org_factor = PRK_military_preparedness_army_org_var
+		army_speed_factor = PRK_military_preparedness_army_speed_var
+		army_core_attack_factor = PRK_military_preparedness_army_core_attack_var
+		army_morale_factor = PRK_military_preparedness_army_morale_var
+		military_development_monthly  = PRK_military_preparedness_military_development_var
+		battalion_upkeep_factor  = PRK_military_preparedness_battalion_upkeep_var
+		production_speed_arms_factory_factor = PRK_military_preparedness_production_speed_arms_factory_factor_var
+		production_speed_industrial_complex_factor = PRK_military_preparedness_production_speed_industrial_complex_factor_var
+		production_factory_max_efficiency_factor = PRK_military_preparedness_production_factory_max_efficiency_var
+	}

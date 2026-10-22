@@ -1,0 +1,40 @@
+CHI_gaoxiong = {
+	icon = GFX_modifiers_CHI_gaoxiong
+	enable = {
+		CHI = {
+			controls_state = 1150
+		}
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+CHI_taibei = {
+	icon = GFX_modifiers_CHI_taibei
+	enable = {
+		CHI = {
+			controls_state = 1148
+		}
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+CHI_taizhong = {
+	icon = GFX_modifiers_CHI_taizhong
+	enable = { 
+		CHI = {
+			controls_state = 1149
+		}
+	}
+	state_production_speed_buildings_factor = 0.04
+	local_building_slots = 4
+	local_supplies = 0.05
+	local_manpower = 0.03
+	mobilization_speed = 0.05
+}
+

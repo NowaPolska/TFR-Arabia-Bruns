@@ -1,0 +1,1663 @@
+#Saudi Civil War
+PER_support_SAR = {
+	enable = {
+		tag = PER
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAR"
+		value = 900
+	}
+}
+SML_support_ISR = {
+	enable = {
+		tag = SML
+		ISR = {
+		has_war_with = SAU
+		}
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 900
+	}
+}
+PRC_support_EKP = {
+	enable = {
+		tag = PRC
+		EKP = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "EKP"
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EKP"
+		value = 500
+	}
+}
+ETH_support_EUF = {
+	enable = {
+		tag = ETH
+		EUF = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "EUF"
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EUF"
+		value = 500
+	}
+}
+MOR_support_EUF = {
+	enable = {
+		tag = MOR
+		EUF = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "EUF"
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EUF"
+		value = 500
+	}
+}
+QAT_support_YEM = {
+	enable = {
+		tag = QAT
+		YEM = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "YEM"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YEM"
+		value = 600
+	}
+}
+ETH_support_EGY = {
+	enable = {
+		tag = ETH
+		EGY = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "EGY"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EGY"
+		value = 600
+	}
+}
+TAL_support_MEK = {
+	enable = {
+		tag = TAL
+		MEK = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "MEK"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "MEK"
+		value = 900
+	}
+}
+TUR_support_EGY = {
+	enable = {
+		tag = TUR
+		EGY = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "EGY"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EGY"
+		value = 900
+	}
+}
+HRL_support_MUS = {
+	enable = {
+		tag = HRL
+		MUS = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "MUS"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "MUS"
+		value = 900
+	}
+}
+SOV_support_IRQ = {
+	enable = {
+		tag = SOV
+		IRQ = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 900
+	}
+}
+SOV_support_PER = {
+	enable = {
+		tag = SOV
+		PER = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 900
+	}
+}
+ENG_support_FSA = {
+	enable = {
+		tag = ENG
+		FSA = {
+		has_war = yes
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "FSA"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FSA"
+		value = 900
+	}
+}
+KAZ_support_PER = {
+	enable = {
+		tag = KAZ
+		PER ={
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 900
+	}
+}
+
+TMS_support_PER = {
+	enable = {
+		tag = TMS
+		PER ={
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 900
+	}
+}
+
+FRA_support_ISR = {
+	enable = {
+		tag = FRA
+		ISR = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 900
+	}
+}
+
+EGY_support_ISR = {
+	enable = {
+		tag = EGY
+		ISR = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 900
+	}
+}
+
+ROJ_support_KUR = {
+	enable = {
+		tag = ROJ
+		KUR = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "KUR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "KUR"
+		value = 900
+	}
+}
+
+ITA_support_ISR = {
+	enable = {
+		tag = ITA
+		ISR = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 900
+	}
+}
+
+ENG_support_ISR = {
+	enable = {
+		tag = ENG
+		PER = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "ISR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ISR"
+		value = 900
+	}
+}
+
+AZR_support_PER = {
+	enable = {
+		tag = ARZ
+		PER = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "PER"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PER"
+		value = 900
+	}
+}
+
+AZR_support_IRQ = {
+	enable = {
+		tag = ARZ
+		IRQ = {
+		has_war_with = SAU
+		}
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "IRQ"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "IRQ"
+		value = 900
+	}
+}
+
+PER_support_HZK = {
+	enable = {
+		tag = PER
+		has_war = no
+	}
+    abort = {
+	}
+	ai_strategy = {
+		type = support
+		id = "HZK"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HZK"
+		value = 900
+	}
+}
+
+HEZ_support_SAR = {
+	enable = {
+		tag = HEZ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAR"
+		value = 900
+	}
+}
+HOU_support_SAR = {
+	enable = {
+		tag = HOU
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAR"
+		value = 900
+	}
+}
+SYR_support_SAR = {
+	enable = {
+		tag = SYR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAR"
+		value = 900
+	}
+}
+IRQ_support_SAR = {
+	enable = {
+		tag = IRQ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAR"
+		value = 900
+	}
+}
+
+TUR_support_ROC = {
+	enable = {
+		tag = TUR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+SUD_support_ROC = {
+	enable = {
+		tag = SUD
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+PAK_support_ROC = {
+	enable = {
+		tag = PAK
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+PAK_were_gonna_nuke_india_strategy = {
+	allowed = {
+		original_tag = PAK
+	}
+	enable = {
+		tag = PAK
+		has_war = no
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = RAJ
+		value = 1000
+	}
+}
+RAJ_pakistan_threat = {
+	enable = {
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	allowed = {
+		original_tag = RAJ
+    }
+	abort = {
+		is_in_faction = yes
+	}
+	ai_strategy = {
+	    type = area_priority
+	    id = northern_india
+	    value = 1000
+	}
+	ai_strategy = {
+	    type = garrison
+	    value = 25
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = PAK
+		value = 25
+	}
+}
+PAK_rebuild_the_army = {
+	allowed = {
+		original_tag = PAK
+	}
+	enable = {
+		has_country_flag = PAK_lost_indo_pakistan_war
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = 100
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 200
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 65
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SAJ
+		value = 1000
+	}
+}
+KUW_support_ROC = {
+	enable = {
+		tag = KUW
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+EGY_support_ROC = {
+	enable = {
+		tag = EGY
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+JOR_support_ROC = {
+	enable = {
+		tag = JOR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+AZR_support_ROC = {
+	enable = {
+		tag = AZR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+
+ISR_support_ARR = {
+	enable = {
+		tag = ISR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ARR"
+		value = 900
+	}
+}
+KUR_support_ARR = {
+	enable = {
+		tag = KUR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ARR"
+		value = 900
+	}
+}
+ROJ_support_ARR = {
+	enable = {
+		tag = ROJ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ARR"
+		value = 900
+	}
+}
+RAJ_support_ARR = {
+	enable = {
+		tag = RAJ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ARR"
+		value = 900
+	}
+}
+NOR_support_ARR = {
+	enable = {
+		tag = NOR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ARR"
+		value = 900
+	}
+}
+HOL_support_ARR = {
+	enable = {
+		tag = HOL
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ARR"
+		value = 900
+	}
+}
+GER_support_ARR = {
+	enable = {
+		tag = GER
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 900
+	}
+}
+FRA_support_ARR = {
+	enable = {
+		tag = FRA
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 900
+	}
+}
+
+PRC_support_SAU = {
+	enable = {
+		tag = PRC
+		has_war = no
+		#has_country_flag = PRC_sided_with_cen_flag
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAU
+		date > 2020.1.1
+		SAU = {
+		has_country_flag = saudi_civil_war_over
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAU"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = 900
+	}
+}
+
+PRC_support_ROC = {
+	enable = {
+		tag = PRC
+		has_war = no
+		#has_country_flag = PRC_sided_with_nat_flag
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ROC
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ROC"
+		value = 900
+	}
+}
+
+PRC_support_ARR = {
+	enable = {
+		tag = PRC
+		has_war = no
+		#has_country_flag = PRC_sided_with_lib_flag
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ARR
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ARR"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ARR"
+		value = 900
+	}
+}
+
+ENG_support_SAU = {
+	enable = {
+		tag = ENG
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAU
+		date > 2020.1.1
+		has_country_flag = saudi_civil_war_over
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAU"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = 900
+	}
+}
+
+KOR_support_SAU = {
+	enable = {
+		tag = KOR
+		SAU = {
+		has_war_with = SAR
+		}
+	}
+	abort = {
+	SAU = {
+		has_country_flag = saudi_civil_war_over
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAU"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = 900
+	}
+}
+
+SIG_support_SAU = {
+	enable = {
+		tag = SIG
+		has_war = no
+	}
+	abort = {
+		date > 2020.1.1
+		SAU = {
+		has_country_flag = saudi_civil_war_over 
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAU"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = 900
+	}
+}
+
+UAE_support_SAU = {
+	enable = {
+		tag = UAE
+		has_war = no
+		NOT = { has_country_flag = saudi_civil_war_over }
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SAU
+		date > 2020.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SAU"
+		value = 300
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = 900
+	}
+}
+UAE_no_support_SAU = {
+	enable = {
+		tag = UAE
+		has_country_flag = saudi_civil_war_over
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = -1000
+	}
+}
+
+#Yemen Civil War
+SAU_support_YEM = {
+	enable = {
+		tag = SAU
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = YEM
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "YEM"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YEM"
+		value = 900
+	}
+}
+UAE_support_YEM = {
+	enable = {
+		tag = UAE
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = YEM
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "YEM"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YEM"
+		value = 900
+	}
+}
+SUD_support_YEM = {
+	enable = {
+		tag = SUD
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = YEM
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "YEM"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YEM"
+		value = 900
+	}
+}
+PER_support_HOU = {
+	enable = {
+		tag = PER
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = HOU
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HOU"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HOU"
+		value = 900
+	}
+}
+HEZ_support_HOU = {
+	enable = {
+		tag = HEZ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = HOU
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HOU"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HOU"
+		value = 900
+	}
+}
+
+#Syrian Civil War
+SAU_support_HTS = {
+	enable = {
+		tag = SAU
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = HTS
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HTS"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HTS"
+		value = 100
+	}
+}
+TUR_support_HTS = {
+	enable = {
+		tag = TUR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = HTS
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HTS"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HTS"
+		value = 900
+	}
+}
+TAL_support_HTS = {
+	enable = {
+		tag = TAL
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = HTS
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HTS"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HTS"
+		value = 900
+	}
+}
+
+SAU_support_FSA = {
+	enable = {
+		tag = SAU
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = FSA
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "FSA"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FSA"
+		value = 100
+	}
+}
+
+PER_support_SYR = {
+	enable = {
+		tag = PER
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SYR
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SYR"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SYR"
+		value = 900
+	}
+}
+IRQ_support_SYR = {
+	enable = {
+		tag = IRQ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SYR
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SYR"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SYR"
+		value = 900
+	}
+}
+HEZ_support_SYR = {
+	enable = {
+		tag = HEZ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SYR
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SYR"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SYR"
+		value = 900
+	}
+}
+SOV_support_SYR = {
+	enable = {
+		tag = SOV
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = SYR
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SYR"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SYR"
+		value = 900
+	}
+}
+
+#Iraqi Civil War
+TUR_support_ABK = {
+	enable = {
+		tag = TUR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = ABK
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ABK"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ABK"
+		value = 900
+	}
+}
+
+PER_support_FIA = {
+	enable = {
+		tag = PER
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = FIA
+	}
+
+	ai_strategy = {
+		type = support
+		id = "FIA"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FIA"
+		value = 900
+	}
+}
+HEZ_support_FIA = {
+	enable = {
+		tag = HEZ
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = FIA
+	}
+
+	ai_strategy = {
+		type = support
+		id = "FIA"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FIA"
+		value = 900
+	}
+}
+
+#Libyan Civil War
+PER_support_HRL = {
+	enable = {
+		tag = PER
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = HRL
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HRL"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HRL"
+		value = 900
+	}
+}
+EGY_support_HRL = {
+	enable = {
+		tag = EGY
+		has_war = no
+		country_exists = LBA
+	}
+
+	abort_when_not_enabled = yes
+
+
+	ai_strategy = {
+		type = support
+		id = "HRL"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HRL"
+		value = 900
+	}
+}
+SOV_support_HRL = {
+	enable = {
+		tag = SOV
+		has_war = no
+		country_exists = LBA
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = support
+		id = "HRL"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HRL"
+		value = 900
+	}
+}
+SUD_support_HRL = {
+	enable = {
+		tag = SUD
+		has_war = no
+		country_exists = LBA
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = support
+		id = "HRL"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HRL"
+		value = 900
+	}
+}
+
+TUR_support_LBA = {
+	enable = {
+		tag = TUR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = TUR
+		date > 2020.3.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "LBA"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "LBA"
+		value = 900
+	}
+}
+
+#Lebanon Civil War
+PER_support_HEZ = {
+	enable = {
+		tag = PER
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = HEZ
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HEZ"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HEZ"
+		value = 900
+	}
+}
+
+#Nagorno-Karabakh War
+TUR_support_AZR = {
+	enable = {
+		tag = TUR
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = AZR
+		date < 1975.1.1
+	}
+
+	ai_strategy = {
+		type = support
+		id = "AZR"
+		value = 400
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "AZR"
+		value = 900
+	}
+}

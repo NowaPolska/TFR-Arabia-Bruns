@@ -1,0 +1,748 @@
+samson_ISR = {
+	
+	invest_in_nuclear_tech = {
+
+		icon = GFX_decision_Make_Nukes
+
+		cost = 150
+
+		fire_only_once = no
+
+		visible = {
+			tag = ISR
+		}
+		
+		available = {
+			num_of_nukes < 10
+		}
+
+		days_remove = 120
+		
+		cancel_if_not_visible = yes
+		complete_effect = {
+			add_nuclear_bombs = 1
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	deploy_nukes = {
+		visible = {
+			tag = ISR
+		}
+		available = {
+		    has_war_with = SYR
+			surrender_progress > 0.8
+			num_of_nukes > 50
+		}
+		complete_effect = {
+			every_country = {
+				goto_province = 4111 
+			}
+			news_event = { id = news.211 }
+			launch_nuke = {
+				state = 1032
+				controller = SYR
+				use_nuke = yes
+			}
+			launch_nuke = {
+				state = 1034
+				controller = SYR
+				use_nuke = yes
+			}
+			#Fuck you for good measure
+			launch_nuke = {
+				province = 7011
+				controller = EGY
+				use_nuke = yes
+			}
+			#Revenge for 1991
+			launch_nuke = {
+				province = 2097
+				controller = IRQ
+				use_nuke = yes
+			}
+			launch_nuke = {
+				province = 792
+				controller = LEB
+				use_nuke = yes
+			}
+			#HOLY FUCK IT DETONATED IN THE SILO
+			launch_nuke = {
+				province = 4206
+				controller = ISR
+				use_nuke = yes
+			}
+			sound_effect = siren_sound_effect
+			set_variable = { disband_fraction = 1 }
+			disband_units_fraction = yes
+			clear_variable = disband_fraction
+			add_ideas = ai_disabled_production
+			SYR = {
+				#set_variable = { disband_fraction = 1 }
+				#disband_units_fraction = yes
+				#clear_variable = disband_fraction
+				country_event = { id = syria.29 days = 100 }
+				add_ideas = ai_disabled_production
+			}
+			HEZ = {
+				#set_variable = { disband_fraction = 1 }
+				#disband_units_fraction = yes
+				#clear_variable = disband_fraction
+				add_ideas = ai_disabled_production
+			}
+			LEB = {
+				#set_variable = { disband_fraction = 1 }
+				#disband_units_fraction = yes
+				#clear_variable = disband_fraction
+				add_ideas = ai_disabled_production
+			}
+			JOR = {
+				#set_variable = { disband_fraction = 1 }
+				#disband_units_fraction = yes
+				#clear_variable = disband_fraction
+				add_ideas = ai_disabled_production
+			}
+		}
+		
+		icon = GFX_decision_Deploy_Nukes
+		
+		fire_only_once = yes
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
+
+ISR_arab_war = {
+	ISR_arab_war_countdown = {
+		icon = generic_industry
+		allowed = { 
+			tag = ISR
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			is_in_faction_with = USB
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 700
+		complete_effect = {
+		}
+		cancel_effect = {
+		}
+		timeout_effect = {
+			country_event = {
+				id = israel.15
+			}
+		}
+	}
+	ISR_declare_victory = {
+		available = {
+			tag = ISR
+			has_war = no
+			NOT = { is_in_faction_with = USB }
+            JOR = { exists = no }
+			PAL = { exists = no }
+		}
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		cost = 0
+		
+		remove_effect = {
+			remove_mission = ISR_arab_war_countdown
+			news_event = {
+         		id = news.377
+                hours = 5
+			}
+			add_state_core = 915
+            add_state_core = 810
+            add_state_core = 881
+            add_state_core = 811
+			annex_country = {
+			    target = HEZ
+				transfer_troops = no
+			}
+			annex_country = {
+			    target = GDL
+				transfer_troops = no
+			}
+			LEB = { transfer_state = 928 }
+			#HRL = {
+			#    create_wargoal = {
+			#        type = annex_everything
+			#        target = EGY
+		    #    }
+			#}
+		}
+	}
+	ISR_kill_syria = {
+		allowed = {
+			tag = ISR
+		}
+		visible = {
+			has_war_with = SYR
+			NOT = { is_in_faction_with = USB }
+		}
+		available = {
+			tag = ISR
+			OR = {
+				AND = {
+					controls_state = 1032
+					controls_state = 1033
+					controls_state = 554
+				}
+				SYR = { surrender_progress > 0.5 }
+			}
+		}
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		days_remove = 1
+		cost = 0
+		
+		complete_effect = {
+			SYR = {
+				leave_faction = yes
+			}
+			ISR = {
+				transfer_state = 1033
+			    white_peace = SYR
+				create_wargoal = {
+					type = annex_everything
+					target = JOR
+				}
+			}
+			1029 = {
+				set_demilitarized_zone = yes
+			}
+			1030 = {
+				set_demilitarized_zone = yes
+			}
+			1031 = {
+				set_demilitarized_zone = yes
+			}
+			814 = {
+				set_demilitarized_zone = yes
+			}
+			1028 = {
+				set_demilitarized_zone = yes
+			}
+			1108 = {
+				set_demilitarized_zone = yes
+			}
+			1027 = {
+				set_demilitarized_zone = yes
+			}
+			677 = {
+				set_demilitarized_zone = yes
+			}
+			680 = {
+				set_demilitarized_zone = yes
+			}
+			1034 = {
+				set_demilitarized_zone = yes
+			}
+			1035 = {
+				set_demilitarized_zone = yes
+			}
+			1109 = {
+				set_demilitarized_zone = yes
+			}
+			SYR = {
+				country_event = { id = syria.34 days = 14 }
+				leave_faction = yes
+				set_variable = {
+					disband_fraction = 0.75
+				}
+				disband_units_fraction = yes
+				clear_variable = disband_fraction
+			}
+		}
+	}
+	ISR_kill_egypt = {
+		allowed = {
+			tag = ISR
+		}
+		visible = {
+			has_war_with = EGY
+			NOT = { is_in_faction_with = USB }
+		}
+		available = {
+			tag = ISR
+			controls_state = 813
+			controls_state = 453	
+			OR = {
+				AND = {
+					controls_state = 813
+					controls_state = 453
+				}
+				EGY = { surrender_progress > 0.5 }
+			}
+		}
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		days_remove = 1
+		cost = 0
+		
+		complete_effect = {
+			ISR = {
+			    white_peace = EGY
+				transfer_state = 453
+				transfer_state = 813
+			}
+			EGY = {
+			    dismantle_faction = yes
+				leave_faction = yes
+			}
+		}
+	}
+}
+
+ISR_GER_solomon = {
+	GER_ISR_send_guns = {
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			has_country_flag = GER_arab_israeli_war_flag
+		}
+		icon = GFX_decision_european_union
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			ISR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 2500
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 250
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment_1
+					amount = 300
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment_1
+					amount = 300
+					producer = GER
+				}
+			}
+		}
+		cost = 25
+	}
+	GER_ISR_send_tanks = {
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			has_country_flag = GER_arab_israeli_war_flag
+		}
+		icon = GFX_decision_european_union
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			ISR = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 500
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = modern_tank_equipment_1
+					amount = 150
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = light_mechanized_equipment_2
+					amount = 200
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = mechanized_equipment_2
+					amount = 200
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = modern_tank_artillery_equipment_1
+					amount = 200
+					producer = GER
+				}
+			}
+		}
+		cost = 40
+	}
+	GER_ISR_send_planes = {
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			has_country_flag = GER_arab_israeli_war_flag
+		}
+		icon = GFX_decision_european_union
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 90
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			ISR = {
+				add_equipment_to_stockpile = {
+					type = attack_helicopter_equipment_1
+					amount = 50
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					amount = 50
+					producer = GER
+					variant_name = "Tornado IDS"
+				}
+			}
+		}
+		cost = 60
+	}
+	GER_ISR_humanitarian_aid = {
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			has_country_flag = GER_arab_israeli_war_flag
+		}
+		icon = GFX_decision_european_union
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 40
+		remove_effect = {
+			ISR = {
+				country_event = {
+					id = uk.116
+				}
+			}
+		}
+		cost = 40
+	}
+	GER_ISR_intensify_volunteers = {
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			has_country_flag = GER_arab_israeli_war_flag
+			NOT = {
+				has_global_flag = GER_sended_volunteers_isr
+			}
+		}
+		icon = GFX_decision_european_union
+		fire_only_once = yes
+		days_remove = 14
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+            custom_effect_tooltip = GER_ISR_intensify_volunteers_tt
+			hidden_effect = {
+				set_global_flag = GER_sended_volunteers_isr
+			}
+		}
+		cost = 60
+	}
+}
+
+iran_israel_war_ISR = {
+
+    iran_israel_war_countdown_ISR = {
+	
+	priority = 1000
+
+		icon = revolt
+
+		allowed = {
+			original_tag = ISR
+		}
+
+		days_mission_timeout = 365
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		selectable_mission = no
+
+		visible = {
+			hidden_trigger = {
+				ISR = {
+					has_global_flag = iran_israel_war_active
+					NOT = {
+						has_global_flag = iran_israel_war_over
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		is_good = no
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+		clr_global_flag = iran_israel_war_active
+		set_country_flag = iran_israel_war_over
+		
+	        if = {
+            limit = {
+            controls_state = 929
+            controls_state = 928
+            controls_state = 553
+            }
+                white_peace = PER
+                white_peace = LEB
+				remove_ideas= ISR_iran_israel_war
+				leave_faction = LEB
+				puppet = HEZ
+				transfer_state = 929
+			LEB = { 
+			clr_country_flag = aor_member
+			}
+			PER = {
+			remove_ideas= ISR_iran_israel_war
+			}
+				HEZ = {
+				    transfer_state = 553
+					transfer_state = 928
+					add_state_core = 928
+					add_state_core = 553
+					set_cosmetic_tag = HEZ_idf
+					set_politics = {
+						ruling_party = authoritarian_democrat
+						elections_allowed = no
+						last_election = "2011.12.17"
+						}
+						add_popularity = {
+							ideology = authoritarian_democrat
+							popularity = 0.4
+						}
+						create_country_leader = {
+							name = HEZ_aviv_kochavi
+							picture = "Aviv Kochavi.png"
+							ideology = military_democracy
+							traits = {
+							}
+						}
+					}
+				}
+				else = {
+				ISR = {
+				white_peace = LEB
+				white_peace = PER
+				add_stability = -0.35
+				add_manpower = -100000
+				remove_ideas = ISR_iran_israel_war
+				PER = {
+				remove_ideas = ISR_iran_israel_war
+				    }
+				}
+			}
+		}
+	}
+}
+
+#Hummus israel war
+Israel_hamas_war = {
+    
+	ISR_victory_over_hamas = {
+		icon = GFX_decision_Make_Nukes
+		cost = 0
+		fire_only_once = yes
+
+		visible = {
+			tag = ISR
+		}
+
+		available = {
+			controls_state = 811
+			has_government = conservative
+		}
+
+		days_remove = 1
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			puppet = HAM
+			news_event = { id = news.2022 hours = 1 }
+			HAM = {
+			    remove_ideas = PAL_final_intifada
+				remove_ideas = SAU_Hamas_last_bastion_against_zionist_terrorism
+			    transfer_state = 811
+				add_state_core = 811
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					last_election = "2022.04.10"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					nationalist = 15
+					conservative = 15
+					authoritarian_democrat = 70
+				}
+				set_party_name = {
+    	        ideology = authoritarian_democrat 
+    	        long_name = "IDF"
+    	        name = "IDF"
+	            }
+				set_cosmetic_tag = HIS
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+Israel_arab_war_win_sigma = {
+    
+	isr_you_lost_again = {
+		icon = GFX_decision_Make_Nukes
+		cost = 0
+		fire_only_once = yes
+
+		visible = {
+			tag = ISR
+		}
+
+		available = {
+			has_war_with = SYR
+			has_global_flag = syr_small_arab_israeli_war
+			controls_state = 455
+			controls_state = 929
+			controls_state = 1032
+		}
+
+		days_remove = 1
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			white_peace = SYR
+			clr_global_flag = syr_small_arab_israeli_war
+			puppet = HEZ
+			add_timed_idea = {
+			idea = SAU_war_reperations_from_arabs
+			days = 365
+			}
+
+			transfer_state = 881
+			transfer_state = 811
+			transfer_state = 810
+			transfer_state = 915
+			transfer_state = 929
+			transfer_state = 1033
+			transfer_state = 455
+			
+			add_state_core = 881
+			add_state_core = 810
+			add_state_core = 915
+
+			if = {
+				limit = { country_exists = JOR }
+				JOR = {
+					white_peace = ISR
+					transfer_state = 1433
+					transfer_state = 1432
+				}
+			}
+
+			SYR = {
+				dismantle_faction = yes
+			}
+
+			HEZ = {
+			    remove_ideas = all
+				transfer_state = 928
+				add_state_core = 928
+				add_state_core = 553
+				set_cosmetic_tag = HEZ_idf
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+					last_election = "2011.12.17"
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.4
+				}
+				create_country_leader = {
+					name = HEZ_aviv_kochavi
+					picture = "Aviv Kochavi.png"
+					ideology = military_democracy
+					traits = {
+					}
+				}
+			}
+
+			if = {
+				limit = { country_exists = LEB }
+				LEB = {
+					white_peace = ISR
+				}
+			}
+
+			if = {
+				limit = { country_exists = PAL }
+				PAL = {
+					white_peace = ISR
+				}
+			}
+
+			1032 = {
+				set_demilitarized_zone = yes
+			}
+
+			554 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}

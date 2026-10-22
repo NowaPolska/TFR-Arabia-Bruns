@@ -1,0 +1,15 @@
+characters={
+	SIQ_Zeid_bin_Ra_ad_char = {
+	    name = "Zeid bin Ra-ad"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/SIQ/Zeid_bin_Ra_ad.png"
+			}
+		}
+		country_leader={
+			ideology = ultra_conservatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

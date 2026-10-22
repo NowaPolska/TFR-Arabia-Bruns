@@ -1,0 +1,8 @@
+plague_state_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_unknown
+	
+	local_building_slots_factor = plague_state_modifier
+	local_manpower = plague_state_immunity_modifier
+}

@@ -1,0 +1,177 @@
+UAE_Intervention_in_Yemen = {
+   UAE_Advisors_to_Yemen = {
+   
+   icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = UAE
+	}
+	
+	available = {
+    tag = UAE
+    country_exists = AAS
+}
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 50
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 5
+	days_re_enable = 90
+	
+	remove_effect = {
+	AAS = {
+		add_timed_idea = {
+            idea = UAE_Advisors_to_Yemen
+            days = 90
+			    }
+		    }
+		}
+	}
+    UAE_Sending_guns = {
+	
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = UAE
+	}
+	
+	available = {
+    tag = UAE
+    country_exists = AAS
+}
+	ai_will_do = {
+	   factor = 100
+	}
+	
+	cost = 65
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 5
+	days_re_enable = 90
+	
+    remove_effect = {
+	AAS = {
+	    add_equipment_to_stockpile = {type = infantry_equipment_2 amount = 1000 producer = UAE }
+		add_equipment_to_stockpile = {type = anti_tank_equipment amount = 250 producer = UAE }
+	    add_equipment_to_stockpile = {type = motorized_equipment amount = 200 producer = UAE }
+		add_equipment_to_stockpile = {type = modern_tank_chassis amount = 50 producer = UAE }
+		add_equipment_to_stockpile = {type = mechanized_equipment amount = 20 producer = UAE }
+		add_equipment_to_stockpile = {type = light_mechanized_equipment amount = 75 producer = UAE }
+		    }
+	    }
+    }
+    Sabotaging_the_Yemeni_Goverment = {
+
+    icon = generic_prepare_civil_war
+	 
+	allowed = {
+	   original_tag = UAE
+	}
+	
+	available = {
+    tag = UAE
+    country_exists = YEM
+	YEM = {
+	is_at_war = yes
+	}
+    }
+	ai_will_do = {
+	   factor = 100
+	}
+	
+	cost = 50
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 5
+	days_re_enable = 100
+    
+	remove_effect = {
+	YEM = {
+	    add_timed_idea = {
+		idea = UAE_Sabotage_Efforts
+		days = 75
+		        }
+	        }
+		}
+	}
+    Sabotaging_the_Houti_Goverment = {
+
+    icon = generic_prepare_civil_war
+	 
+	allowed = {
+	   original_tag = UAE
+	}
+	
+	available = {
+    tag = UAE
+    country_exists = HOU
+	HOU = {
+	is_at_war = yes 
+	}
+}
+	ai_will_do = {
+	   factor = 100
+	}
+	
+	cost = 50
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 5
+	days_re_enable = 100
+    
+	remove_effect = {
+	HOU = {
+	    add_timed_idea = {
+		idea = UAE_Sabotage_Efforts
+		days = 75
+		        }
+	        }
+		}
+	}
+}
+
+UAE_saudi_cw_news_events = {
+    
+	fall_of_hail = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = UAE
+	}
+	
+	available = {
+    tag = UAE
+    SAU = {
+	has_war = yes
+	controls_state = 1064
+        }
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 0
+	
+	fire_only_once = yes
+	cancel_if_not_visible = yes
+	
+	days_remove = 1
+	
+	remove_effect = {
+	news_event = { id = news.2023 }
+	    }
+	}
+}
+	
