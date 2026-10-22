@@ -1,0 +1,39 @@
+	defined_text = {
+		name = GetRightSideName
+		text = {
+			trigger = {
+				original_tag = CAC
+				NOT = {
+					has_completed_focus = CAC_going_beyond
+				}
+			}
+			localization_key = CAC_the_base_side_loc
+		}
+		text = {
+			trigger = {
+				original_tag = CAC
+				has_completed_focus = CAC_going_beyond
+			}
+			localization_key = CAC_tribalists_side_loc
+		}
+	}
+	
+	defined_text = {
+		name = GetRightDescisionName
+		text = {
+			trigger = {
+				original_tag = CAC
+				NOT = {
+					has_completed_focus = CAC_going_beyond
+				}
+			}
+			localization_key = CAC_the_base_loc
+		}
+		text = {
+			trigger = {
+				original_tag = CAC
+				has_completed_focus = CAC_going_beyond
+			}
+			localization_key = CAC_tribalists_loc
+		}
+	}

@@ -1,0 +1,269 @@
+	defined_text = {
+		name = get_khartoum_status
+		
+		text = { 
+			trigger = {
+				SUD = {
+					controls_state = 551
+				}
+			}
+			localization_key = "khartoum_enemy_control"
+		}
+		text = { 
+			trigger = {
+				EGY = {
+					controls_state = 551
+				}
+			}
+			localization_key = "khartoum_our_control"
+		}
+		text = { 
+			trigger = {
+				TZN = {
+					controls_state = 551
+				}
+			}
+			localization_key = "khartoum_friendly_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_addis_ababa_status
+		
+		text = { 
+			trigger = {
+				ETH = {
+					controls_state = 271
+				}
+			}
+			localization_key = "addis_ababa_enemy_control"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					tag = TZN
+					tag = TDF
+				}
+				controls_state = 271
+			}
+			localization_key = "addis_ababa_friendly_control"
+		}
+		text = { 
+			trigger = {
+				EGY = {
+					controls_state = 271
+				}
+			}
+			localization_key = "addis_ababa_our_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_mogadishu_status
+		
+		text = { 
+			trigger = {
+				SOM = {
+					controls_state = 559
+				}
+			}
+			localization_key = "mogadishu_enemy_control"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					tag = EGY
+					tag = TDF
+				}
+				controls_state = 559
+			}
+			localization_key = "mogadishu_friendly_control"
+		}
+		text = { 
+			trigger = {
+				TZN = {
+					controls_state = 559
+				}
+			}
+			localization_key = "mogadishu_our_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_kinshasa_status
+		
+		text = { 
+			trigger = {
+				COG = {
+					controls_state = 295
+				}
+			}
+			localization_key = "kinshasa_enemy_control"
+		}
+		text = { 
+			trigger = {
+				CAR = {
+					controls_state = 295
+				}
+			}
+			localization_key = "kinshasa_friendly_control"
+		}
+		text = { 
+			trigger = {
+				TZN = {
+					controls_state = 295
+				}
+			}
+			localization_key = "kinshasa_our_control"
+		}
+	}
+	
+	
+	
+	
+	
+	#####################
+	defined_text = {
+		name = get_nairobi_status
+		
+		text = { 
+			trigger = {
+				TZN = {
+					controls_state = 547
+				}
+			}
+			localization_key = "nairobi_enemy_control"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					SOM = {
+						controls_state = 547
+					}
+					COG = {
+						controls_state = 547
+					}
+					SUD = {
+						controls_state = 547
+					}
+				}
+			}
+			localization_key = "nairobi_friendly_control"
+		}
+		text = { 
+			trigger = {
+				ETH = {
+					controls_state = 547
+				}
+			}
+			localization_key = "nairobi_our_control"
+		}
+	}
+	defined_text = {
+		name = get_kampala_status
+		
+		text = { 
+			trigger = {
+				TZN = {
+					controls_state = 548
+				}
+			}
+			localization_key = "kampala_enemy_control"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					SUD = {
+						controls_state = 548
+					}
+					SOM = {
+						controls_state = 548
+					}
+					COG = {
+						controls_state = 548
+					}
+				}
+			}
+			localization_key = "kampala_friendly_control"
+		}
+		text = { 
+			trigger = {
+				ETH = {
+					controls_state = 548
+				}
+			}
+			localization_key = "kampala_our_control"
+		}
+	}
+	defined_text = {
+		name = get_juba_status
+		
+		text = { 
+			trigger = {
+				TZN = {
+					controls_state = 762
+				}
+			}
+			localization_key = "juba_enemy_control"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					SOM = {
+						controls_state = 762
+					}
+					SUD = {
+						controls_state = 762
+					}
+					COG = {	
+						controls_state = 762
+					}
+				}
+			}
+			localization_key = "juba_friendly_control"
+		}
+		text = { 
+			trigger = {
+				ETH = {
+					controls_state = 762
+				}
+			}
+			localization_key = "juba_our_control"
+		}
+	}
+	defined_text = {
+		name = get_dodoma_status
+		
+		text = { 
+			trigger = {
+				TZN = {
+					controls_state = 546
+				}
+			}
+			localization_key = "dodoma_enemy_control"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					SOM = {
+						controls_state = 546
+					}
+					SUD = {
+						controls_state = 546
+					}
+					COG = {
+						controls_state = 546
+					}
+				}
+			}
+			localization_key = "dodoma_friendly_control"
+		}
+		text = { 
+			trigger = {
+				ETH = {
+					controls_state = 546
+				}
+			}
+			localization_key = "dodoma_our_control"
+		}
+	}

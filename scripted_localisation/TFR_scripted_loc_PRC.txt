@@ -1,0 +1,2177 @@
+defined_text = {
+	name = get_vladivostok_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 408
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 408
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 408
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 408
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+defined_text = {
+	name = get_khabatovsk_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 409
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 409
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 409
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 409
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_birobidzhan_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 657
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 657
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 409
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 409
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+defined_text = {
+	name = get_irkutsk_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 566
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 556
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 556
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 556
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+defined_text = {
+	name = get_hulunbuir_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 1167
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1167
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 1167
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 1167
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+defined_text = {
+	name = get_qiqihar_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 714
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 714
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 714
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 714
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+
+defined_text = {
+	name = get_mudanjiang_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 717
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 717
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 717
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 717
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+defined_text = {
+	name = get_harbin_status
+	
+	text = { 
+		trigger = {
+			SOV = {
+				controls_state = 328
+			}
+		}
+		localization_key = "enemy_control"
+	}		
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 328
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = PRC
+				controls_state = 328
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MON = {
+				is_puppet_of = SOV
+				controls_state = 328
+			}
+		}
+		localization_key = "enemy_control"
+	}
+}
+defined_text = {
+	name = get_covid_status
+	
+	text = { 
+		trigger = {
+			has_idea = PRC_coronavirus_pandemic_idea
+		}
+		localization_key = "catastrophic_covid"
+	}		
+	text = { 
+		trigger = {
+			has_idea = PRC_coronavirus_pandemic_idea1
+		}
+		localization_key = "crippling_covid"
+	}
+	text = { 
+		trigger = {
+			has_idea = PRC_coronavirus_pandemic_idea2
+		}
+		localization_key = "serious_covid"
+	}
+	text = { 
+		trigger = {
+			has_idea = PRC_coronavirus_pandemic_idea3
+		}
+		localization_key = "moderate_covid"
+	}
+	text = { 
+		trigger = {
+			has_idea = PRC_coronavirus_pandemic_idea4
+		}
+		localization_key = "mild_covid"
+	}
+}
+	
+defined_text = {
+	name = salvage_the_situation_dynamic
+	
+	text = { 
+		trigger = {
+			has_country_flag = PRC_military_coup_flag
+		}
+		localization_key = "salvage_the_situation_real"
+	}		
+	text = { 
+		trigger = {
+			NOT = { has_country_flag = PRC_military_coup_flag }
+		}
+		localization_key = "salvage_the_situation_fake"
+	}
+}
+
+defined_text = {
+	name = salvage_the_situation_dynamic_desc
+	
+	text = { 
+		trigger = {
+			has_country_flag = PRC_military_coup_flag
+		}
+		localization_key = "salvage_the_situation_real_desc"
+	}		
+	text = { 
+		trigger = {
+			NOT = { has_country_flag = PRC_military_coup_flag }
+		}
+		localization_key = "salvage_the_situation_fake_desc"
+	}
+}
+
+
+defined_text = {
+	name = prc_privatization_lvl_scrp_loc
+	text = {
+		trigger = {
+			check_variable = { PRC_priv_lvl > 50 }
+		}
+		localization_key = PRC_priv_lvl_collective_lean
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_priv_lvl < 50 }
+		}
+		localization_key = PRC_priv_lvl_private_lean
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_priv_lvl = 50 }
+		}
+		localization_key = PRC_priv_lvl_centered
+	}
+}
+
+defined_text = { #Authoritarians Enabled
+	name = GetAuthoritariansEnable
+	text = {
+		trigger = {
+			original_tag = PRC
+			has_country_flag = PRC_aut_enable_flag
+		}
+		localization_key = PRC_aut_enable_loc
+	}
+}
+
+defined_text = { #Nationalist Enabled
+	name = GetNationalistsEnable
+	text = {
+		trigger = {
+			original_tag = PRC
+			has_country_flag = PRC_nat_enable_flag
+		}
+		localization_key = PRC_nat_enable_loc
+	}
+}
+
+defined_text = { #Centrist Enabled
+	name = GetCentristsEnable
+	text = {
+		trigger = {
+			original_tag = PRC
+			has_country_flag = PRC_cen_enable_flag
+		}
+		localization_key = PRC_cen_enable_loc
+	}
+}
+
+defined_text = { #New Left Enabled
+	name = GetNewLeftistsEnable
+	text = {
+		trigger = {
+			original_tag = PRC
+			has_country_flag = PRC_new_enable_flag
+		}
+		localization_key = PRC_new_enable_loc
+	}
+}
+
+defined_text = { #Liberal Enabled
+	name = GetLiberalsEnable
+	text = {
+		trigger = {
+			original_tag = PRC
+			has_country_flag = PRC_lib_enable_flag
+		}
+		localization_key = PRC_lib_enable_loc
+	}
+}
+	
+defined_text = { #Centrists
+	name = PRC_centrist_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_centrist_loc
+	}
+}
+
+defined_text = { #Liberals
+	name = PRC_lib_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_lib_loc
+	}
+}
+
+defined_text = { #Nationalists
+	name = PRC_nat_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_nat_loc
+	}
+}
+
+defined_text = { #New Left
+	name = PRC_newleft_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_newleft_loc
+	}
+}
+
+defined_text = { #Centrists status
+	name = PRC_centrist_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_cen_banned_flag
+			}
+		}
+		localization_key = PRC_centrist_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_cen_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+defined_text = { #Liberals status
+	name = PRC_lib_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_lib_banned_flag
+			}
+		}
+		localization_key = PRC_lib_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_lib_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+defined_text = { #Nationalists status
+	name = PRC_nat_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_nat_banned_flag
+			}
+		}
+		localization_key = PRC_nat_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_nat_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+defined_text = { #New Left status
+	name = PRC_newleft_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_new_banned_flag
+			}
+		}
+		localization_key = PRC_newleft_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_new_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+defined_text = { #new left focus
+	name = PRC_theory_of_neo_socialism_scripted_loc
+
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_rckmt_won_flag
+					has_country_flag = PRC_jisuan_won_flag
+					has_country_flag = PRC_cpwdp_won_flag
+				}
+			}
+		}
+		localization_key = PRC_theory_of_neo_socialism_1
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_rckmt_won_flag
+		}
+		localization_key = PRC_theory_of_neo_socialism_2
+	}	
+	
+	text = {
+		trigger = {
+			has_country_flag = PRC_jisuan_won_flag
+		}
+		localization_key = PRC_theory_of_neo_socialism_3
+	}	
+	
+	text = {
+		trigger = {
+			has_country_flag = PRC_cpwdp_won_flag
+		}
+		localization_key = PRC_theory_of_neo_socialism_4
+	}
+}
+
+defined_text = { #new left focus desc
+	name = PRC_theory_of_neo_socialism_scripted_loc_desc
+
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_rckmt_won_flag
+					has_country_flag = PRC_jisuan_won_flag
+					has_country_flag = PRC_cpwdp_won_flag
+				}
+			}
+		}
+		localization_key = PRC_theory_of_neo_socialism_desc_1
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_rckmt_won_flag
+		}
+		localization_key = PRC_theory_of_neo_socialism_desc_2
+	}	
+	
+	text = {
+		trigger = {
+			has_country_flag = PRC_jisuan_won_flag
+		}
+		localization_key = PRC_theory_of_neo_socialism_desc_3
+	}	
+	
+	text = {
+		trigger = {
+			has_country_flag = PRC_cpwdp_won_flag
+		}
+		localization_key = PRC_theory_of_neo_socialism_desc_4
+	}
+}
+
+
+
+defined_text = {
+	name = get_tokyo_status
+	
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1332
+				NOT = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1332
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				JAP = {
+					controls_state = 1332
+					is_ally_with = PRC
+				}
+				TOK = {
+					controls_state = 1332
+				}
+				PRK = {
+					controls_state = 1332
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_delhi_status
+	
+	text = { 
+		trigger = {
+			RAJ = {
+				controls_state = 1379
+				has_war_with = PRC
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1379
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			PAK = {
+				controls_state = 1379
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			RAJ = {
+				controls_state = 1379
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_seoul_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				KOR = {
+					controls_state = 1041
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1041
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1041
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1041
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			PRK = {
+				controls_state = 1041
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_singapore_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				SIG = {
+					controls_state = 336
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 336
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 336
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 336
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				MAL = {
+					controls_state = 336
+					is_ally_with = PRC
+				}
+				SIA = {
+					controls_state = 336
+					is_ally_with = PRC
+				}
+				SIG = {
+					controls_state = 336
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			SIG = {
+				controls_state = 336
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_jakarta_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				INS = {
+					controls_state = 1387
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1387
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1387
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1387
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				MAL = {
+					controls_state = 1387
+					is_ally_with = PRC
+				}
+				INS = {
+					controls_state = 1387
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			INS = {
+				controls_state = 1387
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_sydney_status
+	
+	text = { 
+		trigger = {
+			AST = {
+				controls_state = 285
+				NOT = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 285
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			AST = {
+				controls_state = 1332
+				is_ally_with = PRC
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_manila_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				PHI = {
+					controls_state = 1274
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1274
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1274
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1274
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				PHI = {
+					controls_state = 1274
+					is_ally_with = PRC
+				}
+				VIN = {
+					controls_state = 1274
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			PHI = {
+				controls_state = 1274
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_hochiminh_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				VIN = {
+					controls_state = 783
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 783
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 783
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 783
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			VIN = {
+				controls_state = 783
+				is_ally_with = PRC
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			VIN = {
+				controls_state = 783
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_bangkok_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				SIA = {
+					controls_state = 289
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 289
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 289
+					has_war_with = PRC
+				}
+				MAL = {
+					controls_state = 289
+					has_war_with = PRC
+				}
+				BRM = {
+					controls_state = 289
+					has_war_with = PRC
+				}
+				CAM = {
+					controls_state = 289
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 289
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				SIA = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+				MAL = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+				BRM = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+				CAM = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			SIA = {
+				controls_state = 289
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_naypyidaw_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				BRM = {
+					controls_state = 640
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 640
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 640
+					has_war_with = PRC
+				}
+				SIA = {
+					controls_state = 640
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 640
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				BRM = {
+					controls_state = 640
+					is_ally_with = PRC
+				}
+				SIA = {
+					controls_state = 640
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			BRM = {
+				controls_state = 640
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_dhaka_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				BAN = {
+					controls_state = 430
+					has_war_with = PRC
+				}
+				BRM = {
+					controls_state = 430
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 430
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 430
+					has_war_with = PRC
+				}
+				RAJ = {
+					controls_state = 430
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 430
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				BAN = {
+					controls_state = 430
+					is_ally_with = PRC
+				}
+				BRM = {
+					controls_state = 430
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			BAN = {
+				controls_state = 430
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_kualalumpur_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				MAL = {
+					controls_state = 1386
+					has_war_with = PRC
+				}
+				SIA = {
+					controls_state = 1386
+					has_war_with = PRC
+				}
+				SIG = {
+					controls_state = 1386
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1386
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1386
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1386
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			OR = {
+				MAL = {
+					controls_state = 1386
+					is_ally_with = PRC
+				}
+				SIA = {
+					controls_state = 1386
+					is_ally_with = PRC
+				}
+				SIG = {
+					controls_state = 1386
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MAL = {
+				controls_state = 1386
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_taipei_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 1148
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1148
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1148
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1148
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				controls_state = 1148
+				is_ally_with = PRC
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_beijing_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 608
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 608
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 608
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 608
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_shanghai_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 1215
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1215
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1215
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1215
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_nanjing_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 1222
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1222
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1222
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1222
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_guangzhou_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 592
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 592
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 592
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 592
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_hong_kong_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 326
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 326
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 326
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 326
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			CHI = {
+				controls_state = 326
+				is_ally_with = PRC
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_pyongyang_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				KOR = {
+					controls_state = 1043
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 1043
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 1043
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1043
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			PRK = {
+				controls_state = 1043
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_islamabad_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				RAJ = {
+					controls_state = 440
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 440
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 440
+					has_war_with = PRC
+				}
+				PAK = {
+					controls_state = 440
+					is_ally_with = RAJ
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 440
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			PAK = {
+				controls_state = 440
+				is_ally_with = PRC
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_kathmandu_status
+	
+	text = { 
+		trigger = {
+			OR = {
+				RAJ = {
+					controls_state = 323
+					has_war_with = PRC
+				}
+				JAP = {
+					controls_state = 323
+					has_war_with = PRC
+				}
+				AST = {
+					controls_state = 323
+					has_war_with = PRC
+				}
+				NEP = {
+					controls_state = 323
+					is_ally_with = RAJ
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 323
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+			NEP = {
+				controls_state = 323
+				is_ally_with = PRC
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			NEP = {
+				controls_state = 323
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = { # ghost
+	name = PRC_project_ghost
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_ghost_failed1
+		}
+		localization_key = PRC_project_ghost_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_ghost_partially_succeeded1
+		}
+		localization_key = PRC_project_ghost_partially_succeeded
+	}
+}
+defined_text = { # nib
+	name = PRC_project_nib
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_nib_failed1
+		}
+		localization_key = PRC_project_nib_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_nib_succeeded1
+		}
+		localization_key = PRC_project_nib_success
+	}
+}
+defined_text = { # swimmer
+	name = PRC_project_swimmer
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_swimmer_failed1
+		}
+		localization_key = PRC_project_swimmer_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_swimmer_succeeded1
+		}
+		localization_key = PRC_project_swimmer_success
+	}
+}
+defined_text = { # impulse
+	name = PRC_project_impulse
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_impulse_failed1
+		}
+		localization_key = PRC_project_impulse_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_impulse_succeeded1
+		}
+		localization_key = PRC_project_impulse_success
+	}
+}
+defined_text = { # dark_sword
+	name = PRC_project_dark_sword
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_dark_sword_succeeded1
+		}
+		localization_key = PRC_project_dark_sword_success
+	}
+}
+defined_text = { # song_wencong
+	name = PRC_project_song_wencong
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_song_wencong_succeeded1
+		}
+		localization_key = PRC_project_song_wencong_success
+	}
+}
+defined_text = { # flash
+	name = PRC_project_flash
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_flash_partially_succeeded1
+		}
+		localization_key = PRC_project_flash_partially_succeeded
+	}
+}
+defined_text = { # nami
+	name = PRC_project_nami
+	text = {
+		trigger = {
+			has_country_flag = PRC_project_nami_partially_succeeded1
+		}
+		localization_key = PRC_project_nami_partially_succeeded
+	}
+}
+
+defined_text = {
+	name = PRC_get_reform_bonus
+	text = {
+		trigger = {
+			has_idea = PRC_comprehensive_transformation_1
+		}
+		localization_key = PRC_reforms_progress_bonus1
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_comprehensive_transformation_2
+		}
+		localization_key = PRC_reforms_progress_bonus2
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_comprehensive_transformation_3
+		}
+		localization_key = PRC_reforms_progress_bonus3
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_comprehensive_transformation_4
+		}
+		localization_key = PRC_reforms_progress_bonus4
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_comprehensive_transformation_5
+		}
+		localization_key = PRC_reforms_progress_bonus5
+	}
+}
+
+defined_text = {
+	name = PRC_loji_category_scripted_loc
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_loji_servant_of_the_people
+					has_country_flag = PRC_loji_overlord_flag
+				}
+			}
+		}
+		localization_key = PRC_loji_category_scripted_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_loji_servant_of_the_people
+		}
+		localization_key = PRC_loji_category_scripted_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_loji_overlord_flag
+		}
+		localization_key = PRC_loji_category_scripted_loc3
+	}
+}
+
+defined_text = {
+	name = PRC_loji_category_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_long_march_1_stage_flag
+					has_country_flag = PRC_long_march_2_stage_flag
+					has_country_flag = PRC_long_march_3_stage_flag
+					has_country_flag = PRC_loji_servant_of_the_people
+					has_country_flag = PRC_loji_overlord_flag
+				}
+			}
+		}
+		localization_key = PRC_loji_category_desc_scripted_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_long_march_1_stage_flag
+		}
+		localization_key = PRC_loji_category_desc_scripted_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_long_march_2_stage_flag
+		}
+		localization_key = PRC_loji_category_desc_scripted_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_long_march_3_stage_flag
+		}
+		localization_key = PRC_loji_category_desc_scripted_loc4
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_loji_servant_of_the_people_flag
+		}
+		localization_key = PRC_loji_category_desc_scripted_loc5
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_loji_overlord_flag
+		}
+		localization_key = PRC_loji_category_desc_scripted_loc6
+	}
+}
+
+defined_text = {
+	name = PRC_expand_data_banks_of_the_long_march_loc
+	text = {
+		trigger = {
+			has_country_flag = PRC_loji_servant_of_the_people_flag
+		}
+		localization_key = PRC_expand_data_banks_of_the_long_march1
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_loji_overlord_flag
+		}
+		localization_key = PRC_expand_data_banks_of_the_long_march2
+	}
+}
+
+defined_text = {
+	name = GetPRCMSSleadertexticon
+	text = {
+		trigger = {
+			has_country_flag = PRC_centrist_win
+		}
+		localization_key = PRCMSSleadertexticon_establishment
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_nationalist_win
+		}
+		localization_key = PRCMSSleadertexticon_nationalist
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_new_left_win
+		}
+		localization_key = PRCMSSleadertexticon_leftist
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_liberal_win
+		}
+		localization_key = PRCMSSleadertexticon_liberal
+	}
+	text = {
+		localization_key = PRCMSSleadertexticon_fallback
+	}
+}
+
+defined_text = {
+	name = GetPRCMSSleadername
+	text = {
+		trigger = {
+			has_country_flag = PRC_centrist_win
+		}
+		localization_key = PRCMSSleadername_establishment
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_nationalist_win
+		}
+		localization_key = PRCMSSleadername_nationalist
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_new_left_win
+		}
+		localization_key = PRCMSSleadername_leftist
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_liberal_win
+		}
+		localization_key = PRCMSSleadername_liberal
+	}
+	text = {
+		localization_key = PRCMSSleadername_fallback
+	}
+}
+
+defined_text = {
+	name = GetAFGRelationsStatus_name
+	text = {
+		trigger = {
+			has_country_flag = PRC_afghanistan_initiative_flag
+		}
+		localization_key = PRCAFGRelationsStatus_name
+	}
+}
+
+defined_text = {
+	name = GetAFGRelationsStatus
+	text = {
+		trigger = {
+			has_country_flag = PRC_afghanistan_initiative_flag
+		}
+		localization_key = PRCAFGRelationsStatus
+	}
+}
+
+defined_text = {
+	name = GetWuQiName
+	text = {
+		trigger = {
+			has_completed_focus = PRC_stability_and_security
+		}
+		localization_key = PRC_operation_tiangong
+	}
+	text = {
+		trigger = {
+			has_completed_focus = PRC_protectors_of_the_chinese_nation
+		}
+		localization_key = PRC_operation_xuanyuan
+	}
+	text = {
+		trigger = {
+			has_completed_focus = PRC_suppress_dissent
+		}
+		localization_key = PRC_operation_huguo
+	}
+}
+defined_text = {
+	name = GetWuQiDesc
+	text = {
+		trigger = {
+			has_completed_focus = PRC_stability_and_security
+		}
+		localization_key = PRC_operation_tiangong_desc
+	}
+	text = {
+		trigger = {
+			has_completed_focus = PRC_protectors_of_the_chinese_nation
+		}
+		localization_key = PRC_operation_xuanyuan_desc
+	}
+	text = {
+		trigger = {
+			has_completed_focus = PRC_suppress_dissent
+		}
+		localization_key = PRC_operation_huguo_desc
+	}
+}
+
+defined_text = {
+	name = GetSupportPakistanName
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_destroy_pakistan_flag
+			}
+		}
+		localization_key = PRC_support_pakistan_support
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_destroy_pakistan_flag
+		}
+		localization_key = PRC_support_pakistan_destroy
+	}
+}
+defined_text = {
+	name = GetSupportPakistanDesc
+	text = {
+		trigger = {
+			NOT = {
+				has_completed_focus = PRC_smash_islamism
+			}
+		}
+		localization_key = PRC_support_pakistan_support_desc
+	}
+	text = {
+		trigger = {
+			has_completed_focus = PRC_smash_islamism
+		}
+		localization_key = PRC_support_pakistan_destroy_desc
+	}
+}
+defined_text = {
+	name = PRC_display_anti_technocratic_movement
+	text = {
+		trigger = {
+			AND = {
+				original_tag = PRC
+				has_country_flag = PRC_anti_technocratic_movement_is_active
+			}
+		}
+		localization_key = PRC_display_anti_technocratic_movement_loc
+	}
+}
+###Scientist, MSS and anti-technocratic movement mechanics
+defined_text = { ##red text
+	name = PRC_display_anti_technocratic_movement_rate_loc
+	text = {
+		trigger = {
+			AND = {
+				original_tag = PRC
+				check_variable = {
+				    var = PRC_anti_technocratic_movement_rate
+				    value = 0.75
+				    compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = PRC_display_anti_technocratic_movement_rate_loc_bad
+	}
+	text = { ##yellow text
+		trigger = {
+			AND = {
+				original_tag = PRC
+				check_variable = {
+				    var = PRC_anti_technocratic_movement_rate
+				    value = 0.75
+				    compare = less_than
+				}
+				check_variable = {
+				    var = PRC_anti_technocratic_movement_rate
+				    value = 0.25
+				    compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = PRC_display_anti_technocratic_movement_rate_loc_okay
+	}
+	text = { ##green text
+		trigger = {
+			AND = {
+				original_tag = PRC
+				check_variable = {
+				    var = PRC_anti_technocratic_movement_rate
+				    value = 0.25
+				    compare = less_than
+				}
+			}
+		}
+		localization_key = PRC_display_anti_technocratic_movement_rate_loc_good
+	}
+}
+defined_text = {
+	name = PRC_display_MSS_support
+	text = {
+		trigger = {
+			AND = {
+				original_tag = PRC
+				#has_country_flag = PRC_anti_technocratic_movement_is_active
+			}
+		}
+		localization_key = PRC_display_MSS_support_loc
+	}
+}
+defined_text = {
+	name = PRC_display_scientists_faction_support
+	text = {
+		trigger = {
+			AND = {
+				original_tag = PRC
+				#has_country_flag = PRC_anti_technocratic_movement_is_active
+			}
+		}
+		localization_key = PRC_display_scientists_faction_support_loc
+	}
+}

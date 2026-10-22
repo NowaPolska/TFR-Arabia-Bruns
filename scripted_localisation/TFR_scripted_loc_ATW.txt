@@ -1,0 +1,178 @@
+defined_text = {
+	name = ATW_level_of_mechanic_text
+	text = {
+		#Desperation
+		trigger = {
+			original_tag = ATW
+			has_dynamic_modifier = {
+				modifier = ATW_desperation_dynamic
+			}
+		}
+		localization_key = ATW_desperation_loc
+	}
+	text = {
+		#Devotion
+		trigger = {
+			original_tag = ATW
+			has_dynamic_modifier = {
+				modifier = ATW_devotion_dynamic
+			}
+		}
+		localization_key = ATW_devotion_loc
+	}
+	text = {
+		#Despair
+		trigger = {
+			original_tag = ATW
+			has_dynamic_modifier = {
+				modifier = ATW_despair_dynamic
+			}
+		}
+		localization_key = ATW_despair_loc
+	}
+}
+
+defined_text = {
+	name = ATW_resistance_text
+	text = {
+		trigger = {
+			original_tag = ATW
+			check_variable = {
+				var = ATW_resistance_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = ATW_resistance_good_loc
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+			check_variable = {
+				var = ATW_resistance_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = ATW_resistance_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = ATW_resistance_neutral_loc
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+			check_variable = {
+				var = ATW_resistance_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ATW_resistance_bad_loc
+	}
+}
+
+defined_text = {
+	name = ATW_inferno_text
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_first_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_second_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_third_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_fourth_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 4
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_fifth_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 5
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_sixth_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 6
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_seventh_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 7
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_eighth_circle_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+			check_variable = {
+				var = ATW_dantes_inferno_circle_level_var
+				value = 8
+				compare = equals
+			}
+		}
+		localization_key = ATW_dante_ninth_circle_loc
+	}
+}

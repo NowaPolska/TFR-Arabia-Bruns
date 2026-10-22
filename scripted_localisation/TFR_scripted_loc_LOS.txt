@@ -1,0 +1,10 @@
+	defined_text = {
+		name = GetKlanSupport
+		text = {
+			trigger = {
+				original_tag = LOS
+				has_country_flag = LOS_klan_flag
+			}
+			localization_key = LOS_kkk_loc
+		}
+	}

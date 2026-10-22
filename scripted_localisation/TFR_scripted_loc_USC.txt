@@ -1,0 +1,572 @@
+defined_text = {
+	#Minor Factions
+	name = USA_minor_factions_main_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_trump_third_term_flag
+		}
+		localization_key = usc.75.d1
+	}	
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_trump_third_term_flag }
+		}
+		localization_key = ""
+	}
+}
+defined_text = {
+	#Minor Factions
+	name = USA_minor_factions_main_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_minor_factions_enabled_flag
+		}
+		localization_key = USC_minor_factions_main_loc
+	}
+}
+
+defined_text = {
+	#Libertarian Party MIN FACTION
+	name = USС_minor_faction_libertarian_party_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_libertarian_party_enabled_flag
+		}
+		localization_key = USC_minor_faction_libertarian_party_loc
+	}
+}
+
+defined_text = {
+	#Chirstian Coservatives MIN FACTION
+	name = USС_minor_faction_christian_conservative_text
+	text = {
+		trigger = {
+			OR = {
+				original_tag = USC
+				original_tag = USB
+			}
+			has_country_flag = USC_chirstian_right_enabled_flag
+		}
+		localization_key = USC_minor_faction_christian_conservative_loc
+	}
+}
+
+defined_text = {
+	#Trump Democrats MIN FACTION
+	name = USС_minor_faction_trump_democrats_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_trump_democrats_enabled_flag
+		}
+		localization_key = USC_minor_faction_trump_democrats_loc
+	}
+}
+
+defined_text = {
+	#We the People MIN FACTION
+	name = USС_minor_faction_we_the_people_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_kennedy_party_enabled_flag
+		}
+		localization_key = USC_minor_faction_we_the_people_loc
+	}
+}
+
+defined_text = {
+	#Left Patriots MIN FACTION
+	name = USС_minor_faction_leftists_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_left_patriots_enabled_flag
+		}
+		localization_key = USC_minor_faction_leftists_loc
+	}
+}
+
+defined_text = {
+	#Nationalists MIN FACTION
+	name = USС_minor_faction_nationalists_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_wignats_enabled_flag
+		}
+		localization_key = USC_minor_faction_nationalists_loc
+	}
+}
+
+defined_text = {
+	#Independents MIN FACTION
+	name = USС_minor_faction_independents_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_independents_enabled_flag
+		}
+		localization_key = USС_minor_faction_independents_loc
+	}
+}
+defined_text = {
+	#ULTRA MAGA MIN FACTION
+	name = USС_minor_faction_ultra_maga_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_ultra_maga_enabled_flag
+		}
+		localization_key = USC_minor_faction_ultra_maga_loc
+	}
+}
+
+defined_text = {
+	#Megachurches MIN FACTION
+	name = USС_minor_faction_megachurches_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_megachurches_enabled_flag
+		}
+		localization_key = USC_minor_faction_megachurches_loc
+	}
+}
+
+defined_text = {
+	#MAGACOMMUNIST MIN FACTION
+	name = USС_minor_faction_maga_communists_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_maga_communists_enabled_flag
+		}
+		localization_key = USC_minor_faction_maga_communists_loc
+	}
+}
+
+defined_text = {
+	#TECHORIGHT MIN FACTION
+	name = USС_minor_faction_techno_rightists_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_techno_rightists_enabled_flag
+		}
+		localization_key = USC_minor_faction_techno_rightists_loc
+	}
+}
+
+defined_text = {
+	#AMERICAN WORKER LEAGUE MIN FACTION
+	name = USС_minor_faction_league_american_worker_text
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_league_american_workers_enabled_flag
+		}
+		localization_key = USC_minor_faction_league_american_workers_loc
+	}
+}
+
+defined_text = {
+	#Left Patriot Party Name
+	name = USC_leftist_party_name_text
+	text = {
+		trigger = {
+			has_country_flag = USC_peoples_party_formed_flag
+		}
+		localization_key = USC_leftist_party_name_loc2
+	}
+	text = {
+		trigger = {
+			NOT = { has_country_flag = USC_peoples_party_formed_flag }
+		}
+		localization_key = USC_leftist_party_name_loc1
+	}
+}
+
+defined_text = {
+	#Congress Enabled
+	name = USA_faction_congress_text
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_populist_purges }
+		}
+		localization_key = USC_faction_congress_loc
+	}
+}
+
+defined_text = {
+	#Libertarian Enabled
+	name = USA_faction_libertarian_text
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_libertarian_purges }
+		}
+		localization_key = USC_faction_lib_loc
+	}
+}
+
+defined_text = {
+	#Military Enabled
+	name = USA_faction_military_text
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_hardliner_purges }
+		}
+		localization_key = USC_faction_military_loc
+	}
+}
+
+defined_text = {
+	#Patriot Name
+	name = USC_hardliner_name_text
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_new_patriot_name_flag }
+		}
+		localization_key = USC_hardliner_name_1_loc
+	}	
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_new_patriot_name_flag
+		}
+		localization_key = USC_hardliner_name_2_loc
+	}
+}
+defined_text = {
+	#Populist Name
+	name = USC_populist_name_text
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_new_populist_name_flag }
+		}
+		localization_key = USC_populist_name_1_loc
+	}	
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_new_populist_name_flag
+		}
+		localization_key = USC_populist_name_2_loc
+	}
+}
+defined_text = {
+	#Populist Name Tooltip
+	name = USC_populist_tooltip_name
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_new_populist_name_flag }
+		}
+		localization_key = USC_populist_usual_tooltip
+	}	
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_new_populist_name_flag
+		}
+		localization_key = USC_populist_moderate_tooltip
+	}
+}
+
+defined_text = {
+	#Patriot Name Tooltip
+	name = USC_patriot_tooltip_name
+	text = {
+		trigger = {
+			original_tag = USC
+			NOT = { has_country_flag = USC_patriot_tooltip_name }
+		}
+		localization_key = USC_patriot_usual_tooltip
+	}	
+	text = {
+		trigger = {
+			original_tag = USC
+			has_country_flag = USC_patriot_tooltip_name
+		}
+		localization_key = USC_patriot_paleo_tooltip
+	}
+}
+
+defined_text = {
+	name = USC_rage_text
+	text = {
+		trigger = {
+			original_tag = USC
+			check_variable = {
+				var = USC_rage_var
+				value = 0.5
+				compare = less_than
+			}
+		}
+		localization_key = USC_rage_bad_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+			check_variable = {
+				var = USC_rage_var
+				value = 0.5
+				compare = equals
+			}
+		}
+		localization_key = USC_rage_neutral_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+			check_variable = {
+				var = USC_rage_var
+				value = 0.5
+				compare = greater_than
+			}
+		}
+		localization_key = USC_rage_good_loc
+	}
+}
+
+defined_text = {
+	name = USC_russian_leader_banner_scripted_gui
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_vladimir_putin
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_putin_banner_tt
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_dmitry_medvedev
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_medvedev_banner_tt
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_gennady_zyuganov
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_zyuganov_banner_tt
+	}	
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_yuri_afonin
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_afonin_banner_tt
+	}	
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_valery_rashkin
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_rashkin_banner_tt
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_vladimir_zhirinovsky
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_zhirinovsky_banner_tt
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_sergei_naryshkin
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_naryshkin_banner_tt
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_mikhail_mishustin
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = USC_mishustin_banner_tt
+	}
+}
+
+defined_text = {
+	name = USC_japan_leader_banner_scripted_gui
+	text = {
+		trigger = {
+			JAP = {	
+				has_country_flag = JAP_abe_death
+			}
+		}
+		localization_key = USC_abe_dead_banner_tt
+	}
+	text = {
+		trigger = {
+			JAP = {
+				NOT = { has_country_flag = JAP_abe_death }
+			}
+		}
+		localization_key = USC_abe_banner_tt
+	}
+}
+
+defined_text = {
+	name = presidential_pick_victor_text
+	text = {
+		trigger = {
+			date < 2025.01.01
+		}
+		localization_key = usc.41.a1
+	}
+	text = {
+		trigger = {
+			has_country_flag = USC_jd_vance_president_pick_flag
+		}
+		localization_key = usc.41.jdvance
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_rubio_president_pick_flag
+		}
+		localization_key = usc.41.rubio
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_desantis_president_pick_flag
+		}
+		localization_key = usc.41.desantis
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_gaetz_president_pick_flag
+		}
+		localization_key = usc.41.gaetz
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_carlson_president_pick_flag
+		}
+		localization_key = usc.41.carlson
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_bryan_president_pick_flag
+		}
+		localization_key = usc.41.bryan
+	}
+	text = {
+		trigger = {
+			has_country_flag = USC_lake_president_pick_flag
+		}
+		localization_key = usc.41.lake
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_vivek_president_pick_flag
+		}
+		localization_key = usc.41.vivek
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_johnson_president_pick_flag
+		}
+		localization_key = usc.41.johnson
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_paul_president_pick_flag
+		}
+		localization_key = usc.41.paul
+	}
+	text = {
+		trigger = {
+			has_country_flag = USC_palin_president_pick_flag
+		}
+		localization_key = usc.41.sarah
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_musk_president_pick_flag
+		}
+		localization_key = usc.41.musk
+	}	
+	text = {
+		trigger = {
+			has_country_flag = USC_trump_third_time_flag
+		}
+		localization_key = usc.41.trump_third
+	}	
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = USC_don_jr_president_pick_flag
+				has_country_flag = USC_ivanka_president_pick_flag
+			}
+		}
+		localization_key = usc.41.trump_child
+	}
+}
+
+defined_text = {
+	name = USC_inaguration_dynamic_text
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = USC_don_jr_president_pick_flag
+				has_country_flag = USC_ivanka_president_pick_flag
+			}
+		}
+		localization_key = usc.77.d_trump_kid
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = USC_don_jr_president_pick_flag
+					has_country_flag = USC_ivanka_president_pick_flag
+				}
+			}
+		}
+		localization_key = usc.77.d_normal
+	}
+}

@@ -1,0 +1,286 @@
+defined_text = {
+	name = PTF_national_support_text
+	text = {
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_national_support_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = PTF_national_support_bad_loc
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_national_support_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = PTF_national_support_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = PTF_national_support_neutral_loc
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_national_support_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = PTF_national_support_good_loc
+	}
+}
+
+defined_text = {
+	name = PTF_patriotic_harmony_text
+	text = {
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_patriotic_harmony_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = PTF_patriotic_harmony_bad_loc
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_patriotic_harmony_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = PTF_patriotic_harmony_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = PTF_patriotic_harmony_neutral_loc
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_patriotic_harmony_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = PTF_patriotic_harmony_good_loc
+	}
+}
+
+defined_text = {
+		name = get_canada_relations_status
+		
+		text = { 
+			trigger = {
+				check_variable = {
+					PTF_canadian_relations_var = 1
+				}
+			}
+			localization_key = "canada_relations_very_bad"
+		}		
+		text = { 
+			trigger = {
+				check_variable = {
+					PTF_canadian_relations_var = 2
+				}
+			}
+			localization_key = "canada_relations_bad"
+		}
+		text = { 
+			trigger = {
+				check_variable = {
+					PTF_canadian_relations_var = 3
+				}
+			}
+			localization_key = "canada_relations_mediocre"
+		}
+		text = { 
+			trigger = {
+				check_variable = {
+					PTF_canadian_relations_var = 4
+				}
+			}
+			localization_key = "canada_relations_ok"
+		}
+		text = { 
+			trigger = {
+				check_variable = {
+					PTF_canadian_relations_var = 5
+				}
+			}
+			localization_key = "canada_relations_good"
+		}
+		text = { 
+			trigger = {
+				check_variable = {
+					var = PTF_canadian_relations_var
+					value = 6
+					compare = greater_than_or_equals
+				}
+			}
+			localization_key = "canada_relations_friendly"
+		}
+	}
+
+defined_text = {
+	#Jacksonian Text
+	name = PTF_jacksonian_text
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_jacksonian_loc
+	}
+}
+
+
+
+defined_text = {
+	#Blueshirt Text
+	name = PTF_blueshirt_text
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_blueshirt_loc
+	}
+}
+
+defined_text = {
+	#Hamiltonian Text
+	name = PTF_hamiltonian_text
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_hamiltonian_loc
+	}
+}
+
+defined_text = {
+	#Spartanist Text
+	name = PTF_spartanist_text
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_spartanist_loc
+	}
+}
+
+defined_text = {
+	#GOP Text
+	name = PTF_gop_text
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_gop_loc
+	}
+}
+
+defined_text = {
+	#GOP Text
+	name = PTF_gop_text
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_gop_loc
+	}
+}
+defined_text = {
+	name = GetRousseauPower
+	text = { 
+		trigger = {
+			original_tag = PTF
+			check_variable = { 
+				var = PTF_rousseau_power_var
+				value = 1
+				compare = less_than_or_equals 
+			}
+		}
+		localization_key = rousseau_power_1
+	}
+	text = { 
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_rousseau_power_var
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = rousseau_power_2
+	}
+	text = { 
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_rousseau_power_var
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = rousseau_power_3
+	}
+	text = { 
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_rousseau_power_var
+				value = 4
+				compare = equals
+			}
+		}
+		localization_key = rousseau_power_4
+	}
+	text = { 
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_rousseau_power_var
+				value = 5
+				compare = equals
+			}
+		}
+		localization_key = rousseau_power_5
+	}
+	text = { 
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_rousseau_power_var
+				value = 6
+				compare = equals
+			}
+		}
+		localization_key = rousseau_power_6
+	}
+	text = { 
+		trigger = {
+			original_tag = PTF
+			check_variable = {
+				var = PTF_rousseau_power_var
+				value = 7
+				compare = equals
+			}
+		}
+		localization_key = rousseau_power_7
+	}
+}

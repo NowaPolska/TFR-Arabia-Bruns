@@ -1,0 +1,29 @@
+defined_text = { # Country
+	name = GetNatoName
+	text = {
+		trigger = { is_faction_leader = yes }
+		localization_key = TFR_nato_name_USA
+	}
+	text = {
+		localization_key = TFR_nato_name
+	}
+}
+
+defined_text = { # Country
+	name = GetNatoDesc
+	text = {
+		trigger = { is_faction_leader = yes }
+		localization_key = TFR_nato_desc_USA
+	}
+	text = {
+		localization_key = TFR_nato_desc
+	}
+}
+
+defined_text = { # GUI fuckery
+	name = GetNatoStats
+	text = {
+		trigger = { always = yes }
+		localization_key = nato_strength_delay_tt_script
+	}
+}

@@ -1,0 +1,81 @@
+defined_text = {
+	name = GetAnarchyGUIImage
+	text = {
+		trigger = {
+			TFR_catharsis_anarchy = yes
+		}
+		localization_key = "GFX_Anarchy_ZZZ"
+	}
+}
+
+defined_text = {
+	name = GetAnarchyGUIToolTip
+	text = {
+		trigger = {
+			TFR_catharsis_anarchy = yes
+		}
+		localization_key = TFR_Anarchy_ZZZ_tt
+	}
+}
+
+defined_text = {
+	name = GetAnarchyGUIToolTipDelayed
+	text = {
+		trigger = {
+			TFR_catharsis_anarchy = yes
+		}
+		localization_key = TFR_Anarchy_ZZZ_tt_delayed
+	}
+}
+
+defined_text = {
+	name = GetBabelGUIImage
+	text = {
+		trigger = {
+			OR = {
+				tag = PRC
+				tag = SOV
+			}
+			OR = {
+				has_idea = USB_nlp_idea1
+				has_idea = USB_nlp_idea2
+				has_idea = USB_nlp_idea3
+				has_idea = USB_nlp_idea4
+				has_idea = USB_nlp_idea5
+			}
+		}
+		localization_key = "GFX_babel_window"
+	}
+}
+
+defined_text = {
+	name = GetBabelGUIToolTip
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = USB_babel_russia_tt
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = USB_babel_china_tt
+	}
+}
+
+defined_text = {
+	name = GetBabelGUIToolTipDelayed
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = USB_babel_russia_tt_delayed
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = USB_babel_china_tt_delayed
+	}
+}

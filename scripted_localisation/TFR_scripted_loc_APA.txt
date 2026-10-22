@@ -1,0 +1,590 @@
+defined_text = {
+	name = APA_popular_support_text
+	text = {
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_popular_support_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = APA_popular_support_bad_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_popular_support_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_popular_support_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = APA_popular_support_neutral_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_popular_support_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = APA_popular_support_good_loc
+	}
+}
+
+defined_text = {
+	name = APA_leftist_unity_text
+	text = {
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_leftist_unity_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = APA_leftist_unity_bad_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_leftist_unity_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_popular_support_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = APA_leftist_unity_neutral_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_leftist_unity_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = APA_leftist_unity_good_loc
+	}
+}
+
+defined_text = {
+	name = APA_congress_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_parties_centralized_flag
+		}
+		localization_key = APA_congress_delegations_loc
+	}
+}
+
+defined_text = {
+	#Faction Agenda
+	name = APA_congress_agenda_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_jacobin_enable_flag
+			has_government = totalitarian_socialist
+		}
+		localization_key = APA_congress_agenda_jacobin_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_octoberist_enable_flag
+			has_government = communist
+		}
+		localization_key = APA_congress_agenda_octoberist_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_neosocialist_enable_flag
+			has_government = social_democrat
+		}
+		localization_key = APA_congress_agenda_neosocialist_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_anarchist_enable_flag
+			has_government = libertarian_socialist
+		}
+		localization_key = APA_congress_agenda_anarchist_loc
+	}
+}
+
+defined_text = {
+	#Faction Agenda Effects
+	name = APA_congress_agenda_effect_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_jacobin_enable_flag
+			has_government = totalitarian_socialist
+		}
+		localization_key = APA_congress_agenda_effect_jacobin_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_octoberist_enable_flag
+			has_government = communist
+		}
+		localization_key = APA_congress_agenda_effect_octoberist_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_neosocialist_enable_flag
+			has_government = social_democrat
+		}
+		localization_key = APA_congress_agenda_effect_neosocialist_loc
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_government_elected_flag
+			has_country_flag = APA_anarchist_enable_flag
+			has_government = libertarian_socialist
+		}
+		localization_key = APA_congress_agenda_effect_anarchist_loc
+	}
+}
+
+defined_text = {
+	#Jacobins Text
+	name = APA_congress_faction_jacobin_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_jacobin_enable_flag
+		}
+		localization_key = APA_congress_faction_jacobin_loc
+	}
+}
+
+defined_text = {
+	#Jacobin Allignment
+	name = APA_congress_faction_jacobin_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_jacobin_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = APA_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Octoberist Text
+	name = APA_congress_faction_octoberist_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_octoberist_enable_flag
+		}
+		localization_key = APA_congress_faction_octoberist_loc
+	}
+}
+
+defined_text = {
+	#Octoberist Allignment
+	name = APA_congress_faction_octoberist_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_octoberist_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = APA_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Anarchist Text
+	name = APA_congress_faction_anarchist_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_anarchist_enable_flag
+		}
+		localization_key = APA_congress_faction_anarchist_loc
+	}
+}
+
+defined_text = {
+	#Anarchist Allignment
+	name = APA_congress_faction_anarchist_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_anarchist_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = APA_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Neosocialist Text
+	name = APA_congress_faction_neosocialist_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_neosocialist_enable_flag
+		}
+		localization_key = APA_congress_faction_neosocialist_loc
+	}
+}
+
+defined_text = {
+	#Neosocialist Allignment
+	name = APA_congress_faction_neosocialist_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = APA_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = APA
+			check_variable = {
+				var = APA_support_neosocialist_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = APA_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Reactionary Text
+	name = APA_congress_faction_reactionary_text
+	text = {
+		trigger = {
+			original_tag = APA
+			has_country_flag = APA_reactionary_enable_flag
+		}
+		localization_key = APA_congress_faction_reactionary_loc
+	}
+}
+
+defined_text = {
+		name = party_specific_focus_jacobin
+
+		text = {
+			trigger = {
+				APA = {
+					NOT = {
+						OR = {
+							has_country_flag = APA_jac_cpusa_flag 
+							has_country_flag = APA_jac_nlp_flag 
+						}
+					}
+				}
+			}
+			localization_key = "APA_smash_capitalist_excesses_1"
+		}
+		text = {
+			trigger = {
+				APA = {
+					has_country_flag = APA_jac_cpusa_flag
+				}
+			}
+			localization_key = "APA_smash_capitalist_excesses_2"
+		}
+		text = {
+			trigger = {
+				APA = {
+					has_country_flag = APA_jac_nlp_flag
+				}
+			}
+			localization_key = "APA_smash_capitalist_excesses_3"
+		}
+	}	
