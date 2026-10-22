@@ -1,0 +1,332 @@
+scripted_gui = {
+	TFR_nato_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "nato_button_container"
+		ai_enabled = {
+			always = no
+		}
+		visible = {
+			is_in_array = {
+				array = USA.USA_nato_members
+				value = THIS.id
+			}
+		}
+		triggers = {
+			TFR_nato_button_visible = {
+				NOT = {
+				}
+			}
+			#TFR_nato_button_click_enabled = {
+			#	NOT = {
+			#		ROOT = { has_country_flag = nato_list_open }
+			#	}
+			#}
+		}
+		effects = {
+			TFR_nato_button_click = {
+				add_to_array = {
+					ROOT.nato_list_array = USA
+				}
+				for_each_loop = {
+					array = USA.USA_nato_members
+					if = {
+						limit = {
+							NOT = {
+								is_in_array = {
+									ROOT.nato_list_array = v
+								}
+							}
+						}
+						add_to_array = {
+							ROOT.nato_list_array = v
+						}
+					}
+				}
+				ROOT = {
+					set_variable = {
+						nato_leader = USA
+					}
+				}
+				ROOT = {
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = nato_list_open
+							}
+						}
+						set_country_flag = nato_list_open
+					}
+					else = {
+						clr_country_flag = nato_list_open
+					}
+				}
+				clear_variable = global.nato_deployed_total_manpower
+				clear_variable = global.nato_deployed_army_manpower
+				clear_variable = global.nato_deployed_navy_manpower
+				clear_variable = global.nato_deployed_air_manpower
+				clear_variable = global.nato_industry_total
+				clear_variable = global.nato_industry_civilian
+				clear_variable = global.nato_industry_military
+				clear_variable = global.nato_industry_naval
+				clear_variable = global.nato_military_divisions
+				clear_variable = global.nato_military_ships
+				clear_variable = global.nato_military_planes
+				clear_variable = global.nato_military_battalions
+				clear_variable = global.nato_military_reserve
+				clear_variable = global.nato_military_casualties
+				clear_variable = global.nato_military_screens
+				clear_variable = global.nato_military_capitals
+				clear_variable = global.nato_military_carriers
+				clear_variable = global.nato_military_subs
+				clear_variable = global.nato_military_smallplanes
+				clear_variable = global.nato_military_mediumplanes
+				clear_variable = global.nato_military_largeplanes
+				clear_variable = global.nato_industry_oil
+				clear_variable = global.nato_industry_aluminum
+				clear_variable = global.nato_industry_rubber
+				clear_variable = global.nato_industry_tungsten
+				clear_variable = global.nato_industry_steel
+				clear_variable = global.nato_industry_chromium
+				clear_variable = global.nato_industry_office_park
+				clear_variable = global.nato_industry_synthetic_refinery
+				clear_variable = global.nato_industry_nuclear_reactor
+				clear_variable = global.nato_industry_power_plant
+				clear_variable = global.nato_industry_energy_farm
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
+					add_to_variable = {
+						global.nato_deployed_total_manpower = THIS.deployed_army_manpower_k
+					}
+					add_to_variable = {
+						global.nato_deployed_total_manpower = THIS.deployed_navy_manpower_k
+					}
+					add_to_variable = {
+						global.nato_deployed_total_manpower = THIS.deployed_airforce_manpower_k
+					}
+					add_to_variable = {
+						global.nato_deployed_army_manpower = THIS.deployed_army_manpower_k
+					}
+					add_to_variable = {
+						global.nato_deployed_navy_manpower = THIS.deployed_navy_manpower_k
+					}
+					add_to_variable = {
+						global.nato_deployed_air_manpower = THIS.deployed_airforce_manpower_k
+					}
+					#add_to_variable = { global.nato_industry_total = THIS.num_of_civilian_factories  }
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_total = THIS.industrial_complex_level
+						}
+					}
+					#add_to_variable = { global.nato_industry_total = THIS.num_of_military_factories  }
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_total = THIS.arms_factory_level
+						}
+					}
+					#add_to_variable = { global.nato_industry_total = THIS.num_of_naval_factories }
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_total = THIS.building_level@dockyard
+						}
+					}
+					#add_to_variable = { global.nato_industry_civilian = THIS.num_of_civilian_factories  }
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_civilian = THIS.industrial_complex_level
+						}
+					}
+					#add_to_variable = { global.nato_industry_military = THIS.num_of_military_factories  }
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_military = THIS.arms_factory_level
+						}
+					}
+					#add_to_variable = { global.nato_industry_naval = THIS.num_of_naval_factories }
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_naval = THIS.building_level@dockyard
+						}
+					}
+					add_to_variable = {
+						global.nato_military_divisions = THIS.num_armies
+					}
+					add_to_variable = {
+						global.nato_military_ships = THIS.num_ships
+					}
+					add_to_variable = {
+						global.nato_military_planes = THIS.num_deployed_planes
+					}
+					add_to_variable = {
+						global.nato_military_battalions = THIS.num_battalions
+					}
+					add_to_variable = {
+						global.nato_military_reserve = THIS.manpower_k
+					}
+					subtract_from_variable = {
+						global.nato_military_reserve = THIS.deployed_army_manpower_k
+					}
+					add_to_variable = {
+						global.nato_military_casualties = THIS.casualties_k
+					}
+					add_to_variable = {
+						global.nato_military_screens = THIS.num_ships_with_type@screen
+					}
+					add_to_variable = {
+						global.nato_military_capitals = THIS.num_ships_with_type@capital
+					}
+					add_to_variable = {
+						global.nato_military_carriers = THIS.num_ships_with_type@carrier
+					}
+					add_to_variable = {
+						global.nato_military_subs = THIS.num_ships_with_type@submarine
+					}
+					add_to_variable = {
+						global.nato_military_smallplanes = THIS.num_deployed_planes_with_type@small_plane_airframe
+					}
+					add_to_variable = {
+						global.nato_military_mediumplanes = THIS.num_deployed_planes_with_type@medium_plane_airframe
+					}
+					add_to_variable = {
+						global.nato_military_largeplanes = THIS.num_deployed_planes_with_type@large_plane_airframe
+					}
+					add_to_variable = {
+						global.nato_industry_oil = THIS.resource_produced@oil
+					}
+					add_to_variable = {
+						global.nato_industry_aluminum = THIS.resource_produced@aluminium
+					}
+					add_to_variable = {
+						global.nato_industry_rubber = THIS.resource_produced@rubber
+					}
+					add_to_variable = {
+						global.nato_industry_tungsten = THIS.resource_produced@tungsten
+					}
+					add_to_variable = {
+						global.nato_industry_steel = THIS.resource_produced@steel
+					}
+					add_to_variable = {
+						global.nato_industry_chromium = THIS.resource_produced@chromium
+					}
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_office_park = THIS.building_level@office_park
+						}
+					}
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_synthetic_refinery = THIS.building_level@synthetic_refinery
+						}
+					}
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_nuclear_reactor = THIS.building_level@nuclear_reactor
+						}
+					}
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_power_plant = THIS.building_level@power_plant
+						}
+					}
+					every_owned_state = {
+						add_to_variable = {
+							global.nato_industry_energy_farm = THIS.building_level@energy_farm
+						}
+					}
+				}
+			}
+		}
+	}
+	nato_list = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "nato_list_window"
+		dirty = nato_list_variable
+		ai_enabled = {
+			always = no
+		}
+		visible = {
+			has_country_flag = nato_list_open
+		}
+		dynamic_lists = {
+			nato_tags_grid = {
+				array = nato_list_array
+				change_scope = yes
+				entry_container = nato_member_entry
+			}
+		}
+		triggers = {
+			major_country_overlay_visible = {
+				check_variable = {
+					ROOT.nato_leader = THIS
+				}
+			}
+		}
+		effects = {
+			button_close_click = {
+				for_each_scope_loop = {
+					array = ROOT.nato_list_array
+				}
+				clear_array = ROOT.nato_list_array
+				clear_variable = ROOT.nato_leader
+				clr_country_flag = nato_list_open
+			}
+			#button_offensive_doctrine_click = {
+			#	if = {
+			#		limit = {
+			#			has_country_flag = NATO_current_leader
+			#			NOT = {
+			#				OR = {
+			#					has_global_flag = NATO_offense_flag
+			#					has_global_flag = NATO_defense_flag
+			#				}
+			#			}
+			#			has_political_power > 200
+			#		}
+			#		add_political_power = -200
+			#		set_global_flag = NATO_offense_flag
+			#		every_country = {
+			#			limit = {
+			#				is_in_faction_with = GER
+			#			}
+			#			country_event = { id = nato.29 }
+			#		}
+			#	}
+			#}
+			#
+			#button_defensive_doctrine_click = {
+			#	if = {
+			#		limit = {
+			#			has_country_flag = NATO_current_leader
+			#			NOT = {
+			#				OR = {
+			#					has_global_flag = NATO_offense_flag
+			#					has_global_flag = NATO_defense_flag
+			#				}
+			#			}
+			#			has_political_power > 200
+			#		}
+			#		add_political_power = -200
+			#		set_global_flag = NATO_defense_flag
+			#	}
+			#}
+		}
+		properties = {
+			economic_sphere_icon = {
+				image = "[GetNatoIcon]"
+			}
+			country_flag = {
+				image = "[This.GetFlag]"
+			}
+			economic_sphere_bonus_icon = {
+				image = ""				#WIP
+			}
+		}
+	}
+}

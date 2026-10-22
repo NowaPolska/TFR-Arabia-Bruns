@@ -1,0 +1,52 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#Tags that join NATO
+			every_country = {
+				limit = {
+					OR = {
+						# tag = ENG #Leaves soon after start lol
+						# tag = GER
+						# tag = FRA
+						tag = BEL
+						tag = HOL
+						tag = LUX
+						tag = SPR
+						tag = POR
+						# tag = ITA
+						tag = DEN
+						tag = NOR
+						# tag = SWE
+						# tag = FIN
+						tag = SLV
+						tag = SLO
+						tag = CRO
+						tag = EST
+						tag = LAT
+						tag = LIT
+						tag = HUN
+						tag = CZE
+						tag = PLD
+						tag = ROM
+						tag = BUL
+						tag = GRE
+						tag = CYP
+					}
+				}
+				if = {
+					limit = {
+						SOV = {
+							is_ai = no
+						}
+					}
+					#Used for nerfing minor NATO countries, because the amount of divisions the NATO AI minors make decemates AI Russia
+					add_ideas = NATO_anti_militarists_idea
+				}
+				else = {
+					#Used for nerfing minor NATO countries, because the amount of divisions the NATO AI minors make decemates AI Russia
+					add_ideas = NATO_anti_militarists_idea1
+				}
+			}
+		}
+	}
+}

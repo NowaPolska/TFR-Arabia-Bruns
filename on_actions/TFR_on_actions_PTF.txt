@@ -1,0 +1,120 @@
+on_actions = {
+	on_annex = {
+		effect = {
+			if = { #New England Victory
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						original_tag = PTF
+					}
+					FROM = {
+						OR = {
+							original_tag = NYP
+							original_tag = NCY
+							original_tag = GMA
+							original_tag = SAT
+							original_tag = NYP
+							original_tag = GMC
+							original_tag = FAA
+							original_tag = NEG
+							original_tag = VER
+							original_tag = JDL
+							original_tag = ATP
+						}
+					}
+					NOT = {
+						country_exists = NYP
+						country_exists = NCY
+						country_exists = GMA
+						country_exists = SAT
+						country_exists = NYP
+						country_exists = GMC
+						country_exists = FAA
+						country_exists = NEG
+						country_exists = VER
+						country_exists = JDL
+						country_exists = ATP
+					}
+				}
+				country_event = {
+					id = ptf.1
+				}
+			}
+		}
+	}
+	on_weekly_PTF = {
+		effect = {
+			PTF_popularity_change = yes
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				#NSC-131 Bronx Trolling 
+				limit = {
+					ROOT = {
+						OR = {
+							tag = PTF
+							tag = NYP
+							tag = LCN
+							tag = NCY
+							tag = GMA
+							tag = SAT
+						}
+					}
+					FROM = {
+						OR = {
+							tag = PTF
+							tag = NYP
+							tag = LCN
+							tag = NCY
+							tag = GMA
+							tag = SAT
+						}
+					}
+					FROM.FROM = {
+						state = 918
+					}
+				}
+				news_event = {
+					id = ptf_news.1
+				}
+				add_timed_idea = {
+					idea = PTF_overflowing_hospitals_idea
+					days = 105
+				}
+			}
+			if = {
+				#Second Boston Massacre 
+				limit = {
+					ROOT = {
+						OR = {
+							tag = PTF
+							tag = NYP
+							tag = LCN
+							tag = NCY
+							tag = GMA
+							tag = SAT
+						}
+					}
+					FROM = {
+						OR = {
+							tag = PTF
+							tag = NYP
+							tag = LCN
+							tag = NCY
+							tag = GMA
+							tag = SAT
+						}
+					}
+					FROM.FROM = {
+						state = 357
+					}
+				}
+				country_event = {
+					id = ptf.5
+				}
+			}
+		}
+	}
+}

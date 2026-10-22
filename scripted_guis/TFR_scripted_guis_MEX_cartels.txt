@@ -1,0 +1,40 @@
+scripted_gui = {
+
+	mex_cartel_decision_ui = {
+		context_type = decision_category
+		window_name = "MEX_cartel_regions_decision_ui_window"
+
+		properties = {
+			MEX_region_1 ={
+				image = "[GetMEXREGION1]"
+			}
+
+		}
+		properties = {
+			MEX_region_2 ={
+				image = "[GetMEXREGION2]"
+			}
+
+		}
+		properties = {
+			MEX_region_3 ={
+				image = "[GetMEXREGION3]"
+			}
+
+		}
+		properties = {
+			MEX_region_4 ={
+				image = "[GetMEXREGION4]"
+			}
+
+		}
+		properties = {
+			MEX_region_5 ={
+				image = "[GetMEXREGION5]"
+			}
+
+		}
+	}
+	
+}
+

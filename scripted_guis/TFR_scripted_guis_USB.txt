@@ -1,0 +1,671 @@
+scripted_gui = {
+	USB_congress_help_gui = {
+		context_type = decision_category
+		window_name = "USB_congress_help_gui"
+	}
+	TFR_USB_cognoscenti_gui = {
+		context_type = decision_category
+		window_name = "TFR_USB_cognoscenti_container"
+		triggers = {
+			sc_USB_NSA_paul_nakasone_visible = {
+				has_idea = USB_NSA_paul_nakasone_sc
+			}
+			sc_USB_NSA_george_barnes_visible = {
+				has_idea = USB_NSA_george_barnes_sc
+			}
+			sc_USB_NSA_jeffrey_kruse_visible = {
+				has_idea = USB_DIA_jeffrey_kruse_sc
+			}
+			sc_USB_DIA_christine_bordine_visible = {
+				has_idea = USB_DIA_christine_bordine_sc
+			}
+			sc_USB_NSA_james_comey_visible = {
+				has_idea = USB_FBI_james_comey_sc
+			}
+			sc_USB_FBI_paul_abbate_visible = {
+				has_idea = USB_FBI_paul_abbate_sc
+			}
+			sc_USB_NSA_marvin_richardson_visible = {
+				has_idea = USB_ATF_marvin_richardson_sc
+			}
+			sc_USB_ATF_gary_restaino_visible = {
+				has_idea = USB_ATF_gary_restaino_sc
+			}
+			sc_USB_NSA_anthony_fauci_visible = {
+				has_idea = USB_CDC_anthony_fauci_sc
+			}
+			sc_USB_CDC_rochelle_walensky_visible = {
+				has_idea = USB_CDC_rochelle_walensky_sc
+			}
+			sc_USB_NSA_deanne_criswell_visible = {
+				has_idea = USB_FEMA_deanne_criswell_sc
+			}
+			sc_USB_FEMA_erik_hooks_visible = {
+				has_idea = USB_FEMA_erik_hooks_sc
+			}
+			sc_USB_NSA_albert_bourla_visible = {
+				has_idea = USB_Pfizer_albert_bourla_sc
+			}
+			sc_USB_Pfizer_sally_susman_visible = {
+				has_idea = USB_Pfizer_sally_susman_sc
+			}
+			sc_USB_NSA_patrick_lechleitner_visible = {
+				has_idea = USB_ICE_patrick_lechleitner_sc
+			}
+			sc_USB_ICE_staci_barrera_visible = {
+				has_idea = USB_ICE_staci_barrera_sc
+			}
+		}
+		effects = {
+			sc_USB_NSA_paul_nakasone_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+				}
+			}
+			sc_USB_NSA_jeffrey_kruse_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+				}
+			}
+			sc_USB_NSA_james_comey_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+				}
+			}
+			sc_USB_NSA_marvin_richardson_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+				}
+			}
+			sc_USB_NSA_anthony_fauci_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+				}
+			}
+			sc_USB_NSA_deanne_criswell_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+				}
+			}
+			sc_USB_NSA_albert_bourla_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+				}
+			}
+			sc_USB_NSA_patrick_lechleitner_click = {
+				if = {
+					limit = {
+						has_country_flag = USB_judas_gambit_flag
+					}
+					set_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+					clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+					clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+				}
+			}
+		}
+	}
+	TFR_USB_fire_window_gui = {
+		context_type = player_context
+		window_name = "TFR_USB_fire_window_container"
+		visible = {
+			OR = {
+				has_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+				has_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+				has_country_flag = sc_USB_NSA_james_comey_remove_flag
+				has_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+				has_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+				has_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+				has_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+				has_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+			}
+		}
+		triggers = {
+			USB_fire_window_yes_button_click_enabled = {
+				has_political_power > 99
+			}
+		}
+		effects = {
+			USB_fire_window_yes_button_click = {
+				add_political_power = -100
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+					}
+					remove_ideas = USB_NSA_paul_nakasone_sc
+					add_ideas = USB_NSA_george_barnes_sc
+					if = {
+						limit = {
+							has_country_flag = USB_nakasone_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.134
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+					}
+					remove_ideas = USB_DIA_jeffrey_kruse_sc
+					add_ideas = USB_DIA_christine_bordine_sc
+					if = {
+						limit = {
+							has_country_flag = USB_kruse_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.135
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_james_comey_remove_flag
+					}
+					remove_ideas = USB_FBI_james_comey_sc
+					add_ideas = USB_FBI_paul_abbate_sc
+					if = {
+						limit = {
+							has_country_flag = USB_comey_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.136
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+					}
+					remove_ideas = USB_ATF_marvin_richardson_sc
+					add_ideas = USB_ATF_gary_restaino_sc
+					if = {
+						limit = {
+							has_country_flag = USB_richardson_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.137
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+					}
+					remove_ideas = USB_CDC_anthony_fauci_sc
+					add_ideas = USB_CDC_rochelle_walensky_sc
+					if = {
+						limit = {
+							has_country_flag = USB_fauci_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.138
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+					}
+					remove_ideas = USB_FEMA_deanne_criswell_sc
+					add_ideas = USB_FEMA_erik_hooks_sc
+					if = {
+						limit = {
+							has_country_flag = USB_criswell_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.139
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+					}
+					remove_ideas = USB_Pfizer_albert_bourla_sc
+					add_ideas = USB_Pfizer_sally_susman_sc
+					if = {
+						limit = {
+							has_country_flag = USB_bourla_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.141
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+					}
+					remove_ideas = USB_ICE_patrick_lechleitner_sc
+					add_ideas = USB_ICE_staci_barrera_sc
+					if = {
+						limit = {
+							has_country_flag = USB_lechleitner_judas_flag
+						}
+						country_event = {
+							id = nss.26
+							days = 5
+						}
+						country_event = {
+							id = nss.140
+							days = 10
+						}
+					}
+					else = {
+						country_event = {
+							id = nss.25
+							days = 5
+						}
+					}
+				}
+				clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+				clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+				clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+				clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+				clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+				clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+				clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+				clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+			}
+			USB_fire_window_no_button_click = {
+				clr_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+				clr_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+				clr_country_flag = sc_USB_NSA_james_comey_remove_flag
+				clr_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+				clr_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+				clr_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+				clr_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+				clr_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+			}
+		}
+	}
+	TFR_USB_judas_gambit_gui = {
+		context_type = decision_category
+		window_name = "TFR_USB_judas_gambit_container"
+		triggers = {
+			USB_evidence1_visible = {
+				has_country_flag = USB_evidence1_flag
+			}
+			USB_evidence2_visible = {
+				has_country_flag = USB_evidence2_flag
+			}
+			USB_evidence3_visible = {
+				has_country_flag = USB_evidence3_flag
+			}
+			USB_evidence4_visible = {
+				has_country_flag = USB_evidence4_flag
+			}
+			USB_evidence5_visible = {
+				has_country_flag = USB_evidence5_flag
+			}
+			USB_evidence6_visible = {
+				has_country_flag = USB_evidence6_flag
+			}
+		}
+	}
+	TFR_USB_map_gui = {
+		context_type = decision_category
+		window_name = "TFR_USB_map_container"
+		triggers = {
+			USB_NORTHCOM_button_click_enabled = {
+				has_completed_focus = USB_we_wont_fail_again
+			}
+			USB_SOUTHCOM_button_click_enabled = {
+				has_completed_focus = USB_lznostalgia
+			}
+			USB_AFRICOM_button_click_enabled = {
+				has_completed_focus = USB_aqtomato
+			}
+			USB_EUROCOM_button_click_enabled = {
+				has_completed_focus = USB_cxhomecoming
+			}
+			USB_CENTCOM_button_click_enabled = {
+				has_completed_focus = USB_kktemple
+			}
+			USB_INDOPACIFICCOM_button_click_enabled = {
+				has_completed_focus = USB_mqwallbreaker
+			}
+		}
+		effects = {
+			USB_NORTHCOM_button_click = {
+				set_variable = {
+					var = USB_map_var
+					value = 0
+				}
+			}
+			USB_SOUTHCOM_button_click = {
+				set_variable = {
+					var = USB_map_var
+					value = 1
+				}
+			}
+			USB_AFRICOM_button_click = {
+				set_variable = {
+					var = USB_map_var
+					value = 2
+				}
+			}
+			USB_CENTCOM_button_click = {
+				set_variable = {
+					var = USB_map_var
+					value = 3
+				}
+			}
+			USB_EUROCOM_button_click = {
+				set_variable = {
+					var = USB_map_var
+					value = 4
+				}
+			}
+			USB_INDOPACIFICCOM_button_click = {
+				set_variable = {
+					var = USB_map_var
+					value = 5
+				}
+			}
+		}
+	}
+	TFR_nabataean_tablet = {
+		window_name = "TFR_nabataean_tablet"
+		context_type = player_context
+
+		effects = {
+		}
+
+		triggers = {
+	    	TFR_nabataean_tablet_close_visible = {
+				has_country_flag = USB_nabataean_tablet_button_flag
+			}
+			TFR_nabataean_tablet_close_buttontext_visible = {
+				has_country_flag = USB_nabataean_tablet_button_flag
+			}
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = USB_nabataean_tablet_flag
+		}
+
+		effects = {
+			TFR_nabataean_tablet_close_click = {
+				clr_country_flag = USB_nabataean_tablet_button_flag
+				USB = {
+					country_event = nss.101
+				}
+			}
+		}
+	}
+	TFR_codex = {
+		window_name = "TFR_codex"
+		context_type = player_context
+
+		effects = {
+		}
+
+		triggers = {
+	    	TFR_codex_close_visible = {
+				has_country_flag = USB_codex_button_flag
+			}
+			TFR_codex_close_buttontext_visible = {
+				has_country_flag = USB_codex_button_flag
+			}
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = USB_codex_flag
+		}
+
+		effects = {
+			TFR_codex_close_click = {
+				clr_country_flag = USB_codex_button_flag
+				USB = {
+					country_event = nss.98
+				}
+			}
+		}
+	}
+	TFR_khipu = {
+		window_name = "TFR_khipu"
+		context_type = player_context
+
+		effects = {
+		}
+
+		triggers = {
+	    	TFR_khipu_close_visible = {
+				has_country_flag = USB_khipu_button_flag
+			}
+			TFR_khipu_close_buttontext_visible = {
+				has_country_flag = USB_khipu_button_flag
+			}
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = USB_khipu_flag
+		}
+
+		effects = {
+			TFR_khipu_close_click = {
+				clr_country_flag = USB_khipu_button_flag
+				USB = {
+					country_event = nss.99
+				}
+			}
+		}
+	}
+	TFR_idk = {
+		window_name = "TFR_idk"
+		context_type = player_context
+
+		effects = {
+		}
+
+		triggers = {
+	    	TFR_idk_close_visible = {
+				has_country_flag = USB_idk_button_flag
+			}
+			TFR_idk_close_buttontext_visible = {
+				has_country_flag = USB_idk_button_flag
+			}
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = USB_idk_flag
+		}
+
+		effects = {
+			TFR_idk_close_click = {
+				clr_country_flag = USB_idk_button_flag
+				USB = {
+					country_event = nss.100
+				}
+			}
+		}
+	}
+	
+	TFR_heian = {
+		window_name = "TFR_heian"
+		context_type = player_context
+
+		effects = {
+		}
+
+		triggers = {
+	    	TFR_heian_close_visible = {
+				has_country_flag = USB_heian_button_flag
+			}
+			TFR_heian_close_buttontext_visible = {
+				has_country_flag = USB_heian_button_flag
+			}
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = USB_heian_flag
+		}
+
+		effects = {
+			TFR_heian_close_click = {
+				clr_country_flag = USB_heian_button_flag
+				USB = {
+					country_event = nss.144
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,306 @@
+on_actions = {
+	on_weekly_APA = {
+		effect = {
+			APA_popularity_change = yes
+		}
+	}
+	on_annex = {
+		effect = {
+			if = {
+				#THUG SHAKER EVENT <--- kys
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						original_tag = APA
+					}
+					FROM = {
+						OR = {
+							original_tag = BGF
+						}
+					}
+					NOT = {
+						country_exists = BGF
+					}
+				}
+				country_event = {
+					id = apla.51
+					days = 4
+				}
+			}
+			if = {
+				#APA California Victory
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						tag = APA
+					}
+					FROM = {
+						OR = {
+							original_tag = CLM
+							original_tag = CAL
+							original_tag = BGF
+							original_tag = SRN
+							original_tag = NRT
+							original_tag = RPP
+							original_tag = RGA
+							original_tag = HLA
+							original_tag = WLF
+						}
+					}
+					NOT = {
+						country_exists = CLM
+						country_exists = CAL
+						country_exists = BGF
+						country_exists = SRN
+						country_exists = NRT
+						country_exists = RPP
+						country_exists = RGA
+						country_exists = HLA
+						country_exists = WLF
+					}
+				}
+				APA = {
+					country_event = {
+						id = apla.22
+					}
+					#country_event = { 
+					#	id = apla.45 
+					#	days = 45
+					#}
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				#CLM War Crimes
+				limit = {
+					FROM.FROM = {
+						state = 941
+					}
+					OR = {
+						FROM = {
+							tag = APA
+						}
+						FROM = {
+							tag = CLM
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = APA
+						}
+						ROOT = {
+							tag = CLM
+						}
+					}
+					not = {
+						has_global_flag = APA_CSM_war_crimes
+					}
+				}
+				news_event = {
+					id = apla.42
+					days = 15
+				}
+				set_global_flag = APA_CSM_war_crimes
+			}
+			if = {
+				#Silicon Valley Looting
+				limit = {
+					FROM.FROM = {
+						state = 941
+					}
+					OR = {
+						FROM = {
+							tag = APA
+						}
+						FROM = {
+							tag = CLM
+						}
+						FROM = {
+							tag = CAL
+						}
+						FROM = {
+							tag = WLF
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = APA
+						}
+						ROOT = {
+							tag = CLM
+						}
+						ROOT = {
+							tag = CAL
+						}
+						ROOT = {
+							tag = WLF
+						}
+					}
+					not = {
+						has_global_flag = APA_sillicon_valley_looting
+					}
+				}
+				APA = {
+					country_event = {
+						id = apla.43
+					}
+				}
+				set_global_flag = APA_sillicon_valley_looting
+			}
+			if = {
+				#Beverly Hills Looting
+				limit = {
+					FROM.FROM = {
+						state = 930
+					}
+					OR = {
+						FROM = {
+							tag = APA
+						}
+						FROM = {
+							tag = CLM
+						}
+						FROM = {
+							tag = CAL
+						}
+						FROM = {
+							tag = RPP
+						}
+						FROM = {
+							tag = RGA
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = APA
+						}
+						ROOT = {
+							tag = CLM
+						}
+						ROOT = {
+							tag = CAL
+						}
+						ROOT = {
+							tag = RPP
+						}
+						ROOT = {
+							tag = RGA
+						}
+					}
+					not = {
+						has_global_flag = APA_hollywood_looting
+					}
+				}
+				APA = {
+					country_event = {
+						id = apla.44
+					}
+				}
+				set_global_flag = APA_hollywood_looting
+			}
+			if = {
+				#Bohemian Groove
+				limit = {
+					FROM.FROM = {
+						state = 942
+					}
+					OR = {
+						FROM = {
+							tag = APA
+						}
+						FROM = {
+							tag = CLM
+						}
+						FROM = {
+							tag = CAL
+						}
+						FROM = {
+							tag = BGF
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = APA
+						}
+						ROOT = {
+							tag = CLM
+						}
+						ROOT = {
+							tag = CAL
+						}
+						ROOT = {
+							tag = BGF
+						}
+					}
+					not = {
+						has_global_flag = APA_bohemian_groove
+					}
+				}
+				country_event = {
+					id = apla.46
+				}
+				set_global_flag = APA_bohemian_groove
+			}
+			if = {
+				#
+				limit = {
+					FROM.FROM = {
+						state = 1097
+					}
+					OR = {
+						FROM = {
+							tag = APA
+						}
+						FROM = {
+							tag = DUG
+						}
+						FROM = {
+							tag = FOL
+						}
+						FROM = {
+							tag = LDS
+						}
+						FROM = {
+							tag = BNF
+						}
+						FROM = {
+							tag = USA
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = APA
+						}
+						ROOT = {
+							tag = DUG
+						}
+						FROM = {
+							tag = FOL
+						}
+						FROM = {
+							tag = LDS
+						}
+						FROM = {
+							tag = BNF
+						}
+						FROM = {
+							tag = USA
+						}
+					}
+					not = {
+						has_global_flag = APA_bye_vegas
+					}
+				}
+				APA = {
+					country_event = {
+						id = apla.74
+					}
+				}
+				set_global_flag = APA_bye_vegas
+			}
+		}
+	}
+}

@@ -1,0 +1,2207 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				add_dynamic_modifier = {
+					modifier = gdp_debt_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = inflation_dynamic
+				}
+				set_variable = { 
+					debt_var = 0
+				}
+				set_variable = { 
+					gdp_var = 0
+				}
+				set_variable = {
+					inflation_var = 0
+				}
+				set_country_flag = auto_payment_flag
+				set_variable = { 
+					var = auto_payment_var 
+					value = 2
+				}
+				if = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = bank_flag
+					set_variable = { 
+						var = bank_var 
+						value = 2
+					}
+				}
+				else = {
+					set_variable = { 
+						var = bank_var 
+						value = 1
+					}
+				}
+			}
+			SYR = {
+				set_variable = {
+					inflation_var = 0.134
+				}
+				set_temp_variable = {
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			HTS = {
+				set_variable = {
+					inflation_var = 0.281
+				}
+				set_temp_variable = {
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			USA = {
+				set_variable = {
+					inflation_var = 0.012
+				}
+				set_temp_variable = { 
+					debt_var_temp = 23719.2
+				}
+				add_debt = yes
+			}
+			PRC = {
+				set_temp_variable = { 
+					debt_var_temp = 8662
+				}
+				add_debt = yes
+			}
+			ENG = {
+				set_variable = {
+					inflation_var = 0.0034
+				}
+				set_temp_variable = { 
+					debt_var_temp = 2443
+				}
+				add_debt = yes
+			}
+			GER = {
+				set_temp_variable = {
+					inflation_var_temp = 0.011
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2323
+				}
+				add_debt = yes
+			}
+			FRA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.011
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2666
+				}
+				add_debt = yes
+			}
+			ITA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.015
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2414
+				}
+				add_debt = yes
+			}
+			SOV = {
+				set_temp_variable = {
+					inflation_var_temp = 0.044
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 232.31
+				}
+				add_debt = yes
+			}
+			JAP = {
+				set_temp_variable = {
+					inflation_var_temp = 0.008
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 10640 
+				}
+				add_debt = yes
+			}
+			MEX = {
+				set_temp_variable = {
+					inflation_var_temp = 0.036
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 676
+				}
+				add_debt = yes
+			}
+			CDJ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.036
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 100
+				}
+				add_debt = yes
+			}
+			CAS = {
+				set_temp_variable = {
+					inflation_var_temp = 0.036
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 100
+				}
+				add_debt = yes
+			}
+			GUC = {
+				set_temp_variable = {
+					inflation_var_temp = 0.036
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 100
+				}
+				add_debt = yes
+			}
+			LFM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.036
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 100
+				}
+				add_debt = yes
+			}
+			ZAP = {
+				set_temp_variable = {
+					inflation_var_temp = 0.036
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 100
+				}
+				add_debt = yes
+			}
+			RAJ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.037
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 561	
+				}
+				add_debt = yes
+			}
+			BRA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.007
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 809	
+				}
+				add_debt = yes
+			}
+			SAF = {
+				set_temp_variable = {
+					inflation_var_temp = 0.041
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 260
+				}
+				add_debt = yes
+			}
+			CFF = {
+				set_temp_variable = {
+					inflation_var_temp = 0.041
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 50
+				}
+				add_debt = yes
+			}
+			EFF = {
+				set_temp_variable = {
+					inflation_var_temp = 0.041
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 50
+				}
+				add_debt = yes
+			}
+			LES = {
+				set_temp_variable = {
+					inflation_var_temp = 0.041
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 50
+				}
+				add_debt = yes
+			}
+			TUR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.118
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 219
+				}
+				add_debt = yes
+			}
+			NGA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.114
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 95
+				}
+				add_debt = yes
+			}
+			INS = {
+				set_temp_variable = {
+					inflation_var_temp = 0.03
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 342
+				}
+				add_debt = yes
+			}
+			ETH = {
+				set_temp_variable = {
+					inflation_var_temp = 0.158
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 25
+				}
+				add_debt = yes
+			}
+			ETH = {
+				set_temp_variable = {
+					inflation_var_temp = 0.118
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			CAN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.019
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 765
+				}
+				add_debt = yes
+			}
+			PER = {
+				set_temp_variable = {
+					inflation_var_temp = 0.347
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 112
+				}
+				add_debt = yes
+			}
+			EGY = {
+				set_temp_variable = {
+					inflation_var_temp = -0.052
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 230
+				}
+				add_debt = yes
+			}
+			BAN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.055
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 112
+				}
+				add_debt = yes
+			}
+			CHI = {
+				set_temp_variable = {
+					inflation_var_temp = 0.005
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 200
+				}
+				add_debt = yes
+			}
+			KOR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.021
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 690
+				}
+				add_debt = yes
+			}
+			AST = {
+				set_temp_variable = {
+					inflation_var_temp = 0.016
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 684
+				}
+				add_debt = yes
+			}
+			SPR = {
+				set_temp_variable = {
+					inflation_var_temp = -0.0098
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1369
+				}
+				add_debt = yes
+			}
+			VIN = {
+				set_temp_variable = {
+					inflation_var_temp = -0.027
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 136
+				}
+				add_debt = yes
+			}
+			PLD = {
+				set_temp_variable = {
+					inflation_var_temp = -0.004
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 272
+				}
+				add_debt = yes
+			}
+			SAU = {
+				set_temp_variable = {
+					inflation_var_temp = -0.045
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 180
+				}
+				add_debt = yes
+			}
+			ROC = {
+				set_temp_variable = {
+					inflation_var_temp = -0.045
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 180
+				}
+				add_debt = yes
+			}
+			ARR = {
+				set_temp_variable = {
+					inflation_var_temp = -0.045
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 180
+				}
+				add_debt = yes
+			}
+			JAH = {
+				set_temp_variable = {
+					inflation_var_temp = -0.045
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 180
+				}
+				add_debt = yes
+			}
+			PAK = {
+				set_temp_variable = {
+					inflation_var_temp = 0.068
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 110
+				}
+				add_debt = yes
+			}
+			UKR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.078
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 77
+				}
+				add_debt = yes
+			}
+			SIA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.007
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 200
+				}
+				add_debt = yes
+			}
+			PHI = {
+				set_temp_variable = {
+					inflation_var_temp = -0.029
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 95.5
+				}
+				add_debt = yes
+			}
+			MAL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.006
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 208
+				}
+				add_debt = yes
+			}
+			ARG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.535
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 402
+				}
+				add_debt = yes
+			}
+			COL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.035
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 164
+				}
+				add_debt = yes
+			}
+			CLS = {
+				set_temp_variable = {
+					inflation_var_temp = 0.035
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 164
+				}
+				add_debt = yes
+			}
+			FRC = {
+				set_temp_variable = {
+					inflation_var_temp = 0.035
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 164
+				}
+				add_debt = yes
+			}
+			ELN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.035
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 164
+				}
+				add_debt = yes
+			}
+			SUD = {
+				set_temp_variable = {
+					inflation_var_temp = 0.509
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 68
+				}
+				add_debt = yes
+			}
+			ROM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.048
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 91
+				}
+				add_debt = yes
+			}
+			ALG = {
+				set_temp_variable = {
+					inflation_var_temp = -0.023
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 79
+				}
+				add_debt = yes
+			}
+			TZN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.034
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 20
+				}
+				add_debt = yes
+			}
+			HOL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.026
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 425
+				}
+				add_debt = yes
+			}
+			PRU = {
+				set_temp_variable = {
+					inflation_var_temp = 0.022
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 58
+				}
+				add_debt = yes
+			}
+			UAE = {
+				set_temp_variable = {
+					inflation_var_temp = 0.019
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 112
+				}
+				add_debt = yes
+			}
+			UZB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.145
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 22
+				}
+				add_debt = yes
+			}
+			KEN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.035
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 49
+				}
+				add_debt = yes
+			}
+			MOR = {
+				set_temp_variable = {
+					inflation_var_temp = -0.015
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 69
+				}
+				add_debt = yes
+			}
+			IRQ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.020
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 98
+				}
+				add_debt = yes
+			}
+			ABK = {
+				set_temp_variable = {
+					inflation_var_temp = 0.020
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 18
+				}
+				add_debt = yes
+			}
+			BUK = {
+				set_temp_variable = {
+					inflation_var_temp = 0.020
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 18
+				}
+				add_debt = yes
+			}
+			COG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 9
+				}
+				add_debt = yes
+			}
+			BDK = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			DRO = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			NDC = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			M23 = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			RCO = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			MMK = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			SWE = {
+				set_temp_variable = {
+					inflation_var_temp = 0.017
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 189
+				}
+				add_debt = yes
+			}
+			SIG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.005
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 720
+				}
+				add_debt = yes
+			}
+			CHL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.028
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 73
+				}
+				add_debt = yes
+			}
+			BEL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.014
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 523
+				}
+				add_debt = yes
+			}
+			MON = {
+				set_temp_variable = {
+					inflation_var_temp = 0.035
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 9
+				}
+				add_debt = yes
+			}
+			GRE = {
+				set_temp_variable = {
+					inflation_var_temp = -0.003
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 380
+				}
+				add_debt = yes
+			}
+			KAZ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.052
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 30
+				}
+				add_debt = yes
+			}
+			SRL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.013
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 73
+				}
+				add_debt = yes
+			}
+			BRM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.090
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 26
+				}
+				add_debt = yes
+			}
+			SYR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.134
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 4
+				}
+				add_debt = yes
+			}
+			POR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.003
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 279
+				}
+				add_debt = yes
+			}
+			VEN = {
+				set_temp_variable = {
+					inflation_var_temp = 199.005
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 150
+				}
+				add_debt = yes
+			}
+			BLR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.056
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 26
+				}
+				add_debt = yes
+			}
+			ANG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.170
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 90
+				}
+				add_debt = yes
+			}
+			UGA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.028
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 14
+				}
+				add_debt = yes
+			}
+			ISR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.006
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 236
+				}
+				add_debt = yes
+			}
+			SER = {
+				set_temp_variable = {
+					inflation_var_temp = -0.001
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 32
+				}
+				add_debt = yes
+			}
+			DEN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.004
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 132
+				}
+				add_debt = yes
+			}
+			AUS = {
+				set_temp_variable = {
+					inflation_var_temp = -0.004
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 280
+				}
+				add_debt = yes
+			}
+			AZR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.026
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 8
+				}
+				add_debt = yes
+			}
+			AFG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.023
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			TAL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.023
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			SWI = {
+				set_temp_variable = {
+					inflation_var_temp = -0.005
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 286
+				}
+				add_debt = yes
+			}
+			HUN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.033
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 107
+				}
+				add_debt = yes
+			}
+			NEP = {
+				set_temp_variable = {
+					inflation_var_temp = 0.046
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 11
+				}
+				add_debt = yes
+			}
+			ECU = {
+				set_temp_variable = {
+					inflation_var_temp = 0.002
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 56
+				}
+				add_debt = yes
+			}
+			GHA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.071
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 39
+				}
+				add_debt = yes
+			}
+			PRK = {
+				set_temp_variable = {
+					inflation_var_temp = 0.004
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 20
+				}
+				add_debt = yes
+			}
+			CAM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.030
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 6
+				}
+				add_debt = yes
+			}
+			MAD = {
+				set_temp_variable = {
+					inflation_var_temp = 0.056
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 4
+				}
+				add_debt = yes
+			}
+			CMR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.013
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 12
+				}
+				add_debt = yes
+			}
+			JOR = {
+				set_temp_variable = {
+					inflation_var_temp = -0.037
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 34
+				}
+				add_debt = yes
+			}
+			CZE = {
+				set_temp_variable = {
+					inflation_var_temp = 0.028
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 75
+				}
+				add_debt = yes
+			}
+			IVO = {
+				set_temp_variable = {
+					inflation_var_temp = 0.008
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 21
+				}
+				add_debt = yes
+			}
+			
+			QAT = {
+				set_temp_variable = {
+					inflation_var_temp = -0.009
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 109
+				}
+				add_debt = yes
+			}
+			
+			NZL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.016
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 67
+				}
+				add_debt = yes
+			}
+			
+			MZB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.056
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 15
+				}
+				add_debt = yes
+			}
+			
+			NOR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.021
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 165
+				}
+				add_debt = yes
+			}
+			
+			GUA = {
+				set_temp_variable = {
+					inflation_var_temp = -0.005
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 20
+				}
+				add_debt = yes
+			}
+			
+			MLI = {
+				set_temp_variable = {
+					inflation_var_temp = -0.02
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			BOL = {
+				set_temp_variable = {
+					inflation_var_temp = -0.004
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 24
+				}
+				add_debt = yes
+			}
+			
+			BUL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.024
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 12
+				}
+				add_debt = yes
+			}
+			
+			PNG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.038
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 9
+				}
+				add_debt = yes
+			}
+			
+			SEN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.017
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 14
+				}
+				add_debt = yes
+			}
+			
+			IRE = {
+				set_temp_variable = {
+					inflation_var_temp = 0.004
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 227
+				}
+				add_debt = yes
+			}
+			
+			ZAM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.091
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 24
+				}
+				add_debt = yes
+			}
+			
+			TUN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.067
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 28
+				}
+				add_debt = yes
+			}
+			
+			SLO = {
+				set_temp_variable = {
+					inflation_var_temp = 0.027
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 50
+				}
+				add_debt = yes
+			}
+			
+			FIN = {
+				set_temp_variable = {
+					inflation_var_temp = 0.011
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 174
+				}
+				add_debt = yes
+			}
+			
+			CUB = {
+				set_temp_variable = {
+					inflation_var_temp = -0.013
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 18
+				}
+				add_debt = yes
+			}
+			
+			MLW = {
+				set_temp_variable = {
+					inflation_var_temp = 0.093
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			DOM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.035
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 47
+				}
+				add_debt = yes
+			}
+			
+			NGR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.114
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 143
+				}
+				add_debt = yes
+			}
+			
+			ZIM = {
+				set_temp_variable = {
+					inflation_var_temp = 2.553
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			SSD = {
+				set_temp_variable = {
+					inflation_var_temp = 0.872
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			COS = {
+				set_temp_variable = {
+					inflation_var_temp = -0.001
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 36
+				}
+				add_debt = yes
+			}
+			
+			HON = {
+				set_temp_variable = {
+					inflation_var_temp = -0.001
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 10
+				}
+				add_debt = yes
+			}
+			
+			PAR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.027
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 10
+				}
+				add_debt = yes
+			}
+			
+			TMS = {
+				set_temp_variable = {
+					inflation_var_temp = 0.051
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			ELS = {
+				set_temp_variable = {
+					inflation_var_temp = -0.010
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 20
+				}
+				add_debt = yes
+			}
+			
+			CRO = {
+				set_temp_variable = {
+					inflation_var_temp = 0.007
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 43
+				}
+				add_debt = yes
+			}
+			
+			RWA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.036
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			CHA = {
+				set_temp_variable = {
+					inflation_var_temp = -0.009
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			KUW = {
+				set_temp_variable = {
+					inflation_var_temp = 0.005
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 14
+				}
+				add_debt = yes
+			}
+			
+			LIT = {
+				set_temp_variable = {
+					inflation_var_temp = 0.022
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 19
+				}
+				add_debt = yes
+			}
+			
+			OMA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.004
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 46
+				}
+				add_debt = yes
+			}
+			
+			URG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.078
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 37
+				}
+				add_debt = yes
+			}
+			
+			DAH = {
+				set_temp_variable = {
+					inflation_var_temp = -0.009
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 6
+				}
+				add_debt = yes
+			}
+			
+			TAJ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.077
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 6
+				}
+				add_debt = yes
+			}
+			
+			HEZ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.006
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 6
+				}
+				add_debt = yes
+			}
+			
+			VOL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.023
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 6
+				}
+				add_debt = yes
+			}
+			
+			IAI = {
+				set_temp_variable = {
+					inflation_var_temp = 0.001
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 0
+				}
+				add_debt = yes
+			}
+			
+			MLT = {
+				set_temp_variable = {
+					inflation_var_temp = 0.001
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 0
+				}
+				add_debt = yes
+			}
+			
+			AQI = {
+				set_temp_variable = {
+					inflation_var_temp = 0.001
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 0
+				}
+				add_debt = yes
+			}
+			
+			GNA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.095
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			BRD = {
+				set_temp_variable = {
+					inflation_var_temp = 0.021
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2
+				}
+				add_debt = yes
+			}
+			
+			LEB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.028
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 73
+				}
+				add_debt = yes
+			}
+			
+			HRL = {
+				set_temp_variable = {
+					inflation_var_temp = -0.061
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 37
+				}
+				add_debt = yes
+			}
+			
+			LBA = {
+				set_temp_variable = {
+					inflation_var_temp = -0.061
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			PAN = {
+				set_temp_variable = {
+					inflation_var_temp = -0.003
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 27
+				}
+				add_debt = yes
+			}
+			
+			LAT = {
+				set_temp_variable = {
+					inflation_var_temp = -0.028
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 12
+				}
+				add_debt = yes
+			}
+			
+			EQG = {
+				set_temp_variable = {
+					inflation_var_temp = -0.015
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 4
+				}
+				add_debt = yes
+			}
+			
+			NIC = {
+				set_temp_variable = {
+					inflation_var_temp = 0.053
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			SIE = {
+				set_temp_variable = {
+					inflation_var_temp = 0.148
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 3
+				}
+				add_debt = yes
+			}
+			
+			LAO = {
+				set_temp_variable = {
+					inflation_var_temp = 0.032
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 18
+				}
+				add_debt = yes
+			}
+			
+			ROJ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.423
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			ERI = {
+				set_temp_variable = {
+					inflation_var_temp = 0.013
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			PAL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.015
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 6
+				}
+				add_debt = yes
+			}
+			
+			TOG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.006
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2
+				}
+				add_debt = yes
+			}
+			
+			BOS = {
+				set_temp_variable = {
+					inflation_var_temp = 0.006
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			KYR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.011
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			MOL = {
+				set_temp_variable = {
+					inflation_var_temp = 0.048
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			LUX = {
+				set_temp_variable = {
+					inflation_var_temp = 0.017
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 15
+				}
+				add_debt = yes
+			}
+			
+			RCG = {
+				set_temp_variable = {
+					inflation_var_temp = 0.014
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 10
+				}
+				add_debt = yes
+			}
+			
+			SLV = {
+				set_temp_variable = {
+					inflation_var_temp = 0.016
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 35
+				}
+				add_debt = yes
+			}
+			
+			GEO = {
+				set_temp_variable = {
+					inflation_var_temp = 0.022
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			JAM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.039
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 15
+				}
+				add_debt = yes
+			}
+			
+			CAR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.011
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			CPC = {
+				set_temp_variable = {
+					inflation_var_temp = 0.011
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			MRT = {
+				set_temp_variable = {
+					inflation_var_temp = 0.023
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 4
+				}
+				add_debt = yes
+			}
+			
+			LIB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.270
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			ALB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.014
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 10
+				}
+				add_debt = yes
+			}
+			
+			SML = {
+				set_temp_variable = {
+					inflation_var_temp = 0.074
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			EST = {
+				set_temp_variable = {
+					inflation_var_temp = 0.022
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 3
+				}
+				add_debt = yes
+			}
+			
+			NMB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.037
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			MAC = {
+				set_temp_variable = {
+					inflation_var_temp = 0.027
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2
+				}
+				add_debt = yes
+			}
+			
+			HAI = {
+				set_temp_variable = {
+					inflation_var_temp = 0.173
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 4
+				}
+				add_debt = yes
+			}
+			
+			BOT = {
+				set_temp_variable = {
+					inflation_var_temp = 0.027
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 3
+				}
+				add_debt = yes
+			}
+			
+			GAB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.020
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 10
+				}
+				add_debt = yes
+			}
+			
+			CYP = {
+				set_temp_variable = {
+					inflation_var_temp = 0.005
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 23
+				}
+				add_debt = yes
+			}
+			
+			YEM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.157
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			AAS = {
+				set_temp_variable = {
+					inflation_var_temp = 0.157
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			HOU = {
+				set_temp_variable = {
+					inflation_var_temp = 0.157
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			GAM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.071
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			GYA = {
+				set_temp_variable = {
+					inflation_var_temp = 1.186
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2
+				}
+				add_debt = yes
+			}
+			
+			GNB = {
+				set_temp_variable = {
+					inflation_var_temp = -0.001
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			BHU = {
+				set_temp_variable = {
+					inflation_var_temp = 0.027
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2
+				}
+				add_debt = yes
+			}
+			
+			MNT = {
+				set_temp_variable = {
+					inflation_var_temp = 0.003
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 4
+				}
+				add_debt = yes
+			}
+			
+			SUR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.043
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 3
+				}
+				add_debt = yes
+			}
+			
+			DJI = {
+				set_temp_variable = {
+					inflation_var_temp = 0.033
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			ICE = {
+				set_temp_variable = {
+					inflation_var_temp = 0.031
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 16
+				}
+				add_debt = yes
+			}
+			
+			SOM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 5
+				}
+				add_debt = yes
+			}
+			
+			SHB = {
+				set_temp_variable = {
+					inflation_var_temp = 0.047
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			BLZ = {
+				set_temp_variable = {
+					inflation_var_temp = 0.002
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2
+				}
+				add_debt = yes
+			}
+			
+			ARM = {
+				set_temp_variable = {
+					inflation_var_temp = -0.010
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 7
+				}
+				add_debt = yes
+			}
+			
+			DPR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.052
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			NOV = {
+				set_temp_variable = {
+					inflation_var_temp = 0.051
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 1
+				}
+				add_debt = yes
+			}
+			
+			KUR = {
+				set_temp_variable = {
+					inflation_var_temp = 0.032
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 20
+				}
+				add_debt = yes
+			}
+			
+			NGK = {
+				set_temp_variable = {
+					inflation_var_temp = 0.042
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 0
+				}
+				add_debt = yes
+			}
+			
+			YAM = {
+				set_temp_variable = {
+					inflation_var_temp = 0.056
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 0
+				}
+				add_debt = yes
+			}
+			
+			KKP = {
+				set_temp_variable = {
+					inflation_var_temp = 0.086
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 0
+				}
+				add_debt = yes
+			}
+			
+			TRA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.073
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 0
+				}
+				add_debt = yes
+			}
+			
+			every_country = {
+				add_GDP = yes
+			}
+			every_possible_country = {
+				limit = {
+					is_relavent_tag = yes
+				}
+				add_to_array = {
+					economic_actions_array = token:print_money_economic_action
+			 	}
+				add_to_array = {
+					economic_actions_array = token:quantitative_tightening_economic_action 
+			 	}
+				add_to_array = {
+					economic_actions_array = token:war_taxes_economic_action
+			 	}
+				add_to_array = {
+					economic_actions_array = token:develop_state_economic_action
+			 	}
+			}
+		}	
+	}
+		
+	on_monthly = {
+		effect = {
+			add_GDP = yes
+			#update_power_plants_effect = yes #No longer needed, building exclusively has been added to Hoi4 Base Game
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					has_stability < 0.5
+				}
+				set_temp_variable = {
+					var = low_stability_weekly_var_temp
+					value = modifier@low_stability_weekly
+				}
+				add_stability = low_stability_weekly_var_temp
+			}
+		}
+	}
+}

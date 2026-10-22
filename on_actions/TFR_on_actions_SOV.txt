@@ -1,0 +1,78 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			SOV = {
+				if = {
+					limit = {
+						SOV = {
+							is_ai = yes
+						}
+					}
+					SOV = {
+						add_ideas = SOV_ai_production_bonus_idea
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = SOV_oligarch_support_dynamic
+				}
+				set_variable = {
+					SOV_election_approval_rating_cprf_var = 0.25
+				}
+				set_variable = {
+					SOV_election_approval_rating_ldpr_var = 0.2
+				}
+				set_variable = {
+					SOV_election_approval_rating_ur_var = 0.46
+				}
+				set_variable = {
+					SOV_election_approval_rating_srzp_var = 0.09
+				}
+				set_variable = {
+					SOV_election_approval_rating_nav_var = 0.2
+				}
+				set_variable = {
+					SOV_propaganda_decision_cost_var = 50
+				}
+				add_to_array = {
+					SOV_political_parties = SOV_election_approval_rating_cprf_var
+				}
+				add_to_array = {
+					SOV_political_parties = SOV_election_approval_rating_ldpr_var
+				}
+				add_to_array = {
+					SOV_political_parties = SOV_election_approval_rating_ur_var
+				}
+				add_to_array = {
+					SOV_political_parties = SOV_election_approval_rating_srzp_var
+				}
+				set_variable = {
+					var = SOV_oligarch_approval_rating_var
+					value = 0
+				}
+				set_variable = {
+					var = SOV_oligarch_factory_var
+					value = 1
+				}
+				set_variable = {
+					var = SOV_remove_oligarch_factory_var
+					value = -1
+				}
+				set_temp_variable = {
+					var = SOV_oligarch_approval_rating_var_temp
+					value = 0.5
+				}
+				SOV_add_oligarch_approval_rating = yes
+				SOV_duma_setup = yes
+			}
+		}
+	}
+	on_monthly_SOV = {
+		effect = {
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = modifier@oligarch_influence_monthly
+			}
+			SOV_add_oligarch_approval_rating = yes
+		}
+	}
+}

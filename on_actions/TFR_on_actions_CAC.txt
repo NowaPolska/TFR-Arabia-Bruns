@@ -1,0 +1,140 @@
+on_actions = {
+	on_annex = {
+		effect = {
+			if = { #Washington defeated, Canadian volunteers arrive
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						original_tag = CAC
+					}
+					FROM = {
+						OR = {
+							original_tag = WAS
+						}
+					}
+					NOT = {
+						country_exists = WAS
+					}
+				}
+				country_event = {
+					id = cac.12
+					days = 0
+				}
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			if = { #Oregon defeated, Idahoan volunteers arrive
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						original_tag = CAC
+					}
+					FROM = {
+						OR = {
+							original_tag = ORE
+						}
+					}
+					NOT = {
+						country_exists = ORE
+					}
+				}
+				country_event = {
+					id = cac.13
+					days = 3
+				}
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			if = { #Oregon defeated, Idahoan volunteers arrive
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						original_tag = CAC
+					}
+					FROM = {
+						OR = {
+							original_tag = ORE
+						}
+					}
+					NOT = {
+						country_exists = ORE
+					}
+				}
+				country_event = {
+					id = cac.14
+					days = 3
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = { #Idaho Secured
+				limit = {
+					FROM.FROM = { state = 1085 }
+					OR = {
+						FROM = { tag = MOS }
+						FROM = { tag = BNF }
+						FROM = { tag = LDS }
+						FROM = { tag = CAC }
+					}
+					OR = {
+						ROOT = { tag = MOS }
+						ROOT = { tag = BNF }
+						ROOT = { tag = LDS }
+						ROOT = { tag = CAC }
+					}
+				}
+				country_event = { id = cac.31 }	
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = { #New York Captured
+				limit = {
+					FROM.FROM = { state = 918 }
+					OR = {
+						FROM = { tag = PTF }
+						FROM = { tag = USB }
+						FROM = { tag = USC }
+						FROM = { tag = GMA }
+					}
+					OR = {
+						ROOT = { tag = PTF }
+						ROOT = { tag = USB }
+						ROOT = { tag = USC }
+						ROOT = { tag = GMA }
+					}
+				}
+				country_event = { id = cac.38 days = 5 }	
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = { #San Francisco Captured
+				limit = {
+					FROM.FROM = { state = 932 }
+					OR = {
+						FROM = { tag = APA }
+						FROM = { tag = WLF }
+						FROM = { tag = CLM }
+						FROM = { tag = CAL }
+					}
+					OR = {
+						ROOT = { tag = APA }
+						ROOT = { tag = WLF }
+						ROOT = { tag = CLM }
+						ROOT = { tag = CAL }
+					}
+				}
+				country_event = { id = cac.39 days = 2 }	
+			}
+		}
+	}
+}

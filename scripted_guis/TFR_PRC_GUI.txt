@@ -1,0 +1,61 @@
+scripted_gui = {
+	TFR_PRC_privatization_GUI = {
+		context_type = decision_category
+		window_name = "TFR_PRC_privatization_GUI"
+		properties = {
+			PRC_Privitization_control_bar = {
+				frame = PRC_priv_lvl
+			}
+		}
+		triggers = {
+		}
+	}	
+}
+
+scripted_gui = {
+	PRC_reforms_deccat_gui = {
+		window_name = "PRC_reforms_deccat_gui"
+		context_type = decision_category
+		triggers = {
+			top_folder_button_click_enabled = {
+				set_temp_variable = { folder_frame = 1 }
+				set_temp_variable = { flag_y = 16 }
+			}
+			support_progbar_reforms_visible = {
+				has_completed_focus = PRC_the_chinese_glasnost
+			}
+			support_reforms_text_visible = {
+				has_completed_focus = PRC_the_chinese_glasnost
+			}
+		}
+		properties = {
+			top_folder_button = { frame = folder_frame }
+			flag_frame = { frame = folder_frame }
+			support_progbar_reforms = { frame = PRC:PRC_reforms_progress }
+		}
+	}
+}
+
+scripted_gui = {
+	PRC_xiongania_bar_gui = {
+		window_name = "PRC_xiongania_bar_gui"
+		context_type = decision_category
+		triggers = {
+			top_folder_button_click_enabled = {
+				set_temp_variable = { folder_frame = 1 }
+				set_temp_variable = { flag_y = 16 }
+			}
+			xiongania_progbar_2_visible = {
+				has_country_flag = PRC_xiongania_enable
+			}
+			xiongania_progress_text_visible = {
+				has_country_flag = PRC_xiongania_enable
+			}
+		}
+		properties = {
+			top_folder_button = { frame = folder_frame }
+			flag_frame = { frame = folder_frame }
+			xiongania_progbar_2 = { frame = PRC:PRC_xiongania_progress }
+		}
+	}
+}

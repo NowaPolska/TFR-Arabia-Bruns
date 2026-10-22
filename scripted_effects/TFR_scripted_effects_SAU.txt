@@ -1,0 +1,23 @@
+#SAU_update_loyalty_modifiers = {
+  # clamp_variable = { var = SAU_army_loyalty min = 0 max = 100 }
+  # clamp_variable = { var = SAU_public_opinion min = 0 max = 100 }
+#
+  # set_temp_variable = { loyalty_delta = SAU_army_loyalty }
+  # subtract_from_temp_variable = { loyalty_delta = 50 }
+  # set_temp_variable = { opinion_delta = SAU_public_opinion }
+  # subtract_from_temp_variable = { opinion_delta = 50 }
+#
+  # set_variable = { SAU_loyalty_army_mod = loyalty_delta }
+  # multiply_variable = { SAU_loyalty_army_mod = 0.003 }
+  # set_variable = { SAU_loyalty_exp_mod = loyalty_delta }
+  #  multiply_variable = { SAU_loyalty_exp_mod = 0.002 }
+	#
+  # set_variable = { SAU_opinion_stability_mod = opinion_delta }
+  # multiply_variable = { SAU_opinion_stability_mod = 0.002 }
+  # set_variable = { SAU_opinion_war_support_mod = opinion_delta }
+  # multiply_variable = { SAU_opinion_war_support_mod = 0.002 }
+  # set_variable = { SAU_opinion_pp_mod = opinion_delta }
+   #multiply_variable = { SAU_opinion_pp_mod = 0.003 }
+
+  # force_update_dynamic_modifier = yes
+#}

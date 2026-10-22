@@ -1,0 +1,15 @@
+on_actions = {
+    # Wird jeden Tag für jedes Land ausgeführt
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    tag = ISR
+                    has_war = yes
+                    surrender_progress > 0.85
+                }
+                country_event = { id = israel.16 }
+            }
+        }
+    }
+}

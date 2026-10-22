@@ -1,0 +1,21 @@
+	on_actions = {
+		on_startup = {
+			effect = {
+				every_country = {
+					if = {
+						limit = { tag = SER }
+						
+						add_dynamic_modifier = { modifier = SER_sps_opposition_dynamic }
+					
+						set_variable = { SER_government_support_var = 0.26 }
+						set_variable = { SER_left_support_var = 0.08 }
+						set_variable = { SER_right_support_var = 0.10 }
+						
+						
+						set_variable = { SER_sps_crybabing_var = 0.11 }
+						set_variable = { SER_sps_opposition_var = -0.05 }
+					}
+				}
+			}
+		}
+	}

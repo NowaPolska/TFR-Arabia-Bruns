@@ -1,0 +1,1214 @@
+on_actions = {
+	on_state_control_changed = {#when setting the legitimacy variable ROOT is the victor FROM is the loser
+		effect = {
+			if = { #Guidestones
+				limit = {
+					FROM.FROM = { state = 1021 }
+					OR = {
+						FROM = { tag = GRA }
+						FROM = { tag = USB }
+					}
+					OR = {
+						ROOT = { tag = PTF }
+						ROOT = { tag = NSM }
+						ROOT = { tag = USC }
+						ROOT = { tag = ATW }
+						ROOT = { tag = APA }
+						ROOT = { tag = CAC }
+					}
+					not = {
+						has_global_flag = guidestones_destroyed
+					}
+				}
+				set_global_flag = guidestones_destroyed
+				ROOT = {
+					country_event = { id = states.89 }
+				}
+				USB = {
+					if = {
+						limit = {
+							has_government = authoritarian_democrat
+						}
+						country_event = { id = usb.25 }
+					}
+				}
+			}
+			if = { #Mexico
+				limit = {
+					FROM.FROM = { state = 1137 }
+					OR = {
+						FROM = { tag = BRN }
+					}
+					OR = {
+						ROOT = { tag = SIN }
+						ROOT = { tag = GUC }
+						ROOT = { tag = LFM }
+						ROOT = { tag = MEX }
+						ROOT = { tag = CAS }
+						ROOT = { tag = CDJ }
+					}
+					not = {
+						has_global_flag = captured_mexico
+					}
+				}
+				set_global_flag = captured_mexico
+				BRN = {
+					set_cosmetic_tag = BRN_mexico
+				}
+			}
+			if = { #Tripoli
+				limit = {
+					FROM.FROM = { state = 448 }
+					OR = {
+						FROM = { tag = LBA }
+						FROM = { tag = HRL }
+					}
+					OR = {
+						ROOT = { tag = LBA }
+						ROOT = { tag = HRL }
+					}
+					not = {
+						has_global_flag = captured_tripoli 
+					}
+				}
+				set_global_flag = captured_tripoli
+				news_event = { id = libya.2 }
+			}
+			if = { #Berkley
+				limit = {
+					FROM.FROM = { state = 949 }
+					OR = {
+						FROM = { tag = CLM }
+						FROM = { tag = HLA }
+						FROM = { tag = APA }
+					}
+					OR = {
+						ROOT = { tag = CLM }
+						ROOT = { tag = HLA }
+						ROOT = { tag = APA }
+					}
+				}
+				APA = {
+					country_event = { id = states.20 }
+				}
+			}
+			if = { #Santa Clara
+				limit = {
+					FROM.FROM = { state = 1039 }
+					OR = {
+						FROM = { tag = ATS }
+						FROM = { tag = NRT }
+						FROM = { tag = APA }
+					}
+					OR = {
+						ROOT = { tag = ATS }
+						ROOT = { tag = NRT }
+						ROOT = { tag = APA }
+					}
+				}
+				APA = {
+					country_event = { id = states.21 }
+				}
+			}
+			if = { #Boston
+				limit = {
+					FROM.FROM = { state = 357 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+						FROM = { tag = APA }
+						FROM = { tag = NSM }
+						FROM = { tag = ATW }
+						FROM = { tag = GMA }
+						FROM = { tag = PTF }
+						FROM = { tag = SAT }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+						ROOT = { tag = APA }
+						ROOT = { tag = NSM }
+						ROOT = { tag = ATW }
+						ROOT = { tag = GMA }
+						ROOT = { tag = PTF }
+						ROOT = { tag = SAT }
+					}
+					not = { has_global_flag = captured_boston }
+					has_global_flag = USA_american_civil_war_global
+				}
+				ROOT = {
+					if = {
+						limit = {
+							OR = {
+								tag = GMA
+								tag = PTF
+							}
+						}
+						country_event = { id = states.84 }
+					}
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								var = legit_var_temp
+								value > 0.1
+							}
+						}
+						set_temp_variable = { 
+							var = legit_var_temp
+							value = -0.1
+						}
+						add_legit = yes
+					}
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = captured_boston
+				news_event = { id = states.78 }
+			}
+			if = { #Philadelphia
+				limit = {
+					FROM.FROM = { state = 1069 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+						FROM = { tag = APA }
+						FROM = { tag = NSM }
+						FROM = { tag = ATW }
+						FROM = { tag = GMA }
+						FROM = { tag = PTF }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+						ROOT = { tag = APA }
+						ROOT = { tag = NSM }
+						ROOT = { tag = ATW }
+						FROM = { tag = GMA }
+						ROOT = { tag = PTF }
+					}
+					not = { has_global_flag = captured_philly }
+					has_global_flag = USA_american_civil_war_global
+				}
+				ROOT = {
+					add_war_support = 0.1
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								var = legit_var_temp
+								value > 0.1
+							}
+						}
+						set_temp_variable = { 
+							var = legit_var_temp
+							value = -0.1
+						}
+						add_legit = yes
+					}
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = captured_philly
+				news_event = { id = states.79 }
+			}
+			
+			if = { #Sacramento
+				limit = {
+					FROM.FROM = { state = 941 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+						FROM = { tag = APA }
+						FROM = { tag = NSM }
+						FROM = { tag = ATW }
+						FROM = { tag = GMA }
+						FROM = { tag = PTF }
+						FROM = { tag = CLM }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+						ROOT = { tag = APA }
+						ROOT = { tag = NSM }
+						ROOT = { tag = ATW }
+						ROOT = { tag = GMA }
+						ROOT = { tag = CLM }
+					}
+					not = { has_global_flag = captured_sacramento }
+					has_global_flag = USA_american_civil_war_global
+				}
+				ROOT = {
+					add_war_support = 0.1
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								var = legit_var_temp
+								value > 0.1
+							}
+						}
+						set_temp_variable = { 
+							var = legit_var_temp
+							value = -0.1
+						}
+						add_legit = yes
+					}
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = captured_sacramento
+				news_event = { id = states.80 }
+			}
+			if = { #Beaverhead
+				limit = {
+					FROM.FROM = { state = 1087 }
+					OR = {
+						FROM = { tag = CAC }
+						FROM = { tag = USC }
+					}
+					OR = {
+						ROOT = { tag = CAC }
+						ROOT = { tag = USC }
+					}
+					not = { has_global_flag = cac_beaverhead_catpured }
+				}
+				set_global_flag = cac_beaverhead_catpured
+				CAC = {
+					country_event = { id = cac.18 days = 60 }
+				}
+			}			
+			if = { #CAC Victorious in Oregon
+				limit = {
+					always = no
+					FROM.FROM = { state = 385 }
+					OR = {
+						FROM = { tag = CAC }
+						FROM = { tag = APA }
+					}
+					OR = {
+						ROOT = { tag = CAC }
+						ROOT = { tag = APA }
+					}
+					not = { has_global_flag = cac_victory_oregon }
+				}
+				CAC = {
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+					white_peace = APA
+					transfer_state = 993
+					transfer_state = 994
+					transfer_state = 998
+					transfer_state = 997
+					transfer_state = 999
+					transfer_state = 995
+					transfer_state = 385
+					transfer_state = 996						
+				}
+				set_global_flag = cac_victory_oregon
+			}		
+		
+			if = { #Seattle
+				limit = {
+					FROM.FROM = { state = 1036 }
+					OR = {
+						FROM = { tag = WAS }
+						FROM = { tag = CAC }
+					}
+					OR = {
+						ROOT = { tag = WAS }
+						ROOT = { tag = CAC }
+					}
+					not = { has_global_flag = second_battle_of_seattle }
+				}
+				CAC = {
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+					if = {
+						limit = {
+							NOT = {
+								has_completed_focus = CAC_cascadias_direction
+							}
+						}
+						complete_national_focus = CAC_cascadias_direction
+					}
+				}
+				set_global_flag = second_battle_of_seattle
+				country_event = { id = states.73 }
+			}
+			if = { #Portland
+				limit = {
+					FROM.FROM = { state = 993 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+						FROM = { tag = APA }
+						FROM = { tag = NSM }
+						FROM = { tag = ATW }
+						FROM = { tag = GMA }
+						FROM = { tag = PTF }
+						FROM = { tag = ORE }
+						FROM = { tag = BBC }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+						ROOT = { tag = APA }
+						ROOT = { tag = NSM }
+						ROOT = { tag = ATW }
+						ROOT = { tag = GMA }
+						ROOT = { tag = CLM }
+						ROOT = { tag = ORE }
+						ROOT = { tag = BBC }
+					}
+					not = { has_global_flag = captured_portland }
+					has_global_flag = USA_american_civil_war_global
+				}
+				ROOT = {
+					add_war_support = 0.1
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								var = legit_var_temp
+								value > 0.1
+							}
+						}
+						set_temp_variable = { 
+							var = legit_var_temp
+							value = -0.1
+						}
+						add_legit = yes
+					}
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = captured_portland
+				news_event = { id = states.82 }
+				993 = {
+					add_extra_state_shared_building_slots = -2
+				}
+			}
+			if = { #New Orleans
+				limit = {
+					FROM.FROM = { state = 978 }
+					OR = {
+						FROM = { tag = LOU }
+						FROM = { tag = LOS }
+					}
+					OR = {
+						ROOT = { tag = LOU }
+						ROOT = { tag = LOS }
+					}
+					not = { has_global_flag = battle_of_new_orleans }
+				}
+				LOS = {
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = battle_of_new_orleans
+				news_event = { id = states.91 }
+			}
+			if = { #DC
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 931 }
+					OR = {
+						FROM = { tag = USB }
+						FROM = { tag = USC }
+					}
+					OR = {
+						ROOT = { tag = USB }
+						ROOT = { tag = USC }
+					}
+					not = { has_global_flag = battle_of_DC }
+				}
+				set_global_flag = battle_of_DC
+				news_event = { id = states.23 }
+			}
+			if = { #Louisville Tank Duel
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 1000 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+					}
+					not = { has_global_flag = louisville_tank_duel }
+				}
+				set_global_flag = louisville_tank_duel
+				news_event = { id = states.22 }
+			}
+			if = { #Denver
+				limit = {
+					FROM.FROM = { state = 1142 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+						FROM = { tag = APA }
+						FROM = { tag = NSM }
+						FROM = { tag = ATW }
+						FROM = { tag = GMA }
+						FROM = { tag = PTF }
+						FROM = { tag = CLM }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+						ROOT = { tag = APA }
+						ROOT = { tag = NSM }
+						ROOT = { tag = ATW }
+						ROOT = { tag = GMA }
+						ROOT = { tag = CLM }
+					}
+					not = { has_global_flag = captured_denver }
+					has_global_flag = USA_american_civil_war_global
+				}
+				ROOT = {
+					add_war_support = 0.1
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								var = legit_var_temp
+								value > 0.1
+							}
+						}
+						set_temp_variable = { 
+							var = legit_var_temp
+							value = -0.1
+						}
+						add_legit = yes
+					}
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = captured_denver
+				news_event = { id = states.81 }
+				1142 = {
+					add_extra_state_shared_building_slots = -2
+				}
+			}
+			if = { #Indianapolis
+				limit = {
+					FROM.FROM = { state = 1151 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+						FROM = { tag = APA }
+						FROM = { tag = NSM }
+						FROM = { tag = ATW }
+						FROM = { tag = GMA }
+						FROM = { tag = PTF }
+						FROM = { tag = CLM }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+						ROOT = { tag = APA }
+						ROOT = { tag = NSM }
+						ROOT = { tag = ATW }
+						ROOT = { tag = GMA }
+						ROOT = { tag = PTF }
+						ROOT = { tag = CLM }
+					}
+					not = { has_global_flag = captured_indianapolis }
+					has_global_flag = USA_american_civil_war_global
+				}
+				ROOT = {
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								var = legit_var_temp
+								value > 0.1
+							}
+						}
+						set_temp_variable = { 
+							var = legit_var_temp
+							value = -0.1
+						}
+						add_legit = yes
+					}
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = captured_indianapolis
+				news_event = { id = states.83 }
+				1151 = {
+					add_extra_state_shared_building_slots = -2
+				}
+			}
+			if = { #Nashville
+				limit = {
+					FROM.FROM = { state = 1248 }
+					OR = {
+						FROM = { tag = USC }
+						FROM = { tag = USB }
+						FROM = { tag = APA }
+						FROM = { tag = NSM }
+						FROM = { tag = ATW }
+						FROM = { tag = GMA }
+						FROM = { tag = PTF }
+						FROM = { tag = CLM }
+					}
+					OR = {
+						ROOT = { tag = USC }
+						ROOT = { tag = USB }
+						ROOT = { tag = APA }
+						ROOT = { tag = NSM }
+						ROOT = { tag = ATW }
+						ROOT = { tag = GMA }
+						ROOT = { tag = PTF }
+						ROOT = { tag = CLM }
+					}
+					not = { has_global_flag = captured_indianapolis }
+					has_global_flag = USA_american_civil_war_global
+				}
+				ROOT = {
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				FROM = {
+					if = {
+						limit = {
+							check_variable = {
+								var = legit_var_temp
+								value > 0.1
+							}
+						}
+						set_temp_variable = { 
+							var = legit_var_temp
+							value = -0.1
+						}
+						add_legit = yes
+					}
+					add_war_support = 0.05
+					set_temp_variable = { 
+						var = legit_var_temp
+						value = 0.1
+					}
+					add_legit = yes
+				}
+				set_global_flag = captured_indianapolis
+				news_event = { id = states.83 }
+				1248 = {
+					add_extra_state_shared_building_slots = -2
+				}
+			}
+			if = { #Militias take back Portland
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 993 }
+					OR = {
+						FROM = { tag = APA }
+						FROM = { tag = BBC }
+						FROM = { tag = WLF }
+					}
+					OR = {
+						ROOT = { tag = APA }
+						ROOT = { tag = BBC }
+						ROOT = { tag = WLF }
+					}
+					not = { has_global_flag = battle_of_portland_ppn }
+				}
+				set_global_flag = battle_of_portland_ppn
+				news_event = { id = states.34 }
+			}
+			if = { #Battle of Pheonix
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 983 }
+					OR = {
+						FROM = { tag = APA }
+						FROM = { tag = ARZ }
+					}
+					OR = {
+						ROOT = { tag = APA }
+						ROOT = { tag = ARZ }
+					}
+					not = { has_global_flag = second_battle_of_phoenix }
+				}
+				set_global_flag = second_battle_of_phoenix
+				news_event = { id = states.53 }
+			}
+			if = { #Battle of Salt Lake City
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 1100 }
+					OR = {
+						FROM = { tag = APA }
+						FROM = { tag = DES }
+						FROM = { tag = USC }
+					}
+					OR = {
+						ROOT = { tag = APA }
+						ROOT = { tag = DES }
+						ROOT = { tag = USC }
+					}
+					not = { has_global_flag = battle_of_salt_lake_city }
+				}
+				
+				set_global_flag = battle_of_salt_lake_city
+				news_event = { id = states.54 }
+			}
+			if = { #Battle of Albuquerque
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 1235 }
+					OR = {
+						FROM = { tag = APA }
+						FROM = { tag = NMX }
+						FROM = { tag = USC }
+					}
+					OR = {
+						ROOT = { tag = APA }
+						ROOT = { tag = NMX }
+						ROOT = { tag = USC }
+					}
+					not = { has_global_flag = battle_of_albuquerque }
+				}
+				set_global_flag = battle_of_salt_lake_city
+				news_event = { id = states.55 }
+				1235 = {
+					add_extra_state_shared_building_slots = -2
+				}
+			}
+			if = { #Battle of LA
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 930 }
+					OR = {
+						FROM = { tag = RGA }
+						FROM = { tag = CAL }
+					}
+					OR = {
+						ROOT = { tag = RGA }
+						ROOT = { tag = CAL }
+					}
+					not = { has_global_flag = battle_of_la }
+				}
+				set_global_flag = battle_of_la
+				news_event = { id = states.35 }
+			}
+			if = { #Battle of Austin
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 961 }
+					OR = {
+						FROM = { tag = TRG }
+						FROM = { tag = TEX }
+					}
+					OR = {
+						ROOT = { tag = TRG }
+						ROOT = { tag = TEX }
+					}
+					not = { has_global_flag = battle_of_austin }
+				}
+				set_global_flag = battle_of_austin
+				news_event = { id = states.56 }
+				961 = {
+					add_extra_state_shared_building_slots = -2
+				}
+			}
+			
+			if = { #Battle of Tampa
+				limit = {
+					FROM.FROM = { state = 940 }
+					OR = {
+						FROM = { tag = ATW }
+						FROM = { tag = FLA }
+					}
+					OR = {
+						ROOT = { tag = ATW }
+						ROOT = { tag = FLA }
+					}
+					not = { has_global_flag = battle_of_tampa }
+				}
+				set_global_flag = battle_of_tampa
+				news_event = { id = states.57 }
+				940 = {
+					add_extra_state_shared_building_slots = -2
+				}
+			}
+
+			if = { #Battle of Taipei
+				limit = {
+					FROM.FROM = { state = 1148 }
+					FROM = {
+						is_ally_with = CHI
+					}
+					ROOT = {
+						is_ally_with = PRC
+					}
+					not = { has_global_flag = battle_of_taipei }
+				}
+				set_global_flag = battle_of_taipei
+				news_event = {
+					id = china.72
+					hours = 6
+				}
+				1148 = {
+					add_extra_state_shared_building_slots = -2
+				}
+				PRC = {
+					country_event = china.463
+					add_days_mission_timeout = {
+						mission = PRC_taiwan_war_countdown
+						days = 60
+					}
+					add_war_support = 0.05
+				}
+				JAP = {
+					add_days_mission_timeout = {
+						mission = JAP_taiwan_war_mission
+						days = 60
+					}
+				}
+				CHI = {
+					add_days_mission_timeout = {
+						mission = CHI_taiwan_war_mission
+						days = 60
+					}
+				}
+			}
+			if = { #Battle of Phoenix
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 983 }
+					OR = {
+						FROM = { tag = BRN }
+						FROM = { tag = ARZ }
+					}
+					OR = {
+						ROOT = { tag = BRN }
+						ROOT = { tag = ARZ }
+					}
+					not = { has_global_flag = battle_of_phoenix }
+				}
+				set_global_flag = battle_of_phoenix
+				BRN = {
+					country_event = { id = brown.3 }
+				}
+			}
+			if = { #Battle of Macon
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 1018 }
+					OR = {
+						USB = {
+							has_war = yes
+						}
+						USC = {
+							has_war = yes
+						}
+						GRA = {
+							has_war = yes
+						}
+					}	
+					FROM.FROM = { state = 1018 }
+					FROM = { tag = GRA }
+					ROOT = {
+						OR = {
+							tag = USB
+							tag = USC
+							tag = GRA
+						}
+					}
+				}
+				FROM = { country_event = { id = states.38 days = 1 } }
+				ROOT = { country_event = { id = states.38 days = 1 } }
+			}
+			if = { # Macon Recaptured
+				limit = {
+					has_global_flag = macon_captured
+					OR = {
+						USB = {
+							has_war = yes
+						}
+						USC = {
+							has_war = yes
+						}
+						GRA = {
+							has_war = yes
+						}
+					}	
+					FROM.FROM = { state = 1018 }
+					ROOT = { tag = GRA }
+					FROM = {
+						OR = {
+							tag = USB
+							tag = USC
+							tag = GRA
+						}
+					}
+				}
+				FROM = { country_event = { id = states.39 days = 1 } }
+				ROOT = { country_event = { id = states.39 days = 1 } }
+			}
+			if = { #Battle of Redding
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 948 }
+					OR = {
+						USB = {
+							has_war = yes
+						}
+						USC = {
+							has_war = yes
+						}
+						CAL = {
+							has_war = yes
+						}
+					}	
+					FROM.FROM = { state = 59 }
+					FROM = { tag = CAL }
+					ROOT = {
+						OR = {
+							tag = USB
+							tag = USC
+							tag = CAL
+						}
+					}
+				}
+				FROM = { country_event = { id = states.38 days = 1 } }
+				ROOT = { country_event = { id = states.38 days = 1 } }
+			}
+			if = { #Redding Recaptured
+				limit = {
+					has_global_flag = redding_captured
+					OR = {
+						USB = {
+							has_war = yes
+						}
+						USC = {
+							has_war = yes
+						}
+						CAL = {
+							has_war = yes
+						}
+					}	
+					FROM.FROM = { state = 948 }
+					ROOT = { tag = CAL }
+					FROM = {
+						OR = {
+							tag = USB
+							tag = USC
+							tag = CAL
+						}
+					}
+				}
+				FROM = { country_event = { id = states.39 days = 1 } }
+				ROOT = { country_event = { id = states.39 days = 1 } }
+			}
+			if = { #No man Left Behind
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 1020 }
+					OR = {
+						USB = {
+							has_war = yes
+						}
+						USC = {
+							has_war = yes
+						}
+						GRA = {
+							has_war = yes
+						}
+					}	
+					FROM.FROM = { state = 1020 }
+					FROM = { tag = GRA }
+					ROOT = {
+						OR = {
+							tag = USB
+							tag = USC
+							tag = GRA
+						}
+					}
+				}
+				FROM = { country_event = { id = states.43 days = 1 } }
+				ROOT = { country_event = { id = states.43 days = 1 } }
+			}
+			if = { #Incoming Transmission
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM.FROM = { state = 1070 }
+					OR = {
+						USB = {
+							has_war = yes
+						}
+						USC = {
+							has_war = yes
+						}
+					}	
+					FROM.FROM = { state = 1070 }
+					FROM = { tag = USB }
+					ROOT = {
+						OR = {
+							tag = USB
+							tag = USC
+						}
+					}
+				}
+				FROM = { country_event = { id = states.44 days = 1 } }
+				ROOT = { country_event = { id = states.44 days = 1 } }
+			}
+		}
+	}
+	
+	on_state_control_changed = { #Forced slowing the war
+		effect = {
+			if = { 
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					FROM = { 
+						USA_is_civil_war_faction = yes
+					}
+					ROOT = {
+						USA_is_civil_war_faction = yes
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							surrender_progress > 0.7
+						}
+					}
+					FROM = {
+						if = {
+							limit = {
+								NOT = {
+									has_idea = USA_organized_defence
+								}
+							}
+							add_ideas = USA_organized_defence
+						}
+					}
+				}
+				else = {
+					FROM = {
+						if = {
+							limit = {
+								has_idea = USA_organized_defence
+							}
+							remove_ideas = USA_organized_defence
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							surrender_progress > 0.7
+						}
+					}
+					ROOT = {
+						if = {
+							limit = {
+								NOT = {
+									has_idea = USA_organized_defence
+								}
+							}
+							add_ideas = USA_organized_defence
+						}
+					}
+				}
+				else = {
+					ROOT = {
+						if = {
+							limit = {
+								has_idea = USA_organized_defence
+							}
+							remove_ideas = USA_organized_defence
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#Annexation Events - ROOT is winner FROM gets annexed
+	
+	on_annex = {
+		effect = {
+			if = { #New England Victory
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						OR = {
+							original_tag = PTF
+							original_tag = NEG
+							original_tag = GMA
+							original_tag = GMB
+							original_tag = SAT
+						}
+					}
+					
+					FROM = {
+						OR = {
+							original_tag = PTF
+							original_tag = NEG
+							original_tag = GMA
+							original_tag = GMB
+							original_tag = SAT
+							original_tag = VER
+						}
+					}
+					
+					if = {
+						limit = {
+							original_tag = PTF
+						}
+						NOT = {
+							country_exists = VER
+							country_exists = NEG
+							country_exists = GMA
+							country_exists = GMB
+							country_exists = SAT
+						}
+						
+					}
+					else_if = {
+						limit = {
+							original_tag = GMA
+						}
+						NOT = {
+							country_exists = VER
+							country_exists = NEG
+							country_exists = PTF
+							country_exists = GMB
+							country_exists = SAT
+						}
+					}
+					else_if = {
+						limit = {
+							original_tag = NEG
+						}
+						NOT = {
+							country_exists = VER
+							country_exists = GMA
+							country_exists = PTF
+							country_exists = GMB
+							country_exists = SAT
+						}
+					}
+					else_if = {
+						limit = {
+							original_tag = SAT
+						}
+						NOT = {
+							country_exists = VER
+							country_exists = NEG
+							country_exists = PTF
+							country_exists = GMB
+							country_exists = SAT
+						}
+					}
+					else_if = {
+						limit = {
+							original_tag = GMB
+						}
+						NOT = {
+							country_exists = GMA
+							country_exists = NEG
+							country_exists = PTF
+							country_exists = SAT
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = NEG
+					}
+					USB_add_to_coalition = yes
+				}
+				else_if = {
+					limit = {
+						original_tag = GMB
+					}
+					USA_add_to_coalition = yes
+					VER = {
+						USA_add_to_coalition = yes
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1865 @@
+on_actions = {
+	on_startup = {
+		#effect = {
+		#	USA = {
+		#		every_core_state = {
+		#			limit = {
+		#				has_state_flag = USA_capital_state
+		#			}
+		#			add_to_array = {
+		#				array = USA.coreable_states_capitals
+		#				value = THIS.id
+		#			}
+		#		}
+		#	}
+		#}
+		effect = {
+			log = "The Fire Rises \"Release\" v1.2025.0b"
+			set_global_flag = TFR_startup_global
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_variable = {
+					show_up = 0
+				}
+				set_variable = {
+					show_up_info = 0
+				}
+				set_variable = {
+					show_up_unit = 0
+				}
+				set_variable = {
+					show_up_money = 0
+				}
+				set_variable = {
+					show_up_credit = 0
+				}
+				set_variable = {
+					show_up_country = 1
+				}
+			}
+			every_possible_country = {
+				limit = {
+					is_ai = yes
+				}
+				set_variable = {
+					show_up = 1
+				}
+				set_variable = {
+					show_up_info = 0
+				}
+				set_variable = {
+					show_up_unit = 0
+				}
+				set_variable = {
+					show_up_money = 0
+				}
+				set_variable = {
+					show_up_credit = 0
+				}
+				set_variable = {
+					show_up_country = 1
+				}
+			}
+			#Government Systems
+			SOV = {
+				add_ideas = ZZZ_russian_political_system
+			}		
+			PRC = {
+				add_ideas = ZZZ_chinese_political_system
+			}
+			CHI ={
+				add_ideas = ZZZ_taiwanese_semi_presidential_system
+			}	
+			USA = {
+				add_ideas = ZZZ_american_presidential_republic
+			}	
+			every_country = {
+				limit = {
+					NOT = {
+						has_content_tag = yes
+					}
+				}
+				country_event = generic.20
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = UKR
+						tag = BLR
+						tag = PLD
+						tag = KAZ
+						tag = UZB
+						tag = MON
+						tag = FRA
+						tag = AUS
+						tag = AZR
+						tag = ROM
+						tag = POL
+						tag = PRU
+						tag = MLI
+						tag = ALG
+						tag = EGY
+						tag = RCG
+						tag = COG
+						tag = MZB
+						tag = NMB
+						tag = MAD
+						tag = VOL
+						tag = NGR
+						tag = CHA
+						tag = MRT
+						tag = GNB
+						tag = SRL
+						tag = PAL
+						tag = YAM
+						tag = TRA
+						tag = POR
+						tag = LIT
+						tag = HAI
+					}
+				}
+				add_ideas = ZZZ_semi_presidential_system
+			}		
+			every_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = GEO
+						tag = FIN
+						tag = LAT
+						tag = EST
+						tag = BUL
+						tag = GRE
+						tag = SER
+						tag = MNT
+						tag = MAC
+						tag = CRO
+						tag = SLV
+						tag = SLO
+						tag = HUN
+						tag = ICE
+						tag = ALB
+						tag = KOS
+						tag = CZE
+						tag = ITA
+						tag = BRS
+						tag = MOL
+						tag = RAJ
+						tag = PAK
+						tag = NEP
+						tag = BAN
+						tag = BRM
+						tag = SIG
+						tag = ARM
+						tag = IRE
+						tag = ETH
+						tag = SOM
+						tag = IRQ
+						tag = KUR
+						tag = ISR
+						tag = LEB
+						tag = SAF
+						tag = BOT
+						tag = TOG
+						tag = GYA
+						tag = SUR
+						tag = JAM
+					}
+				}
+				add_ideas = ZZZ_parliamentary_republic
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SWI
+						tag = BOS
+					}
+				}
+				add_ideas = ZZZ_directorial_system
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = TUR
+						tag = TMS
+						tag = TAJ
+						tag = KYR
+						tag = KOR
+						tag = INS
+						tag = MEX
+						tag = BRA
+						tag = COL
+						tag = ARG
+						tag = BOL
+						tag = CHL
+						tag = URG
+						tag = PAR
+						tag = ECU
+						tag = PAN
+						tag = COS
+						tag = HON
+						tag = ELS
+						tag = GUA
+						tag = DOM
+						tag = SML
+						tag = PHI
+						tag = NGA
+						tag = CMR
+						tag = CAR
+						tag = TUN
+						tag = ZIM
+						tag = ANG
+						tag = ZAM
+						tag = TZN
+						tag = RWA
+						tag = BRD
+						tag = UGA
+						tag = KEN
+						tag = DJI
+						tag = MLW
+						tag = DAH
+						tag = GAB
+						tag = GNA
+						tag = GHA
+						tag = IVO
+						tag = LIB
+						tag = SIE
+						tag = SEN
+						tag = GAM
+						tag = CYP
+						tag = KKP
+						tag = AFG
+						tag = NGK
+						tag = DPR
+						tag = NOV
+					}
+				}
+				add_ideas = ZZZ_presidential_republic
+			}	
+			every_country = {
+				limit = {
+					OR = {
+						tag = VEN
+						tag = NIC
+						tag = ERI
+					}
+				}
+				add_ideas = ZZZ_socialist_republic
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = SPR
+						tag = HOL
+						tag = BEL
+						tag = CAN
+						tag = AST
+						tag = NZL
+						tag = BLZ
+						tag = DEN
+						tag = SWE
+						tag = NOR
+						tag = LUX
+						tag = PNG
+						tag = MAL
+						tag = SIA
+						tag = JAP
+						tag = CAM
+					}
+				}
+				add_ideas = ZZZ_constitutional_monarchy
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = BHU
+						tag = MOR
+						tag = JOR
+						tag = KUW
+						tag = QAT
+						tag = UAE
+					}
+				}
+				add_ideas = ZZZ_semi_constitutional_monarchy
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SAU
+						tag = OMA
+						tag = ROC
+					}
+				}
+				add_ideas = ZZZ_absolute_monarchy
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = PER
+					}
+				}
+				add_ideas = ZZZ_islamic_republic
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = TAL
+						tag = SHB
+						tag = JAH
+					}
+				}
+				add_ideas = ZZZ_theocracy
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = YEM
+						tag = AAS
+						tag = LBA
+						tag = HRL
+						tag = SSD
+						tag = CPC
+						tag = ROJ
+						tag = ARR
+						tag = ABK
+						tag = PDF
+						tag = SAR
+					}
+				}
+				add_ideas = ZZZ_provisional_government
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SYR
+						tag = EQG
+					}
+				}
+				add_ideas = ZZZ_presidential_dictatorship
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SUD
+						tag = HTS
+						tag = CNF
+						tag = KLA
+						tag = MND
+						tag = SSA
+						tag = MOA
+						tag = WAT
+						tag = KNU
+						tag = HEZ
+						tag = HOU
+						tag = RSF
+						tag = TDF
+						tag = MLT
+						tag = WES
+						tag = BUK
+						tag = FIA
+						tag = HAM
+					}
+				}
+				add_ideas = ZZZ_military_dictatorship
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = CUB
+						tag = VIN
+						tag = LAO
+						tag = PRK
+					}
+				}
+				add_ideas = ZZZ_communist_party_state
+			}
+			
+			#Adds political party political power modifier
+			for_each_scope_loop = {
+				array = countries
+				#Party Popularity Setup
+				set_variable = {
+					coalition_pp_gain = 0
+				}
+				if = {
+					limit = {
+						has_variable = political_power_ideology_var
+					}
+					map_party_popularity_PP_gain_to_ideology = yes
+				}
+				else = {
+					default_party_popularity_PP_gain = yes
+				}
+				add_dynamic_modifier = {
+					modifier = party_popularity_dynamic_modifier
+				}
+			}
+			#Political coalition setup
+			every_country = {
+				limit = {
+					OR = {
+						NOT = {
+							has_government = communist
+							has_government = totalitarian_socialist
+							has_government = libertarian_socialist
+							tag = USA
+						}
+					}
+				}
+				change_economy_type_capitalism = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = communist
+						has_government = totalitarian_socialist
+						has_government = libertarian_socialist
+						tag = BLR
+					}
+					NOT = {
+						tag = PRC
+					}
+				}
+				change_economy_type_planned_economy = yes
+			}		
+			every_country = {
+				limit = {
+					OR = {
+						has_government = social_democrat
+						tag = ICE
+					}
+				}
+				change_economy_type_welfare_capitalism = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = JAP
+					}
+				}
+				change_economy_type_collective_capitalism = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = UKR
+						tag = SOV
+						tag = KAZ
+						tag = TUR
+					}
+				}
+				change_economy_type_oligopolistic_capitalism = yes
+			}	
+			every_country = {
+				limit = {
+					OR = {
+						tag = PER
+						tag = HAM
+					}
+				}
+				change_economy_type_mixed_economy = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SHB
+					}
+				}
+				change_economy_type_chaostic = yes
+			}	
+			every_country = {
+				limit = {
+					OR = {
+						has_idea = EU_euro_idea
+					}
+				}
+				change_economy_type_inclusive_capitalism = yes
+			}
+			USA = {
+				add_ideas = ZZZ_american_capitalism
+			}	
+			PRC = {
+				change_economy_type_socialist_market = yes
+			}
+			every_country = {
+				limit = {
+					has_country_flag = global_ass_lol
+				}
+				send_embargo = SOV
+				send_embargo = PER
+				send_embargo = PRK
+				send_embargo = VEN
+				send_embargo = TAL
+				send_embargo = HRL
+				send_embargo = SYR
+				send_embargo = PAL
+				send_embargo = HEZ
+				send_embargo = SHB
+			}
+			BUL = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+			}
+			JAP = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:authoritarian_democrat
+				}
+				add_ruling_party_wing = yes
+				send_embargo = PAL
+				send_embargo = TAL
+				send_embargo = HEZ
+				send_embargo = SHB
+			}
+			ALB = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+			}
+			IRE = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				send_embargo = PRK
+				send_embargo = TAL
+				send_embargo = HEZ
+				send_embargo = SHB
+			}
+			AST = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:conservative
+				}
+				add_ruling_party_wing = yes
+				send_embargo = PAL
+				send_embargo = PRK
+				send_embargo = TAL
+				send_embargo = SHB
+				send_embargo = HEZ
+			}
+			NZL = {
+				send_embargo = PAL
+				send_embargo = PRK
+				send_embargo = TAL
+				send_embargo = SHB
+				send_embargo = HEZ
+			}
+			VEN = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:totalitarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+			}
+			CRO = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			CZE = {
+				add_dynamic_modifier = {
+					modifier = party_popularity_dynamic_modifier_coalition
+				}
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			GER = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			HOL = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			NOR = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			SER = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			SWE = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			AAS = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:communist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+			}
+			SWI = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+			}		
+			PRC = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes		
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes	
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes		
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes		
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			PRK = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:communist
+				}
+				add_ruling_party_wing = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			LAO = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+			}
+			VIN = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+			}
+			LEB = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+			}
+			GRE = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:conservative
+				}
+				add_ruling_party_wing = yes
+			}
+			HUN = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+			}
+			BAN = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:social_democrat
+				}
+				add_ruling_party_wing = yes
+			}
+			MAL = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+			}
+			COG = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:libertarian_socialist
+				}
+				add_ruling_party_wing = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:communist
+				}
+				add_to_coalition = yes
+			}
+			ANG = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:communist
+				}
+				add_ruling_party_wing = yes
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:libertarian_socialist
+				}
+				add_ruling_party_wing = yes
+			}
+			ENG = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:market_liberal
+				}
+				add_ruling_party_wing = yes
+			}
+			USA = {
+				set_temp_variable = {
+					ruling_party_wing_var_temp = token:authoritarian_democrat
+				}
+				add_ruling_party_wing = yes
+			}
+			every_country = {
+				limit = {
+					is_ai = yes
+					is_relavent_tag = no #countries with skeleton content and are important enough that they need to produce their own divisions
+				}
+				add_ideas = ai_disabled_production
+				country_lock_all_division_template = yes
+				set_research_slots = 0
+			}
+			
+			#pizdec
+			KOR = {
+				if = {
+					limit = {
+						has_game_rule = { rule = april_fools_content option = APRIL_FOOLS_ENABLED }
+					}
+					load_focus_tree = KOR_april_fools_first_korea_focus
+				}
+			}
+			every_country = {
+				limit = {
+					has_game_rule = { rule = april_fools_content option = APRIL_FOOLS_ENABLED }
+				}
+				every_owned_state = {
+					add_to_array = {
+						array = PREV.countries_owned_states
+						value = THIS
+					}
+				}
+				clear_variable = original_government_type2
+				set_variable = { original_government_type2 = current_party_ideology_group }
+
+				if = {
+					limit = { has_elections = yes }
+					set_country_flag = original_government_type_had_elections2
+				}
+
+				clear_array = original_popularities2
+				add_to_array = { original_popularities2 = party_popularity_100@totalitarian_socialist }
+				add_to_array = { original_popularities2 = party_popularity_100@communist }
+				add_to_array = { original_popularities2 = party_popularity_100@libertarian_socialist }
+				add_to_array = { original_popularities2 = party_popularity_100@social_democrat }
+				add_to_array = { original_popularities2 = party_popularity_100@social_liberal }
+				add_to_array = { original_popularities2 = party_popularity_100@market_liberal }
+				add_to_array = { original_popularities2 = party_popularity_100@conservative }
+				add_to_array = { original_popularities2 = party_popularity_100@authoritarian_democrat }
+				add_to_array = { original_popularities2 = party_popularity_100@nationalist }
+				add_to_array = { original_popularities2 = party_popularity_100@fascist }
+
+				set_temp_variable = { sum = 100 }
+				for_each_loop = {
+					array = original_popularities2
+					subtract_from_temp_variable = { sum = v }
+				}
+				add_to_array = { original_popularities2 = sum } #last value (natsoc), calculated directly to avoid rounding errors
+
+				if = {
+					limit = { has_coalition = yes }
+					for_each_loop = {
+						array = coalition_partners
+						add_to_array = { original_coalitions2 = v }
+					}
+				}
+
+				if = {
+					limit = { has_autonomy_state = colonial_government }
+					set_country_flag = colonial_government2
+				}
+				else_if = {
+					limit = { has_autonomy_state = integrated_puppet }
+					set_country_flag = integrated_puppet2
+				}
+				else_if = {
+					limit = { has_autonomy_state = occupied_puppet }
+					set_country_flag = occupied_puppet2
+				}
+				else_if = {
+					limit = { has_autonomy_state = autonomous_puppet }
+					set_country_flag = autonomous_puppet2
+				}
+				else_if = {
+					limit = { has_autonomy_state = nominal_puppet }
+					set_country_flag = nominal_puppet2
+				}
+				else_if = {
+					limit = { is_subject = yes }
+					set_country_flag = default_puppet2
+				}
+			}
+			#from TFR_on_actions_ZZZ
+			every_country = {
+				limit = {
+					has_idea = SYR_war_exhaustion
+				}
+				country_lock_all_division_template = yes
+			}
+			every_country = {
+				if = {
+					limit = {
+						or = {
+							tag = CHA
+						}
+					}
+					set_variable = {
+						sahara_project_min = 0
+					}
+					set_variable = {
+						sahara_project = 8
+					}
+					set_variable = {
+						sahara_project_max = 100
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+						NOT = {
+							OR = {
+								tag = USA
+								tag = SOV
+								tag = FRA
+								tag = GER
+								tag = ENG
+								tag = PRC
+								tag = RAJ
+								tag = JAP
+								tag = SAU
+								tag = ROC
+								tag = ARR
+								tag = JAH
+								tag = PER
+								tag = COL
+								tag = AST
+							}
+						}
+					}
+					create_equipment_variant = {
+						name = "T-72A"
+						type = modern_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_high_velocity_cannon
+							turret_type_slot = tank_modern_tank_turret
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_riveted_armor
+							engine_type_slot = tank_diesel_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+							special_type_slot_3 = auto_loader
+							special_type_slot_4 = sloped_armor
+							special_type_slot_5 = gunner_optical_sight
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 9
+							tank_nsb_armor_upgrade = 4
+						}
+						icon = "gfx/interface/technologies/armor/MBT_1980_T-72.dds"
+					}
+					create_equipment_variant = {
+						name = "BRM-1K"
+						type = light_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_small_cannon
+							turret_type_slot = tank_light_two_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_riveted_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = extra_ammo_storage
+							special_type_slot_3 = smoke_launchers
+							special_type_slot_4 = empty
+							special_type_slot_5 = gunner_optical_sight
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 3
+							tank_nsb_armor_upgrade = 2
+						}
+						icon = "gfx/interface/technologies/armor/LT_1980_BRM_1k.dds"
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+						NOT = {
+							OR = {
+								tag = USA
+								tag = SOV
+							}
+						}
+						any_country_division = {
+							division_has_battalion_in_template = amphibious_armor
+						}
+					}
+					create_equipment_variant = {
+						name = "PT-76"
+						type = amphibious_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_small_cannon
+							turret_type_slot = tank_light_two_man_tank_turret
+							suspension_type_slot = tank_christie_suspension
+							armor_type_slot = tank_riveted_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = smoke_launchers
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 2
+							tank_nsb_armor_upgrade = 3
+						}
+						icon = "gfx/interface/technologies/armor/gen_amphibious_tank1.png"
+					}
+				}
+			}
+			TAL = {
+				add_manpower = 300000
+			}
+			HEZ = {
+				add_manpower = 300000
+			}
+			HRL = {
+				add_manpower = 10000
+			}
+			PAL = {
+				add_manpower = 200000
+			}
+			CPC = {
+				add_manpower = 200000
+			}
+			CHI = {
+				country_event = {
+					# Taiwan Elections
+					id = taiwan.4
+					days = 11
+				}
+			}
+			USA = {
+				country_event = {
+					#BYE ESPER
+					id = usa.203
+					days = 313
+				}
+			}
+			PHI = {
+				#country_event = {
+				#	id = philipines.1
+				#	days = 1715
+				#}
+			}
+			PRK = {
+				#country_event = {
+				#	id = nk.2
+				#	days = 1898
+				#}
+			}
+			PRC = {
+				country_event = {
+					#chinese opening event
+					id = china.43
+					days = 2
+				}
+				country_event = {
+					#chinese opening event
+					id = china.12
+					days = 4
+				}
+				country_event = {
+					# first COVID identified
+					id = china.10
+					days = 9
+				}
+				country_event = {
+					#Day of Mourning
+					id = china.75
+					days = 63
+				}
+				country_event = {
+					# first COVID death
+					id = china.5
+					days = 11
+				}
+				country_event = {
+					# Myanmar State Visit
+					id = china.3
+					days = 17
+				}
+				country_event = {
+					# Pandas
+					id = china.76
+					days = 547
+				}
+				country_event = {
+					# 100 years of CPC
+					id = china.147
+					days = 553
+				}
+				country_event = {
+					# National Day of PRC
+					id = china.146
+					days = 274
+				}
+				country_event = {
+					# Genshin Impact
+					id = china.257
+					days = 270
+				}
+				country_event = {
+					# Genshin Impact
+					id = china.293
+					days = 346
+				}
+				country_event = {
+					# Jiang Zemin umer
+					id = china.279
+					days = 1064
+				}
+				country_event = {
+					# Award of the Medal of the Republic to Zhong Nanshan
+					id = china.298
+					days = 223
+				}
+				country_event = {
+					# Li Wenliang Passed Away
+					id = china.299
+					days = 37
+				}
+				country_event = {
+					# Segregated Transfer Bus Rollover
+					id = china.301
+					days = 200
+				}
+				country_event = {
+					# status report on america
+					id = china.311
+					days = 180
+				}
+				country_event = {
+					# The Rural Bank Crisis
+					id = china.317
+					days = 830
+				}
+				country_event = {
+					# Evergrande Debt Crisis
+					id = china.318
+					days = 1322
+				}
+				country_event = {
+					# Jack Ma's Bund Speech
+					id = china.319
+					days = 306
+				}
+				country_event = {
+					# Henan Flood Disaster
+					id = china.320
+					days = 566
+				}
+				country_event = {
+					# Enactment of Hong Kong National Security Law
+					id = china.321
+					days = 181
+				}
+				country_event = {
+					# National Poverty Alleviation Summary and Commendation Conference
+					id = china.322
+					days = 423
+				}
+				country_event = {
+					# 110th Anniversary of the Xinhai Revolution
+					id = china.323
+					days = 648
+				}
+				country_event = {
+					id = china.326
+					days = 1440
+				}
+				country_event = {
+					# Ne Zha 2 Impact
+					id = china.373
+					days = 1855
+				}
+				country_event = {
+					# Xinjiang Leadership Change
+					id = china.386
+					days = 724
+				}
+				country_event = {
+					# Tibet Leadership Change
+					id = china.387
+					days = 656
+				}
+				country_event = {
+					# Inner Mongolia Leadership Change
+					id = china.388
+					days = 850
+				}
+				country_event = {
+					# Ningxia Leadership Change
+					id = china.389
+					days = 817
+				}
+				country_event = {
+					# Guangxi Leadership Change
+					id = china.390
+					days = 657
+				}
+				country_event = {
+					# Results of Hong Kong Election Announced
+					id = china.391
+					days = 912
+				}
+				country_event = {
+					# A Cardinal Solution to the Problem
+					id = china.124
+					days = 1460
+				}
+				country_event = {
+					# September 3rd Victory Parade
+					id = china.22
+					days = 2070 #not sure about this number, maybe 2072 days actually, needs testing
+				}
+				activate_mission = PRC_control_the_coronavirus_mission
+				activate_mission = PRC_environmental_engineering_acceptance_mission
+				add_ideas = PRC_aircraft_carrier_programme_idea
+			}
+			SAU = {
+				country_event = {
+					# Oil Deal Fails
+					id = saudi.12
+					days = 68
+				}
+				country_event = {
+					# War in Yemen Failing
+					id = saudi.2
+					days = 41
+				}
+				country_event = {
+					# Salman Infected with COVID
+					id = saudi.1
+					days = 89
+				}
+				country_event = {
+					# Salman's Health Fails
+					id = saudi.3
+					days = 115
+				}
+				country_event = {
+					# Salman Croaks
+					id = saudi.4
+					days = 156
+				}
+				country_event = {
+					# Abdulaziz Assassinated
+					id = saudi.5
+					days = 190
+				}
+				country_event = {
+					# Mohammed's Coronation
+					id = saudi.6
+					days = 180
+				}
+				country_event = {
+					# Princes Protest
+					id = saudi.7
+					days = 214
+				}
+			}
+			CAN = {
+				country_event = {
+					id = canada.2
+					days = 740
+				}
+			}
+			UKR = {
+				country_event = {
+					id = ukraine.13
+					days = 1300
+				}
+			}
+			IRQ = {
+				country_event = {
+					# Iraqi 2021 elections
+					id = iraq.1
+					days = 649
+				}
+			}
+			BLR = {
+				country_event = {
+					# 2020 elections
+					id = belarus.1
+					days = 221
+				}
+			}
+			LEB = {
+				country_event = {
+					# Beirut Bombing
+					id = lebanon.1
+					days = 217
+					}
+				country_event = {
+					# Lebbanon Electiion Minigame
+					id = lebanon.3
+					days = 1736
+				}
+			}
+			ENG = {
+				country_event = {
+					# UK leaves EU
+					id = uk.666
+					days = 31
+				}
+				country_event = {
+					# 2025 elections
+					id = uk.777
+					days = 1840
+				}
+			}
+			SAF = {
+				country_event = {
+					# Elections
+					id = saf.1
+					days = 800
+				}
+			}
+			FRA = {
+				country_event = {
+					# First COVID Cases
+					id = france.15
+					days = 35
+				}
+				country_event = {
+					# Nice Attack
+					id = france.1
+					days = 277
+				}
+				country_event = {
+					# Bastille Day
+					id = france.82
+					days = 195
+				}
+				country_event = {
+					#flag choice
+					id = france.304
+					days = 181
+				}
+				country_event = {
+					#Bloc Identity banned
+					id = france.90
+					days = 462
+				}
+				country_event = {
+					id = france.199
+					days = 807
+				}
+				country_event = {
+					id = france.223
+					days = 220
+				}
+			}
+			ITA = {
+				country_event = {
+					id = italy.10
+					days = 998
+				}
+				country_event = {
+					id = italy.11
+					days = 391
+				}
+				country_event = {
+					id = vatican.1
+					days = 1930
+					random_days = 10
+				}
+			}
+			ETH = {
+				country_event = {
+					# Dam talks with Egypt
+					id = ethiopia.1
+					days = 114
+				}
+				country_event = {
+					# Dam Opens
+					id = ethiopia.2
+					days = 214
+				}
+				country_event = {
+					# Tigray Skirmishes
+					id = ethiopia.11
+					days = 230
+				}
+			}
+			MLI = {
+				country_event = {
+					# 2020 Coup
+					id = mali.9
+					days = 232
+				}
+			}
+			LBA = {
+				country_event = {
+					# Turkish Volunteers
+					id = libya.8
+					days = 152
+				}
+				country_event = {
+					# Military Commission
+					id = libya.10
+					days = 307
+				}
+				country_event = {
+					# Ceasefire
+					id = libya.30
+					days = 283
+				}
+			}
+			HRL = {
+				country_event = {
+					# Gaddafist Rally
+					id = libya.9
+					days = 252
+				}
+			}
+			SUD = {
+				country_event = {
+					# Army Coup
+					id = sudan.1
+					days = 580
+				}
+				country_event = {
+					# RSF Uprising
+					id = sudan.3
+					days = 1168
+				}
+			}
+			TUN = {
+				country_event = {
+					#No-Confidence Vote
+					id = tunisia.2
+					days = 57
+				}
+			}
+			TUR = {
+				country_event = {
+					# President Election 2023 Turkey
+					id = turkey.5
+					days = 1229
+				}
+			}
+			CHL = {
+				country_event = {
+					# President Election 2021
+					id = latin_america.1
+					days = 718
+				}
+			}
+			BOL = {
+				country_event = {
+					# President Election 2020
+					id = latin_america.2
+					days = 219
+				}
+			}
+			PRU = {
+				country_event = {
+					# President Election 2021
+					id = latin_america.3
+					days = 522
+				}
+			}
+			BRA = {
+				country_event = {
+					# President Election 2022
+					id = latin_america.4
+					days = 1033
+				}
+			}	
+			KOR = {
+				country_event = {
+					# President Election 2022
+					id = korea.10
+					days = 798
+				}
+			}
+			HON = {
+				country_event = {
+					# Honduras election 2021
+					id = latin_america.5
+					days = 697
+				}
+			}
+			CUB = {
+				country_event = {
+					# castro retiring
+					id = latin_america.6
+					days = 471
+				}
+			}
+			MON = {
+				country_event = {
+					# mongolia elections
+					id = MON.1
+					days = 525
+				}
+			}
+			SYR = {
+				#country_event = {
+				#	# Daraa Uprising
+				#	id = syria.3
+				#	days = 18
+				#}
+				country_event = {
+					# Protests
+					id = syria.13
+					days = 183
+				}
+			}
+			SER = {
+				country_event = {
+					# SPS Influence
+					id = serbia.21
+					days = 20
+				}
+			}
+			NEP = {
+				country_event = {
+					# Nepale election
+					id = nep.3
+					days = 1167
+				}
+			}
+			ARG = {
+				country_event = {
+					# Argentina election
+					id = latin_america.7
+					days = 1419
+				}
+			}
+			UKR = {
+				country_event = {
+					# Hohol election
+					id = ukraine.13
+					days = 1551
+				}
+			}
+			PER = {
+				country_event = {
+					# iran elections
+					id = iran.22
+					days = 534
+				}
+			}
+			NGR = {
+				country_event = {
+					# 2023 coup de'tat
+					id = nigeria.12
+					days = 1299
+				}
+			}
+			VOL = {
+				country_event = {
+					# 2022 coup de'tat
+					id = nigeria.10
+					days = 1003
+				}
+			}
+			GNA = {
+				country_event = {
+					# 2021 coup de'tat
+					id = nigeria.11
+					days = 613
+				}
+			}
+			SEN = {
+				country_event = {
+					# 2024 elections
+					id = nigeria.13
+					days = 1544
+				}
+			}
+			GNB = {
+				country_event = {
+					# 2024 elections
+					id = nigeria.14
+					days = 1795
+				}
+			}
+			SOV = {
+				country_event = {
+					# New Government
+					id = russia.142
+					days = 16
+				}
+				country_event = {
+					# Death of Zhidko
+					id = russia.564
+					days = 1323
+					hours = 5
+				}
+				country_event = {
+					# kartopolov resiging?
+					id = russia.540
+					days = 530
+					random_days = 15
+				}
+				country_event = {
+					# Main Cathedral of Russian Army
+					id = russia.486
+					days = 165
+				}
+				country_event = {
+					# Death of Limonov
+					id = russia.193
+					days = 75
+				}
+				country_event = {
+					# Navalny Gets Poisoned
+					id = russia.1
+					days = 245
+				}
+				country_event = {
+					# Khabarovsk Protests
+					id = russia.11
+					days = 200
+				}
+				country_event = {
+					# Revolution in Kirgizia
+					id = russia.180
+					days = 278
+				}
+				country_event = {
+					# Stalinist Shaurma
+					id = russia.576
+					days = 377
+					hours = 6
+				}
+				country_event = {
+					# Merging of Just Russia with For Truth
+					id = russia.192
+					days = 417
+					hours = 7
+				}
+				country_event = {
+					# Death Of Admiral Vladimir Vysotskiy
+					id = russia.202
+					days = 405
+				}
+				country_event = {
+					# Polish border crisis
+					id = russia.55
+					days = 650
+				}
+				country_event = {
+					#sergei furgal arrested
+					id = russia.66
+					days = 190
+				}
+				country_event = {
+					#russia opening event
+					id = russia.62
+					days = 2
+				}	
+				country_event = {
+					#makfa case
+					id = russia.741
+					days = 1569
+				}
+				country_event = {
+					#Kazakh Riots
+					id = russia.70
+					days = 735
+				}
+				country_event = {
+					# Navalny Protests
+					id = russia.96
+					days = 390
+				}
+				country_event = {
+					# Election 2021
+					id = russia.877
+					days = 630
+				}
+				country_event = {
+					# Rashkin Protests
+					id = russia.252
+					days = 633
+				}
+				country_event = {
+					# Putin coronavirus
+					id = russia.20
+					days = 690
+				}
+				country_event = {
+					# Victory Parade
+					id = russia.108
+					days = 127
+				}
+				country_event = {
+					# Rogun Dam
+					id = tajikistan.1
+					days = 400
+				}
+				country_event = {
+					# SVETOV DEATH EVENT IMPORTANTEEEEEE
+					id = russia.536
+					days = 216
+				}
+				country_event = {
+					# noviy god check
+					id = russia.141
+					days = 365
+				}
+			}
+			BRM = {
+				country_event = {
+					# Get couped nerd!!!!
+					id = bur.1
+					days = 396
+				}
+			}
+			NEP = {
+				country_event = {
+					# Debug
+					id = tech.2
+				}
+			}
+			AUS = {
+				country_event = {
+					# Vienna Attack
+					id = austria.1
+					days = 284
+				}
+			}
+			JAP = {
+				country_event = {
+					# Abe go bye-bye
+					id = jap.13
+					days = 238
+				}
+				country_event = {
+					# Election very soon!!!
+					id = jap.16
+					days = 530
+				}
+			}
+			PER = {
+				country_event = {
+					# Ukrainian Airliner Shotdown
+					id = iran.2
+					days = 3
+				}
+				country_event = {
+					# Earthquake
+					id = iran.3
+					days = 3
+				}
+				country_event = {
+					# First COVID Cases
+					id = iran.4
+					days = 49
+				}
+				country_event = {
+					# Prime Minister Gets COVID
+					id = iran.5
+					days = 55
+				}
+				country_event = {
+					# Man Tests Positive on TV
+					id = iran.6
+					days = 66
+				}
+				country_event = {
+					# COVID Unemployment Protests
+					id = iran.11
+					days = 120
+				}
+			}
+			PRK = {
+				#country_event = { # Kim Jong-un gets Surgery
+				#	id = nk.1
+				#	days = 112
+				#}
+				#country_event = { # 2nd Surgery
+				#	id = nk.19
+				#	days = 270
+				#}
+				#every_country = {
+				#	limit = {
+				#		tag = PRK
+				#	}
+				#	set_variable = {
+				#		jong_legitimacy = 65
+				#	}
+				#	set_variable = {
+				#		jong_legitimacy_max = 100
+				#	}
+				#	set_variable = {
+				#		pak_legitimacy = 20
+				#	}
+				#	set_variable = {
+				#		pak_legitimacy_max = 100
+				#	}
+				#	set_variable = {
+				#		cho_legitimacy = 45
+				#	}
+				#	set_variable = {
+				#		cho_legitimacy_max = 100
+				#	}
+				#}
+			}
+			AUS = {
+				country_event = {
+					# Kurtz eleected
+					id = austria.2
+					days = 6
+				}
+			}
+			MAL = {
+				country_event = {
+					# New king
+					id = asean.1
+					days = 1491
+				}
+			}
+			INS = {
+				country_event = {
+					# indonesia election
+					id = asean.2
+					days = 1505
+				}
+			}
+			SWI = {
+				country_event = {
+					id = Swiss.9
+					days = 365
+				}
+			}
+			CZE = {
+			    country_event = {
+					id = czech.1
+					days = 1124
+				}
+			}
+			SLO = {
+			   country_event = {
+			       id = slovakia.1
+				   days = 1553 
+				}
+			}
+			ROM = {
+			    country_event = {
+				    id = romania.1
+					days = 1789 
+				}
+			}
+			HAM = {
+			    country_event = {
+				id = saudi.109
+				days = 1375 
+				}
+			}
+			LIT = {
+			    country_event = {
+				id = lithauania.1
+				days = 1593
+				}
+			}
+			YEM = {
+			add_ideas = {
+			SAU_Harded_Figthers
+			SAU_Reliance_on_saudi_arabia
+			SAU_Humanitarian_Hell
+			    }
+			}
+			AAS = {
+			add_ideas = {
+			SAU_effects_Yemen_stc_split
+			SAU_The_clock_stikes_12
+			SAU_Aden_the_yemeni_life_line
+			SAU_Humanitarian_Hell
+			    }
+			}
+			HOU = {
+			add_ideas = {
+			SAU_southern_stonghold_of_the_revolution
+			SAU_War_Exaution_yemen
+			SAU_Humanitarian_Hell
+			    }
+			}
+		}
+	}
+}

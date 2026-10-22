@@ -1,0 +1,52 @@
+
+opinion_modifiers = {
+
+    our_saudi_brothers = {
+	    value = 75
+	}
+	
+	stands_with_palestine = {
+	    value = 50
+	}
+	
+	supports_palestine = {
+	    value = -75
+	}
+	
+	normalised_relations = {
+	    value = 25
+	}
+	
+	saudi_betrayl = {
+	    value = -50
+	}
+	
+	strained_relations = {
+	    value = -15
+	}
+	
+	Israli_imperialists = {
+	    value = -10
+		trade = no
+	}
+	
+	saudi_iranian_rivaly = {
+	    value = -25
+	}
+	saudi_iranian_Hostile = {
+	    value = -50
+		trade = no
+	}
+	houti_terrorists = {
+	    value = -100
+		trade = no
+	}
+	saudi_devils = {
+	    value = -100
+		trade = no
+	}
+	terrorists = {
+	    value = -200
+		trade = no
+	}
+}

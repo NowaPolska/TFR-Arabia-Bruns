@@ -1,0 +1,163 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = { tag = JAP }
+					add_dynamic_modifier = {
+						modifier = JAP_ldp_factions_dynamic
+					}
+					country_event = { id = jap.96 days = 1731 }
+					set_variable = { JAP_ldp_conservatives_var = 0.43 }
+					set_variable = { JAP_ldp_centrists_var = 0.41 }
+					set_variable = { JAP_ldp_liberals_var = 0.16 }
+					
+					add_to_array = { JAP_ldp_factions = JAP_ldp_conservatives_var }
+					add_to_array = { JAP_ldp_factions = JAP_ldp_centrists_var }
+					add_to_array = { JAP_ldp_factions = JAP_ldp_liberals_var }
+					JAP_modifier_effect = yes
+					
+					set_variable = { JAP_election_approval_rating_jcp_var = 0.04 }
+					set_variable = { JAP_election_approval_rating_rei_var = 0.03 }
+					set_variable = { JAP_election_approval_rating_sdp_var = 0.01 }
+					set_variable = { JAP_election_approval_rating_dpp_var = 0.07 }
+					set_variable = { JAP_election_approval_rating_kdp_var = 0.24 }
+					set_variable = { JAP_election_approval_rating_ino_var = 0.08 }
+					set_variable = { JAP_election_approval_rating_ldp_var = 0.53 }
+					add_to_array = { JAP_political_parties = JAP_election_approval_rating_jcp_var }
+					add_to_array = { JAP_political_parties = JAP_election_approval_rating_rei_var }
+					add_to_array = { JAP_political_parties = JAP_election_approval_rating_sdp_var }
+					add_to_array = { JAP_political_parties = JAP_election_approval_rating_dpp_var }
+					add_to_array = { JAP_political_parties = JAP_election_approval_rating_kdp_var }
+					add_to_array = { JAP_political_parties = JAP_election_approval_rating_ino_var }
+					add_to_array = { JAP_political_parties = JAP_election_approval_rating_ldp_var }
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = { #Dalian
+			if = {
+				limit = {
+					FROM.FROM = { state = 1394 }
+					FROM = {
+						OR = {
+							tag = PRC 
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = JAP
+							is_ally_with = JAP
+						}
+					}
+				}
+				JAP = {
+					country_event = { id = jap.163 }
+				}
+			}
+			if = { #Shenyang
+				limit = {
+					FROM.FROM = { region = 11771 }
+					FROM = {
+						OR = {
+							tag = PRC 
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = JAP
+							is_ally_with = JAP
+						}
+					}
+				}
+				JAP = {
+					country_event = { id = jap.164 }
+				}
+			}
+			if = { #Wuhan
+				limit = {
+					FROM.FROM = { region = 4619 }
+					FROM = {
+						OR = {
+							tag = PRC 
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = JAP
+							is_ally_with = JAP
+						}
+					}
+				}
+				JAP = {
+					country_event = { id = jap.167 }
+				}
+			}
+			if = { #Phnom Penh
+				limit = {
+					FROM.FROM = { region = 4639 }
+					FROM = {
+						OR = {
+							tag = PRC 
+							is_ally_with = PRC
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = JAP
+							is_ally_with = JAP
+						}
+					}
+				}
+				JAP = {
+					country_event = { id = jap.177 }
+				}
+			}
+			if = { #Vientiane
+				limit = {
+					FROM.FROM = { region = 1464 }
+					FROM = {
+						OR = {
+							tag = PRC 
+							is_ally_with = PRC
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = JAP
+							is_ally_with = JAP
+						}
+					}
+				}
+				JAP = {
+					country_event = { id = jap.180 }
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						original_tag = JAP
+						has_global_flag = JAP_civil_war_started
+					}
+				}
+				ROOT = { JAP_civil_war_idea_update = yes }
+				FROM = { JAP_civil_war_idea_update = yes }
+			}
+		}
+	}
+	on_pride_of_the_fleet_sunk = {
+		effect = {
+			if = {
+				limit = {
+					tag = JAP
+				}
+				country_event = { id = jap.60 days = 2 }
+			}
+		}
+	}
+}

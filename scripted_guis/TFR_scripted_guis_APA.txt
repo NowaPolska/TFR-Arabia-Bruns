@@ -1,0 +1,15 @@
+scripted_gui = {
+	APA_revolution_progress_gui = {
+		context_type = decision_category
+		window_name = "APA_revolution_progress_gui"
+		properties = {
+			APA_revolution_progress_bar = {
+				frame = APA_revolution_progress_gui_var
+			}
+		}
+	}
+	APA_workers_congress_help_gui = {
+		context_type = decision_category
+		window_name = "APA_workers_congress_help_gui"
+	}
+}

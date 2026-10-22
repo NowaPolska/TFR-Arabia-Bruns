@@ -1,0 +1,56 @@
+#on_actions = {
+#	on_startup = {
+#		effect = {
+#			KOR = {
+#				set_variable = {
+#					var = KOR_taegeuk_national_support_var
+#					value = 75
+#				}
+#				set_variable = {
+#					var = KOR_taegeuk_parliamentary_support_var
+#					value = 75
+#				}
+#				set_variable = {
+#					var = dominance_of_chaebols_national_support_monthly_var
+#					value = -0.1
+#				}
+#				set_variable = {
+#					var = chaebol_dongmu_national_support_monthly_var
+#					value = -0.1
+#				}
+#				set_variable = {
+#					var = dominance_of_chaebols_parliamentary_support_monthly_var
+#					value = -0.1
+#				}
+#				set_variable =  { taegeuk_effects_national_support_industrial_capacity_factory = 0.1 }
+#			}
+#		}
+#	}
+#	on_daily_KOR = {
+#		effect = {
+#			KOR_add_national_support = yes
+#			KOR_add_parliamentary_support = yes
+#		}
+#	}
+#	on_daily_KOR = {
+#		effect = {
+#			set_variable =  { taegeuk_effects_national_support_industrial_capacity_factory = KOR_taegeuk_national_support_var }
+#			divide_variable = { taegeuk_effects_national_support_industrial_capacity_factory = 333 }
+#			subtract_from_variable = { taegeuk_effects_national_support_industrial_capacity_factory = 0.15 }
+#			
+#			set_variable =  { taegeuk_effects_national_support_society_development_monthly = KOR_taegeuk_national_support_var }
+#			divide_variable = { taegeuk_effects_national_support_society_development_monthly = 5000 }
+#			#multiply_variable = { taegeuk_effects_national_support_society_development_monthly = 0.1 }
+#			subtract_from_variable = { taegeuk_effects_national_support_society_development_monthly = 0.01 }
+#			
+#			set_variable =  { taegeuk_effects_parliamentary_political_power_factor = KOR_taegeuk_national_support_var }
+#			divide_variable = { taegeuk_effects_parliamentary_political_power_factor = 500 }
+#			subtract_from_variable = { taegeuk_effects_parliamentary_political_power_factor = 0.1 }
+#				
+#			#divide_variable = { taegeuk_effects_national_support_industrial_capacity_factory = 500 }
+#			#subtract_from_variable = { taegeuk_effects_national_support_industrial_capacity_factory = 0.1 }
+#			
+#			#multiply_variable = { taegeuk_effects_national_support_industrial_capacity_factory = num_owned_states }
+#		}
+#	}
+#}

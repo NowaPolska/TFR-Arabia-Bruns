@@ -1,0 +1,141 @@
+scripted_gui = {
+	TFR_fbi_window_1 = {
+		window_name = "TFR_fbi_window_1"
+		context_type = player_context
+		#parent_window_token = top_bar
+
+		#visible = {
+		#	always = yes
+		#}
+
+		effects = {
+		}
+
+		triggers = {
+	    	
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = show_fbi_file_1
+		}
+
+		effects = {
+			FBI_Event_Close_click = {
+				clr_country_flag = show_fbi_file_1
+			}
+		}
+	}
+	
+	TFR_fbi_window_2 = {
+		window_name = "TFR_fbi_window_2"
+		context_type = player_context
+		#parent_window_token = top_bar
+
+		#visible = {
+		#	always = yes
+		#}
+
+		effects = {
+		}
+
+		triggers = {
+	    	
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = show_fbi_file_2
+		}
+
+		effects = {
+			FBI_Event_Close_click = {
+				clr_country_flag = show_fbi_file_2
+			}
+		}
+	}
+	
+	TFR_fbi_window_3 = {
+		window_name = "TFR_fbi_window_3"
+		context_type = player_context
+		#parent_window_token = top_bar
+
+		#visible = {
+		#	always = yes
+		#}
+
+		effects = {
+		}
+
+		triggers = {
+	    	
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = show_fbi_file_3
+		}
+
+		effects = {
+			FBI_Event_Close_click = {
+				clr_country_flag = show_fbi_file_3
+			}
+		}
+	}
+	
+	TFR_fbi_window_4 = {
+		window_name = "TFR_fbi_window_4"
+		context_type = player_context
+		#parent_window_token = top_bar
+
+		#visible = {
+		#	always = yes
+		#}
+
+		effects = {
+		}
+
+		triggers = {
+	    	
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = show_fbi_file_4
+		}
+
+		effects = {
+			FBI_Event_Close_click = {
+				clr_country_flag = show_fbi_file_4
+			}
+		}
+	}
+	
+	TFR_fbi_window_5 = {
+		window_name = "TFR_fbi_window_5"
+		context_type = player_context
+		#parent_window_token = top_bar
+
+		#visible = {
+		#	always = yes
+		#}
+
+		effects = {
+		}
+
+		triggers = {
+	    	
+	    }
+
+		visible = {
+			is_ai = no
+			has_country_flag = show_fbi_file_5
+		}
+
+		effects = {
+			FBI_Event_Close_click = {
+				clr_country_flag = show_fbi_file_5
+			}
+		}
+	}
+}

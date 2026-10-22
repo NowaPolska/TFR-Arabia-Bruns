@@ -1,0 +1,23 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					date = 2020.6.1
+					NOT = { has_global_flag = poland_3_gefeuert }
+				}
+				set_global_flag = poland_3_gefeuert
+				PLD = { country_event = poland.3 }
+			}
+			if = {
+				limit = {
+					date = 2025.6.1
+					NOT = { has_global_flag = poland_2_gefeuert }
+					NOT = { PLD = { has_country_flag = PLD_Elections_blocked } }
+				}
+				set_global_flag = poland_2_gefeuert
+				PLD = { country_event = poland.2 }
+			}
+		}
+	}
+}

@@ -1,0 +1,2561 @@
+focus_tree = {
+	id = SAU_post_war_tree
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = SAU
+		}
+	}
+focus = {
+    id = SAU_Begin_Reconstucktion
+	icon = GFX_focus_SAU_rebuild_arabia
+	
+	x = 6
+	y = 0
+	
+	prerequisite = {
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = SAU_Post_War_Reconstrucktion
+	add_idea = SAU_Post_War_Recovery
+	}
+	hidden_effect = {
+	remove_ideas = SAU_Economic_collapse
+	remove_ideas = SAU_The_Weels_of_the_Economy_spin_once_more
+	remove_ideas = SAU_Economic_stabilisation
+	remove_ideas = SAU_Slow_Economic_Recovery
+	    }
+	}
+}
+focus = {
+    id = SAU_Returning_to_The_World_Stage
+	icon = GFX_focus_SAU_world_stage
+	
+	x = 14
+	y = 0
+	
+	prerequisite = {
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 50
+	add_stability = 0.075
+	set_country_flag = germany_disable_invasion_of_middleeast
+	}
+}
+focus = {
+    id = SAU_Whats_Next
+	icon = GFX_focus_SAU_whats_next
+	
+	x = 14
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Returning_to_The_World_Stage
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 1
+	hidden_effect = {
+	country_event = { id = saudi.64 }
+	#mark_focus_tree_layout_dirty = yes#
+	    }
+	}
+}
+focus = {
+    id = SAU_Evaluate_our_Military
+	icon = GFX_focus_SAU_evaluate_army
+	
+	x = 23
+	y = 0
+	
+	cost = 5
+	
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = SAU_Batterted_Army
+	add_idea = SAU_Army_Reorganisation_ongoing
+	    }
+	}
+}
+focus = {
+    id = SAU_Rebuild_Rual_Regions
+	icon = GFX_focus_PTF_Rural_Renewal
+	
+	x = 4
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Begin_Reconstucktion
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+    893 = {
+	add_building_construction = {
+			type = infrastructure
+		    level = 1
+			instant_build = yes
+            }
+		}
+	894 = {
+	add_building_construction = {
+			    type = infrastructure
+				level = 1
+				instant_build = yes
+            }
+		}
+	895 = {
+	add_building_construction = {
+			    type = infrastructure
+				level = 1
+				instant_build = yes
+            }
+		}
+	set_temp_variable = {
+		var = society_development_var_temp
+		value = 0.25
+		}
+	add_society_development = yes
+	}
+}
+focus = {
+    id = SAU_create_the_Ministary_of_National_Reconstrucktion
+	icon = GFX_focus_SAU_ministary_of_rebuilding
+	
+	x = 6
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Begin_Reconstucktion
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+    add_stability = 0.05
+	add_timed_idea = {
+	idea = SAU_Ministary_of_National_Reconstrucktion
+	days = 365
+	}
+	swap_ideas = {
+	remove_idea = SAU_Post_War_Recovery
+	add_idea = SAU_Partial_Post_War_Recovery
+	    }
+	}
+}
+focus = {
+    id = SAU_Return_the_Migrants
+	icon = GFX_focus_GER_Revisit_Refugee_Policy
+	
+	x = 8
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Begin_Reconstucktion
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_stability = 0.025
+	add_timed_idea = {
+	idea = SAU_Returning_Migrants
+	days = 365
+	    }
+    }
+}
+focus = {
+    id = SAU_Rebuild_Mecca
+	icon = GFX_focus_SAU_rebuild_mekka
+	
+	x = 5
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_create_the_Ministary_of_National_Reconstrucktion
+	}
+	prerequisite = {
+	focus = SAU_Rebuild_Rual_Regions
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	1066 = {
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+				instant_build = yes
+            }
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+            }
+	    }
+	}
+}
+focus = {
+    id = SAU_Rebuild_Medina
+	icon = GFX_focus_SAU_rebuild_medina
+	
+	x = 7
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_create_the_Ministary_of_National_Reconstrucktion
+	}
+	prerequisite = {
+	focus = SAU_Return_the_Migrants
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	1061 = {
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+				instant_build = yes
+            }
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+            }
+	    }
+	}
+}
+focus = {
+    id = SAU_Our_Future_looks_brigth
+	icon = GFX_focus_SAU_our_future_looks_brigth
+	
+	x = 6
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Rebuild_Mecca
+	}
+	prerequisite = {
+	focus = SAU_Rebuild_Medina
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	remove_ideas = SAU_Partial_Post_War_Recovery
+	}
+}
+focus = {
+    id = SAU_Revive_the_Penninculare_defence_force
+	icon = GFX_focus_SAU_revive_PSF
+	
+	x = 11
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_Whats_Next
+	}
+	
+	allow_branch = {
+    #has_completed_focus = SAU_Whats_Next#
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	create_faction = peninsula_shield_force
+	hidden_effect = {
+		remove_faction_goal = faction_goal_the_atomic_race
+		add_faction_goal = faction_goal_placeholder_long_term
+		remove_faction_goal = faction_goal_a_military_base
+		add_faction_goal = faction_goal_placeholder_medium_term
+		add_faction_goal = faction_goal_placeholder_short_term
+	}
+	add_to_faction = SAU
+	add_to_faction = KUW
+	add_to_faction = OMA
+	add_to_faction = UAE
+	add_to_faction = QAT
+	add_to_faction = BAH
+	}
+}
+focus = {
+    id = Prepare_for_the_great_Jihad
+	icon = GFX_focus_SAU_big_jihad
+	
+	x = 11
+	y = 4
+	
+	prerequisite = {
+	focus = SAU_Toughfest_army_in_the_middle_east
+	}
+	
+	prerequisite = {
+	focus = SAU_Total_Mobilization
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_manpower = 10000
+	add_war_support = 0.25
+	}
+}
+focus = {
+    id = SAU_Total_Mobilization
+	icon = GFX_focus_SOV_mobilize_the_workers
+	
+	x = 12
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Revive_the_Penninculare_defence_force
+	}
+	
+	bypass = {
+        has_idea = total_mobilization
+    }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = total_mobilization
+	}
+}
+focus = {
+    id = SAU_Toughfest_army_in_the_middle_east
+	icon = GFX_focus_SAU_tougfest_army
+	
+	x = 10
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Revive_the_Penninculare_defence_force
+	}
+	
+	bypass = {
+        has_idea = highest_training
+    }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = highest_training
+	}
+}
+focus = {
+    id = SAU_Resarch_and_Development_Expansion
+	icon = GFX_focus_GER_invest_in_rnd
+	
+	x = 14
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Whats_Next
+	}
+	
+	allow_branch = {
+	#has_completed_focus = SAU_Whats_Next#
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_research_slot = 1
+	}
+}
+focus = {
+    id = The_Wild_Ride_has_just_begun
+	icon = GFX_focus_SAU_the_wild_ride_has_begun
+	
+	x = 14
+	y = 5
+	
+	prerequisite = {
+	focus = SAU_Resarch_and_Development_Expansion
+	}
+	prerequisite = {
+	focus = Prepare_for_the_great_Jihad
+	focus = SAU_All_forms_of_Resistace_crushed
+	focus = SAU_All_forms_of_Resistace_crushed_reformed
+	}
+	
+	available = {
+	has_completed_focus = SAU_Revive_the_Penninculare_defence_force
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 100
+	}
+}
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛    Nationalist Political Tree  ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+focus = {
+   id = SAU_Beginn_the_Rihyad_Trails
+   icon = GFX_focus_SAU_rihyad_trail
+    
+    x = 17
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_Whats_Next
+	}
+	
+	allow_branch = {
+	has_government = nationalist
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	country_event = { id = saudi.82 }
+	}
+}
+focus = {
+   id = SAU_Militarysation_of_Sociaty
+   icon = GFX_focus_SAU_militarisation_of_s
+    
+    x = 16
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Beginn_the_Rihyad_Trails
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_Militarysation_of_Sociaty
+	}
+}
+focus = {
+    id = SAU_Grand_Total_Power_to_Bin_Salman
+    icon = GFX_focus_SAU_total_pwer_to_bin_salman
+    
+    x = 18
+    y = 3
+    
+    prerequisite = {
+        focus = SAU_Beginn_the_Rihyad_Trails
+    }
+    
+    cost = 5
+    
+    completion_reward = {
+        add_ideas = SAU_Supreme_Leader_bin_Salman
+    }
+}
+
+focus = {
+    id = SAU_All_forms_of_Resistace_crushed
+    icon = GFX_focus_SAU_end_of_Resistance
+    
+    x = 17
+    y = 4
+    
+    prerequisite = {
+        focus = SAU_Grand_Total_Power_to_Bin_Salman
+    }
+    
+    prerequisite = {
+        focus = SAU_Militarysation_of_Sociaty
+    }
+    
+    cost = 5
+    
+    completion_reward = {
+        remove_ideas = SAU_Resistance_cells
+    } 
+}
+
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛         Reformist Tree         ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+focus = {
+    id = SAU_Fate_of_the_Traitors
+    icon = GFX_focus_SAU_rihyad_trail
+    
+    x = 17
+	y = 2
+    
+    prerequisite = {
+        focus = SAU_Whats_Next
+    }
+   
+    allow_branch = {
+	has_government = authoritarian_democrat
+	}
+   
+    cost = 5
+    
+    completion_reward = {
+	country_event = { id = saudi.82 }
+    } 
+}
+focus = {
+   id = SAU_Brewing_up_Nationalism
+   icon = GFX_focus_SAU_generic
+    
+    x = 16
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Fate_of_the_Traitors
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_Brewing_up_Nationalism
+	}
+}
+focus = {
+    id = SAU_Allow_party_democracy
+    icon = GFX_focus_SAU_generic
+    
+    x = 18
+    y = 3
+    
+    prerequisite = {
+        focus = SAU_Fate_of_the_Traitors
+    }
+    
+    cost = 5
+    
+    completion_reward = {
+        add_stability = 0.1
+		add_political_power = 100
+	set_popularity = {
+    popularity = 0.05
+    ideology = conservative
+        }
+    }
+}
+focus = {
+    id = SAU_All_forms_of_Resistace_crushed_reformed
+    icon = GFX_focus_SAU_end_of_Resistance
+    
+    x = 17
+    y = 4
+    
+    prerequisite = {
+        focus = SAU_Allow_party_democracy
+    }
+    
+    prerequisite = {
+        focus = SAU_Brewing_up_Nationalism
+    }
+    
+    cost = 5
+    
+    completion_reward = {
+        remove_ideas = SAU_Resistance_cells
+    } 
+}
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛    Main Expansion Tree-------  ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+focus = {
+    id = SAU_Operation_Desert_Spear
+	icon = GFX_focus_SAU_kill_yemen
+	
+	x = 12
+	y = 6
+	
+	prerequisite = {
+	focus = The_Wild_Ride_has_just_begun
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_A_Friendly_Visit
+	}
+	mutually_exclusive = {
+	focus = SAU_Reuniting_Yemen
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	HOU = {
+	leave_faction = yes
+	puppet = no
+	}
+	declare_war_on = {
+    target = HOU
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = AAS
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = YEM
+    type = annex_everything
+	    }
+	hidden_effect = {
+	country_event = { id = 104 hours = 12 }
+	    }
+    }
+}
+focus = {
+    id = SAU_A_Friendly_Visit
+	icon = GFX_focus_SAU_friendly_visit
+	
+	x = 14
+	y = 6
+	
+	prerequisite = {
+	focus = The_Wild_Ride_has_just_begun
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Operation_Desert_Spear
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Reuniting_Yemen
+	}
+	
+	available = {
+	YEM = {
+    exists = yes
+        }
+	HOU = {
+    exists = no
+    }
+	AAS = {
+	exists = no
+	    }
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_to_faction = YEM
+	}
+}
+focus = {
+    id = SAU_Reuniting_Yemen
+	icon = GFX_focus_SAU_soutth_yemen
+	
+	x = 16
+	y = 6
+	
+	prerequisite = {
+	focus = The_Wild_Ride_has_just_begun
+	}
+	
+	available = {
+	AAS = {
+    exists = yes
+    }
+	YEM = {
+	exists = yes
+        }
+	HOU = {
+	exists = no
+	    } 
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Operation_Desert_Spear
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_A_Friendly_Visit
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	declare_war_on = {
+    target = AAS
+    type = annex_everything
+    }
+	add_to_faction = YEM
+	}
+}
+focus = {
+	id = SAU_Reorgenise_the_Yemeni_Goverment
+	icon = GFX_focus_SAU_reorganize_the_yemeni_goverment
+
+	x = 13
+	y = 7	
+
+	prerequisite = {
+		focus = SAU_Operation_Desert_Spear
+	}
+
+	mutually_exclusive = {
+		focus = SAU_Prop_up_Yemen
+	}
+
+	available = {
+		has_war = no
+	}
+
+	cost = 5
+
+	completion_reward = {
+		add_state_core = 922
+		add_state_core = 927
+		country_event = { id = saudi.108 days = 14 }
+
+        puppet = YEM
+
+		YEM = {
+			transfer_state = 919
+			transfer_state = 923
+			transfer_state = 920
+			transfer_state = 659
+			transfer_state = 924
+			transfer_state = 925
+			transfer_state = 926
+			transfer_state = 293
+			transfer_state = 921
+
+			add_state_core = 919
+			add_state_core = 923
+			add_state_core = 920
+			add_state_core = 659
+			add_state_core = 924
+			add_state_core = 925
+			add_state_core = 926
+			add_state_core = 293
+			add_state_core = 921
+
+            remove_ideas = SAU_Humanitarian_Hell
+			add_ideas = SAU_yemen_Recovering_nation
+
+			set_politics = {
+				ruling_party = nationalist
+				last_election = "2022.4.10"
+				election_frequency = 60
+				elections_allowed = no
+			}
+
+			set_popularities = {
+				nationalist = 40
+				authoritarian_democrat = 40
+				communist = 10
+				conservative = 10
+			}
+
+			set_party_name = {
+				ideology = nationalist
+				long_name = "House of Rassid"
+				name = "House of Rassid"
+			}
+
+			set_country_flag = PSF_Member
+
+			recruit_character = YEM_Ageel_bin_Muhammad_al_Badr_Hamidaddin_char
+            promote_character = YEM_Ageel_bin_Muhammad_al_Badr_Hamidaddin_char
+		}
+	}
+}
+focus = {
+    id = SAU_Prop_up_Yemen
+    icon = GFX_focus_SAU_prop_up_yemen
+
+    x = 15
+    y = 7	
+    
+	prerequisite = {
+	focus = SAU_A_Friendly_Visit
+	focus = SAU_Reuniting_Yemen
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Reorgenise_the_Yemeni_Goverment
+	}
+	
+	available = {
+	YEM = {
+	is_in_faction = yes
+	    }
+	}
+	
+	cost = 35
+	
+	completion_reward = {
+	YEM = {
+	transfer_state = 919
+		transfer_state = 923
+		transfer_state = 920
+		transfer_state = 659
+		transfer_state = 924
+		transfer_state = 925
+		transfer_state = 926
+		transfer_state = 293
+		transfer_state = 921
+		
+		add_state_core = 919
+		add_state_core = 923
+		add_state_core = 920
+		add_state_core = 659
+		add_state_core = 924
+		add_state_core = 925
+		add_state_core = 293
+		add_state_core = 921
+		
+	remove_ideas = SAU_Humanitarian_Hell
+	remove_ideas = SOM_failed_state
+	add_ideas = SAU_yemen_Recovering_nation
+	919 = {
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex 
+				level = 2
+				instant_build = yes
+            }
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = office_park 
+				level = 1
+				instant_build = yes
+            }
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+            }
+		}
+	}
+}
+focus = {
+    id = SAU_Operation_Green_Sword
+	icon = GFX_focus_SAU_operation_green_sword
+	
+	x = 14
+	y = 8
+	
+	prerequisite = {
+	focus = SAU_Reorgenise_the_Yemeni_Goverment
+	focus = SAU_Prop_up_Yemen
+	}
+	
+	bypass = {
+	has_country_flag = iraq_invades_kuwait_focus_bypass
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	hidden_effect = {
+	IRQ = {
+	leave_faction = YES
+	}
+	ABK = {
+	leave_faction = ys
+	}
+	FIA = {
+	leave_faction = yes
+	}
+	BUK = {
+	leave_faction = yes
+	}
+	KUR = {
+	leave_faction = yes
+	    }
+	}
+	declare_war_on = {
+    target = IRQ
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = ABK
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = FIA
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = BUK
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = KUR
+    type = annex_everything
+	    }
+    }
+}
+focus = {
+    id = SAU_bomb_the_shit_out_of_them
+	icon = GFX_focus_SAU_bomb_the_shit_out_of_them
+	
+	x = 13
+	y = 9
+	
+	prerequisite = {
+	focus = SAU_Operation_Green_Sword
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Minimize_civilian_suffering
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_war_support = -0.1
+	IRQ = {
+	add_timed_idea = {
+	idea = SAU_Terror_Bombing_Houti
+	days = 160
+	    }
+	}
+	ABK = {
+	add_timed_idea = {
+	idea = SAU_Terror_Bombing_Houti
+	days = 160
+	    }
+	}
+	BUK = {
+	add_timed_idea = {
+	idea = SAU_Terror_Bombing_Houti
+	days = 160
+	    }
+	}
+	FIA = {
+	add_timed_idea = {
+	idea = SAU_Terror_Bombing_Houti
+	days = 160
+	        }
+	    }
+    }
+}
+focus = {
+    id = SAU_Minimize_civilian_suffering #THIS WILL HELP US TO ESTABLISH AN FRIENDLY GOVERMENT#
+	icon = GFX_focus_SAU_generic
+	
+	x = 15
+	y = 9
+	
+	prerequisite = {
+	focus = SAU_Operation_Green_Sword
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_bomb_the_shit_out_of_them
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_war_support = 0.05
+	add_stability = 0.05
+	SIQ = {
+	add_popularity = {
+	ideology = authoritarian_democrat
+	popularity = 0.1
+	}
+	IRQ = {
+	add_popularity = {
+	ideology = nationalist
+	popularity = 0.1
+	}
+	add_popularity = {
+	ideology = authoritarian_democrat
+	popularity = 0.2
+	        }
+	    }
+	}
+}
+focus = {
+    id = SAU_Fate_of_Iraq
+	icon = GFX_focus_SAU_generic
+	
+	x = 14
+	y = 10
+	
+	prerequisite = {
+	focus = SAU_Minimize_civilian_suffering
+	focus = SAU_bomb_the_shit_out_of_them
+	}
+	
+	available = {
+	has_war = no
+	NOT = {
+	IRQ = exists
+	FIA = exists
+	BUK = exists
+	ABK = exists
+	    }
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	country_event = { id = saudi.69 }
+	hidden_effect = {
+	country_event = { id = saudi.81 days = 70 }
+	    }
+	}
+}
+focus = {
+    id = SAU_invite_Jordan
+	icon = GFX_focus_SAU_generic
+	
+	x = 11
+	y = 11
+	
+	prerequisite = {
+	focus = SAU_Fate_of_Iraq
+	}
+	
+	available = {
+        OR = {
+            NOT = { has_completed_focus = SAU_Preparations_to_strike_Iran }
+            has_completed_focus = SAU_Looking_East
+        }
+    }
+	
+	cost = 5
+	
+	completion_reward = {
+	JOR = {
+	country_event = { id = saudi.66 days = 3 }
+	    }
+	}
+}
+focus = {
+    id = SAU_Preparations_to_strike_Iran
+	icon = GFX_focus_SAU_generic
+	
+	x = 17
+	y = 11
+	
+	prerequisite = {
+	focus = SAU_Fate_of_Iraq
+	}
+	
+	available = {
+        OR = {
+            NOT = { has_completed_focus = SAU_invite_Jordan }
+            has_completed_focus = SAU_Looking_East
+        }
+    }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_Preperations_Against_Iran
+	hidden_effect = {
+	PER = {
+	add_ai_strategy = {
+        type = contain
+        id = "SAU"
+        value = 200
+        }
+    add_ai_strategy = {
+        type = contain
+        id = "SIQ"
+        value = 200
+		        }
+		    }
+        }
+	}
+}
+focus = {
+    id = SAU_Destabilise_Assads_Goverment
+	icon = GFX_focus_SAU_generic
+	
+	x = 10
+	y = 12
+	
+	prerequisite = {
+	focus = SAU_invite_Jordan
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	SYR = {
+	add_stability = -0.15
+	add_war_support = -0.1
+	add_popularity = {
+	ideology = authoritarian_democrat
+	popularity = -0.1
+	}
+    hidden_effect = {
+	add_ai_strategy = {
+        type = contain
+        id = "SAU"
+        value = 200
+        }
+    add_ai_strategy = {
+        type = contain
+        id = "SIQ"
+        value = 200
+	            }
+	        }
+	    }
+	}
+}
+focus = {
+    id = SAU_Bomb_Damascus
+	icon = GFX_focus_SAU_generic
+	
+	x = 12
+	y = 12
+	
+	prerequisite = {
+	focus = SAU_invite_Jordan
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	SYR = {
+	add_manpower = -794
+	add_timed_idea = {
+	idea = SAU_Terror_Bombing_Houti
+	days = 60
+	    }
+	}
+	1032 = {
+    damage_building = {
+        type = infrastructure
+        damage = 2
+    }
+    damage_building = {
+        type = arms_factory
+        damage = 1
+    }
+    damage_building = {
+        type = industrial_complex
+        damage = 1
+		    }
+		}
+    }
+}
+focus = {
+    id = SAU_Operation_Ali_ibn_Abi_Talib
+	icon = GFX_focus_SAU_generic
+	
+	x = 11
+	y = 13
+	
+	prerequisite = {
+	focus = SAU_Bomb_Damascus
+	}
+	prerequisite = {
+	focus = SAU_Destabilise_Assads_Goverment
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	declare_war_on = {
+    target = SYR
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = ROJ
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = HTS
+    type = annex_everything
+	    }
+	hidden_effect = {
+	ROJ = {
+	declare_war_on = {
+    target = SYR
+    type = annex_everything
+    }
+	declare_war_on = {
+    target = HTS
+    type = annex_everything
+	        }
+        }
+	HTS = {
+	declare_war_on = {
+    target = SYR
+    type = annex_everything
+	            }
+	        }
+        }
+    }
+}
+focus = {
+	id = SAU_Building_a_Free_Syria
+	icon = GFX_focus_SAU_generic
+
+	x = 10
+	y = 14
+
+	prerequisite = {
+		focus = SAU_Operation_Ali_ibn_Abi_Talib
+	}
+
+	available = {
+		has_war = no
+	}
+
+	cost = 5
+
+	completion_reward = {
+		FSA = {
+			transfer_state = 1032
+			transfer_state = 554
+			transfer_state = 1031
+			transfer_state = 1109
+			transfer_state = 1088
+			transfer_state = 1027
+			transfer_state = 677
+			transfer_state = 1034
+			transfer_state = 680
+			transfer_state = 1028
+			transfer_state = 1029
+			transfer_state = 814
+			transfer_state = 1108
+			transfer_state = 1030
+			transfer_state = 1035
+
+			add_state_core = 1033
+			add_state_core = 1032
+			add_state_core = 554
+			add_state_core = 1031
+			add_state_core = 1109
+			add_state_core = 1088
+			add_state_core = 1027
+			add_state_core = 677
+			add_state_core = 1034
+			add_state_core = 680
+			add_state_core = 1028
+			add_state_core = 1029
+			add_state_core = 814
+			add_state_core = 1108
+			add_state_core = 1030
+			add_state_core = 1035
+		}
+
+		if = {
+			limit = {
+				SAU = { controls_state = 1033 }
+			}
+			FSA = {
+				transfer_state = 1033
+			}
+		}
+		if = {
+			limit = {
+				SAU = { controls_state = 881 }
+			}
+			FSA = {
+				transfer_state = 881
+				add_state_core = 881
+			}
+		}
+
+		puppet = FSA
+
+		FSA = {
+			set_politics = {
+				ruling_party = conservative
+				last_election = "2022.04.10"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_popularities = {
+				nationalist = 30
+				conservative = 40
+				authoritarian_democrat = 30
+			}
+
+			set_country_flag = PSF_Member
+		}
+	}
+}
+focus = {
+    id = SAU_A_Free_Syrian_Army
+	icon = GFX_focus_SAU_generic
+	
+	x = 12
+	y = 14
+	
+	prerequisite = {
+	focus = SAU_Operation_Ali_ibn_Abi_Talib
+	}
+	
+	available = {
+	has_completed_focus = SAU_Building_a_Free_Syria
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	FSA = {
+	load_oob = "FSA_Uprising"
+	    }
+	}
+}
+	
+focus = {
+    id = SAU_Looking_East
+	icon = GFX_focus_SAU_generic
+	
+	x = 11
+	y = 15
+	
+	prerequisite = {
+	focus = SAU_Building_a_Free_Syria
+	}
+	prerequisite = {
+	focus = SAU_A_Free_Syrian_Army
+	}
+	bypass = {
+	has_completed_focus = SAU_Triumph_over_Iran
+	}
+	
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_war_support = 0.025
+	}
+}
+focus = {
+    id = SAU_Saudi_Nucleare_Programm
+	icon = GFX_focus_SAU_Nuke
+	
+	x = 14
+	y = 13
+	
+	prerequisite = {
+	focus = SAU_Fate_of_Iraq
+	}
+	
+	available = {
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+		set_temp_variable = {
+			var = income_var_temp
+			value = -50
+		}
+		add_income_with_inflation = yes
+		
+		set_technology = {
+			nuclear_reactors = 1
+			nuclear_reactors1 = 1
+		}
+	}
+}
+focus = {
+    id = SAU_Build_up_our_Airforce
+	icon = GFX_focus_SAU_generic
+	
+	x = 16
+	y = 12
+	
+	prerequisite = {
+	focus = SAU_Preparations_to_strike_Iran
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_equipment_to_stockpile = {
+            type = small_plane_airframe_1
+            variant_name = "F-15E"
+            amount = 75
+            producer = SAU
+        }
+	add_equipment_to_stockpile = {
+            type = small_plane_airframe_1
+            variant_name = "F-16"
+            amount = 100
+            producer = SAU
+        }
+	}
+}
+focus = {
+    id = SAU_Rebuild_the_Iraqi_Army
+	icon = GFX_focus_SAU_generic
+	
+	x = 18
+	y = 12
+	
+	prerequisite = {
+	focus = SAU_Preparations_to_strike_Iran
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	SIQ = {
+	load_oob = "SIQ_2020"
+	    }
+	}
+}
+focus = {
+    id = SAU_Operation_Abu_Musa_al_Ash_ari
+	icon = GFX_focus_SAU_generic
+	
+	x = 17
+	y = 13
+	
+	prerequisite = {
+	focus = SAU_Rebuild_the_Iraqi_Army
+	}
+	prerequisite = {
+	focus = SAU_Build_up_our_Airforce
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	remove_ideas = SAU_Preperations_Against_Iran
+	hidden_effect = {
+	PER = {
+	country_event = { id = iran.26 }
+	}
+	SAU = {
+	country_event = { id = saudi.105 days = 10 }
+	    }
+	}
+	declare_war_on = {
+    target = PER
+    type = annex_everything
+	    }
+    }
+}
+focus = {
+    id = SAU_carpet_bomb_Iran
+	icon = GFX_focus_SAU_generic
+	
+	x = 16
+	y = 14
+	
+	prerequisite = {
+		focus = SAU_Operation_Abu_Musa_al_Ash_ari
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	PER = {
+		add_timed_idea = {
+			idea = SAU_Terror_Bombing_Houti
+			days = 160
+			}
+		add_manpower = -2479
+	    }
+	266 = {
+	damage_building = {
+	type = arms_factory
+        damage = 2
+		    }
+        }
+	}
+}
+
+focus = {
+    id = SAU_Break_True_the_Hormuz_blockade
+	icon = GFX_focus_SAU_generic
+	
+	x = 18
+	y = 14
+	
+	cost = 5
+	
+	prerequisite = {
+		focus = SAU_Operation_Abu_Musa_al_Ash_ari
+	}
+	
+	completion_reward = {
+     random_list = {
+        50 = {
+        country_event = { id = saudi.106 days = 1 } #blockade broken#
+        }
+        50 = {
+        country_event = { id = saudi.107 days = 1 } #blockade stays#       
+            }
+		}
+	}
+}
+
+focus = {
+    id = SAU_Triumph_over_Iran
+	icon = GFX_focus_SAU_generic
+	
+	x = 17
+	y = 15
+	
+	prerequisite = {
+		focus = SAU_Break_True_the_Hormuz_blockade
+	}
+	prerequisite = {
+		focus = SAU_carpet_bomb_Iran
+	}
+	
+	available = {
+		has_war = no
+	}
+	
+	cost = 7
+	
+	completion_reward = {
+	country_event = { id = saudi.76 }
+	remove_ideas = SAU_Strait_of_Hormuz_Blockade
+	country_event = { id = saudi.70 days = 5 }
+	} 
+}
+
+focus = {
+    id = SAU_The_Hegemon_of_the_Middle_East
+	icon = GFX_focus_SAU_generic
+	
+	x = 14
+	y = 16
+	
+	prerequisite = {
+		focus = SAU_Looking_East
+	}
+	prerequisite = {
+		focus = SAU_Triumph_over_Iran
+	}
+	prerequisite = {
+		focus = SAU_Saudi_Nucleare_Programm
+	}
+	
+	cost = 7
+	
+	completion_reward = {
+	add_stability = 0.25
+	add_war_support = 0.25
+	}
+}
+
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛ 2nd part of the Expansion Tree ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+focus = {
+    id = SAU_The_wild_ride_goes_on
+	icon = GFX_focus_SAU_generic
+	
+	x = 14
+	y = 17
+	
+	cost = 5
+	
+	prerequisite = {
+		focus = SAU_The_Hegemon_of_the_Middle_East
+	}
+	
+	mutually_exclusive = {
+		focus = SAU_Our_Job_here_is_done
+	}
+	
+	completion_reward = {
+	add_stability = 0.1
+	add_popularity = {
+	ideology = nationalist
+	popularity = 0.1
+	    }
+	}
+}
+
+focus = {
+    id = SAU_Our_Job_here_is_done
+	icon = GFX_focus_SAU_generic
+	
+	x = 16
+	y = 17
+	
+	prerequisite = {
+		focus = SAU_The_Hegemon_of_the_Middle_East
+	}
+	
+	mutually_exclusive = {
+		focus = SAU_The_wild_ride_goes_on
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_stability = 0.25
+	}
+}
+focus = {
+    id = SAU_Return_to_Neutrality  #ENDING 1/6 MAKE A EVENT FOR PLAYER TO KNOW THIS IS A ENDING
+	icon = GFX_focus_SAU_neutal
+	
+	x = 17
+	y = 18
+	
+	prerequisite = {
+	focus = SAU_Our_Job_here_is_done
+	}
+	
+	cost = 1
+	
+	completion_reward = {
+	remove_ideas = SAU_War_Exaution
+	}
+}
+focus = {
+    id = SAU_Preperation_to_destroy_the_Devil
+	icon = GFX_focus_SAU_generic
+	
+	x = 15
+	y = 18
+	
+	prerequisite = {
+	focus = SAU_The_wild_ride_goes_on
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_war_support = 0.1
+	add_ideas = SAU_Preperations_Against_Israel
+	}
+}
+focus = {
+    id = SAU_A_short_break
+	icon = GFX_focus_SAU_generic
+	x = 13
+	y = 18
+	
+	prerequisite = {
+	focus = SAU_The_wild_ride_goes_on
+	}
+	
+	cost = 7
+	
+	completion_reward = {
+	remove_ideas = SAU_War_Exaution
+	}
+}
+focus = {
+    id = SAU_Ending_the_last_bastion_of_Terror
+	icon = GFX_focus_SAU_generic
+	
+	x = 14
+	y = 19
+	
+	prerequisite = {
+	focus = SAU_A_short_break
+	}
+	prerequisite = {
+	focus = SAU_Preperation_to_destroy_the_Devil
+	}
+	bypass = {
+		HEZ = {
+			is_subject_of = ISR
+		}
+	}
+	
+	cost = 5
+	
+    completion_reward = {
+	if = {
+		limit = {
+			LEB = {
+				has_country_flag = hezbollah_in_lebanon
+			}
+		}
+		declare_war_on = {
+			target = LEB
+			type = annex_everything
+		}
+	}
+	else = {
+		add_to_faction = LEB
+		LEB = {
+			set_country_flag = PSF_Member
+			declare_war_on = {
+				target = HEZ
+				type = annex_everything
+			}
+		}
+		declare_war_on = {
+			target = HEZ
+			type = annex_everything
+			}
+		}
+	}
+}
+focus = {
+	id = SAU_Founding_the_Inter_Arabian_Economic_Bloc #EU from wish
+	icon = GFX_focus_SAU_generic
+	
+	x = 12
+	y = 19
+	
+	prerequisite = {
+		focus = SAU_A_short_break
+	}
+	prerequisite = {
+		focus = SAU_Preperation_to_destroy_the_Devil
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+		add_ideas = SAU_Inter_Arabian_Economic_Bloc
+		
+		FSA = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		SIR = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		LEB = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		JOR = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		KUW = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		YEM = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		UAE = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		QAT = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		OMA = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		SIQ = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		FIR = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+		BAH = { add_ideas = SAU_Inter_Arabian_Economic_Bloc }
+	}
+}
+focus = {
+    id = SAU_Form_the_Triange_alliance #IRL, Türkei, s. arabien und pakistan defensive alliance
+	icon = GFX_focus_SAU_generic
+	
+	x = 16
+	y = 19
+	
+	prerequisite = {
+	focus = SAU_A_short_break
+	}
+	prerequisite = {
+	focus = SAU_Preperation_to_destroy_the_Devil
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+		diplomatic_relation = { country = TUR relation = non_aggression_pact active = yes }
+		diplomatic_relation = { country = PAK relation = non_aggression_pact active = yes }
+		
+		TUR = {
+			diplomatic_relation = { country = PAK relation = non_aggression_pact active = yes }
+		}
+		
+		give_military_access = TUR
+		give_military_access = PAK
+		
+		TUR = {
+			give_military_access = SAU
+			give_military_access = PAK
+		}
+		
+		PAK = {
+			give_military_access = SAU
+			give_military_access = TUR
+		}
+	}
+}
+focus = {
+    id = SAU_the_Ninth_great_Power
+	icon = GFX_focus_SAU_generic
+	
+	x = 18
+	y = 19
+	
+	prerequisite = {
+	focus = SAU_Return_to_Neutrality
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	}
+}
+focus = {
+    id = SAU_Operation_Saladin
+	icon = GFX_focus_SAU_generic
+	
+	x = 14
+	y = 20
+	
+	prerequisite = {
+	focus = SAU_Founding_the_Inter_Arabian_Economic_Bloc
+	}
+	prerequisite = {
+	focus = SAU_Ending_the_last_bastion_of_Terror
+	}
+	prerequisite = {
+	focus = SAU_Form_the_Triange_alliance
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 7
+	
+	completion_reward = {
+	remove_ideas = SAU_Preperations_Against_Israel
+	declare_war_on = {
+    target = ISR
+    type = annex_everything
+	}
+	hidden_effect = {
+	news_event = { id = news.2017 hours = 6 }
+	ISR = {
+	add_manpower = 250000
+	add_war_support = 0.3
+	country_event = { id = israel.13 days = 1 }
+	        }
+	    }
+	}
+}
+focus = {
+    id = SAU_Destroy_all_Traces_of_Terrorist_Zionism
+	icon = GFX_focus_SAU_generic
+	
+	x = 14
+	y = 21
+	
+	prerequisite = {
+	focus = SAU_Operation_Saladin
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	ISR = {
+	add_manpower = -10000
+	remove_ideas = idea_ISR_vanguard_of_judaism
+	remove_ideas = ISR_french_funding_idea
+	}
+	hidden_effect = {
+	EGY = {
+		country_event = { id = saudi.77 days = 15 }
+		    }
+	    }    
+	}
+}
+focus = {
+    id = SAU_Dreams_of_Arab_Unification
+	icon = GFX_focus_SAU_generic
+	
+	x = 14
+	y = 22
+	
+	prerequisite = {
+	focus = SAU_Destroy_all_Traces_of_Terrorist_Zionism
+	}
+	
+	available = {
+	has_war = no
+	}
+	
+	cost = 7
+	
+	completion_reward = {
+	add_stability = 1.0
+	add_war_support = 1.0
+	}
+}
+
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛       Army Tree holy moly      ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+focus = {
+    id = SAU_Full_Scale_Army_Reforms
+	icon = GFX_focus_SAU_army_reforms_tuff
+	
+	x = 21
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Evaluate_our_Military
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = SAU_Army_Reorganisation_ongoing
+	add_idea = SAU_Army_Reorganisation_in_full_swing
+	    }
+	}
+}
+focus = {
+    id = SAU_Increase_Military_Spending
+	icon = GFX_focus_FRA_increase_military_rd_investments
+	
+	x = 20
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_Full_Scale_Army_Reforms
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	army_experience = 25
+	add_ideas = SAU_Military_Funding_Increase
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+		    }
+		}	
+	}
+}
+focus = {
+    id = SAU_Air_power_of_the_Middle_east
+	icon = GFX_focus_PRC_next_generation_airforce
+	
+	x = 26
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Evaluate_our_Military
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_Saudi_Air_Force
+    }
+}
+focus = {
+    id = SAU_Build_New_Dry_docks
+	icon = GFX_focus_SAU_build_drydoks
+	
+	x = 28
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Evaluate_our_Military
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	navy_experience = 25
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = dockyard
+			level = 2
+			instant_build = yes
+			}
+        }
+    }
+}
+focus = {
+    id = SAU_Unite_PSF_command_Struckture
+    icon = GFX_focus_SAU_unite_psf_army
+	
+	x = 24
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Evaluate_our_Military
+	}
+	
+	available = {
+	has_completed_focus = SAU_Revive_the_Penninculare_defence_force
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_United_PSF_command
+	OMA = {
+	add_ideas = SAU_United_PSF_command
+	}
+	SIQ = {
+	add_ideas = SAU_United_PSF_command
+	}
+	KUW = {
+	add_ideas = SAU_United_PSF_command
+	}
+	UAE = {
+	add_ideas = SAU_United_PSF_command
+	}
+	QAT = {
+	add_ideas = SAU_United_PSF_command
+	    }
+	BAH = {
+	add_ideas = SAU_United_PSF_command
+	    }
+	}
+}
+focus = {
+    id = SAU_csto_Doctrine_nr_one
+	icon = GFX_focus_SAU_russia_tuff
+	
+	x = 25
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_Full_Scale_Army_Reforms
+	}
+	prerequisite = {
+	focus = SAU_Unite_PSF_command_Struckture
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Expand_on_Western_Doctrines
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	custom_effect_tooltip = sau_spirit_change
+	add_doctrine_cost_reduction = {
+		name = SAU_csto_Doctrine_nr_one
+		cost_reduction = 0.5
+		uses = 2
+		category = cat_mass_assault
+	}
+	add_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_3_rus
+	hidden_effect = {
+	remove ideas = SAU_Armed_Forces_of_Arabia_Upgrade_2_L
+	remove idea = SAU_Armed_Forces_of_Arabia_Upgrade_2_L
+	remove_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_2_R
+	remove_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_1_L
+	remove_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_1_R
+	remove_ideas = SAU_Armed_Forces_of_Arabia
+	    }
+	}
+}
+focus = {
+   id = SAU_Expand_on_Western_Doctrines
+   icon = GFX_focus_SAU_support_nato_doktine
+   
+   x = 22
+   y = 2
+   
+   prerequisite = {
+   focus = SAU_Full_Scale_Army_Reforms
+   }
+   prerequisite = {
+   focus = SAU_Unite_PSF_command_Struckture
+   }
+   
+   mutually_exclusive = {
+   focus = SAU_csto_Doctrine_nr_one
+   }
+   
+   cost = 5
+   
+    completion_reward = {
+	custom_effect_tooltip = sau_spirit_change
+	add_doctrine_cost_reduction = {
+		name = SAU_Expand_on_Western_Doctrines
+		cost_reduction = 0.5
+		uses = 2
+	    category = cat_mobile_warfare
+	}
+	add_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_3_nato
+	hidden_effect = {
+	remove idea = SAU_Armed_Forces_of_Arabia_Upgrade_2_L
+	remove_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_2_R
+	remove_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_1_L
+	remove_ideas = SAU_Armed_Forces_of_Arabia_Upgrade_1_R
+	remove_ideas = SAU_Armed_Forces_of_Arabia
+	    }
+    }
+}
+focus = {
+    id = SAU_Learning_from_our_Mistakes
+	icon = GFX_focus_SAU_never_again
+	
+	x = 21
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Full_Scale_Army_Reforms
+	}
+	prerequisite = {
+	focus = SAU_Increase_Military_Spending
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = SAU_Army_Reorganisation_in_full_swing 
+	add_idea = SAU_Partial_Army_Recovery
+	    }
+	}
+}
+focus = {
+    id = SAU_the_New_Generation
+    icon = GFX_focus_SAU_new_generation
+    
+    x = 24
+    y = 3
+    
+    prerequisite = {
+        focus = SAU_csto_Doctrine_nr_one
+        focus = SAU_Expand_on_Western_Doctrines
+    }
+    
+    cost = 5
+    
+    completion_reward = {
+        every_unit_leader = {
+            random_select_amount = 2
+            limit = {
+                is_corps_commander = yes
+            }
+            add_attack = 1
+            add_defense = 1
+        }
+        recruit_character = SAU_Hamad_al_Ohali_char
+    }
+}
+focus = {
+    id = SAU_Drone_Investments
+	icon = GFX_focus_SAU_drone_teh
+	
+	x = 27
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_Air_power_of_the_Middle_east
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+            set_technology = {
+                suicide_drone_tech1 = 1
+                suicide_drone_tech2 = 1
+            }
+
+            893 = {
+                add_extra_state_shared_building_slots = 1 
+                add_building_construction = {
+                    type = rocket_site
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+            add_equipment_to_stockpile = {
+                type = guided_missile_equipment_1
+                amount = 100
+                producer = ROOT
+            }
+        }
+    }
+focus = {
+    id = SAU_Start_Ship_Massproduction
+	icon = GFX_focus_SOV_build_up_air_and_sea_fleets_CPRF
+	
+	x = 29
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_Build_New_Dry_docks
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_Saudi_Navy
+	}
+}
+focus = {
+    id = SAU_Dominate_the_Skies
+	icon = GFX_focus_GER_EU_Dominate_the_Skies
+	
+	x = 26
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Drone_Investments
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = SAU_Saudi_Air_Force
+	add_idea = SAU_Saudi_Air_Force_2
+	    }
+	}
+}
+focus = {
+    id = SAU_construck_an_carrier
+	icon = GFX_focus_SAU_build_an_flugzeugtrager
+	
+	x = 28
+	y = 3
+	
+	prerequisite = {
+	focus = SAU_Start_Ship_Massproduction
+	}
+	prerequisite = {
+	focus = SAU_Drone_Investments
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	set_technology = {
+    early_ship_hull_carrier = 1
+    early_carrier = 1
+	}
+	create_equipment_variant = {
+                name = "king Abdulaziz class" 
+                type = ship_hull_carrier_1
+                parent_version = 0
+                modules = {
+                    fixed_ship_deck = ship_deck_space_1
+                    fixed_ship_engine = ship_engine_carrier_1
+                    fixed_ship_radar = ship_radar_1
+                    fixed_ship_anti_air = ship_anti_air_1
+                }
+            }
+            
+            add_equipment_production = {
+                equipment = {
+                    type = ship_hull_carrier_1
+                    creator = "SAU" 
+                    version_name = "King Abdulaziz classe" 
+                }
+                requested_factories = 1
+                progress = 0.00
+                amount = 1   
+        }				
+	}
+}
+focus = {
+    id = SAU_the_Saudi_Behamoth
+	icon = GFX_focus_SAU_army_strong
+   
+    x = 24
+	y = 4
+	
+	prerequisite = {
+	focus = SAU_Learning_from_our_Mistakes
+	}
+	prerequisite = {
+	focus = SAU_the_New_Generation
+	focus = SAU_Dominate_the_Skies
+	focus = SAU_construck_an_carrier
+	}
+	
+	cost = 6
+	
+	completion_reward = {
+	remove_ideas = SAU_Partial_Army_Recovery
+	}
+}
+
+
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+#⬛       Formables focuses        ⬛#
+#⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛#
+
+focus = {
+	id = SAU_Formation_of_the_United_Arab_Republic
+	icon = GFX_focus_SAU_generic
+
+	x = 11
+	y = 23
+
+	prerequisite = {
+		focus = SAU_Dreams_of_Arab_Unification
+	}
+
+	mutually_exclusive = {
+		focus = SAU_Return_of_the_past
+		focus = SAU_Form_the_United_Arab_Kingdom
+	}
+
+	available = {
+		has_government = authoritarian_democrat
+		has_war = no
+
+		448 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		458 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		1488 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		461 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	cost = 1
+
+	completion_reward = {
+		country_event = { id = saudi.89 }
+		country_event = { id = saudi.94 days = 5 }
+		hidden_effect = {
+		country_event = { id = saudi.101 days = 10 }
+		}
+		
+		set_cosmetic_tag = UAR
+
+		annex_country = { target = SIQ transfer_troops = yes }
+		annex_country = { target = LEB transfer_troops = yes }
+		annex_country = { target = UAE transfer_troops = yes }
+		annex_country = { target = JOR transfer_troops = yes }
+		annex_country = { target = FSA transfer_troops = yes }
+		annex_country = { target = OMA transfer_troops = yes }
+		annex_country = { target = YEM transfer_troops = yes }
+		annex_country = { target = KUW transfer_troops = yes }
+		annex_country = { target = QAT transfer_troops = yes }
+		annex_country = { target = ISR transfer_troops = yes }
+		annex_country = { target = FIR transfer_troops = yes }
+		annex_country = { target = HEZ transfer_troops = yes }
+		annex_country = { target = BAH transfer_troops = yes }
+		annex_country = { target = PAL transfer_troops = yes }
+		annex_country = { target = HAM transfer_troops = yes }
+
+		every_owned_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+			}
+			add_core_of = ROOT
+		}
+	}
+}
+
+
+focus = {
+	id = SAU_Form_the_United_Arab_Kingdom
+	icon = GFX_focus_SAU_generic
+
+	x = 14
+	y = 23
+
+	prerequisite = {
+		focus = SAU_Dreams_of_Arab_Unification
+	}
+
+	mutually_exclusive = {
+		focus = SAU_Return_of_the_past
+		focus = SAU_Formation_of_the_United_Arab_Republic
+	}
+
+	available = {
+		has_war = no
+
+		448 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		458 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		1488 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		461 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	cost = 1
+
+	completion_reward = {
+		country_event = { id = saudi.92 }
+		country_event = { id = saudi.94 days = 5 }
+		hidden_effect = {
+		country_event = { id = saudi.101 days = 10 }
+		}
+
+		annex_country = { target = SIQ transfer_troops = yes }
+		annex_country = { target = LEB transfer_troops = yes }
+		annex_country = { target = UAE transfer_troops = yes }
+		annex_country = { target = JOR transfer_troops = yes }
+		annex_country = { target = FSA transfer_troops = yes }
+		annex_country = { target = OMA transfer_troops = yes }
+		annex_country = { target = YEM transfer_troops = yes }
+		annex_country = { target = KUW transfer_troops = yes }
+		annex_country = { target = QAT transfer_troops = yes }
+		annex_country = { target = ISR transfer_troops = yes }
+		annex_country = { target = FIR transfer_troops = yes }
+		annex_country = { target = HEZ transfer_troops = yes }
+		annex_country = { target = BAH transfer_troops = yes }
+		annex_country = { target = PAL transfer_troops = yes }
+		annex_country = { target = HAM transfer_troops = yes }
+
+		every_owned_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+			}
+			add_core_of = ROOT
+		}
+
+		set_cosmetic_tag = UAK
+	}
+}
+
+
+focus = {
+	id = SAU_Return_of_the_past
+	icon = GFX_focus_SAU_generic
+
+	x = 17
+	y = 23
+
+	prerequisite = {
+		focus = SAU_Dreams_of_Arab_Unification
+	}
+
+	mutually_exclusive = {
+		focus = SAU_Formation_of_the_United_Arab_Republic
+		focus = SAU_Form_the_United_Arab_Kingdom
+	}
+
+	available = {
+		has_government = nationalist
+		has_war = no
+
+		448 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		458 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		1488 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+		461 = {
+			OR = {
+				is_owned_by = ROOT
+				OWNER = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	cost = 1
+
+	completion_reward = {
+		country_event = { id = saudi.92 }
+		country_event = { id = saudi.94 days = 5 }
+		hidden_effect = {
+		country_event = { id = saudi.101 days = 10 }
+		}
+
+		annex_country = { target = SIQ transfer_troops = yes }
+		annex_country = { target = LEB transfer_troops = yes }
+		annex_country = { target = UAE transfer_troops = yes }
+		annex_country = { target = JOR transfer_troops = yes }
+		annex_country = { target = FSA transfer_troops = yes }
+		annex_country = { target = OMA transfer_troops = yes }
+		annex_country = { target = YEM transfer_troops = yes }
+		annex_country = { target = KUW transfer_troops = yes }
+		annex_country = { target = QAT transfer_troops = yes }
+		annex_country = { target = ISR transfer_troops = yes }
+		annex_country = { target = FIR transfer_troops = yes }
+		annex_country = { target = HEZ transfer_troops = yes }
+		annex_country = { target = BAH transfer_troops = yes }
+		annex_country = { target = PAL transfer_troops = yes }
+		annex_country = { target = HAM transfer_troops = yes }
+
+		every_owned_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+			}
+			add_core_of = ROOT
+		}
+
+		set_cosmetic_tag = SKH
+	}
+}
+

@@ -1,0 +1,573 @@
+	scripted_gui = {
+		TFR_SOV_russian_state_machine_info = {
+			context_type = decision_category
+			window_name = "TFR_SOV_russian_state_machine_container"
+			dynamic_lists = {
+				SOV_party_onf_factions_grid = {
+					array = SOV_factions_onf
+					entry_container = onf_factions_entry
+					value = SOV_faction_v
+					index = SOV_faction_i
+				}
+			}
+			triggers = {
+				party_SOV_intergralists_icon_visible = {
+					var:SOV_faction_v = {
+						tag = FRA
+					}
+					NOT = { has_country_flag = SOV_integralist_selected_flag }
+				}
+				party_SOV_intergralists_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = FRA
+					}
+					has_country_flag = SOV_integralist_selected_flag
+				}
+				party_SOV_intergralists_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}
+				party_SOV_left_statists_icon_visible = {
+					var:SOV_faction_v = {
+						tag = BRA
+					}
+				}
+				party_SOV_left_statists_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = BRA
+					}
+					has_country_flag = SOV_left_statists_selected_flag
+				}	
+				party_SOV_left_statists_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}				
+				party_SOV_soviet_revivalists_icon_visible = {
+					var:SOV_faction_v = {
+						tag = USA
+					}
+				}
+				party_SOV_soviet_revivalists_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = USA
+					}
+					has_country_flag = SOV_soviet_revivalists_selected_flag
+				}
+				party_SOV_soviet_revivalists_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}
+				party_SOV_national_patriots_icon_visible = {
+					var:SOV_faction_v = {
+						tag = BOL
+					}
+				}
+				party_SOV_national_patriots_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = BOL
+					}
+					has_country_flag = SOV_national_patriots_selected_flag
+				}
+				party_SOV_national_patriots_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}
+				party_SOV_reformers_icon_visible = {
+					var:SOV_faction_v = {
+						tag = ARG
+					}
+				}
+				party_SOV_reformers_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = ARG
+					}
+					has_country_flag = SOV_reformers_selected_flag
+				}
+				party_SOV_reformers_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}
+				party_SOV_populists_icon_visible = {
+					var:SOV_faction_v = {
+						tag = GER
+					}
+				}
+				party_SOV_populists_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = GER
+					}
+					has_country_flag = SOV_populists_selected_flag
+				}
+				party_SOV_populists_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}
+				party_SOV_kadyrovites_icon_visible = {
+					var:SOV_faction_v = {
+						tag = CHE
+					}
+				}
+				party_SOV_kadyrovites_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = CHE
+					}
+					has_country_flag = SOV_kydorovites_selected_flag
+				}
+				party_SOV_kadyrovites_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}		
+				party_SOV_z_patriots_icon_visible = {
+					var:SOV_faction_v = {
+						tag = JAP
+					}
+				}
+				party_SOV_z_patriots_icon_selected_visible = {
+					var:SOV_faction_v = {
+						tag = JAP
+					}
+					has_country_flag = SOV_z_patriotss_elected_flag
+				}
+				party_SOV_z_patriots_icon_click_enabled = {
+					NOT = { has_country_flag = SOV_selected_onf_faction_flag }
+				}	
+			}
+			effects = {
+				party_SOV_intergralists_icon_click = {
+					set_country_flag = {
+						flag = SOV_integralist_selected_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_integralist_score_var_temp
+						value = 1
+					}
+					SOV_add_integralist_score = yes
+					add_political_power = -50
+				}
+				party_SOV_left_statists_icon_click = {
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_left_statists_selected_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_left_statists_score_var_temp
+						value = 1
+					}
+					SOV_add_left_statists_score = yes
+					add_political_power = -50
+				}		
+				party_SOV_soviet_revivalists_icon_click = {
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_soviet_revivalists_selected_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_soviet_revivalists_score_var_temp
+						value = 1
+					}
+					SOV_add_soviet_revivalists_score = yes
+					add_political_power = -50
+				}
+				party_SOV_reformers_icon_click = {
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_reformers_selected_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_reformers_score_var_temp
+						value = 1
+					}
+					SOV_add_reformers_score = yes
+					add_political_power = -50
+				}
+				party_SOV_national_patriots_icon_click = {
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_national_patriots_selected_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_national_patriots_score_var_temp
+						value = 1
+					}
+					SOV_add_national_patriots_score = yes
+					add_political_power = -50
+				}
+				party_SOV_populists_icon_click = {
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_populists_selected_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_populists_score_var_temp
+						value = 1
+					}
+					SOV_add_populists_score = yes
+					add_political_power = -50
+				}		
+				party_SOV_kadyrovites_icon_click = {
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_kydorovites_selected_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_kadyrovites_score_var_temp
+						value = 1
+					}
+					SOV_add_kadyrovites_score = yes
+					add_political_power = -50
+				}		
+				party_SOV_z_patriots_icon_click = {
+					set_country_flag = {
+						flag = SOV_selected_onf_faction_flag
+						days = 100
+						value = 1
+					}
+					set_country_flag = {
+						flag = SOV_z_patriotss_elected_flag
+						days = 100
+						value = 1
+					}
+					set_temp_variable = {
+						var = SOV_z_patriots_score_var_temp
+						value = 1
+					}
+					SOV_add_z_patriots_score = yes
+					add_political_power = -50
+				}
+			}
+		}
+		TFR_SOV_party_info = {
+			context_type = decision_category
+			window_name = "TFR_SOV_party_info_container"
+			properties = {
+			}
+			triggers = {
+				jr_info_text_visible = {
+					NOT = {
+						OR = {
+							has_country_flag = SOV_UR_JR_alliance
+							has_country_flag = SOV_cprf_srzp_alliance 
+						}
+					}
+				}
+				jr_support_info_text_visible = {
+					OR = {
+						has_country_flag = SOV_UR_JR_alliance
+						has_country_flag = SOV_cprf_srzp_alliance 
+					}
+				}
+			}
+		}
+		TFR_SOV_supreme_soviet_info = {
+			context_type = decision_category
+			window_name = "TFR_SOV_supreme_soviet_info_container"
+			properties = {
+				party_unity_progbar_2 = { frame = SOV:SOV_party_unity }
+				party_legitimacy_progbar_2 = { frame = SOV:SOV_party_legitimacy }
+			}
+			dynamic_lists = {
+				SOV_party_other_parties_grid = {
+					array = SOV_other_parties
+					entry_container = other_parties_entry
+					value = SOV_party_v
+					index = SOV_party_i
+				}
+			}
+			triggers = {
+				party_portrait_zyuganov_visible = {
+					has_country_flag = SOV_zyuganov_supreme_soviet_leader_flag
+					NOT = {
+						has_completed_focus = SOV_first_soviet_election
+					}
+				}
+				party_portrait_rashkin_visible = {
+					OR = {
+						AND = {
+							has_country_flag = SOV_rashkin_supreme_soviet_leader_flag
+							NOT = {
+								has_completed_focus = SOV_first_soviet_election
+							}
+						}
+						has_country_flag = SOV_congress_2_rashkin_elected
+					}
+					NOT = {
+						has_global_flag = SOV_first_nato_war_victory
+					}
+				}
+				party_portrait_rashkin_victory_visible = {
+					OR = {
+						AND = {
+							has_country_flag = SOV_rashkin_supreme_soviet_leader_flag
+							NOT = {
+								has_completed_focus = SOV_first_soviet_election
+							}
+						}
+						has_country_flag = SOV_congress_2_rashkin_elected
+					}
+					has_global_flag = SOV_first_nato_war_victory
+				}
+				party_portrait_afonin_visible = {
+					OR = {
+						AND = {
+							has_country_flag = SOV_afonin_supreme_soviet_leader_flag
+							NOT = {
+								has_completed_focus = SOV_first_soviet_election
+							}
+						}
+						has_country_flag = SOV_congress_2_afonin_elected
+					}
+				}
+				party_portrait_levchenko_visible = {
+					has_completed_focus = SOV_first_soviet_election
+					has_country_flag = SOV_congress_2_levchenko_elected
+				}
+				party_portrait_grudinin_visible = {
+					has_completed_focus = SOV_first_soviet_election
+					has_country_flag = SOV_congress_2_grudinin_elected
+				}
+				party_portrait_pasechnik_visible = {
+					has_completed_focus = SOV_first_soviet_election
+					has_country_flag = SOV_congress_2_pasechnik_elected
+				}
+				party_portrait_nikolai_lukashenko_visible = {
+					has_completed_focus = SOV_first_soviet_election
+					has_country_flag = SOV_lukashenko_elected
+					has_completed_focus = SOV_gospodin_president
+				}
+				party_portrait_lukashenko_visible = {
+					has_completed_focus = SOV_first_soviet_election
+					has_country_flag = SOV_lukashenko_elected
+					has_completed_focus = SOV_iron_hand
+				} 
+				party_portrait_civ_lukashenko_visible = {
+					has_completed_focus = SOV_first_soviet_election
+					has_country_flag = SOV_lukashenko_elected
+					NOT = {
+						OR = {
+							has_completed_focus = SOV_gospodin_president
+							has_completed_focus = SOV_iron_hand
+						}
+					}
+				} 
+				party_SOV_Yuri_Afonin_visible = {
+					OR = {
+						has_idea = SOV_Yuri_Afonin_party
+						has_idea = SOV_Yuri_Afonin_president_party
+					}
+				}
+				party_SOV_Sergey_Levchenko_visible = {
+					OR = {
+						has_idea = SOV_Sergey_Levchenko_party
+						has_idea = SOV_Sergey_Levchenko_president_party
+					}
+				}
+				party_SOV_Ivan_Melnikov_visible = {
+					has_idea = SOV_Ivan_Melnikov_party
+				}
+				party_SOV_Boris_Kagarlitsky_visible = {
+					has_idea = SOV_Boris_Kagarlitsky_party
+				}
+				party_SOV_Denis_Parfenov_visible = {
+					has_idea = SOV_Denis_Parfenov_party
+				}
+				party_SOV_Dmitry_Novikov_visible = {
+					has_idea = SOV_Dmitry_Novikov_party
+				}
+				party_SOV_Dmitry_Novikov_2_visible = {
+					has_idea = SOV_Dmitry_Novikov_party_cool
+				}
+				party_SOV_Rustem_Vakhitov_visible = {
+					has_idea = SOV_Rustem_Vakhitov_party
+				}
+				party_SOV_Evgeny_Spitsyn_visible = {
+					has_idea = SOV_Evgeny_Spitsyn_party
+				}
+				party_SOV_Nikolay_Ivanov_visible = {
+					has_idea = SOV_Nikolay_Ivanov_party
+				}
+				party_SOV_Yaroslav_Listov_visible = {
+					has_idea = SOV_Yaroslav_Listov_party
+				}
+				party_SOV_Vladimir_Isakov_visible = {
+					has_idea = SOV_Vladimir_Isakov_party
+				}
+				party_SOV_Mikhail_Kremlyov_visible = {
+					has_idea = SOV_Mikhail_Kremlyov_party
+				}
+				party_SOV_Daria_Bagina_visible = {
+					has_idea = SOV_Daria_Bagina_party
+				}
+				party_SOV_cp_rsfsr_icon_visible = {
+					var:SOV_party_v = {
+						tag = SOV
+					}
+				}
+				party_SOV_cp_rsfsr_visible = {
+					NOT = {
+						has_cosmetic_tag = SOV_SovietUnion
+					}
+				}
+				party_SOV_cpsu_visible = {
+					has_cosmetic_tag = SOV_SovietUnion
+				}
+				party_SOV_labor_fatherland_icon_visible = {
+					var:SOV_party_v = {
+						tag = BRA
+					}
+				}
+				party_SOV_adl_progress_icon_visible = {
+					var:SOV_party_v = {
+						tag = BOL
+					}
+					NOT = {
+						OR = {
+							has_country_flag = SOV_labour_party_formed_flag
+							has_country_flag = SOV_union_of_social_democrats_formed_flag
+							has_country_flag = SOV_new_socialists_logo_formed_flag
+						}
+					}
+				}
+				party_SOV_new_socialists_icon_visible = {
+					var:SOV_party_v = {
+						tag = BOL
+					}
+					has_country_flag = SOV_new_socialists_logo_formed_flag
+				}
+				party_SOV_labour_party_icon_visible = {
+					var:SOV_party_v = {
+						tag = BOL
+					}
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+				party_SOV_union_of_social_democrats_icon_visible = {
+					var:SOV_party_v = {
+						tag = BOL
+					}
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+				party_SOV_peoples_front_icon_visible = {
+					var:SOV_party_v = {
+						tag = ARG
+					}
+				}
+				party_SOV_ldpr_icon_visible = {
+					var:SOV_party_v = {
+						tag = GER
+					}
+				}
+				party_SOV_patriots_party_icon_visible = {
+					var:SOV_party_v = {
+						tag = FRA
+					}
+				}
+			}
+		}
+		TFR_SOV_oligarch_info = {
+			context_type = decision_category
+			window_name = "TFR_SOV_oligarch_info_container"
+			properties = {
+			}
+			triggers = {
+				TFR_SOV_oligarch_info_text_visible = {
+					NOT = {
+						has_completed_focus = SOV_nothing_but_bloodsucking_parasites
+						has_country_flag = SOV_medve_oligarchs_disabled
+					}
+				}
+				TFR_SOV_oligarch_info_text_2_visible = {
+					OR = {
+						has_completed_focus = SOV_nothing_but_bloodsucking_parasites
+					}
+				}
+				Oligarch_BG_4_visible = {
+					OR = {
+						has_country_flag = SOV_navalny_oligarchs_enabled_flag
+					}
+				}
+				Oligarch_BG_3_visible = {
+					OR = {
+						has_completed_focus = SOV_triumph_of_zhirinovsky
+					}
+				}
+				Oligarch_BG_2_visible = {
+					OR = {
+						has_completed_focus = SOV_election_victory
+					}
+				}
+				Oligarch_BG_visible = {
+					NOT = {
+						has_completed_focus = SOV_election_victory
+						has_completed_focus = SOV_triumph_of_zhirinovsky
+						has_country_flag = SOV_medve_oligarchs_disabled
+					}
+				}
+			}
+		}	
+		
+		TFR_SOV_derzhavnik_cool_posters_container = {
+			context_type = decision_category
+			window_name = "TFR_SOV_derzhavnik_cool_posters_container"
+			properties = {
+			}
+			triggers = {
+				SOV_derzhavnik_poster_1_visible = {
+					OR = {
+						has_country_flag = SOV_anti_alikhanov_opposition_enabled_flag
+					}
+				}
+				SOV_derzhavnik_poster_2_visible = {
+					OR = {
+						has_country_flag = SOV_anti_alikhanov_opposition_enabled_flag
+					}
+				}		
+				SOV_derzhavnik_poster_3_visible = {
+					AND = {
+						has_country_flag = SOV_anti_alikhanov_opposition_enabled_flag
+						has_country_flag = SOV_left_opposition_alikhanov_destroyed_flag
+					}
+				}		
+				SOV_derzhavnik_poster_4_visible = {
+					AND = {
+						has_country_flag = SOV_anti_alikhanov_opposition_enabled_flag
+						has_country_flag = SOV_dem_opposition_alikhanov_destroyed_flag
+					}
+				}
+			}
+		}
+	}

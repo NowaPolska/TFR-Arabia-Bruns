@@ -1,0 +1,13 @@
+on_actions = {
+	on_weekly_CHI = {
+		effect = {
+			if = {
+				limit = {
+					has_active_mission = CHI_taiwan_war_mission
+					surrender_progress > 0.25
+				}
+				country_event = taiwan.34
+			}
+		}
+	}
+}
