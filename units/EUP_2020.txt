@@ -1,0 +1,282 @@
+division_template = {
+	name = "Panzer Brigade"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		spaa_brigade = { x = 2 y = 2 }
+		
+	}
+	support = { 
+	}
+}
+division_template = {
+	name = "Mechanisierte Division"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		spaa_brigade = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		
+	}
+	support = { 
+	
+	}
+}
+division_template = {
+	name = "British Volenteer Tank Brigade"
+
+	regiments = {
+	    modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_mechanized = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+		spaa_brigade = { x = 3 y = 1 }
+		
+	}
+	support = {
+	artillery = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Motor Brigade"
+
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		spaa_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Feldjäger"
+	regiments = {
+		militia = {
+			x = 0
+			y = 0
+		}
+		militia = {
+			x = 0
+			y = 1
+		}
+		militia = {
+			x = 0
+			y = 2
+		}
+		militia = {
+			x = 0
+			y = 3
+		}
+	}
+	support = {
+		military_police = {
+			x = 0
+			y = 0
+		}
+	}
+}
+division_template = {
+	name = "Einsatzführungskommando der Bundeswehr"
+	is_locked = yes
+	
+	regiments = {
+		bus = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {	
+		name = "1. Panzer Brigade <<Befreiung>>"
+		location = 9252
+		division_template = "Panzer Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "15. Motor Brigade"
+		location = 11372
+		division_template = "Motor Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {	
+		name = "British Tank Forces of Liberation"
+		location = 6282
+		division_template = "British Volenteer Tank Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "Légion étrangère française"
+		location = 537
+		division_template = "Mechanisierte Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {	
+		name = "86 Polnisch-Deutsches Mechanisiertes corp"
+		location = 11288
+		division_template = "Mechanisierte Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+    division = {	
+		name = "5. Feldjäger Battalion"
+		location = 6282
+		division_template = "Feldjäger"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "Einsatzführungskommando der Koalitions Arme"
+		location = 6282
+		division_template = "Einsatzführungskommando der Bundeswehr"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}
+    
+	
+instant_effect = {
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 4000
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+	    type = light_mechanized_infantry3 = 1
+		amount = 125
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+	    type = interwar_artillery = 1
+		amount = 100
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 350
+		producer = SPR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 5000
+		producer = SWE
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 2500
+		producer = LIT
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_2
+		amount = 10000
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1			
+		amount = 1000
+		producer = LAT
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_destroyer_equipment_1			
+		amount = 100
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_2			
+		amount = 750
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_2
+		amount = 55
+		producer = FRA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_2
+		amount = 50
+		producer = HUN
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_3
+		amount = 50
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_mechanized_equipment_2
+		amount = 350
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 50
+		producer = BEL
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 169
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_2
+		amount = 200
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_2		
+		amount = 700
+		producer = GER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_artillery_equipment_2
+		amount = 50
+		producer = GER
+	}
+}

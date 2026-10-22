@@ -1,0 +1,89 @@
+units = {
+	
+	division = {
+		name = "Inghimasi unit"
+		location = 13641
+		division_template = "Special Forces Unit"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Abu Amara Battalion"
+		location = 13640
+		division_template = "Milishia Mustaqila"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Army of Liberation"
+		location = 13640
+		division_template = "Liwa Mikanikiun"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Army of Aleppo"
+		location = 13651
+		division_template = "Liwa Almushaa"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Army of Eastern Ghouta"
+		location = 13641
+		division_template = "Liwa Almushaa"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Army of Idlib"
+		location = 13641
+		division_template = "Liwa Almushaa"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Army of Al-Badia"
+		location = 13640
+		division_template = "Liwa Almushaa"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Abdullah Azzam Brigade"
+		location = 13643
+		division_template = "Liwa Almushaa"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Army of Manjib"
+		location = 7671
+		division_template = "Liwa Almushaa"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Glory of Islam Brigade"
+		location = 13901
+		division_template = "Liwa Mikanikiun"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Aleppo City Battalion"
+		location = 13650
+		division_template = "Milishia Aliat Mustaqila"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Army of Othman bin Affan"
+		location = 12474
+		division_template = "Milishia Aliat Mustaqila"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Mountain Army"
+		location = 13901
+		division_template = "Liwa Mikanikiun"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Independent Armor Brigade"
+		location = 13652
+		division_template = "Liwa Mudarae"
+		start_experience_factor = 0.1
+	}
+}

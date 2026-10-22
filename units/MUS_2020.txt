@@ -1,0 +1,238 @@
+﻿division_template = {
+	name = "Liwa Mudarae"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		spaa_brigade = { x = 2 y = 2 }
+		
+	}
+	support = { 
+	
+	}
+}
+
+division_template = {
+	name = "Mushat Alshrye"
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+	}
+	
+	template_counter = 14
+}
+
+division_template = {
+	name = "Shajid Mubayl"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+	}
+	
+	support = {
+		signal_company = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	
+	priority = 1
+	
+	template_counter = 11
+}
+
+division_template = {
+	name = "Liwa Moudar'a"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_sp_artillery_brigade = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "1. Liwa Mudarae"
+		location = 1151
+		division_template = "Liwa Mudarae"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "2. Liwa Mudarae"
+		location = 1151
+		division_template = "Liwa Mudarae"
+		start_experience_factor = 0.4
+	}
+	
+	division = {
+		name = "1. Mushat Alshrye"
+		location = 1151
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2. Mushat Alshrye"
+		location = 1064
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "3. Mushat Alshrye"
+		location = 12044
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division = {
+		name = "4. Mushat Alshrye"
+		location = 12044
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "5. Mushat Alshrye"
+		location = 12044
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "6. Mushat Alshrye"
+		location = 1151
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "7. Mushat Alshrye"
+		location = 1151
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	
+	division = {
+		name = "8. Mushat Alshrye"
+		location = 1151
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division = {
+		name = "9. Mushat Alshrye"
+		location = 12071
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		name = "10. Mushat Alshrye"
+		location = 12071
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "11. Mushat Alshrye"
+		location = 12071
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "1. Shajid Mubayl"
+		location = 11999
+		division_template = "Shajid Mubayl"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2. Shajid Mubayl"
+		location = 11999
+		division_template = "Shajid Mubayl"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3. Shajid Mubayl"
+		location = 10884
+		division_template = "Shajid Mubayl"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "4. Shajid Mubayl"
+		location = 7030
+		division_template = "Shajid Mubayl"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "5. Shajid Mubayl"
+		location = 7030
+		division_template = "Shajid Mubayl"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "111. Liwa Moudar'a"
+		location = 7030
+		division_template = "Liwa Moudar'a"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "21. Liwa Moudar'a"
+		location = 10884
+		division_template = "Liwa Moudar'a"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "324. Liwa Moudar'a"
+		location = 4076
+		division_template = "Liwa Moudar'a"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "231. Liwa Moudar'a"
+		location = 4076
+		division_template = "Liwa Moudar'a"
+		start_experience_factor = 0.1
+	}
+}

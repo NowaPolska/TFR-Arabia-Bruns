@@ -1,0 +1,54 @@
+﻿units = {
+	### Naval OOB ###
+	fleet = {
+		name = "Royal Saudi Navy"
+		naval_base = 12702
+		task_force = {
+			name = "Royal Saudi Navy"
+			location = 12702
+			ship = { name = "Al Madinah" pride_of_the_fleet = yes definition = heavy_cruiser equipment { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah class" } } }
+			ship = { name = "Hofouf" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah class" } } }
+			ship = { name = "Abha" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah class" } } }
+			ship = { name = "Taif"  definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "Al Madinah class" } } }
+			ship = { name = "Al Riyadh" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "La-Fayette class" } } }
+			ship = { name = "Al Makkah" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "La-Fayette class" } } }
+			ship = { name = "Al Dammam" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SAU version_name = "La-Fayette class" } } }
+		    ship = { name = "Badr" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr class" } } }
+			ship = { name = "Al Yarmook" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr class" } } }
+			ship = { name = "Hitteen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr class" } } }
+			ship = { name = "Tabuk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SAU version_name = "Badr class" } } }
+			ship = { name = "Al Jubail" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "Avante 2200 class" } } }
+			ship = { name = "Diriyah" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "Avante 2200 class" } } }
+			ship = { name = "Hail" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "Avante 2200 class" } } }
+			ship = { name = "Jazan" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "Avante 2200 class" } } }
+			ship = { name = "Unayzah" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "Avante 2200 class" } } }
+		}
+	}
+    fleet = {
+	    name = "Royal Saudi Patrol Boats"
+		naval_base = 12702
+		task_force = {
+		    name = "Royal Saudi Patrol Boats"
+			location = 12702
+			ship = { name = "I could not fucking find the names of theese ships so i gave up" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.3" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.4" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.5" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.6" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.7" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.8" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.9" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.10" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.11" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.12" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.13" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.14" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.15" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.16" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.17" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.18" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+			ship = { name = "I could not fucking find the names of theese ships so i gave up.19" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SAU version_name = "HSI 32 class" } } }
+		}	
+	}
+}

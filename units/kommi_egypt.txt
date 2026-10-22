@@ -1,0 +1,170 @@
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		spaa_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+	}
+	
+	support = {
+	}
+}
+
+division_template = {
+	name = "Militia"
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }	
+	}
+	support = {
+		
+	}
+}
+
+division_template = {
+	name = "Liwa Milishia Ali"
+
+	regiments = {
+		mot_militia = { x = 0 y = 0 }
+		mot_militia = { x = 0 y = 1 }
+		mot_militia = { x = 0 y = 2 }
+		mot_militia = { x = 0 y = 3 }
+		mot_militia = { x = 1 y = 0 }
+		mot_militia = { x = 1 y = 1 }
+		mot_militia = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		recce = { x = 2 y = 2 }
+	}
+	support = {
+	   spaa_company = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {	
+		name = "1. Peoples Militia"
+		location = 11910
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "2. Peoples Militia"
+		location = 10061
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "3. Peoples Militia"
+		location = 11967
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {	
+		name = "7. Peoples Militia"
+		location = 11967
+		division_template = "Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "8. Peoples Militia"
+		location = 9989
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "6. Armored Brigade <<AL Nasser>>"
+		location = 11967
+		division_template = "Armored Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {	
+		name = "55. Armored Brigade <<Arab Liberators>>"
+		location = 11910
+		division_template = "Armored Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {	
+		name = "4. Motorised Peoples Militia"
+		location = 9989
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "5. Motorised Peoples Militia"
+		location = 7079
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {	
+		name = "6. Motorised Peoples Militia"
+		location = 11910
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {	
+		name = "9. Motorised Peoples Militia"
+		location = 7079
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "11. Peoples Mechanized Brigade"
+		location = 11910
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {	
+		name = "17. Peoples Mechanized Brigade"
+		location = 10061
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "21. Peoples Mechanized Brigade"
+		location = 7079
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "30. Peoples Mechanized Brigade"
+		location = 10061
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}
