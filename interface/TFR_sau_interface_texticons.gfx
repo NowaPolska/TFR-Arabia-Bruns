@@ -1,0 +1,25 @@
+spriteTypes = {
+
+	###SUPEREVENTS###
+
+	spriteType = {
+		name = "GFX_SAU_nuke_superevent_pic"
+		texturefile = "gfx/super_events/SAU_nuke_superevent_pic.dds"
+		legacy_lazy_load = no
+	}
+    spriteType = {
+		name = "GFX_SAU_arab_unifiation_super_event"
+		texturefile = "gfx/super_events/SAU_arab_unifiation_super_event.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SAU_nationalist_reunif"
+		texturefile = "gfx/super_events/SAU_nationalist_reunif.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SAU_unif_super"
+		texturefile = "gfx/super_events/SAU_unif_super.png"
+		legacy_lazy_load = no
+	}
+}

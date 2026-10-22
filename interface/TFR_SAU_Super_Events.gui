@@ -1,0 +1,219 @@
+guiTypes = { #Y+ is Down, Y- is Up, X+ is Right, X- is Left
+	containerWindowType = {
+		name = "SAU_nukleare_holocaust_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name = "SAU_nuke_superevent_pic"
+			spriteType = "GFX_SAU_nuke_superevent_pic"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_nukleare_holocaust"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_nukleare_holocaust_text"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "SAU_nukleare_holocaust_button"
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+    
+	containerWindowType = {
+		name = "SAU_arab_unification_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name = "SAU_arab_unifiation_super_event"
+			spriteType = "GFX_SAU_arab_unifiation_super_event"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_arab_unification"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_arab_unification_text"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "SAU_arab_unification_button" 
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "SAU_nationalist_unification_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name = "SAU_nationalist_unification_super_event"
+			spriteType = "GFX_SAU_nationalist_reunif"
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_nationalist_unification"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_nationalist_unification_text"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "SAU_nationalist_unification_button" 
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+	containerWindowType = {
+		name = "SAU_unify_super_event"
+		size = { width = 982 height = 594 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		
+		background = {
+			name = "SAU_unify_super_event"
+			spriteType = "GFX_SAU_unif_super" 
+			position = { x = 0 y = 30 }
+		}
+		
+		iconType = {
+			name = "Background"	
+			spriteType ="GFX_Super_event_bg"
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Pax_Super_Event_Title_textbox"
+			position = { x = 260 y = 20 }
+			font = "VCR02_20"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_unify"
+			maxWidth = 490
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "Super_Event_Quote_textbox"
+			position = { x = 250 y = 435 }
+			font = "VCR02_16"
+			borderSize = {x = 0 y = 0}
+			text = "SAU_unify_text"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes	
+			format = center
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = { x = 350 y = 585 }
+			buttonText = "SAU_unify_button" 
+			buttonFont = "VCR02_16"
+			quadTextureSprite ="GFX_spacebar"
+			clicksound = click_ok
+		}
+	}
+}

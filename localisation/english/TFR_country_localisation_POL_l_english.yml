@@ -1,0 +1,76 @@
+﻿l_english:
+ #Leaders
+ #Focuses
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #Ideas
+ POL_legacy_idea: "Polish Legacy"
+ POL_eurosceptic_divide_idea: "Eurosceptic Divide"
+ POL_nationalism_idea: "Polish Nationalism"
+ POL_splintered_society_idea: "Splintered Society"
+ POL_not_yet_lost_idea: "Not Yet Lost"
+ POL_border_crisis: "Border Crisis"
+ POL_spirit_of_the_warsaw_uprising: "Spirit of Resistance"
+ PLD_reunified_once_more_idea: "Reunified Once More"
+ PLD_the_Polish_economic_miracle: "Polish Economic Miracle"
+ PLD_the_Polish_economic_miracle_desc: "Following Polands Liberation from communist and Russian oppression, Polands Economy had one of the biggest Economic growth rates in the entirety of Europe, with 3 decedes of non-stop growth, Polands GDP exploded by up to 4 times since 1989. If this growth continues, Poland may become one of Europes biggest economyies."
+ PLD_Dudas_Presidency: "Dudas Presidency"
+ PLD_Dudas_Presidency_desc: "Andrzej Duda has been president of Poland since the 6th August of 2015. While Duda has made many reforms, including a successful pension reform and other smaller conservative ones, many controversies have plagued his Presidency, with the most polarising being the 2015 Polish constitutional crisis, in which PiS attempted to weaken Poland's justice system in order to pass more conservative legislation.\n\nWill PiS be able to hold on to power and secure their vision for Poland's future? Or will the opposition depose Polish conservatism once and for all?\n\nOnly God knows..."
+ PLD_PIS_Entrenced: "PiS Entrenced"
+ PLD_PIS_Entrenced_desc: "The degenrate Liberal ideology has been slayed, once and foreall!"
+ PLD_Unfrozen_EU_Funds: "Unfrozen EU funds"
+ PLD_Unfrozen_EU_Funds_desc: ""
+ PLD_Dreams_of_Liberal_Hegemony: "Dreams of Liberal Hegemony"
+ PLD_Dreams_of_Liberal_Hegemony_desc: ""
+ PLD_Strong_PIS_Opposition: "Strong PiS opposition"
+ PLD_Strong_PIS_Opposition_desc: ""
+ PLD_The_Workers_Dream: "The Workers dream"
+ PLD_The_Workers_Dream_desc: "We are ALL social democrats"
+ PLD_Strong_Social_safty_net: "Strong Social Safty net"
+ PLD_Strong_Social_safty_net_desc: ""
+ PLD_strong_conservative_opposition: "Strong conservative opposition"
+ PLD_strong_conservative_opposition_desc: ""
+ #Decision Categories
+ #Missions
+ #Decisions
+ #Country Flag
+ #Tooltips
+ #Faction
+ #Parties
+ PLD_nationalist_association_of_army: "Association for Armed Struggle (PM)"
+ PLD_nationalist_association_of_army_long: "Association for Armed Struggle (Pilsudski Movement)"
+ PLD_fascist_association_of_army: "Association for Armed Struggle (RM)"
+ PLD_fascist_association_of_army_long: "Association for Armed Struggle (Rebirth Movement)"
+ PLD_authdem_association_of_army: "Association for Armed Struggle (DC)"
+ PLD_authdem_association_of_army_long: "Association for Armed Struggle (Democratic Caucus)"
+ #Country
+ #Events
+ poland.1.t: "Restoration of Glory"
+ poland.1.d: "Poland has lost Warsaw... We have been abandoned by those who we considered to be our ''allies,'' and have had our nation split in two like it had been in 1939... With this betrayal we see clearly the disgusting plans that the west had for us, utilizing us as human shields and as a buffer against the Russian Orcs, occupying us in all but name, just as the Soviets did. \n\nPoland will survive this too, but we need to first reclaim our dignity. We cannot allow the disgusting western liberals to continue to dictate our politics, Poland must be free from foreign oppression. Under the leadership of the military, the Polish spirit will continue! The Polish people will survive!"
+ poland.1.a: "Poland is Not Yet Lost!"
+ poland.2.t: "2025 Polish Presidential Election"
+ poland.2.d: ""
+ poland.2.a: "Civic Platform"
+ poland.2.b: "PiS"
+ poland.2.c: "Lewica"
+ poland.2.e: "confederatia"
+ poland.3.t: "2020 Polish Presidental Elections"
+ poland.3.d: "As Poland is hitting the times of trouble, with the covid-19 Virus wracking our economy and the price of Oil skyrocketing, millions of poles are asking them selfs... whats next?\n\nThe Polish 2020 elections will decide which party will be choosen to gide poland true its problems and tough times, if they will succeed or ruin poland foreever, only God knows...\nThe Ballots are getting counted, and the Winner of the 2020 Polish presidental elections is..."
+ poland.3.a: "Trzsaskowski Tusk KO 2020!"
+ poland.3.b: "Duda wins a Secound term"
+ poland.3.c: "Biedron lets go, slava SocDem"
+ poland.3.e: "Waldemar Witkowski has done the imposible"
+ poland.3.f: "vote Bosak 2020"
+ poland.3.g: "how does PSL even win gng"
+ #traits
+ hos_marshal_of_poland: "Marszalek Polski"
