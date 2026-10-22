@@ -1,0 +1,39 @@
+capital = 1
+	
+	oob = "" #Hier die arme adden
+	
+	recruit_character = SZZ_anarchy_char
+	
+	set_research_slots = 0
+	set_convoys = 0
+	set_stability = -1
+	
+    set_country_flag = shithole_country
+	
+	set_party_name = {
+    	ideology = libertarian_socialist 
+    	long_name = "...:,,-.,.,-------+,+.-#,#-#.,,-.-,,-.,-.,-,-..::::;:--------10010010000010010--.,-.,-.,,-.,-,-,-.,,+............................................................-.--."
+    	name = "...:,,-.,.,-------+,+.-#,#-#.,,-.-,,-.,-.,-,-..::::;:--------10010010000010010--.,-.,-.,,-.,-,-,-.,,+............................................................-.--."
+	}
+	
+	set_variable = { Russian_Influence = 0.0 }
+	set_variable = { Chinese_Influence = 0.0 }
+	set_variable = { American_Influence = 0.0 }
+	set_variable = { European_Influence = 0.0 }
+	set_variable = { PDO_Influence = 0.0 }
+	set_variable = { Sovereign_Influence = 1.0 }
+	
+	set_technology = {
+	infantry_weapons1 = 1
+	}
+	
+	set_politics = {
+		ruling_party = libertarian_socialist 
+		last_election = "2015.5.24"
+		election_frequency = 60
+		elections_allowed = no
+	}
+	
+	set_popularities = { 
+		libertarian_socialist  = 100
+	}

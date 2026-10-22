@@ -1,0 +1,148 @@
+﻿	capital = 9
+
+	oob = "CZE_2020"
+
+	set_research_slots = 4
+	set_convoys = 10
+	set_stability = 0.55
+
+	set_country_flag = global_ass_lol
+
+	set_variable = { Russian_Influence = 0.05 }
+	set_variable = { Chinese_Influence = 0.15 }
+	set_variable = { American_Influence = 0.00 }
+	set_variable = { European_Influence = 0.60 }
+	set_variable = { PDO_Influence = 0.00 }
+	set_variable = { Sovereign_Influence = 0.20 }
+
+	recruit_character = CZE_milos_zeman_char
+	recruit_character = CZE_katerina_konecna_char
+	recruit_character = CZE_Karel_Rehka_char
+	recruit_character = CZE_Petr_Snajdarek_char
+
+	set_technology = {
+		## Infantry ##
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_weapons3 = 1
+		infantry_weapons4 = 1
+		motorised_infantry = 1
+		infantry_rifle_upgrade = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		night_vision = 1
+		body_armor = 1
+		camouflage = 1
+		
+		## Support Companies ##
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		
+		## Armor ##
+		main_battle_tank1 = 1
+		main_battle_tank2 = 1
+		main_battle_tank3 = 1
+		light_tank1 = 1
+		light_tank2 = 1
+		mechanised_infantry1 = 1
+		light_mechanized_infantry1 = 1
+		
+		## Artillery ##
+		gw_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		tank_destroyer1 = 1
+		self_propelled_aa1 = 1
+		interwar_artillery = 1
+		sp_artillery1 = 1
+		
+		## Engineering ##
+		electronic_mechanical_engineering = 1
+		radio = 1
+		
+		## Industry ##
+		basic_machine_tools = 1
+		fuel_silos = 1
+		fuel_refining = 1
+		
+		## Doctrines ##
+		#formation_flying = 1
+	}
+	
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_technology = {
+				aa_lmg = 1
+				aa_cannon_1 = 1
+				aa_hmg = 1
+				engines_1 = 1
+				engines_2 = 1
+				early_bombs = 1
+				guided_bombs = 1
+				aircraft_construction = 1
+				survivability_studies = 1
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				iw_large_airframe = 1
+			}
+		else = {
+			set_technology = {
+				CAS1 = 1
+				CAS2 = 1
+				fighter1 = 1
+				fighter2 = 1
+				fighter3 = 1
+				strategic_bomber1 = 1
+				tactical_bomber1 = 1
+			}
+		}
+	}
+
+	add_ideas = {
+		CZE_gdp_fix
+		visegrad_group_member
+		higher_trade
+		high_poverty
+	}
+
+	add_opinion_modifier = {
+		target = HUN
+		modifier = visegrad_group
+	}
+	add_opinion_modifier = {
+		target = PLD
+		modifier = visegrad_group
+	}
+	add_opinion_modifier = {
+		target = PLD
+		modifier = visegrad_group
+	}
+	add_opinion_modifier = {
+		target = SLO
+		modifier = visegrad_group
+	}
+	
+	set_politics = {
+		ruling_party = market_liberal
+		last_election = "2018.1.26"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		fascist = 1
+		authoritarian_democrat = 13
+		conservative = 20
+		market_liberal = 40
+		social_liberal = 12
+		social_democrat = 8
+		communist = 6
+	}

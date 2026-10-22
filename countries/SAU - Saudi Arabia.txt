@@ -1,0 +1,490 @@
+﻿	capital = 1126
+
+	oob = "SAU_2020"
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "SAU_2000_naval_mtg"
+		else = {
+			set_naval_oob = "SAU_2000_naval_legacy"
+		}
+	}
+
+	set_research_slots = 4
+	set_convoys = 370
+	set_stability = 0.55
+
+	set_country_flag = developed_country
+	set_country_flag = psf_member
+
+	set_variable = { Russian_Influence = 0.00 }
+	set_variable = { Chinese_Influence = 0.25 }
+	set_variable = { American_Influence = 0.60 }
+	set_variable = { European_Influence = 0.05 }
+	set_variable = { PDO_Influence = 0.00 }
+	set_variable = { Sovereign_Influence = 0.10 }
+
+	recruit_character = SAU_salman_bin_abdulaziz_char
+	recruit_character = SAU_mohammed_bin_salman_char
+	recruit_character = SAU_Fayyadh_Al_Ruwaili_char
+	recruit_character = SAU_fahd_bin_saud_char
+	recruit_character = SAU_Fahd_bin_Abdullah_Al_Mutair_char
+	recruit_character = SAU_Fahd_bin_Turki_Al_Saud_char
+	recruit_character = SAU_Khalid_bin_Sultan_Al_Saud_char
+	recruit_character = SAU_Sulaiman_Al_Amro_char
+	recruit_character = SAU_Fahd_bin_Abdullah_Al_Ghufaili_char
+	recruit_character = SAU_Ahmed_Hassan_Mohammad_Asseri_char
+	recruit_character = SAU_Turki_Al_Maliki_char
+	recruit_character = SAU_Turki_bin_Bandar_Al_Saud_char
+	recruit_character = SAU_fattyTFR_char
+    recruit_character = SAU_fatassTFR_char
+	recruit_character = SAU_fatsoTFR_char
+	recruit_character = SAU_skinnytfr_char
+ 
+	set_technology = {
+		## Infantry ##
+		
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		motorised_infantry = 1
+		infantry_rifle_upgrade = 2
+		support_weapons = 2
+		support_weapons2 = 1
+		night_vision = 1
+		body_armor = 1
+		camouflage = 2
+		paratroopers = 1
+		tech_mountaineers = 1
+		tech_rangers = 1
+		basic_train = 1
+		
+		## Support Companies ##
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		
+		## Armor ##
+		mechanised_infantry1 = 1
+		light_mechanized_infantry1 = 1
+		light_mechanized_infantry2 = 1
+		
+		## Artillery ##
+		gw_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		rocket_artillery = 1
+		interwar_artillery = 1
+		sp_artillery1 = 1
+		self_propelled_aa1 = 1
+		
+		## Air ##
+		transport_plane2 = 1
+		attack_helicopter_1 = 1
+		utility_helicopter_1 = 1
+		
+		## Engineering ##
+		electronic_mechanical_engineering = 1
+		power_plants = 1
+		power_plants1 = 1
+	    energy_farms = 1
+	
+		## Industry ##
+		basic_machine_tools = 1
+		
+		## Doctrines ##
+		
+	}
+	
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "SAU_2020_air_bba"
+			set_technology = {
+				aa_lmg = 1
+				aa_cannon_1 = 1
+				aa_hmg = 1
+				engines_1 = 1
+				engines_2 = 1
+				early_bombs = 1
+				guided_bombs = 1
+				aircraft_construction = 1
+				survivability_studies = 1
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				iw_large_airframe = 1
+			}
+		else = {
+			set_air_oob = "SAU_2020_air_legacy"
+			set_technology = {
+				CAS1 = 1
+				CAS2 = 1
+				fighter1 = 1
+				fighter2 = 1
+				naval_bomber1 = 1
+				naval_bomber2 = 1
+				strategic_bomber1 = 1
+				strategic_bomber2 = 1
+				scout_plane1 = 1
+				transport_plane2 = 1
+			}
+		}
+	}
+
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_light_cruiser = 1
+			transport = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		#basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+	
+	
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+			main_battle_tank1 = 1
+			main_battle_tank2 = 1
+			main_battle_tank3 = 1
+			light_tank1 = 1
+			light_tank2 = 1
+			amphibious_tank1 = 1
+			amphibious_mechanized_infantry1 = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			improved_light_tank_chassis = 1
+			engine_tech_1 = 1
+			legacy_armor_designs = 1
+			amphibious_mechanized_infantry1 = 1
+		}
+	}
+
+	add_ideas = {
+		SAU_gdp_fix
+		#National Spirits
+		arab_league_member
+		SAU_foriegn_advisors
+		SAU_prince_pmcs
+		SAU_petro_dollar
+		SAU_loyal_allegiance_council
+		SAU_memories_of_royal_purge
+		#Ministers
+		SAU_salman_bin_abdulaziz_hog
+		SAU_Prinz_Faisal_bin_Farhan_Al_Saud_for
+		SAU_Mohammad_Al_Tuwaijri_eco
+		SAU_Khalid_bin_Salman_Al_Saud_theorist
+		SAU_Abdulaziz_bin_Saud_sec
+		SAU_Khalid_bin_Ali_Al_Humaidan_int
+		#Laws
+		low_conscription
+		low_female
+		low_female_service
+		low_race
+		lower_taxes
+		medium_interest_rates
+		high_welfare
+		low_safety
+		high_immigration
+		high_poverty
+		higher_police
+		low_prison
+		low_farming
+	}
+	 
+    PER = {
+    add_opinion_modifier = {
+    target = SAU
+    modifier = saudi_iranian_rivaly
+	    }
+	}
+    add_opinion_modifier = {
+    target = PER
+    modifier = saudi_iranian_rivaly
+	}
+	add_opinion_modifier = {
+    target = ISR
+    modifier = Israli_imperialists
+	}
+	add_opinion_modifier = {
+    target = SHB
+    modifier = terrorists
+	}
+	add_opinion_modifier = {
+    target = HOU
+    modifier = houti_terrorists
+	}
+	HOU = {
+	add_opinion_modifier = {
+    target = SAU
+    modifier = saudi_devils
+	    }
+	}
+	SHB = {
+	add_opinion_modifier = {
+    target = SAU
+    modifier = saudi_devils
+	    }
+	}
+
+    QAT = {
+	add_manpower = 50000
+	}
+	
+	give_military_access = USA
+	create_faction = peninsula_shield_force
+	hidden_effect = {
+		remove_faction_goal = faction_goal_the_atomic_race
+		add_faction_goal = faction_goal_placeholder_long_term
+		remove_faction_goal = faction_goal_a_military_base
+		add_faction_goal = faction_goal_placeholder_medium_term
+		add_faction_goal = faction_goal_placeholder_short_term
+	}
+	add_to_faction = SAU
+	add_to_faction = KUW
+	add_to_faction = OMA
+	add_to_faction = UAE
+	add_to_faction = QAT
+	add_to_faction = BAH
+
+	set_politics = {	
+		ruling_party = nationalist
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		authoritarian_democrat = 17
+		nationalist = 68
+		conservative = 11
+		social_liberal = 3
+		fascist = 1
+	}
+	
+	
+	
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "M1 Abrams"
+			type = modern_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_cast_armor
+				engine_type_slot = tank_gas_turbine_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = wet_ammo_storage
+				special_type_slot_4 = extra_ammo_storage
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 4
+			}
+			icon = "gfx/interface/technologies/armor/MBT_2000_M1A1_Abrams.dds"
+		}
+		create_equipment_variant = {
+			name = "AMX-30"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = extra_ammo_storage
+				special_type_slot_3 = smoke_launchers
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 3
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/armor/FRA_modern_tank1.png"
+		}
+	}
+	
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+
+		create_equipment_variant = {
+			name = "F-4E"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = hmg_defense_turret
+				special_type_slot_2 = hmg_defense_turret
+			}
+			icon = "GFX_USA_CAS1_medium"
+		}
+
+		create_equipment_variant = {
+			name = "F-15E"
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_USA_fighter2_medium"
+		}
+		create_equipment_variant = {
+			name = "F-16"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = hmg_defense_turret
+			}
+			icon = "GFX_USA_fighter3_medium"
+		}
+	}
+	### VARIANTS ###
+# 2000 Start #
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	#frigates#
+	create_equipment_variant = {
+		#frigate 1
+		name = "La-Fayette class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			rear_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = ship_light_battery_1
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		#frigate 2
+		name = "Al Madinah class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+		obsolete = no
+	}
+    ## Corvettes ##
+	create_equipment_variant = {
+		#Corvette 1
+		name = "Avante 2200 class"
+		type = ship_hull_light_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		#Corvette 2
+		name = "Badr class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
+	}
+    #Tiny corvettes#
+	create_equipment_variant = {
+		#Corvette 3
+		name = "HSI 32 class"
+		type = ship_hull_light_2
+		parent_version = 0
+		modules = {
+			mid_1_custom_slot = ship_torpedo_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+		}
+		obsolete = no
+	}
+}

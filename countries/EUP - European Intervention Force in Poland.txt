@@ -1,0 +1,324 @@
+capital = 742
+	
+	oob = "" #Hier die arme adden
+	
+	recruit_character = EUP_Erhard_Buhler_pol_char
+	
+	set_research_slots = 4
+	set_convoys = 250
+	set_stability = 0.75
+	
+	set_war_support = 0.5
+	set_country_flag = developed_country
+	
+	set_party_name = {
+	    ideology = totalitarian_socialist 
+	    long_name = SOV_outlawed_party
+		name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = communist 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = libertarian_socialist 
+    	long_name = "Decentrelised Minor parties"
+    	name = "Decentrelised Minor parties"
+	}
+	set_party_name = {
+    	ideology = social_democrat 
+    	long_name = "Ludzie, razem!"
+    	name = "LR"
+	}
+	set_party_name = {
+    	ideology = social_liberal 
+    	long_name = "Patia Uni Polskiey"
+    	name = "PUP"
+	}
+	set_party_name = {
+	   	ideology = market_liberal 
+    	long_name = "Deutsche Liberale Partei"
+		name = "DLP"
+	}
+	set_party_name = {
+    	ideology = conservative 
+    	long_name = "Koalicja ludzi prawicy"
+    	name = "KLP"
+	}
+	set_party_name = {
+    	ideology = authoritarian_democrat 
+    	long_name = "Polska impreza na rzecz niepodległości narodowej"
+    	name = "niezależność"
+	}
+	set_party_name = {
+    	ideology = nationalist 
+    	long_name = "European Intervention Forces in Poland"
+    	name = "European Intervention Forces in Poland"
+	}
+	set_party_name = {
+    	ideology = fascist 
+    	long_name = SOV_outlawed_party
+    	name = SOV_outlawed_party
+	}
+	set_party_name = {
+    	ideology = national_socialist 
+    	long_name = SOV_outlawed_party
+		name = SOV_outlawed_party
+	}
+	
+	set_variable = { Russian_Influence = 0.05 }
+	set_variable = { Chinese_Influence = 0.00 }
+	set_variable = { American_Influence = 0.0 }
+	set_variable = { European_Influence = 0.85 }
+	set_variable = { PDO_Influence = 0.00 }
+	set_variable = { Sovereign_Influence = 0.1 }
+	
+set_technology = {
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_weapons3 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	infantry_rifle_upgrade2 = 1
+	infantry_rifle_upgrade3 = 1
+	upgraded_infantry_weapons1 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	night_vision = 1
+	night_vision2 = 1
+	night_vision3 = 1
+	body_armor = 1
+	body_armor2 = 1
+	body_armor3 = 1
+	camouflage = 1
+	camouflage2 = 1
+	camouflage3 = 1
+	tech_mountaineers = 1
+	tech_rangers = 1
+	paratroopers = 1
+	basic_train = 1
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	## Armor ##
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	mechanised_infantry3 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	light_mechanized_infantry3 = 1
+	self_propelled_aa1 = 1
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	rocket_artillery = 1
+	interwar_artillery = 1
+	sp_artillery1 = 1
+	self_propelled_aa1 = 1
+	artillery1 = 1
+	antitank1 = 1
+	antitank2 = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	## Air ##
+	attack_helicopter_1 = 1
+	utility_helicopter_1 = 1
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	power_plants = 1
+	power_plants1 = 1
+	nuclear_reactors = 1
+	energy_farms = 1
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	synth_oil_experiments = 1
+	## Doctrines ##
+	#mobile_warfare = 1
+	#fleet_in_being = 1
+	#formation_flying = 1
+}
+	
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			#set_air_oob = "BPR_2020_air_bba"  #NO YET ADDED SO ITS TURNED OOF#
+			set_technology = {
+				aa_lmg = 1
+				aa_cannon_1 = 1
+				aa_hmg = 1
+				engines_1 = 1
+				engines_2 = 1
+				early_bombs = 1
+				guided_bombs = 1
+				aircraft_construction = 1
+				survivability_studies = 1
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				iw_large_airframe = 1
+			}
+		else = {
+			#set_air_oob = "BPR_2020_air_legacy" #NOT YET ADDED SO ITS TURNED OOF#
+			set_technology = {
+				CAS1 = 1
+				CAS2 = 1
+				fighter1 = 1
+				fighter2 = 1
+				naval_bomber1 = 1
+				naval_bomber2 = 1
+				strategic_bomber1 = 1
+				strategic_bomber2 = 1
+				scout_plane1 = 1
+				transport_plane2 = 1
+			}
+		}
+	}
+	
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			early_submarine = 1
+			basic_submarine = 1
+			transport = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+			basic_ship_hull_cruiser = 1
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			smoke_generator = 1
+			sonar = 1
+			basic_depth_charges = 1
+			improved_airplane_launcher = 1
+			basic_cruiser_armor_scheme = 1
+			basic_torpedo = 1
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			#basic_secondary_battery = 1
+			mtg_transport = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+	}
+	
+	if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		main_battle_tank1 = 1
+		main_battle_tank2 = 1
+		main_battle_tank3 = 1
+		light_tank1 = 1
+		light_tank2 = 1
+		amphibious_tank1 = 1
+		amphibious_mechanized_infantry1 = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		improved_medium_tank_chassis = 1
+		engine_tech_1 = 1
+		apds_tech = 1
+		turret_mounted_mg_tech = 1
+		heat_tech = 1
+		turret_mounted_atgm_tech = 1
+		apfsds_tech = 1
+		blow_out_compartment_tech = 1
+		auto_cannon_tech = 1
+		legacy_armor_designs = 1
+		armor_tech_1 = 1
+		armor_tech_2 = 1
+	}
+}
+	
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "2015.5.24"
+		election_frequency = 0
+		elections_allowed = no
+	}
+
+	set_popularities = { 
+		fascist = 1
+		nationalist = 50
+		libertarian_socialist = 2
+		totalitarian_socialist = 1
+		conservative = 17
+		social_liberal = 5
+		market_liberal = 16
+		authoritarian_democrat = 3
+		social_democrat = 5
+	}
+	
+	add_ideas = {
+	EUP_gdp_fix
+	#laws#
+	high_police
+	#GovType#
+	add_ideas = { ZZZ_military_dictatorship }
+	add_ideas = { ZZZ_military_controlled_economy }
+	#custom ideas#
+	EUP_European_Economic_Support
+	}
+	
+	if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	
+	create_equipment_variant = {
+		name = "Leopard 2A5"
+		type = modern_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon
+			turret_type_slot = tank_modern_tank_turret
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = smoke_launchers
+			special_type_slot_2 = wet_ammo_storage
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "gfx/interface/technologies/armor/gen_modern_tank3.dds"
+	}
+}
