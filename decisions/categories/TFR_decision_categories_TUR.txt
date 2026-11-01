@@ -1,8 +1,0 @@
-TUR_Proping_Up_HTS = {
-´icon = Saudi-civilprep
-
- allowed = {
-		original_tag = TUR
-		country_exists = HTS
-	}
-}
