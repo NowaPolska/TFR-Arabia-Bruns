@@ -1,0 +1,25 @@
+state={
+	id=1466
+	name="STATE_1466"
+	provinces={
+		58 61 101 148 151 190 3054 3095 3179 6055 6074 6155 6170 6206 6208 9083 9178 11060 11102 11155 11208 13119 
+	}
+	resources={
+		steel=85.000
+		tungsten=26.000
+		chromium=18.000
+	}
+	history = {
+		owner = SWE
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+			power_plant = 1
+			energy_farm = 1
+		}
+	}
+	manpower=48989
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

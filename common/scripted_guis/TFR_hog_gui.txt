@@ -1,0 +1,23 @@
+scripted_gui = {
+
+	TFR_head_of_gov_icon = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "TFR_head_of_gov_tt_container"
+		
+		visible = {
+			has_country_flag = head_of_gov_ui_enabled
+			NOT ={
+				OR = {
+					has_government = totalitarian_socialist
+					has_government = national_socialist
+					is_puppet = yes
+					has_completed_focus = GER_facit_omnia_voluntas
+					has_completed_focus = GER_a_new_october
+					has_completed_focus = GER_convene_the_european_parliament
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,209 @@
+Division_Template = {
+    name = "Brigada Jaszczurczy"
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }	
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+	artillery = { x = 0 y = 0 }
+	engineer = { x = 0 y = 1 }
+	military_police = ( x = 0 y = 2 }
+}
+division_template = {
+	name = "Elitarna Brigade Jaszczurczy"
+
+	regiments = {
+	    modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_mechanized = { x = 1 y = 3 }
+		light_mechanized = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+		spaa_brigade = { x = 3 y = 1 }
+		
+	}
+	support = {
+	artillery = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Motorisowana Brigada"
+
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		spaa_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {	
+		name = "1. Elitarna Brigada Jaszczurczy <<Wilki>>"
+		location = 11478
+		division_template = "Elitarna Brigade Jaszczurczy"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "2. Brigada Jaszczurczy"
+		location = 9387
+		division_template = "Brigada Jaszczurczy"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {	
+		name = "3. Brigada Jaszczurczy"
+		location = 3438
+		division_template = "Brigada Jaszczurczy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {	
+		name = "4. Brigada Jaszczurczy"
+		location = 9470
+		division_template = "Brigada Jaszczurczy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {	
+		name = "1. Brigada Motorisowana"
+		location = 9387
+		division_template = "Motorisowana Brigada"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "5. Brigada Jaszczurczy"
+		location = 3572
+		division_template = "Brigada Jaszczurczy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+
+instant_effect = {
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_2
+		amount = 5000
+		producer = SOV 
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 350
+		producer = SER
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_2
+		amount = 350
+		producer = BEL
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 1300
+		producer = BEL
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 1300
+		producer = NOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1			
+		amount = 500
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_destroyer_equipment_1			
+		amount = 100
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1			
+		amount = 200
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_1
+		amount = 500
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_2
+		amount = 50
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_equipment_3
+		amount = 20
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_mechanized_equipment_1
+		amount = 100
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 50
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 700
+		producer = BEL
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 200
+		producer = BEL
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1			
+		amount = 700
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = modern_tank_artillery_equipment_1
+		amount = 20
+		producer = SOV
+	}
+}

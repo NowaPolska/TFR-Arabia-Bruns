@@ -1,0 +1,36 @@
+on_actions = {
+	on_weekly_GMA = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					surrender_progress < 0.1
+					is_in_faction_with = FAA
+				}
+				country_event = aof.3
+			}
+		}
+	}
+	on_weekly_FAA = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					surrender_progress < 0.1
+					is_in_faction_with = GMA
+				}
+				country_event = aof.4
+			}
+			if = {
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					is_in_faction_with = GMC
+					GMC = {
+						surrender_progress < 0.1
+					}
+				}
+				country_event = aof.5
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+state={
+	id=859
+	name="STATE_859"
+	provinces={
+		12817 14952
+	}
+	history = {
+		owner = NGA
+		add_core_of = NGA
+		victory_points = { 12817 5 }
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+	}
+	manpower=2300000
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

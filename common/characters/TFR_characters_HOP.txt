@@ -1,0 +1,16 @@
+characters = {
+		HOP_mateusz_zmigrodzki_char = {
+		name = "Mateusz Zmigrodzki"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/HOP/mateusz_zmigrodzki.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = theocracy
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	}

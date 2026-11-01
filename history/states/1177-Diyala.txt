@@ -1,0 +1,21 @@
+state = {
+	id = 1177
+	name = "STATE_1177"
+	manpower = 380241
+	state_category = village
+	
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+		add_claim_by = KUR
+		victory_points = { 8123 5 }	#Kirkuk
+		victory_points = { 14004 3 }	#Tikrit
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces = {
+		10793 8123 14004
+	}
+}

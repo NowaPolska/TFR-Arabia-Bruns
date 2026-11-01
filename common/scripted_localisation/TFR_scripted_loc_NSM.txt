@@ -1,0 +1,18 @@
+defined_text = {
+	name = NSM_national_front_category_text
+	text = {
+		trigger = {
+			USA_is_nationalist_tag = yes
+			NOT = {
+				tag = ATW
+			}
+		}
+		localization_key = NSM_national_front_category_loc
+	}
+	text = {
+		trigger = {
+			tag = ATW
+		}
+		localization_key = ATW_national_front_category_loc
+	}
+}

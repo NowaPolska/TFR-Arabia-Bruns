@@ -1,0 +1,376 @@
+	ideas = {
+		country = {
+			PER_saudi_volunteers = {
+				picture = "GFX_idea_florida_siege"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					send_volunteer_size = 2
+				}
+			}
+			
+			PER_widespread_corruption = {
+				picture = "PER_troubling_corruption"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					foreign_minister_cost_factor = 0.10
+					economic_minister_cost_factor = 0.10
+					interior_minister_cost_factor = 0.10
+					intelligence_minister_cost_factor = 0.10
+					income_growth_factor = -0.025
+					army_org = -10
+				}
+			}
+			
+			PER_widespread_corruption_2 = {
+				picture = "GFX_idea_florida_siege"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					foreign_minister_cost_factor = 0.25
+					economic_minister_cost_factor = 0.25
+					interior_minister_cost_factor = 0.25
+					intelligence_minister_cost_factor = 0.25
+					income_growth_factor = -0.1
+				}
+			}
+			
+			PER_widespread_corruption_3 = {
+				picture = "GFX_idea_florida_siege"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					foreign_minister_cost_factor = 0.25
+					economic_minister_cost_factor = 0.25
+					interior_minister_cost_factor = 0.25
+					intelligence_minister_cost_factor = 0.25
+					income_growth_factor = -0.05
+				}
+			}
+			
+			PER_widespread_corruption_4 = {
+				picture = "GFX_idea_florida_siege"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					foreign_minister_cost_factor = 0.25
+					economic_minister_cost_factor = 0.25
+					interior_minister_cost_factor = 0.25
+					intelligence_minister_cost_factor = 0.25
+					income_growth_factor = 0.1
+				}
+			}
+			
+			PER_limited_nuclear_program = {
+				picture = "PER_cost_of_the_nuclear_program"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+				consumer_goods_factor = 0.1
+				state_production_speed_industrial_complex_factor = -0.075
+				state_production_speed_arms_factory_factor = 0.025
+				}
+				
+				research_bonus = {
+					nuclear = 0.08
+				}
+			}
+			
+			PER_anti_government_sentiment = {
+				picture = "PER_anti_government_sentiment"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+				stability_factor = -0.1
+				conservative_drift = 0.02
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.25
+				}
+			}	
+			PER_islamic_revolutionary_guard_corps = {
+				picture = PER_islamic_revolutionary_guard_corps
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					decryption = 1.5
+					army_morale_factor = 0.025
+					stability_factor = 0.1
+					resistance_growth = -0.05
+					army_org_factor = 0.05
+					authoritarian_democrat_drift = 0.01
+					battalion_upkeep_factor = 0.05
+				}
+			}		
+			
+			PER_glory_of_islamic_revolution = {
+				picture = PER_glory_of_islamic_revolution
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_factor = 0.07
+					war_support_factor = 0.15
+					conscription_factor = 0.02
+					army_defence_factor = 0.025
+				}
+			}	
+			
+			PER_islamic_republic_stronghold_idea = {
+				picture = PER_islamic_republic_stronghold_idea
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_factor = 0.07
+					war_support_factor = 0.15
+				}
+				targeted_modifier = {
+					tag = PER
+					extra_trade_to_target_factor = 0.5
+					mic_to_target_factor = 0.05
+					cic_to_target_factor = 0.1
+				}
+			}
+
+			SAR_iranian_advisors = {
+				picture = "GFX_idea_florida_siege"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					land_reinforce_rate = 0.05
+					max_planning = 0.1
+				}
+			}
+
+			PER_iraq_war = {
+				picture = GFX_idea_IRQ_iraqi_civil_war
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				modifier = {
+					land_reinforce_rate = 0.05
+					army_morale_factor = 0.15
+					surrender_limit = -0.999
+				}
+			}
+		    PER_Advisors_to_yemen = {
+			    picture = GFX_idea_IRQ_iraqi_civil_war
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = yes
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				modifier = {
+			    army_attack_factor = 0.05
+			    army_defence_factor = 0.05
+				army_org_factor = 0.075
+				army_morale_factor = 0.025
+				}
+			}
+		}
+				
+		head_minister = {
+			PER_Rouhani = {
+				picture = PER_Rouhani
+				
+				allowed = {
+					original_tag = PER
+					
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				visible = {
+				}
+				
+				traits = { 
+					hog_distinguished_gentleman
+				}
+			}	
+			PER_Raisi = {
+				picture = PER_Raisi
+				
+				allowed = {
+					original_tag = PER
+					
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				visible = {
+				}
+				
+				traits = { 
+					hog_fundementalist
+				}
+			}	
+			PER_Pezeshkian = {
+				picture = PER_Pezeshkian
+				
+				allowed = {
+					original_tag = PER
+					
+				}
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				visible = {
+				}
+				
+				traits = { 
+					hog_naive_optimist
+				}
+			}
+		}
+	}

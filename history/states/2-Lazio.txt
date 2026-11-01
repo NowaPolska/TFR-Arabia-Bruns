@@ -1,0 +1,26 @@
+state= {
+	id = 2
+	name = "STATE_2" #Latium
+	manpower = 2865000
+	state_category = suburb
+	
+	resources = {
+		steel = 22
+	}
+	
+	history = {
+		owner = ITA
+		add_core_of = ITA
+		victory_points = { 11846 2 } #Latina
+		victory_points = { 6862 2 } #Viterbo
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			11846 = { naval_base = 2 }
+		}
+	}
+	
+	provinces= {
+		923 6862 9794 11846 11882
+ 	}
+}

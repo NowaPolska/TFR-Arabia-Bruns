@@ -1,0 +1,296 @@
+#LEBANON ELEcTIONS MINIGAME
+#ELEcTIONS TIMEOUT
+Lebanese_Elections = {
+	LEB_Elections_results = {
+
+		priority = 1000
+
+		icon = revolt
+
+		allowed = {
+			original_tag = LEB
+		}
+
+		days_mission_timeout = 100
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		selectable_mission = no
+
+		visible = {
+			hidden_trigger = {
+				LEB = {
+					has_country_flag = Leb_election_race_beginns
+					NOT = {
+						has_country_flag = LEB_Elections_over
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		is_good = no
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			set_country_flag = LEB_Elections_over
+			clr_country_flag = Leb_election_race_beginns
+
+			if = {
+				limit = {
+					check_variable = { var = leb_election_sau value = leb_election_leb compare = greater_than }
+					check_variable = { var = leb_election_sau value = leb_election_hez compare = greater_than }
+				}
+				country_event = { id = lebanon.5 hours = 6 } # SAU-Kandidat gewinnt
+			}
+			else_if = {
+				limit = {
+					check_variable = { var = leb_election_leb value = leb_election_sau compare = greater_than }
+					check_variable = { var = leb_election_leb value = leb_election_hez compare = greater_than }
+				}
+				country_event = { id = lebanon.4 hours = 6 } # LEB-Kandidat gewinnt
+			}
+			else = {
+				country_event = { id = lebanon.6 hours = 6 } # PER/Hezbollah-Kandidat gewinnt
+			}
+		}
+	}
+	SAU_Elections_results = { #this is so saudi arabia can see when the elections end
+    
+		priority = 1000
+
+		icon = revolt
+
+		allowed = {
+			original_tag = SAU
+		}
+
+		days_mission_timeout = 100
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		selectable_mission = no
+
+		visible = {
+			hidden_trigger = {
+				LEB = {
+					has_country_flag = Leb_election_race_beginns
+					NOT = {
+						has_country_flag = LEB_Elections_over
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		is_good = no
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+		    }
+		}
+
+	#saudi arabia boosting
+	SAU_leb_election_boost_decision = {
+		icon = generic_political_pressure
+		allowed = { original_tag = SAU }
+		visible = { 
+		LEB = { 
+		has_country_flag = Leb_election_race_beginns
+		NOT = {
+		has_country_flag = LEB_Elections_over
+		        }
+		    }
+		}
+		available = { always = yes }
+
+		cost = 100
+		days_re_enable = 20
+
+		complete_effect = {
+			LEB = {
+				add_to_variable = { var = leb_election_sau value = 6 }
+				subtract_from_variable = { var = leb_election_leb value = 3 }
+				subtract_from_variable = { var = leb_election_hez value = 3 }
+
+				if = { limit = { check_variable = { var = leb_election_sau value = 100 compare = greater_than } } set_variable = { var = leb_election_sau value = 100 } }
+				if = { limit = { check_variable = { var = leb_election_leb value = 0 compare = less_than } } set_variable = { var = leb_election_leb value = 0 } }
+				if = { limit = { check_variable = { var = leb_election_hez value = 0 compare = less_than } } set_variable = { var = leb_election_hez value = 0 } }
+			}
+		}
+		ai_will_do = { factor = 15 }
+	}
+	#SAU TV ads
+	SAU_leb_tv_ads_decision = {
+		icon = generic_political_pressure
+		allowed = { original_tag = SAU }
+		visible = { 
+		LEB = { 
+		has_country_flag = Leb_election_race_beginns
+		NOT = {
+		has_country_flag = LEB_Elections_over
+		        }
+		    }
+		}
+		available = { always = yes }
+
+		cost = 50
+		days_re_enable = 15
+
+		complete_effect = {
+			LEB = {
+				add_to_variable = { var = leb_election_sau value = 4 }
+				subtract_from_variable = { var = leb_election_leb value = 1 }
+				subtract_from_variable = { var = leb_election_hez value = 1 }
+
+				if = { limit = { check_variable = { var = leb_election_sau value = 100 compare = greater_than } } set_variable = { var = leb_election_sau value = 100 } }
+				if = { limit = { check_variable = { var = leb_election_leb value = 0 compare = less_than } } set_variable = { var = leb_election_leb value = 0 } }
+				if = { limit = { check_variable = { var = leb_election_hez value = 0 compare = less_than } } set_variable = { var = leb_election_hez value = 0 } }
+			}
+		}
+		ai_will_do = { factor = 15 }
+	}
+	#make election posters
+	SAU_leb_votes_posters_decision = {
+		icon = generic_political_pressure
+		allowed = { original_tag = SAU }
+		visible = { 
+		LEB = { 
+		has_country_flag = Leb_election_race_beginns
+		NOT = {
+		has_country_flag = LEB_Elections_over
+		        }
+		    }
+		}
+		available = { always = yes }
+
+		cost = 25
+		days_re_enable = 10
+
+		complete_effect = {
+			LEB = {
+				add_to_variable = { var = leb_election_sau value = 2 }
+
+				if = { limit = { check_variable = { var = leb_election_sau value = 100 compare = greater_than } } set_variable = { var = leb_election_sau value = 100 } }
+				if = { limit = { check_variable = { var = leb_election_leb value = 0 compare = less_than } } set_variable = { var = leb_election_leb value = 0 } }
+				if = { limit = { check_variable = { var = leb_election_hez value = 0 compare = less_than } } set_variable = { var = leb_election_hez value = 0 } }
+			}
+		}
+		ai_will_do = { factor = 15 }
+	}
+
+	#Lebanese elections boost
+	LEB_leb_election_boost_decision = {
+		icon = generic_political_pressure
+		allowed = { original_tag = LEB }
+		visible = { 
+			LEB = { 
+				has_country_flag = Leb_election_race_beginns 
+				NOT = { has_country_flag = LEB_Elections_over }
+			} 
+		}
+		available = { always = yes }
+
+		cost = 150
+		days_re_enable = 30
+
+		complete_effect = {
+			LEB = {
+				add_to_variable = { var = leb_election_leb value = 6 }
+				subtract_from_variable = { var = leb_election_sau value = 3 }
+				subtract_from_variable = { var = leb_election_hez value = 3 }
+
+				if = { limit = { check_variable = { var = leb_election_leb value = 100 compare = greater_than } } set_variable = { var = leb_election_leb value = 100 } }
+				if = { limit = { check_variable = { var = leb_election_sau value = 0 compare = less_than } } set_variable = { var = leb_election_sau value = 0 } }
+				if = { limit = { check_variable = { var = leb_election_hez value = 0 compare = less_than } } set_variable = { var = leb_election_hez value = 0 } }
+			}
+		}
+		ai_will_do = { factor = 50 }
+	}
+
+	#Iran aka Hezbollah elections boost
+	HEZ_leb_election_boost_decision = {
+		icon = generic_political_pressure
+		allowed = { original_tag = HEZ }
+		visible = { 
+			LEB = { 
+				has_country_flag = Leb_election_race_beginns 
+				NOT = { has_country_flag = LEB_Elections_over }
+			} 
+		}
+		available = { always = yes }
+
+		cost = 150
+		days_re_enable = 30
+
+		complete_effect = {
+			LEB = {
+				add_to_variable = { var = leb_election_hez value = 6 }
+				subtract_from_variable = { var = leb_election_sau value = 3 }
+				subtract_from_variable = { var = leb_election_leb value = 3 }
+
+				if = { limit = { check_variable = { var = leb_election_hez value = 100 compare = greater_than } } set_variable = { var = leb_election_hez value = 100 } }
+				if = { limit = { check_variable = { var = leb_election_sau value = 0 compare = less_than } } set_variable = { var = leb_election_sau value = 0 } }
+				if = { limit = { check_variable = { var = leb_election_leb value = 0 compare = less_than } } set_variable = { var = leb_election_leb value = 0 } }
+			}
+		}
+		ai_will_do = { factor = 50 }
+	}
+}
+
+#### Russia buff for better balencing, due to the acctivation of Minor Nato ai countryies ####
+
+LEB_Ruzzia_buff = {
+
+    LEB_Sigma_Ruzzia_buff = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = LEB
+	}
+	
+	available = {
+    tag = LEB
+    SOV = {
+	    has_war_with = GER 
+	    }
+    }
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 0
+	
+	fire_only_once = yes
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	
+	remove_effect = {
+	SOV = {
+		add_timed_idea = {
+            idea = SAU_ruzzia_buff
+            days = 100
+			    }
+		    }
+		}
+	}
+}

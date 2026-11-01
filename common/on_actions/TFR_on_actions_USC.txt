@@ -1,0 +1,268 @@
+on_actions = {
+	on_weekly_USC = {
+		effect = {
+			set_temp_variable = {
+				var = USC_rage_var_temp
+				value = modifier@rage_weekly
+			}
+			USC_add_rage = yes
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						USA_is_rival_tag = yes
+						NOT = {
+							tag = USC
+						}
+					}
+					FROM = {
+						tag = USC
+					}
+					FROM.FROM = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+				}
+				FROM = {
+					country_event = {
+						id = usc.7
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						USA_is_rival_tag = yes
+						NOT = {
+							tag = USC
+						}
+					}
+					FROM = {
+						tag = USC
+					}
+					FROM.FROM = {
+						OR = {
+							state = 1253
+							state = 1256
+							state = 1257
+							state = 391
+						}
+					}
+				}
+				FROM = {
+					country_event = {
+						id = usc.46
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						USA_is_rival_tag = yes
+						NOT = {
+							tag = USC
+						}
+					}
+					FROM = {
+						tag = USC
+					}
+					FROM.FROM = {
+						OR = {
+							state = 1120
+							state = 1121
+							state = 373
+							province = 4449
+							province = 4540
+						}
+					}
+				}
+				FROM = {
+					country_event = {
+						id = usc.47
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						USA_is_rival_tag = yes
+						NOT = {
+							tag = USC
+						}
+					}
+					FROM = {
+						tag = USC
+					}
+					FROM.FROM = {
+						OR = {
+							state = 1241
+							state = 1242
+							state = 374
+						}
+					}
+				}
+				FROM = {
+					country_event = {
+						id = usc.48
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						USA_is_rival_tag = yes
+						NOT = {
+							tag = USC
+						}
+					}
+					FROM = {
+						tag = USC
+					}
+					FROM.FROM = {
+						OR = {
+							state = 382
+							state = 1144
+							state = 1145
+							state = 984
+						}
+					}
+				}
+				FROM = {
+					country_event = {
+						id = usc.49
+					}
+				}
+			}
+			if = {
+				#GOP(PTF) joins USC
+				limit = {
+					country_exists = PTF
+					USC = {
+						owns_state = 931
+					}
+					PTF = {
+						has_cosmetic_tag = PTF_GOP_fail
+						NOT = {
+							is_ally_with = USC
+						}
+					}
+				}
+				USC = {
+					add_to_faction = PTF
+					puppet = {
+						target = PTF
+						end_wars = no
+					}
+				}
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			if = {
+				#USC Victory Over USB
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						USA_is_civil_war_faction = yes
+						NOT = {
+							tag = USB
+						}
+					}
+					FROM = {
+						tag = USB
+					}
+					NOT = {
+						country_exists = USB
+					}
+				}
+				USC = {
+					country_event = {
+						id = usc.10
+					}
+					annex_country = {
+						target = BDN
+						transfer_troops = yes
+					}
+				}
+			}
+			else_if = {
+				#USC Victory Over APA
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					APA = {
+						NOT = { has_completed_focus = APA_a_new_american_socialism }
+					}
+					USC = {
+						power_balance_value = {
+							id = USC_civil_war_balance
+							value > 0.5
+						}
+						OR = {
+							has_country_flag = USC_left_patriots_enabled_flag
+							has_country_flag = USC_league_american_workers_enabled_flag
+						}
+						NOT = { has_country_flag = USC_techno_rightists_enabled_flag }
+						NOT = { has_country_flag = USC_chirstian_right_enabled_flag }
+					}
+					ROOT = {
+						USA_is_civil_war_faction = yes
+						NOT = {
+							tag = APA
+						}
+					}
+					FROM = {
+						tag = APA
+					}
+					NOT = {
+						country_exists = APA
+					}
+				}
+				USC = {
+					country_event = {
+						id = usc.92
+						days = 35
+						random_days = 10
+					}
+				}
+			}
+		}
+	}
+	on_new_term_election = {
+		random_events = {
+			100 = usc.41
+		}
+	}
+	on_monthly_USC = {
+		effect = {
+			if = {
+				limit = {
+					date < 2021.12.1
+					date > 2022.1.1
+				}
+				country_event = usc.28
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 931
+				}
+				country_event = {
+					id = usc.34
+					days = 2
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 918
+				}
+				country_event = {
+					id = usc.33
+					days = 2
+				}
+			}
+		}
+	}
+}

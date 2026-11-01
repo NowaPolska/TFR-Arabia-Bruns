@@ -1,0 +1,116 @@
+#SAU_army_loyalty = {
+	#initial_value = 0
+	#left_side  = SAU_army_competance_high
+	#right_side = SAU_army_loyalty_high
+	#decision_category = SAU_army_loyalty_bop_decisions
+#
+	# Middle (neutral)
+	#range = {
+		#id = SAU_army_loyalty_balanced_range
+		#min = -0.1
+		#max = 0.1
+		#modifier = {
+			#stability_factor = 0.05
+		#}
+	#}
+#
+	# Army Competance ( LEFT SIDE )
+	#side = {
+		#id = SAU_army_competance_high
+		#icon = ""
+#
+		#range = {
+			#id = SAU_army_competance_low_range
+#			min = -0.3
+#			max = -0.1
+#			modifier = {
+#			    army_morale_factor = 0.025
+#				stability_factor = -0.025
+#				nationalist_drift = -0.01
+#				consumer_goods_factor = 0.02
+#				war_support_factor = 0.05
+#				breakthrough_factor = 0.02
+#			}
+#			on_activate = { }
+#			on_deactivate = { }
+#		}
+#		range = {
+#			id = SAU_army_competance_high_range
+#			min = -0.8
+#			max = -0.3
+#			modifier = {
+#			    army_morale_factor = 0.05
+#				stability_factor = -0.075
+#				breakthrough_factor = 0.04
+#				nationalist_drift = -0.02
+#				consumer_goods_factor = 0.04
+#				war_support_factor = 0.1
+#			}
+#			on_activate = { }
+#			on_deactivate = { }
+#		}
+#		range = {
+#			id = SAU_army_competance_very_high_range
+#			min = -1.0
+#			max = -0.8
+#			modifier = {
+#				army_morale_factor = 0.075
+#				stability_factor = -0.10
+#				breakthrough_factor = 0.08
+#				nationalist_drift = -0.03
+#				consumer_goods_factor = 0.06
+#				war_support_factor = 0.2
+#			}
+#			on_activate = { }
+#			on_deactivate = { }
+#		}
+#	}
+#
+#	# Army Loyalty ( RIGHT SIDE )
+#	side = {
+#		id = SAU_army_loyalty_high
+#		icon = ""
+#
+#		range = {
+#			id = SAU_army_loyalty_low_range
+#			min = 0.1
+#			max = 0.3
+#			modifier = {
+#				experience_gain_army = 0.05
+#				army_attack_factor = -0.025
+#				consumer_goods_factor = -0.02
+#				nationalist_drift = 0.01
+#			}
+#			on_activate = { }
+#			on_deactivate = { }
+#		}
+#		range = {
+#			id = SAU_army_loyalty_high_range
+#			min = 0.3
+#			max = 0.8
+#			modifier = {
+#				experience_gain_army = 0.065
+#				army_attack_factor = -0.05
+#				nationalist_drift = 0.02
+#				consumer_goods_factor = -0.04
+#			}
+#			on_activate = { }
+#			on_deactivate = { }
+#		}
+#		range = {
+#			id = SAU_army_loyalty_very_high_range
+#			min = 0.8
+#			max = 1.0
+#			modifier = {
+#				military_factory_donations = 1
+#				stability_factor = 0.15
+#				experience_gain_army = 0.1
+#				army_attack_factor = -0.075
+#				nationalist_drift = 0.03
+#				consumer_goods_factor = -0.06
+#			}
+#			on_activate = { }
+#			on_deactivate = { }
+#		}
+#	}
+#}

@@ -1,0 +1,60 @@
+﻿add_namespace = slovakia
+
+#2024 presidential elections
+country_event = {
+	id = slovakia.1
+	title = slovakia.1.t
+	desc = slovakia.1.d
+	picture = GFX_election
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = slovakia.1.a
+		 retire_country_leader = yes
+		recruit_character = SLO_Peter_Pellegrini_char
+		promote_character = SLO_Peter_Pellegrini_char
+		set_politics = {
+			ruling_party = social_democrat 
+			last_election = "2024.4.1"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = social_democrat 
+            popularity = 0.25
+        }
+	}
+	option = {
+	   name = slovakia.1.b
+	   retire_country_leader = yes
+		recruit_character = SLO_Ivan_Korčok_char
+		promote_character = SLO_Ivan_Korčok_char
+		set_politics = {
+			ruling_party = social_liberal
+			last_election = "2024.4.1"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.25
+        }
+	}
+	option = {
+	   name = slovakia.1.c
+	   retire_country_leader = yes
+		recruit_character = SLO_Igor_Matovič_char
+		promote_character = SLO_Igor_Matovič_char
+		set_politics = {
+			ruling_party = conservative
+			last_election = "2024.4.1"
+			election_frequency = 48
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.1
+        }
+	}
+}

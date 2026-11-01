@@ -1,0 +1,864 @@
+focus_tree = {
+	id = SAU_initial_tree
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = SAU
+		}
+	}
+    focus = {
+	id = SAU_Uneasy_20ies
+	icon = GFX_focus_SAU_Uneasy_tweentees
+	
+	x = 12
+	y = 0
+	
+	cost = 3
+	
+	completion_reward = {
+	add_political_power = 100
+	add_stability = -0.05 
+	}
+}
+focus = {
+	id = SAU_Never_ending_oil_money
+	
+	icon = GFX_focus_GER_Increase_Oil_Reserves
+	
+	x = 6
+	y = 1
+	
+	prerequisite = {
+		focus = SAU_Uneasy_20ies
+	}
+	
+	cost = 3
+	
+	completion_reward = {
+		1067 = {
+			add_resource = {
+				type = oil
+				amount = 20
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		1063 = {
+			add_resource = {
+				type = oil
+				amount = 12
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+   id = SAU_A_Dis_United_kingdom
+   
+   icon = GFX_focus_SAU_not_united
+
+   x = 12
+   y = 1
+   
+   prerequisite = {
+   focus = SAU_Uneasy_20ies
+   }
+   
+   cost = 3
+   
+   completion_reward = {
+   add_ideas = low_prison
+   add_stability = 0.05
+   country_event = { id = Saudi.42 }
+   }
+}
+focus = {
+    id = The_Middle_Eastern_chess_game
+	
+	icon = GFX_focus_SAU_middle_eastern_game
+	
+	x = 18
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_Uneasy_20ies
+	}
+	
+	cost = 2
+	
+	completion_reward = {
+	Will Unlock Decisions for Furthern Intervention in Arabian Proxy wars
+	add_political_power = 50
+	}
+}
+focus = {
+    id = SAU_Oil_now_Oil_foreever
+    icon = GFX_focus_SAU_more_Oil
+	
+	x = 4
+	y = 2
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Never_ending_oil_money
+	}
+	
+	mutually_exclusive = {
+        focus = SAU_Ending_the_oil_addiction
+    }
+	
+	completion_reward = {
+	1126 = {
+	add_resource = {
+				type = oil
+				amount = 30
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+}
+focus = {																																																																																																																																																																																												
+    id = SAU_Ending_the_oil_addiction
+	icon = GFX_focus_GER_an_eco_friendly_industry
+	
+	x = 8
+	y = 2
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Never_ending_oil_money
+	}
+	
+	mutually_exclusive = {
+        focus = SAU_Oil_now_Oil_foreever
+    }
+	
+	completion_reward = {
+	1126 = {
+	add_resource = {
+				type = steel
+				amount = 10
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = energy_farm
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+}
+focus = {
+    id = SAU_Subsedise_companys
+	icon = GFX_focus_prioritize_efficient_economics
+	
+	x = 3
+	y = 3
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Oil_now_Oil_foreever
+	}
+	
+	completion_reward = {
+    random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex 
+				level = 2
+				instant_build = yes
+            }
+		}
+	}
+}
+focus = {
+    id = SAU_Infrastructure_epxanion
+	icon = GFX_focus_FRA_Reorganize_Civilian_Infrastructure
+	
+	x = 5
+	y = 3
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Oil_now_Oil_foreever
+	}
+	
+	completion_reward = {
+	292 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+	    }
+    679 = {
+	        add_building_construction = {
+			    type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	1067 = {
+            add_building_construction = {
+			    type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+    id = SAU_The_Growth_will_never_end
+	icon = GFX_focus_SAU_Economic_growth
+	
+	x = 4
+	y = 4
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Infrastructure_epxanion
+	}
+	prerequisite = {
+	focus = SAU_Subsedise_companys
+	}
+	
+	completion_reward = {
+	add_stability = 0.1
+	1126 = {
+     add_extra_state_shared_building_slots = 2
+	 add_building_construction = {
+			    type = office_park
+				level = 2
+				instant_build = yes 
+				}
+			}
+		}
+	}
+focus = {
+    id = SAU_Exploit_the_ground
+	icon = GFX_focus_FRA_Caucasian_Resource_Rights
+	
+	x = 7
+	y = 3
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Ending_the_oil_addiction
+	}
+	
+	completion_reward = {
+	292 = {
+	add_resource = {
+			 type = steel
+			 amount = 25
+			}
+	add_resource = {
+			 type = aluminium
+			 amount = 12
+			}
+	    }
+	679 = {
+	add_resource = {
+	    type = steel 
+		amount = 8
+		}
+	}
+	678 = {
+	add_resource = {
+	type = chromium
+	amount = 8
+	}
+	add_resource = {
+	type = aluminium
+	amount = 12
+	        }
+	    }
+    }
+}
+focus = {
+    id = SAU_Build_Megaprojects
+	icon = GFX_focus_SAU_build_megaprojects
+	
+	x = 9
+	y = 3
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Ending_the_oil_addiction
+	}
+	
+	completion_reward = {
+	set_temp_variable = {
+			var = income_var_temp
+			value = -10
+		}
+	add_income_with_inflation = yes
+			
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+				instant_build = yes
+			}
+		}
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+				instant_build = yes
+			}
+		}
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {    
+    id = SAU_Expand_Army_Profesonalism
+	icon = GFX_focus_FPR_Professionalize_the_Army
+	
+	x = 8
+	y = 4
+	
+	cost = 3
+	
+	prerequisite = {
+	focus = SAU_Build_Megaprojects
+	}
+	prerequisite = {
+	focus = SAU_Exploit_the_ground
+	}
+	
+	completion_reward = {
+	add_ideas = higher_training
+	army_experience = 50
+	   set_temp_variable = { 
+	   var = military_development_var_temp 
+	   value = 0.35
+       }
+	    add_military_development = yes                     
+	}
+}
+focus = {
+    id = SAU_Military_Industrie_Expansion
+	icon = GFX_focus_generic_extend_the_supply_network
+	
+	x = 6
+	y = 4
+	
+	cost = 4
+	
+	prerequisite = {
+	focus = SAU_Never_ending_oil_money
+	}
+	
+	completion_reward = {
+	army_experience = 50
+    air_experience = 25
+    navy_experience = 25
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+focus = {
+    id = SAU_Gather_Supports_From_the_Imams
+	icon = GFX_focus_SAU_Imam
+	
+	x = 10
+	y = 2
+	
+	cost = 2
+	
+	prerequisite = {
+	focus = SAU_A_Dis_United_kingdom
+	}
+	
+	completion_reward = {
+	add_ideas = religious_exemptions
+	add_stability = 0.05
+	}
+}
+focus = {
+    id = SAU_Spread_Saudi_culture
+	icon = GFX_focus_SAU_kulture
+	
+	x = 12
+	y = 2
+	cost = 2
+	prerequisite = {
+	focus = SAU_A_Dis_United_kingdom
+	}
+	
+	completion_reward = {
+	add_timed_idea = {
+	idea = SAU_cool_Saudi_Arabia
+	days = 100
+	    }
+    }
+}
+focus = {
+    id = SAU_Keep_up_with_Western_Standars
+	icon = GFX_focus_PRC_absorb_western_enterprise
+	
+	x = 14
+	y = 2
+	cost = 3
+	prerequisite = {
+	focus = SAU_A_Dis_United_kingdom
+	}
+	
+	completion_reward = {
+	add_political_power = -100
+	add_ideas = high_industry
+	}
+}
+focus = {
+    id = SAU_crackdown_on_Libtards
+	icon = GFX_focus_FRA_Rabid_Anti_Liberalism
+
+	x = 11
+	y = 3
+	cost = 3
+	prerequisite = {
+	focus = SAU_Gather_Supports_From_the_Imams
+	}
+	prerequisite = {
+	focus = SAU_Spread_Saudi_culture
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Focus_on_the_traitors
+	}
+	
+	completion_reward = {
+	add_popularity = {
+            ideology = social_liberal
+            popularity = -0.05
+        }
+	add_popularity = {
+            ideology = conservative
+            popularity = -0.03
+        }
+	ARR = {
+	add_stability = -0.1
+	add_timed_idea = {
+	idea =  SAU_Saudi_Infiltration
+	days = 365
+	        }
+	    }
+    }
+}
+focus = {
+    id = SAU_Focus_on_the_traitors
+	icon = GFX_focus_USC_no_mercy_for_traitors
+	
+	x = 13
+	y = 3
+	cost = 3
+	prerequisite = {
+	focus = SAU_Spread_Saudi_culture
+	}
+	prerequisite = {
+	focus = SAU_Keep_up_with_Western_Standars
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_crackdown_on_Libtards
+	}
+	
+	completion_reward = {
+	ROC = {
+	add_stability = -0.1
+	add_timed_idea = {
+	idea =  SAU_Saudi_Infiltration
+	days = 365
+	        }
+        }
+    }
+}
+focus = {
+    id = SAU_delay_the_inevitable
+    icon = GFX_focus_FRA_Recognize_a_Saudi_Successor
+	
+	x = 12
+	y = 4
+	cost = 1
+	prerequisite = {
+	focus = SAU_Focus_on_the_traitors
+	focus = SAU_crackdown_on_Libtards
+	}
+	
+	completion_reward = {
+	add_days_mission_timeout = {
+				mission = SAU_liberal_preparations
+				days = 21
+			}
+		}
+	}
+focus = {
+    id = Sau_MORE_AID_FOR_YEMEN
+	icon = GFX_focus_SAU_weapons_for_yemen
+   
+    x = 17
+	y = 2
+	
+	cost = 2
+	prerequisite = {
+	focus = The_Middle_Eastern_chess_game
+	}
+	
+	completion_reward = {
+	YEM = {
+	        add_equipment_to_stockpile = {
+		    type = infantry_equipment_1
+			amount = 5000
+			producer = SAU
+			}
+	        add_equipment_to_stockpile = {
+			type = modern_tank_artillery_equipment_1
+			amount = 300
+			producer = SAU
+		    }
+			add_equipment_to_stockpile = {
+			type = anti_tank_equipment_1
+			amount = 500
+			producer = SAU
+			}
+			add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 500 
+			producer = SAU
+			}
+        }
+    }
+}		
+focus = {
+    id = SAU_Libyan_Qestion
+	icon = GFX_focus_SAU_Libyan_Question
+	
+	x = 19
+	y = 2
+	
+	cost = 2
+	prerequisite = {
+	focus = The_Middle_Eastern_chess_game
+	}
+	
+	completion_reward = {
+	country_event = { id = saudi.32 }
+	}
+}
+focus = {
+    id = SAU_Demonise_Iran
+	icon = GFX_focus_evil_iran
+	
+	x = 18
+	y = 3
+	
+	cost = 1
+	prerequisite = {
+	focus = SAU_Libyan_Qestion
+	focus = Sau_MORE_AID_FOR_YEMEN
+	}
+	
+	completion_reward = {
+	add_political_power = 100
+	add_war_support = 0.05
+	add_opinion_modifier = {
+    target = PER
+    modifier = saudi_iranian_Hostile
+    }
+	PER = {
+	add_opinion_modifier = {
+    target = SAU
+    modifier = saudi_iranian_Hostile
+	        }
+        }
+	}
+}
+focus = {
+    id = SAU_Investment_for_oil
+	icon = GFX_focus_SAU_oil_deals
+	
+	x = 16
+	y = 3
+	
+	cost = 1
+	prerequisite = {
+	focus = Sau_MORE_AID_FOR_YEMEN
+	focus = SAU_Libyan_Qestion
+	}
+	
+	completion_reward = {
+	GER = {
+	country_event = { id = saudi.33 }
+	    }
+	}
+}
+focus = {
+    id = SAU_Xi_in_Rihyad
+	icon = GFX_focus_SAU_xi
+	
+	x = 20
+	y = 3
+	
+	cost = 1
+	
+	prerequisite = {
+	focus = Sau_MORE_AID_FOR_YEMEN
+	focus = SAU_Libyan_Qestion
+	}
+	
+	completion_reward = {
+	PRC = {
+	country_event = { id = saudi.36 days = 3 }
+	    }
+	}
+}
+focus = {
+    id = SAU_Improve_relations_with_Israel
+	icon = GFX_focus_SAU_israel
+	
+	x = 17
+	y = 4
+	
+	cost = 1
+	
+	prerequisite = {
+	focus = SAU_Demonise_Iran
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_stand_with_Palestine
+	}
+	
+	completion_reward = {
+	ISR = {
+	add_opinion_modifier = {
+    target = SAU
+    modifier = normalised_relations
+	}
+	add_timed_idea = {
+	idea = SAU_cheap_oil_from_saudi_arabia
+	days = 365
+	}
+}
+	SAU = {
+	add_ideas = ISR_Military_Advisors_to_Saudi_Arabia
+	add_opinion_modifier = {
+    target = ISR
+    modifier = normalised_relations
+	}
+	PAL = {
+	add_opinion_modifier = {
+    target = SAU
+    modifier = saudi_betrayl
+	            }
+	        }
+        }
+	}
+}
+focus = {
+    id = SAU_stand_with_Palestine
+	icon = GFX_focus_SAU_palestine
+	
+	x = 19
+	y = 4
+	
+	cost = 1
+	
+	prerequisite = {
+	focus = SAU_Demonise_Iran
+	}
+	
+	mutually_exclusive = {
+	focus = SAU_Improve_relations_with_Israel
+	}
+	
+	completion_reward = {
+	ISR = {
+	add_opinion_modifier = {
+    target = SAU
+    modifier = supports_palestine
+        }
+	}
+	add_opinion_modifier = {
+    target = ISR
+    modifier = supports_palestine
+    }
+	add_opinion_modifier = {
+    target = PAL
+    modifier = stands_with_palestine
+    }
+	PAL = {
+	add_opinion_modifier = {
+    target = SAU
+    modifier = our_saudi_brothers
+    }
+	add_ideas = SAU_Advisors_to_Yemen
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+			    }
+		    }
+	    }
+    }
+}
+focus = {
+    id = SAU_the_virus_in_Arabia
+    icon = GFX_focus_SOV_force_lockdowns
+
+    x = 22
+    y = 0
+
+    cost = 0
+
+    allow_branch = {
+        OR = {
+            has_idea = SAU_covid_hits_Arabia
+            has_idea = SAU_cripling_covid_cases
+            has_idea = SAU_devestating_covid_cases
+        }
+    }
+
+    ai_will_do = {
+        factor = 100
+    } 
+
+    completion_reward = {
+        add_stability = -0.05
+    }
+}
+focus = {
+    id = SAU_Decleare_Total_Lockdown
+	icon = GFX_focus_SAU_total_lockdown
+	
+	x = 21
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_the_virus_in_Arabia
+	}
+	
+	ai_will_do = {
+	   factor = 100
+	} 
+	
+	cost = 3
+	
+	completion_reward = {
+	add_stability = -0.05
+	add_days_mission_timeout = {
+				mission = covid_1
+				days = 35
+			}
+		}
+	}
+focus = {
+    id = SAU_Begin_Vaccine_Research
+	icon = GFX_focus_SAU_impf
+	
+	x = 23
+	y = 1
+	
+	prerequisite = {
+	focus = SAU_the_virus_in_Arabia
+	}
+	
+	cost = 3
+	
+	ai_will_do = {
+	   factor = 100
+	} 
+	
+	completion_reward = {
+	custom_effect_tooltip = SAU_vaccene_development
+	SAU = {
+	country_event = {
+	id = saudi.47
+	days = 35
+		    }
+		}
+	}
+}
+focus = {
+    id = SAU_Ease_the_lockdowns
+	icon = GFX_goal_generic_position_army
+	
+	x = 22
+	y = 2
+	
+	prerequisite = {
+	focus = SAU_Begin_Vaccine_Research
+	}
+	prerequisite = {
+	focus = SAU_Decleare_Total_Lockdown
+	}
+	
+	available = {
+    always = no  
+    }
+	
+	cost = 1
+	
+	completion_reward = {
+	mark_focus_tree_layout_dirty = yes
+	add_stability = 0.025
+	remove_ideas = SAU_covid_hits_Arabia
+	}
+}
+	

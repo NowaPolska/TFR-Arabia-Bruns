@@ -1,0 +1,459 @@
+﻿#### THIS IS ONLY HALF OF THEY YEMENI ARMY, I WAS TOO LAZY TO ADD THE REST; FUCKASS ADD THE WHOLE ARMY!!!!!!!!!!!!!!!!!!!!!!!!!!!! ####
+
+division_template = {
+    name = "Liwa Alhasm Salman" #used bye: 143rd armored inf brigade#
+    regiments = {
+        motorized = { x = 0 y = 0 }
+        motorized = { x = 0 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+    priority = 2
+}
+
+division_template = {
+    name = "Liwa' mudarri'"
+
+    regiments = {
+        light_mechanized = { x = 0 y = 0 }
+        light_mechanized = { x = 0 y = 1 }
+    }
+
+    support = {
+        engineer = { x = 0 y = 0 }
+        apc_company = { x = 0 y = 1 }
+    }
+
+}
+
+division_template = {
+    name = "Liwa Almsha"
+
+    regiments = {
+        motorized = { x = 0 y = 0 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "Liwa Mudarae"  # Tank Brigade, template used bye: 14th armored brigade, 312 armored brigade#
+
+    regiments = {
+        modern_armor = { x = 0 y = 0 }
+		motorized = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+    }
+    support = {
+	engineer = { x = 0 y = 0 }
+    }
+
+}
+
+division_template = {
+    name = "Liwa Mudarae Elite" # TEMPLETE kinda accurate but not 100% #
+
+    regiments = {
+        modern_armor = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+    }
+    support = {
+	engineer = { x = 0 y = 0 }
+	logistics_company = { x = 0 y = 1 }
+	signal_company = { x = 0 y = 2 }
+    }
+    priority = 2
+}
+
+division_template = {
+    name = "Liwa Almilishia"
+
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+    }
+
+}
+
+division_template = {
+    name = "Liwa' Masha'" # Small Infantry Brigades, used bye: 107th Infantry Brigade, 17th inf brigade, 48th inf brigade#
+
+    regiments = {
+        infantry = { x = 0 y = 0 } 
+    }
+
+}
+
+division_template = {
+    name = "Liwa' al-masha al-nukhba" # bigger and actual working proper army divisions, 5 battalions around 2500 men. Used bye: 159th and 26th brigade#
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 } 
+		infantry = { x = 0 y = 2 } 
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+    priority = 2
+}
+
+division_template = { # same as the one before, but more accurate manpower wise#
+    name = "Liwa' al-masha al-nukhba (small)"
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 } 
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+    }
+}
+
+division_template = {
+    name = "Liwa Almilishia Reserve"
+
+    regiments = {
+        militia = { x = 0 y = 0 }
+    }
+
+}
+
+division_template = {
+    name = "liwa' al-mutasaliqin" # 3rd mountainer brigade
+
+    regiments = {
+        mountaineers = { x = 0 y = 0 }
+    }
+
+}
+
+division_template = {
+    name = "Liwa' mudad lil-tayarat"
+
+    regiments = {
+        anti_air_brigade = { x = 0 y = 0 }
+    }
+
+}
+
+division_template = {
+    name = "Liwa' mudad lil-tayara (big)"
+
+    regiments = {
+	    infantry = { x = 0 y = 0 } 
+	    militia = { x = 0 y = 1 }
+        anti_air_brigade = { x = 0 y = 2 }
+    }
+    support = {
+	spaa_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+    name = "Liwa' Alharas Aljumhurii"
+    regiments = {
+        motorized = { x = 0 y = 0 }
+        motorized = { x = 1 y = 0 }
+    }
+    support = {
+        apc_company = { x = 0 y = 0 }
+    }
+    priority = 2
+}
+
+division_template = {
+    name = "Alliwa Almudrae Aljumhuriu"
+    regiments = {
+        modern_armor = { x = 0 y = 0 }
+    }
+    support = {
+        apc_company = { x = 0 y = 0 }
+        mbt_company = { x = 0 y = 1 }
+    }
+    priority = 1
+}
+
+division_template = {
+    name = "Katibat Aldabaabat Alkhafifa"
+
+    regiments = {
+        light_armor = { x = 0 y = 0 }
+        mechanized = { x = 0 y = 1 }
+    }
+
+    support = {
+        engineer = { x = 0 y = 0 }
+        apc_company = { x = 0 y = 1 }
+    }
+
+}
+
+division_template = {
+	name = "West Coast Joint Speial Forces"
+	
+	regiments = {
+		special_forces = { x = 0 y = 0 }
+	}
+	
+	support = {
+	    engineer = { x = 0 y = 0 }
+		apc_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Special Security Forces"
+	
+	regiments = {
+		special_forces = { x = 0 y = 0 }
+	}
+	
+	support = {
+	}
+}
+
+units = {
+    
+	#### TARIB ARMY GROUP ####
+	
+	division = { # Special Security Forces
+        name = "Special Security Forces Tarib Front"
+        location = 13994
+        division_template = "Special Security Forces"
+        start_experience_factor = 0.4
+		start_equipment_factor = 1
+    }
+	
+    division = { # 203rd Mechanized Infantry Brigade
+        name = "203rd Liwa' al-masha al-ali"
+        location = 13273
+        division_template = "Liwa' mudarri'"
+        start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+    }
+
+    division = { # 143rd Armored Infantry Brigade
+        name = "143rd Liwa' al-masha al-mudarra'"
+        location = 13273
+        division_template = "Liwa Alhasm Salman"
+        start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+    }
+
+    division = { # 2nd road protection brigade
+        name = "Liwa' himayat al-turuq al-thani"
+        location = 15022
+        division_template = "Liwa Almilishia Reserve"
+        start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+    }
+	
+	division = { # Hassan Farhan bin Jalal Brigade
+        name = "Hassan Farhan bin Jalal Brigade"
+        location = 13273
+        division_template = "Liwa Almilishia Reserve"
+        start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+    }
+
+    division = { # 159th Infantry brigade
+        name = "159th Liwa' masha'"
+        location = 13278
+        division_template = "Liwa' al-masha al-nukhba"
+        start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+    }
+
+    division = { # 26th Infantry brigade
+        name = "26th Liwa' masha'"
+        location = 13277
+        division_template = "Liwa' al-masha al-nukhba"
+        start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+    }
+
+    division = { # 180th anti air brigade
+        name = "180th Liwa' mudad lil-tayarat"
+        location = 13994
+        division_template = "Liwa' mudad lil-tayarat"
+        start_experience_factor = 0.1
+		start_equipment_factor = 1
+    }
+
+    division = { # 3rd mountainer brigade
+        name = "3th Liwa' al-mutasaliqin"
+        location = 13278
+        division_template = "liwa' al-mutasaliqin"
+        start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+    }
+
+    division = { # 48th Infantry Brigade
+        name = "48th Liwa' masha'"
+        location = 13993
+        division_template = "Liwa' Masha'"
+        start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+    }
+
+    division = { # 13th Infantry Brigade
+        name = "13th Liwa' masha'"
+        location = 13994
+        division_template = "Liwa' Masha'"
+        start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+    }
+
+    division = { # 107th Infantry Brigade
+        name = "107th Liwa' masha'"
+        location = 12821
+        division_template = "Liwa' Masha'"
+        start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+    }
+
+    division = { # 14th Armored brigade
+        name = "14th al-Liwa' al-mudarra'"
+        location = 13994
+        division_template = "Liwa Mudarae"
+        start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+    }
+	
+	division = { # 312th Armored brigade
+        name = "312th al-Liwa' al-mudarra'"
+        location = 12821
+        division_template = "Liwa Mudarae"
+        start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+    }
+
+    #### Taiz Front ####
+	
+	division = { # 17th inf brigade # POSSITION TINY BIT INACUURATE; SHOUD BE IN TIAZ CITY!!!! ###
+        name = "17th Liwa' masha'"
+        location = 15028
+        division_template = "Liwa' al-masha al-nukhba (small)"
+        start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+    }
+	
+	division = { # 35th Armored brigade
+        name = "35th al-Liwa' al-mudarra'"
+        location = 13269
+        division_template = "Liwa Mudarae Elite"
+        start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+    }
+	
+	division = { # 170th air defence brigade
+        name = "170th Liwa' mudad lil-tayarat"
+        location = 15019
+        division_template = "Liwa' mudad lil-tayara (big)"
+        start_experience_factor = 0.1
+		start_equipment_factor = 1
+    }
+
+    #### WESTERN COAST FRONT ####
+
+	division = { # 3rd inf division
+        name = "3rd Infantry Division"
+        location = 13268
+        division_template = "Liwa Almilishia"
+        start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+    }
+	
+	division = {
+        name = "20. West Coast Joint Special Forces Brigade"
+        location = 13268
+        division_template = "West Coast Joint Speial Forces"
+        start_experience_factor = 0.5
+		start_equipment_factor = 1
+    }
+	
+}
+
+instant_effect = {
+
+    add_equipment_to_stockpile = {
+        type = light_mechanized_equipment_1
+        amount = 30
+        producer = SOV
+    }
+
+    add_equipment_to_stockpile = {
+        type = support_equipment
+        amount = 400
+        producer = SOV
+    }
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 200
+		producer = SAU
+	}
+
+    add_equipment_to_stockpile = {
+        type = anti_air_equipment_1
+        amount = 150
+        producer = SOV
+    }
+
+    add_equipment_to_stockpile = {
+        type = spaa_equipment_1
+        amount = 50
+        producer = SOV
+    }
+
+    add_equipment_to_stockpile = {
+        type = anti_tank_equipment_1
+        amount = 150
+        producer = SOV
+    }
+
+    add_equipment_to_stockpile = {
+        type = modern_tank_destroyer_equipment_1
+        amount = 80
+        producer = SOV
+    }
+
+    add_equipment_to_stockpile = {
+        type = infantry_equipment_1
+        amount = 2500
+        producer = SAU
+    }
+
+    add_equipment_to_stockpile = {
+        type = infantry_equipment_1
+        amount = 4000
+        producer = SOV
+    }
+
+    add_equipment_to_stockpile = {
+        type = CAS_equipment_2
+        amount = 19
+        producer = CZE
+    }
+
+    add_equipment_to_stockpile = {
+        type = modern_tank_equipment_1
+        amount = 300
+        producer = SOV
+    }
+
+    add_equipment_to_stockpile = {
+        type = motorized_equipment_1
+        amount = 700
+        producer = SOV
+    }
+
+}

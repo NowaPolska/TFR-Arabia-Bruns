@@ -1,0 +1,22 @@
+state={
+	id=1480
+	name="STATE_1480"
+	provinces={
+		30 124 162 3193 11125 11164 
+	}
+	resources = {
+		steel=36.000
+	}
+	history = {
+		owner = FIN
+		add_core_of = FIN
+		victory_points = { 124 1 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=129981
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

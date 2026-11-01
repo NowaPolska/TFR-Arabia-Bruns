@@ -1,0 +1,350 @@
+characters={
+	EGY_abdel_fattah_alsisi={
+		portraits={
+			civilian={
+				large="gfx/leaders/EGY/Abdel Fattah as Sisi.png"
+			}
+		}
+		country_leader={
+			ideology=military_democracy
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EGY_Abdel_Fattah_Al_Sisi_victory={
+	    name = "Abdel Fattah Al-Sisi"
+		portraits={
+			civilian={
+				large="gfx/leaders/EGY/Abdel Fattah Al-Sisi_victory.png"
+			}
+		}
+		country_leader={
+			ideology=military_democracy
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	EGY_mohamed_ahmed_zaki={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Mohamed Ahmed Zaki.png"
+			}
+		}
+		can_be_captured = no
+		field_marshal={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_mohammed_fari_hegazy={
+		portraits={
+			civilian={
+				large="gfx/leaders/EGY/generals/Mohammed Fari Hegazy.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Mohammed Fari Hegazy.png"
+			}
+		}
+		country_leader={
+			ideology=military_democracy
+			expire="1.1.1.1"
+			id=-1
+		}
+		can_be_captured = no
+		field_marshal={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_mahmoud_hejazi={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Mahmoud_Hejazi.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_mohamed_tantawi={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Mohamed_Tantawi.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_ahmed_mohamed={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Ahmed_Mohamed.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_sedki_sobhi={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Sedki_Sobhi.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_mohamed_samir={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Mohamed_Samir.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_osama_aljamal={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Osama_Al_Jamal.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_younes_elmasri={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/EGY/generals/Younes_el-Masri.dds"
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_ahmed_hassan_saeed={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/Africa/general1.dds"
+			}
+		}
+		can_be_captured = no
+		navy_leader={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_mohamed_abdel_aziz={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/Africa/general2.png"
+			}
+		}
+		can_be_captured = no
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_osama_elgendi={
+		portraits={
+			army={
+				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
+			}
+			army={
+				large="gfx/leaders/Africa/general3.png"
+			}
+		}
+		can_be_captured = no
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_osama_rabaai={
+		portraits={
+			army={
+				small="GFX_Portrait_Africa_Generic_navy_4_small"
+			}
+			army={
+				large="GFX_Portrait_Africa_Generic_navy_4"
+			}
+		}
+		can_be_captured = no
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_mohab_mamish={
+		portraits={
+			army={
+				small="GFX_Portrait_Africa_Generic_navy_4_small"
+			}
+			army={
+				large="GFX_Portrait_Africa_Generic_navy_4"
+			}
+		}
+		can_be_captured = no
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EGY_fawzi_ibn_abd_allah={
+		portraits={
+			civilian={
+				large="gfx/leaders/Africa/politician1.dds"
+			}
+		}
+		country_leader={
+			ideology=jacobinism
+			traits={ famous_businessman friend_of_japan }
+			expire="2034.1.1.1"
+			id=-1
+		}
+	}
+	EGY_ishaq_ibn_ahmad={
+		portraits={
+			civilian={
+				large="gfx/leaders/Africa/politician3.dds"
+			}
+		}
+		country_leader={
+			ideology=babylonian_nazism
+			traits={ war_industrialist }
+			expire="2029.1.1.1"
+			id=-1
+		}
+	}
+	EGY_Mahmood_el_Majeed={
+		portraits={
+			civilian={
+				large="gfx/leaders/Terrorists/Terror.png"
+			}
+		}
+		country_leader={
+			ideology=salafi
+			traits={  }
+			expire="2029.1.1.1"
+			id=-1
+		}
+	}
+	
+	MUS_mahmoud_hussein_char={
+		portraits={
+			civilian={
+				large="gfx/leaders/EGY/Mahmoud Hussein.png"
+			}
+		}
+		country_leader={
+			ideology=wahabi
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

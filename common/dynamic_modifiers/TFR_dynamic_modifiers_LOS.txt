@@ -1,0 +1,6 @@
+LOS_congressional_power_dynamic = {
+	enable = {
+		always = yes
+	}
+	political_power_gain = LOS_congressional_power_dynamic_var
+}

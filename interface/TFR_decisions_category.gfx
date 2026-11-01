@@ -1,0 +1,358 @@
+	spriteTypes = {
+		spriteType = {
+			name = "GFX_decision_category_Saudi-civilprep"
+			texturefile = "gfx/interface/decisions/SAU/Saudi-civilprep.png"
+		}
+		
+		spriteType = {
+			name = "GFX_decision_category_marco_debug" 
+			texturefile = "gfx/interface/decisions/marco_debug.png"
+		}
+		
+		spriteType = {
+			name = "GFX_decision_category_capitol_hill" 
+			texturefile = "gfx/interface/decisions/USA/capitol_hill.png"
+		}
+		
+		spriteType = {
+			name = "GFX_decision_category_SOV_restore_ties_with_eurosocialists" 
+			texturefile = "gfx/interface/decisions/SOV/euro.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_SER_belgrade_blues"
+			texturefile = "gfx/interface/decisions/SER/desicion_cat_SER_belgrade_blues.png"
+		}
+        #PRC
+		
+		spriteType = {
+			name = "GFX_decision_category_PRK_decisions_DPRK_Category_icon"  
+			texturefile = "gfx/interface/decisions/PRK/decisions_DPRK_Category.png" 
+		}
+	
+		#PRC
+		
+		spriteType = {
+			name = "GFX_decision_category_PRC_internal_factions_icon"  
+			texturefile = "gfx/interface/decisions/PRC/PRC_internal_factions_icon.png" 
+		}
+		
+		spriteType = {
+			name = "GFX_decision_cat_PRC_oil_crisis_picture" 
+			texturefile = "gfx/interface/decisions/PRC/PRC_oil_crisis.png"
+		}
+		
+		spriteType = {
+			name = "GFX_decision_cat_PRC_privatization_picture" 
+			texturefile = "gfx/interface/decisions/PRC/PRC_privatization.dds"
+		}
+		
+		spriteType = {
+			name = "GFX_decision_cat_PRC_internal_factions" 
+			texturefile = "gfx/interface/decisions/PRC/PRC_internal_factions.png"
+		}	
+		
+		#ATW
+		
+		spriteType = {
+			name = "GFX_decision_category_heralds_of_apocalypse"  
+			texturefile = "gfx/interface/decisions/ATW/heralds_of_apocalypse.png" 
+		}
+		
+		#USA
+		
+		spriteType = {
+			name = "GFX_decision_category_USA_civil_war"  
+			texturefile = "gfx/interface/decisions/USA/category/USA_civil_war.png" 
+		}
+
+		spriteType = {
+			name = "GFX_decision_category_USA_capitol_hill"  
+			texturefile = "gfx/interface/decisions/USA/category/USA_congress_category.png" 
+		}
+
+		spriteType = {
+			name = "GFX_decision_category_USA_covid_category"  
+			texturefile = "gfx/interface/decisions/USA/category/USA_covid_category.png" 
+		}
+		spriteType = {
+			name = "GFX_decision_category_USC_category_trump_bust"  
+			texturefile = "gfx/interface/decisions/USC/USC_category_trump_bust.png"
+		}	
+		spriteType = {
+			name = "GFX_decision_category_USC_category_freedom_cities"  
+			texturefile = "gfx/interface/decisions/USC/USC_category_freedom_cities.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_USC_department_of_defense_category"  
+			texturefile = "gfx/interface/decisions/USC/USC_department_of_defence_category.png" 
+		}
+		
+		#SOV
+		spriteType = {
+			name = "GFX_decision_category_SOV_rebuilding_the_regions_category"   
+			texturefile = "gfx/interface/decisions/SOV/rebuilding_the_regions.png"
+		}	
+		spriteType = {
+			name = "GFX_decision_category_economic_gas_wars"   
+			texturefile = "gfx/interface/decisions/SOV/economic_gas_wars.png"
+		}	
+		spriteType = {
+			name = "GFX_decision_category_african_dawn"   
+			texturefile = "gfx/interface/decisions/SOV/african_dawn.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_america_burning_category"   
+			texturefile = "gfx/interface/decisions/SOV/america_burning_category.png"
+		}		
+		spriteType = {
+			name = "GFX_decision_category_SOV_eurasian_army_icon"   
+			texturefile = "gfx/interface/decisions/SOV/SOV_eurasian_army_icon.png"
+		}	
+		spriteType = {
+			name = "GFX_decision_category_suraykin_politburo_cat"   
+			texturefile = "gfx/interface/decisions/SOV/suraykin_politburo_cat.png"
+		}	
+		spriteType = {
+			name = "GFX_decision_category_SOV_federal_assembly"   
+			texturefile = "gfx/interface/decisions/SOV/SOV_federal_assembly.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_TMC_category"   
+			texturefile = "gfx/interface/decisions/SOV/TMC_category.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_SOV_Novorossiyan_Referendum"   
+			texturefile = "gfx/interface/decisions/SOV/SOV_Novorossiyan_Referendum.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_SOV_Dugin_Veche"   
+			texturefile = "gfx/interface/decisions/SOV/Dugin_Veche.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_SOV_Dugin_Directives"   
+			texturefile = "gfx/interface/decisions/SOV/Dugin_Directives.png"
+		}	
+		spriteType = {
+			name = "GFX_decision_category_SOV_russian_reformation"
+			texturefile = "gfx/interface/decisions/SOV/Russian_reformation.png"
+		}
+		spriteType = {
+			name = "GFX_decision_pragmatic_economy_category"   
+			texturefile = "gfx/interface/decisions/SOV/Decision_pragmatic_economy_category.png"
+		}		
+		spriteType = {
+			name = "GFX_decision_russian_economy_category"   
+			texturefile = "gfx/interface/decisions/SOV/Decision_russian_economy_category.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_Kommunarka"   
+			texturefile = "gfx/interface/decisions/SOV/Decision_Kommunarka_category.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_SOV_empire_restoration"   
+			texturefile = "gfx/interface/decisions/SOV/SOV_empire_restoration_picture.png"
+		}
+		spriteType = {
+			name = "GFX_decision_category_SOV_novorussian_referendum"   
+			texturefile = "gfx/interface/decisions/SOV/novorussian_referendum.png"
+		}
+		
+		# AST
+		spriteType = {
+			name = "GFX_AST_devasation_category"   
+			texturefile = "gfx/interface/decisions/AST/AST_devasation_category.png"
+		}
+		spriteType = {
+			name = "GFX_AST_patriot_coup_decision_category"   
+			texturefile = "gfx/interface/decisions/AST/AST_patriot_coup_decision_category.png"
+		}
+
+		#FRA
+		spriteType = {
+			name = "GFX_FRA_Soldier_Category"   
+			texturefile = "gfx/interface/decisions/FRA/FRA_Soldier_Category.png"
+		}
+		spriteType = {
+			name = "GFX_6th_Constitution"   
+			texturefile = "gfx/interface/decisions/FRA/6th_Constitution.png"
+		}
+		
+		#GMA
+		spriteType = {
+			name = "GFX_GMA_articles_of_confederation"   
+			texturefile = "gfx/interface/decisions/GMA/GMA_articles_of_confederation.png"
+		}
+		spriteType = {
+			name = "GFX_GMA_Congress"   
+			texturefile = "gfx/interface/decisions/GMA/GMA_Congress.png"
+		}
+		spriteType = {
+			name = "GFX_GMA_Association"   
+			texturefile = "gfx/interface/decisions/GMA/GMA_Association.png"
+		}
+		spriteType = {
+			name = "GFX_GMA_PMC_Soldiers"   
+			texturefile = "gfx/interface/decisions/GMA/GMA_PMC_Soldiers.png"
+		}
+		spriteType = {
+			name = "GFX_GMA_Reunification"   
+			texturefile = "gfx/interface/decisions/GMA/GMA_Reunification.png"
+		}
+		spriteType = {
+			name = "GFX_GMA_Hospital"   
+			texturefile = "gfx/interface/decisions/GMA/GMA_Hospital.png"
+		}
+		spriteType = {
+			name = "GFX_GMA_Ted_Shack"   
+			texturefile = "gfx/interface/decisions/GMA/GMA_Ted_Shack.png"
+		}
+
+		#PTF
+		spriteType = {
+			name = "GFX_PTF_DEC_TOP_flag"    
+			texturefile = "gfx/interface/decisions/PTF/PTF_DEC_TOP_flag.png"
+		}
+
+		spriteType = {
+			name = "GFX_PTF_DEC_TOP_dude"    
+			texturefile = "gfx/interface/decisions/PTF/PTF_DEC_TOP_dude.png"
+		}
+		
+		#GER
+		spriteType = {
+			name = "GFX_GER_nato_war"    
+			texturefile = "gfx/interface/decision_pictures/GER_nato_war.png"
+		}
+		
+		spriteType = { 
+			name = "GFX_NATO_leadership"    
+			texturefile = "gfx/interface/decision_pictures/NATO Leadership.png"
+		}
+
+		spriteType = { 
+			name = "GFX_GER_eastern_european_development"    
+			texturefile = "gfx/interface/decision_pictures/GER_eastern_european_development.png"
+		}
+		spriteType = { 
+			name = "GFX_GER_bundeswehr_decision_pic"    
+			texturefile = "gfx/interface/decision_pictures/GER_bundeswehr_decision_pic.png"
+		}
+		
+		#JAP
+		spriteType = {
+			name = "GFX_JAP_taiwan_war"    
+			texturefile = "gfx/interface/decisions/JAP/jap_taiwan_war.png"
+		}
+		spriteType = {
+			name = "GFX_desicion_category_japanese_diet_icon"    
+			texturefile = "gfx/interface/decisions/JAP/desicion_category_japanese_diet.png"
+		}
+		spriteType = {
+			name = "GFX_JAP_national_diet"    
+			texturefile = "gfx/interface/decisions/JAP/jap_national_diet.png"
+		}
+		spriteType = {
+			name = "GFX_JAP_ldp_party"    
+			texturefile = "gfx/interface/decision_pictures/JAP_ldp_party_category.png"
+		}
+		spriteType = { 
+			name = "GFX_Pact_of_Steel"
+			texturefile = "gfx/interface/decision_pictures/Pact of Steel.png"
+		}
+		
+		#CHI
+		spriteType = {
+			name = "GFX_CHI_test_of_will_banner"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_test_of_will_banner.png"
+			legacy_lazy_load = no
+		}
+		frameAnimatedSpriteType = {
+			name = "GFX_CHI_test_of_will_banner_animated"
+			texturefile = "gfx/interface/decisions/CHI/CHI_test_of_will_banner_animated.png"
+			noOfFrames = 9
+			animation_rate_fps = 9
+			looping = yes
+			play_on_show = yes
+			pause_on_loop = 0.0
+		}
+		spriteType = {
+			name = "GFX_CHI_test_of_will_category"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_test_of_will_category.png"
+		}
+		frameAnimatedSpriteType = {
+			name = "GFX_CHI_test_of_will_category_anim"
+			texturefile = "gfx/interface/decisions/CHI/CHI_test_of_will_category_anim.png"
+			noOfFrames = 2
+			animation_rate_fps = 3
+			looping = yes
+			play_on_show = yes
+			pause_on_loop = 0.0
+		}
+		spriteType = {
+			name = "GFX_CHI_hualien_defence"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_hualien_defence.png"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_CHI_tainan_defence"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_tainan_defence.png"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_CHI_taizhong_defence"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_taizhong_defence.png"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_CHI_taibei_defence"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_taibei_defence.png"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_CHI_korean_weapons"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_korean_weapons.png"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_CHI_rise_up_taiwan_agitation"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_rise_up_taiwan_agitation.png"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_CHI_damage_ports"    
+			texturefile = "gfx/interface/decisions/CHI/CHI_damage_ports.png"
+			legacy_lazy_load = no
+		}
+
+		#ISR
+		spriteType = {
+			name = "GFX_decision_category_ISR_samson"   
+			texturefile = "gfx/interface/decisions/ISR/category/ISR_samson.png" 
+		}
+        
+		#SAU
+		spriteType = {
+        name = "GFX_decision_category_SAU_war"
+        texturefile = "gfx/decisions/SAU/SAU_war.png"
+        }
+		spriteType = {
+        name = "GFX_decision_category_SAU_yemen_war_dp"
+        texturefile = "gfx/decisions/SAU/SAU_yemen_war_dp.png"
+        }
+		spriteType = {
+        name = "GFX_decision_category_SAU_lebanon_minigame_dp"
+        texturefile = "gfx/decisions/SAU/SAU_lebanon_minigame_dp.png"
+        }
+		spriteType = {
+        name = "GFX_decision_category_SAU_iran_war"
+        texturefile = "gfx/decisions/SAU/SAU_iran_war.png"
+        }
+		
+		#Generic
+		spriteType = {
+			name = "GFX_decision_category_generic_recore"   
+			texturefile = "gfx/interface/decisions/generic/category/generic_recore.png" 
+		}
+
+
+	}

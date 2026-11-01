@@ -1,0 +1,187 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			FRA = {
+				add_dynamic_modifier = {
+					modifier = GER_federalization_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_sepratism_dynamic
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_global_flag = SOV_nato_war_begins_global
+						OR = {
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM = {
+						OR = {
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+						controls_province = 719
+					}
+					FROM.FROM = {
+						state = 234
+					}
+				}
+				FRA = {
+					country_event = {
+						id = france.210
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_global_flag = SOV_nato_war_begins_global
+						OR = {
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}
+					FROM = {
+						OR = {
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+						controls_province = 719
+					}
+					FROM.FROM = {
+						state = 234
+					}
+				}
+				FRA = {
+					country_event = {
+						id = france.2100
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_global_flag = SOV_nato_war_begins_global
+						OR = {
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM = {
+						OR = {
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+						controls_province = 9680
+					}
+					FROM.FROM = {
+						state = 137
+					}
+				}
+				FRA = {
+					country_event = {
+						id = france.211
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_global_flag = SOV_nato_war_begins_global
+						OR = {
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}
+					FROM = {
+						OR = {
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+						controls_province = 9680
+					}
+					FROM.FROM = {
+						state = 137
+					}
+				}
+				FRA = {
+					country_event = {
+						id = france.2120
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_global_flag = SOV_nato_war_begins_global
+						OR = {
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM = {
+						OR = {
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+						controls_province = 9663
+					}
+					FROM.FROM = {
+						state = 234
+					}
+				}
+				FRA = {
+					country_event = {
+						id = france.2110
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						has_global_flag = SOV_nato_war_begins_global
+						OR = {
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}
+					FROM = {
+						OR = {
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+						controls_province = 9663
+					}
+					FROM.FROM = {
+						state = 234
+					}
+				}
+				FRA = {
+					country_event = {
+						id = france.2111
+					}
+				}
+			}
+		}
+	}
+	on_weekly_FPR = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = FPR_The_Soft_Revolution
+					NOT = {
+						has_country_flag = FPR_utopia_goal_complete
+					}
+				}
+				FPR_utopia_calculator = yes
+			}
+		}
+	}
+}

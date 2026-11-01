@@ -1,0 +1,27 @@
+state={
+	id=1467
+	name="STATE_1467"
+	provinces={
+		6084 6164 6188 9209 11044 
+	}
+	resources={
+		aluminium=8.000
+		tungsten=3.000
+		chromium=3.000
+		oil=2.000
+	}
+	history = {
+		owner = SWE
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 4
+			power_plant = 1
+			office_park = 1
+			arms_factory = 3
+		}
+	}
+	manpower=308375
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

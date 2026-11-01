@@ -1,0 +1,23 @@
+on_actions = {
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    tag = SAR
+                }
+                SAU = {
+                    country_event = { id = saudi.97 days = 1 }
+                }
+            }
+            if = {
+                limit = {
+                    tag = ISR
+                    FROM = { tag = SAU }
+                }
+                SAU = {
+                    country_event = { id = saudi.71 days = 1 }
+                }
+            }
+        }
+    }
+}

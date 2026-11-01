@@ -1,0 +1,7 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_ideology_reformed_saudi_monarchism"
+        texturefile = "gfx/interface/ideologies/reformed_saudi_monarchism.png"
+    }
+}

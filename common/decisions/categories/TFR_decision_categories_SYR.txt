@@ -1,0 +1,36 @@
+SYR_army_stats = {
+	icon = arab_army
+
+	allowed = {
+		original_tag = SYR
+	}
+}
+
+SYR_rebuild_cities = {
+	icon = GFX_decision_category_rebuild_cities
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = SYR
+	}
+	
+	visible = {
+
+	}
+}
+
+SYR_invade_Israel = {
+    icon = GFX_decision_category_rebuild_cities
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = SYR
+	}
+	
+	visible = {
+    OR = {
+		has_global_flag = nato_nato_won_nato_war
+		has_global_flag = SOV_first_nato_war_victory
+		}
+	}
+}

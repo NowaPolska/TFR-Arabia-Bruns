@@ -1,0 +1,25 @@
+state={
+	id=111
+	name="STATE_111"
+	provinces={
+		3025 3137 6047 9160 13101 13102 13106 13107 
+	}
+	history = {
+		owner = FIN
+		add_core_of = FIN
+		victory_points = { 3137 1 }
+		buildings = {
+			infrastructure = 4
+			power_plant = 2
+			air_base = 3
+			anti_air_building = 1
+			arms_factory = 1
+			industrial_complex = 2
+			office_park = 1
+		}
+	}
+	manpower=517958
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,19 @@
+state={
+	id=1447
+	name="STATE_1447"
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 13206 1 }
+	}
+	provinces={
+		13206
+	}
+	manpower=82887
+	buildings_max_level_factor=0.500
+	state_category = village
+	local_supplies=0.000
+}

@@ -1,0 +1,23 @@
+state={
+	id=1477
+	name="STATE_1477"
+	provinces={
+		7 193 3185 6134 6146 11024 11079 13115 
+	}
+	resources = {
+		steel=6.000
+		tungsten=14.000
+		chromium=28.000
+	}
+	history = {
+		owner = FIN
+		add_core_of = FIN
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=72205
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+characters={
+	BPR_mateusz_piskorski_char = {
+	name = "Mateusz Piskorski"
+		portraits={
+			civilian = {
+				large = "gfx/leaders/BPR/mateusz_piskorski.png"
+			}
+		}
+		country_leader={
+			ideology = populist_putinism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

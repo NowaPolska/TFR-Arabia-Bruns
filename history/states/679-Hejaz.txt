@@ -1,0 +1,40 @@
+
+state={
+	id=679
+	name="STATE_679"
+	resources={
+		oil=11
+		steel=9
+	}
+
+	history={
+		owner = SAU
+		add_core_of = SAU
+		victory_points = { 2090 10 } #Ta'if
+		victory_points = { 4981 2 } #Madrakah
+		victory_points = { 14996 20 } # Jeddah
+		victory_points = { 14995 5 } #khumrah
+		victory_points = { 15002 3 } #King Abdullah Economic City
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			dockyard = 1
+			arms_factory = 1
+			air_base = 3
+			power_plant = 2
+			14996 = {
+				naval_base = 5
+			}
+			14997 = {
+			    naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		2033 2090 4981 5037 7934 10748 12883 13799 13798 14144 14146 14722 14995 14996 14997 14998 14999 15000 15001 15002 15003 15004
+	}
+	manpower=14250250
+	buildings_max_level_factor=1.000
+	state_category = city
+}

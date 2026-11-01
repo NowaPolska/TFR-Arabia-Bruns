@@ -1,0 +1,25 @@
+    
+	set_research_slots = 3
+	set_convoys = 100
+	set_stability = 0.6
+
+	set_country_flag = country_language_arabic
+	set_country_flag = country_behavior_indolent
+
+	set_variable = { Russian_Influence = 0.00 }
+	set_variable = { Chinese_Influence = 0.00 }
+	set_variable = { American_Influence = 0.40 }
+	set_variable = { European_Influence = 0.30 }
+	set_variable = { PDO_Influence = 0.00 }
+	set_variable = { Sovereign_Influence = 0.30 }
+
+set_politics = {
+		ruling_party = nationalist
+		last_election = "2019.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		nationalist = 100
+	}

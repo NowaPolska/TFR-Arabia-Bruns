@@ -1,0 +1,170 @@
+	defined_text = {
+		name = get_influenced_nation
+	
+		text = {
+			trigger = {
+				tag = SOV
+				}
+			localization_key = get_influenced_nation_russia_leader_tt
+		}
+		text = {
+			trigger = {
+				tag = PRC
+				}
+			localization_key = get_influenced_nation_china_leader_tt
+		}
+		text = {
+			trigger = {
+				tag = USA
+				}
+			localization_key = get_influenced_nation_usa_leader_tt
+		}
+		text = {
+			trigger = {
+				OR = { 
+					tag = FRA
+					tag = GER
+					tag = BEL
+					tag = HOL
+					tag = LUX
+				} 
+			}
+			localization_key = get_influenced_nation_europe_leader_tt
+		}
+		text = {
+			trigger = {
+				OR = {
+					tag = RAJ
+					tag = AST
+					tag = JAP
+				}
+			}
+			localization_key = get_influenced_nation_pdo_leader_tt
+		}
+	
+		text = {
+			trigger = {
+				check_variable = { Russian_Influence > 0.5 }
+				NOT = { 	
+					tag = RAJ
+					tag = SOV
+					tag = USA
+					tag = PRC
+					tag = FRA
+					tag = GER
+					tag = BEL
+					tag = HOL
+					tag = LUX
+				}
+			}
+			localization_key = get_influenced_nation_russia_tt
+		}
+	
+		text = {
+			trigger = {
+				check_variable = { European_Influence > 0.5 }
+				NOT = { 	
+					tag = RAJ
+					tag = SOV
+					tag = USA
+					tag = PRC
+					tag = FRA
+					tag = GER
+					tag = BEL
+					tag = HOL
+					tag = LUX
+				}
+			}
+			localization_key = get_influenced_nation_europe_tt
+		}
+	
+		text = {
+			trigger = {
+				check_variable = { Chinese_Influence > 0.5 }
+				NOT = { 	
+					tag = RAJ
+					tag = SOV
+					tag = USA
+					tag = PRC
+					tag = FRA
+					tag = GER
+					tag = BEL
+					tag = HOL
+					tag = LUX
+				}
+			}
+			localization_key = get_influenced_nation_china_tt
+		}
+	
+		text = {
+			trigger = {
+				check_variable = { American_Influence > 0.5 }
+				NOT = { 	
+					tag = RAJ
+					tag = SOV
+					tag = USA
+					tag = PRC
+					tag = FRA
+					tag = GER
+					tag = BEL
+					tag = HOL
+					tag = LUX
+				}
+			}
+			localization_key = get_influenced_nation_usa_tt
+		}
+	
+		text = {
+			trigger = {
+				check_variable = { Indian_Influence > 0.5 }
+				NOT = { 	
+					tag = RAJ
+					tag = SOV
+					tag = USA
+					tag = PRC
+					tag = FRA
+					tag = GER
+					tag = BEL
+					tag = HOL
+					tag = LUX
+				}
+			}
+			localization_key = get_influenced_nation_india_tt
+		}
+	
+		text = {
+			trigger = {
+				check_variable = { Russian_Influence < 0.5 }
+				check_variable = { Chinese_Influence < 0.5 }
+				check_variable = { American_Influence < 0.5 }
+				check_variable = { Indian_Influence < 0.5 }
+				check_variable = { European_Influence < 0.5 }
+				NOT = { 	
+					tag = RAJ
+					tag = SOV
+					tag = USA
+					tag = PRC
+					tag = FRA
+					tag = GER
+					tag = BEL
+					tag = HOL
+					tag = LUX
+				}
+			}
+			localization_key = get_influenced_nation_sovereign_tt
+		}
+	
+		text = {
+			trigger = {
+				OR = { 
+					check_variable = { Russian_Influence = 0.5 }
+					check_variable = { Chinese_Influence = 0.5 }
+					check_variable = { American_Influence = 0.5 }
+					check_variable = { European_Influence = 0.5 }
+					check_variable = { Indian_Influence = 0.5 }
+					check_variable = { Sovereign_Influence = 0.5 }
+				} 
+			}
+			localization_key = get_influenced_nation_contested_tt
+		}
+	}

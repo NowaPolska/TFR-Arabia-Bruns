@@ -1,0 +1,32 @@
+state={
+	id=1458
+	name="STATE_1458"
+	provinces={
+		53 137 3192 6176 11101 
+	}
+	resources = {
+		oil = 140
+	}
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			synthetic_refinery = 2
+			anti_air_building = 1
+			energy_farm = 2
+			dockyard = 1
+			office_park = 2
+			6176 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+
+		}
+	}
+	state_category=large_town
+	manpower=497286
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

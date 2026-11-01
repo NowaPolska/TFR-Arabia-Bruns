@@ -1,0 +1,23 @@
+state={
+	id=1465
+	name="STATE_1465"
+	provinces={
+		211 299 329 3229 6148 11390 
+	}
+	resources={
+		aluminium=6.000
+	}
+	history = {
+		owner = SWE
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1
+			energy_farm = 1
+		}
+	}
+	manpower=272627
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

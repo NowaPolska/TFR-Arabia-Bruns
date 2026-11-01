@@ -1,0 +1,187 @@
+﻿#75% accurate, the omani army is made of a shit ton of tiny division, so around 10 divs are missing
+division_template = {
+	name = "Fawj Moudar'a"
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+
+}
+
+division_template = {
+	name = "Sultan of Oman's Parachute Regiment"
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+	}
+	support = {
+		
+	}
+}
+
+division_template = {
+	name = "Southern Regiment <<KJ>>"
+
+	regiments = {
+		special_forces = { x = 1 y = 0 }
+	}
+	support = {
+		
+	}
+}
+
+division_template = {
+	name = "Ligth Infantry Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Artillery Batteries"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+
+}
+
+division_template = {
+	name = "Fawj Mushat Mechaniqui"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	}
+	support = {
+		spa_company = { x = 0 y = 0 }
+	}
+
+}
+
+division_template = {
+	name = "Fawj Mushat"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+
+}
+
+division_template = {
+	name = "Fawj Mushat Khafifa"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+	artillery = { x = 0 y = 0 }
+	}
+
+}
+
+units = {
+
+    division = {
+		name = "11. Fawj Mushat Khafifa"
+		location = 5049
+		division_template = "Fawj Mushat Khafifa"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sultan of Oman's Parachute Regiment"
+		location = 2018
+		division_template = "Sultan of Oman's Parachute Regiment"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Southern Regiment <<KJ>>"
+		location = 10760
+		division_template = "Southern Regiment <<KJ>>"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "23. Fawj Mushat Khafifa"
+		location = 2103
+		division_template = "Fawj Mushat Khafifa"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Fawj Moudar'a"
+		location = 2018
+		division_template = "Fawj Moudar'a"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1. Ligth Infantry Brigade"
+		location = 10760
+		division_template = "Ligth Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2. Ligth Infantry Brigade"
+		location = 8020
+		division_template = "Ligth Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Fawj Mushat"
+		location = 2059
+		division_template = "Fawj Mushat"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Mushat Regiment"
+		location = 10760
+		division_template = "Fawj Mushat"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Fawj Mushat Mechaniqui"
+		location = 10760
+		division_template = "Fawj Mushat Mechaniqui"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "North-western Fawj Mushat Mechaniqui"
+		location = 5049
+		division_template = "Fawj Mushat Mechaniqui"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Western-Frontier Fawj Mushat Mechaniqui"
+		location = 2018
+		division_template = "Fawj Mushat Mechaniqui"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "1. Artillery Battery"
+		location = 8002
+		division_template = "Artillery Batteries"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2. Artillery Battery"
+		location = 4993
+		division_template = "Artillery Batteries"
+		start_experience_factor = 0.2
+	}
+}
+	
+### Air OOB ###

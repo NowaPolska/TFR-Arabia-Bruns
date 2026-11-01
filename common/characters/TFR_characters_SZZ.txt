@@ -1,0 +1,36 @@
+characters={
+	SZZ_anarchy_char = {
+	    name = "Anarchy"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/SZZ/anarchy.png"
+			}
+		}
+		country_leader={
+		    desc=""
+			ideology = left_anarchist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	SZZ_collapsed_char = {
+	    name = "Anarchy"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/SZZ/anarchy.png"
+			}
+		}
+		country_leader={
+		    desc=""
+			ideology = left_anarchist
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+		    desc=""
+			ideology = assadist_baathism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

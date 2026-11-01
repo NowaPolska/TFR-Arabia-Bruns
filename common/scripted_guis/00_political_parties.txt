@@ -1,0 +1,280 @@
+scripted_gui = {
+	party_popularity_number = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "party_popularity_number_container"
+
+		ai_enabled = {
+			always = no
+		}
+
+		properties = {
+		}
+	}
+	TFR_ruling_party_wings_GUI = {
+	    window_name = "TFR_ruling_party_wings_GUI_window"
+	    context_type = player_context
+	   	parent_window_name = ruling_party_wings_bg_anchor
+
+	    ai_enabled = {
+			always = no
+		}
+
+	    effects = {
+
+	    }
+
+	    triggers = {
+	    	ruling_party_wing_indicator_tot_soc_visible = {
+				NOT = {
+					has_government = totalitarian_socialist
+					check_variable = { political_power_ideology_var = token:totalitarian_socialist }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:totalitarian_socialist }
+	    	}
+	    	ruling_party_wing_indicator_auth_soc_visible = {
+				NOT = {
+					has_government = communist
+					check_variable = { political_power_ideology_var = token:communist }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:communist }
+	    	}
+	    	ruling_party_wing_indicator_lib_soc_visible = {
+				NOT = {
+					has_government = libertarian_socialist
+					check_variable = { political_power_ideology_var = token:libertarian_socialist }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:libertarian_socialist }
+	    	}
+	    	ruling_party_wing_indicator_soc_dem_visible = {
+	   			NOT = {
+					has_government = social_democrat
+					check_variable = { political_power_ideology_var = token:social_democrat }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:social_democrat }
+	    	}
+	    	ruling_party_wing_indicator_soc_lib_visible = {
+				NOT = {
+					has_government = social_liberal
+					check_variable = { political_power_ideology_var = token:social_liberal }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:social_liberal }
+	    	}
+	    	ruling_party_wing_indicator_mar_lib_visible = {
+				NOT = {
+					has_government = market_liberal
+					check_variable = { political_power_ideology_var = token:market_liberal }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:market_liberal }
+	    	}	    
+			ruling_party_wing_indicator_con_visible = {
+				NOT = {
+					has_government = conservative
+					check_variable = { political_power_ideology_var = token:conservative }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:conservative }
+	    	}
+	    	ruling_party_wing_indicator_auth_dem_visible = {
+				NOT = {
+					has_government = authoritarian_democrat
+					check_variable = { political_power_ideology_var = token:authoritarian_democrat }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:authoritarian_democrat }
+	    	}		  
+			ruling_party_wing_indicator_nat_visible = {
+				NOT = {
+					has_government = nationalist
+					check_variable = { political_power_ideology_var = token:nationalist }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:nationalist }
+	    	}	
+			ruling_party_wing_indicator_fas_visible = {
+				NOT = {
+					has_government = fascist
+					check_variable = { political_power_ideology_var = token:fascist }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:fascist }
+	    	}	
+			ruling_party_wing_indicator_nat_soc_visible = {
+				NOT = {
+					has_government = national_socialist
+					check_variable = { political_power_ideology_var = token:national_socialist }
+				}
+				is_in_array = { ROOT.ruling_party_wings_array = token:national_socialist }
+	    	}
+		}
+	}
+	TFR_coalition_GUI = {
+	    window_name = "TFR_coalition_GUI_window"
+	    context_type = player_context
+	   	parent_window_token = politics_tab
+
+	    visible = {
+	        always = yes
+	    }
+
+	    effects = {
+
+	    }
+
+	    triggers = {
+	    	coalition_indicator_tot_soc_visible = {
+				NOT = {
+					has_government = totalitarian_socialist
+					check_variable = { political_power_ideology_var = token:totalitarian_socialist }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:totalitarian_socialist }
+	    	}
+	    	coalition_indicator_auth_soc_visible = {
+				NOT = {
+					has_government = communist
+					check_variable = { political_power_ideology_var = token:communist }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:communist }
+	    	}
+	    	coalition_indicator_lib_soc_visible = {
+				NOT = {
+					has_government = libertarian_socialist
+					check_variable = { political_power_ideology_var = token:libertarian_socialist }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:libertarian_socialist }
+	    	}
+	    	coalition_indicator_soc_dem_visible = {
+	   			NOT = {
+					has_government = social_democrat
+					check_variable = { political_power_ideology_var = token:social_democrat }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:social_democrat }
+	    	}
+	    	coalition_indicator_soc_lib_visible = {
+				NOT = {
+					has_government = social_liberal
+					check_variable = { political_power_ideology_var = token:social_liberal }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:social_liberal }
+	    	}
+	    	coalition_indicator_mar_lib_visible = {
+				NOT = {
+					has_government = market_liberal
+					check_variable = { political_power_ideology_var = token:market_liberal }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:market_liberal }
+	    	}	    
+			coalition_indicator_con_visible = {
+				NOT = {
+					has_government = conservative
+					check_variable = { political_power_ideology_var = token:conservative }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:conservative }
+	    	}
+	    	coalition_indicator_auth_dem_visible = {
+				NOT = {
+					has_government = authoritarian_democrat
+					check_variable = { political_power_ideology_var = token:authoritarian_democrat }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:authoritarian_democrat }
+	    	}		  
+			coalition_indicator_nat_visible = {
+				NOT = {
+					has_government = nationalist
+					check_variable = { political_power_ideology_var = token:nationalist }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:nationalist }
+	    	}	
+			coalition_indicator_fas_visible = {
+				NOT = {
+					has_government = fascist
+					check_variable = { political_power_ideology_var = token:fascist }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:fascist }
+	    	}	
+			coalition_indicator_nat_soc_visible = {
+				NOT = {
+					has_government = national_socialist
+					check_variable = { political_power_ideology_var = token:national_socialist }
+				}
+				is_in_array = { ROOT.coalition_partners_array = token:national_socialist }
+	    	}
+		}	  
+		
+		triggers = {
+	    	coalition_indicator_tot_soc_leader_visible = {
+				OR = {
+					has_government = totalitarian_socialist
+					is_in_array = { ROOT.ruling_party_wings_array = token:totalitarian_socialist }
+				}
+				has_variable = coalition_partners_array^num
+	    	}
+	    	coalition_indicator_auth_soc_leader_visible = {
+				OR = {
+					has_government = communist
+					is_in_array = { ROOT.ruling_party_wings_array = token:communist }
+				}
+				has_variable = coalition_partners_array^num
+	    	}
+	    	coalition_indicator_lib_soc_leader_visible = {
+				OR = {
+					has_government = libertarian_socialist
+					is_in_array = { ROOT.ruling_party_wings_array = token:libertarian_socialist }
+				}
+				has_variable = coalition_partners_array^num
+	    	}
+	    	coalition_indicator_soc_dem_leader_visible = {
+				OR = {
+					has_government = social_democrat
+					is_in_array = { ROOT.ruling_party_wings_array = token:social_democrat }
+				}
+				has_variable = coalition_partners_array^num
+	    	}
+	    	coalition_indicator_soc_lib_leader_visible = {
+				OR = {
+					has_government = social_liberal
+					is_in_array = { ROOT.ruling_party_wings_array = token:social_liberal }
+				}
+				has_variable = coalition_partners_array^num
+	    	}
+	    	coalition_indicator_mar_lib_leader_visible = {
+				OR = {
+					has_government = market_liberal
+					is_in_array = { ROOT.ruling_party_wings_array = token:market_liberal }
+				}
+				has_variable = coalition_partners_array^num
+	    	}	    
+			coalition_indicator_con_leader_visible = {
+				OR = {
+					has_government = conservative
+					is_in_array = { ROOT.ruling_party_wings_array = token:conservative }
+				}
+				has_variable = coalition_partners_array^num
+	    	}
+	    	coalition_indicator_auth_dem_leader_visible = {
+				OR = {
+					has_government = authoritarian_democrat
+					is_in_array = { ROOT.ruling_party_wings_array = token:authoritarian_democrat }
+				}
+				has_variable = coalition_partners_array^num
+	    	}		  
+			coalition_indicator_nat_leader_visible = {
+				OR = {
+					has_government = nationalist
+					is_in_array = { ROOT.ruling_party_wings_array = token:nationalist }
+				}
+				has_variable = coalition_partners_array^num
+	    	}	
+			coalition_indicator_fas_leader_visible = {
+				OR = {
+					has_government = fascist
+					is_in_array = { ROOT.ruling_party_wings_array = token:fascist }
+				}
+				has_variable = coalition_partners_array^num
+	    	}	
+			coalition_indicator_nat_soc_leader_visible = {
+				OR = {
+					has_government = national_socialist
+					is_in_array = { ROOT.ruling_party_wings_array = token:national_socialist }
+				}
+				has_variable = coalition_partners_array^num
+	    	}
+		}
+	}
+}

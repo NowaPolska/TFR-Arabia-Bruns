@@ -1,0 +1,538 @@
+﻿add_namespace = iraq
+
+#2021 Iraqi Elections
+country_event = {
+	id = iraq.1
+	title = iraq.1.t
+	desc = iraq.1.d
+	picture = GFX_report_iraqi_elections_2021  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.1.a
+		add_stability = -0.1
+		hidden_effect = {
+		    IRQ = {
+			country_event = { id = iraq.2 days = 365 }
+			}
+	    }
+    }
+}
+
+#Resolution of the Crisis
+country_event = {
+	id = iraq.2
+	title = iraq.2.t
+	desc = iraq.2.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.2.a
+		hidden_effect = {
+		country_event = { id = iraq.3 days = 30 }
+		add_stability = 0.15
+		set_party_name = {
+		    ideology = conservative
+			name = IRQ_new_conservative_party
+			long_name = IRQ_new_conservative_party_long
+		}
+		retire_character = IRQ_barham_salih_char
+		recruit_character = IRQ_abdul_rashid_char
+		set_nationality = {
+			target_country = ABK
+			character = IRQ_muqtada_sadr_char
+		}
+        add_popularity = {
+		ideology = authoritarian_democrat
+		popularity = -0.2
+		}
+	}
+}
+}
+
+#Naqshbandi Order Seize Kurdistan
+country_event = {
+	id = iraq.3
+	title = iraq.3.t
+	desc = iraq.3.d
+	picture = GFX_generic_naqshbandi_order  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.3.a
+		hidden_effect = {
+			676 = {
+				set_demilitarized_zone = yes
+			}
+			1176 = {
+				set_demilitarized_zone = yes
+			}
+			country_event = { id = iraq.4 days = 30 }
+		}
+	}
+}
+
+#Iraqi Authority collapsing
+country_event = {
+	id = iraq.4
+	title = iraq.4.t
+	desc = iraq.4.d
+	picture = GFX_iraqi_protests  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.4.a
+		add_stability = -0.1
+		hidden_effect = {
+			675 = {
+				set_demilitarized_zone = yes
+			}
+			1177 = {
+				set_demilitarized_zone = yes
+			}
+			1179 = {
+				set_demilitarized_zone = yes
+			}
+			1180 = {
+				set_demilitarized_zone = yes
+			}
+			country_event = { id = iraq.5 days = 30 }
+			add_manpower = 15000
+		}
+	}
+}
+
+#Isis Begins Operations Again and who the FUCK ARE THE SOLDIERS OF HEAVEN
+country_event = {
+	id = iraq.5
+	title = iraq.5.t
+	desc = iraq.5.d
+	picture = GFX_southern_iraq_anarchy  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		set_global_flag = IRQ_civil_war_flag
+			IRQ = {
+				add_manpower = 20000
+				add_ideas = IRQ_iraqi_civil_war
+				set_variable = { disband_fraction = 0.5 }
+				disband_units_fraction = yes
+				clear_variable = disband_fraction
+			}
+			FIA = {
+				every_state = {
+				    limit = {
+					    is_core_of = IRQ
+					}
+				    add_core_of = FIA
+				}
+				transfer_state = 1177
+				transfer_state = 1179
+				load_oob = "FIA_2020"
+				add_ideas = IRQ_iraqi_civil_war
+			}
+			BUK = {
+				every_state = {
+				    limit = {
+					    is_core_of = IRQ
+					}
+				    add_core_of = BUK
+				}
+				transfer_state = 676
+				transfer_state = 1176
+				load_oob = "BUK_2020"
+				add_ideas = IRQ_iraqi_civil_war
+			}
+			#IAI = {
+			#	every_state = {
+			#	    limit = {
+			#		    is_core_of = IRQ
+			#		}
+			#	    add_core_of = IAI
+			#	}
+			#	transfer_state = 675
+			#	load_oob = "IAI_2020"
+			#	add_ideas = IRQ_iraqi_civil_war
+			#}
+			ABK = {
+				every_state = {
+				    limit = {
+					    is_core_of = IRQ
+					}
+				    add_core_of = ABK
+				}
+				transfer_state = 1180
+				load_oob = "ABK_2020"
+				add_ideas = IRQ_iraqi_civil_war
+			}
+			IRQ = {
+				declare_war_on = {
+					target = BUK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FIA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ABK
+					type = annex_everything
+				}
+			}
+			BUK = {
+				declare_war_on = {
+					target = ABK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FIA
+					type = annex_everything
+				}
+			}
+			FIA = {
+				declare_war_on = {
+					target = ABK
+					type = annex_everything
+				}
+			}
+		    random_list = {
+			35 = {
+                IRQ = {
+			    transfer_state = 675
+				load_oob = "IAI_2020"
+			    }
+			}
+			35 = {
+                ABK = {
+			    transfer_state = 675
+				load_oob = "IAI_2020"
+			    }
+			}
+			20 = {
+                BUK = {
+			    transfer_state = 675
+				load_oob = "IAI_2020"
+			    }
+			}
+			10 = {
+			    FIA = {
+			    transfer_state = 675
+				load_oob = "IAI_2020"				
+				}
+			}
+		    }
+		}
+	}
+	
+	option = {
+		name = iraq.5.a
+		effect_tooltip = {
+			add_ideas = IRQ_iraqi_civil_war
+		}
+	}
+}
+
+#iraq invades kuwait
+country_event = {
+	id = iraq.6
+	title = iraq.6.t
+	desc = iraq.6.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.6.a
+		BUK = {
+			declare_war_on = {
+				target = KUW
+				type = annex_everything
+			}
+		}
+		SAU = {
+		set_cosmetic_tag = iraq_invades_kuwait_focus_bypass
+		}
+	}
+}
+
+#Total Kurdish Death
+country_event = {
+	id = iraq.7
+	title = iraq.7.t
+	desc = iraq.7.d
+	picture = GFX_iraqi_civil_war  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.7.a
+		declare_war_on = {
+			target = KUR
+			type = annex_everything
+		}
+	}
+}
+
+#Izzat Beats Iran
+country_event = {
+	id = iraq.8
+	title = iraq.8.t
+	desc = iraq.8.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.8.a
+		BUK = {
+			white_peace = PER
+            retire_character = IRQ_Salah_Mukhtar
+			transfer_state = 413
+			remove_ideas = BUK_iran_war
+			country_event = { id = iraq.7 days = 20 }
+
+			if = {
+				limit = {
+					ZET = {
+						owns_state = 656
+					}
+				}
+				BUK = {
+					transfer_state = 656
+				}
+			}
+
+			if = {
+				limit = {
+					KUW = { exists = yes }
+				}
+				BUK = {
+					country_event = { id = iraq.6 days = 40 }
+				}
+			}
+
+			PER = {
+				remove_ideas = PER_iraq_war
+			}
+		}
+	}
+}
+
+#Izzat Beats Iran
+country_event = {
+	id = iraq.8
+	title = iraq.8.t
+	desc = iraq.8.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.8.a
+		BUK = {
+			white_peace = PER
+            retire_character = IRQ_Salah_Mukhtar
+			transfer_state = 413
+			remove_ideas = BUK_iran_war
+			country_event = { id = iraq.7 days = 20 }
+
+			if = {
+				limit = {
+					ZET = {
+						owns_state = 656
+					}
+				}
+				BUK = {
+					transfer_state = 656
+				}
+			}
+
+			if = {
+				limit = {
+					KUW = { exists = yes }
+				}
+				BUK = {
+					country_event = { id = iraq.6 days = 40 }
+				}
+			}
+
+			PER = {
+				remove_ideas = PER_iraq_war
+			}
+		}
+	}
+}
+
+#12TH IMAM APPEARS HOLY FUCK ITS REAL #SOH vicotry
+country_event = {
+	id = iraq.9
+	title = iraq.9.t
+	desc = iraq.9.d
+	picture = GFX_Twelfth_Imam  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.9.a
+		set_cosmetic_tag = IRQ_radio_silence
+	}
+}
+
+#Victory in Kurdistan
+country_event = {
+	id = iraq.10
+	title = iraq.10.t
+	desc = iraq.10.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.10.a
+		add_stability = 0.03
+		add_political_power = 75
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"4. Fedayeen Saddam\" division_template = \"Fedayeen Saddam\"  start_experience_factor = 0.0"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"3. Liwa Jaysh\" division_template = \"Reconstructed Infantry Division\"  start_experience_factor = 0.0"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"5. Fedayeen Saddam\" division_template = \"Fedayeen Saddam\"  start_experience_factor = 0.0"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+		}
+	}
+}
+
+#Soviet Economic Assistance
+country_event = {
+	id = iraq.11
+	title = iraq.11.t
+	desc = iraq.11.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.11.a
+		add_equipment_to_stockpile = {type = support_equipment_1 amount = 300 producer = SOV }
+		add_equipment_to_stockpile = {type = infantry_equipment_2 amount = 1000 producer = SOV }
+		add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 300 producer = SOV }
+		add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 300 producer = SOV }
+		add_equipment_to_stockpile = {type = modern_tank_chassis amount = 150 producer = SOV }
+		add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 150 producer = SOV }
+		add_equipment_to_stockpile = {type = mechanized_equipment_2 amount = 150 producer = SOV }
+	}
+}
+
+#Soviet Advisors
+country_event = {
+	id = iraq.12
+	title = iraq.12.t
+	desc = iraq.12.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.12.a
+		add_ideas = BUK_soviet_advisors
+		load_oob = "BUK_spetsnaz"
+	}
+}
+
+#Invitation to COMECON
+country_event = {
+	id = iraq.13
+	title = iraq.13.t
+	desc = iraq.13.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {#accept
+		name = iraq.13.a
+		SOV = {
+			country_event = { id = iraq.14 days = 5 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				add = 15
+				has_country_flag = SOV_sent_economic_assistance
+			}
+			modifier = {
+				add = 10
+				has_country_flag = SOV_sent_volunteers
+			}
+		}
+	}
+	option = {#deny
+		name = iraq.13.b
+		country_event = { id = iraq.15 days = 5 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#Accept
+country_event = {
+	id = iraq.14
+	title = iraq.14.t
+	desc = iraq.14.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.13.a
+		BUK = {
+			add_ideas = SOV_comecon_member
+		}
+	}
+}
+
+#Deny
+country_event = {
+	id = iraq.15
+	title = iraq.15.t
+	desc = iraq.15.d
+	picture = GFX_report_iraqi_naqshbandi_order_attack  
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.15.a
+		add_political_power = -50
+	}
+}

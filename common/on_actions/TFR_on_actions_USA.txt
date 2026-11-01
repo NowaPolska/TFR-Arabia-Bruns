@@ -1,0 +1,979 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					country_lock_all_division_template = yes
+					set_variable = {
+						var = legit_var
+						value = 0
+					}
+					set_variable = {
+						var = legit_min_var
+						value = -1
+					}
+					set_variable = {
+						var = legit_max_var
+						value = 1
+					}
+					set_variable = {
+						var = legit_dynamic_var
+						value = 0
+					}
+					set_variable = {
+						var = mask_supply_var
+						value = 0
+					}
+					set_variable = {
+						var = mask_weekly_gain_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_the_movement_states_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_the_movement_states_loc_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_covid_states_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_house_seats_var
+						value = 435
+					}
+					set_variable = {
+						var = USA_house_support_var
+						value = 197
+					}
+					set_variable = {
+						var = USA_house_seats_gop_var
+						value = 197
+					}
+					set_variable = {
+						var = USA_house_support_gop_var
+						value = 197
+					}
+					set_variable = {
+						var = USA_house_seats_dem_var
+						value = 233
+					}
+					set_variable = {
+						var = USA_house_support_dem_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_house_seats_ind_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_house_support_ind_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_senate_seats_var
+						value = 100
+					}
+					set_variable = {
+						var = USA_senate_support_var
+						value = 51
+					}
+					set_variable = {
+						var = USA_senate_seats_gop_var
+						value = 52
+					}
+					set_variable = {
+						var = USA_senate_support_gop_var
+						value = 51
+					}
+					set_variable = {
+						var = USA_senate_seats_dem_var
+						value = 46
+					}
+					set_variable = {
+						var = USA_senate_support_dem_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_senate_seats_ind_var
+						value = 2
+					}
+					set_variable = {
+						var = USA_senate_support_ind_var
+						value = 0
+					}
+					set_variable = {
+						var = USA_coronavirus_outbreak_in_state_mission_var
+						value = 6
+					}
+					set_variable = {
+						var = USA_opposistion_action_mission_mission_var
+						value = 34
+					}
+					every_state = {
+						if = {
+							limit = {
+								OR = {
+									state = 936 #Florida Capital
+									state = 357 #Massachusetts Capital
+									state = 360 #Pennsylvania Capital
+									state = 931 #DC Capital
+									state = 1070 #Virginia Capital
+									state = 1246 #Ohio Capital
+									state = 982 #Louisanna Capital
+									state = 372 #Arkansas Capital
+									state = 1013 #Alabama Capital
+									state = 1009 #Missippi Capital
+									state = 1017 #Georgia Capital
+									state = 1024 #South Carolina Capital
+									state = 363 #North Carolina Capital
+									state = 1001 #Kentucky Capital
+									state = 1077 #Connecticut Capital
+									state = 794 #New Hampshire Capital
+									state = 793 #Vermont Capital
+									state = 395 #Illinois Capital
+									state = 1073 #Michigan Capital
+									state = 373 #Missouri Capital
+									state = 386 #Washington Capital
+									state = 941 #Northern California\California Capital
+									state = 930 #Southern California Capital
+									state = 385 #Oregon Capital
+									state = 387 #Idaho Capital
+									state = 382 #Colorado Capital
+									state = 1100 #Utah Capital
+									state = 1096 #Nevada Capital
+									state = 388 #Montana Capital
+									state = 376 #New Mexico Capital
+									state = 983 #Arizona Capital
+									state = 961 #Southern Texas\Texas Capital
+									state = 956 #Northern Texas Capital
+									state = 383 #Kansas Capital
+									state = 1236 #Okalahoma Capital
+									state = 629 #Hawaii Capital
+									state = 463 #Alasaka Capital
+									state = 1143 #Wyoming Capital
+									state = 384 #Nebraska Capital
+									state = 390 #South Dakota\Dakota Capital
+									#state = 389 #North Dakota Capital
+									state = 1243 #Minnesota Capital
+									state = 392 #Iowa Capital
+									state = 1244 #Wisconsin Capital
+									state = 1151 #Indiana Capital
+									state = 792 #Maine Capital
+									state = 359 #New Jersey
+									state = 361 #Maryland Capital
+									state = 896 #West Virginia Capital
+									state = 1248 #Tennesee Capital
+									state = 1116 #Upstate New York Capital
+									state = 918 #New York City Capital
+									state = 988 #Navajo Capital
+								}
+							}
+							set_state_flag = USA_capital_state
+							add_to_array = {
+								array = USA.coreable_states_capitals
+								value = THIS.id
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 358
+									state = 357
+									state = 1069
+									state = 1068
+									state = 931
+									state = 1070
+									state = 1246
+									state = 1245
+									state = 1247
+									state = 393
+									state = 1093
+									state = 1099
+									state = 1243
+									state = 1244
+									state = 1036
+									state = 993
+									state = 941
+									state = 932
+									state = 1039
+									state = 930
+									state = 952
+									state = 1097
+									state = 1100
+									state = 382
+									state = 376
+									state = 960
+									state = 959
+									state = 961
+									state = 958
+									state = 957
+									state = 956
+									state = 978
+									state = 1009
+									state = 1012
+									state = 1017
+									state = 937
+									state = 939
+									state = 940
+									state = 1092
+									state = 1005
+									state = 1023
+									state = 1008
+									state = 1248
+									state = 1000
+									state = 1234
+									state = 1235
+								}
+							}
+							set_state_flag = USA_major_city_state
+						}
+						#Sets States and Covid Mask/Vaccine Costs
+						if = {
+							limit = {
+								USA_is_northern_texas_state = yes
+							}
+							set_state_flag = USA_northern_texas_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 9000
+							}
+						}
+						if = {
+							limit = {
+								USA_is_southern_texas_state = yes
+							}
+							set_state_flag = USA_southern_texas_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 19250
+							}
+						}
+						if = {
+							limit = {
+								USA_is_new_mexico_state = yes
+							}
+							set_state_flag = USA_new_mexico_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 2120
+							}
+						}
+						if = {
+							limit = {
+								USA_is_arizona_state = yes
+							}
+							set_state_flag = USA_arizona_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 7150
+							}
+						}
+						if = {
+							limit = {
+								USA_is_nevada_state = yes
+							}
+							set_state_flag = USA_nevada_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 3100
+							}
+						}
+						if = {
+							limit = {
+								USA_is_utah_state = yes
+							}
+							set_state_flag = USA_utah_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 3290
+							}
+						}
+						if = {
+							limit = {
+								USA_is_colorado_state = yes
+							}
+							set_state_flag = USA_colorado_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 5770
+							}
+						}
+						if = {
+							limit = {
+								USA_is_montana_state = yes
+							}
+							set_state_flag = USA_montana_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 1120
+							}
+						}
+						if = {
+							limit = {
+								USA_is_idaho_state = yes
+							}
+							set_state_flag = USA_idaho_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 1840
+							}
+						}
+						if = {
+							limit = {
+								USA_is_oklahoma_state = yes
+							}
+							set_state_flag = USA_oklahoma_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 3960
+							}
+						}
+						if = {
+							limit = {
+								USA_is_nebraska_state = yes
+							}
+							set_state_flag = USA_nebraska_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 1960
+							}
+						}
+						if = {
+							limit = {
+								USA_is_minnesota_state = yes
+							}
+							set_state_flag = USA_minnesota_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 5710
+							}
+						}
+						if = {
+							limit = {
+								USA_is_wisconsin_state = yes
+							}
+							set_state_flag = USA_wisconsin_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 5900
+							}
+						}
+						if = {
+							limit = {
+								USA_is_tennessee_state = yes
+							}
+							set_state_flag = USA_tennesse_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 6910
+							}
+						}
+						if = {
+							limit = {
+								USA_is_ohio_state = yes
+							}
+							set_state_flag = USA_ohio_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 11800
+							}
+						}
+						if = {
+							limit = {
+								USA_is_oregon_state = yes
+							}
+							set_state_flag = USA_oregon_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 4240
+							}
+						}
+						if = {
+							limit = {
+								USA_is_northern_california_state = yes
+							}
+							set_state_flag = USA_northern_california_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 25700
+							}
+						}
+						if = {
+							limit = {
+								USA_is_southern_california_state = yes
+							}
+							set_state_flag = USA_southern_california_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 13840
+							}
+						}
+						if = {
+							limit = {
+								USA_is_washington_state = yes
+							}
+							set_state_flag = USA_washington_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 7710
+							}
+						}
+						if = {
+							limit = {
+								USA_is_wyoming_state = yes
+							}
+							set_state_flag = USA_wyoming_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 580
+							}
+						}
+						if = {
+							limit = {
+								USA_is_michigan_state = yes
+							}
+							set_state_flag = USA_michigan_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 9880
+							}
+						}
+						if = {
+							limit = {
+								USA_is_missouri_state = yes
+							}
+							set_state_flag = USA_missouri_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 6150
+							}
+						}
+						if = {
+							limit = {
+								USA_is_illinois_state = yes
+							}
+							set_state_flag = USA_illinois_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 12810
+							}
+						}
+						if = {
+							limit = {
+								USA_is_iowa_state = yes
+							}
+							set_state_flag = USA_iowa_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 3200
+							}
+						}
+						if = {
+							limit = {
+								USA_is_maryland_state = yes
+							}
+							set_state_flag = USA_maryland_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 7870
+							}
+						}
+						if = {
+							limit = {
+								USA_is_dakota_state = yes
+							}
+							set_state_flag = USA_dakota_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 1720
+							}
+						}
+						if = {
+							limit = {
+								USA_is_pennsylvania_state = yes
+							}
+							set_state_flag = USA_pennsylvania_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 13000
+							}
+						}
+						if = {
+							limit = {
+								USA_is_vermont_state = yes
+							}
+							set_state_flag = USA_vermont_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 640
+							}
+						}
+						if = {
+							limit = {
+								USA_is_massachusetts_state = yes
+							}
+							set_state_flag = USA_massachusetts_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 7030
+							}
+						}
+						if = {
+							limit = {
+								USA_is_connecticut_state = yes
+							}
+							set_state_flag = USA_connecticut_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 4710
+							}
+						}
+						if = {
+							limit = {
+								USA_is_virginia_state = yes
+							}
+							set_state_flag = USA_virginia_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 8630
+							}
+						}
+						if = {
+							limit = {
+								USA_is_kansas_state = yes
+							}
+							set_state_flag = USA_kansas_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 2940
+							}
+						}
+						if = {
+							limit = {
+								USA_is_indiana_state = yes
+							}
+							set_state_flag = USA_indiana_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 6790
+							}
+						}
+						if = {
+							limit = {
+								USA_is_kentucky_state = yes
+							}
+							set_state_flag = USA_kentucky_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 4510
+							}
+						}
+						if = {
+							limit = {
+								USA_is_north_carolina_state = yes
+							}
+							set_state_flag = USA_north_carolina_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 10440
+							}
+						}
+						if = {
+							limit = {
+								USA_is_south_carolina_state = yes
+							}
+							set_state_flag = USA_south_carolina_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 5120
+							}
+						}
+						if = {
+							limit = {
+								USA_is_georgia_state = yes
+							}
+							set_state_flag = USA_georgia_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 10710
+							}
+						}
+						if = {
+							limit = {
+								USA_is_alabama_state = yes
+							}
+							set_state_flag = USA_alabama_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 5030
+							}
+						}
+						if = {
+							limit = {
+								USA_is_mississippi_state = yes
+							}
+							set_state_flag = USA_mississippi_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 2960
+							}
+						}
+						if = {
+							limit = {
+								USA_is_arkansas_state = yes
+							}
+							set_state_flag = USA_arkansas_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 3010
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									USA_is_louisiana_state = yes
+								}
+							}
+							set_state_flag = USA_louisiana_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 4660
+							}
+						}
+						if = {
+							limit = {
+								USA_is_florida_state = yes
+							}
+							set_state_flag = USA_florida_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 21540
+							}
+						}
+						if = {
+							limit = {
+								USA_is_new_york_city_state = yes
+							}
+							set_state_flag = USA_new_york_city_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 8800
+							}
+						}
+						if = {
+							limit = {
+								USA_is_upstate_new_york_state = yes
+							}
+							set_state_flag = USA_upstate_new_york_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 11400
+							}
+						}
+						if = {
+							limit = {
+								USA_is_new_hampshire_state = yes
+							}
+							set_state_flag = USA_new_hampshire_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 1380
+							}
+						}
+						if = {
+							limit = {
+								USA_is_maine_state = yes
+							}
+							set_state_flag = USA_maine_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 1360
+							}
+						}
+						if = {
+							limit = {
+								USA_is_new_jersey_state = yes
+							}
+							set_state_flag = USA_new_jersey_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 9300
+							}
+						}
+						if = {
+							limit = {
+								USA_is_west_virginia_state = yes
+							}
+							set_state_flag = USA_west_virginia_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 1800
+							}
+						}
+						if = {
+							limit = {
+								USA_is_navajo_state = yes
+							}
+							set_state_flag = USA_navajo_state
+							set_variable = {
+								var = USA_total_state_population_k_var
+								value = 50
+							}
+						}
+					}
+				}
+				#Civil War
+				every_possible_country = {
+					limit = {
+						USA_is_civil_war_faction = yes
+					}
+					add_to_array = {
+						array = USA.faction_tag_array
+						value = THIS.id
+					}
+				}
+				#State TAGs
+				every_possible_country = {
+					limit = {
+						USA_is_state_tag = yes
+					}
+					add_to_array = {
+						array = USA.state_tag_array
+						value = THIS.id
+					}
+				}
+				#Militia TAGs
+				every_possible_country = {
+					limit = {
+						USA_is_militia_tag = yes
+					}
+					add_to_array = {
+						array = USA.militia_tag_array
+						value = THIS.id
+					}
+				}
+				#Gang TAGs
+				every_possible_country = {
+					limit = {
+						USA_is_gang_tag = yes
+					}
+					add_to_array = {
+						array = USA.gang_tag_array
+						value = THIS.id
+					}
+				}
+				#Seperatist TAGs
+				every_possible_country = {
+					limit = {
+						USA_is_separatist_tag = yes
+					}
+					add_to_array = {
+						array = USA.separatist_tag_array
+						value = THIS.id
+					}
+				}
+				#Rival TAGs
+				every_possible_country = {
+					limit = {
+						USA_is_rival_tag = yes
+					}
+					add_to_array = {
+						array = USA.rival_tag_array
+						value = THIS.id
+					}
+				}
+				USA_set_hollywood = yes # 3d model
+			}
+		}
+	}
+	on_weekly_USA = {
+		effect = {
+			add_to_variable = {
+				var = mask_supply_var
+				value = mask_weekly_gain_var
+			}
+		}
+	}
+	on_monthly_ZZZ = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+				}
+				add_to_variable = {
+					var = USA_american_civil_war_months_var
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_american_civil_war_months_var
+							value = 18
+							compare = greater_than_or_equals
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								country_exists = FLA
+								country_exists = FLM
+								country_exists = MMS
+								country_exists = ZOE
+								country_exists = LRA
+							}
+							ATW = {
+								is_ai = yes
+								NOT = {
+									has_idea = ATW_win_theater_idea
+								}
+							}
+						}
+						ATW = {
+							add_ideas = ATW_win_theater_idea
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								country_exists = CLM
+								country_exists = CAL
+								country_exists = BGF
+								country_exists = SRN
+								country_exists = NRT
+								country_exists = RPP
+								country_exists = RGA
+								country_exists = HLA
+								country_exists = WLF
+							}
+							APA = {
+								is_ai = yes
+								NOT = {
+									has_idea = APA_win_theater_idea
+								}
+							}
+						}
+						APA = {
+							add_ideas = APA_win_theater_idea
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								country_exists = MIM
+								country_exists = HWM
+								country_exists = BMF
+								country_exists = HUM
+							}
+							NSM = {
+								is_ai = yes
+								NOT = {
+									has_idea = NSM_win_theater_idea
+								}
+							}
+						}
+						NSM = {
+							add_ideas = NSM_win_theater_idea
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								country_exists = NYP
+								country_exists = NCY
+								country_exists = GMA
+								country_exists = SAT
+								country_exists = NYP
+								country_exists = GMC
+								country_exists = FAA
+								country_exists = NEG
+								country_exists = VER
+								country_exists = JDL
+								country_exists = ATP
+							}
+							PTF = {
+								is_ai = yes
+								NOT = {
+									has_idea = PTF_win_theater_idea
+								}
+							}
+						}
+						PTF = {
+							add_ideas = PTF_win_theater_idea
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_american_civil_war_months_var
+							value = 24
+							compare = greater_than_or_equals
+						}
+					}
+					if = {
+						limit = {
+							country_exists = CAC
+							APA = {
+								is_ai = yes
+								NOT = {
+									has_idea = APA_kill_CAC_idea
+								}
+							}
+						}
+						APA = {
+							add_ideas = APA_kill_CAC_idea
+						}
+					}
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = ATW
+						controls_state = 463
+					}
+					FROM = {
+						tag = USN
+					}
+					FROM.FROM = {
+						state = 463
+					}
+				}
+				ROOT = {
+					country_event = {
+						id = usa.226
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_global_flag = USA_american_civil_war_global
+						has_war_with = FROM
+						is_in_peace_conference = no
+					}
+					FROM = {
+						has_global_flag = USA_american_civil_war_global
+					}
+					FROM.FROM = {
+						state = 1298
+					}
+				}
+				ROOT = {
+					USA_set_hollywood_ruined = yes #Battle for the Hollywood
+				}
+			}
+		}
+	}
+
+}

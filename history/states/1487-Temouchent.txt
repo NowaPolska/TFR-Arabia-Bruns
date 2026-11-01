@@ -1,0 +1,22 @@
+state={
+	id=1487
+	name="STATE_1487"
+	provinces={
+		3991 4116 4150 7008 7132 12018 
+	}
+	history = {
+		victory_points = { 7132 10 }
+		owner = ALG
+		add_core_of = ALG
+		buildings = {
+			7132 = {
+				naval_base = 6
+			}
+
+		}
+	}
+	state_category = large_town	
+	manpower=823000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

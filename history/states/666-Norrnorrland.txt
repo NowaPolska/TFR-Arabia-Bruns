@@ -1,0 +1,22 @@
+state={
+	id=666
+	name="STATE_666" #Gavleborg
+	resources={
+		steel=18.000
+	}
+	provinces={
+		201 6125 6165 6168 9147 9186 9226 11073
+	}
+	history = {
+		owner = SWE
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 3
+			energy_farm = 1
+		}
+	}
+	manpower=289502
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

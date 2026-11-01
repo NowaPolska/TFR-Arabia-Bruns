@@ -1,0 +1,19 @@
+state={
+	id=1432
+	name="STATE_1432"
+	manpower=91101
+
+	state_category = wasteland
+
+	provinces={
+		1544 4440 
+	}
+	history={
+		owner = JOR
+		add_core_of = JOR
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+}

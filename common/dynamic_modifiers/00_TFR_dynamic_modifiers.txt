@@ -1,0 +1,150 @@
+sabotaged_resources = {
+	remove_trigger = { 
+		ROOT = {
+			has_resistance = no
+		}
+	}
+	
+	icon = GFX_modifiers_sabotaged_resource
+	
+	temporary_state_resource_oil = sabotaged_oil
+	temporary_state_resource_aluminium = sabotaged_aluminium
+	temporary_state_resource_rubber = sabotaged_rubber
+	temporary_state_resource_tungsten = sabotaged_tungsten
+	temporary_state_resource_steel = sabotaged_steel
+	temporary_state_resource_chromium = sabotaged_chromium
+}
+
+autonomous_state = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}
+
+semi_autonomous_state = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}
+
+dense_rural_infrastructure = { #State Modifier
+	enable = { always = yes }
+	remove_trigger = {
+		ROOT = {
+			infrastructure > 4
+		}
+	}
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_non_core_supply_impact_factor = 0.35
+}
+
+international_city = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -1
+	recruitable_population_factor = -1
+	local_factories = -1
+	disable_strategic_redeployment = yes
+}
+
+international_city_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.75
+	recruitable_population_factor = -0.75
+	local_factories = -0.75
+	resistance_growth = 1.2
+	disable_strategic_redeployment = yes
+}
+
+international_city_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.5
+	recruitable_population_factor = -0.5
+	local_factories = -0.5
+	resistance_growth = 0.6
+	compliance_gain = 0.1
+	disable_strategic_redeployment = yes
+}
+
+international_city_4 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.25
+	recruitable_population_factor = -0.25
+	local_factories = -0.25
+	resistance_growth = 0.2
+	compliance_gain = 0.4
+	disable_strategic_redeployment = yes
+}
+
+unity_propaganda = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	compliance_gain = 0.7
+}
+
+military_appeasement = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	resistance_growth = -0.5
+}
+
+unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
+}
+
+BRM_peoples_war = {
+	icon = GFX_modifiers_BRM_peoples_war
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.95
+	army_speed_factor = -0.95
+	ground_attack_factor = -0.75
+	attrition = -0.65
+	army_defence_factor = 0.5
+	army_org_factor = 0.05
+}
+
+SPR_peoples_war = {
+	icon = GFX_idea_SPR_spanish_civil_war
+
+	air_cas_present_factor = -0.25
+	army_attack_factor = -0.1
+	army_speed_factor = -0.2
+	ground_attack_factor = -0.25
+	attrition = -0.65
+	army_defence_factor = 0.2
+	army_org_factor = 0.1
+}

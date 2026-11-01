@@ -1,0 +1,360 @@
+﻿###########################
+# Egyptian Events
+###########################
+add_namespace = egypt
+#Crop Failure
+country_event = {
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.d
+	picture = GFX_Generic_Fight_Jet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.1.a
+		hidden_effect = { load_oob = EGY_war
+		}
+	}
+}
+
+#Egypt Mobilizes
+country_event = {
+	id = egypt.2
+	title = egypt.2.t
+	desc = egypt.2.d
+	picture = GFX_Generic_Fight_Jet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.2.a
+		load_oob = EGY_war
+		news_event = {
+			id = egypt.3
+		}
+		country_event = {
+			id = egypt.7
+			days = 60
+		}
+		create_faction = nile_river_coalition
+		hidden_effect = {
+			remove_faction_goal = faction_goal_the_atomic_race
+			add_faction_goal = faction_goal_placeholder_long_term
+			remove_faction_goal = faction_goal_a_military_base
+			add_faction_goal = faction_goal_placeholder_medium_term
+			add_faction_goal = faction_goal_placeholder_short_term
+		}
+		EGY = {
+			add_to_faction = SSD
+			add_to_faction = ERI
+			add_to_faction = SOM
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = ETH
+				value = 100
+			}
+		}
+		ETH = {
+			country_event = {
+				id = ethiopia.5
+				days = 30
+			}
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = EGY
+				value = 100
+			}
+		}
+	}
+}
+
+news_event = {
+	id = egypt.3
+	title = egypt.3.t
+	desc = egypt.3.d
+	picture = GFX_Egyptian_mobilization_news
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.3.a
+		
+	}
+}
+
+#Farmer Protests in Cairo
+country_event = {
+	id = egypt.5
+	title = egypt.5.t
+	desc = egypt.5.d
+	picture = GFX_Cairo_Protests
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.5.a
+		add_stability = -0.05
+	}
+}
+
+#Massive Crop Failure
+country_event = {
+	id = egypt.6
+	title = egypt.6.t
+	desc = egypt.6.d
+	picture = GFX_Generic_Fight_Jet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.6.a
+		add_ideas = EGY_severe_water_shortage
+		news_event = {
+			id = news.148
+		}
+		hidden_effect = {
+			country_event = {
+				id = egypt.5
+				days = 10
+			}
+			country_event = {
+				id = egypt.13
+				days = 60
+			}
+			add_manpower = -750000
+		}
+	}
+}
+
+#War Ethiopia
+country_event = {
+	id = egypt.7
+	title = egypt.7.t
+	desc = egypt.7.d
+	picture = GFX_Egyptian_mobilization
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.7.a
+		custom_effect_tooltip = EGY_african_war_tt
+		set_country_flag = EGY_water_war
+		news_event = {
+			id = news.149
+		}
+		declare_war_on = {
+			target = ETH
+			type = annex_everything
+		}
+		EGY = {
+			add_to_faction = TDF
+			add_to_faction = SUD
+		}
+		ETH = {
+			set_country_flag = ETH_african_war
+			declare_war_on = {
+				target = SHB
+				type = annex_everything
+			}
+		}
+		TZN = {
+			declare_war_on = {
+				target = SHB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SSD
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			SUD = {
+				551 = {
+					create_unit = {
+						division = "name = \"12th Infantry Division\" division_template = \"Infantry Division\"  start_experience_factor = 0.0"
+						allow_spawning_on_enemy_provs = yes
+						owner = ROOT
+					}
+				}
+			}
+			country_event = {
+				id = egypt.14
+				days = 10
+			}
+			ETH = {
+				country_event = {
+					id = egypt.15
+					days = 70
+				}
+				declare_war_on = {
+					target = SUD
+					type = annex_everything
+				}
+				add_to_faction = RSF
+			}
+		}
+	}
+}
+
+#Dam Opens
+country_event = {
+	id = egypt.12
+	title = egypt.12.t
+	desc = egypt.12.d
+	picture = GFX_Generic_Fight_Jet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.12.a
+		hidden_effect = {
+			country_event = {
+				id = egypt.1
+				days = 900
+			}
+			country_event = {
+				id = egypt.6
+				days = 1700
+			}
+		}
+	}
+}
+
+#Mass Protests in Cairo
+country_event = {
+	id = egypt.13
+	title = egypt.13.t
+	desc = egypt.13.d
+	picture = GFX_Cairo_riots
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		#Crack Down
+		name = egypt.13.a
+		add_political_power = 75
+		add_ideas = EGY_mass_riots
+		hidden_effect = {
+			country_event = {
+				id = egypt.7
+				days = 80
+			}
+		}
+	}
+	option = {
+		#Let them continue
+		name = egypt.13.b
+		add_stability = -0.05
+		add_ideas = EGY_mass_riots
+		hidden_effect = {
+			country_event = {
+				id = egypt.7
+				days = 80
+			}
+		}
+	}
+}
+
+#Cairo Bombing
+country_event = {
+	id = egypt.14
+	title = egypt.14.t
+	desc = egypt.14.d
+	picture = GFX_Cairo_bombing
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	option = {
+		name = egypt.14.a
+		add_stability = -0.05
+		446 = {
+			add_manpower = -89
+		}
+		add_days_mission_timeout = {
+			mission = EGY_ethiopia_war_countdown
+			days = -50
+		}
+	}
+}
+
+#Free 2 civs and 1 mil and office
+country_event = {
+    id = egypt.15
+    title = egypt.15.t
+    desc = egypt.15.d
+    picture = GFX_Generic_Fight_Jet
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    trigger = {
+        tag = EGY
+    }
+
+    option = {
+        name = egypt.15.a
+
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = office_park
+                level = 1
+                instant_build = yes
+            }
+        }
+
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+
+#army buff ideas 
+country_event = {
+	id = egypt.16
+	title = egypt.16.t
+	desc = egypt.16.d
+	picture = GFX_Generic_Fight_Jet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = EGY
+	}
+	
+	option = {
+	name = egypt.16.a
+	add_ideas = EGY_militarysation
+	}
+}

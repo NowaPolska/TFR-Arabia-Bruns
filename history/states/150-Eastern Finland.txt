@@ -1,0 +1,26 @@
+state={
+	id=150
+	name="STATE_150"
+	
+	provinces={
+		136 141 165 3013 3125 3131 6078 9056 9104 9163 11043 11076 11141 11199 11210 13104 13110 13111 13112
+	}
+	resources = {
+		tungsten=11.000
+		chromium=22.000
+	}
+	history = {
+		owner = FIN
+		add_core_of = FIN
+		victory_points = { 11141 1 }
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+	}
+	manpower=262801
+	state_category=rural
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

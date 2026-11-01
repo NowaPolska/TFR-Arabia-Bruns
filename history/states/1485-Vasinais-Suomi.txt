@@ -1,0 +1,28 @@
+state={
+	id=1485
+	name="STATE_1485"
+	provinces={
+		169 3083 6066 9094 9194 11172 
+	}
+	history = {
+		owner = FIN
+		add_core_of = FIN
+		victory_points = { 3083 20 }	#Turku
+		victory_points = { 6066 1 }
+		buildings = {
+			infrastructure = 4
+			power_plant = 1
+			office_park = 2
+			industrial_complex = 1
+			dockyard = 3
+			3083 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+	}
+	manpower=481403
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

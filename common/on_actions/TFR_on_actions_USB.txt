@@ -1,0 +1,579 @@
+on_actions = {
+	on_weekly_USB = {
+		effect = {
+			#Agendas
+			USB_weekly_agenda_check = yes
+			generic_weekly_agenda_check = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					#has_democratic_government = yes
+					#is_monarchy = no
+					
+					NOT = { has_country_flag = USB_caligula_flag }
+					
+					#var:country_leader = { 
+					#	has_character_flag = RUS_traits_assigned
+					#	NOT = { has_character_flag = RUS_agendas_complete }
+					#}
+				}
+				# Joe Biden / Kamala Harris
+				if = {
+					limit = {
+						OR = {
+							has_country_leader = {
+								character = USB_joe_biden_char
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = USB_kamala_harris_char
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = USA_pete_buttigeg_char
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = USB_beto_o_rourke_char
+								ruling_only = yes
+							}
+						}
+						NOT = { has_country_flag = USB_NSS_flag }
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_joe_biden_char = { has_trait = USB_biden_1_off }
+								USB_kamala_harris_char = { has_trait = USB_biden_1_off }
+								USA_pete_buttigeg_char = { has_trait = USB_biden_1_off }
+								USB_beto_o_rourke_char = { has_trait = USB_biden_1_off }
+							}
+							USC = { exists = no }
+						}
+						remove_country_leader_trait = USB_biden_1_off
+						add_country_leader_trait = USB_biden_1_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_joe_biden_char = { has_trait = USB_biden_2_off }
+								USB_kamala_harris_char = { has_trait = USB_biden_2_off }
+								USA_pete_buttigeg_char = { has_trait = USB_biden_2_off }
+								USB_beto_o_rourke_char = { has_trait = USB_biden_2_off }
+							}
+							has_stability > 0.79
+						}
+						remove_country_leader_trait = USB_biden_2_off
+						add_country_leader_trait = USB_biden_2_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_joe_biden_char = { has_trait = USB_biden_3_off }
+								USB_kamala_harris_char = { has_trait = USB_biden_3_off }
+								USA_pete_buttigeg_char = { has_trait = USB_biden_3_off }
+								USB_beto_o_rourke_char = { has_trait = USB_biden_3_off }
+							}
+							num_of_factories > 100
+						}
+						remove_country_leader_trait = USB_biden_3_off
+						add_country_leader_trait = USB_biden_3_on
+					}
+				}
+				# Hillary Clinton
+				if = {
+					limit = {
+						has_country_leader = {
+							character = USB_hillary_clinton_char
+							ruling_only = yes
+						}
+					}
+					if = {
+						limit = {
+							USB_hillary_clinton_char = { has_trait = USB_hillary_1_off }
+							count_triggers = {
+								amount = 5
+								has_idea = USB_michelle_obama_hog
+								has_idea = USB_meghan_mccain_for
+								has_idea = USB_ilhan_omar_for
+								has_idea = USB_emily_chang_for
+								has_idea = USB_linda_thomas_greenfield_for
+								has_idea = USB_marie_gluesenkamp_perez_for
+								has_idea = USB_janet_yellen_eco
+								has_idea = USB_marillyn_hewson_eco
+								has_idea = USB_rashida_tlaib_eco
+								has_idea = USB_mary_peltola_eco
+								has_idea = USB_deb_haaland_sec
+								has_idea = USB_ayanna_pressley_sec
+								has_idea = USB_julie_chavez_rodriguez_sec
+								has_idea = USB_jen_o_malley_dillon_hog
+								has_idea = USB_liz_cheney_sec
+								has_idea = USB_avril_haines_int
+								has_idea = USB_lauren_zabierek_int
+								has_idea = USA_helen_pratt_high_command
+							}
+						}
+						remove_country_leader_trait = USB_hillary_1_off
+						add_country_leader_trait = USB_hillary_1_on
+					}
+					if = {
+						limit = {
+							USB_hillary_clinton_char = { has_trait = USB_hillary_1_on }
+							NOT = {
+								count_triggers = {
+									amount = 5
+									has_idea = USB_michelle_obama_hog
+									has_idea = USB_meghan_mccain_for
+									has_idea = USB_ilhan_omar_for
+									has_idea = USB_emily_chang_for
+									has_idea = USB_linda_thomas_greenfield_for
+									has_idea = USB_marie_gluesenkamp_perez_for
+									has_idea = USB_janet_yellen_eco
+									has_idea = USB_marillyn_hewson_eco
+									has_idea = USB_rashida_tlaib_eco
+									has_idea = USB_mary_peltola_eco
+									has_idea = USB_deb_haaland_sec
+									has_idea = USB_ayanna_pressley_sec
+									has_idea = USB_julie_chavez_rodriguez_sec
+									has_idea = USB_jen_o_malley_dillon_hog
+									has_idea = USB_liz_cheney_sec
+									has_idea = USB_avril_haines_int
+									has_idea = USB_lauren_zabierek_int
+									has_idea = USA_helen_pratt_high_command
+								}
+							}
+						}
+						remove_country_leader_trait = USB_hillary_1_on
+						add_country_leader_trait = USB_hillary_1_off
+					}
+					if = {
+						limit = {
+							USB_hillary_clinton_char = { has_trait = USB_hillary_2_off }
+							social_liberal > 0.5
+						}
+						remove_country_leader_trait = USB_hillary_2_off
+						add_country_leader_trait = USB_hillary_2_on
+					}
+					if = {
+						limit = {
+							USB_hillary_clinton_char = { has_trait = USB_hillary_3_off }
+							USC = { exists = no }
+						}
+						remove_country_leader_trait = USB_hillary_3_off
+						add_country_leader_trait = USB_hillary_3_on
+					}
+				}
+				#Romney (Republicans)
+				if = {
+					limit = {
+						OR = {
+							has_country_leader = {
+								character = USB_mitt_romney_char
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = USA_nikki_haley_char
+								ruling_only = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_mitt_romney_char = { has_trait = USB_romney_1_off }
+								USA_nikki_haley_char = { has_trait = USB_romney_1_off }
+							}
+							OR = {
+								has_idea = high_police
+								has_idea = higher_police
+							}
+							OR = {
+								has_idea = low_prison
+								has_idea = lower_prison
+							}
+						}
+						remove_country_leader_trait = USB_romney_1_off
+						add_country_leader_trait = USB_romney_1_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_mitt_romney_char = { has_trait = USB_romney_2_off }
+								USA_nikki_haley_char = { has_trait = USB_romney_2_off }
+							}
+							any_country = {
+								if = {
+									limit = {
+										OR = {
+											has_government = libertarian_socialist
+											has_government = communist
+											has_government = totalitarian_socialist
+										}
+									}
+								}
+								has_war_with = USB
+							}
+						}
+						remove_country_leader_trait = USB_romney_2_off
+						add_country_leader_trait = USB_romney_2_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_mitt_romney_char = { has_trait = USB_romney_3_off }
+								USA_nikki_haley_char = { has_trait = USB_romney_3_off }
+							}
+							OR = {
+								has_idea = USB_john_bolton_for
+								has_idea = USB_meghan_mccain_for
+								has_idea = USB_robert_kagan_for
+							}
+						}
+						remove_country_leader_trait = USB_romney_3_off
+						add_country_leader_trait = USB_romney_3_on
+					}
+				}
+				#Sanders (Progressives)
+				if = {
+					limit = {
+						OR = {
+							has_country_leader = {
+								character = USB_bernie_sanders_char
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = USB_AOC_char
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = USB_amy_klobuchar_char
+								ruling_only = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_bernie_sanders_char = { has_trait = USB_sanders_1_off }
+								USB_AOC_char = { has_trait = USB_sanders_1_off }
+								USB_amy_klobuchar_char = { has_trait = USB_sanders_1_off }
+							}
+							OR = {
+								has_idea = high_welfare
+								has_idea = higher_welfare
+							}
+							OR = {
+								has_idea = high_safety
+								has_idea = higher_safety
+							}
+						}
+						remove_country_leader_trait = USB_sanders_1_off
+						add_country_leader_trait = USB_sanders_1_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_bernie_sanders_char = { has_trait = USB_sanders_2_off }
+								USB_AOC_char = { has_trait = USB_sanders_2_off }
+								USB_amy_klobuchar_char = { has_trait = USB_sanders_2_off }
+							}
+							OR = {
+								has_idea = high_poverty
+								has_idea = higher_poverty
+								has_idea = highest_poverty
+							}
+						}
+						remove_country_leader_trait = USB_sanders_2_off
+						add_country_leader_trait = USB_sanders_2_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_bernie_sanders_char = { has_trait = USB_sanders_3_off }
+								USB_AOC_char = { has_trait = USB_sanders_3_off }
+								USB_amy_klobuchar_char = { has_trait = USB_sanders_3_off }
+							}
+							has_completed_focus = USB_medicare_for_all
+							has_completed_focus = USB_fight_nationwide_hunger
+							has_completed_focus = USB_economic_justice
+						}
+						remove_country_leader_trait = USB_sanders_3_off
+						add_country_leader_trait = USB_sanders_3_on
+					}
+				}
+				#Bloomberg (Innovationists)
+				if = {
+					limit = {
+						OR = {
+							has_country_leader = {
+								character = USB_michael_bloomberg_char
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = USB_Andrew_Yang_char
+								ruling_only = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_michael_bloomberg_char = { has_trait = USB_bloomberg_1_off }
+								USB_Andrew_Yang_char = { has_trait = USB_bloomberg_1_off }
+							}
+							check_variable = {
+								var = USB_influence_ino_var
+								value = 0.45
+								compare = greater_than_or_equals
+							}
+							check_variable = {
+								var = USB_support_ino_var
+								value = 0.8
+								compare = greater_than_or_equals
+							}
+						}
+						remove_country_leader_trait = USB_bloomberg_1_off
+						add_country_leader_trait = USB_bloomberg_1_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_michael_bloomberg_char = { has_trait = USB_bloomberg_2_off }
+								USB_Andrew_Yang_char = { has_trait = USB_bloomberg_2_off }
+							}
+							has_idea = lower_taxes
+						}
+						remove_country_leader_trait = USB_bloomberg_2_off
+						add_country_leader_trait = USB_bloomberg_2_on
+					}
+					if = {
+						limit = {
+							OR = {
+								USB_michael_bloomberg_char = { has_trait = USB_bloomberg_3_off }
+								USB_Andrew_Yang_char = { has_trait = USB_bloomberg_3_off }
+							}
+							controls_state = 918
+						}
+						remove_country_leader_trait = USB_bloomberg_3_off
+						add_country_leader_trait = USB_bloomberg_3_on
+					}
+				}
+			}
+		}
+	}
+
+	on_annex = {
+		effect = {
+			if = { #USB Victory Over USC
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						USA_is_civil_war_faction = yes
+						NOT = {
+							tag = USC
+						}
+					}
+					FROM = {
+						tag = USC
+					}
+					NOT = {
+						country_exists = USC
+					}
+				}
+				USB = {
+					if = {
+						limit = {
+							has_country_flag = USB_NSS_flag
+						}
+						country_event = nss.148
+					}
+					else = {
+						country_event = usb.36
+					}
+				}
+			}
+		}
+	}
+	
+	on_new_term_election = {
+		random_events = {
+			100 = usb.115
+		}
+		random_events = {
+			100 = nss.41
+		}
+	}
+
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					tag = USB
+					has_power_balance = {
+						id = USB_trust_bop
+					}
+				}
+				set_power_balance = {
+					id = USB_trust_bop
+					left_side = USB_bad_side
+					right_side = USB_good_side
+					set_value = 0
+				}
+				#end_coalition = yes
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = USB
+					}
+					FROM = {
+						OR = {
+							original_tag = SOV
+							original_tag = PRC
+							original_tag = GER
+							original_tag = FPR
+							original_tag = FAF
+						}
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							original_tag = SOV
+						}
+					}
+					country_event = {
+						id = nss.34
+						hours = 6
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = GER
+								original_tag = FPR
+								original_tag = FAF
+							}
+						}
+					}
+					country_event = {
+						id = nss.35
+						hours = 6
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							original_tag = PRC
+						}
+					}
+					country_event = {
+						id = nss.36
+						hours = 6
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = PER
+								original_tag = IRQ
+								original_tag = BUK
+								original_tag = ABK
+								original_tag = FIA
+								original_tag = SYR
+								original_tag = JAH
+								original_tag = TAL
+								original_tag = MUS
+							}
+						}
+					}
+					country_event = {
+						id = nss.37
+						hours = 6
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = SOV
+							original_tag = PRC
+							original_tag = GER
+							original_tag = FPR
+							original_tag = FAF
+						}
+					}
+					FROM = {
+						original_tag = USB
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = SOV
+						}
+					}
+					country_event = {
+						id = nss.34
+						hours = 6
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								original_tag = GER
+								original_tag = FPR
+								original_tag = FAF
+							}
+						}
+					}
+					country_event = {
+						id = nss.35
+						hours = 6
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							original_tag = PRC
+						}
+					}
+					country_event = {
+						id = nss.36
+						hours = 6
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								original_tag = PER
+								original_tag = IRQ
+								original_tag = BUK
+								original_tag = ABK
+								original_tag = FIA
+								original_tag = SYR
+								original_tag = JAH
+								original_tag = TAL
+								original_tag = MUS
+							}
+						}
+					}
+					country_event = {
+						id = nss.37
+						hours = 6
+					}
+				}
+			}
+		}
+	}
+}

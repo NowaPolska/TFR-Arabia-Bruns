@@ -1,0 +1,13 @@
+	scripted_gui = {
+		NSM_balance_of_power_gui = {
+			context_type = decision_category
+			window_name = "NSM_balance_of_power_gui"
+			properties = {
+				NSM_balance_of_power_bar = {
+					frame = NSM_power_gui_var
+				}
+			}
+			triggers = {
+			}
+		}
+	}

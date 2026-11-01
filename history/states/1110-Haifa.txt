@@ -1,0 +1,25 @@
+state = {
+	id = 1110
+	name = "STATE_1110"
+	manpower = 1032800
+	state_category = city
+	
+	history = {
+		owner = ISR
+		add_core_of = PAL
+		add_core_of = ISR
+		victory_points = { 1201 2 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 1
+			office_park = 1
+			nuclear_reactor = 1
+		}
+	}
+
+	provinces = {
+		1201 13905
+	}
+}

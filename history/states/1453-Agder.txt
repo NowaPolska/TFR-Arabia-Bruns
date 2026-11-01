@@ -1,0 +1,22 @@
+state={
+	id=1453
+	name="STATE_1453"
+	provinces={
+		3049 3129 6072 6151 9096 9196 9296 11176 11367 
+	}
+	manpower = 305669
+	state_category = rural
+	resources = {
+		aluminium = 8
+	}
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		buildings = {
+			infrastructure = 3
+			fuel_silo = 2
+		}
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

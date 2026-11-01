@@ -1,0 +1,120 @@
+	on_actions = {
+		on_annex = {
+			effect = {
+				if = { #Louisiana defeated, Texas volunteers arrive
+					limit = {
+						has_global_flag = USA_american_civil_war_global
+						ROOT = {
+							original_tag = LOS
+						}
+						FROM = {
+							OR = {
+								original_tag = LOU
+							}
+						}
+						NOT = {
+							country_exists = LOU
+						}
+					}
+					country_event = {
+						id = los.16
+					}
+					country_event = {
+						id = los.19
+						days = 35
+					}
+				}
+			}
+		}
+		on_annex = {
+			effect = {
+				if = { #Southern victory in deep south
+					limit = {
+						has_global_flag = USA_american_civil_war_global
+						ROOT = {
+							original_tag = LOS
+						}
+						FROM = {
+							OR = {
+								original_tag = BLA
+								original_tag = LOU
+								original_tag = MSS
+								original_tag = ALA
+							}
+						}
+						NOT = {
+							country_exists = BLA
+							country_exists = LOU
+							country_exists = MSS
+							country_exists = ALA
+						}
+					}
+					country_event = {
+						id = los.3
+					}
+				}
+			}
+		}
+		on_annex = {
+			effect = {
+				if = { #AWD Event
+					limit = {
+						has_global_flag = USA_american_civil_war_global
+						ROOT = {
+							original_tag = LOS
+						}
+						FROM = {
+							original_tag = ATW
+						}
+						NOT = {
+							country_exists = ATW
+						}
+					}
+					country_event = {
+						id = los.47
+						days = 3
+					}
+				}
+			}
+		}
+		on_annex = {
+			effect = {
+				if = { #KKK Integrated
+					limit = {
+						has_global_flag = USA_american_civil_war_global
+						ROOT = {
+							original_tag = LOS
+						}
+						FROM = {
+							original_tag = LWK
+						}
+						NOT = {
+							country_exists = LWK
+						}
+					}
+					country_event = {
+						id = los.21
+						days = 5
+					}
+				}
+			}
+		}
+		on_state_control_changed = {
+			effect = {
+				if = { #New Orleans Reclaimed
+					limit = {
+						FROM.FROM = { state = 978 }
+						OR = {
+							FROM = { tag = LOS }
+							FROM = { tag = LOU }
+						}
+						OR = {
+							ROOT = { tag = LOS }
+							ROOT = { tag = LOU }
+						}
+					}
+					country_event = { id = los.45 }	
+				}
+			}
+		}
+	}

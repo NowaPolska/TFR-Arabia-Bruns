@@ -1,0 +1,204 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#Initial Variables
+			#EU Modifiers
+			set_variable = {
+				var = GLOBAL.eu_political_power_gain_dynamic_var
+				value = -0.15
+			}
+			set_variable = {
+				var = GLOBAL.eu_stability_factor_dynamic_var
+				value = 0
+			} 
+			set_variable = {
+				var = GLOBAL.eu_stability_weekly_dynamic_var
+				value = 0
+			} 
+			set_variable = {
+				var = GLOBAL.eu_war_support_factor_dynamic_var
+				value = 0
+			} 
+			set_variable = {
+				var = GLOBAL.eu_war_support_weekly_dynamic_var
+				value = 0
+			} 
+			set_variable = {
+				var = GLOBAL.eu_consumer_goods_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_local_resources_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_global_building_slots_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_research_speed_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_factory_max_efficiency_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_factory_efficiency_gain_factor_dynamic_var
+				value = 0.1
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_factory_start_efficiency_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_line_change_production_efficiency_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_buildings_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+			set_variable = {
+				var = GLOBAL.eu_industrial_capacity_dockyard_dynamic_var
+				value = 0.05
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_infrastructure_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_industrial_complex_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_office_park_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_rail_way_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_arms_factory_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_dockyard_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_power_plant_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_nuclear_reactor_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_production_speed_energy_farm_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_industrial_development_monthly_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_poverty_development_monthly_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_farming_development_monthly_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_academic_development_monthly_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_society_development_monthly_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_income_growth_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_expense_growth_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_business_value_factor_dynamic_var
+				value = 0.05
+			}
+			set_variable = {
+				var = GLOBAL.eu_personal_value_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_personal_expense_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_personal_expense_factor_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_tax_business_rate_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_tax_personal_rate_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_interest_rate_dynamic_var
+				value = 0
+			}
+			set_variable = {
+				var = GLOBAL.eu_inflation_monthly_dynamic_var
+				value = 0
+			}
+			#Tags that join EU
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG #Leaves soon after start lol
+						tag = GER
+						tag = FRA
+						tag = BEL
+						tag = HOL
+						tag = LUX
+						tag = SPR
+						tag = POR
+						tag = IRE
+						tag = ITA
+						tag = DEN
+						tag = SWE
+						tag = FIN
+						tag = AUS
+						tag = SLV
+						tag = SLO
+						tag = CRO
+						tag = EST
+						tag = LAT
+						tag = LIT
+						tag = HUN
+						tag = CZE
+						tag = PLD
+						tag = ROM
+						tag = BUL
+						tag = GRE
+						tag = CYP
+						tag = BRS
+					}
+				}
+				EU_join_effect = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,631 @@
+characters={
+	IRQ_barham_salih_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/IRQ/Barham Salih.png" 
+			}
+			army = {
+				large = "gfx/Leaders/IRQ/Barham Salih.png" 
+			}
+		}
+
+		country_leader={
+			ideology=islamic_democrat
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	IRQ_muqtada_sadr_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/IRQ/Muqtada al-Sadr.png" 
+			}
+			army = {
+				large = "gfx/Leaders/IRQ/Muqtada al-Sadr.png" 
+			}
+		}
+
+		country_leader={
+			ideology=islamic_authoritarian
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	IRQ_juba_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/IRQ/Juba.png" 
+			}
+			army = {
+				large = "gfx/Leaders/IRQ/Juba.png" 
+			}
+		}
+
+		country_leader={
+			ideology=radical_nationalism
+			expire="1.1.1.1"
+			traits = {
+				hos_Freedom_Fighter
+			}
+			id=-1
+		}
+	}
+	
+	IRQ_abdul_amir_rashid_yarallah_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/IRQ/Abdul Amir Rashid Yarallah.png" 
+			}
+		}
+		can_be_captured = no
+		corps_commander = {
+			skill=1
+			traits = {
+				urban_assault_specialist
+			}
+		}
+	}
+	
+	#Izzat
+	IRQ_Izzat_Ibrahim_Douri = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/BUK/IRQ_Izzat_Ibrahim_Douri.png" 
+			}
+			army = {
+				large = "gfx/Leaders/BUK/IRQ_Izzat_Ibrahim_Douri.png" 
+			}
+		}
+
+		country_leader={
+			ideology=iraqi_baathism
+			traits = {
+				hos_the_ghost
+			}
+			expire="1.1.1.1"
+			id=-1
+		}
+		can_be_captured = no
+		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=4
+			traits = {
+				thorough_planner
+			}
+		}
+	}
+
+	IRQ_Salah_Mukhtar = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/BUK/IRQ_Salah_Mukhtar.png" 
+			}
+			army = {
+				large = "gfx/Leaders/BUK/IRQ_Salah_Mukhtar.png" 
+			}
+		}
+
+		country_leader={
+			ideology=iraqi_baathism
+			expire="1.1.1.1"
+			id=-1
+		}
+		can_be_captured = no
+		field_marshal={
+			skill=3
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			traits = {
+			}
+		}
+	}
+
+	IRQ_Hamza_Molsul = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/BUK/IRQ_Hamza_Molsul.png" 
+			}
+			army = {
+				large = "gfx/Leaders/BUK/IRQ_Hamza_Molsul.png" 
+			}
+		}
+		can_be_captured = no
+		corps_commander = {
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				ranger
+			}
+		}
+	}
+	
+	#ABK
+	ABK_ahmad_hassan_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ABK/Ahmad al-Hassan.dds" 
+			}
+			army = {
+				large = "gfx/Leaders/ABK/Ahmad al-Hassan.dds" 
+			}
+		}
+
+		country_leader={
+			ideology=death_cult
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	#KUR
+	KUR_nechirvan_idris_barzani_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_KUR_nechirvan_idris_barzani
+			}
+			army = {
+				large = GFX_portrait_KUR_nechirvan_idris_barzani
+			}
+		}
+
+		country_leader={
+			ideology=civic_nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	KUR_hussein_mansor_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/KUR/generals/Hussein_Mansor.dds" 
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=2
+			traits = {
+				panzer_leader
+			}
+		}
+	}
+	
+	KUR_abdula_musla_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/KUR/generals/Abdula_Musla.dds" 
+			}
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=1
+			traits = {
+				commando
+			}
+		}
+	}
+	
+	KUR_hossein_yazdan_bna_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/KUR/generals/Hossein_Yazdan_Bna.dds" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=1
+			traits = {
+				trickster
+			}
+		}
+	}
+	
+	KUR_sirwan_barzani_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/KUR/generals/Sirwan_Barzani.dds" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=1
+			traits = {
+				commando
+			}
+		}
+	}
+	
+	KUR_karzan_mahmoud_ahmed_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/KUR/generals/Karzan.dds" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=2
+			traits = {
+				desert_fox
+			}
+		}
+	}
+	
+	KUR_sherko_hwani_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/KUR/generals/Sherko.dds" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=1
+			traits = {
+				trait_engineer
+			}
+		}
+	}
+
+	#FIA
+	IRQ_Abdul_Yarallah = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/FIA/IRQ_Abdul_Yarallah.png" 
+			}
+			army = {
+				large = "gfx/Leaders/FIA/IRQ_Abdul_Yarallah.png" 
+			}
+		}
+	
+		country_leader={
+			ideology=military_junta
+			traits = {
+			}
+			expire="1.1.1.1"
+			id=-1
+		}
+		can_be_captured = no	
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			traits = {
+				
+			}
+		}
+	}
+	
+	#ISS
+	ISS_abu_ibrahim_hashimi_qurashi_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/ISS/Abu Ibrahim al-Hashimi al-Qurashi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/ISS/Abu Ibrahim al-Hashimi al-Qurashi.png" 
+			}
+		}
+
+		country_leader={
+			ideology=salafi
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	ISS_abu_saleh_obaidi_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/ISS/generals/Abu Saleh al-Obaidi.dds" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=1
+			traits = {
+				desert_fox
+			}
+		}
+	}
+#Abdul Latif Rashid
+	IRQ_abdul_rashid_char = {
+		portraits= {
+			civilian = {
+				large = "gfx/Leaders/IRQ/Abdul Rashid.png" 
+			}
+			army = {
+				large = "gfx/Leaders/IRQ/Abdul Rashid.png" 
+			}
+		}
+
+		country_leader={
+			ideology= islamic_democrat
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	IRQ_qais_khazali_char = {
+		portraits= {
+			civilian = {
+				large = "gfx/Leaders/IRQ/Qais Khazali.png" 
+			}
+			army = {
+				large = "gfx/Leaders/IRQ/Qais Khazali.png" 
+			}
+		}
+
+		country_leader={
+			ideology= islamic_authoritarian
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	IRQ_raghad_hussein_char = {
+		portraits= {
+			civilian = {
+				large = "gfx/Leaders/BUK/Raghad Hussein.png" 
+			}
+			army = {
+				large = "gfx/Leaders/BUK/Raghad Hussein.png" 
+			}
+		}
+
+		country_leader= {
+			ideology=iraqi_baathism
+			traits = {
+				
+			}
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	IRQ_othman_al_ghanmi_char = {
+		portraits={
+		    civilian = {
+				large = "gfx/Leaders/IRQ/Othman Al-Ghanmi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/IRQ/Othman Al-Ghanmi.png" 
+			}
+		}
+		
+		country_leader={
+			ideology=military_junta
+			expire="1.1.1.1"
+			traits = {
+				hos_Freedom_Fighter
+			}
+			id=-1
+		}
+		
+		can_be_captured = no	
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				organizer
+				defensive_doctrine
+				inflexible_strategist
+			}
+		}
+	}
+	IRQ_abdul_wahab_al_saadi_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/IRQ/Abdul-Wahab Al-Saadi.png" 
+			}
+		}
+		can_be_captured = no	
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				commando
+				brilliant_strategist
+			}
+		}
+	}
+	IRQ_ali_al_ghurairi_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/IRQ/Ali Al-Ghurairi.png" 
+			}
+		}
+		can_be_captured = no	
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				organizer
+			}
+		}
+	}
+	IRQ_raed_shaker_jawdat_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/IRQ/Raed Shaker Jawdat.png" 
+			}
+		}
+		can_be_captured = no	
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				urban_assault_specialist
+			}
+		}
+	}
+	IRQ_najim_abdullah_al_jubouri_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/IRQ/Najim Abdullah al‑Jubouri.png" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				urban_assault_specialist
+				infantry_leader
+			}
+		}
+	}
+	IRQ_abdul_wahid_shannan_ar_ribat_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/BUK/Abdul-Wahid_Shannan_ar-Ribat.png" 
+			}
+		}
+		can_be_captured = no	
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				
+			}
+		}
+	}
+	IRQ_abd_al_baqi_abd_karim_al_sadun_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/BUK/Abd_Al-Baqi_Abd_Karim_Al-Sadun.png" 
+			}
+		}
+		can_be_captured = no	
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				politically_connected
+				organizer
+				trait_cautious
+			}
+		}
+	}
+	IRQ_mahmud_dhiyab_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/BUK/Mahmud_Dhiyab.png" 
+			}
+		}
+		can_be_captured = no	
+		field_marshal={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				politically_connected
+				organizer
+				old_guard
+			}
+		}
+	}
+	IRQ_mohammed_younis_al_ahmed_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/BUK/Mohammed_Younis_al-Ahmed.png" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				old_guard
+				organizer
+			}
+		}
+	}
+	IRQ_rashid_taan_kazim_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/BUK/Rashid_Taan_Kazim.png" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				
+			}
+		}
+	}
+	IRQ_mohammed_al_askari_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/BUK/Mohammed_al-Askari.png" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				
+			}
+		}
+	}
+	IRQ_ghazwan_sabti_faraj_al_qubaysi_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/BUK/Ghazwan_Sabti_Faraj_Al-Qubaysi.png" 
+			}
+		}
+		can_be_captured = no	
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+				desert_fox
+				armor_officer
+			}
+		}
+	}
+}

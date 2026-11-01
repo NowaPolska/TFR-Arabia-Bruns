@@ -1,0 +1,15 @@
+state={
+	id=1486
+	name="STATE_1486"
+	provinces={
+		1958 8088 10731 
+	}
+	history = {
+		owner = ALG
+		add_core_of = ALG
+	}
+	state_category = rural
+	manpower=654000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

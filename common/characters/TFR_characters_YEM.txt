@@ -1,0 +1,134 @@
+characters={
+	YEM_abdrabbuh_mansur_hadi_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_YEM_abdrabbuh_mansur_hadi
+			}
+			army = {
+				large = GFX_portrait_YEM_abdrabbuh_mansur_hadi
+			}
+		}
+
+		country_leader={
+			ideology=oligarchist
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=islamic_democrat
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=left_nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	YEM_rashad_muhammad_alimi_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/YEM/YEM_Rashad_Muhammad_al-Alimi.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	YEM_Ageel_bin_Muhammad_al_Badr_Hamidaddin_char = {
+	    name = "Ageel bin Muhammad al-Badr Hamidaddin"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/YEM/Ageel_bin_Muhammad_al_Badr_Hamidaddin.png"
+			}
+		}
+		country_leader={
+			ideology = absolute_monarchist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	YEM_Taher_Ali_al_Aqili_char = {
+    name = "Taher Ali al-Aqili"
+    
+    portraits = {
+        civilian = {
+            large = "gfx/Leaders/YEM/YEM_Taher_Ali_al_Aqili.png" 
+        }
+        army = {
+            large = "gfx/Leaders/YEM/YEM_Taher_Ali_al_Aqili.png" 
+        }
+    }
+
+    can_be_captured = no
+
+    corps_commander = {
+        skill = 3                     
+        attack_skill = 2         
+        defense_skill = 5         
+        planning_skill = 2          
+        logistics_skill = 1       
+        traits = { thorough_planner }
+    }
+
+    advisor = {
+        slot = army_chief          
+        idea_token = YEM_Taher_Ali_al_Aqili_advisor
+        
+        allowed = {
+            original_tag = YEM
+        }
+        
+        cost = 50            
+        
+        traits = {
+            army_chief_defensive_2 
+        }
+        
+        ai_will_do = {
+            factor = 100
+        }
+    }
+}
+	#HOU
+	HOU_abdul_malik_houthi_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/HOU/Abdul-Malik al-Houthi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/HOU/Abdul-Malik al-Houthi.png" 
+			}
+		}
+
+		country_leader={
+			ideology=islamic_authoritarian
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=islamic_democrat
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	#AAS
+	AAS_aidarus_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/AAS/Aidarus_al-Zoubaidi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/AAS/Aidarus_al-Zoubaidi.png" 
+			}
+		}
+
+		country_leader={
+			ideology=hybrid_regime
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,59 @@
+﻿### Air OOB ###
+air_wings = {
+	893 = {
+		small_plane_airframe_0 =  {
+			owner = "SAU" 
+			amount = 33
+			version_name = "F-15E"
+		}
+		small_plane_cas_airframe_1 =  {
+			owner = "SAU" 
+			amount = 35
+			version_name = "F-4E"
+		}
+	}
+	894 = {
+		small_plane_airframe_0 =  {
+			owner = "SAU" 
+			amount = 55
+			version_name = "F-15E"
+		}
+	}
+	895 = {
+		small_plane_airframe_0 =  {
+			owner = "TUR" 
+			amount = 42
+			version_name = "F-15E"
+		}
+		small_plane_airframe_0 =  {
+			owner = "TUR" 
+			amount = 63
+			version_name = "F-15E"
+		}
+	}
+	679 = {
+		small_plane_airframe_1 =  {
+			owner = "USA" 
+			amount = 35
+			version_name = "F-16"
+		}
+		small_plane_cas_airframe_1 =  {
+			owner = "TUR" 
+			amount = 15
+			version_name = "F-4E"
+		}
+	}
+	1126 = {
+	    # Euro Fighter
+	    small_plane_airframe_1 =  {
+			owner = "SAU" 
+			amount = 72
+			version_name = "Eurofighter Typhoon"
+		}
+		small_plane_airframe_0 =  {
+			owner = "SAU" 
+			amount = 100
+			version_name = "F-15E"
+		}
+	}
+}

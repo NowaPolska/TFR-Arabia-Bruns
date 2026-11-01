@@ -1,0 +1,36 @@
+UAE_volunteer_Yemen = {
+	allowed = {
+		original_tag = UAE
+	}
+	enable = {
+		country_exists = AAS
+	}
+	abort = {
+		NOT = { country_exists = AAS }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "AAS"
+		value = 1000
+	}
+}
+UAE_volunteer_RSF = {
+	allowed = {
+		original_tag = UAE
+	}
+	enable = {
+		country_exists = RSF
+	}
+	abort = {
+		NOT = { country_exists = RSF }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "RSF"
+		value = 1000
+	}
+}

@@ -1,0 +1,57 @@
+focus_tree = {
+	id = ROC_tree
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = ROC
+		}
+	}
+focus = {
+    id = ROC_Allah_is_with_us
+	icon = GFX_goal_generic_position_army
+	
+	x = 10
+	y = 0
+	
+	cost = 3
+	
+	completion_reward = {
+	add_political_power = 100
+	add_stability = 0.075
+	}
+}
+focus = {
+    id = ROC_Restart_the_Economy
+	icon = GFX_goal_generic_position_army
+	
+	x = 9
+	y = 1
+	
+	prerequisite = {
+	focus = ROC_Allah_is_with_us
+	}
+	
+	cost = 3
+	
+	completion_reward = {
+	add_ideas = { ZZZ_oligopolistic_capitalism }
+	}
+}
+focus = {
+    id = ROC_same_same_but_diffrent
+    icon = GFX_goal_generic_position_army
+	
+	x = 11
+	y = 1
+	
+	prerequisite = {
+	focus = ROC_Allah_is_with_us
+	}
+	
+	cost = 3
+	
+	completion_reward = {
+	add_ideas = { ZZZ_absolute_monarchy }
+	}
+}

@@ -1,0 +1,74 @@
+focus_tree = {
+	id = JAH_tree
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = JAH
+		}
+	}
+focus = {
+    id = JAH_cleanse_Arabia_from_degenracy
+	icon = GFX_goal_generic_position_army
+	
+	x = 10
+	y = 0
+	
+	cost = 3
+	
+	 available = {
+        has_war = yes
+        has_government = nationalist
+    }
+	
+	completion_reward = {
+    add_political_power = 100
+	add_stability = -0.1
+	add_war_support = 0.15
+	manpower = -500
+	}
+}
+focus = {
+    id = JAH_Jihadists_Economics
+    icon = GFX_goal_generic_position_army
+	
+	x = 9
+	y = 1
+	
+	prerequisite = {
+	focus = JAH_cleanse_Arabia_from_degenracy
+	}
+	
+	cost = 3
+	
+	completion_reward = {
+	random_owned_controlled_state = {
+	add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	add_ideas = { ZZZ_cabal_economy }
+	}
+}
+focus = {
+    id = JAH_the_first_pillar_of_jihaddism
+	icon = GFX_goal_generic_position_army
+	
+	x = 11
+	y = 1
+	
+	prerequisite  {
+	focus = JAH_cleanse_Arabia_from_degenracy
+	}
+	
+	cost = 3
+	
+	completion_reward = {
+	add_ideas = { ZZZ_ultranationalist_dictatorship }
+	}
+}
+	
+	

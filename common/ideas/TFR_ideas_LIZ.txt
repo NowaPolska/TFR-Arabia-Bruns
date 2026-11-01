@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+        LIZ_Figth_to_Save_Poland = {
+	        picture = "GFX_idea_florida_siege"
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.25
+			army_core_attack_factor = 0.2
+            army_core_defence_factor = 0.2
+            surrender_limit = 0.5
+			war_support_factor = 0.2
+            conscription_factor = 0.10
+			}
+		}
+	}
+}

@@ -1,0 +1,78 @@
+defined_text = {
+	name = AST_get_Penny_Wong_Job_name
+	
+	text = { 
+		trigger = {
+			has_government = social_democrat
+		}
+		localization_key = "AST_Wong_Foreign_Minister_name"
+	}		
+	text = { 
+		trigger = {
+			NOT = {
+				has_government = social_democrat
+			}
+		}
+		localization_key = "AST_Wong_Leader_of_the_Opposition_in_the_Senate_name"
+	}
+}
+defined_text = {
+	name = AST_Australia_10_t_name
+	text = { 
+		trigger = {
+			AST = {
+				NOT = {
+					has_government = nationalist
+					has_government = fascist
+				}
+			}
+		}
+		localization_key = "AST_10t_Governor_General_name"
+	}	
+	text = { 
+		trigger = {
+			AST = {
+				has_government = nationalist
+			}
+		}
+		localization_key = "AST_10t_Military_gov_name"
+	}	
+	text = { 
+		trigger = {
+			AST = {
+				has_government = fascist
+			}
+		}
+		localization_key = "AST_10t_Australian_Exiles_name"
+	}
+}
+defined_text = {
+	name = AST_Australia_10_d_name
+	text = { 
+		trigger = {
+			AST = {
+				NOT = {
+					has_government = nationalist
+					has_government = fascist
+				}
+			}
+		}
+		localization_key = "AST_10d_Governor_General_name"
+	}	
+	text = { 
+		trigger = {
+			AST = {
+				has_government = nationalist
+			}
+		}
+		localization_key = "AST_10d_Military_gov_name"
+	}	
+	text = { 
+		trigger = {
+			AST = {
+				has_government = fascist
+			}
+		}
+		localization_key = "AST_10d_Australian_Exiles_name"
+	}
+}

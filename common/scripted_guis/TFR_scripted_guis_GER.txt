@@ -1,0 +1,6 @@
+scripted_gui = {
+	GER_bundestag_help_gui = {
+		context_type = decision_category
+		window_name = "GER_bundestag_help_gui"
+	}
+}

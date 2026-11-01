@@ -1,0 +1,41 @@
+scripted_gui = {
+	TFR_catharsis_anarchy = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view
+		window_name = "TFR_catharsis_anarchy_diplomacy_container"
+		
+		visible = { TFR_catharsis_anarchy = yes }
+		
+		properties = {
+			TFR_catharsis_anarchy_ZZZ = {
+				image = "[GetAnarchyGUIImage]"
+			}
+		}
+	}
+	
+	TFR_babel = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view
+		window_name = "TFR_babel_diplomacy_container"
+		
+		visible = {
+			OR = {
+				tag = PRC
+				tag = SOV
+			}
+			OR = {
+				has_idea = USB_nlp_idea1
+				has_idea = USB_nlp_idea2
+				has_idea = USB_nlp_idea3
+				has_idea = USB_nlp_idea4
+				has_idea = USB_nlp_idea5
+			}
+		}
+		
+		properties = {
+			TFR_babel_image = {
+				image = "[GetBabelGUIImage]"
+			}
+		}
+	}
+}

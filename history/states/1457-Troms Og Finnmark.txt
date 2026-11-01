@@ -1,0 +1,24 @@
+state={
+	id=1457
+	name="STATE_1457"
+	provinces={
+		22 44 64 76 91 128 2995 3016 3040 3058 3082 3145 6015 6079 6092 6107 6130 9042 9064 9089 9116 9128 9191 11034 11050 11063 11077 11090 11104 11169 
+	}
+	resources = {
+		oil = 12
+		tungsten = 6
+	}
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			energy_farm = 1
+		}
+	}
+	state_category=pastoral
+	manpower=244326
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

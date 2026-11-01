@@ -1,0 +1,35 @@
+
+state={
+	id=1232
+	name="STATE_1232"
+
+	resources={
+		steel=100.000
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 5
+			power_plant = 2
+			11944 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			11996 5
+		}
+	}
+
+	provinces={
+		9969 10003 11944 11980 11996 
+	}
+	manpower=11492892
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

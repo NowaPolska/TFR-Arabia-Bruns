@@ -1,0 +1,48 @@
+ideas = {
+    country = { 
+	    PLA_Polands_Last_Hope_of_Salvation = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+				}
+				
+				modifier = {
+				army_defence_factor = 0.075
+				army_attack_factor = 0.075
+				war_support_factor = 0.25
+				weekly_manpower = 100
+				}
+			}	
+	        PLA_Dis_United_Front = {
+			    picture = PDL_polish_military_gov_idea
+	            traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				removal_cost = -1
+				
+				available = {
+					is_puppet = no
+				}
+				
+				modifier = {
+				political_power_factor = -0.5
+				stability_factor = -0.25
+				army_org_factor = -0.15
+				conservative_drift = 0.03
+				social_democrat_drift = 0.03
+				social_liberal_drift = 0.03
+				market_liberal_drift = 0.03
+				libertarian_socialist_drift = 0.03
+				authoritarian_democrat_drift = 0.03
+				}
+			}
+		}
+	}
+			

@@ -1,0 +1,32 @@
+state={
+	id=1484
+	name="STATE_1484"
+	provinces={
+		204 3161 6009 6108 6144 9129 11105 11211 
+	}
+	resources = {
+		steel=4.000
+	}
+	history = {
+		owner = FIN
+		add_core_of = FIN
+		victory_points = { 11105 25 }	#Helsinki
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1
+			air_base = 3
+			office_park = 2
+			arms_factory = 3
+			industrial_complex = 2
+			dockyard = 2
+			11105 = {
+				naval_base = 6
+				coastal_bunker = 2
+			}
+		}
+	}
+	manpower=1702678
+	state_category=large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,102 @@
+scripted_gui = {
+
+	TFR_PEC_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "PEC_button_container"
+
+		ai_enabled = {
+			always = no
+		}
+	
+		visible = {
+			has_country_flag = JAP_PEC_member_flag
+		}
+
+		triggers = {
+			TFR_PEC_button_visible = {
+				NOT = {
+					
+				}
+			}
+			TFR_PEC_button_click_enabled = {
+				NOT = {
+					ROOT = { has_country_flag = PEC_list_open }
+				}
+			}
+		}
+
+		effects = {
+			TFR_PEC_button_click = {
+				add_to_array = { ROOT.PEC_list_array = JAP }
+				for_each_loop = {
+					array = JAP.JAP_PEC_members
+					if = {
+						limit = {
+							NOT = { is_in_array = { ROOT.PEC_list_array = v } }
+						}
+						add_to_array = { ROOT.PEC_list_array = v }
+					}
+				}
+				ROOT = {
+					set_variable = { PEC_leader = JAP }
+					set_country_flag = PEC_list_open
+				}
+			}
+		}
+	}
+
+	PEC_list = {
+		context_type = player_context
+		window_name = "PEC_list_window"
+		dirty = PEC_list_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = PEC_list_open
+		}
+
+		dynamic_lists = {
+			PEC_tags_grid = {
+				array = PEC_list_array
+				change_scope = yes
+
+				entry_container = PEC_member_entry
+			}
+		}
+
+		triggers = {
+			major_country_overlay_visible = {
+				check_variable = { ROOT.PEC_leader = THIS }
+			}
+		}
+
+		effects = {
+			button_close_click = {
+				for_each_scope_loop = {
+					array = ROOT.PEC_list_array
+				}
+				clear_array = ROOT.PEC_list_array
+				clear_variable = ROOT.PEC_leader
+				clr_country_flag = PEC_list_open
+			}
+			
+		}
+
+		properties = {
+			economic_sphere_icon = {
+				image = "[GetNatoIcon]"
+			}
+			country_flag = {
+				image = "[This.GetFlag]"
+			}
+			economic_sphere_bonus_icon = {
+				image = "" #WIP
+			}
+		}
+	}
+}
+

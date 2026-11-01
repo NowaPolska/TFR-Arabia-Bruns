@@ -1,0 +1,39 @@
+
+state={
+	id=621
+	name="STATE_621"
+	resources={
+		aluminium=80
+		steel=18
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			industrial_complex = 1
+			power_plant = 2
+		}
+		victory_points = {
+			4525 3
+		}
+		victory_points = {
+			10424 10
+		}
+		victory_points = {
+			10629 3
+		}
+		victory_points = {
+			12403 3
+		}
+	}
+
+	provinces={
+		2087 4525 7048 7631 10424 10629 12331 12403 12609 12880 
+	}
+	manpower=9330484
+	state_category = village
+}

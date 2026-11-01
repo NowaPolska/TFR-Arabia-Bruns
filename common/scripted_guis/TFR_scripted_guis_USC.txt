@@ -1,0 +1,13 @@
+	scripted_gui = {
+		USC_balance_of_power_gui = {
+			context_type = decision_category
+			window_name = "USC_balance_of_power_gui"
+			properties = {
+				USC_balance_of_power_bar = {
+					frame = USC_power_gui_var
+				}
+			}
+			triggers = {
+			}
+		}
+	}

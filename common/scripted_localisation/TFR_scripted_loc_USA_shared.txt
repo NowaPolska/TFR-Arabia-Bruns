@@ -1,0 +1,260 @@
+defined_text = {
+	#Name of Politics Idea
+	name = USA_politics_idea_text
+	text = {
+		trigger = {
+			original_tag = USB
+		}
+		localization_key = USB_congress_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+		}
+		localization_key = USC_constitutional_congress_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_political_cornucopia_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+		}
+		localization_key = APA_american_workers_congress_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = NSM
+		}
+		localization_key = NSM_our_cause_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+		}
+		localization_key = ATW_doctrine_of_destruction_dynamic
+	}
+}
+
+defined_text = {
+	#Name of Politics Dummy Idea
+	name = USA_politics_dummy_idea_text
+	text = {
+		trigger = {
+			original_tag = USB
+		}
+		localization_key = "USB_congress_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+		}
+		localization_key = "USC_constitutional_congress_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = "PTF_political_cornucopia_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+		}
+		localization_key = "APA_american_workers_congress_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = NSM
+		}
+		localization_key = "NSM_our_cause_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+		}
+		localization_key = "ATW_doctrine_of_destruction_dummy_idea"
+	}
+}
+
+defined_text = {
+	#Name of Economy Idea
+	name = USA_economy_idea_text
+	text = {
+		trigger = {
+			original_tag = USB
+		}
+		localization_key = USB_stakeholder_economy_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+		}
+		localization_key = USC_patriotic_economy_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_economy_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+		}
+		localization_key = APA_revolutionary_industry_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = NSM
+		}
+		localization_key = NSM_new_american_economy_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+		}
+		localization_key = ATW_industrial_anarchy_dynamic
+	}
+}
+
+defined_text = {
+	#Name of Economy Dummy Idea
+	name = USA_economy_dummy_idea_text
+	text = {
+		trigger = {
+			original_tag = USB
+		}
+		localization_key = "USB_stakeholder_economy_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+		}
+		localization_key = "USC_patriotic_economy_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = "PTF_economic_instability_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+		}
+		localization_key = "APA_revolutionary_industry_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = NSM
+		}
+		localization_key = "NSM_new_american_economy_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+		}
+		localization_key = "ATW_industrial_anarchy_dummy_idea"
+	}
+}
+
+defined_text = {
+	#Name of Military Idea
+	name = USA_military_idea_text
+	text = {
+		trigger = {
+			original_tag = USB
+		}
+		localization_key = USB_defenders_of_democracy_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+		}
+		localization_key = USC_american_constitutional_army_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = PTF_second_continental_army_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+		}
+		localization_key = APA_american_liberation_army_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = NSM
+		}
+		localization_key = NSM_american_salvation_army_dynamic
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+		}
+		localization_key = ATW_heralds_of_the_apocalypse_dynamic
+	}
+}
+
+defined_text = {
+	#Name of Military Dummy Idea
+	name = USA_military_dummy_idea_text
+	text = {
+		trigger = {
+			original_tag = USB
+		}
+		localization_key = "USB_defenders_of_democracy_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = USC
+		}
+		localization_key = "USC_american_constitutional_army_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = PTF
+		}
+		localization_key = "PTF_second_continental_army_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = APA
+		}
+		localization_key = "APA_american_liberation_army_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = NSM
+		}
+		localization_key = "NSM_american_salvation_army_dummy_idea"
+	}
+	text = {
+		trigger = {
+			original_tag = ATW
+		}
+		localization_key = "ATW_heralds_of_the_apocalypse_dummy_idea"
+	}
+}
+
+#Dynamic Focuses
+defined_text = {
+	#Name of Embrace Neutrality Focus
+	name = USA_embrace_neutrality_text
+	text = {
+		trigger = {
+			original_tag = USC
+		}
+		localization_key = USC_embrace_neutrality_loc
+	}
+	text = {
+		localization_key = USA_embrace_neutrality_loc
+	}
+}

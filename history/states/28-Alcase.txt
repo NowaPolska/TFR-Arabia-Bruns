@@ -1,0 +1,25 @@
+state={
+	id=28
+	name="STATE_28"
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		victory_points = { 11516 5 } #Nancy
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+			industrial_complex = 2
+			nuclear_reactor = 1
+		}
+	}
+	resources={
+		steel=88.000
+	}
+	provinces={
+		521 3546 3560 5291 6545 9505 11488 11516 11642 
+	}
+	manpower=2349816
+	buildings_max_level_factor=1.000
+	state_category=large_suburb
+	local_supplies=0.000
+}

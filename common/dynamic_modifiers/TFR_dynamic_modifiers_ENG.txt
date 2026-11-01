@@ -1,0 +1,81 @@
+ENG_city_of_london = {
+	icon = GFX_modifiers_ENG_london
+	
+	enable = { 
+		ENG = {
+			controls_state = 126
+		}
+	}
+	remove_trigger = {
+		ENG = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_production_speed_buildings_factor = 0.1
+	local_building_slots = 3
+	local_factories = 0.25
+	local_supplies = 0.1
+}
+ENG_wales = {
+	icon = GFX_modifiers_ENG_wales
+	
+	enable = { 
+		ENG = {
+			controls_state = 1314
+		}
+	}
+	remove_trigger = {
+		ENG = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.1
+	local_building_slots = 1
+	state_production_speed_buildings_factor = -0.05
+	local_supplies = 0.1
+}
+ENG_scotland = {
+	icon = GFX_modifiers_ENG_scotland
+	
+	enable = { 
+		ENG = {
+			controls_state = 121
+		}
+	}
+	remove_trigger = {
+		ENG = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_building_slots = 2
+	local_supplies = 0.05
+	mobilization_speed = 0.03
+}
+ENG_northern_ireland = {
+	icon = GFX_modifiers_ENG_northern_ireland
+	
+	enable = { 
+		ENG = {
+			controls_state = 1047
+		}
+	}
+	remove_trigger = {
+		ENG = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_resources_factor = 0.05
+	state_production_speed_buildings_factor = -0.1
+	recruitable_population_factor = -0.01
+	local_building_slots = -2
+	local_supplies = 0.05
+}

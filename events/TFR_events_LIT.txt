@@ -1,0 +1,46 @@
+add_namespace = lithauania
+
+# 2024 lithauania elections
+country_event = {
+	id = lithauania.1
+	title = lithauania.1.t
+	desc = lithauania.1.d
+	picture = GFX_election
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lithauania.1.a
+		set_politics = { #populist centre left goy
+			ruling_party = social_liberal 
+			last_election = "2024.5.14"
+			election_frequency = 60
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.15
+        }
+	}
+	option = { #same goy
+	name = lithauania.1.b
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.1
+        }
+	}
+	option = { #random girl
+		name = lithauania.1.c
+		promote_character = LIT_Ingrida_simonyte_char
+		set_politics = { #populist centre left goy
+			ruling_party = social_liberal 
+			last_election = "2024.5.14"
+			election_frequency = 60
+			elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.15
+        }
+	}
+}

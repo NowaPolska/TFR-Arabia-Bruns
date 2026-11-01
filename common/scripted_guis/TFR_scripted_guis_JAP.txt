@@ -1,0 +1,76 @@
+	scripted_gui = {
+		TFR_JAP_ldp_info = {
+			context_type = decision_category
+			window_name = "TFR_JAP_ldp_info_container"
+			properties = {
+			}
+			triggers = {
+				ldp_conservatives_text_1_visible = {
+					NOT = {
+						JAP = {
+							has_country_flag = JAP_nationalists_ldp_enabled
+						}
+					}
+				}
+				ldp_centrists_text_1_visible = {
+					NOT = {
+						JAP = {
+							has_country_flag = JAP_nationalists_ldp_enabled
+						}
+					}
+				}
+				ldp_liberals_text_1_visible = {
+					NOT = {
+						JAP = {
+							has_country_flag = JAP_nationalists_ldp_enabled
+						}
+					}
+				}
+				ldp_nationalists_text_visible = {
+					JAP = {
+						has_country_flag = JAP_nationalists_ldp_enabled
+					}
+				}
+				ldp_conservatives_text_2_visible = {
+					JAP = {
+						has_country_flag = JAP_nationalists_ldp_enabled
+					}
+				}
+				ldp_centrists_text_2_visible = {
+					JAP = {
+						has_country_flag = JAP_nationalists_ldp_enabled
+					}
+				}
+				ldp_liberals_text_2_visible = {
+					JAP = {
+						has_country_flag = JAP_nationalists_ldp_enabled
+					}
+				}
+			}
+		}
+		TFR_JAP_time_travel = {
+			context_type = player_context
+			window_name = "TFR_JAP_time_travel_container"
+			visible = {
+				has_country_flag = time_travel_flag
+			}
+			
+			effects = {
+				close_button_click = {
+					every_country = {
+						limit = {
+							has_war = yes
+						}
+						every_country = {
+							limit = {
+								has_war_with = PREV
+							}
+							white_peace = PREV
+						}
+					}
+					clr_country_flag = time_travel_flag
+					scoped_play_song = "gate_of_steiner"
+				}
+			}
+		}
+	}

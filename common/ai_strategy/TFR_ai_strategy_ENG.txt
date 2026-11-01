@@ -1,0 +1,312 @@
+seek_british_alliance = {
+
+	enable = {
+		has_country_flag = seeks_british_alliance
+	}
+	
+	abort = {
+		NOT = { has_country_flag = seeks_british_alliance }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ENG"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = 125
+	}
+}
+
+ENG_support_UKR = {
+	enable = {
+		tag = ENG
+		has_war = no
+	}
+	abort = {
+		has_war = yes
+		has_war_with = UKR
+	}
+
+	ai_strategy = {
+		type = support
+		id = "UKR"
+		value = 900
+	}
+}
+
+ENG_fuck_lithuania = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		is_in_faction_with = UKR
+	}
+	
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "LIT"
+		value = 200
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "EST"
+		value = 200
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "LAT"
+		value = 200
+	}
+}
+
+ENG_die_in_somme_no_we_die_in_donbass = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		is_in_faction_with = UKR
+	}
+	
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = "UKR"
+		value = 200
+	}
+}
+
+ENG_tommies_tommies_tommies = {
+
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		always = yes
+	}
+	
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}
+
+ENG_prepare_to_fight_SOV_strategy = {
+	abort_when_not_enabled = yes
+	allowed = {
+		tag = ENG
+	}
+	enable = {
+		date > 2024.1.1
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = contain
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = 10
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 20
+	}
+}
+
+ENG_royal_air_force = {
+	allowed = { original_tag = ENG }
+	enable = {
+		date > 2028.4.1
+	}
+	abort = {
+		date < 2028.4.1
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 125
+	}
+
+}
+
+ENG_onto_the_beaches_2 = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		date > 2025.6.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 20
+	}
+}
+
+ENG_onto_the_beaches_3 = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		date > 2028.6.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 30
+	}
+}
+
+ENG_to_the_front = {
+	enable = {
+		tag = ENG
+		has_war_with = SOV
+		OR = {
+			has_government = communist
+			has_government = fascist
+		}
+	}
+	abort = {
+		has_war = no
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GER"
+		value = -100
+	}
+}
+
+ENG_support_USB = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		has_war = no
+		has_global_flag = USA_american_civil_war_global
+	}
+	abort = {
+		has_war = yes
+	}
+	ai_strategy = {
+		type = support
+		id = "USB"
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "USB"
+		value = 1000
+	}
+}
+
+SOV_support_ENG = {
+	enable = {
+		tag = SOV
+		has_war = no
+		has_global_flag = SOV_first_nato_war_victory
+		has_global_flag = SOV_medvedev_won
+	}
+	abort = {
+		has_war = yes
+	}
+
+	ai_strategy = {
+		type = support
+		id = "ENG"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ENG"
+		value = 900
+	}
+}
+
+GER_support_UK2 = {
+	enable = {
+		tag = GER
+		has_war = no
+		has_global_flag = SOV_first_nato_war_victory
+		has_global_flag = SOV_medvedev_won
+	}
+	abort = {
+		has_war = yes
+	}
+
+	ai_strategy = {
+		type = support
+		id = "UK2"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "UK2"
+		value = 900
+	}
+}
+
+GER_support_SCO = {
+	enable = {
+		tag = GER
+		has_war = no
+		has_global_flag = SOV_first_nato_war_victory
+		has_global_flag = SOV_medvedev_won
+		UK2 = { exists = no }
+	}
+	abort = {
+		has_war = yes
+	}
+
+	ai_strategy = {
+		type = support
+		id = "SCO"
+		value = 900
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SCO"
+		value = 900
+	}
+}
+
+#end of saudi war, NO MORE TROOPS TO ARABIA
+ENG_no_support_SAU = {
+	enable = {
+		tag = ENG
+		has_country_flag = saudi_civil_war_over
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = -900
+	}
+}

@@ -1,0 +1,59 @@
+
+state={
+	id=1215
+	name="STATE_1215"
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			dockyard = 4
+			arms_factory = 1
+			air_base = 4
+			office_park = 2
+			14979 = {
+				naval_base = 2
+			}
+			14980 = {
+				naval_base = 5
+			}
+			12076 = {
+				naval_base = 4
+			}
+			nuclear_reactor = 1
+		}
+		victory_points = {
+			7014 30
+		}
+		victory_points = {
+			13963 3
+		}
+		victory_points = {
+			14977 3
+		}
+		victory_points = {
+			14978 3
+		}
+		victory_points = {
+			14979 3
+		}
+		victory_points = {
+			14980 3
+		}
+		victory_points = {
+			12076 3
+		}
+
+	}
+
+	provinces={
+		7014 12076 13963 14977 14978 14979 14980
+	}
+	manpower=24870895
+	buildings_max_level_factor=1.000
+	state_category = megalopolis
+	local_supplies=0.000
+}

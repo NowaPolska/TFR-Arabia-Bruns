@@ -1,0 +1,150 @@
+	ideas = {
+		country = {
+			EGY_severe_water_shortage = {
+				picture = CHA_severe_water_shortage
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_attack_factor = -0.15
+					stability_factor = -0.25
+					monthly_population = -6.5
+					conscription_factor = -0.35
+					political_power_gain = -0.15
+				}
+			}
+			EGY_severe_water_shortage_2 = {
+				picture = CHA_severe_water_shortage
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_attack_factor = -0.4
+					stability_factor = -0.30
+					monthly_population = -9.5
+					conscription_factor = -0.5
+					political_power_gain = -0.25
+				}
+			}
+			EGY_mass_riots = {
+				picture = generic_failed_state
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = -0.15
+					consumer_goods_factor = 0.25
+					production_factory_efficiency_gain_factor = -0.25 
+					industrial_capacity_factory = -0.15
+					production_speed_buildings_factor = -0.25
+					army_org_factor = -0.15
+				}
+			}
+			Generic_victor_of_african_war = {
+				picture = generic_east_african_war_win
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = 0.25
+					consumer_goods_factor = -0.1
+					production_factory_efficiency_gain_factor = 0.05
+					production_speed_buildings_factor = 0.05
+				}
+			}
+			Generic_loser_of_african_war = {
+				picture = generic_east_african_war_loss
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_gain = -0.25
+					stability_factor = -0.15
+					consumer_goods_factor = 0.05
+					production_factory_efficiency_gain_factor = -0.15
+					industrial_capacity_factory = -0.15
+					production_speed_buildings_factor = -0.25
+				}
+			}
+			EGY_militarysation = {
+				picture = EGY_military_occupation
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					political_power_gain = -0.25
+					stability_factor = -0.05
+					consumer_goods_factor = 0.0
+					production_factory_efficiency_gain_factor = 0.05
+					industrial_capacity_factory = 0.075
+					production_speed_buildings_factor = 0.1
+				}
+			}
+		}
+	}

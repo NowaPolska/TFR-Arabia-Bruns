@@ -1,0 +1,23 @@
+
+state={
+	id=459
+	name="STATE_459" # Algiers
+	manpower = 23189944
+	state_category = city
+	
+	history={
+		owner = ALG
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 5
+			arms_factory = 1
+			dockyard = 1
+			air_base = 5
+		}
+	}
+
+	provinces={
+		1013 9964 11923 12760 
+	}
+}

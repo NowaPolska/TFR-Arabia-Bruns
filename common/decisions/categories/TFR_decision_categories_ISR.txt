@@ -1,0 +1,72 @@
+samson_ISR = {
+	icon = united_states
+
+	allowed = {
+		original_tag = ISR
+	}
+}
+
+ISR_arab_war = {
+	icon = united_states
+
+	allowed = {
+		original_tag = ISR
+		OR = {
+			has_global_flag = SOV_first_nato_war_victory
+			has_global_flag = nato_nato_won_nato_war
+		}
+	}
+}
+
+ISR_GER_solomon = {
+	icon = united_states
+    picture = decision_cat_GER_ISR_solomon
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		GER = { has_country_flag = GER_arab_israeli_war_flag }
+		ISR = { has_war = yes }	
+	}
+	visible_when_empty = yes
+}
+
+iran_israel_war_ISR = {
+    icon = united_states
+	
+    allowed = {
+        original_tag = ISR
+    }
+
+    visible = {
+        has_country_flag = iran_israel_war_active
+        NOT = { has_country_flag = iran_israel_war_over }
+    }
+}
+
+Israel_hamas_war = {
+	icon = united_states
+	picture = GFX_decision_cat_GER_ISR_solomon
+
+	allowed = {
+		original_tag = ISR
+	}
+
+	visible = {
+		controls_state = 811
+		has_government = conservative
+	}
+}
+
+Israel_arab_war_win_sigma = {
+    icon = united_states
+	picture = GFX_decision_cat_GER_ISR_solomon
+
+	allowed = {
+		original_tag = ISR
+	}
+
+	visible = {
+		has_global_flag = syr_small_arab_israeli_war
+	}
+}

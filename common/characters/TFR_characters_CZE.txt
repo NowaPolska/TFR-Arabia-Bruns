@@ -1,0 +1,138 @@
+	characters={
+		CZE_milos_zeman_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/CZE/Miloš Zeman.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=classical_liberalism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=neoliberalism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=christian_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=ultra_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				desc=""
+				ideology=left_centrist
+				expire="1.1.1.1"
+				id=-1
+			}
+		}	
+		CZE_katerina_konecna_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/CZE/Katerina_Konecna.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=marxism_leninism
+				expire="1.1.1.1"
+				id=-1
+			}	
+			country_leader={
+				desc=""
+				ideology=eurocommunism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		CZE_Andrej_babis_char = {
+		    name = "Andrej Babiš"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/CZE/Andrej_babis.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=right_populism
+				expire="1.1.1.1"
+				id=-1
+			}	
+		}
+		CZE_Petr_Pavel_char = {
+		    name = "Petr Pavel"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/CZE/Petr_Pavel.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=classical_liberalism
+				expire="1.1.1.1"
+				id=-1
+			}	
+		}
+	    CZE_Karel_Rehka_char = {
+		    name = "Karel Řehka"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/CZE/Karel_Rehka.png"
+				}
+			}
+			can_be_captured = no
+			field_marshal = {
+				traits = { Career_Officer, Organizer }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 6
+				planning_skill = 3
+				logistics_skill = 3
+			}
+		advisor = {
+        slot = army_chief          
+        idea_token = CZE_Karel_Rehka_advisor
+        
+        allowed = {
+            original_tag = CZE
+        }
+        
+        cost = 100       
+        
+        traits = {
+            army_chief_offensive_2
+        }
+        
+        ai_will_do = {
+            factor = 100
+        }
+    }
+}
+		CZE_Petr_Snajdarek_char = {
+		    name = "Petr Snajdarek"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/CZE/Petr_Snajdarek.png"
+				}
+			}
+			can_be_captured = no
+			corps_commander = {
+				traits = {  Adaptable, Panzer_Leader, Trickster }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+			}
+		}
+	}

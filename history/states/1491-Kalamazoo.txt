@@ -1,0 +1,19 @@
+state={
+	id=1491
+	name="STATE_1491"
+	provinces={
+		6769 13820 13821 14413 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 14413 5 }#Lansing
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	manpower=112115
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,102 @@
+scripted_gui = {
+
+	TFR_brics_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "brics_button_container"
+
+		ai_enabled = {
+			always = no
+		}
+	
+		visible = {
+			has_country_flag = SOV_brics_member_flag
+		}
+
+		triggers = {
+			TFR_brics_button_visible = {
+				NOT = {
+					
+				}
+			}
+			TFR_brics_button_click_enabled = {
+				NOT = {
+					ROOT = { has_country_flag = brics_list_open }
+				}
+			}
+		}
+
+		effects = {
+			TFR_brics_button_click = {
+				add_to_array = { ROOT.brics_list_array = SOV }
+				for_each_loop = {
+					array = SOV.SOV_brics_members
+					if = {
+						limit = {
+							NOT = { is_in_array = { ROOT.brics_list_array = v } }
+						}
+						add_to_array = { ROOT.brics_list_array = v }
+					}
+				}
+				ROOT = {
+					set_variable = { brics_leader = SOV }
+					set_country_flag = brics_list_open
+				}
+			}
+		}
+	}
+
+	brics_list = {
+		context_type = player_context
+		window_name = "brics_list_window"
+		dirty = brics_list_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = brics_list_open
+		}
+
+		dynamic_lists = {
+			brics_tags_grid = {
+				array = brics_list_array
+				change_scope = yes
+
+				entry_container = brics_member_entry
+			}
+		}
+
+		triggers = {
+			major_country_overlay_visible = {
+				check_variable = { ROOT.brics_leader = THIS }
+			}
+		}
+
+		effects = {
+			button_close_click = {
+				for_each_scope_loop = {
+					array = ROOT.brics_list_array
+				}
+				clear_array = ROOT.brics_list_array
+				clear_variable = ROOT.brics_leader
+				clr_country_flag = brics_list_open
+			}
+			
+		}
+
+		properties = {
+			economic_sphere_icon = {
+				image = "[GetNatoIcon]"
+			}
+			country_flag = {
+				image = "[This.GetFlag]"
+			}
+			economic_sphere_bonus_icon = {
+				image = "" #WIP
+			}
+		}
+	}
+}
+

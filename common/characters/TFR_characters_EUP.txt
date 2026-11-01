@@ -1,0 +1,16 @@
+characters={
+		EUP_Erhard_Buhler_pol_char = {
+		name = "Erhard Buhler"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/EUP/Erhard_Buhler_pol.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = military_junta
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	}

@@ -1,0 +1,26 @@
+state={
+	id=1460
+	name="STATE_1460"
+	provinces={
+		14 100 3094 6184 9036 9174 11029 
+	}
+	resources={
+		oil=9.000
+		steel=1.000
+	}
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		buildings = {
+			infrastructure = 4
+			energy_farm = 1
+			fuel_silo = 1
+			industrial_complex = 1
+
+		}
+	}
+	manpower=420527
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

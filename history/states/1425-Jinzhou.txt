@@ -1,0 +1,39 @@
+state={
+	id=1425
+	name="STATE_1425"
+	manpower = 9829968 
+	state_category = village
+	
+	resources={
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			6837 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			9927 3
+		}
+		victory_points = {
+			9835 3
+		}
+		victory_points = {
+			6837 5
+		}
+		victory_points = {
+			934 3
+		}
+	}
+
+	provinces={
+		846 934 3814 3881 3934 6837 6852 6893 6898 6951 9788 9831 9835 9927 11815 11855 11886
+	}
+}

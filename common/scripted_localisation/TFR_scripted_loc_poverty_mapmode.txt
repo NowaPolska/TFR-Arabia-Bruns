@@ -1,0 +1,40 @@
+defined_text = {
+	name = POVERTY_SCRLOC_MAPMODE
+	text = {
+		trigger = {
+			has_idea = highest_poverty
+		}
+		localization_key = highest_poverty_loc_mapmode
+	}
+	text = {
+		trigger = {
+			has_idea = higher_poverty
+		}
+		localization_key = higher_poverty_loc_mapmode
+	}
+	text = {
+		trigger = {
+			has_idea = high_poverty
+		}
+		localization_key = high_poverty_loc_mapmode
+	}
+	text = {
+		trigger = {
+			has_idea = medium_poverty
+		}
+		localization_key = medium_poverty_loc_mapmode
+	}
+    text = {
+		trigger = {
+			has_idea = low_poverty
+		}
+		localization_key = low_poverty_loc_mapmode
+	}
+    text = {
+		trigger = {
+			has_idea = lower_poverty
+		}
+		localization_key = lower_poverty_loc_mapmode
+	}
+}
+

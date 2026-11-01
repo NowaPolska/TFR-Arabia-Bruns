@@ -1,0 +1,163 @@
+division_template = {
+	name = "Firqa Moudar'a"
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+		modern_armor = { x = 2 y = 2 }
+		spaa_brigade = { x = 3 y = 0 }
+		modern_sp_artillery_brigade = { x = 3 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mushat Alshrye"
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+	}
+	
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		spaa_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+	}
+	
+	support = {
+	}	
+}
+
+division_template = {
+	name = "Liwa Milishia Ali"
+
+	regiments = {
+		mot_militia = { x = 0 y = 0 }
+		mot_militia = { x = 0 y = 1 }
+		mot_militia = { x = 0 y = 2 }
+		mot_militia = { x = 0 y = 3 }
+		mot_militia = { x = 1 y = 0 }
+		mot_militia = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "1. Mushat Alshrye"
+		location = 12889
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2. Mushat Alshrye"
+		location = 12002
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3. Mushat Alshrye"
+		location = 1080
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4. Mushat Alshrye"
+		location = 10073
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5. Mushat Alshrye"
+		location = 4910
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "6. Mushat Alshrye"
+		location = 4145
+		division_template = "Mushat Alshrye"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "12. Mechanized Brigade"
+		location = 4068
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "19. Mechanized Brigade"
+		location = 7164
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "300. Mechanized Brigade"
+		location = 4076
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "24. Firqa Moudar'a"
+		location = 4076
+		division_template = "Firqa Moudar'a"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "112. Firqa Moudar'a"
+		location = 1071
+		division_template = "Firqa Moudar'a"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1. Liwa Milishia Ali"
+		location = 11964
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2. Liwa Milishia Ali"
+		location = 7156
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "56. Liwa Milishia Ali"
+		location = 7164
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "265. Liwa Milishia Ali"
+		location = 10073
+		division_template = "Liwa Milishia Ali"
+		start_experience_factor = 0.1
+	}
+}

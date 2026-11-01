@@ -1,0 +1,37 @@
+state = {
+	id = 13
+	name = "STATE_13"
+	manpower = 793548
+	state_category = city
+	
+	resources = {
+		oil = 2
+		steel = 6
+	}
+	
+	history = {
+		owner = EST
+		add_core_of = EST
+		victory_points = { 3152 5 } #Tallinn
+		victory_points = { 185 1 } #Kuressaare
+		victory_points = { 83 1 } #Haapsalu
+		victory_points = { 6201 1 } #Kärdla
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 4
+			dockyard = 1
+			solar_farm = 1
+			office_park = 1
+			air_base = 3
+			3152 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+	}
+	
+	provinces = {
+		83 185 496 567 3074 3152 6201 9079 11057 11127 11426 
+	}
+}

@@ -1,0 +1,205 @@
+party_popularity_dynamic_modifier = {
+	political_power_gain = ROOT.party_popularity@ruling_party
+}
+
+party_popularity_dynamic_modifier_ideology_mapped = {
+	political_power_gain = party_popularity@var:political_power_ideology_var
+}
+
+party_popularity_dynamic_modifier_coalition = {
+	political_power_gain = coalition_pp_gain
+}
+
+party_popularity_dynamic_modifier_ruling_party_wings = {
+	political_power_gain = ruling_party_wings_pp_gain
+}
+
+EU_member_dynamic = {
+	icon = GFX_idea_eu_member
+	army_core_defence_factor = eu_army_core_defence_factor_dynamic_var
+	army_attack_factor = eu_army_attack_factor_dynamic_var
+	army_org_factor = eu_army_org_factor_dynamic_var
+	political_power_gain = eu_political_power_gain_dynamic_var #-0.3
+	stability_factor = eu_stability_factor_dynamic_var
+	stability_weekly = eu_stability_weekly_dynamic_var
+	war_support_factor = eu_war_support_factor_dynamic_var
+	war_support_weekly = eu_war_support_weekly_dynamic_var
+	consumer_goods_factor = eu_consumer_goods_factor_dynamic_var
+	local_resources_factor = eu_local_resources_factor_dynamic_var
+	global_building_slots_factor = eu_global_building_slots_factor_dynamic_var
+	research_speed_factor = eu_research_speed_factor_dynamic_var
+	production_factory_max_efficiency_factor = eu_production_factory_max_efficiency_factor_dynamic_var
+	production_factory_efficiency_gain_factor = eu_production_factory_efficiency_gain_factor_dynamic_var #0.1
+	production_factory_start_efficiency_factor = eu_production_factory_start_efficiency_factor_dynamic_var
+	line_change_production_efficiency_factor = eu_line_change_production_efficiency_factor_dynamic_var
+	production_speed_buildings_factor = eu_production_speed_buildings_factor_dynamic_var
+	industry_repair_factor = eu_industry_repair_factor_dynamic_var
+	industrial_capacity_factory = eu_industrial_capacity_factory_dynamic_var #0.05
+	industrial_capacity_dockyard = eu_industrial_capacity_dockyard_dynamic_var #0.05
+	dig_in_speed_factor = eu_dig_in_speed_factor_dynamic_var
+	max_dig_in_factor = eu_max_dig_in_factor_dynamic_var
+	production_speed_bunker_factor = eu_production_speed_bunker_factor_dynamic_var
+	production_speed_supply_node_factor = eu_production_speed_supply_node_factor_dynamic_var
+	production_speed_infrastructure_factor = eu_production_speed_infrastructure_factor_dynamic_var
+	production_speed_industrial_complex_factor = eu_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_office_park_factor = eu_production_speed_office_park_factor_dynamic_var
+	production_speed_rail_way_factor = eu_production_speed_rail_way_factor_dynamic_var
+	production_speed_arms_factory_factor = eu_production_speed_arms_factory_factor_dynamic_var
+	production_speed_dockyard_factor = eu_production_speed_dockyard_factor_dynamic_var
+	production_speed_power_plant_factor = eu_production_speed_power_plant_factor_dynamic_var
+	production_speed_nuclear_reactor_factor = eu_production_speed_nuclear_reactor_factor_dynamic_var
+	production_speed_energy_farm_factor = eu_production_speed_energy_farm_factor_dynamic_var
+	industrial_development_monthly = eu_industrial_development_monthly_dynamic_var
+	poverty_development_monthly = eu_poverty_development_monthly_dynamic_var
+	farming_development_monthly = eu_farming_development_monthly_dynamic_var
+	academic_development_monthly = eu_academic_development_monthly_dynamic_var
+	society_development_monthly = eu_society_development_monthly_dynamic_var
+	income_growth_factor = eu_income_growth_factor_dynamic_var
+	expense_growth_factor = eu_expense_growth_factor_dynamic_var
+	business_value_factor = eu_business_value_factor_dynamic_var #0.05
+	personal_value_factor = eu_personal_value_factor_dynamic_var
+	tax_business_rate = eu_tax_business_rate_dynamic_var
+	tax_personal_rate = eu_tax_personal_rate_dynamic_var
+	interest_rate = eu_interest_rate_dynamic_var
+	inflation_monthly = eu_inflation_monthly_dynamic_var
+	custom_modifier_tooltip = EU_member_dynamic_modifier_tooltip
+}
+
+#States
+generic_nuclear_reactor_state_dynamic = {
+	state_production_speed_power_plant_factor = -10
+	state_production_speed_energy_farm_factor = -10
+}
+
+generic_power_plant_state_dynamic = {
+	state_production_speed_nuclear_reactor_factor = -10
+	state_production_speed_energy_farm_factor = -10
+}
+
+generic_energy_farm_state_dynamic = {
+	state_production_speed_nuclear_reactor_factor = -10
+	state_production_speed_power_plant_factor = -10
+}
+
+############# RAIDS RELATED ##############
+dam_blown_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+	
+	local_supply_impact_factor = 0.5
+	disable_strategic_redeployment = 1
+	state_resources_factor = -0.25
+	local_manpower = -0.5
+	army_speed_factor_for_controller = -0.25
+}
+
+kiel_canal_damaged_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+	
+	custom_modifier_tooltip = kiel_canal_damaged_tt
+}
+
+panama_canal_damaged_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+	
+	custom_modifier_tooltip = kiel_canal_damaged_tt
+}
+
+
+refinery_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	state_resources_oil_factor = -0.5
+} 
+refinery_critically_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	state_resources_oil_factor = -0.75
+}
+refinery_lightly_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	state_resources_oil_factor = -0.25
+}  
+
+steel_mines_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	#state_resources_factor = -0.5
+	state_resources_steel_factor = -0.5
+} 
+steel_mines_critically_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	#state_resources_factor = -0.75
+	state_resources_steel_factor = -0.75
+}
+steel_mines_lightly_damaged_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource	
+	#state_resources_factor = -0.25
+	state_resources_steel_factor = -0.25
+}
+
+pathfinder_infiltration_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_FIN_motti_tactics_modifier	
+	disable_strategic_redeployment = yes 
+	no_supply_grace = 20
+	naval_invasion_penalty = -0.1
+}
+
+##### Nuclear Fallout ####
+
+fallout_atomic = {
+	enable = { always = yes }
+	remove_trigger = {
+		THIS = {
+			has_dynamic_modifier = {
+				modifier = fallout_thermonuclear
+			}
+		}
+	}
+	icon = GFX_modifiers_nuclear_fallout
+	army_defence_factor = -0.25
+	army_speed_factor = -0.3
+	max_dig_in_factor = -0.5 
+	industry_repair_factor = -0.4
+	industry_free_repair_factor = -0.4
+	repair_speed_infrastructure_factor = -0.4
+	repair_speed_rail_way_factor = -0.4
+	local_resources_factor = -0.4
+	state_production_speed_buildings_factor = -0.4
+}
+
+fallout_thermonuclear = {
+	enable = { always = yes }
+	icon = GFX_modifiers_nuclear_fallout
+	army_defence_factor = -0.5
+	army_speed_factor = -0.65
+	max_dig_in_factor = -0.9
+	industry_repair_factor = -0.75
+	industry_free_repair_factor = -0.75
+	repair_speed_infrastructure_factor = -0.75
+	repair_speed_rail_way_factor = -0.75
+	local_resources_factor = -0.75
+	state_production_speed_buildings_factor = -0.75
+}
+
+##### Stronghold Network SP reward #####
+
+sp_land_stronghold_network_collapse_workers_drafted = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	industry_repair_factor = -0.5
+	industry_free_repair_factor = -0.5
+	repair_speed_infrastructure_factor = -0.5
+	repair_speed_rail_way_factor = -0.5
+	local_resources_factor = -0.5
+	state_production_speed_buildings_factor = -0.5
+}

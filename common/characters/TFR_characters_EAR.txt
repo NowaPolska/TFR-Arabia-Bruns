@@ -1,0 +1,31 @@
+characters={
+	EAR_Mohammed_Fari_Hegazy_char = {
+	name = "Mohammed Fari Hegazy"
+		portraits = {
+			civilian={
+				large = "gfx/Leaders/EAR/Mohammed_Fari_Hegazy.png"
+			}
+			army = {
+				large = "gfx/Leaders/EAR/Mohammed_Fari_Hegazy.png"
+			}
+		}
+		country_leader={
+			ideology = military_junta
+			traits = {
+			}
+			expire="1.1.1.1"
+			id=-1
+		}
+		can_be_captured = no
+		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=4
+			traits = {
+				thorough_planner
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+state={
+	id=919
+	name="STATE_919"
+	history = {
+		owner = HOU
+		add_core_of = HOU
+		add_core_of = YEM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = { 13271 15 }
+		victory_points = { 4924 1 }
+		victory_points = { 13273 1 }
+		
+		YEM = {
+			set_province_controller = 13273
+			set_province_controller = 13277
+			set_province_controller = 4924
+			set_province_controller = 13278
+		}
+	}
+	provinces={
+		13271 13267 13273 13266 13277 4924 13278
+	}
+	manpower=1937451
+	buildings_max_level_factor=1.000
+	
+	state_category = city
+}

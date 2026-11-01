@@ -1,0 +1,24 @@
+state={
+	id=76
+	name="STATE_76"
+	resources={
+		steel=14.000
+	}
+	provinces={
+		713 727 746 3696 3709 6711 6714 6731 9672 9685 9687 9704 11676 
+	}
+	history = {
+		owner = ROM
+		add_core_of = ROM
+		victory_points = { 6711 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory  = 1
+			air_base = 4
+		}
+	}
+	manpower=3171907
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

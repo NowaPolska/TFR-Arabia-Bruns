@@ -1,0 +1,29 @@
+state={
+	id=923
+	name="STATE_923"
+	history = {
+		owner = HOU
+		add_core_of = HOU
+		add_core_of = YEM
+		victory_points = { 13272 5 }
+		victory_points = { 13268 1 }
+		victory_points = { 13269 2 }
+		buildings = {
+			infrastructure = 2
+		}
+		AAS = {
+			set_province_controller = 13269
+		}
+		YEM = {
+		    set_province_controller = 13268
+		    set_province_controller = 15028
+		}
+	}
+	provinces={
+		13268 13272 13269 15028
+	}
+	manpower=1618913
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

@@ -1,0 +1,25 @@
+characters = {
+LIZ_Wojciech_Olszanski_Liz_char = {
+    name = "Wojciech Olszanski "
+    
+    portraits = {
+        civilian = {
+            large = "gfx/Leaders/LIZ/Wojciech_Olszanski_Liz.png" 
+        }
+    }
+	   
+    country_leader = {
+        ideology = classical_fascism
+        expire = "1.1.1.1"
+    }
+
+    country_leader = {
+        ideology = radical_nationalism
+        expire = "1.1.1.1"
+    }
+	
+	country_leader = {
+        ideology = esoteric_fascism
+        expire = "1.1.1.1"
+    }
+}

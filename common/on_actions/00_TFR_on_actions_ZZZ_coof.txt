@@ -1,0 +1,20 @@
+on_actions = {
+	on_weekly_ZZZ = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = global.plague_start_countdown
+						value = 15
+						compare = less_than_or_equals
+					}
+				}
+				for_each_scope_loop = {
+					array = global.plague_affected_states
+					fourth_plague_pandemic_effect_initial_outbreak = yes
+				}
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,19 @@
+	CAC_ecological_development_dynamic = {
+	
+		enable = { 
+			always = yes 
+		}
+		
+		production_speed_buildings_factor = CAC_ecological_development_dynamic_var
+		conscription_factor = CAC_ecological_development_dynamic_var
+		experience_gain_army_factor = CAC_ecological_development_dynamic_var
+	}
+
+	CAC_nyc_destroyed_state_modifier = {
+
+		enable = {
+			always = yes
+		}
+
+		state_production_speed_buildings_factor = -10
+	}

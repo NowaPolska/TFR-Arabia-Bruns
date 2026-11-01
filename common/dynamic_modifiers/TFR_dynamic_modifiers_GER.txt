@@ -1,0 +1,726 @@
+
+GER_peoples_chamber_dynamic = {
+	enable = {
+		tag = GER
+	}
+	political_power_gain = GER_peoples_chamber_support_dynamic_var
+	war_support_factor = GER_peoples_chamber_support_dynamic_var
+}
+
+GER_die_linke_dynamic = {
+	enable = { 
+		tag = GER
+		has_country_flag = GER_die_linke_enable_flag
+	}
+	industrial_capacity_factory = GER_die_linke_popularity_dynamic_var
+	industrial_capacity_dockyard = GER_die_linke_popularity_dynamic_var
+}
+
+GER_greens_dynamic = {
+	enable = { 
+		tag = GER
+		has_country_flag = GER_greens_enable_flag
+	}
+	local_resources_factor = GER_greens_popularity_dynamic_var
+}
+
+GER_spd_dynamic = {
+	enable = { 
+		tag = GER
+		has_country_flag = GER_spd_enable_flag
+	}
+	stability_factor = GER_spd_popularity_dynamic_var
+}
+
+GER_fdp_dynamic = {
+	enable = { 
+		tag = GER
+		has_country_flag = GER_fdp_enable_flag
+	}
+	production_speed_buildings_factor = GER_fdp_popularity_dynamic_var
+}
+
+GER_cdu_dynamic = {
+	enable = { 
+		tag = GER
+		has_country_flag = GER_cdu_enable_flag
+	}
+	political_power_gain = GER_cdu_popularity_dynamic_var
+}
+
+GER_afd_dynamic = {
+	enable = { 
+		tag = GER
+		has_country_flag = GER_afd_enable_flag
+	}
+	war_support_factor = GER_afd_popularity_dynamic_var
+}
+
+#National
+GER_bundestag_dynamic = {
+	icon = GFX_idea_GER_bundestag
+	enable = {
+		tag = GER
+	}
+	political_power_gain = GER_politics_political_power_gain_dynamic_var #0.1
+	stability_factor = GER_politics_stability_factor_dynamic_var
+	stability_weekly = GER_politics_stability_weekly_dynamic_var
+	war_stability_factor = GER_politics_war_stability_factor_dynamic_var
+	party_popularity_stability_factor = GER_politics_party_popularity_stability_factor_dynamic_var
+	war_support_factor = GER_politics_war_support_factor_dynamic_var
+	war_support_weekly = GER_politics_war_support_weekly_dynamic_var
+	personal_expense_factor = GER_politics_personal_expense_factor_dynamic_var
+	communist_drift = GER_politics_communist_drift_dynamic_var
+	libertarian_socialist_drift = GER_politics_libertarian_socialist_drift_dynamic_var
+	social_democrat_drift = GER_politics_social_democrat_drift_dynamic_var
+	social_liberal_drift = GER_politics_social_liberal_drift_dynamic_var
+	market_liberal_drift = GER_politics_market_liberal_drift_dynamic_var
+	conservative_drift = GER_politics_conservative_drift_dynamic_var
+	authoritarian_democrat_drift = GER_politics_authoritarian_democrat_drift_dynamic_var
+	nationalist_drift = GER_politics_nationalist_drift_dynamic_var
+	fascist_drift = GER_politics_fascist_drift_dynamic_var
+	society_development_monthly = GER_politics_society_development_monthly_dynamic_var
+	poverty_development_monthly = GER_politics_poverty_development_monthly_dynamic_var
+	custom_modifier_tooltip = GER_government_agenda_tooltip
+}
+
+GER_peoples_economy_dynamic = {
+	icon = GFX_idea_GER_autarky_initiative
+	enable = { 
+		tag = GER
+	}
+	political_power_gain = GER_economy_political_power_gain_dynamic_var
+	stability_factor = GER_economy_stability_factor_dynamic_var
+	stability_weekly = GER_economy_stability_weekly_dynamic_var
+	war_support_factor = GER_economy_war_support_factor_dynamic_var
+	war_support_weekly = GER_economy_war_support_weekly_dynamic_var
+	consumer_goods_factor = GER_economy_consumer_goods_factor_dynamic_var
+	local_resources_factor = GER_economy_local_resources_factor_dynamic_var
+	global_building_slots_factor = GER_economy_global_building_slots_factor_dynamic_var
+	research_speed_factor = GER_economy_research_speed_factor_dynamic_var
+	compliance_growth = GER_economy_compliance_growth_dynamic_var
+	resistance_growth = GER_economy_resistance_growth_dynamic_var
+	resistance_decay = GER_economy_resistance_decay_dynamic_var
+	production_factory_max_efficiency_factor = GER_economy_production_factory_max_efficiency_factor_dynamic_var
+	production_factory_efficiency_gain_factor = GER_economy_production_factory_efficiency_gain_factor_dynamic_var
+	production_factory_start_efficiency_factor = GER_economy_production_factory_start_efficiency_factor_dynamic_var
+	line_change_production_efficiency_factor = GER_economy_line_change_production_efficiency_factor_dynamic_var
+	production_lack_of_resource_penalty_factor = GER_economy_production_lack_of_resource_penalty_factor_dynamic_var
+	fuel_gain_factor = GER_economy_fuel_gain_factor_dynamic_var
+	fuel_gain_factor_from_states = GER_economy_fuel_gain_factor_from_states_dynamic_var
+	conversion_cost_civ_to_mil_factor = GER_economy_conversion_cost_civ_to_mil_factor_dynamic_var
+	conversion_cost_mil_to_civ_factor = GER_economy_conversion_cost_mil_to_civ_factor_dynamic_var
+	min_export = GER_economy_min_export_dynamic_var
+	production_speed_buildings_factor = GER_economy_production_speed_buildings_factor_dynamic_var
+	industrial_capacity_factory = GER_economy_industrial_capacity_factory_dynamic_var #-0.2
+	industrial_capacity_dockyard = GER_economy_industrial_capacity_dockyard_dynamic_var #-0.2
+	production_speed_infrastructure_factor = GER_economy_production_speed_infrastructure_factor_dynamic_var
+	production_speed_industrial_complex_factor = GER_economy_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_office_park_factor = GER_economy_production_speed_office_park_factor_dynamic_var
+	production_speed_rail_way_factor = GER_economy_production_speed_rail_way_factor_dynamic_var
+	production_speed_supply_node_factor = GER_economy_production_speed_supply_node_factor_dynamic_var
+	production_speed_arms_factory_factor = GER_economy_production_speed_arms_factory_factor_dynamic_var
+	production_speed_dockyard_factor = GER_economy_production_speed_dockyard_factor_dynamic_var
+	production_speed_power_plant_factor = GER_economy_production_speed_power_plant_factor_dynamic_var
+	production_speed_nuclear_reactor_factor = GER_economy_production_speed_nuclear_reactor_factor_dynamic_var #-0.2
+	production_speed_energy_farm_factor = GER_economy_production_speed_energy_farm_factor_dynamic_var
+	industrial_development_monthly = GER_economy_industrial_development_monthly_dynamic_var
+	poverty_development_monthly = GER_economy_poverty_development_monthly_dynamic_var
+	farming_development_monthly = GER_economy_farming_development_monthly_dynamic_var
+	academic_development_monthly = GER_economy_academic_development_monthly_dynamic_var
+	society_development_monthly = GER_economy_society_development_monthly_dynamic_var
+	income_growth_factor = GER_economy_income_growth_factor_dynamic_var
+	expense_growth_factor = GER_economy_expense_growth_factor_dynamic_var
+	business_value_factor = GER_economy_business_value_factor_dynamic_var
+	personal_value_factor = GER_economy_personal_value_factor_dynamic_var
+	personal_expense = GER_economy_personal_expense_dynamic_var
+	personal_expense_factor = GER_economy_personal_expense_factor_dynamic_var
+	tax_business_rate = GER_economy_tax_business_rate_dynamic_var
+	tax_personal_rate = GER_economy_tax_personal_rate_dynamic_var
+	interest_rate = GER_economy_interest_rate_dynamic_var
+	inflation_monthly = GER_economy_inflation_monthly_dynamic_var
+}
+
+GER_bundeswehr_dynamic = {
+	icon = GFX_idea_GER_militarism
+	enable = { 
+		tag = GER
+	}
+	political_power_gain = GER_military_political_power_gain_dynamic_var
+	war_support_factor = GER_military_war_support_factor_dynamic_var #-0.1
+	war_support_weekly = GER_military_war_support_weekly_dynamic_var
+	weekly_manpower = GER_military_weekly_manpower_dynamic_var
+	weekly_casualties_war_support = GER_military_weekly_casualties_war_support_dynamic_var
+	weekly_convoys_war_support = GER_military_weekly_convoys_war_support_dynamic_var
+	weekly_bombing_war_support = GER_military_weekly_bombing_war_support_dynamic_var
+	compliance_growth = GER_military_compliance_growth_dynamic_var
+	required_garrison_factor = GER_military_required_garrison_factor_dynamic_var
+	experience_gain_army = GER_military_experience_gain_army_dynamic_var
+	experience_gain_army_factor = GER_military_experience_gain_army_factor_dynamic_var
+	experience_loss_factor = GER_military_experience_loss_factor_dynamic_var
+	max_command_power = GER_military_max_command_power_dynamic_var
+	command_power_gain_mult = GER_military_command_power_gain_mult_dynamic_var
+	army_org_factor = GER_military_army_org_factor_dynamic_var #-0.2
+	army_org_regain = GER_military_army_org_regain_dynamic_var
+	org_loss_when_moving = GER_military_org_loss_when_moving_dynamic_var
+	army_strength_factor = GER_military_army_strength_factor_dynamic_var
+	coordination_bonus = GER_military_coordination_bonus_dynamic_var
+	land_reinforce_rate = GER_military_land_reinforce_rate_dynamic_var
+	max_planning_factor = GER_military_max_planning_factor_dynamic_var
+	planning_speed = GER_military_planning_speed_dynamic_var
+	max_dig_in_factor = GER_military_max_dig_in_factor_dynamic_var
+	dig_in_speed_factor = GER_military_dig_in_speed_factor_dynamic_var
+	army_morale_factor = GER_military_army_morale_factor_dynamic_var #-0.1
+	army_attack_factor = GER_military_army_attack_factor_dynamic_var
+	army_defence_factor = GER_military_army_defence_factor_dynamic_var
+	breakthrough_factor = GER_military_breakthrough_factor_dynamic_var
+	army_speed_factor = GER_military_army_speed_factor_dynamic_var
+	army_core_attack_factor = GER_military_army_core_attack_factor_dynamic_var
+	army_core_defence_factor = GER_military_army_core_defence_factor_dynamic_var
+	equipment_capture_factor = GER_military_equipment_capture_factor_dynamic_var
+	supply_consumption_factor = GER_military_supply_consumption_factor_dynamic_var
+	out_of_supply_factor = GER_military_out_of_supply_factor_dynamic_var
+	conscription_factor = GER_military_conscription_factor_dynamic_var #-0.6
+	mobilization_speed = GER_military_mobilization_speed_dynamic_var #-0.6
+	training_time_factor = GER_military_training_time_factor_dynamic_var
+	resistance_decay_on_our_occupied_states = GER_military_resistance_decay_on_our_occupied_states_dynamic_var
+	resistance_growth_on_our_occupied_states = GER_military_resistance_growth_on_our_occupied_states_dynamic_var
+	acclimatization_cold_climate_gain_factor = GER_military_acclimatization_cold_climate_gain_factor_dynamic_var
+	acclimatization_hot_climate_gain_factor = GER_military_acclimatization_hot_climate_gain_factor_dynamic_var
+	pocket_penalty = GER_military_pocket_penalty_dynamic_var
+	cat_old_land_doctrine_cost_factor = GER_military_land_doctrine_cost_factor_dynamic_var #0.4
+	battalion_upkeep_factor = GER_military_battalion_upkeep_factor_dynamic_var #0.2
+	military_development_monthly = GER_military_development_monthly_dynamic_var
+	national_socialist_drift = GER_military_national_socialist_drift_dynamic_var #-0.03
+	totalitarian_socialist_drift = GER_military_totalitarian_socialist_drift_dynamic_var #-0.03
+	navy_submarine_attack_factor = GER_military_navy_submarine_attack_factor_dynamic_var
+	navy_submarine_defence_factor = GER_military_navy_submarine_defence_factor_dynamic_var
+	screening_efficiency = GER_military_screening_efficiency_dynamic_var
+	navy_screen_attack_factor = GER_military_navy_screen_attack_factor_dynamic_var
+	navy_screen_defence_factor = GER_military_navy_screen_defence_factor_dynamic_var
+	air_attack_factor = GER_military_air_attack_factor_dynamic_var
+	air_defence_factor = GER_military_air_defence_factor_dynamic_var
+	ground_attack_factor = GER_military_ground_attack_factor_dynamic_var
+	defensive_war_stability_factor = GER_military_defensive_war_stability_factor_dynamic_var
+	mechanized_attack_factor = GER_military_mechanized_attack_factor_dynamic_var
+	mechanized_defence_factor = GER_military_mechanized_defence_factor_dynamic_var
+	industrial_capacity_dockyard = GER_military_industrial_capacity_dockyard_dynamic_var
+	terrain_penalty_reduction  = GER_military_terrain_penalty_reduction_dynamic_var
+	recon_factor = GER_military_recon_factor_dynamic_var
+	production_speed_anti_air_building_factor = GER_military_production_speed_anti_air_building_factor_dynamic_var
+	production_speed_radar_station_factor = GER_military_production_speed_radar_station_factor_dynamic_var
+}
+
+GER_festung_stadt = {
+	icon = GFX_modifiers_UKR_russian_ghetto
+	enable = {
+		tag = GER
+		OR = {
+			has_government = fascist
+			has_government = nationalist
+		}
+	}
+	army_defence_factor = 0.25
+}
+
+GER_army_favoritism_dynamic = {
+	enable = {
+		tag = GER
+		OR = {
+			has_government = fascist
+			has_government = nationalist
+		}
+	}
+	breakthrough_factor = GER.army_favor_var_dynamic_var
+	army_defence_factor = GER.army_favor_var_dynamic_var
+	training_time_factor = GER.army_favor_var_dynamic_var
+}
+
+GER_air_favoritism_dynamic = {
+	enable = {
+		tag = GER
+		OR = {
+			has_government = fascist
+			has_government = nationalist
+		}
+	}
+	air_attack_factor = GER.airforce_favor_var_dynamic_var
+	air_defence_factor = GER.airforce_favor_var_dynamic_var
+	ground_attack_factor = GER.airforce_favor_var_dynamic_var
+}
+
+GER_military_reformation_dynamic = {
+	icon = GFX_idea_GER_vorwarts_europa3_idea
+	enable = {
+		tag = GER
+	}
+	breakthrough_factor = GER_breakthrough_factor_dynamic_var
+	army_defence_factor = GER_army_defence_factor_dynamic_var
+	army_org = GER_army_org_dynamic_var
+	air_attack_factor = GER_air_attack_factor_dynamic_var
+	air_defence_factor = GER_air_defence_factor_dynamic_var
+	ground_attack_factor = GER_ground_attack_factor_dynamic_var
+	army_artillery_attack_factor = GER_artillery_brigade_attack_factor_dynamic_var
+	army_artillery_defence_factor = GER_artillery_brigade_defence_factor_dynamic_var
+	army_armor_attack_factor = GER_armor_attack_factor_dynamic_var
+	max_planning_factor = GER_max_planning_factor_dynamic_var
+	initiative_factor = GER_initiative_factor_dynamic_var
+	army_speed_factor = GER_army_speed_factor_dynamic_var
+	resistance_growth = GER_resistance_growth_dynamic_var
+	army_attack_factor = GER_army_attack_factor_dynamic_var
+	resistance_growth_on_our_occupied_states = GER_resistance_growth_on_our_occupied_states_dynamic_var
+	non_core_manpower = GER_non_core_manpower_dynamic_var
+	conscription_factor = GER_conscription_factor_dynamic_var
+	land_reinforce_rate = GER_land_reinforce_rate_dynamic_var
+	mechanized_attack_factor = GER_mechanized_attack_factor_dynamic_var
+	mechanized_defence_factor = GER_mechanized_defence_factor_dynamic_var
+	air_strategic_bomber_bombing_factor = GER_air_strategic_bomber_bombing_factor_dynamic_var
+	port_strike = GER_port_strike_dynamic_var
+	minimum_training_level = GER_minimum_training_level_dynamic_var
+	unit_upkeep_attrition_factor = GER_unit_upkeep_attrition_factor_dynamic_var
+	military_development_monthly = GER_military_development_monthly_dynamic_var
+	cat_old_air_doctrine_cost_factor = GER_air_doctrine_cost_factor_dynamic_var
+}
+
+GER_military_reformation_communist_dynamic = {
+	icon = GFX_idea_GER_army_reformation
+	enable = {
+		tag = GER
+	}
+	breakthrough_factor = GER_breakthrough_factor_dynamic_var
+	army_defence_factor = GER_army_defence_factor_dynamic_var
+	army_org = GER_army_org_dynamic_var
+	air_attack_factor = GER_air_attack_factor_dynamic_var
+	air_defence_factor = GER_air_defence_factor_dynamic_var
+	ground_attack_factor = GER_ground_attack_factor_dynamic_var
+	army_artillery_attack_factor = GER_artillery_brigade_attack_factor_dynamic_var
+	army_artillery_defence_factor = GER_artillery_brigade_defence_factor_dynamic_var
+	army_armor_attack_factor = GER_armor_attack_factor_dynamic_var
+	max_planning_factor = GER_max_planning_factor_dynamic_var
+	initiative_factor = GER_initiative_factor_dynamic_var
+	army_speed_factor = GER_army_speed_factor_dynamic_var
+	resistance_growth = GER_resistance_growth_dynamic_var
+	army_attack_factor = GER_army_attack_factor_dynamic_var
+	resistance_growth_on_our_occupied_states = GER_resistance_growth_on_our_occupied_states_dynamic_var
+	non_core_manpower = GER_non_core_manpower_dynamic_var
+	conscription_factor = GER_conscription_factor_dynamic_var
+	land_reinforce_rate = GER_land_reinforce_rate_dynamic_var
+	mechanized_attack_factor = GER_mechanized_attack_factor_dynamic_var
+	mechanized_defence_factor = GER_mechanized_defence_factor_dynamic_var
+	air_strategic_bomber_bombing_factor = GER_air_strategic_bomber_bombing_factor_dynamic_var
+	port_strike = GER_port_strike_dynamic_var
+	minimum_training_level = GER_minimum_training_level_dynamic_var
+	unit_upkeep_attrition_factor = GER_unit_upkeep_attrition_factor_dynamic_var
+	military_development_monthly = GER_military_development_monthly_dynamic_var
+	cat_old_air_doctrine_cost_factor = GER_air_doctrine_cost_factor_dynamic_var
+}
+
+GER_second_european_war = {
+	icon = GFX_idea_NATO_european_war
+	enable = {
+		tag = GER
+	}
+	breakthrough_factor = GER_breakthrough_factor2_dynamic_var
+	army_defence_factor = GER_army_defence_factor2_dynamic_var
+	army_org = GER_army_org2_dynamic_var
+	air_attack_factor = GER_air_attack_factor2_dynamic_var
+	air_defence_factor = GER_air_defence_factor2_dynamic_var
+	ground_attack_factor = GER_ground_attack_factor2_dynamic_var
+	army_armor_attack_factor = GER_armor_attack_factor2_dynamic_var
+	max_planning_factor = GER_max_planning_factor2_dynamic_var
+	initiative_factor = GER_initiative_factor2_dynamic_var
+	army_speed_factor = GER_army_speed_factor2_dynamic_var
+	resistance_growth = GER_resistance_growth2_dynamic_var
+	army_attack_factor = GER_army_attack_factor2_dynamic_var
+}
+
+GER_antiquated_legal_system_dynamic = {
+	icon = GFX_idea_GER_new_sipo_idea
+	enable = {
+		tag = GER
+	}
+	political_power_gain = GER_political_power_gain_dynamic_var
+	consumer_goods_factor = GER_consumer_goods_factor_dynamic_var
+	stability_factor = GER_stability_factor_dynamic_var
+	production_speed_buildings_factor = GER_production_speed_buildings_factor_dynamic_var
+	industrial_development_monthly = GER_industrial_development_monthly_dynamic_var
+	production_factory_efficiency_gain_factor = GER_production_factory_efficiency_gain_factor_dynamic_var
+	foreign_minister_cost_factor = GER_foreign_minister_cost_factor_dynamic_var
+	economic_minister_cost_factor = GER_economic_minister_cost_factor_dynamic_var
+	interior_minister_cost_factor = GER_interior_minister_cost_factor_dynamic_var
+	intelligence_minister_cost_factor = GER_intelligence_minister_cost_factor_var
+	tax_business_rate = GER_tax_business_rate_dynamic_var
+	tax_personal_rate = GER_tax_personal_rate_dynamic_var
+	personal_value_factor = GER_personal_value_dynamic_var
+	industrial_capacity_factory = GER_industrial_capacity_factory_dynamic_var
+}
+
+GER_fehlinger_initiative_dynamic = {
+	icon = GFX_idea_GER_fehlinger_initiative_dynamic
+	enable = {
+		tag = GER
+	}
+	
+	political_power_gain = GER_fehlinger_initiative_political_power_gain_dynamic_var
+	war_stability_factor = GER_fehlinger_initiative_war_stability_factor_dynamic_var
+	war_support_factor = GER_fehlinger_initiative_war_support_factor_dynamic_var
+	foreign_minister_cost_factor = GER_fehlinger_initiative_foreign_minister_cost_factor_dynamic_var
+	drift_defence_factor = GER_fehlinger_initiative_drift_defence_factor_dynamic_var
+	opinion_gain_monthly_same_ideology_factor = GER_fehlinger_initiative_opinion_gain_monthly_same_ideology_factor_dynamic_var
+	resistance_growth_on_our_occupied_states = GER_fehlinger_initiative_resistance_growth_on_our_occupied_states_dynamic_var
+	resistance_growth = GER_fehlinger_initiative_resistance_growth_dynamic_var
+	resistance_decay = GER_fehlinger_initiative_resistance_decay_dynamic_var
+	compliance_growth = GER_fehlinger_initiative_compliance_growth_dynamic_var
+	misc_expense = GER_fehlinger_initiative_misc_expense_dynamic_var
+}
+
+
+#International
+GER_federalization_dynamic = {
+	enable = {
+		OR = {
+			tag = GER
+			tag = FRA
+		}
+		NOT = {
+			has_government = fascist
+			has_government = communist
+			has_government = nationalist
+		}
+	}
+	coordination_bonus = GER.eu_fed_var_dynamic_var
+	industrial_capacity_factory = GER.eu_fed_var_dynamic_var
+	consumer_goods_factor = GER.eu_fed_var_dynamic_var
+	income_growth_factor = GER.eu_fed_var_dynamic_var
+}
+
+GER_sepratism_dynamic = {
+	enable = {
+		OR = {
+			tag = GER
+			tag = FRA
+		}
+		NOT = {
+			has_government = communist
+			has_government = fascist
+			has_government = nationalist
+		}
+	}
+	political_power_gain = GER.eu_visregard_sepratism_dynamic_var
+}
+
+GER_community_of_workers_dynamic = {
+	icon = GFX_idea_SOV_spirit_of_the_people
+	custom_modifier_tooltip = GER_workers_tt
+	opinion_gain_monthly_same_ideology_factor = GER_opinion_gain_monthly_same_ideology_factor_workers_dynamic_var
+	lend_lease_tension = GER_lend_lease_tension_workers_dynamic_var
+	war_stability_factor = GER_war_stability_factor_workers_dynamic_var
+	income_growth_factor = GER_income_growth_factor_workers_dynamic_var
+	industrial_development_monthly = GER_industrial_development_monthly_workers_dynamic_var
+	consumer_goods_factor = GER_consumer_goods_factor_workers_dynamic_var
+}
+
+#States
+GER_rolling_blackout = {
+	icon = GFX_generic_coronavirus
+	enable = {
+		always = yes
+	}
+	army_speed_factor = -0.4
+	org_loss_when_moving = 0.25
+	supply_factor = -0.45
+	truck_attrition_factor = 5
+}
+
+GER_industrial_development_state_modifier = { #Timed Modifier, 700 Days 
+	icon = GFX_idea_generic_economic_stimulation
+	enable = {
+		always = yes
+	}
+	state_production_speed_buildings_factor = 0.1
+	local_factories = 0.2
+}
+
+GER_flooded = {
+	icon = GFX_modifiers_flooding
+	enable = {
+		always = yes
+	}
+	local_manpower = -0.6
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+}
+
+# There was a duplicate of GER_flooded here !
+
+GER_smart_batteries_grids = {
+	icon = GFX_modifiers_GER_batteries
+	enable = {
+		is_owned_by = GER
+	}
+	local_building_slots = 2
+	state_production_speed_buildings_factor = 0.15
+	local_factory_energy_consumption = -0.25
+}
+
+GER_model_fuhrer_city = {
+	icon = GFX_modifiers_GER_model_fuhrer_city
+	enable = {
+		always = yes
+	}
+	local_factories = 0.2
+	state_production_speed_buildings_factor = 0.1
+	state_resources_factor = 0.15
+	recruitable_population_factor = 0.05
+	local_manpower = 0.2
+}
+
+GER_lined_city = {
+	icon = GFX_generic_coronavirus
+	enable = {
+		always = yes
+	}
+	local_manpower = -0.85
+	local_building_slots_factor = 0.25
+	state_resources_factor = 0.25
+	state_production_speed_buildings_factor = 0.25
+}
+
+GER_german_heavy_lifter = {
+	icon = GFX_modifiers_GER_arms_of_europe_modifier
+	enable = {
+		always = yes
+	}
+	local_building_slots = 3
+	local_supplies = 0.2
+	state_resources_factor = 0.25
+	state_production_speed_buildings_factor = 0.15
+	mobilization_speed = 0.25
+}
+
+GER_french_heavy_lifter = {
+	icon = GFX_modifiers_GER_legs_of_europe_modifier
+	enable = {
+		always = yes
+	}
+	local_manpower = 0.3
+	local_building_slots_factor = 0.25
+	state_resources_factor = 0.25
+	state_production_speed_buildings_factor = 0.15
+	mobilization_speed = 0.1
+}
+
+GER_emp_affected_zone = {
+	icon = GFX_modifiers_UKR_russian_ghetto
+	enable = {
+		tag = GER
+		
+	}
+	army_armor_attack_factor = -0.9
+	mechanized_attack_factor = -0.9
+	motorized_attack_factor = -0.9
+	#light_mechanized_attack_factor = -0.9 #Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces 
+	#amphibious_armor_attack_factor = -0.9 #Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces 
+	#amphibious_mechanized_attack_factor = -0.9 #Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces 
+	army_armor_defence_factor = -0.9
+	mechanized_defence_factor = -0.9
+	motorized_defence_factor = -0.9
+	#light_mechanized_defense_factor = -0.9 #Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces
+	#amphibious_armor_defense_factor = -0.9 #Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces
+	#amphibious_mechanized_defense_factor = -0.9 #Allowed unit types are army_armor, army_artillery, army_infantry, cavalry, mechanized, motorized, special_forces
+	air_attack_factor = -0.9
+	air_defence_factor = -0.9
+	air_cas_efficiency = -0.9
+	air_range_factor = -0.9
+	air_strategic_bomber_bombing_factor = -0.9
+}
+
+GER_great_reset_dynamic = {
+	icon = GFX_idea_GER_great_reset
+	enable = { 
+		tag = GER
+	}
+	political_power_gain = GER_reset_political_power_gain_dynamic_var
+	stability_factor = GER_reset_stability_factor_dynamic_var
+	stability_weekly = GER_reset_stability_weekly_dynamic_var
+	war_support_factor = GER_reset_war_support_factor_dynamic_var
+	war_support_weekly = GER_reset_war_support_weekly_dynamic_var
+	consumer_goods_factor = GER_reset_consumer_goods_factor_dynamic_var
+	local_resources_factor = GER_reset_local_resources_factor_dynamic_var
+	global_building_slots_factor = GER_reset_global_building_slots_factor_dynamic_var
+	research_speed_factor = GER_reset_research_speed_factor_dynamic_var
+	compliance_growth = GER_reset_compliance_growth_dynamic_var
+	resistance_growth = GER_reset_resistance_growth_dynamic_var
+	resistance_decay = GER_reset_resistance_decay_dynamic_var
+	production_factory_max_efficiency_factor = GER_reset_production_factory_max_efficiency_factor_dynamic_var
+	production_factory_efficiency_gain_factor = GER_reset_production_factory_efficiency_gain_factor_dynamic_var
+	production_factory_start_efficiency_factor = GER_reset_production_factory_start_efficiency_factor_dynamic_var
+	line_change_production_efficiency_factor = GER_reset_line_change_production_efficiency_factor_dynamic_var
+	production_lack_of_resource_penalty_factor = GER_reset_production_lack_of_resource_penalty_factor_dynamic_var
+	fuel_gain_factor = GER_reset_fuel_gain_factor_dynamic_var
+	fuel_gain_factor_from_states = GER_reset_fuel_gain_factor_from_states_dynamic_var
+	production_speed_buildings_factor = GER_reset_production_speed_buildings_factor_dynamic_var
+	industrial_capacity_factory = GER_reset_industrial_capacity_factory_dynamic_var #-0.2
+	industrial_capacity_dockyard = GER_reset_industrial_capacity_dockyard_dynamic_var #-0.2
+	production_speed_infrastructure_factor = GER_reset_production_speed_infrastructure_factor_dynamic_var
+	production_speed_industrial_complex_factor = GER_reset_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_office_park_factor = GER_reset_production_speed_office_park_factor_dynamic_var
+	production_speed_rail_way_factor = GER_reset_production_speed_rail_way_factor_dynamic_var
+	production_speed_arms_factory_factor = GER_reset_production_speed_arms_factory_factor_dynamic_var
+	production_speed_dockyard_factor = GER_reset_production_speed_dockyard_factor_dynamic_var
+	production_speed_power_plant_factor = GER_reset_production_speed_power_plant_factor_dynamic_var
+	production_speed_nuclear_reactor_factor = GER_reset_production_speed_nuclear_reactor_factor_dynamic_var #-0.2
+	production_speed_energy_farm_factor = GER_reset_production_speed_energy_farm_factor_dynamic_var
+	industrial_development_monthly = GER_reset_industrial_development_monthly_dynamic_var
+	poverty_development_monthly = GER_reset_poverty_development_monthly_dynamic_var
+	farming_development_monthly = GER_reset_farming_development_monthly_dynamic_var
+	academic_development_monthly = GER_reset_academic_development_monthly_dynamic_var
+	society_development_monthly = GER_reset_society_development_monthly_dynamic_var
+	income_growth_factor = GER_reset_income_growth_factor_dynamic_var
+	expense_growth_factor = GER_reset_expense_growth_factor_dynamic_var
+	business_value_factor = GER_reset_business_value_factor_dynamic_var
+	personal_value_factor = GER_reset_personal_value_factor_dynamic_var
+	personal_expense = GER_reset_personal_expense_dynamic_var
+	personal_expense_factor = GER_reset_personal_expense_factor_dynamic_var
+	tax_business_rate = GER_reset_tax_business_rate_dynamic_var
+	tax_personal_rate = GER_reset_tax_personal_rate_dynamic_var
+	interest_rate = GER_reset_interest_rate_dynamic_var
+	inflation_monthly = GER_reset_inflation_monthly_dynamic_var
+	military_factory_upkeep_factor = GER_reset_military_factory_upkeep_factor_dynamic_var
+	local_factories = GER_reset_local_factories_dynamic_var
+	dtg_threshold_factor = GER_reset_dtg_threshold_factor_dynamic_var
+	monthly_population = GER_reset_monthly_population_dynamic_var
+	interest_rate_factor = GER_reset_interest_rate_factor_dynamic_var
+	encryption = GER_reset_encryption_dynamic_var
+}
+
+GER_mass_catharsis_dynamic = {
+	icon = GFX_idea_GER_mass_carthasis_idea
+	enable = { 
+		tag = GER
+	}
+	society_development_monthly = GER_mass_catharsis_society_development_monthly_dynamic_var
+	stability_weekly = GER_mass_catharsis_stability_weekly_dynamic_var
+	war_support_weekly = GER_mass_catharsis_war_support_weekly_dynamic_var
+	production_factory_max_efficiency_factor = GER_mass_catharsis_production_factory_max_efficiency_factor_dynamic_var
+	production_factory_efficiency_gain_factor = GER_mass_catharsis_production_factory_efficiency_gain_factor_dynamic_var
+	resistance_growth = GER_mass_catharsis_resistance_growth_dynamic_var
+	compliance_growth = GER_mass_catharsis_compliance_growth_dynamic_var
+}
+
+GER_european_military_dynamic = {
+	icon = GFX_idea_GER_european_army_dynamic
+	enable = { 
+		tag = GER
+	}
+	political_power_gain = GER_euro_political_power_gain_dynamic_var
+	war_support_factor = GER_euro_war_support_factor_dynamic_var #-0.1
+	war_support_weekly = GER_euro_war_support_weekly_dynamic_var
+	weekly_manpower = GER_euro_weekly_manpower_dynamic_var
+	weekly_casualties_war_support = GER_euro_weekly_casualties_war_support_dynamic_var
+	weekly_convoys_war_support = GER_euro_weekly_convoys_war_support_dynamic_var
+	weekly_bombing_war_support = GER_euro_weekly_bombing_war_support_dynamic_var
+	experience_gain_army = GER_euro_experience_gain_army_dynamic_var
+	experience_gain_army_factor = GER_euro_experience_gain_army_factor_dynamic_var
+	experience_loss_factor = GER_euro_experience_loss_factor_dynamic_var
+	max_command_power = GER_euro_max_command_power_dynamic_var
+	command_power_gain_mult = GER_euro_command_power_gain_mult_dynamic_var
+	army_org_factor = GER_euro_army_org_factor_dynamic_var #-0.1
+	army_org_regain = GER_euro_army_org_regain_dynamic_var
+	org_loss_when_moving = GER_euro_org_loss_when_moving_dynamic_var
+	army_strength_factor = GER_euro_army_strength_factor_dynamic_var
+	coordination_bonus = GER_euro_coordination_bonus_dynamic_var
+	land_reinforce_rate = GER_euro_land_reinforce_rate_dynamic_var
+	max_planning_factor = GER_euro_max_planning_factor_dynamic_var
+	planning_speed = GER_euro_planning_speed_dynamic_var
+	max_dig_in_factor = GER_euro_max_dig_in_factor_dynamic_var
+	dig_in_speed_factor = GER_euro_dig_in_speed_factor_dynamic_var
+	army_morale_factor = GER_euro_army_morale_factor_dynamic_var #-0.1
+	army_attack_factor = GER_euro_army_attack_factor_dynamic_var
+	army_defence_factor = GER_euro_army_defence_factor_dynamic_var
+	breakthrough_factor = GER_euro_breakthrough_factor_dynamic_var
+	army_speed_factor = GER_euro_army_speed_factor_dynamic_var
+	army_core_attack_factor = GER_euro_army_core_attack_factor_dynamic_var
+	army_core_defence_factor = GER_euro_army_core_defence_factor_dynamic_var
+	equipment_capture_factor = GER_euro_equipment_capture_factor_dynamic_var
+	supply_consumption_factor = GER_euro_supply_consumption_factor_dynamic_var
+	out_of_supply_factor = GER_euro_out_of_supply_factor_dynamic_var
+	conscription_factor = GER_euro_conscription_factor_dynamic_var #-0.6
+	mobilization_speed = GER_euro_mobilization_speed_dynamic_var #-0.6
+	training_time_factor = GER_euro_training_time_factor_dynamic_var
+	resistance_decay_on_our_occupied_states = GER_euro_resistance_decay_on_our_occupied_states_dynamic_var
+	resistance_growth_on_our_occupied_states = GER_euro_resistance_growth_on_our_occupied_states_dynamic_var
+	acclimatization_cold_climate_gain_factor = GER_euro_acclimatization_cold_climate_gain_factor_dynamic_var
+	acclimatization_hot_climate_gain_factor = GER_euro_acclimatization_hot_climate_gain_factor_dynamic_var
+	pocket_penalty = GER_euro_pocket_penalty_dynamic_var
+	cat_old_land_doctrine_cost_factor = GER_euro_land_doctrine_cost_factor_dynamic_var #0.4
+	battalion_upkeep_factor = GER_euro_battalion_upkeep_factor_dynamic_var #0.2
+	military_development_monthly = GER_euro_development_monthly_dynamic_var
+	national_socialist_drift = GER_euro_national_socialist_drift_dynamic_var #-0.03
+	totalitarian_socialist_drift = GER_euro_totalitarian_socialist_drift_dynamic_var #-0.03
+	air_superiority_efficiency = GER_euro_air_superiority_efficiency_dynamic_var
+	experience_gain_army = GER_euro_experience_gain_army_dynamic_var
+	army_armor_attack_factor = GER_euro_army_armor_attack_factor_dynamic_var
+	production_speed_rail_way_factor = GER_euro_production_speed_rail_way_factor_dynamic_var
+	production_speed_infrastructure_factor = GER_euro_production_speed_infrastructure_factor_dynamic_var
+	production_speed_supply_node_factor = GER_euro_production_speed_supply_node_factor_dynamic_var
+	ground_attack_factor = GER_euro_ground_attack_factor_dynamic_var
+	industrial_capacity_factory = GER_euro_industrial_capacity_factory_dynamic_var
+	attrition = GER_euro_attrition_dynamic_var
+}
+
+GER_into_post_capitalism_dynamic = {
+	icon = GFX_idea_GER_into_post_capitalism_idea
+
+	enable = { 
+		tag = GER
+	}
+	production_factory_efficiency_gain_factor = GER_into_post_capitalism_production_factory_efficiency_gain_factor_dynamic_var
+	political_power_gain = GER_into_post_capitalism_political_power_gain_dynamic_var
+	research_speed_factor = GER_into_post_capitalism_research_speed_factor_dynamic_var
+	consumer_goods_factor = GER_into_post_capitalism_consumer_goods_factor_dynamic_var
+	stability_factor = GER_into_post_capitalism_stability_factor_dynamic_var
+	war_support_weekly = GER_into_post_capitalism_war_support_weekly_dynamic_var
+	stability_weekly = GER_into_post_capitalism_stability_weekly_dynamic_var
+	party_popularity_stability_factor = GER_into_post_capitalism_party_popularity_stability_factor_dynamic_var
+	production_speed_buildings_factor = GER_into_post_capitalism_production_speed_buildings_factor_dynamic_var
+	business_value_factor = GER_into_post_capitalism_business_value_dynamic_var
+	expense_growth_factor = GER_into_post_capitalism_expense_growth_factor_dynamic_var
+	industrial_development_monthly = GER_into_post_capitalism_industrial_development_monthly_dynamic_var
+	libertarian_socialist_drift = GER_into_post_capitalism_libertarian_socialist_drift_dynamic_var
+	local_resources_factor = GER_into_post_capitalism_local_resources_factor_dynamic_var
+	repair_speed_infrastructure_factor = GER_into_post_capitalism_repair_speed_infrastructure_factor_dynamic_var
+	industrial_capacity_factory = GER_into_post_capitalism_industrial_capacity_factory_dynamic_var
+	production_speed_infrastructure_factor = GER_into_post_capitalism_production_speed_infrastructure_factor_dynamic_var
+	production_speed_industrial_complex_factor = GER_into_post_capitalism_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_arms_factory_factor = GER_into_post_capitalism_production_speed_arms_factory_factor_dynamic_var
+	society_development_monthly = GER_into_post_capitalism_society_development_monthly_dynamic_var
+	poverty_development_monthly = GER_into_post_capitalism_poverty_development_monthly_dynamic_var
+	tax_business_rate_factor = GER_into_post_capitalism_tax_business_rate_factor_dynamic_var
+	tax_personal_rate_factor = GER_into_post_capitalism_tax_personal_rate_factor_dynamic_var
+	production_factory_max_efficiency_factor = GER_into_post_capitalism_production_factory_max_efficiency_factor_dynamic_var
+	trade_opinion_factor = GER_into_post_capitalism_trade_opinion_factor_dynamic_var
+	cic_construction_boost_factor = GER_into_post_capitalism_cic_construction_boost_factor_dynamic_var
+	production_speed_dockyard_factor = GER_into_post_capitalism_production_speed_dockyard_factor_dynamic_var
+	equipment_upgrade_xp_cost = GER_into_post_capitalism_equipment_upgrade_xp_cost_dynamic_var
+	army_fuel_consumption_factor = GER_into_post_capitalism_army_fuel_consumption_factor_dynamic_var
+	navy_fuel_consumption_factor = GER_into_post_capitalismnavy_fuel_consumption_factor_dynamic_var
+	air_fuel_consumption_factor = GER_into_post_capitalism_air_fuel_consumption_factor_dynamic_var
+	production_lack_of_resource_penalty_factor = GER_into_post_capitalism_production_lack_of_resource_penalty_factor_dynamic_var
+	line_change_production_efficiency_factor = GER_into_post_capitalism_line_change_production_efficiency_factor_dynamic_var
+	repair_speed_factor = GER_into_post_capitalism_repair_speed_factor_dynamic_var
+	industrial_capacity_dockyard = GER_into_post_capitalism_industrial_capacity_dockyard_dynamic_var
+	academic_development_monthly = GER_into_post_capitalism_academic_development_monthly_dynamic_var
+	production_factory_start_efficiency_factor = GER_into_post_capitalism_production_factory_start_efficiency_factor_dynamic_var
+	personal_value_factor = GER_into_post_capitalism_personal_income_factor_dynamic_var
+	farming_development_monthly = GER_into_post_capitalism_agriculture_development_monthly_dynamic_var
+	production_speed_energy_farm_factor = GER_into_post_capitalism_production_speed_energy_farm_factor_dynamic_var
+	personal_income = GER_into_post_capitalism_personal_income_dynamic_var
+	income_growth_factor = GER_into_post_capitalism_income_growth_factor_dynamic_var
+	equipment_conversion_speed = GER_into_post_capitalism_equipment_conversion_speed_dynamic_var
+	dtg_threshold = GER_into_post_capitalism_dtg_threshold_dynamic_var
+	production_speed_office_park_factor = GER_into_post_capitalism_production_speed_office_park_factor_dynamic_var
+	personal_expense_factor = GER_into_post_capitalism_personal_expense_factor_dynamic_var
+	industry_free_repair_factor = GER_into_post_capitalism_industry_free_repair_factor_dynamic_var
+}

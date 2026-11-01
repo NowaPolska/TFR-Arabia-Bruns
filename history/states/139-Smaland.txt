@@ -1,0 +1,23 @@
+state={
+	id=139
+	name="STATE_139"
+	
+	provinces={
+		242 363 9251 9329 9406 9410 11231 11280 11311 13095 
+	}
+	history = {
+		owner = SWE
+		add_core_of = SWE
+		victory_points = { 9329 1 }
+		victory_points = { 242 1 }
+		buildings = {
+			infrastructure = 4
+			power_plant = 1
+			office_park = 1
+		}
+	}
+	manpower=567263
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+KOR_send_support_SAU = {
+	enable = {
+		tag = KOR
+		NOT = { has_country_flag = saudi_civil_war_over }
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = 900
+	}
+}
+
+KOR_no_support_SAU = {
+	enable = {
+		tag = KOR
+		has_country_flag = saudi_civil_war_over
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAU"
+		value = -1000
+	}
+}

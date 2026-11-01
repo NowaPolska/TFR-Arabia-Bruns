@@ -1,0 +1,13 @@
+	defined_text = {
+		name = GetBpEffect
+		text = {
+			localization_key = BLA_bp_effect_loc
+		}
+	}
+	
+	defined_text = {
+		name = GetNoiEffect
+		text = {
+			localization_key = BLA_noi_effect_loc
+		}
+	}

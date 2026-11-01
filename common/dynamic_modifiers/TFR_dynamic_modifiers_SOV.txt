@@ -1,0 +1,2041 @@
+
+	SOV_left_wing_opposition_power_modifier = {
+		political_power_cost = SOV_left_power_pp
+		stability_factor = SOV_left_power_stability
+		industrial_capacity_factory = SOV_left_power_factory_output
+	}
+
+	SOV_dem_opposition_power_modifier = {
+		political_power_cost = SOV_dem_opposition_power_pp
+		stability_factor = SOV_dem_opposition_power_stability
+		army_morale_factor = SOV_dem_opposition_power_organisation
+	}
+
+	SOV_integralist_strength_dynamic = {
+	
+		enable = { 
+			tag = SOV
+		}
+		
+		political_power_gain = SOV_integralist_strength_dynamic_political_power_gain_var
+		stability_factor = SOV_integralist_strength_dynamic_stability_factor_var
+		society_development_monthly = SOV_integralist_strength_dynamic_society_development_monthly_var
+	}	
+	
+	SOV_left_statesmen_strength_dynamic = {
+	
+		enable = { 
+			tag = SOV
+		}
+		
+		production_factory_efficiency_gain_factor = SOV_left_statesmen_strength_dynamic_production_factory_efficiency_gain_factor_var
+		industry_repair_factor = SOV_left_statesmen_strength_dynamic_industry_repair_factor_var
+		consumer_goods_factor = SOV_left_statesmen_strength_dynamic_consumer_goods_factor_var
+	}
+	
+	SOV_soviet_revivalists_strength_dynamic = {
+	
+		enable = { 
+			tag = SOV
+		}
+		
+		political_power_factor = SOV_soviet_revivalists_strength_dynamic_political_power_factor_var
+		industrial_capacity_factory = SOV_soviet_revivalists_strength_dynamic_industrial_capacity_factory_var
+		army_defence_factor = SOV_soviet_revivalists_strength_dynamic_army_defence_factor_var
+	}
+	
+	SOV_national_patriots_strength_dynamic = {
+	
+		enable = { 
+			tag = SOV
+		}
+		
+		war_support_factor = SOV_national_patriots_strength_dynamic_war_support_factor_var
+		army_morale_factor = SOV_national_patriots_strength_dynamic_army_morale_factor_var
+		initiative_factor = SOV_national_patriots_strength_dynamic_initiative_factor_var
+	}		
+	
+	SOV_z_patriots_strength_dynamic = {
+	
+		enable = { 
+			tag = SOV
+		}
+		
+		army_org_regain = SOV_z_patriots_strength_dynamic_army_org_regain_var
+		army_morale_factor = SOV_z_patriots_strength_dynamic_army_morale_factor_var
+		mobilization_speed = SOV_z_patriots_strength_dynamic_mobilization_speed_var
+	}	
+	
+	SOV_reformers_strength_dynamic = {
+	
+		enable = { 
+			tag = SOV
+		}
+		
+		business_value_factor = SOV_reformers_strength_dynamic_business_value_factor_var
+		academic_development_monthly = SOV_reformers_strength_dynamic_academic_development_monthly_var
+		personal_value_factor = SOV_reformers_strength_dynamic_personal_value_factor_var
+	}
+	
+	SOV_populists_strength_dynamic = {
+	
+		enable = {
+			tag = SOV
+		}
+		
+		production_speed_infrastructure_factor = SOV_populists_strength_dynamic_production_speed_infrastructure_factor_var
+		army_org_factor = SOV_populists_strength_dynamic_army_org_factor_var
+		business_value_factor = SOV_populists_strength_dynamic_business_value_factor_var
+	}
+	
+	SOV_kadyrovites_strength_dynamic = {
+	
+		enable = {
+			tag = SOV
+		}
+		
+		war_stability_factor = SOV_kadyrovites_strength_dynamic_war_stability_factor_var
+		army_strength_factor = SOV_kadyrovites_strength_dynamic_army_strength_factor_var
+		political_power_cost = SOV_kadyrovites_strength_dynamic_business_value_factor_var
+	}
+	
+	SOV_oligarch_support_dynamic = {
+	
+		enable = { 
+			tag = SOV
+			NOT = {
+				OR = {
+					has_completed_focus = SOV_nothing_but_bloodsucking_parasites
+					has_country_flag = SOV_duma_category_disabled
+				}
+			}
+		}
+		
+		production_speed_buildings_factor = SOV_oligarch_support_dynamic_var
+		industrial_capacity_factory = SOV_oligarch_support_dynamic_var
+		consumer_goods_factor = SOV_oligarch_support_dynamic_var
+	}
+	
+	SOV_liberal_opposition_dynamic = {
+	
+		enable = {
+			tag = SOV
+			NOT = {
+				OR = {
+					has_completed_focus = SOV_convene_the_duma
+					has_completed_focus = SOV_triumph_of_zhirinovsky
+					has_completed_focus = SOV_election_victory
+					has_country_flag = SOV_duma_category_disabled
+				}
+			}
+		}
+		political_power_gain = SOV_liberal_opposition_dynamic_dynamic_var
+		war_support_factor = SOV_liberal_opposition_dynamic_dynamic_var
+	}
+	
+	SOV_fanaticism_dynamic = {
+	
+		enable = { 
+			tag = SOV
+			OR = {
+				has_completed_focus = SOV_how_did_this_happen
+				has_completed_focus = SOV_restrict_freedom_enemies
+			}
+		}
+		
+		mobilization_speed = SOV_fanaticism_dynamic_var
+		industrial_capacity_factory = SOV_fanaticism_dynamic_var
+		army_attack_factor = SOV_fanaticism_dynamic_var
+		war_support_factor = SOV_fanaticism_dynamic_var
+	}
+	
+	UKR_russian_ghetto = {
+		icon = GFX_modifiers_UKR_russian_ghetto
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_resources_factor = -0.1
+		local_manpower = -0.3
+		state_production_speed_buildings_factor = -0.1
+	}
+	
+	SOV_industrial_zone = {
+		icon = GFX_modifiers_megacity
+		
+		enable = { 
+			always = yes
+		}
+		remove_trigger = {
+			NOT = { is_owned_by = SOV }
+		}
+		state_production_speed_buildings_factor = 0.1
+		local_building_slots = 1
+	}
+	
+	
+	UKR_russian_speaking_majority_region = {
+		icon = GFX_modifiers_UKR_russian_speaking_majority_region
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_resources_factor = -0.1
+		local_manpower = -0.3
+		state_production_speed_buildings_factor = -0.1
+	}	
+	
+	SOV_devastated_by_war = {
+		icon = GFX_modifiers_SOV_devastated_by_war
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_resources_factor = -0.15
+		local_manpower = -0.1
+		state_production_speed_buildings_factor = -0.1
+		local_building_slots = -3
+		mobilization_speed = -0.05
+		local_supplies = -0.1
+	}
+	
+	SOV_simulacra_democracy = {
+		icon = GFX_idea_SOV_simulacra_democracy_idea
+	    political_power_gain = SOV_simulacra_democracy_political_power_gain_dynamic_var
+	    political_power_cost = SOV_simulacra_democracy_political_power_cost_dynamic_var
+		stability_factor = SOV_simulacra_democracy_stability_factor_dynamic_var
+		compliance_growth = SOV_simulacra_democracy_compliance_growth_dynamic_var
+		party_popularity_stability_factor = SOV_simulacra_democracy_party_popularity_stability_factor_dynamic_var
+		war_support_factor = SOV_simulacra_democracy_war_support_factor_dynamic_var
+	    resistance_decay = SOV_simulacra_democracy_resistance_decay_dynamic_var
+		production_factory_max_efficiency_factor = SOV_simulacra_democracy_production_factory_max_efficiency_factor_dynamic_var
+		production_factory_efficiency_gain_factor = SOV_simulacra_democracy_production_factory_efficiency_gain_factor_dynamic_var
+		industrial_capacity_factory = SOV_simulacra_democracy_industrial_capacity_factory_dynamic_var
+		society_development_monthly = SOV_simulacra_democracy_society_development_monthly_dynamic_var
+		poverty_development_monthly = SOV_simulacra_democracy_poverty_development_monthly_dynamic_var
+		monthly_population = SOV_simulacra_democracy_monthly_population_dynamic_var
+		supply_factor = SOV_simulacra_democracy_supply_factor_dynamic_var
+		expense_growth_factor = SOV_simulacra_democracy_expense_growth_factor_dynamic_var
+		mobilization_speed = SOV_simulacra_democracy_mobilization_speed_dynamic_var
+		army_attack_factor = SOV_simulacra_democracy_army_attack_factor_dynamic_var
+		army_defence_factor = SOV_simulacra_democracy_army_defence_factor_dynamic_var
+		welfare_laws_cost_factor = SOV_simulacra_democracy_welfare_laws_cost_factor_dynamic_var
+		income_growth_factor = SOV_simulacra_democracy_expense_income_growth_factor_dynamic_var
+		production_speed_arms_factory_factor = SOV_simulacra_democracy_production_speed_arms_factory_factor_dynamic_var
+		tax_business_rate = SOV_simulacra_democracy_tax_business_rate_dynamic_var
+		business_value_factor = SOV_simulacra_democracy_business_value_factor_dynamic
+		interest_rate_factor = SOV_simulacra_democracy_rate_factor_dynamic_var
+		consumer_goods_factor = SOV_simulacra_democracy_consumer_goods_factor_dynamic_var
+		industrial_development_monthly = SOV_simulacra_democracy_industrial_development_monthly_dynamic_var
+		war_stability_factor = SOV_simulacra_democracy_war_stability_factor_dynamic_var
+		personal_expense_factor = SOV_simulacra_democracy_personal_expense_factor_dynamic_var
+		personal_value_factor = SOV_simulacra_democracy_personal_value_factor_dynamic_var
+	}
+	
+	SOV_institutional_reforms = {
+		icon = GFX_idea_SOV_conservative_liberalisation_idea
+	    political_power_gain = SOV_institutional_reforms_political_power_gain_dynamic_var
+	    political_power_cost = SOV_institutional_reforms_political_power_cost_dynamic_var
+		stability_factor = SOV_institutional_reforms_stability_factor_dynamic_var
+		production_speed_buildings_factor = SOV_institutional_reforms_production_speed_buildings_factor_dynamic
+		compliance_growth = SOV_institutional_reforms_compliance_growth_dynamic_var
+		party_popularity_stability_factor = SOV_institutional_reforms_party_popularity_stability_factor_dynamic_var
+		war_support_factor = SOV_institutional_reforms_war_support_factor_dynamic_var
+	    resistance_decay = SOV_institutional_reforms_resistance_decay_dynamic_var
+		production_factory_max_efficiency_factor = SOV_institutional_reforms_production_factory_max_efficiency_factor_dynamic_var
+		production_factory_efficiency_gain_factor = SOV_institutional_reforms_production_factory_efficiency_gain_factor_dynamic_var
+		industrial_capacity_factory = SOV_institutional_reforms_industrial_capacity_factory_dynamic_var
+		society_development_monthly = SOV_institutional_reforms_society_development_monthly_dynamic_var
+		poverty_development_monthly = SOV_institutional_reforms_poverty_development_monthly_dynamic_var
+		monthly_population = SOV_institutional_reforms_monthly_population_dynamic_var
+		supply_factor = SOV_institutional_reforms_supply_factor_dynamic_var
+		expense_growth_factor = SOV_institutional_reforms_expense_growth_factor_dynamic_var
+		mobilization_speed = SOV_institutional_reforms_mobilization_speed_dynamic_var
+		army_attack_factor = SOV_institutional_reforms_army_attack_factor_dynamic_var
+		army_defence_factor = SOV_institutional_reforms_army_defence_factor_dynamic_var
+		welfare_laws_cost_factor = SOV_institutional_reforms_welfare_laws_cost_factor_dynamic_var
+		income_growth_factor = SOV_institutional_reforms_expense_income_growth_factor_dynamic_var
+		production_speed_arms_factory_factor = SOV_institutional_reforms_production_speed_arms_factory_factor_dynamic_var
+		tax_business_rate = SOV_institutional_reforms_tax_business_rate_dynamic_var
+		business_value_factor = SOV_institutional_reforms_business_value_factor_dynamic
+		interest_rate_factor = SOV_institutional_reforms_rate_factor_dynamic_var
+		consumer_goods_factor = SOV_institutional_reforms_consumer_goods_factor_dynamic_var
+		industrial_development_monthly = SOV_institutional_reforms_industrial_development_monthly_dynamic_var
+		war_stability_factor = SOV_institutional_reforms_war_stability_factor_dynamic_var
+		personal_expense_factor = SOV_institutional_reforms_personal_expense_factor_dynamic_var
+		personal_value_factor = SOV_institutional_reforms_personal_value_factor_dynamic_var
+	}
+	
+	SOV_pluralist_integration = {
+		icon = GFX_idea_SOV_cooperative_pluralism_idea
+	    political_power_gain = SOV_pluralist_integration_political_power_gain_dynamic_var
+	    political_power_cost = SOV_pluralist_integration_political_power_cost_dynamic_var
+		stability_factor = SOV_pluralist_integration_stability_factor_dynamic_var
+		production_speed_buildings_factor = SOV_pluralist_integration_production_speed_buildings_factor_dynamic
+		compliance_growth = SOV_pluralist_integration_compliance_growth_dynamic_var
+		party_popularity_stability_factor = SOV_pluralist_integration_party_popularity_stability_factor_dynamic_var
+		war_support_factor = SOV_pluralist_integration_war_support_factor_dynamic_var
+	    resistance_decay = SOV_pluralist_integration_resistance_decay_dynamic_var
+		production_factory_max_efficiency_factor = SOV_pluralist_integration_production_factory_max_efficiency_factor_dynamic_var
+		production_factory_efficiency_gain_factor = SOV_pluralist_integration_production_factory_efficiency_gain_factor_dynamic_var
+		industrial_capacity_factory = SOV_pluralist_integration_industrial_capacity_factory_dynamic_var
+		society_development_monthly = SOV_pluralist_integration_society_development_monthly_dynamic_var
+		poverty_development_monthly = SOV_pluralist_integration_poverty_development_monthly_dynamic_var
+		monthly_population = SOV_pluralist_integration_monthly_population_dynamic_var
+		supply_factor = SOV_pluralist_integration_supply_factor_dynamic_var
+		expense_growth_factor = SOV_pluralist_integration_expense_growth_factor_dynamic_var
+		mobilization_speed = SOV_pluralist_integration_mobilization_speed_dynamic_var
+		army_attack_factor = SOV_pluralist_integration_army_attack_factor_dynamic_var
+		army_defence_factor = SOV_pluralist_integration_army_defence_factor_dynamic_var
+		welfare_laws_cost_factor = SOV_pluralist_integration_welfare_laws_cost_factor_dynamic_var
+		income_growth_factor = SOV_pluralist_integration_expense_income_growth_factor_dynamic_var
+		production_speed_arms_factory_factor = SOV_pluralist_integration_production_speed_arms_factory_factor_dynamic_var
+		tax_business_rate = SOV_pluralist_integration_tax_business_rate_dynamic_var
+		business_value_factor = SOV_pluralist_integration_business_value_factor_dynamic
+		interest_rate_factor = SOV_pluralist_integration_rate_factor_dynamic_var
+		consumer_goods_factor = SOV_pluralist_integration_consumer_goods_factor_dynamic_var
+		industrial_development_monthly = SOV_pluralist_integration_industrial_development_monthly_dynamic_var
+		war_stability_factor = SOV_pluralist_integration_war_stability_factor_dynamic_var
+		personal_expense_factor = SOV_pluralist_integration_personal_expense_factor_dynamic_var
+		personal_value_factor = SOV_pluralist_integration_personal_value_factor_dynamic_var
+	}
+	
+	SOV_organic_democracy = {
+		icon = GFX_idea_SOV_Organic_Democracy_idea
+	    political_power_gain = SOV_organic_democracy_political_power_gain_dynamic_var
+		stability_factor = SOV_organic_democracy_stability_factor_dynamic_var
+		party_popularity_stability_factor = SOV_organic_democracy_party_popularity_stability_factor_dynamic_var
+		war_support_factor = SOV_organic_democracy_war_support_factor_dynamic_var
+	    resistance_decay = SOV_organic_democracy_resistance_decay_dynamic_var
+		production_factory_max_efficiency_factor = SOV_organic_democracy_production_factory_max_efficiency_factor_dynamic_var
+		production_factory_efficiency_gain_factor = SOV_organic_democracy_production_factory_efficiency_gain_factor_dynamic_var
+		society_development_monthly = SOV_organic_democracy_society_development_monthly_dynamic_var
+		poverty_development_monthly = SOV_organic_democracy_poverty_development_monthly_dynamic_var
+		expense_growth_factor = SOV_organic_democracy_expense_growth_factor_dynamic_var
+		income_growth_factor = SOV_organic_democracy_expense_income_growth_factor_dynamic_var
+		tax_business_rate = SOV_organic_democracy_tax_business_rate_dynamic_var
+		interest_rate = SOV_organic_democracy_rate_factor_dynamic_var
+	}
+	SOV_ADS_dynamic = {
+		icon = GFX_idea_SOV_ADS
+		custom_modifier_tooltip = SOV_ADS_tooltip
+	    send_volunteers_tension = SOV_ADS_send_volunteers_tension_dynamic_var
+		opinion_gain_monthly_same_ideology_factor = SOV_ADS_opinion_gain_monthly_same_ideology_factor_dynamic_var
+		lend_lease_tension = SOV_ADS_lend_lease_tension_dynamic_var
+		war_stability_factor = SOV_ADS_war_stability_factor_dynamic_var
+		production_factory_start_efficiency_factor = SOV_ADS_production_factory_start_efficiency_factor_dynamic_var
+		income_growth_factor = SOV_ADS_income_growth_factor_dynamic_var
+		industrial_development_monthly = SOV_ADS_industrial_development_monthly_dynamic_var
+		consumer_goods_factor = SOV_ADS_consumer_goods_factor_dynamic_var
+	}	
+	SOV_supreme_soviet_rsfsr_dynamic = {
+		icon = GFX_idea_SOV_supreme_soviet_rsfsr
+		custom_modifier_tooltip = SOV_supreme_soviet_tooltip
+	    political_power_gain = SOV_supreme_soviet_political_power_gain_var
+		party_popularity_stability_factor = SOV_supreme_soviet_party_popularity_stability_factor_var
+		war_support_factor = SOV_supreme_soviet_war_support_factor_var
+		society_development_monthly = SOV_supreme_soviet_society_development_monthly_var
+	}	
+	SOV_communist_party_dynamic = {
+		enable = { 
+			tag = SOV
+		}
+		political_power_gain = SOV_communist_party_political_power_gain_var
+		non_core_manpower = SOV_communist_party_non_core_manpower_var
+		mobilization_speed = SOV_communist_party_mobilization_speed_var
+		conscription_factor = SOV_communist_party_conscription_factor_var
+		stability_factor = SOV_communist_party_stability_factor_var
+		party_popularity_stability_factor = SOV_communist_party_party_popularity_stability_factor_var
+		army_attack_factor = SOV_communist_party_army_attack_factor_var
+		army_defence_factor = SOV_communist_party_army_defence_factor_var
+		trade_opinion_factor = SOV_communist_party_trade_opinion_factor_var
+		compliance_growth = SOV_communist_party_compliance_growth_var
+		army_attack_against_major_factor = SOV_communist_party_army_attack_against_major_factor_var
+		army_defence_against_major_factor = SOV_communist_party_army_defence_against_major_factor_var
+		business_value_factor = SOV_communist_party_business_value_factor_var
+		personal_value_factor = SOV_communist_party_personal_value_factor_var
+		society_development_monthly = SOV_communist_party_society_development_monthly_var
+		totalitarian_socialist_acceptance = SOV_communist_party_totalitarian_socialist_acceptance_var
+		libertarian_socialist_acceptance = SOV_communist_party_libertarian_socialist_acceptance_var
+		social_democrat_acceptance = SOV_communist_party_social_democrat_acceptance_var
+		social_liberal_acceptance = SOV_communist_party_social_liberal_acceptance_var
+		authoritarian_democrat_acceptance = SOV_communist_party_authoritarian_democrat_acceptance_var
+		communist_drift = SOV_communist_party_communist_drift_var
+		libertarian_socialist_drift = SOV_communist_party_libertarian_socialist_drift_var
+	}
+	SOV_socialism_of_21_century_dynamic = {
+		icon = GFX_idea_SOV_socialism_of_21_century
+		production_factory_efficiency_gain_factor = SOV_socialism_of_21_century_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_socialism_of_21_century_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_socialism_of_21_century_production_production_factory_start_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_socialism_of_21_century_production_lack_of_resource_penalty_factor_dynamic
+		industrial_capacity_factory = SOV_socialism_of_21_century_industrial_capacity_factory_dynamic
+		local_resources_factor = SOV_socialism_of_21_century_local_resources_factor_dynamic
+		trade_opinion_factor = SOV_socialism_of_21_century_trade_opinion_factor_dynamic
+		income_growth_factor = SOV_socialism_of_21_century_income_growth_factor_dynamic
+		dtg_threshold = SOV_socialism_of_21_century_dtg_threshold_dynamic
+		consumer_goods_factor = SOV_socialism_of_21_century_consumer_goods_factor_dynamic
+		production_speed_buildings_factor = SOV_socialism_of_21_century_production_speed_buildings_factor_dynamic
+		production_speed_arms_factory_factor = SOV_socialism_of_21_century_production_speed_arms_factory_factor_dynamic
+		production_speed_industrial_complex_factor = SOV_socialism_of_21_century_production_speed_industrial_complex_factor_dynamic
+		production_speed_office_park_factor = SOV_socialism_of_21_century_production_speed_office_park_factor_dynamic
+		production_speed_infrastructure_factor = SOV_socialism_of_21_century_production_speed_infrastructure_factor_dynamic
+		production_speed_power_plant_factor = SOV_socialism_of_21_century_production_speed_power_plant_factor_dynamic_var
+		production_speed_nuclear_reactor_factor = SOV_socialism_of_21_century_production_speed_nuclear_reactor_factor_dynamic_var
+		business_value_factor = SOV_socialism_of_21_century_business_value_factor_dynamic
+		personal_value_factor = SOV_socialism_of_21_century_personal_value_factor_dynamic
+		industrial_development_monthly = SOV_socialism_of_21_century_industrial_development_monthly_dynamic
+		farming_development_monthly = SOV_socialism_of_21_century_farming_development_monthly_dynamic
+		academic_development_monthly = SOV_socialism_of_21_century_academic_development_monthly_dynamic
+		research_speed_factor = SOV_socialism_of_21_century_research_speed_factor_dynamic
+		stability_factor = SOV_socialism_of_21_century_stability_factor_dynamic
+		custom_modifier_tooltip = SOV_gosplan_idea_tooltip
+		custom_modifier_tooltip = SOV_ACCTU_idea_tooltip
+	}
+	SOV_new_soviet_model_dynamic = {
+		icon = GFX_idea_SOV_birdcage_economy
+		production_factory_efficiency_gain_factor = SOV_new_soviet_model_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_new_soviet_model_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_new_soviet_model_production_production_factory_start_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_new_soviet_model_production_lack_of_resource_penalty_factor_dynamic
+		local_resources_factor = SOV_new_soviet_model_local_resources_factor_dynamic
+		industrial_capacity_factory = SOV_new_soviet_modelindustrial_capacity_factory_dynamic
+		trade_opinion_factor = SOV_new_soviet_model_trade_opinion_factor_dynamic
+		income_growth_factor = SOV_new_soviet_model_income_growth_factor_dynamic
+		dtg_threshold = SOV_new_soviet_model_dtg_threshold_dynamic
+		consumer_goods_factor = SOV_new_soviet_model_consumer_goods_factor_dynamic
+		production_speed_buildings_factor = SOV_new_soviet_model_production_speed_buildings_factor_dynamic
+		production_speed_arms_factory_factor = SOV_new_soviet_model_production_speed_arms_factory_factor_dynamic
+		production_speed_industrial_complex_factor = SOV_new_soviet_model_production_speed_industrial_complex_factor_dynamic
+		production_speed_office_park_factor = SOV_new_soviet_model_production_speed_office_park_factor_dynamic
+		production_speed_infrastructure_factor = SOV_new_soviet_model_production_speed_infrastructure_factor_dynamic
+		business_value_factor = SOV_new_soviet_model_business_value_factor_dynamic
+		personal_value_factor = SOV_new_soviet_model_personal_value_factor_dynamic
+		industrial_development_monthly = SOV_new_soviet_model_industrial_development_monthly_dynamic
+		farming_development_monthly = SOV_new_soviet_model_farming_development_monthly_dynamic
+		academic_development_monthly = SOV_new_soviet_model_academic_development_monthly_dynamic
+		research_speed_factor = SOV_new_soviet_model_research_speed_factor_dynamic
+		stability_factor = SOV_new_soviet_model_stability_factor_dynamic
+		monthly_population = SOV_new_soviet_model_monthly_population_dynamic
+		political_power_factor = SOV_new_soviet_model_political_power_factor_dynamic
+		custom_modifier_tooltip = SOV_madeinussr_idea_tooltip
+		custom_modifier_tooltip = SOV_economicsovereignity_idea_tooltip
+	}
+	SOV_way_to_lenin_dynamic = {
+		icon = GFX_idea_SOV_communism_21st_century
+		production_factory_efficiency_gain_factor = SOV_way_to_lenin_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_way_to_lenin_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_way_to_lenin_production_production_factory_start_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_way_to_lenin_production_lack_of_resource_penalty_factor_dynamic
+		local_resources_factor = SOV_way_to_lenin_local_resources_factor_dynamic
+		industrial_capacity_factory = SOV_way_to_lenin_industrial_capacity_factory_dynamic
+		trade_opinion_factor = SOV_way_to_lenin_trade_opinion_factor_dynamic
+		income_growth_factor = SOV_way_to_lenin_income_growth_factor_dynamic
+		dtg_threshold = SOV_way_to_lenin_dtg_threshold_dynamic
+		consumer_goods_factor = SOV_way_to_lenin_consumer_goods_factor_dynamic
+		production_speed_buildings_factor = SOV_way_to_lenin_production_speed_buildings_factor_dynamic
+		production_speed_arms_factory_factor = SOV_way_to_lenin_production_speed_arms_factory_factor_dynamic
+		production_speed_industrial_complex_factor = SOV_way_to_lenin_production_speed_industrial_complex_factor_dynamic
+		production_speed_office_park_factor = SOV_way_to_lenin_production_speed_office_park_factor_dynamic
+		production_speed_infrastructure_factor = SOV_way_to_lenin_production_speed_infrastructure_factor_dynamic
+		business_value_factor = SOV_way_to_lenin_business_value_factor_dynamic
+		personal_value_factor = SOV_way_to_lenin_personal_value_factor_dynamic
+		industrial_development_monthly = SOV_way_to_lenin_industrial_development_monthly_dynamic
+		poverty_development_monthly = SOV_way_to_lenin_poverty_development_monthly_dynamic
+		farming_development_monthly = SOV_way_to_lenin_farming_development_monthly_dynamic
+		academic_development_monthly = SOV_way_to_lenin_academic_development_monthly_dynamic
+		research_speed_factor = SOV_way_to_lenin_research_speed_factor_dynamic
+		stability_factor = SOV_way_to_lenin_stability_factor_dynamic
+		monthly_population = SOV_way_to_lenin_monthly_population_dynamic
+		expense_growth_factor = SOV_way_to_lenin_expense_growth_factor_dynamic
+		political_power_factor = SOV_way_to_lenin_political_power_factor_dynamic
+		custom_modifier_tooltip = SOV_economicsovereignity_idea_tooltip
+	}
+	SOV_glushkov_vision_dynamic = {
+		icon = GFX_idea_SOV_ogas
+		production_factory_efficiency_gain_factor = SOV_glushkov_vision_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_glushkov_vision_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_glushkov_vision_production_production_factory_start_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_glushkov_vision_production_lack_of_resource_penalty_factor_dynamic
+		local_resources_factor = SOV_glushkov_vision_local_resources_factor_dynamic
+		industrial_capacity_factory = SOV_glushkov_vision_industrial_capacity_factory_dynamic
+		trade_opinion_factor = SOV_glushkov_vision_trade_opinion_factor_dynamic
+		income_growth_factor = SOV_glushkov_vision_income_growth_factor_dynamic
+		dtg_threshold = SOV_glushkov_vision_dtg_threshold_dynamic
+		consumer_goods_factor = SOV_glushkov_vision_consumer_goods_factor_dynamic
+		production_speed_buildings_factor = SOV_glushkov_vision_production_speed_buildings_factor_dynamic
+		production_speed_arms_factory_factor = SOV_glushkov_vision_production_speed_arms_factory_factor_dynamic
+		production_speed_industrial_complex_factor = SOV_glushkov_vision_production_speed_industrial_complex_factor_dynamic
+		production_speed_office_park_factor = SOV_glushkov_vision_production_speed_office_park_factor_dynamic
+		production_speed_infrastructure_factor = SOV_glushkov_vision_production_speed_infrastructure_factor_dynamic
+		business_value_factor = SOV_glushkov_vision_business_value_factor_dynamic
+		personal_value_factor = SOV_glushkov_vision_personal_value_factor_dynamic
+		industrial_development_monthly = SOV_glushkov_vision_industrial_development_monthly_dynamic
+		poverty_development_monthly = SOV_glushkov_vision_poverty_development_monthly_dynamic
+		farming_development_monthly = SOV_glushkov_vision_farming_development_monthly_dynamic
+		academic_development_monthly = SOV_glushkov_vision_academic_development_monthly_dynamic
+		research_speed_factor = SOV_glushkov_vision_research_speed_factor_dynamic
+		stability_factor = SOV_glushkov_vision_stability_factor_dynamic
+		monthly_population = SOV_glushkov_vision_monthly_population_dynamic
+		expense_growth_factor = SOV_glushkov_vision_expense_growth_factor_dynamic
+		political_power_factor = SOV_glushkov_vision_political_power_factor_dynamic
+	}
+	SOV_solovyev_corporatism_dynamic = {
+		icon = GFX_idea_SOV_socialism_of_21_century
+		production_factory_efficiency_gain_factor = SOV_solovyev_corporatism_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_solovyev_corporatism_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_solovyev_corporatism_production_production_factory_start_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_solovyev_corporatism_production_lack_of_resource_penalty_factor_dynamic
+		local_resources_factor = SOV_solovyev_corporatism_local_resources_factor_dynamic
+		industrial_capacity_factory = SOV_solovyev_corporatism_industrial_capacity_factory_dynamic
+		trade_opinion_factor = SOV_solovyev_corporatism_trade_opinion_factor_dynamic
+		income_growth_factor = SOV_solovyev_corporatism_income_growth_factor_dynamic
+		dtg_threshold = SOV_solovyev_corporatism_dtg_threshold_dynamic
+		consumer_goods_factor = SOV_solovyev_corporatism_consumer_goods_factor_dynamic
+		production_speed_buildings_factor = SOV_solovyev_corporatism_production_speed_buildings_factor_dynamic
+		production_speed_arms_factory_factor = SOV_solovyev_corporatism_production_speed_arms_factory_factor_dynamic
+		production_speed_industrial_complex_factor = SOV_solovyev_corporatism_production_speed_industrial_complex_factor_dynamic
+		production_speed_office_park_factor = SOV_solovyev_corporatism_production_speed_office_park_factor_dynamic
+		production_speed_infrastructure_factor = SOV_solovyev_corporatism_production_speed_infrastructure_factor_dynamic
+		production_speed_power_plant_factor = SOV_solovyev_corporatism_production_speed_power_plant_factor_dynamic_var
+		production_speed_nuclear_reactor_factor = SOV_solovyev_corporatism_production_speed_nuclear_reactor_factor_dynamic_var
+		business_value_factor = SOV_solovyev_corporatism_business_value_factor_dynamic
+		personal_value_factor = SOV_solovyev_corporatism_personal_value_factor_dynamic
+		industrial_development_monthly = SOV_solovyev_corporatism_industrial_development_monthly_dynamic
+		poverty_development_monthly = SOV_solovyev_corporatism_poverty_development_monthly_dynamic
+		military_development_monthly = SOV_solovyev_corporatism_military_development_monthly_dynamic
+		farming_development_monthly = SOV_solovyev_corporatism_farming_development_monthly_dynamic
+		academic_development_monthly = SOV_solovyev_corporatism_academic_development_monthly_dynamic
+		research_speed_factor = SOV_solovyev_corporatism_research_speed_factor_dynamic
+		stability_factor = SOV_solovyev_corporatism_stability_factor_dynamic
+		monthly_population = SOV_solovyev_corporatism_monthly_population_dynamic
+		expense_growth_factor = SOV_solovyev_corporatism_expense_growth_factor_dynamic
+		political_power_factor = SOV_solovyev_corporatism_political_power_factor_dynamic
+		military_industrial_organization_research_bonus = SOV_solovyev_corporatism_military_industrial_organization_research_bonus_dynamic
+		military_industrial_organization_funds_gain = SOV_solovyev_corporatism_military_industrial_organization_funds_gain_dynamic
+		military_industrial_organization_policy_cooldown = SOV_solovyev_corporatism_military_industrial_organization_policy_cooldown_dynamic
+		military_industrial_organization_design_team_change_cost = SOV_solovyev_corporatism_military_industrial_organization_design_team_change_cost_dynamic
+		usual_oligarch_influence_monthly = SOV_solovyev_corporatism_usual_oligarch_influence_monthly_dynamic
+	}
+	SOV_economy_progress_dynamic = {
+		icon = GFX_idea_SOV_socialism_of_21_century
+		production_factory_efficiency_gain_factor = SOV_economy_progress_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_economy_progress_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_economy_progress_production_production_factory_start_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_economy_progress_production_lack_of_resource_penalty_factor_dynamic
+		local_resources_factor = SOV_economy_progress_local_resources_factor_dynamic
+		industrial_capacity_factory = SOV_economy_progress_industrial_capacity_factory_dynamic
+		trade_opinion_factor = SOV_economy_progress_trade_opinion_factor_dynamic
+		income_growth_factor = SOV_economy_progress_income_growth_factor_dynamic
+		dtg_threshold = SOV_economy_progress_dtg_threshold_dynamic
+		consumer_goods_factor = SOV_economy_progress_consumer_goods_factor_dynamic
+		production_speed_buildings_factor = SOV_economy_progress_production_speed_buildings_factor_dynamic
+		production_speed_arms_factory_factor = SOV_economy_progress_production_speed_arms_factory_factor_dynamic
+		production_speed_industrial_complex_factor = SOV_economy_progress_production_speed_industrial_complex_factor_dynamic
+		production_speed_office_park_factor = SOV_economy_progress_production_speed_office_park_factor_dynamic
+		production_speed_infrastructure_factor = SOV_economy_progress_production_speed_infrastructure_factor_dynamic
+		production_speed_power_plant_factor = SOV_economy_progress_production_speed_power_plant_factor_dynamic_var
+		production_speed_nuclear_reactor_factor = SOV_economy_progress_production_speed_nuclear_reactor_factor_dynamic_var
+		business_value_factor = SOV_economy_progress_business_value_factor_dynamic
+		personal_value_factor = SOV_economy_progress_personal_value_factor_dynamic
+		industrial_development_monthly = SOV_economy_progress_industrial_development_monthly_dynamic
+		poverty_development_monthly = SOV_economy_progress_poverty_development_monthly_dynamic
+		military_development_monthly = SOV_economy_progress_military_development_monthly_dynamic
+		society_development_monthly = SOV_economy_progress_economy_society_development_monthly_dynamic
+		farming_development_monthly = SOV_economy_progress_farming_development_monthly_dynamic
+		academic_development_monthly = SOV_economy_progress_academic_development_monthly_dynamic
+		research_speed_factor = SOV_economy_progress_research_speed_factor_dynamic
+		stability_factor = SOV_economy_progress_stability_factor_dynamic
+		monthly_population = SOV_economy_progress_monthly_population_dynamic
+		expense_growth_factor = SOV_economy_progress_expense_growth_factor_dynamic
+		political_power_factor = SOV_economy_progress_political_power_factor_dynamic
+		military_industrial_organization_research_bonus = SOV_economy_progress_military_industrial_organization_research_bonus_dynamic
+		military_industrial_organization_funds_gain = SOV_economy_progress_military_industrial_organization_funds_gain_dynamic
+		military_industrial_organization_policy_cooldown = SOV_economy_progress_military_industrial_organization_policy_cooldown_dynamic
+		military_industrial_organization_design_team_change_cost = SOV_economy_progress_military_industrial_organization_design_team_change_cost_dynamic
+		usual_oligarch_influence_monthly = SOV_economy_progress_usual_oligarch_influence_monthly_dynamic
+		inflation_monthly_factor = SOV_economy_progress_inflation_monthly_factor_dynamic
+	}
+	SOV_navalny_social_economy_dynamic = {
+		icon = GFX_idea_SOV_socialism_of_21_century
+		production_factory_efficiency_gain_factor = SOV_navalny_social_economy_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_navalny_social_economy_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_navalny_social_economy_production_production_factory_start_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_navalny_social_economy_production_lack_of_resource_penalty_factor_dynamic
+		local_resources_factor = SOV_navalny_social_economy_local_resources_factor_dynamic
+		industrial_capacity_factory = SOV_navalny_social_economy_industrial_capacity_factory_dynamic
+		trade_opinion_factor = SOV_navalny_social_economy_trade_opinion_factor_dynamic
+		income_growth_factor = SOV_navalny_social_economy_income_growth_factor_dynamic
+		dtg_threshold = SOV_navalny_social_economy_dtg_threshold_dynamic
+		consumer_goods_factor = SOV_navalny_social_economy_consumer_goods_factor_dynamic
+		production_speed_buildings_factor = SOV_navalny_social_economy_production_speed_buildings_factor_dynamic
+		production_speed_arms_factory_factor = SOV_navalny_social_economy_production_speed_arms_factory_factor_dynamic
+		production_speed_industrial_complex_factor = SOV_navalny_social_economy_production_speed_industrial_complex_factor_dynamic
+		production_speed_office_park_factor = SOV_navalny_social_economy_production_speed_office_park_factor_dynamic
+		production_speed_infrastructure_factor = SOV_navalny_social_economy_production_speed_infrastructure_factor_dynamic
+		production_speed_power_plant_factor = SOV_navalny_social_economy_production_speed_power_plant_factor_dynamic_var
+		production_speed_nuclear_reactor_factor = SOV_navalny_social_economy_production_speed_nuclear_reactor_factor_dynamic_var
+		business_value_factor = SOV_navalny_social_economy_business_value_factor_dynamic
+		personal_value_factor = SOV_navalny_social_economy_personal_value_factor_dynamic
+		industrial_development_monthly = SOV_navalny_social_economy_industrial_development_monthly_dynamic
+		poverty_development_monthly = SOV_navalny_social_economy_poverty_development_monthly_dynamic
+		military_development_monthly = SOV_navalny_social_economy_military_development_monthly_dynamic
+		farming_development_monthly = SOV_navalny_social_economy_farming_development_monthly_dynamic
+		society_development_monthly = SOV_navalny_social_economy_society_development_monthly_dynamic
+		academic_development_monthly = SOV_navalny_social_economy_academic_development_monthly_dynamic
+		research_speed_factor = SOV_navalny_social_economy_research_speed_factor_dynamic
+		stability_factor = SOV_navalny_social_economy_stability_factor_dynamic
+		monthly_population = SOV_navalny_social_economy_monthly_population_dynamic
+		expense_growth_factor = SOV_navalny_social_economy_expense_growth_factor_dynamic
+		political_power_factor = SOV_navalny_social_economy_political_power_factor_dynamic
+		military_industrial_organization_research_bonus = SOV_navalny_social_economy_military_industrial_organization_research_bonus_dynamic
+		military_industrial_organization_funds_gain = SOV_navalny_social_economy_military_industrial_organization_funds_gain_dynamic
+		military_industrial_organization_policy_cooldown = SOV_navalny_social_economy_military_industrial_organization_policy_cooldown_dynamic
+		military_industrial_organization_design_team_change_cost = SOV_navalny_social_economy_military_industrial_organization_design_team_change_cost_dynamic
+		usual_oligarch_influence_monthly = SOV_navalny_social_economy_usual_oligarch_influence_monthly_dynamic
+	}
+	SOV_TMC_dynamic = {
+		icon = GFX_idea_SOV_TMC_idea
+		custom_modifier_tooltip = SOV_TMC_tooltip
+	    send_volunteers_tension = SOV_TMC_send_volunteers_tension_dynamic_var
+		lend_lease_tension = SOV_TMC_lend_lease_tension_dynamic_var
+		war_stability_factor = SOV_TMC_war_stability_factor_dynamic_var
+		income_growth_factor = SOV_TMC_income_growth_factor_dynamic_var
+		industrial_development_monthly = SOV_TMC_industrial_development_monthly_dynamic_var
+		consumer_goods_factor = SOV_TMC_consumer_goods_factor_dynamic_var
+	}
+	SOV_brics_dynamic = {
+		icon = GFX_idea_SOV_brics_member
+		custom_modifier_tooltip = SOV_brics_tooltip
+	    political_power_factor = SOV_brics_political_power_factor_dynamic_var
+		income_growth_factor = SOV_brics_income_growth_factor_dynamic_var
+		trade_cost_for_target_factor = SOV_brics_trade_cost_for_target_factor_dynamic_var
+		trade_opinion_factor = SOV_brics_trade_opinion_factor_dynamic_var
+	}
+	SOV_war_exhaustion_dynamic = {
+		icon = GFX_idea_SOV_War_exhaustion
+		custom_modifier_tooltip = SOV_war_exhaustion_tooltip
+		war_support_factor = SOV_war_exhaustion_war_support_factor_dynamic
+		army_attack_factor = SOV_war_exhaustion_army_attack_factor_dynamic
+		army_defence_factor = SOV_war_exhaustion_army_defence_factor_dynamic
+		army_org_factor = SOV_war_exhaustion_army_org_factor_dynamic
+		army_morale_factor = SOV_war_exhaustion_army_morale_factor_dynamic
+	}
+	SOV_soviet_army_dynamic = {
+		icon = GFX_idea_SOV_soviet_army
+		army_org_factor = SOV_voenny_army_org_factor_dynamic
+		army_defence_factor = SOV_voenny_army_defence_factor_dynamic
+		military_factory_upkeep_factor = SOV_voenny_military_factory_upkeep_dynamic
+		dockyard_upkeep_factor = SOV_voenny_dockyard_upkeep_factor_dynamic
+		battalion_upkeep_factor = SOV_voenny_battalion_upkeep_factor_dynamic
+		aircraft_upkeep_factor = SOV_voenny_aircraft_upkeep_factor_dynamic
+		ship_upkeep_factor = SOV_voenny_ship_upkeep_factor_dynamic
+		military_development_monthly = SOV_voenny_military_development_monthly_dynamic
+		army_morale_factor = SOV_voenny_army_morale_factor_dynamic
+		army_attack_factor = SOV_voenny_army_attack_factor_dynamic
+		conscription_factor = SOV_voenny_conscription_factor_dynamic
+		initiative_factor = SOV_voenny_initiative_factor_dynamic
+		planning_speed = SOV_voenny_planning_speed_dynamic
+		max_planning_factor = SOV_voenny_max_planning_factor_dynamic
+		supply_node_range = SOV_voenny_supply_node_range_dynamic
+		training_time_factor = SOV_voenny_training_time_factor_dynamic
+		military_leader_cost_factor = SOV_voenny_military_leader_cost_factor_dynamic
+		grant_medal_cost_factor = SOV_voenny_grant_medal_cost_factor_dynamic
+		cat_old_land_doctrine_cost_factor = SOV_voenny_land_doctrine_cost_factor_dynamic
+		max_command_power = SOV_voenny_max_command_power_dynamic
+		experience_gain_army_factor = SOV_voenny_experience_gain_army_factor_dynamic
+		unit_upkeep_attrition_factor = SOV_voenny_unit_upkeep_attrition_factor_dynamic
+		minimum_training_level = SOV_voenny_minimum_training_level_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_voenny_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_voenny_production_factory_max_efficiency_factor_dynamic
+		air_superiority_bonus_in_combat = SOV_voenny_air_superiority_bonus_in_combat_dynamic
+		supply_factor = SOV_voenny_supply_factor_dynamic
+		combat_width_factor = SOV_voenny_combat_width_factor_dynamic
+		army_strength_factor = SOV_voenny_army_strength_factor_dynamic
+		army_speed_factor = SOV_voenny_army_speed_factor_dynamic
+	}	
+	SOV_Permanent_Defense_Readiness_dynamic = {
+		icon = GFX_idea_SOV_Permanent_Defense_Readiness
+		army_org_factor = SOV_voenny_army_org_factor_dynamic
+		army_defence_factor = SOV_voenny_army_defence_factor_dynamic
+		military_factory_upkeep_factor = SOV_voenny_military_factory_upkeep_dynamic
+		dockyard_upkeep_factor = SOV_voenny_dockyard_upkeep_factor_dynamic
+		battalion_upkeep_factor = SOV_voenny_battalion_upkeep_factor_dynamic
+		aircraft_upkeep_factor = SOV_voenny_aircraft_upkeep_factor_dynamic
+		ship_upkeep_factor = SOV_voenny_ship_upkeep_factor_dynamic
+		military_development_monthly = SOV_voenny_military_development_monthly_dynamic
+		army_morale_factor = SOV_voenny_army_morale_factor_dynamic
+		army_attack_factor = SOV_voenny_army_attack_factor_dynamic
+		conscription_factor = SOV_voenny_conscription_factor_dynamic
+		initiative_factor = SOV_voenny_initiative_factor_dynamic
+		planning_speed = SOV_voenny_planning_speed_dynamic
+		max_planning_factor = SOV_voenny_max_planning_factor_dynamic
+		supply_node_range = SOV_voenny_supply_node_range_dynamic
+		training_time_factor = SOV_voenny_training_time_factor_dynamic
+		military_leader_cost_factor = SOV_voenny_military_leader_cost_factor_dynamic
+		grant_medal_cost_factor = SOV_voenny_grant_medal_cost_factor_dynamic
+		cat_old_land_doctrine_cost_factor = SOV_voenny_land_doctrine_cost_factor_dynamic
+		max_command_power = SOV_voenny_max_command_power_dynamic
+		experience_gain_army_factor = SOV_voenny_experience_gain_army_factor_dynamic
+		unit_upkeep_attrition_factor = SOV_voenny_unit_upkeep_attrition_factor_dynamic
+		minimum_training_level = SOV_voenny_minimum_training_level_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_voenny_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_voenny_production_factory_max_efficiency_factor_dynamic
+		air_superiority_bonus_in_combat = SOV_voenny_air_superiority_bonus_in_combat_dynamic
+		supply_factor = SOV_voenny_supply_factor_dynamic
+		combat_width_factor = SOV_voenny_combat_width_factor_dynamic
+		army_strength_factor = SOV_voenny_army_strength_factor_dynamic
+		army_speed_factor = SOV_voenny_army_speed_factor_dynamic
+	}
+	SOV_thousand_of_banners_dynamic = {
+		icon = GFX_idea_SOV_Imperial_Druzhina
+		army_org_factor = SOV_voenny_army_org_factor_dynamic
+		army_defence_factor = SOV_voenny_army_defence_factor_dynamic
+		military_factory_upkeep_factor = SOV_voenny_military_factory_upkeep_dynamic
+		dockyard_upkeep_factor = SOV_voenny_dockyard_upkeep_factor_dynamic
+		battalion_upkeep_factor = SOV_voenny_battalion_upkeep_factor_dynamic
+		aircraft_upkeep_factor = SOV_voenny_aircraft_upkeep_factor_dynamic
+		ship_upkeep_factor = SOV_voenny_ship_upkeep_factor_dynamic
+		military_development_monthly = SOV_voenny_military_development_monthly_dynamic
+		army_morale_factor = SOV_voenny_army_morale_factor_dynamic
+		army_attack_factor = SOV_voenny_army_attack_factor_dynamic
+		conscription_factor = SOV_voenny_conscription_factor_dynamic
+		initiative_factor = SOV_voenny_initiative_factor_dynamic
+		planning_speed = SOV_voenny_planning_speed_dynamic
+		max_planning_factor = SOV_voenny_max_planning_factor_dynamic
+		supply_node_range = SOV_voenny_supply_node_range_dynamic
+		training_time_factor = SOV_voenny_training_time_factor_dynamic
+		military_leader_cost_factor = SOV_voenny_military_leader_cost_factor_dynamic
+		grant_medal_cost_factor = SOV_voenny_grant_medal_cost_factor_dynamic
+		cat_old_land_doctrine_cost_factor = SOV_voenny_land_doctrine_cost_factor_dynamic
+		max_command_power = SOV_voenny_max_command_power_dynamic
+		experience_gain_army_factor = SOV_voenny_experience_gain_army_factor_dynamic
+		unit_upkeep_attrition_factor = SOV_voenny_unit_upkeep_attrition_factor_dynamic
+		minimum_training_level = SOV_voenny_minimum_training_level_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_voenny_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_voenny_production_factory_max_efficiency_factor_dynamic
+		air_superiority_bonus_in_combat = SOV_voenny_air_superiority_bonus_in_combat_dynamic
+		supply_factor = SOV_voenny_supply_factor_dynamic
+		combat_width_factor = SOV_voenny_combat_width_factor_dynamic
+		army_strength_factor = SOV_voenny_army_strength_factor_dynamic
+		army_speed_factor = SOV_voenny_army_speed_factor_dynamic
+	}
+	SOV_russian_self_defense_forces_dynamic = {
+		icon = GFX_idea_SOV_russian_self_defense_forces
+		stability_factor  = SOV_navalny_stability_factor_dynamic
+		army_org_factor = SOV_navalny_army_org_factor_dynamic
+		army_defence_factor = SOV_navalny_army_defence_factor_dynamic
+		military_factory_upkeep_factor = SOV_navalny_military_factory_upkeep_dynamic
+		dockyard_upkeep_factor = SOV_navalny_dockyard_upkeep_factor_dynamic
+		battalion_upkeep_factor = SOV_navalny_battalion_upkeep_factor_dynamic
+		aircraft_upkeep_factor = SOV_navalny_aircraft_upkeep_factor_dynamic
+		ship_upkeep_factor = SOV_navalny_ship_upkeep_factor_dynamic
+		military_development_monthly = SOV_navalny_military_development_monthly_dynamic
+		army_morale_factor = SOV_navalny_army_morale_factor_dynamic
+		army_attack_factor = SOV_navalny_army_attack_factor_dynamic
+		cas_damage_reduction = SOV_navalny_cas_damage_reduction_dynamic
+		fortification_damage = SOV_navalny_fortification_damage_dynamic
+		terrain_penalty_reduction = SOV_navalny_terrain_penalty_reduction_dynamic
+		army_speed_factor = SOV_navalny_army_speed_factor_dynamic
+		army_core_attack_factor = SOV_navalny_army_core_attack_factor_dynamic
+		army_core_defence_factor = SOV_navalny_army_core_defence_factor_dynamic
+		army_attack_speed_factor = SOV_navalny_army_attack_speed_factor_dynamic
+		conscription = SOV_navalny_conscription_dynamic
+		initiative_factor = SOV_navalny_initiative_factor_dynamic
+		planning_speed = SOV_navalny_planning_speed_dynamic
+		max_planning_factor = SOV_navalny_max_planning_factor_dynamic
+		supply_node_range = SOV_navalny_supply_node_range_dynamic
+		training_time_factor = SOV_navalny_training_time_factor_dynamic
+		military_leader_cost_factor = SOV_navalny_military_leader_cost_factor_dynamic
+		grant_medal_cost_factor = SOV_navalny_grant_medal_cost_factor_dynamic
+		cat_old_land_doctrine_cost_factor = SOV_navalny_land_doctrine_cost_factor_dynamic
+		max_command_power = SOV_navalny_max_command_power_dynamic
+		max_dig_in_factor = SOV_navalny_max_dig_in_factor_dynamic
+		experience_gain_army_unit_factor = SOV_navalny_experience_gain_army_unit_factor_dynamic
+		land_night_attack = SOV_navalny_land_night_attack_dynamic
+		recon_factor = SOV_navalny_recon_factor_dynamic
+		coordination_bonus = SOV_navalny_coordination_bonus_dynamic
+		mobilization_speed = SOV_navalny_mobilization_speed_dynamic
+		research_speed_factor = SOV_navalny_research_speed_factor_dynamic
+		conscription_factor = SOV_navalny_conscription_factor_dynamic
+		army_breakthrough_against_major_factor = SOV_navalny_army_breakthrough_against_major_factor_dynamic
+		breakthrough_factor = SOV_navalny_breakthrough_factor_dynamic
+		army_fuel_consumption_factor = SOV_navalny_army_fuel_consumption_factor_dynamic 
+		army_org_regain = SOV_navalny_army_org_regain_factor_dynamic
+		experience_gain_army_factor = SOV_navalny_experience_gain_army_factor_dynamic
+		unit_upkeep_attrition_factor = SOV_navalny_unit_upkeep_attrition_factor_dynamic
+		minimum_training_level = SOV_navalny_minimum_training_level_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_navalny_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_navalny_production_factory_max_efficiency_factor_dynamic
+	}
+	SOV_greatest_army_in_eurasia_dynamic = {
+		icon = GFX_idea_SOV_russian_self_defense_forces_final
+		army_org_factor = SOV_navalny_army_org_factor_dynamic
+		stability_factor  = SOV_navalny_stability_factor_dynamic
+		army_defence_factor = SOV_navalny_army_defence_factor_dynamic
+		military_factory_upkeep_factor = SOV_navalny_military_factory_upkeep_dynamic
+		dockyard_upkeep_factor = SOV_navalny_dockyard_upkeep_factor_dynamic
+		aircraft_upkeep_factor = SOV_navalny_aircraft_upkeep_factor_dynamic
+		ship_upkeep_factor = SOV_navalny_ship_upkeep_factor_dynamic
+		military_development_monthly = SOV_navalny_military_development_monthly_dynamic
+		army_morale_factor = SOV_navalny_army_morale_factor_dynamic
+		army_attack_factor = SOV_navalny_army_attack_factor_dynamic
+		cas_damage_reduction = SOV_navalny_cas_damage_reduction_dynamic
+		fortification_damage = SOV_navalny_fortification_damage_dynamic
+		terrain_penalty_reduction = SOV_navalny_terrain_penalty_reduction_dynamic
+		army_speed_factor = SOV_navalny_army_speed_factor_dynamic
+		army_core_attack_factor = SOV_navalny_army_core_attack_factor_dynamic
+		army_core_defence_factor = SOV_navalny_army_core_defence_factor_dynamic
+		army_attack_speed_factor = SOV_navalny_army_attack_speed_factor_dynamic
+		conscription = SOV_navalny_conscription_dynamic
+		initiative_factor = SOV_navalny_initiative_factor_dynamic
+		planning_speed = SOV_navalny_planning_speed_dynamic
+		max_planning_factor = SOV_navalny_max_planning_factor_dynamic
+		supply_node_range = SOV_navalny_supply_node_range_dynamic
+		training_time_factor = SOV_navalny_training_time_factor_dynamic
+		military_leader_cost_factor = SOV_navalny_military_leader_cost_factor_dynamic
+		grant_medal_cost_factor = SOV_navalny_grant_medal_cost_factor_dynamic
+		cat_old_land_doctrine_cost_factor = SOV_navalny_land_doctrine_cost_factor_dynamic
+		max_command_power = SOV_navalny_max_command_power_dynamic
+		max_dig_in_factor = SOV_navalny_max_dig_in_factor_dynamic
+		experience_gain_army_unit_factor = SOV_navalny_experience_gain_army_unit_factor_dynamic
+		land_night_attack = SOV_navalny_land_night_attack_dynamic
+		recon_factor = SOV_navalny_recon_factor_dynamic
+		coordination_bonus = SOV_navalny_coordination_bonus_dynamic
+		mobilization_speed = SOV_navalny_mobilization_speed_dynamic
+		research_speed_factor = SOV_navalny_research_speed_factor_dynamic
+		conscription_factor = SOV_navalny_conscription_factor_dynamic
+		army_breakthrough_against_major_factor = SOV_navalny_army_breakthrough_against_major_factor_dynamic
+		breakthrough_factor = SOV_navalny_breakthrough_factor_dynamic
+		army_fuel_consumption_factor = SOV_navalny_army_fuel_consumption_factor_dynamic 
+		army_org_regain = SOV_navalny_army_org_regain_factor_dynamic
+		experience_gain_army_factor = SOV_navalny_experience_gain_army_factor_dynamic
+		unit_upkeep_attrition_factor = SOV_navalny_unit_upkeep_attrition_factor_dynamic
+		minimum_training_level = SOV_navalny_minimum_training_level_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_navalny_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_navalny_production_factory_max_efficiency_factor_dynamic
+	}
+	SOV_eurasian_armed_forces_dynamic = {
+		icon = GFX_idea_SOV_eurasian_armed_forces_idea
+		army_org_factor = SOV_dugin_army_org_factor_dynamic
+		stability_factor  = SOV_dugin_stability_factor_dynamic
+		army_defence_factor = SOV_dugin_army_defence_factor_dynamic
+		military_factory_upkeep_factor = SOV_dugin_military_factory_upkeep_dynamic
+		dockyard_upkeep_factor = SOV_dugin_dockyard_upkeep_factor_dynamic
+		battalion_upkeep_factor = SOV_dugin_battalion_upkeep_factor_dynamic
+		aircraft_upkeep_factor = SOV_dugin_aircraft_upkeep_factor_dynamic
+		ship_upkeep_factor = SOV_dugin_ship_upkeep_factor_dynamic
+		military_development_monthly = SOV_dugin_military_development_monthly_dynamic
+		army_morale_factor = SOV_dugin_army_morale_factor_dynamic
+		army_attack_factor = SOV_dugin_army_attack_factor_dynamic
+		cas_damage_reduction = SOV_dugin_cas_damage_reduction_dynamic
+		fortification_damage = SOV_dugin_fortification_damage_dynamic
+		terrain_penalty_reduction = SOV_dugin_terrain_penalty_reduction_dynamic
+		army_speed_factor = SOV_dugin_army_speed_factor_dynamic
+		army_core_attack_factor = SOV_dugin_army_core_attack_factor_dynamic
+		army_core_defence_factor = SOV_dugin_army_core_defence_factor_dynamic
+		army_attack_speed_factor = SOV_dugin_army_attack_speed_factor_dynamic
+		conscription = SOV_dugin_conscription_dynamic
+		special_forces_cap = SOV_dugin_special_forces_cap_dynamic
+		initiative_factor = SOV_dugin_initiative_factor_dynamic
+		planning_speed = SOV_dugin_planning_speed_dynamic
+		max_planning_factor = SOV_dugin_max_planning_factor_dynamic
+		supply_node_range = SOV_dugin_supply_node_range_dynamic
+		training_time_factor = SOV_dugin_training_time_factor_dynamic
+		military_leader_cost_factor = SOV_dugin_military_leader_cost_factor_dynamic
+		grant_medal_cost_factor = SOV_dugin_grant_medal_cost_factor_dynamic
+		cat_old_land_doctrine_cost_factor = SOV_dugin_land_doctrine_cost_factor_dynamic
+		max_command_power = SOV_dugin_max_command_power_dynamic
+		max_dig_in_factor = SOV_dugin_max_dig_in_factor_dynamic
+		experience_loss_factor = SOV_dugin_experience_loss_factor_dynamic
+		experience_gain_army_unit_factor = SOV_dugin_experience_gain_army_unit_factor_dynamic
+		land_night_attack = SOV_dugin_land_night_attack_dynamic
+		recon_factor = SOV_dugin_recon_factor_dynamic
+		coordination_bonus = SOV_dugin_coordination_bonus_dynamic
+		mobilization_speed = SOV_dugin_mobilization_speed_dynamic
+		research_speed_factor = SOV_dugin_research_speed_factor_dynamic
+		conscription_factor = SOV_dugin_conscription_factor_dynamic
+		army_breakthrough_against_major_factor = SOV_dugin_army_breakthrough_against_major_factor_dynamic
+		breakthrough_factor = SOV_dugin_breakthrough_factor_dynamic
+		army_fuel_consumption_factor = SOV_dugin_army_fuel_consumption_factor_dynamic 
+		army_org_regain = SOV_dugin_army_org_regain_factor_dynamic
+		experience_gain_army_factor = SOV_dugin_experience_gain_army_factor_dynamic
+		unit_upkeep_attrition_factor = SOV_dugin_unit_upkeep_attrition_factor_dynamic
+		minimum_training_level = SOV_dugin_minimum_training_level_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_dugin_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_dugin_production_factory_max_efficiency_factor_dynamic
+	}
+	SOV_reforms_social_justice_dynamic = {
+		icon = GFX_idea_SOV_russian_communism
+		production_speed_buildings_factor = SOV_social_justice_production_speed_buildings_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_social_justice_production_factory_efficiency_gain_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_social_justice_production_factory_max_efficiency_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_social_justice_production_factory_start_efficiency_factor_dynamic
+		consumer_goods_factor = SOV_social_justice_consumer_goods_factor_dynamic
+		income_growth_factor = SOV_social_justice_income_growth_factor_dynamic
+		business_value_factor = SOV_social_justice_business_value_factor_dynamic
+		personal_value_factor = SOV_social_justice_personal_value_factor_dynamic
+		research_speed_factor = SOV_social_justice_research_speed_factor_dynamic
+		industrial_development_monthly = SOV_social_justice_industrial_development_monthly_dynamic
+		society_development_monthly = SOV_social_justice_society_development_monthly_dynamic
+		poverty_development_monthly = SOV_social_justice_poverty_development_monthly_dynamic
+		academic_development_monthly = SOV_social_justice_academic_development_monthly_dynamic
+		production_speed_infrastructure_factor = SOV_social_justice_production_speed_infrastructure_dynamic
+		political_power_factor = SOV_social_justice_political_power_dynamic
+	}
+	SOV_pragmatic_economy_dynamic = {
+		icon = GFX_idea_SOV_Pragmatic_Economy_Idea
+		production_speed_buildings_factor = SOV_pragmatic_economy_production_speed_buildings_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_pragmatic_economy_production_factory_efficiency_gain_factor_dynamic
+		poverty_development_monthly = SOV_pragmatic_economy_poverty_development_monthly_dynamic
+		industrial_capacity_factory =	SOV_pragmatic_economy_industrial_capacity_factory_dynamic
+		stability_factor = SOV_pragmatic_economy_stability_factor_dynamic
+		industrial_development_monthly = SOV_pragmatic_economy_industrial_development_monthly_dynamic
+		society_development_monthly = SOV_pragmatic_economy_society_development_monthly_dynamic
+		military_development_monthly = SOV_pragmatic_economy_military_development_monthly_dynamic
+		political_power_factor = SOV_pragmatic_economy_political_power_factor_dynamic 
+		war_support_factor = SOV_pragmatic_economy_war_support_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_pragmatic_economy_production_factory_max_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_pragmatic_economy_production_lack_of_resource_penalty_factor_dynamic
+		max_fuel_factor  = SOV_pragmatic_economy_max_fuel_factor_dynamic
+		production_oil_factor  = SOV_pragmatic_economy_production_oil_factor_dynamic
+		consumer_goods_factor = SOV_pragmatic_economy_consumer_goods_factor_dynamic
+		conscription = SOV_pragmatic_economy_conscription_dynamic
+		recruitable_population = SOV_pragmatic_economy_recruitable_population_dynamic
+		industrial_capacity_dockyard = SOV_pragmatic_economy_industrial_capacity_dockyard_dynamic
+		production_speed_industrial_complex_factor = SOV_pragmatic_economy_production_speed_industrial_complex_factor_dynamic
+		production_speed_arms_factory_factor = SOV_pragmatic_economy_production_speed_arms_factory_factor_dynamic
+		production_speed_synthetic_refinery_factor = SOV_pragmatic_economy_production_speed_synthetic_refinery_factor_dynamic
+		research_speed_factor = SOV_pragmatic_economy_research_speed_factor_dynamic
+		expense_growth_factor = SOV_pragmatic_economy_expense_growth_factor_dynamic
+		income_growth_factor = SOV_pragmatic_economy_income_growth_factor_dynamic
+		inflation_monthly = SOV_pragmatic_economy_inflation_monthly_dynamic
+		inflation_monthly_factor = SOV_pragmatic_economy_inflation_monthly_factor_dynamic
+		business_value_factor = SOV_pragmatic_economy_business_value_factor_dynamic
+		personal_expense_factor = SOV_pragmatic_economy_personal_expense_factor_dynamic
+		personal_value_factor = SOV_pragmatic_economy_personal_value_factor_dynamic
+		out_of_supply_factor = SOV_pragmatic_economy_out_of_supply_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_pragmatic_economy_production_factory_start_efficiency_factor_dynamic
+		production_speed_infrastructure_factor = SOV_pragmatic_economy_production_speed_infrastructure_factor_dynamic
+		military_factory_upkeep_factor = SOV_pragmatic_economy_military_factory_upkeep_factor_dynamic
+		aircraft_upkeep_factor = SOV_pragmatic_economy_aircraft_upkeep_factor_dynamic
+		battalion_upkeep_factor = SOV_pragmatic_economy_battalion_upkeep_factor_dynamic
+	}	
+	SOV_navalnomika_dynamic = {
+		icon = GFX_idea_SOV_navalnomics
+		production_speed_buildings_factor = SOV_navalnomika_production_speed_buildings_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_navalnomika_production_factory_efficiency_gain_factor_dynamic
+		poverty_development_monthly = SOV_navalnomika_poverty_development_monthly_dynamic
+		industrial_capacity_factory = SOV_navalnomika_industrial_capacity_factory_dynamic
+		stability_factor = SOV_navalnomika_stability_factor_dynamic
+		industrial_development_monthly = SOV_navalnomika_industrial_development_monthly_dynamic
+		society_development_monthly = SOV_navalnomika_society_development_monthly_dynamic
+		military_development_monthly = SOV_navalnomika_military_development_monthly_dynamic
+		political_power_factor = SOV_navalnomika_political_power_factor_dynamic 
+		war_support_factor = SOV_navalnomika_war_support_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_navalnomika_production_factory_max_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_navalnomika_production_lack_of_resource_penalty_factor_dynamic
+		max_fuel_factor  = SOV_navalnomika_max_fuel_factor_dynamic
+		production_oil_factor  = SOV_navalnomika_production_oil_factor_dynamic
+		consumer_goods_factor = SOV_navalnomika_consumer_goods_factor_dynamic
+		conscription = SOV_navalnomika_conscription_dynamic
+		recruitable_population = SOV_navalnomika_recruitable_population_dynamic
+		conscription_factor = SOV_navalnomika_conscription_factor_dynamic
+		industrial_capacity_dockyard = SOV_navalnomika_industrial_capacity_dockyard_dynamic
+		production_speed_industrial_complex_factor = SOV_navalnomika_production_speed_industrial_complex_factor_dynamic
+		production_speed_arms_factory_factor = SOV_navalnomika_production_speed_arms_factory_factor_dynamic
+		production_speed_synthetic_refinery_factor = SOV_navalnomika_production_speed_synthetic_refinery_factor_dynamic
+		research_speed_factor = SOV_navalnomika_research_speed_factor_dynamic
+		expense_growth_factor = SOV_navalnomika_expense_growth_factor_dynamic
+		inflation_monthly = SOV_navalnomika_inflation_monthly_dynamic
+		income_growth_factor = SOV_navalnomika_income_growth_factor_dynamic
+		business_value_factor = SOV_navalnomika_business_value_factor_dynamic
+		personal_expense_factor = SOV_navalnomika_personal_expense_factor_dynamic
+		personal_value_factor = SOV_navalnomika_personal_value_factor_dynamic
+		out_of_supply_factor = SOV_navalnomika_out_of_supply_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_navalnomika_production_factory_start_efficiency_factor_dynamic
+		production_speed_infrastructure_factor = SOV_navalnomika_production_speed_infrastructure_factor_dynamic
+		military_factory_upkeep_factor = SOV_navalnomika_military_factory_upkeep_factor_dynamic
+		academic_development_monthly = SOV_navalnomika_academic_development_monthly_dynamic
+		min_export = SOV_navalnomika_min_export_factor_dynamic
+	}	
+	SOV_nadezhdin_economy_dynamic = {
+		icon = GFX_idea_SOV_new_age_economy_ideas
+		production_speed_buildings_factor = SOV_nadezhdin_economy_production_speed_buildings_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_nadezhdin_economy_production_factory_efficiency_gain_factor_dynamic
+		poverty_development_monthly = SOV_nadezhdin_economy_poverty_development_monthly_dynamic
+		industrial_capacity_factory = SOV_nadezhdin_economy_industrial_capacity_factory_dynamic
+		stability_factor = SOV_nadezhdin_economy_stability_factor_dynamic
+		industrial_development_monthly = SOV_nadezhdin_economy_industrial_development_monthly_dynamic
+		society_development_monthly = SOV_nadezhdin_economy_society_development_monthly_dynamic
+		military_development_monthly = SOV_nadezhdin_economy_military_development_monthly_dynamic
+		political_power_factor = SOV_nadezhdin_economy_political_power_factor_dynamic 
+		war_support_factor = SOV_nadezhdin_economy_war_support_factor_dynamic
+		production_factory_max_efficiency_factor = SOV_nadezhdin_economy_production_factory_max_efficiency_factor_dynamic
+		production_lack_of_resource_penalty_factor = SOV_nadezhdin_economy_production_lack_of_resource_penalty_factor_dynamic
+		max_fuel_factor  = SOV_nadezhdin_economy_max_fuel_factor_dynamic
+		production_oil_factor  = SOV_nadezhdin_economy_production_oil_factor_dynamic
+		consumer_goods_factor = SOV_nadezhdin_economy_consumer_goods_factor_dynamic
+		conscription = SOV_nadezhdin_economy_conscription_dynamic
+		recruitable_population = SOV_nadezhdin_economy_recruitable_population_dynamic
+		conscription_factor = SOV_nadezhdin_economy_conscription_factor_dynamic
+		industrial_capacity_dockyard = SOV_nadezhdin_economy_industrial_capacity_dockyard_dynamic
+		production_speed_industrial_complex_factor = SOV_nadezhdin_economy_production_speed_industrial_complex_factor_dynamic
+		production_speed_arms_factory_factor = SOV_nadezhdin_economy_production_speed_arms_factory_factor_dynamic
+		production_speed_synthetic_refinery_factor = SOV_nadezhdin_economy_production_speed_synthetic_refinery_factor_dynamic
+		research_speed_factor = SOV_nadezhdin_economy_research_speed_factor_dynamic
+		expense_growth_factor = SOV_nadezhdin_economy_expense_growth_factor_dynamic
+		inflation_monthly = SOV_nadezhdin_economy_inflation_monthly_dynamic
+		income_growth_factor = SOV_nadezhdin_economy_income_growth_factor_dynamic
+		business_value_factor = SOV_nadezhdin_economy_business_value_factor_dynamic
+		personal_expense_factor = SOV_nadezhdin_economy_personal_expense_factor_dynamic
+		personal_value_factor = SOV_nadezhdin_economy_personal_value_factor_dynamic
+		out_of_supply_factor = SOV_nadezhdin_economy_out_of_supply_factor_dynamic
+		production_factory_start_efficiency_factor = SOV_nadezhdin_economy_production_factory_start_efficiency_factor_dynamic
+		production_speed_infrastructure_factor = SOV_nadezhdin_economy_production_speed_infrastructure_factor_dynamic
+		military_factory_upkeep_factor = SOV_nadezhdin_economy_military_factory_upkeep_factor_dynamic
+		academic_development_monthly = SOV_nadezhdin_economy_academic_development_monthly_dynamic
+	}	
+	SOV_russian_space_age_dynamic = {
+		icon = GFX_idea_SOV_russian_space_age
+		production_speed_buildings_factor = SOV_russian_space_age_production_speed_buildings_factor_dynamic
+		production_factory_efficiency_gain_factor = SOV_russian_space_age_production_factory_efficiency_gain_factor_dynamic
+		industrial_capacity_factory =	SOV_russian_space_age_industrial_capacity_factory_dynamic
+		society_development_monthly = SOV_russian_space_age_society_development_monthly_dynamic
+		political_power_factor = SOV_russian_space_age_political_power_factor_dynamic 
+		production_lack_of_resource_penalty_factor = SOV_russian_space_age_production_lack_of_resource_penalty_factor_dynamic
+		consumer_goods_factor = SOV_russian_space_age_consumer_goods_factor_dynamic
+		industrial_capacity_dockyard = SOV_russian_space_age_industrial_capacity_dockyard_dynamic
+		research_speed_factor = SOV_russian_space_age_research_speed_factor_dynamic
+		expense_growth_factor = SOV_russian_space_age_expense_growth_factor_dynamic
+		income_growth_factor = SOV_russian_space_age_income_growth_factor_dynamic
+		inflation_monthly = SOV_russian_space_age_inflation_monthly_dynamic
+		business_value_factor = SOV_russian_space_age_business_value_factor_dynamic
+		out_of_supply_factor = SOV_russian_space_age_out_of_supply_factor_dynamic
+		production_speed_infrastructure_factor = SOV_russian_space_age_production_speed_infrastructure_factor_dynamic
+	}
+	SOV_republic_of_russia = {
+		icon = GFX_modifiers_republic_of_russia
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		state_resources_factor = -0.05
+		recruitable_population_factor = 0.01
+		local_building_slots = -1
+		local_org_regain = 0.035
+		local_supplies = -0.05
+		mobilization_speed = -0.025
+	}	
+	SOV_crisis_management_republic = {
+		icon = GFX_modifiers_nationalist_control
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = -0.01
+		local_building_slots = 5
+		local_supplies = 0.05
+		mobilization_speed = 0.025
+	}		
+	SOV_ass_republic = {
+		icon = GFX_modifiers_ass_republic
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = -1
+		local_org_regain = 0.2
+		mobilization_speed = 0.025
+		state_production_speed_buildings_factor = 0.05
+	}	
+	SOV_ass_republic_special = {
+		name = SOV_ass_republic
+		icon = GFX_modifiers_ass_republic
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		state_resources_factor = -0.05
+		local_building_slots = -2
+		local_supplies = -0.1
+		state_production_speed_buildings_factor = 0.025
+	}
+	SOV_ss_republic = {
+		icon = GFX_modifiers_ss_republic
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		state_resources_factor = 0.05
+		recruitable_population_factor = 0.01
+		local_org_regain = 0.2
+		local_factories = 0.1
+		local_supplies = 0.1
+		mobilization_speed = -0.01
+	}
+	SOV_ss_republic_socdem = {
+		icon = GFX_modifiers_ss_republic
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		state_resources_factor = 0.075
+		recruitable_population_factor = 0.015
+		local_org_regain = 0.25
+		local_factories = 0.15
+		local_supplies = 0.1
+		mobilization_speed = -0.01
+	}
+	SOV_chechen_republic = {
+		icon = GFX_modifiers_chechen_republic
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		state_resources_factor = -0.05
+		recruitable_population_factor = 0.01
+		local_building_slots = -2
+		local_supplies = -0.08
+		mobilization_speed = 0.1
+		state_production_speed_buildings_factor = 0.1
+	}
+	SOV_republic_of_tatarstan = {
+		icon = GFX_modifiers_republic_of_tatarstan
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		state_resources_factor = -0.05
+		recruitable_population_factor = 0.02
+		local_building_slots = -2
+		local_supplies = -0.08
+		mobilization_speed = 0.1
+		state_production_speed_buildings_factor = 0.1
+	}
+	SOV_republic_of_crimea = {
+		icon = GFX_modifiers_republic_of_crimea
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		local_building_slots = -2
+		local_supplies = 0.025
+		mobilization_speed = -0.05
+		state_production_speed_dockyard_factor = 0.05
+		state_production_speed_naval_base_factor = 0.02
+		state_production_speed_coastal_bunker_factor = 0.025
+	}
+	SOV_city_of_moscow = {
+		icon = GFX_modifiers_city_of_moscow
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 4
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}	
+	SOV_city_of_moscow_cprf_1 = {
+		icon = GFX_modifiers_city_of_moscow_cprf_1
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.05
+		local_building_slots = 4
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}	
+	SOV_city_of_moscow_cprf_2 = {
+		icon = GFX_modifiers_city_of_moscow_cprf_2
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 5
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}	
+	SOV_city_of_moscow_cprf_3 = {
+		icon = GFX_modifiers_city_of_moscow_cprf_3
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 4
+		local_supplies = 0.05
+		state_production_speed_infrastructure_factor = 0.1
+	}	
+	SOV_city_of_sevastopol_cprf = {
+		icon = GFX_modifiers_city_of_sevastopol_cprf
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 5
+		local_supplies = 0.045
+		state_production_speed_industrial_complex_factor = 0.1
+	}	
+	SOV_city_of_leningrad = {
+		icon = GFX_modifiers_city_of_leningrad
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 5
+		local_supplies = 0.045
+		state_production_speed_dockyard_factor = 0.1
+		state_production_speed_coastal_bunker_factor = 0.1
+	}
+	SOV_city_of_moscow_nav = {
+		icon = GFX_modifiers_city_of_moscow_nav
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 4
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}
+	SOV_city_of_moscow_ldpr = {
+		icon = GFX_modifiers_city_of_moscow_ldpr
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		local_manpower = 0.1
+		recruitable_population_factor = 0.05
+		local_building_slots = 5
+		local_building_slots_factor = 0.15
+		local_supplies = 0.05
+		state_production_speed_buildings_factor = 0.1
+	}	
+	SOV_special_administrative_territory = {
+		icon = GFX_modifiers_city_of_moscow_ldpr
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		local_manpower = -0.1
+		recruitable_population_factor = -0.05
+		local_building_slots = 5
+		local_org_regain = 0.1
+		local_building_slots_factor = 0.15
+		local_supplies = 0.1
+	}	
+	SOV_model_derzhavnik_city = {
+		icon = GFX_modifiers_city_of_moscow_ldpr
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		local_manpower = 0.025
+		recruitable_population_factor = 0.01
+		local_building_slots = 3
+		local_org_regain = 0.05
+		local_building_slots_factor = 0.05
+		local_supplies = 0.05
+	}
+	SOV_metropolitanate = {
+		icon = GFX_modifiers_city_of_moscow_ldpr
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = -0.01
+		local_building_slots = 5
+		local_supplies = 0.05
+		local_org_regain = 0.05
+		state_production_speed_office_park_factor = -0.05
+	}	
+	SOV_city_of_sevastopol = {
+		icon = GFX_modifiers_city_of_sevastopol
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 4
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}	
+	SOV_city_of_saint_petersburg = {
+		icon = GFX_modifiers_city_of_saint_petersburg
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 4
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}
+	SOV_city_of_saint_petersburg_nav = {
+		icon = GFX_modifiers_city_of_saint_petersburg_nav
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 4
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}
+	SOV_Sverdlovsk_Oblast = {
+		icon = GFX_modifiers_sverdlovsk_oblast
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+		}
+		recruitable_population_factor = 0.01
+		local_building_slots = 4
+		local_supplies = 0.045
+		state_production_speed_office_park_factor = 0.05
+	}
+	BLR_LDPB_rule = {
+		icon = GFX_modifiers_LDPB_Rule
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+			has_global_flag = nato_nato_won_nato_war
+		}
+		state_resources_factor = -0.1
+		recruitable_population_factor = 0.02
+	}
+	BLR_LDPR_rule = {
+		icon = GFX_modifiers_LDPR_Rule
+		
+		enable = { 
+			always = yes
+		}
+		remove_trigger = {
+			has_global_flag = nato_nato_won_nato_war
+		}
+		local_manpower = -0.2
+		state_production_speed_buildings_factor = 0.1
+	}
+	
+	ROM_Szeklerland = {
+		icon = GFX_modifiers_ROM_szeklerland
+		
+		enable = { 
+			always = yes
+		}
+
+		state_resources_factor = -0.05
+		recruitable_population_factor = 0.01
+		local_building_slots = -1
+		local_org_regain = 0.2
+		local_supplies = -0.05
+		mobilization_speed = 0.02
+	}
+	
+	SOV_terrain_gas_attack = {
+		icon = GFX_generic_coronavirus
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_manpower = -0.9
+		army_speed_factor = -0.4
+		attrition = 0.7
+		org_loss_when_moving = 0.25
+		supply_factor = -0.15
+		truck_attrition_factor = 5.0	
+	}
+	
+	SOV_terrain_raputista = {
+		icon = GFX_generic_coronavirus
+		
+		enable = { 
+			always = yes
+		}
+		
+		army_attack_factor = -0.4
+		army_speed_factor = -0.4
+		attrition = 0.7
+		org_loss_when_moving = 0.25
+		supply_factor = -0.15
+		truck_attrition_factor = 5.0	
+	}
+	
+	SOV_NK_labor_camp = {
+		icon = GFX_modifiers_labor_camp
+		
+		enable = { 
+			always = yes
+		}
+		
+		state_resources_factor = -0.1
+		state_production_speed_buildings_factor = 0.1
+	}
+	
+	SOV_malorossiyan_rada_modifier = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		attrition = -0.1
+		supply_factor = 0.05
+		state_production_speed_buildings_factor = 0.05
+		state_resources_factor = -0.1
+		recruitable_population_factor = -0.15
+	}		
+	
+	SOV_belarussian_assembly_modifier = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		attrition = -0.1
+		org_loss_when_moving = -0.1
+		state_production_speed_buildings_factor = 0.05
+		state_resources_factor = -0.1
+		recruitable_population_factor = -0.15
+	}	
+	
+	SOV_pribaltic_council_modifier = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		army_speed_factor = 0.05
+		supply_factor = 0.05
+		state_production_speed_buildings_factor = 0.03
+		state_resources_factor = -0.05
+		recruitable_population_factor = -0.1
+	}
+	
+	#Гигачад Основной
+	SOV_DPR_modifier = {
+		icon = GFX_modifiers_DPR
+		
+		enable = { 
+			always = yes
+		}
+		remove_trigger = {
+		    NOT = {
+				country_exists = NOV
+		    }
+	    }
+		state_resources_factor = 0.1
+		state_production_speed_bunker_factor = 0.10
+		recruitable_population_factor = 0.02
+	}
+	
+	#Гигачад Запасной
+	SOV_LPR_modifier = {
+		icon = GFX_modifiers_LPR
+		
+		enable = { 
+			always = yes
+		}
+		remove_trigger = {
+		    NOT = {
+				country_exists = NOV
+		    }
+	    }
+		local_building_slots = 2
+		state_resources_factor = -0.1
+		state_production_speed_infrastructure_factor = 0.10
+	}	
+	
+	SOV_mother_of_russian_cities = {
+		icon = GFX_modifiers_LPR
+		
+		enable = { 
+			always = yes
+		}
+		remove_trigger = {
+		    NOT = {
+				country_exists = NOV
+		    }
+	    }
+		local_building_slots = 5
+		state_resources_factor = 0.1
+		state_production_speed_infrastructure_factor = 0.15
+		mobilization_speed = 0.25
+	}
+	SOV_soviet_sez = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = -0.1
+		state_production_speed_buildings_factor = 0.25
+		state_resources_factor = 0.075
+		recruitable_population_factor = -0.25
+		local_manpower = 0.5
+	}
+	SOV_soviet_sez_2 = {
+		icon = GFX_modifiers_soviet_sez
+		name = SOV_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = -0.075
+		state_production_speed_buildings_factor = 0.5
+		state_resources_factor = 0.15
+		recruitable_population_factor = -0.55
+		local_manpower = 0.65
+	}	
+	SOV_renewed_leadership_modifier = {
+		icon = GFX_modifiers_SOV_renewed_leadership
+		
+		enable = { 
+			always = yes
+		}
+		state_production_speed_buildings_factor = 0.25
+		local_factories = -0.2
+		local_supplies = -0.1
+		local_intel_to_enemies = 0.15
+	}
+	SOV_economic_committee_modifier = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.1
+		state_resources_factor = 0.05
+		recruitable_population_factor = -0.15
+	}
+	SOV_belarus_eco = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.2
+		local_building_slots_factor = 0.15
+		state_production_speed_buildings_factor = -0.10
+	}	
+	SOV_belarus_eco2 = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.15
+		local_building_slots_factor = 0.10
+		state_production_speed_buildings_factor = -0.10
+	}	
+	SOV_belarus_eco3 = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = -0.1
+		local_building_slots_factor = 0.05
+		state_production_speed_buildings_factor = 0.2
+	}
+	SOV_bam_building = {
+		icon = GFX_modifiers_rightist_administration
+		
+		enable = { 
+			always = yes
+		}
+		local_building_slots = 2
+		state_resources_factor = 0.10
+		state_production_speed_buildings_factor = 0.15
+	}	
+	SOV_uss_socialist = {
+		icon = GFX_modifiers_democratic_socialism
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.2
+		mobilization_speed = -0.15
+		state_resources_factor = 0.05
+		state_production_speed_buildings_factor = 0.10
+	}	
+	SOV_uss_centrist = {
+		icon = GFX_modifiers_liberal_administration
+		
+		enable = { 
+			always = yes
+		}
+		local_building_slots = 1
+		mobilization_speed = 0.05
+		recruitable_population_factor = 0.05
+		state_resources_factor = 0.15
+	}		
+	SOV_uss_rightist = {
+		icon = GFX_modifiers_rightist_administration
+		
+		enable = { 
+			always = yes
+		}
+		local_building_slots = 3
+		recruitable_population_factor = -0.15
+		state_production_speed_office_park_factor = 0.15
+		state_production_speed_Infrastructure_factor = 0.15
+	}		
+	SOV_regional_democratic_socialism = {
+		icon = GFX_modifiers_democratic_socialism
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.2
+		mobilization_speed = -0.15
+		state_resources_factor = -0.1
+		state_production_speed_office_park_factor = 0.15
+		state_production_speed_Infrastructure_factor = 0.15
+	}	
+	SOV_regional_state_socialism = {
+		icon = GFX_modifiers_state_socialism
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = -0.2
+		mobilization_speed = 0.3
+		state_resources_factor = 0.2
+		local_building_slots_factor = 0.3
+		state_production_speed_industrial_complex_factor = 0.15
+	}	
+	SOV_regional_liberal_administartion = {
+		icon = GFX_modifiers_liberal_administration
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.2
+		mobilization_speed = -0.15
+		state_resources_factor = -0.1
+		state_production_speed_office_park_factor = 0.15
+		state_production_speed_Infrastructure_factor = 0.15
+	}	
+	SOV_regional_rightist_administartion = {
+		icon = GFX_modifiers_rightist_administration
+		
+		enable = { 
+			always = yes
+		}
+		local_building_slots = 2
+		state_production_speed_buildings_factor = 0.10
+		recruitable_population_factor = -0.20
+		local_manpower = 0.3
+	}
+	SOV_regional_leftist_administartion = {
+		icon = GFX_modifiers_leftist_administration
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = -0.2
+		mobilization_speed = 0.1
+		state_resources_factor = 0.1
+		local_building_slots_factor = 0.2
+		state_production_speed_industrial_complex_factor = 0.15
+	}		
+	SOV_regional_economic_reformation = {
+		icon = GFX_modifiers_leftist_administration
+		
+		enable = { 
+			always = yes
+		}
+		state_production_speed_industrial_complex_factor = 0.05
+		state_resources_factor = 0.1
+		mobilization_speed = -0.15
+		state_production_speed_office_park_factor = 0.15
+		state_production_speed_Infrastructure_factor = 0.15
+		local_manpower = -0.15
+	}		
+	SOV_wagner_capital_modifier = {
+		icon = SOV_wagner_capital_modifier
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.05
+		recruitable_population_factor = 0.05
+		local_manpower = 0.15
+		state_production_speed_industrial_complex_factor = 0.05
+	}	
+	SOV_regional_batyka_adminstration = {
+		icon = GFX_modifiers_batyka_administration
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.05
+		recruitable_population_factor = 0.05
+		local_manpower = 0.2
+	}	
+	SOV_regional_novorossiya_republic_balitsky = {
+		icon = GFX_modifiers_novorossiya_republic_balitsky
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = -0.2
+		mobilization_speed = 0.3
+		state_resources_factor = 0.2
+		local_building_slots_factor = 0.3
+		state_production_speed_industrial_complex_factor = 0.15
+	}
+	SOV_regional_novorossiya_republic_saldo = {
+		icon = GFX_modifiers_novorossiya_republic_saldo
+		
+		enable = { 
+			always = yes
+		}
+		local_building_slots = 4
+		state_production_speed_buildings_factor = 0.12
+		recruitable_population_factor = -0.21
+		local_manpower = 0.4
+	}	
+	SOV_regional_novorssiya_republic_pasechnik = {
+		icon = GFX_modifiers_novorossiya_republic_pasechnik
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.2
+		mobilization_speed = -0.15
+		state_resources_factor = -0.1
+		state_production_speed_office_park_factor = 0.15
+		state_production_speed_Infrastructure_factor = 0.15
+	}
+	SOV_regional_novorossiya_republic_pushilin = {
+		icon = GFX_modifiers_novorossiya_republic_pushilin
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.2
+		mobilization_speed = -0.15
+		state_resources_factor = -0.1
+		state_production_speed_office_park_factor = 0.15
+		state_production_speed_Infrastructure_factor = 0.15
+	}
+	SOV_regional_novorossiyan_federal_district = {
+		icon = GFX_modifiers_novorossiyan_federal_district
+		
+		enable = { 
+			always = yes
+		}
+		state_production_speed_buildings_factor = 0.015
+		recruitable_population_factor = 0.1
+		local_manpower = 0.1
+		mobilization_speed = 0.01
+	}	
+	SOV_regional_belarusian_federal_district = {
+		icon = GFX_modifiers_belarusian_federal_district
+		
+		enable = { 
+			always = yes
+		}
+		state_production_speed_buildings_factor = 0.015
+		recruitable_population_factor = 0.1
+		local_manpower = 0.1
+	}
+	SOV_ldpr_sez = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		local_building_slots = 2
+		state_production_speed_buildings_factor = 0.10
+		recruitable_population_factor = -0.20
+		local_manpower = 0.3
+	}
+	
+	SOV_ur_sez = {
+		icon = GFX_modifiers_soviet_sez
+		
+		enable = { 
+			always = yes
+		}
+		state_production_speed_buildings_factor = 0.05
+		recruitable_population_factor = -0.1
+		local_manpower = 0.05
+		state_production_speed_office_park_factor = 0.15
+		state_production_speed_Infrastructure_factor = 0.15
+	}
+	
+	SOV_siberian_miracle = {
+		icon = GFX_modifiers_UKR_russian_speaking_majority_region
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.05
+		recruitable_population_factor = 0.05
+		local_manpower = 0.2
+	}
+	
+	SOV_ural_miracle = {
+		icon = GFX_modifiers_UKR_russian_speaking_majority_region
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.05
+		state_resources_factor = 0.05
+		local_manpower = 0.2
+	}
+	
+	SOV_far_eastern_sunrise = {
+		icon = GFX_modifiers_UKR_russian_speaking_majority_region
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.05
+		state_resources_factor = 0.05
+		local_manpower = 0.2
+	}
+	
+	SOV_novorossiysk_miracle = {
+		icon = GFX_modifiers_UKR_russian_speaking_majority_region
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.05
+		state_resources_factor = 0.05
+		local_manpower = 0.2
+	}
+	
+	SOV_adl_party_influence = {
+		icon = GFX_modifiers_UKR_russian_speaking_majority_region
+		
+		enable = { 
+			always = yes
+		}
+		local_factories = 0.1
+		state_production_speed_buildings_factor = 0.025
+		mobilization_speed = 0.15
+		local_supplies = 0.1
+	}
+	
+	SOV_greater_autonomous_administration = {
+		icon = GFX_modifiers_greater_autonomous_administration
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_manpower = 0.15
+		local_factories = 0.1
+		local_supplies = 0.3
+		state_production_speed_buildings_factor = -0.05
+	}
+	
+	SOV_russo_polish_administration = {
+		icon = GFX_modifiers_russian_poland
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_manpower = -0.25
+		local_factories = -0.2
+		state_production_speed_buildings_factor = 0.05
+		local_supplies = 0.2
+	}
+	
+	SOV_expanded_military_district = {
+		icon = GFX_modifiers_russian_military_district_icon
+		
+		enable = { 
+			always = yes
+		}
+		
+		mobilization_speed = 0.1
+		local_org_regain = 0.10
+		local_factories = -0.25
+		recruitable_population = 0.05
+	}
+	
+	SOV_deislamization_programme = {
+		icon = GFX_modifiers_russian_military_district_icon
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_factories = -0.2
+		recruitable_population = -0.15
+		local_building_slots_factor = 0.3
+		state_production_speed_buildings_factor = 0.1
+	}
+	
+	SOV_democratic_exclusion_zone = {
+		icon = GFX_modifiers_russian_military_district_icon
+		
+		enable = { 
+			always = yes
+		}
+		
+		state_resources_factor = 0.1
+		local_manpower  = 0.15
+		mobilization_speed = -0.15
+		
+	}		
+	
+	SOV_special_control_zone = {
+		icon = GFX_modifiers_russian_military_district_icon
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_org_regain = 0.05
+		local_manpower  = -0.1
+		mobilization_speed = -0.15
+		local_supplies = -0.03
+	}	
+	
+	SOV_slavic_sister_modifier = {
+		icon = GFX_modifiers_russian_military_district_icon
+		
+		enable = { 
+			always = yes
+		}
+		
+		state_resources_factor = 0.1
+		local_manpower  = 0.05
+		mobilization_speed = 0.15
+		local_org_regain = 0.025
+		
+	}
+	
+	SOV_breadbasket_modifier = {
+		icon = GFX_modifiers_russian_military_district_icon
+		
+		enable = { 
+			always = yes
+		}
+		
+		state_resources_factor = 0.1
+		local_manpower  = 0.15
+		local_org_regain = 0.025
+		monthly_population = 0.5
+		local_supplies = 0.1
+		
+	}
+	
+	SOV_sponsored_rural_area = {
+		icon = GFX_modifiers_russian_military_district_icon
+		
+		enable = { 
+			always = yes
+		}
+		state_production_speed_infrastructure_factor = 0.15
+		local_building_slots = 3
+	}
+
+	
+	UKR_resistance = {
+		icon = GFX_modifiers_labor_camp
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+			has_global_flag = SOV_destroyed_resistance
+		}
+		
+		local_resources_factor = -0.15
+		local_manpower = -0.35
+		state_production_speed_buildings_factor = -0.1
+	    local_factory_sabotage = 0.30
+	}
+
+	UKR_fortetsiya_gigant = {
+		icon = GFX_modifiers_megacity
+		
+		enable = { 
+			always = yes
+		}
+		
+		local_factories = 0.25
+		mobilization_speed = 0.25
+		state_resources_factor = 0.25
+		local_building_slots_factor = 0.25
+		army_attack_factor = -0.5
+		army_defence_factor = 0.75
+		army_speed_factor = -0.25
+		army_org_factor = 0.25
+	}

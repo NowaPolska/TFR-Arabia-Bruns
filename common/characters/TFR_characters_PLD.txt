@@ -1,0 +1,379 @@
+	characters={
+		PLD_andrzej_duda_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Andrzej_Duda.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=national_conservativism_con
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_krzysztof_szwej_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Krzysztof Szwej.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=marxism_leninism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_Dariusz_Lewandowski_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Dariusz Lewandowski.dds"
+				}
+			}
+			can_be_captured = no
+			corps_commander = {
+				traits = {
+					trait_dunce
+				}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+		PLD_Krzysztof_Krol_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Krzysztof Król.dds"
+				}
+			}
+			can_be_captured = no
+			corps_commander = {
+				traits = {
+					
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+		PLD_Piotr_Blazeusz_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Piotr Błazeusz.dds"
+				}
+			}
+			can_be_captured = no
+			corps_commander = {
+				traits = {
+					
+				}
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+		PLD_Mieczyslaw_Gocul_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Mieczysław Gocuł.dds"
+				}
+			}
+			can_be_captured = no
+			field_marshal = {
+				traits = {
+					career_officer
+					cavalry_officer
+				}
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			country_leader={
+				desc=""
+				ideology=radical_nationalism
+				traits = {
+					hos_marshal_of_poland
+				}
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_Michal_Sikora_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Michał Sikora.dds"
+				}
+			}
+			can_be_captured = no
+			corps_commander = {
+				traits = {
+					
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		}
+		PLD_Leszek_Surawski_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Leszek Surawski.dds"
+				}
+			}
+			can_be_captured = no
+			field_marshal = {
+				traits = {
+					career_officer, Engineer, Panzer_Leader
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		    advisor = {
+            slot = army_chief          
+            idea_token = SAU_Leszek_Surawski_advisor
+        
+            allowed = {
+            original_tag = PLD
+            }
+        
+            cost = 100                 
+        
+             traits = {
+            army_chief_defensive_2 
+            }
+        
+            ai_will_do = {
+            factor = 10
+            }
+        }
+	}
+		PLD_Rajmund_Andrzejczak_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Rajmund Andrzejczak.png"
+				}
+			}
+			can_be_captured = no
+			corps_commander = {
+				traits = {
+				Organizer
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 5
+				planning_skill = 2
+				logistics_skill = 3
+			}
+		}
+		PLD_Wieslaw_Kukula_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/generals/Wieslaw Kukula.png"
+				}
+			}
+			can_be_captured = no
+			corps_commander = {
+				traits = {
+				Organizer
+				}
+				skill = 3
+				attack_skill = 4
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+			}
+		}
+		
+		POL_andrzej_duda_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/POL/Andrzej_Duda.dds"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=national_conservativism_con
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		POL_krzysztof_szwej_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/POL/Krzysztof Szwej.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=marxism_leninism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_karol_nawrocki_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Karol_Nawrocki.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=national_conservativism_con
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_rafal_trzaskowski_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Rafal_Trzaskowski.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology=centrist
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	    PLD_robert_biedron_char = {
+		    name = "Robert Biedroń"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/robert_biedron.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = social_democracy
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_Waldemar_Witkowski_char = {
+		    name = "Waldemar Witkowski"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Waldemar_Witkowski.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = reformist_socialism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_Krzysztof_Bosak_char = {
+		    name = "Krzysztof Bosak"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Krzysztof_Bosak.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = ultra_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	    PLD_Władysław_Kosiniak_Kamysz_char = {
+		    name = "Władysław Kosiniak Kamysz"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Władysław_Kosiniak_Kamysz.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = classical_liberalism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+		PLD_Anna_Brylka_char = {
+		    name = "Anna Bryłka"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Anna_Brylka.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = ultra_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	    PLD_polska_wappen_char = {
+		    name = "Provisonal Polish Goverment"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/polska_wappen.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = ultra_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	    PLD_PLD_grzegorz_braun_char = {
+		    name = "Grzegorz Braun"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/PLD_grzegorz_braun.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = clerical_fascism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+        PLD_Magdalena_Biejat_char = {
+		    name = "Magdalena Biejat"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Magdalena_Biejat.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = social_democracy
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	    PLD_Slawomir_Mentzen_char = {
+		    name = "Slawomir Mentzen"
+			portraits={
+				civilian={
+					large = "gfx/Leaders/PLD/Slawomir_Mentzen.png"
+				}
+			}
+			country_leader={
+				desc=""
+				ideology = ultra_conservatism
+				expire="1.1.1.1"
+				id=-1
+			}
+		}
+	}

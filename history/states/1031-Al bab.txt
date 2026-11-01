@@ -1,0 +1,25 @@
+state={
+	id=1031
+	name="STATE_1031"
+
+	resources = {
+		oil = 1
+	}
+
+	history = {
+		owner = SYR
+		add_core_of = SYR
+		victory_points = { 10383 1 }	#Al-Tanf
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+	provinces={
+		10383
+	}
+	manpower= 13292
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

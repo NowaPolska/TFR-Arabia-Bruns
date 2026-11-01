@@ -1,0 +1,1704 @@
+defined_text = { #Progressives Enabled
+	name = GetProgressiveEnable
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_progressive_enable_flag
+		}
+		localization_key = USB_progressive_enable_loc
+	}
+}
+
+defined_text = { #Progressive Allignment
+	name = GetProgressiveAllignment
+	text = { #Rebellious
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_rebellious_loc_pro
+	}
+	
+	text = { #Adversive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_adversive_loc_pro
+	}
+	
+	text = { #Indifferent
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_indifferent_loc_pro
+	}
+	
+	text = { #Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_supportive_loc_pro
+	}
+	
+	text = { #Very Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_pro_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_faction_allignment_very_loc_pro
+	}
+}
+
+defined_text = { #Liberals Enabled
+	name = GetLiberalEnable
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_liberal_enable_flag
+		}
+		localization_key = USB_liberal_enable_loc
+	}
+}
+
+defined_text = { #Liberal Allignment
+	name = GetLiberalAllignment
+	text = { #Rebellious
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_rebellious_loc_neo
+	}
+	
+	text = { #Adversive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_adversive_loc_neo
+	}
+	
+	text = { #Indifferent
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_indifferent_loc_neo
+	}
+	
+	text = { #Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_supportive_loc_neo
+	}
+	
+	text = { #Very Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_neo_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_faction_allignment_very_loc_neo
+	}
+}
+
+defined_text = { #Conservatives Enabled
+	name = GetConservativeEnable
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_conservative_enable_flag
+		}
+		localization_key = USB_conservative_enable_loc
+	}
+}
+
+defined_text = { #Conservative Allignment
+	name = GetConservativeAllignment
+	text = { #Rebellious
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_rebellious_loc_con
+	}
+	
+	text = { #Adversive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_adversive_loc_con
+	}
+	
+	text = { #Indifferent
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_indifferent_loc_con
+	}
+	
+	text = { #Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_supportive_loc_con
+	}
+	
+	text = { #Very Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_con_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_faction_allignment_very_loc_con
+	}
+}
+
+defined_text = { #Innovationists Enabled
+	name = GetInnovationistEnable
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_innovationist_enable_flag
+		}
+		localization_key = USB_innovationist_enable_loc
+	}
+}
+
+defined_text = { #Innovationist Allignment
+	name = GetInnovationistAllignment
+	text = { #Rebellious
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_rebellious_loc_ino
+	}
+	
+	text = { #Adversive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_adversive_loc_ino
+	}
+	
+	text = { #Indifferent
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_indifferent_loc_ino
+	}
+	
+	text = { #Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_faction_allignment_supportive_loc_ino
+	}
+	
+	text = { #Very Supportive
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_support_ino_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_faction_allignment_very_loc_ino
+	}
+}
+
+defined_text = { #Minor Factions Enabled
+	name = GetMinorFactionsEnable
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_minor_factions_enabled_flag
+		}
+		localization_key = USB_minor_factions_main_loc
+	}
+}
+
+defined_text = { #Minor Factions Enabled
+	name = GetMinorFactionsEnableBottom
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_minor_factions_enabled_flag
+		}
+		localization_key = USB_minor_factions_bottom_loc
+	}
+}
+
+defined_text = { #Blue Dog Coalition Enabled
+	name = GetBlueDogEnable
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_blue_dog_enabled_flag
+		}
+		localization_key = USB_minor_faction_blue_dog_loc
+	}
+}
+
+defined_text = { #Kennedy Democrats Enabled
+	name = GetKennedyDemocratsEnable
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_RFK_flag
+		}
+		localization_key = USB_minor_faction_kennedy_democrats_loc
+	}
+}
+
+defined_text = { #Leader Status
+	name = GetLeaderStatus
+	text = { #Biden
+		trigger = {
+			original_tag = USB
+			has_country_leader = {
+				character = USB_joe_biden_char
+				ruling_only = yes
+			}
+		}
+		localization_key = USB_biden_status_loc
+	}
+}
+
+defined_text = { #Biden Health Loc
+	name = GetBidenHealth
+	text = { #Great Health
+		trigger = {
+			original_tag = USB
+			check_variable = { 
+				var = USB_biden_health_var
+				value = 0
+				compare = less_than_or_equals 
+			}
+		}
+		localization_key = USB_biden_health_great_loc
+	}
+	
+	text = { #Good Health
+		trigger = {
+			original_tag = USB
+			check_variable = { 
+				var = USB_biden_health_var
+				value = 1
+				compare = equals 
+			}
+		}
+		localization_key = USB_biden_health_good_loc
+	}
+	
+	text = { #Fair Health
+		trigger = {
+			original_tag = USB
+			check_variable = { 
+				var = USB_biden_health_var
+				value = 2
+				compare = equals 
+			}
+		}
+		localization_key = USB_biden_health_fair_loc
+	}
+	
+	text = { #Bad Health
+		trigger = {
+			original_tag = USB
+			check_variable = { 
+				var = USB_biden_health_var
+				value = 3
+				compare = equals 
+			}
+		}
+		localization_key = USB_biden_health_bad_loc
+	}
+	
+	text = { #Critical Health
+		trigger = {
+			original_tag = USB
+			check_variable = { 
+				var = USB_biden_health_var
+				value = 4
+				compare = equals 
+			}
+		}
+		localization_key = USB_biden_health_critical_loc
+	}
+}
+
+defined_text = {
+	name = USB_corporate_influence_text
+	text = {
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_corporate_influence_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = USB_corporate_influence_good_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_corporate_influence_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_corporate_influence_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = USB_corporate_influence_neutral_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USB
+			check_variable = {
+				var = USB_corporate_influence_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_corporate_influence_bad_loc
+	}
+}
+
+#Agendas
+#Good Agendas
+defined_text = {
+	#United Democracy
+	name = USB_united_democracy_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = USB_united_democracy_agenda_flag
+		}
+		localization_key = USB_united_democracy_agenda_loc
+	}
+}
+
+#Bad Agendas
+defined_text = {
+	#Liberty or Death
+	name = USB_liberty_or_death_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = USB_liberty_or_death_agenda_flag
+		}
+		localization_key = USB_liberty_or_death_agenda_loc
+	}
+}
+
+defined_text = {
+	#Memories of the Past
+	name = USB_memories_of_the_past_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = USB_memories_of_the_past_agenda_flag
+		}
+		localization_key = USB_memories_of_the_past_agenda_loc
+	}
+}
+
+defined_text = { #Bloomberg enabled
+	name = USB_bloomberg_can
+	text = {
+		trigger = {
+			original_tag = USB
+			is_in_coalition_with_authoritarian_democrat = yes
+		}
+		localization_key = USB_BLMBRG_candidate_description_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USB
+			NOT = {
+				is_in_coalition_with_authoritarian_democrat = yes
+			}
+		}
+		localization_key = USB_empty_candidate_description_loc
+	}
+}
+
+defined_text = { #Yang enabled
+	name = USB_yang_can
+	text = {
+		trigger = {
+			original_tag = USB
+			OR = {
+				has_completed_focus = USB_work_with_the_innovationists
+				authoritarian_democrat > 0.08
+			}
+		}
+		localization_key = USB_YANG_candidate_description_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USB
+			NOT = {
+				OR = {
+					has_completed_focus = USB_work_with_the_innovationists
+					authoritarian_democrat > 0.08
+				}
+			}
+		}
+		localization_key = USB_empty_candidate_description_loc
+	}
+}
+defined_text = { #AOC enabled
+	name = USB_aoc_can
+	text = {
+		trigger = {
+			original_tag = USB
+			is_in_coalition_with_social_democrat = yes
+		}
+		localization_key = USB_AOC_candidate_description_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USB
+			NOT = {
+				is_in_coalition_with_social_democrat = yes
+			}
+		}
+		localization_key = USB_empty_candidate_description_loc
+	}
+}
+defined_text = { #kennedy enabled
+	name = USB_kennedy_can
+	text = {
+		trigger = {
+			original_tag = USB
+			is_in_coalition_with_conservative = yes
+		}
+		localization_key = USB_KNNDY_candidate_description_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USB
+			NOT = {
+				is_in_coalition_with_conservative = yes
+			}
+		}
+		localization_key = USB_empty_candidate_description_loc
+	}
+}
+
+defined_text = { #Libertarian Party MIN FACTION - Biden
+	name = USB_minor_faction_libertarian_party_text
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USC_libertarian_party_enabled_flag
+		}
+		localization_key = USB_minor_faction_libertarian_party_loc
+	}
+}
+
+defined_text = { #DSA MIN FACTION
+	name = USB_minor_faction_dsa_text
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_dsa_enabled_flag
+		}
+		localization_key = USB_minor_faction_dsa_loc
+	}
+}
+
+defined_text = { #Forward MIN FACTION
+	name = USB_minor_faction_forward_text
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_forward_enabled_flag
+		}
+		localization_key = USB_minor_faction_forward_loc
+	}
+}
+
+defined_text = { #Transhumanist MIN FACTION
+	name = USB_minor_faction_transhumanist_text
+	text = {
+		trigger = {
+			original_tag = USB
+			has_country_flag = USB_transhumanist_enabled_flag
+		}
+		localization_key = USB_minor_faction_transhumanist_loc
+	}
+}
+
+defined_text = {
+	name = get_ward_achilles_status
+	text = {
+		trigger = {
+			LOU = { exists = yes }
+		}
+		localization_key = "USB_ward_rebellious"
+	}
+	text = {
+		trigger = {
+			LOU = { exists = no }
+		}
+		localization_key = "USB_ward_subdued"
+	}
+}
+
+defined_text = {
+	name = get_ward_ajax_status
+	text = {
+		trigger = {
+			WAS = { exists = yes }
+		}
+		localization_key = "USB_ward_rebellious"
+	}
+	text = {
+		trigger = {
+			WAS = { exists = no }
+		}
+		localization_key = "USB_ward_subdued"
+	}
+}
+
+defined_text = {
+	name = get_ward_hector_status
+	text = {
+		trigger = {
+			HUM = { exists = yes }
+		}
+		localization_key = "USB_ward_rebellious"
+	}
+	text = {
+		trigger = {
+			HUM = { exists = no }
+		}
+		localization_key = "USB_ward_subdued"
+	}
+}
+
+defined_text = {
+	name = get_ward_odysseus_status
+	text = {
+		trigger = {
+			CLM = { exists = yes }
+		}
+		localization_key = "USB_ward_rebellious"
+	}
+	text = {
+		trigger = {
+			CLM = { exists = no }
+		}
+		localization_key = "USB_ward_subdued"
+	}
+}
+
+defined_text = {
+	name = get_ward_theseus_status
+	text = {
+		trigger = {
+			SAT = { exists = yes }
+		}
+		localization_key = "USB_ward_rebellious"
+	}
+	text = {
+		trigger = {
+			SAT = { exists = no }
+		}
+		localization_key = "USB_ward_subdued"
+	}
+}
+
+defined_text = {
+	name = get_barron_rebellion_status
+	text = {
+		trigger = {
+			NOT = { has_global_flag = USB_barron_rebellion_global }
+			USG = { exists = no }
+		}
+		localization_key = "tooltip_white_line"
+	}
+	text = {
+		trigger = {
+			USG = { exists = yes }
+		}
+		localization_key = "USB_barron_active"
+	}
+	text = {
+		trigger = {
+			has_global_flag = USB_barron_rebellion_global
+			USG = { exists = no }
+		}
+		localization_key = "USB_barron_destroyed"
+	}
+}
+
+defined_text = {
+	name = USB_NSS_the_public_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.1
+				compare = less_than
+			}
+		}
+		localization_key = USB_clueless
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.3
+				compare = less_than
+			}
+		}
+		localization_key = USB_unaware
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.3
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.5
+				compare = less_than
+			}
+		}
+		localization_key = USB_suspicious
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_conspiratorial
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_offthehook
+	}
+}
+
+defined_text = {
+	name = USB_NSS_the_public_text_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.1
+				compare = less_than
+			}
+		}
+		localization_key = USB_clueless_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.3
+				compare = less_than
+			}
+		}
+		localization_key = USB_unaware_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.3
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.5
+				compare = less_than
+			}
+		}
+		localization_key = USB_suspicious_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_conspiratorial_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_public_awareness_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_offthehook_text
+	}
+}
+
+defined_text = {
+	name = USB_NSS_extremist_activity_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.1
+				compare = less_than
+			}
+		}
+		localization_key = USB_nonexistent
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.3
+				compare = less_than
+			}
+		}
+		localization_key = USB_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.3
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.5
+				compare = less_than
+			}
+		}
+		localization_key = USB_moderate
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_high
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_outofcontrol
+	}
+}
+
+defined_text = {
+	name = USB_NSS_extremist_activity_text_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.1
+				compare = less_than
+			}
+		}
+		localization_key = USB_nonexistent_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.3
+				compare = less_than
+			}
+		}
+		localization_key = USB_low_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.3
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.5
+				compare = less_than
+			}
+		}
+		localization_key = USB_moderate_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USB_high_text
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USB_NSS_extremist_activity_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USB_outofcontrol_text
+	}
+}
+
+defined_text = {
+	name = USB_biden_health_cat_scripted_loc
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = USB_control_the_president }
+		}
+		localization_key = USB_presidential_health_category_default
+	}
+	text = {
+		trigger = {
+			has_completed_focus = USB_control_the_president
+		}
+		localization_key = USB_presidential_health_category_NSS
+	}
+}
+
+defined_text = {
+	name = USB_fighting_for_democracy_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = USB_out_of_many_one_nss }
+		}
+		localization_key = USB_fighting_for_democracy_desc_normal
+	}
+	text = {
+		trigger = {
+			has_completed_focus = USB_out_of_many_one_nss
+		}
+		localization_key = USB_fighting_for_democracy_desc_nss
+	}
+}
+
+defined_text = {
+	name = USB_reunify_the_nation_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = USB_out_of_many_one_nss }
+		}
+		localization_key = USB_reunify_the_nation_desc_normal
+	}
+	text = {
+		trigger = {
+			has_completed_focus = USB_out_of_many_one_nss
+		}
+		localization_key = USB_reunify_the_nation_desc_nss
+	}
+}
+
+defined_text = {
+	name = USB_end_the_traitors_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = USB_out_of_many_one_nss }
+		}
+		localization_key = USB_end_the_traitors_desc_normal
+	}
+	text = {
+		trigger = {
+			has_completed_focus = USB_out_of_many_one_nss
+		}
+		localization_key = USB_end_the_traitors_desc_nss
+	}
+}
+
+defined_text = {
+	name = USB_neutrality_is_complicity_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = USB_out_of_many_one_nss }
+		}
+		localization_key = USB_neutrality_is_complicity_desc_normal
+	}
+	text = {
+		trigger = {
+			has_completed_focus = USB_out_of_many_one_nss
+		}
+		localization_key = USB_neutrality_is_complicity_desc_nss
+	}
+}
+
+defined_text = {
+	name = USB_crush_the_rebels_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = USB_out_of_many_one_nss }
+		}
+		localization_key = USB_crush_the_rebels_desc_normal
+	}
+	text = {
+		trigger = {
+			has_completed_focus = USB_out_of_many_one_nss
+		}
+		localization_key = USB_crush_the_rebels_desc_nss
+	}
+}
+
+defined_text = {
+	name = USB_wef_leader_name_text
+	text = {
+		localization_key = USB_larry_fink
+	}
+}
+
+defined_text = {
+	name = USB_cia_leader_name_text
+	text = {
+		localization_key = USB_william_burns
+	}
+}
+
+defined_text = {
+	name = USB_darpa_leader_name_text
+	text = {
+		localization_key = USB_stefanie_tompkins
+	}
+}
+
+defined_text = {
+	name = USB_evidence1_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence1_flag1
+		}
+		localization_key = USB_evidence1_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence1_flag2
+		}
+		localization_key = USB_evidence1_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence1_flag3
+		}
+		localization_key = USB_evidence1_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence1_flag4
+		}
+		localization_key = USB_evidence1_loc4
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence1_flag5
+		}
+		localization_key = USB_evidence1_loc5
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence1_flag6
+		}
+		localization_key = USB_evidence1_loc6
+	}
+}
+
+defined_text = {
+	name = USB_evidence2_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence2_flag1
+		}
+		localization_key = USB_evidence1_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence2_flag2
+		}
+		localization_key = USB_evidence1_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence2_flag3
+		}
+		localization_key = USB_evidence1_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence2_flag4
+		}
+		localization_key = USB_evidence1_loc4
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence2_flag5
+		}
+		localization_key = USB_evidence1_loc5
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence2_flag6
+		}
+		localization_key = USB_evidence1_loc6
+	}
+}
+
+defined_text = {
+	name = USB_evidence3_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag1
+		}
+		localization_key = USB_evidence3_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag2
+		}
+		localization_key = USB_evidence3_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag3
+		}
+		localization_key = USB_evidence3_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag4
+		}
+		localization_key = USB_evidence3_loc4
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag5
+		}
+		localization_key = USB_evidence3_loc5
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag6
+		}
+		localization_key = USB_evidence3_loc6
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag7
+		}
+		localization_key = USB_evidence3_loc7
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag8
+		}
+		localization_key = USB_evidence3_loc8
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag9
+		}
+		localization_key = USB_evidence3_loc9
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag10
+		}
+		localization_key = USB_evidence3_loc10
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence3_flag11
+		}
+		localization_key = USB_evidence3_loc11
+	}
+}
+
+defined_text = {
+	name = USB_evidence4_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag1
+		}
+		localization_key = USB_evidence3_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag2
+		}
+		localization_key = USB_evidence3_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag3
+		}
+		localization_key = USB_evidence3_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag4
+		}
+		localization_key = USB_evidence3_loc4
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag5
+		}
+		localization_key = USB_evidence3_loc5
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag6
+		}
+		localization_key = USB_evidence3_loc6
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag7
+		}
+		localization_key = USB_evidence3_loc7
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag8
+		}
+		localization_key = USB_evidence3_loc8
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag9
+		}
+		localization_key = USB_evidence3_loc9
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag10
+		}
+		localization_key = USB_evidence3_loc10
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence4_flag11
+		}
+		localization_key = USB_evidence3_loc11
+	}
+}
+
+defined_text = {
+	name = USB_evidence5_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence5_flag1
+		}
+		localization_key = USB_evidence5_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence5_flag2
+		}
+		localization_key = USB_evidence5_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence5_flag3
+		}
+		localization_key = USB_evidence5_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence5_flag4
+		}
+		localization_key = USB_evidence5_loc4
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence5_flag5
+		}
+		localization_key = USB_evidence5_loc5
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence5_flag6
+		}
+		localization_key = USB_evidence5_loc6
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence5_flag7
+		}
+		localization_key = USB_evidence5_loc7
+	}
+}
+
+defined_text = {
+	name = USB_evidence6_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag1
+		}
+		localization_key = USB_evidence6_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag2
+		}
+		localization_key = USB_evidence6_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag3
+		}
+		localization_key = USB_evidence6_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag4
+		}
+		localization_key = USB_evidence6_loc4
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag5
+		}
+		localization_key = USB_evidence6_loc5
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag6
+		}
+		localization_key = USB_evidence6_loc6
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag7
+		}
+		localization_key = USB_evidence6_loc7
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_evidence6_flag8
+		}
+		localization_key = USB_evidence6_loc8
+	}
+}
+
+defined_text = {
+	name = USB_fire_window_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_paul_nakasone_remove_flag
+		}
+		localization_key = USB_NSA_paul_nakasone_sc
+	}
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_jeffrey_kruse_remove_flag
+		}
+		localization_key = USB_DIA_jeffrey_kruse_sc
+	}
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_james_comey_remove_flag
+		}
+		localization_key = USB_FBI_james_comey_sc
+	}
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_marvin_richardson_remove_flag
+		}
+		localization_key = USB_ATF_marvin_richardson_sc
+	}
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_anthony_fauci_remove_flag
+		}
+		localization_key = USB_CDC_anthony_fauci_sc
+	}
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_deanne_criswell_remove_flag
+		}
+		localization_key = USB_FEMA_deanne_criswell_sc
+	}
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_albert_bourla_remove_flag
+		}
+		localization_key = USB_Pfizer_albert_bourla_sc
+	}
+	text = {
+		trigger = {
+			has_country_flag = sc_USB_NSA_patrick_lechleitner_remove_flag
+		}
+		localization_key = USB_ICE_patrick_lechleitner_sc
+	}
+}
+
+defined_text = {
+	name = USB_judas_speed_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				USB_judas_speed_var_temp < 0
+			}
+		}
+		localization_key = USB_judas_accelerates_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				USB_judas_speed_var_temp > 0
+			}
+		}
+		localization_key = USB_judas_slows_down_tt
+	}
+}
+
+defined_text = {
+	name = USB_current_map_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				USB_map_var = 0
+			}
+		}
+		localization_key = USB_nabackyard_gui_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				USB_map_var = 1
+			}
+		}
+		localization_key = USB_lznostalgia_gui_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				USB_map_var = 2
+			}
+		}
+		localization_key = USB_aqtomato_gui_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				USB_map_var = 3
+			}
+		}
+		localization_key = USB_kktemple_gui_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				USB_map_var = 4
+			}
+		}
+		localization_key = USB_cxdaddy_gui_tt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				USB_map_var = 5
+			}
+		}
+		localization_key = USB_mqwallbreaker_gui_tt
+	}
+}
+
+defined_text = {
+	name = USB_NLP_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_human_trials_flag
+			has_country_flag = USB_inoculated_flag
+		}
+		localization_key = USB_complete_text
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = USB_incomplete_text
+	}
+}
+
+defined_text = {
+	name = USB_data_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_me_compiled_flag
+		}
+		localization_key = USB_compiled_text
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = USB_not_compiled_text
+	}
+}
+
+defined_text = {
+	name = USB_human_trials_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_human_trials_flag
+		}
+		localization_key = USB_complete_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = USB_trials_underway_flag
+		}
+		localization_key = USB_underway_text
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = USB_incomplete_text
+	}
+}
+
+defined_text = {
+	name = USB_nam_shub_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_enki_deciphered_flag
+		}
+		localization_key = USB_complete_text
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = USB_incomplete_text
+	}
+}
+
+defined_text = {
+	name = USB_inoculations_scripted_loc
+	text = {
+		trigger = {
+			has_country_flag = USB_inoculated_flag
+		}
+		localization_key = USB_complete_text
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = USB_incomplete_text
+	}
+}

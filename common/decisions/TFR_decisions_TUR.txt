@@ -1,0 +1,239 @@
+TUR_Proping_Up_HTS = {
+    Tur_send_Guns = {
+	
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = TUR
+	}
+	
+	available = {
+    tag = TUR
+    country_exists = HTS
+}
+	ai_will_do = {
+	    factor = 50
+	}
+	
+	cost = 75
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	days_re_enable = 100
+	
+	remove_effect = {
+	HTS = {
+	add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 1500 producer = TUR }
+	add_equipment_to_stockpile = {type = infantry_equipment_2 amount = 500 producer = TUR }
+	add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 300 producer = TUR }
+	add_equipment_to_stockpile = {type = anti_tank_equipment amount = 300 producer = TUR }
+	add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 200 producer = TUR }
+	    }
+    }
+}
+    Tur_Trucks = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = TUR
+	}
+	
+	available = {
+    tag = TUR
+    country_exists = HTS
+}
+	ai_will_do = {
+	    factor = 50
+	}
+	
+	cost = 75
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	days_re_enable = 200
+	
+	remove_effect = {
+	HTS = {
+	add_equipment_to_stockpile = {type = mechanized_equipment_1 amount = 250 producer = TUR }
+	add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 400 producer = TUR }
+	add_equipment_to_stockpile = {type = motorized_equipment amount = 500 producer = TUR }
+	    }
+	}
+}
+    TUR_Manpower = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = TUR
+	}
+	
+	available = {
+    tag = TUR
+    country_exists = HTS
+}
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 100
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	days_re_enable = 150
+	
+	remove_effect = {
+	HTS = {
+	add_manpower = 10000
+	    }
+	}
+}
+    TUR_Tanks = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = TUR
+	}
+	
+	available = {
+    tag = TUR
+    country_exists = HTS
+}
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 50
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	days_re_enable = 365
+	
+	remove_effect = {
+	HTS = {
+	add_equipment_to_stockpile = {type = modern_tank_chassis amount = 80 producer = TUR }
+	add_equipment_to_stockpile = {type = light_tank_chassis amount = 150 producer = TUR }
+	    }
+	}
+}
+    Tur_XP = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = TUR
+	}
+	
+	available = {
+    tag = TUR
+    country_exists = HTS
+}
+	ai_will_do = {
+	    factor = 50
+	}
+	
+	cost = 25
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	days_re_enable = 50
+	
+	remove_effect = {
+	HTS = {
+	army_experience = 50 
+    air_experience = 10
+	    }
+	}
+}
+    TUR_factoryies = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = TUR
+	}
+	
+	available = {
+    tag = TUR
+    country_exists = HTS
+}
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 50
+	
+	fire_only_once = no
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	days_re_enable = 250
+	
+	remove_effect = {
+	HTS = {
+	1027 = {
+                random_list = {
+                    33 = {
+                        # Option 1: Bauplatz + Zivilfabrik
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant = yes
+                        }
+                    }
+                    33 = {
+                        # Option 2: Bauplatz + Militärfabrik
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant = yes
+                        }
+                    }
+                    33 = {
+                        # Option 3: Nur Bauplatz
+                        add_extra_state_shared_building_slots = 1
+                    }
+                }
+            }
+        }
+    }
+}
+    TUR_advisors = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = TUR
+	}
+	
+	available = {
+    tag = TUR
+    country_exists = HTS
+	HTS = { has_war = yes }
+}
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 10
+	
+	fire_only_once = yes
+	cancel_if_not_visible = yes
+		
+	days_remove = 1
+	
+	remove_effect = {
+	HTS = {
+	add_ideas = LBA_turkish_support
+	    }
+	}
+}
+}

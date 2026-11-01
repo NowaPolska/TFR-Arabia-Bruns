@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		MAV_70_Million_Zloty = {
+			picture = "GFX_idea_florida_siege"
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				income_growth_factor = 0.25
+				stability_factor = -0.15
+			}
+		}
+	    MAV_Last_Reminants_of_PIS = {
+	        picture = "GFX_idea_florida_siege"
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.25
+			political_power_gain = -0.1
+			conservative_drift = 0.05
+			authoritarian_democrat_drift = 0.05
+			army_core_attack_factor = 0.1
+            army_core_defence_factor = 0.1
+            surrender_limit = 0.2
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 1176
+	name = "STATE_1176"
+	manpower = 1580241
+	state_category = village
+	
+	resources = {
+		steel = 4
+	}
+	
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	
+	provinces = {
+		3795 1600
+	}
+}

@@ -1,0 +1,135 @@
+focus_tree = {
+	id = SAU_initial_tree
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = ARR
+		}
+	}
+focus = {
+    id = ARR_Break_youre_cains_Arabs 
+	icon = GFX_focus_GER_Back_the_Arabian_Republic
+	
+	x = 10
+	y = 0
+	
+	cost = 3
+	
+	completion_reward = {
+	add_political_power = 100
+	add_stability = 0.05
+	}
+}
+focus = {
+    id = ARR_Reconnect_our_economy
+	icon = GFX_goal_generic_position_army
+	
+	x = 9
+	y = 1
+	
+	prerequisite = {
+	focus = ARR_Break_youre_cains_Arabs
+	}
+	
+	cost = 3
+	
+	completion_reward = {
+		add_ideas = { ZZZ_capitalist_economy }
+		}
+	}
+focus = {
+    id = ARR_Build_the_goverment_from_the_ground_up
+	icon = GFX_goal_generic_position_army
+	
+	x = 11
+	y = 1
+	
+	prerequisite = {
+	focus = ARR_Break_youre_cains_Arabs
+	}
+	
+	cost = 3
+	
+	completion_reward = {
+		add_ideas = { ZZZ_presidential_republic }
+			}
+		}
+focus = {
+    id = AAR_An_Militia_Army
+	icon = GFX_goal_generic_position_army
+	
+	x = 2
+	y = 2
+	
+	prerequisite = {
+    focus = ARR_Build_the_goverment_from_the_ground_up
+	}
+	prerequisite = {
+    focus = ARR_Reconnect_our_economy
+}
+	mutually_exclusive = {
+        focus = ARR_An_Profesonal_Army
+    }
+	
+	cost = 4
+	
+	completion_reward = {
+	division_template = {
+        name = "Militia"
+        priority = 1
+        regiments = {
+            militia = { x = 0 y = 0 }
+            militia = { x = 0 y = 1 }
+            militia = { x = 0 y = 2 }
+            militia = { x = 1 y = 0 }
+            militia = { x = 1 y = 1 }
+            militia = { x = 1 y = 2 }
+                }
+            }
+        } 
+    }
+focus = {
+    id = ARR_An_Profesonal_Army
+	icon = GFX_goal_generic_position_army
+	
+	x = 6
+	y = 2
+	
+	prerequisite = {
+    focus = ARR_Build_the_goverment_from_the_ground_up
+	}
+	prerequisite = {
+    focus = ARR_Reconnect_our_economy
+}
+
+mutually_exclusive = {
+        focus = AAR_An_Militia_Army
+    }
+
+    cost = 4
+	
+	completion_reward = {
+	division_template = {
+        name = "Infantry"
+        priority = 1
+        regiments = {
+            infantry = { x = 0 y = 0 }
+            infantry = { x = 0 y = 1 }
+            infantry = { x = 0 y = 2 }
+                            
+            infantry = { x = 1 y = 0 }
+            infantry = { x = 1 y = 1 }
+            infantry = { x = 1 y = 2 }
+                            
+            infantry = { x = 2 y = 0 }
+            infantry = { x = 2 y = 1 }
+            infantry = { x = 2 y = 2 }
+            }
+            support = {
+            artillery = { x = 0 y = 0 }
+                }
+			}
+		}
+	}
+}

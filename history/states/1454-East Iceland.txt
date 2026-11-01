@@ -1,0 +1,26 @@
+state={
+	id=1454
+	name="STATE_1454"
+	provinces={
+		12689 
+	}
+	resources={
+		aluminium=16.000
+		steel=4.000
+	}
+	history = {
+		owner = ICE
+		add_core_of = ICE
+		victory_points = { 12689 1 }
+		buildings = {
+			infrastructure = 2
+			energy_farm = 3
+			industrial_complex = 1
+			dockyard = 1
+		}
+	}
+	manpower=78521
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

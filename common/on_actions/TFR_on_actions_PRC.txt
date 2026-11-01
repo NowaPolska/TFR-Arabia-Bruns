@@ -1,0 +1,212 @@
+on_actions = {
+	on_pride_of_the_fleet_sunk = {
+		effect = {
+			if = {
+				limit = {
+					tag = CHI
+				}
+				PRC = {
+					set_country_flag = PRC_sunk_taiwan_pride_of_fleet
+					country_event = {
+						id = china.230
+						days = 1
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			PRC = {
+				set_temp_variable = { 
+					var = PRC_influence_cen_var_temp
+					value = 0.4
+				}
+				PRC_add_influence_cen = yes	
+				set_temp_variable = { 
+					var = PRC_influence_lib_var_temp
+					value = 0.15
+				}
+				PRC_add_influence_lib = yes	
+				set_temp_variable = { 
+					var = PRC_influence_nat_var_temp
+					value = 0.25
+				}
+				PRC_add_influence_nat = yes	
+				set_temp_variable = { 
+					var = PRC_influence_new_var_temp
+					value = 0.15
+				}
+				PRC_add_influence_new = yes	
+			}
+			1200 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			1210 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			1216 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			1223 = {
+				add_extra_state_shared_building_slots = 6
+			}
+			1420 = {
+				add_extra_state_shared_building_slots = 6
+			}
+			622 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = pan_asian_war_ongoing
+					PRC = {
+						has_country_flag = PRC_nationalist_win
+						surrender_progress > 0.2
+					}
+				}
+				PRC = {
+					country_event = china.1031
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 1148
+					}
+					OR = {
+						FROM = { state = CHI }
+						FROM = { state = PRC }
+					}
+					OR = {
+						ROOT = { state = CHI }
+						ROOT = { state = PRC }
+					}
+				}
+				random_list = {
+					50 = {
+						modifier = {
+							factor = 0
+							OR = {
+								has_game_rule = {
+									rule = Taiwan_gov_fate
+									option = CHI_nocapture_Taiwan_gov
+								}
+							}
+						}
+						set_country_flag = PRC_taiwanese_government_captured
+					}
+					50 = {
+						modifier = {
+							factor = 0
+							OR = {
+								has_game_rule = {
+									rule = Taiwan_gov_fate
+									option = PRC_capture_Taiwan_gov
+								}
+							}
+						}
+						clr_country_flag = PRC_taiwanese_government_captured
+					}
+				}
+			}
+			if = { #GAW_militia_jap2
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 530
+							state = 529
+						} 
+					}
+					OR = {
+						FROM = { tag = PRC}
+						FROM = { tag = JAP }
+					}
+					OR = {
+						ROOT = { tag = PRC }
+						ROOT = { tag = JAP }
+					}
+					NOT = {
+						JAP = {
+							has_country_flag = GAW_militia_jap2_flag
+						}
+					}
+				}
+				JAP = {
+					load_oob = GAW_militia_jap2
+					set_country_flag = GAW_militia_jap2_flag
+				}
+			}
+			if = { #GAW_militia_jap3
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 532
+							state = 535
+						} 
+					}
+					OR = {
+						FROM = { tag = PRC}
+						FROM = { tag = JAP }
+					}
+					OR = {
+						ROOT = { tag = PRC }
+						ROOT = { tag = JAP }
+					}
+					NOT = {
+						JAP = {
+							has_country_flag = GAW_militia_jap3_flag
+						}
+					}
+				}
+				JAP = {
+					load_oob = GAW_militia_jap3
+					set_country_flag = GAW_militia_jap3_flag
+				}
+			}
+
+			if = { #retardbuddy
+				limit = {
+					has_global_flag = PRC_ongoing_taiwan_war
+					FROM.FROM = { 
+						OR = {
+							region = 154
+							region = 94
+							region = 99
+							region = 71
+							region = 156
+							region = 193
+							region = 194
+							region = 195
+						}
+					}
+					OR = {
+						FROM = { tag = PRC}
+						FROM = { tag = JAP }
+						FROM = { tag = AST }
+					}
+					OR = {
+						ROOT = { tag = PRC }
+						ROOT = { tag = JAP }
+						ROOT = { tag = AST }
+					}
+					NOT = {
+						PRC = {
+							has_idea = PRC_fatal_mistake
+						}
+					}
+					PRC = {
+						is_ai = no
+					}
+				}
+				PRC = {
+					country_event = china.666
+				}
+			}
+		}
+	}
+}

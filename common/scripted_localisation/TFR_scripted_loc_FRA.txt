@@ -1,0 +1,349 @@
+	defined_text = {
+		name = get_FRA_Military_Loyalty
+		
+		text = { 
+			trigger = {
+				FRA = {
+					has_idea = FRA_Questionable_Military_Loyalty_idea
+				}
+			}
+			localization_key = "FRA_Questionable_Military_scrip_loc"
+		}
+		text = { 
+			trigger = {
+				FRA = {
+					has_idea = FRA_Disloyal_Military_idea
+				}
+			}
+			localization_key = "FRA_Disloyal_Military_scrip_loc"
+		}
+		text = { 
+			trigger = {
+				FRA = {
+					has_idea = FRA_Disloyal_Military_Zemmour_idea
+				}
+			}
+			localization_key = "FRA_Zemmour_Military_scrip_loc"
+		}
+	}
+	defined_text = {
+		name = FRA_COVID_loc
+		
+		text = { 
+			trigger = {
+				OR = {
+					has_idea = FRA_covid_idea_1
+					has_idea = FRA_covid_idea_2
+					has_idea = FRA_covid_idea_3
+					has_idea = FRA_covid_idea_4
+					has_idea = FRA_covid_idea_5
+				}
+				NOT = {
+					has_country_flag = FRA_dealt_with_coronavirus
+					has_country_flag = FRA_Created_Vaccine
+				}
+			}
+			localization_key = "FRA_COVID_spreading_loc"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					has_idea = FRA_covid_idea_1
+					has_idea = FRA_covid_idea_2
+					has_idea = FRA_covid_idea_3
+					has_idea = FRA_covid_idea_4
+					has_idea = FRA_covid_idea_5
+				}
+				OR = {
+					has_country_flag = FRA_dealt_with_coronavirus
+					has_country_flag = FRA_Created_Vaccine
+					has_completed_focus = FRA_develop_immunity
+				}
+			}
+			localization_key = "FRA_COVID_dying_loc"
+		}
+		text = { 
+			trigger = {
+				has_idea = FRA_covid_curing
+				OR = {
+					has_country_flag = FRA_dealt_with_coronavirus
+					has_country_flag = FRA_Created_Vaccine
+					has_completed_focus = FRA_push_for_mass_vaccinations
+				}
+			}
+			localization_key = "FRA_COVID_being_cured_loc"
+		}
+		text = { 
+			trigger = {
+				NOT = {
+					has_idea = FRA_covid_curing
+					has_idea = FRA_covid_idea_1
+					has_idea = FRA_covid_idea_2
+					has_idea = FRA_covid_idea_3
+					has_idea = FRA_covid_idea_4
+					has_idea = FRA_covid_idea_5
+				}
+			}
+			localization_key = "FRA_COVID_gone_loc"
+		}
+	}
+	defined_text = {
+		name = FRA_YVP_loc
+		
+		text = { 
+			trigger = {
+				NOT = {
+					has_idea = FRA_yellow_vests_idea
+					has_idea = FRA_yellow_vests_idea_1
+					has_idea = FRA_yellow_vests_idea_2
+					has_idea = FRA_yellow_vests_idea_3
+					has_idea = FRA_yellow_vests_idea_4
+				}
+			}
+			localization_key = "FRA_YV_dealt_with_loc"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					has_idea = FRA_yellow_vests_idea
+					has_idea = FRA_yellow_vests_idea_1
+				}
+			}
+			localization_key = "FRA_YV_minor_loc"
+		}
+		text = { 
+			trigger = {
+				OR = {
+					has_idea = FRA_yellow_vests_idea_2
+					has_idea = FRA_yellow_vests_idea_3
+				}
+			}
+			localization_key = "FRA_YV_major_loc"
+		}
+		text = { 
+			trigger = {
+				has_idea = FRA_yellow_vests_idea_4
+			}
+			localization_key = "FRA_YV_debilitating_loc"
+		}
+	}
+	defined_text = {
+		name = FRA_Empower_the_Young_Jacobins_loc
+		
+		text = { 
+			trigger = {
+				FRA = {
+					has_country_flag = FRA_melenchon_candidate
+				}
+			}
+			localization_key = "FRA_Empower_the_Young_Jacobins_melenchon"
+		}
+		text = { 
+			trigger = {
+				FRA = {
+					has_country_flag = FRA_faure_candidate
+				}
+			}
+			localization_key = "FRA_Empower_the_Young_Jacobins_faure"
+		}
+		text = { 
+			trigger = {
+				FRA = {
+					has_country_flag = FRA_ruffin_candidate
+				}
+			}
+			localization_key = "FRA_Empower_the_Young_Jacobins_ruffin"
+		}
+	}
+	defined_text = { #Progressive Allignment
+		name = GetBlackArmyXP
+		text = { #Green
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.3
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_experience_green_loc
+		}
+		
+		text = { #experienced
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.3
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.5
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_experience_trained_loc
+		}
+		text = { #veteran
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.5
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.7
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_experience_regular_loc
+		}
+		
+		text = { #veteran
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.7
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.9
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_experience_seasoned_loc
+		}
+		
+		text = { #expert
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 0.9
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_experience_var
+					value = 1
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_experience_veteran_loc
+		}
+	}
+	defined_text = { #Size
+		name = GetBlackArmySize
+		text = { #8  - 1 for half of states, 11 - 3 motorized
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.1
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_size_8_loc
+		}
+		
+		text = { #experienced - 2 for half of states, 22 - 7 motorized
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.3
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_size_16_loc
+		}
+		text = { #experienced - 3 for half of states, 33 - 11 motorized
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.3
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.5
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_size_24_loc
+		}
+		text = { #2 for everystate 44 - 14 motorized
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.5
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.7
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_size_32_loc
+		}
+		text = { #3 for every state 66 - 22 motorized
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.7
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.8
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_size_40_loc
+		}
+		text = { #3 for every state - larger combat width - 66 - 22 motorized-tank division
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.8
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.9
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_size_48_loc
+		}
+		text = { #4 for every state - larger combat width - 88 -  22 motorized-tank division
+			trigger = {
+				original_tag = FPR
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 0.9
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = FPR_black_army_size_var
+					value = 1
+					compare = less_than
+				}
+			}
+			localization_key = FPR_black_army_size_56_loc
+		}
+	}

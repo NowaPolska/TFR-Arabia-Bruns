@@ -1,0 +1,22 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+		if = { #First Iran Iraq War 
+			limit = {
+				OR = {
+					FROM.FROM = { state = 413 }
+					FROM.FROM = { state = 1327 }
+				}
+					FROM = { tag = PER }
+					
+					ROOT = { tag = BUK }
+				}
+
+				BUK = {
+					country_event = { id = iraq.8 }
+				}
+			}
+		}
+	}
+}
+

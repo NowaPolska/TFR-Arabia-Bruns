@@ -1,0 +1,19 @@
+state={
+	id=1448
+	name="STATE_1448"
+	history = {
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 13207 1 }
+	}
+	provinces={
+		13207
+	}
+	manpower=33574
+	buildings_max_level_factor=0.500
+	state_category = village
+	local_supplies=0.000
+}

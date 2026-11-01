@@ -1,0 +1,17 @@
+#SAU_army_loyalty_modifier = {
+    #enable = { 
+		#always = yes 
+	#}	
+    #army_attack_factor = SAU_loyalty_army_mod
+   # army_defence_factor = SAU_loyalty_army_mod
+    #experience_gain_army_factor = SAU_loyalty_exp_mod
+#}
+#
+#SAU_public_opinion_modifier = {
+    #enable = { 
+		#always = yes 
+	#}	
+  # stability_factor = SAU_opinion_stability_mod
+   #war_support_factor = SAU_opinion_war_support_mod
+   #political_power_factor = SAU_opinion_pp_mod
+#}

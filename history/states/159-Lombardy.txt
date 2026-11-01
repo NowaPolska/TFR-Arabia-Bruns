@@ -1,0 +1,28 @@
+state = {
+	id = 159
+	name = "STATE_159"
+	manpower = 6520000
+	state_category = suburb
+	
+	resources = {
+		#steel = 43
+	}
+	
+	history = {
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = LOM
+		victory_points = { 11568 3 }
+		victory_points = { 14983 2 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 3
+		}
+	}
+	
+	provinces = {
+		607 773 969 3776 6661 9584 11568 11587 11734 14983
+	}
+}

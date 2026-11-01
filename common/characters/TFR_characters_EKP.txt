@@ -1,0 +1,27 @@
+characters={
+	EKP_Salah_Adli_char = {
+	    name = "Salah Adli"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/EKP/Salah_Adli.png"
+			}
+			army={
+				large= "gfx/Leaders/EKP/Salah_Adli.png"
+			}
+		}
+		country_leader={
+			ideology = marxism_leninism
+			expire="1.1.1.1"
+			id=-1
+		}
+		can_be_captured = no
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+}

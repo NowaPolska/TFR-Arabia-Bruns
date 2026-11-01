@@ -1,0 +1,124 @@
+scripted_gui = {
+
+	TFR_no_international_faction_icon = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "no_faction_icon_container"
+
+		ai_enabled = {
+			always = no
+		}
+	
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = SOV_ADS_member_flag
+					has_country_flag = SOV_brics_member_flag
+					has_country_flag = JAP_PEC_member_flag
+					is_in_faction_with = USA
+					has_country_flag = NATO_current_leader
+				}
+			}
+		}
+	}
+	
+	TFR_ads_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "ads_button_container"
+
+		ai_enabled = {
+			always = no
+		}
+	
+		visible = {
+			has_country_flag = SOV_ADS_member_flag
+		}
+
+		triggers = {
+			TFR_ads_button_visible = {
+				NOT = {
+					
+				}
+			}
+			TFR_ads_button_click_enabled = {
+				NOT = {
+					ROOT = { has_country_flag = ads_list_open }
+				}
+			}
+		}
+
+		effects = {
+			TFR_ads_button_click = {
+				add_to_array = { ROOT.ads_list_array = SOV }
+				for_each_loop = {
+					array = SOV.SOV_ads_members
+					if = {
+						limit = {
+							NOT = { is_in_array = { ROOT.ads_list_array = v } }
+						}
+						add_to_array = { ROOT.ads_list_array = v }
+					}
+				}
+				ROOT = {
+					set_variable = { ads_leader = SOV }
+					set_country_flag = ads_list_open
+				}
+			}
+		}
+	}
+
+	ads_list = {
+		context_type = player_context
+		window_name = "ads_list_window"
+		dirty = ads_list_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = ads_list_open
+		}
+
+		dynamic_lists = {
+			ads_tags_grid = {
+				array = ads_list_array
+				change_scope = yes
+
+				entry_container = ads_member_entry
+			}
+		}
+
+		triggers = {
+			major_country_overlay_visible = {
+				check_variable = { ROOT.ads_leader = THIS }
+			}
+		}
+
+		effects = {
+			button_close_click = {
+				for_each_scope_loop = {
+					array = ROOT.ads_list_array
+				}
+				clear_array = ROOT.ads_list_array
+				clear_variable = ROOT.ads_leader
+				clr_country_flag = ads_list_open
+			}
+			
+		}
+
+		properties = {
+			economic_sphere_icon = {
+				image = "[GetNatoIcon]"
+			}
+			country_flag = {
+				image = "[This.GetFlag]"
+			}
+			economic_sphere_bonus_icon = {
+				image = "" #WIP
+			}
+		}
+	}
+}
+

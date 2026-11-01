@@ -1,0 +1,31 @@
+state={
+	id=1420
+	name="STATE_1420"
+	manpower = 7172451
+	state_category = large_town
+	
+	resources={
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			dockyard = 5
+			power_plant = 1
+			10000 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			10000 12 
+		}
+	}
+
+	provinces={
+		10000
+	}
+}

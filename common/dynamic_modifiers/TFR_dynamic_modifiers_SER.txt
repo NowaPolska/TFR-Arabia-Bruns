@@ -1,0 +1,113 @@
+	
+	SER_sps_opposition_dynamic = {
+	
+		enable = { 
+			tag = SER
+		}
+		
+		political_power_factor = SER_sps_opposition_var
+		stability_factor = SER_sps_opposition_var
+	}
+	
+	SER_reconstructing_yugoslavia_dynamic = {
+	icon = GFX_idea_SER_reconstructing_yugoslavia
+		enable = { 
+			tag = SER
+		}
+		
+		political_power_factor = SER_reconstructing_yugoslavia_political_power_factor_var
+		political_power_gain = SER_reconstructing_yugoslavia_political_power_gain_var
+		stability_factor = SER_reconstructing_yugoslavia_stability_factor_var
+		war_support_factor = SER_reconstructing_yugoslavia_war_support_factor_var
+		war_stability_factor = SER_reconstructing_yugoslavia_war_stability_factor_var
+		production_factory_efficiency_gain_factor = SER_reconstructing_yugoslavia_production_factory_efficiency_gain_factor_var
+		resistance_activity = SER_reconstructing_yugoslavia_resistance_activity_var
+		production_speed_buildings_factor = SER_reconstructing_yugoslavia_production_speed_buildings_factor_var
+		army_morale_factor = SER_reconstructing_yugoslavia_army_morale_factor_var
+		tax_personal_rate = SER_reconstructing_yugoslavia_tax_personal_rate_var
+		personal_expense_factor = SER_reconstructing_yugoslavia_personal_expense_factor_var
+		industrial_capacity_factory = SER_reconstructing_yugoslavia_industrial_capacity_factory_var
+		business_value_factor = SER_reconstructing_yugoslavia_business_value_var
+		tax_business_rate = SER_reconstructing_yugoslavia_tax_business_rate_var
+		local_resources_factor = SER_reconstructing_yugoslavia_local_resources_factor_var
+		poverty_development_monthly = SER_reconstructing_yugoslavia_poverty_development_monthly_var
+		society_development_monthly = SER_reconstructing_yugoslavia_society_development_monthly_var
+		academic_development_monthly = SER_reconstructing_yugoslavia_academic_development_monthly_var
+		party_popularity_stability_factor  = SER_reconstructing_yugoslavia_party_popularity_stability_factor_var
+		communist_drift = SER_reconstructing_yugoslavia_communist_drift_var
+		totalitarian_socialist_drift = SER_reconstructing_yugoslavia_totalitarian_socialist_drift_var
+		head_minister_cost_factor = SER_reconstructing_yugoslavia_head_minister_cost_factor_var
+		economic_minister_cost_factor = SER_reconstructing_yugoslavia_economic_minister_cost_factor_var
+		foreign_minister_cost_factor = SER_reconstructing_yugoslavia_foreign_minister_cost_factor_var
+	}
+	
+	SER_reconstructing_yugoslavia2_dynamic = {
+	icon = GFX_idea_SER_reconstructing_yugoslavia_2
+		enable = { 
+			tag = SER
+		}
+		
+		political_power_factor = SER_reconstructing_yugoslavia_political_power_factor_var
+		political_power_gain = SER_reconstructing_yugoslavia_political_power_gain_var
+		stability_factor = SER_reconstructing_yugoslavia_stability_factor_var
+		war_support_factor = SER_reconstructing_yugoslavia_war_support_factor_var
+		personal_expense_factor = SER_reconstructing_yugoslavia_personal_expense_factor_var
+		industrial_capacity_factory = SER_reconstructing_yugoslavia_industrial_capacity_factory_var
+		war_stability_factor = SER_reconstructing_yugoslavia_war_stability_factor_var
+		production_factory_efficiency_gain_factor = SER_reconstructing_yugoslavia_production_factory_efficiency_gain_factor_var
+		resistance_activity = SER_reconstructing_yugoslavia_resistance_activity_var
+		tax_personal_rate = SER_reconstructing_yugoslavia_tax_personal_rate_var
+		business_value_factor = SER_reconstructing_yugoslavia_business_value_var
+		local_resources_factor = SER_reconstructing_yugoslavia_local_resources_factor_var
+		army_morale_factor = SER_reconstructing_yugoslavia_army_morale_factor_var
+		poverty_development_monthly = SER_reconstructing_yugoslavia_poverty_development_monthly_var
+		society_development_monthly = SER_reconstructing_yugoslavia_society_development_monthly_var
+		academic_development_monthly = SER_reconstructing_yugoslavia_academic_development_monthly_var
+		party_popularity_stability_factor  = SER_reconstructing_yugoslavia_party_popularity_stability_factor_var
+		communist_drift = SER_reconstructing_yugoslavia_communist_drift_var
+		totalitarian_socialist_drift = SER_reconstructing_yugoslavia_totalitarian_socialist_drift_var
+		head_minister_cost_factor = SER_reconstructing_yugoslavia_head_minister_cost_factor_var
+		economic_minister_cost_factor = SER_reconstructing_yugoslavia_economic_minister_cost_factor_var
+		foreign_minister_cost_factor = SER_reconstructing_yugoslavia_foreign_minister_cost_factor_var
+	}
+	SER_leader_of_balkans_dynamic = {
+	icon = GFX_idea_SER_Hegemon_of_Balkans
+		enable = { 
+			tag = SER
+		}
+		
+		political_power_factor = SER_leader_of_balkans_political_power_factor_var
+		political_power_gain = SER_leader_of_balkans_political_power_gain_var
+		stability_factor = SER_leader_of_balkans_stability_factor_var
+		war_stability_factor = SER_leader_of_balkans_war_stability_factor_var
+		production_factory_efficiency_gain_factor = SER_leader_of_balkans_production_factory_efficiency_gain_factor_var
+		resistance_activity = SER_leader_of_balkans_resistance_activity_var
+		army_morale_factor = SER_leader_of_balkans_army_morale_factor_var
+		poverty_development_monthly = SER_leader_of_balkans_poverty_development_monthly_var
+		society_development_monthly = SER_leader_of_balkans_society_development_monthly_var
+		academic_development_monthly = SER_leader_of_balkans_academic_development_monthly_var
+		party_popularity_stability_factor  = SER_leader_of_balkans_party_popularity_stability_factor_var
+		conservative_drift = SER_leader_of_balkans_conservative_drift_var
+		authoritarian_democrat_drift = SER_leader_of_balkans_authoritarian_democrat_drift_var
+		head_minister_cost_factor = SER_leader_of_balkans_head_minister_cost_factor_var
+		economic_minister_cost_factor = SER_leader_of_balkans_economic_minister_cost_factor_var
+		foreign_minister_cost_factor = SER_leader_of_balkans_foreign_minister_cost_factor_var
+	}
+	
+	SER_UCK_terrorism = {
+		icon = GFX_modifiers_UCK_terror
+		
+		enable = { 
+			always = yes
+		}
+	    remove_trigger = {
+			has_global_flag = SER_destroy_albanian_n
+		}
+		
+		local_resources_factor = -0.05
+		compliance_gain = -0.05
+		resistance_growth = 0.05
+		local_manpower = -0.15
+		state_production_speed_buildings_factor = -0.01
+	    local_factory_sabotage = 0.25
+	}

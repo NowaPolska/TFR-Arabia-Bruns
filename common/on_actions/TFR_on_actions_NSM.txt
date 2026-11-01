@@ -1,0 +1,54 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			NSM = {
+				add_dynamic_modifier = {
+					modifier = NSM_our_cause_dynamic
+				}
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			if = { #Michigan Victory
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						original_tag = NSM
+					}
+					FROM = {
+						OR = {
+							original_tag = MIM
+							original_tag = HWM
+							original_tag = BMF
+							original_tag = HUM
+						}
+					}
+					NOT = {
+						country_exists = MIM
+						country_exists = HWM
+						country_exists = BMF
+						country_exists = HUM
+					}
+				}
+				country_event = {
+					id = nsm.26
+				}
+			}
+			if = { #Total Commie Death
+				limit = {
+					ROOT = {
+						original_tag = NSM
+					}
+					FROM = {
+						original_tag = BOA
+					}
+				}
+				country_event = {
+					id = nsm.32
+				}
+			}
+		}
+	}
+}
+

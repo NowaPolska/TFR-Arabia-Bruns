@@ -1,0 +1,399 @@
+micro_andorra = {
+	icon = GFX_modifiers_micro_andorra
+	
+	enable = { 
+		OR = {
+			FRA = {
+				controls_state = 1447
+			}
+			FAF = {
+				controls_state = 1447
+			}
+		}
+	}
+	remove_trigger = {
+		OR = {
+			SPR = {
+				has_war = yes
+			}
+			AND = {
+				FRA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+		}
+	}
+	state_resources_factor = 0.15
+	local_factories = 0.1
+	local_building_slots = 1
+	state_production_speed_buildings_factor = 0.05
+	local_supplies = 0.05
+}
+micro_san_marino = {
+	icon = GFX_modifiers_micro_san_marino
+	
+	enable = { 
+		ITA = {
+			controls_state = 1448
+		}
+	}
+	remove_trigger = {
+		OR = {
+			ITA = {
+				THIS = {
+					is_controlled_by_ROOT_or_ally = no
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	recruitable_population_factor = 0.05
+	state_resources_factor = 0.1
+	state_production_speed_buildings_factor = 0.05
+	local_supplies = 0.75
+	local_building_slots = 1
+}
+micro_vatican_city = {
+	icon = GFX_modifiers_micro_vatican
+	
+	enable = { 
+		ITA = {
+			controls_state = 1449
+		}
+	}
+	remove_trigger = {
+		OR = {
+			AND = {
+				ITA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	disable_strategic_redeployment = 1
+	local_intel_to_enemies = -0.3
+	local_building_slots = -5
+	recruitable_population_factor = -1
+}
+micro_vatican_vacant = {
+	icon = GFX_modifiers_micro_vatican
+	
+	enable = { 
+		ITA = {
+			controls_state = 1449
+		}
+	}
+	remove_trigger = {
+		OR = {
+			AND = {
+				ITA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	disable_strategic_redeployment = 1
+	local_intel_to_enemies = -0.3
+	local_building_slots = -5
+	recruitable_population_factor = -1
+}
+micro_vatican_tagle = {
+	icon = GFX_modifiers_micro_vatican
+	
+	enable = { 
+		ITA = {
+			controls_state = 1449
+		}
+	}
+	remove_trigger = {
+		OR = {
+			AND = {
+				ITA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	disable_strategic_redeployment = 1
+	local_intel_to_enemies = -0.3
+	local_building_slots = -5
+	recruitable_population_factor = -1
+}
+micro_vatican_prevost = {
+	icon = GFX_modifiers_micro_vatican
+	
+	enable = { 
+		ITA = {
+			controls_state = 1449
+		}
+	}
+	remove_trigger = {
+		OR = {
+			AND = {
+				ITA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	disable_strategic_redeployment = 1
+	local_intel_to_enemies = -0.3
+	local_building_slots = -5
+	recruitable_population_factor = -1
+}
+micro_vatican_erdo = {
+	icon = GFX_modifiers_micro_vatican
+	
+	enable = { 
+		ITA = {
+			controls_state = 1449
+		}
+	}
+	remove_trigger = {
+		OR = {
+			AND = {
+				ITA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	disable_strategic_redeployment = 1
+	local_intel_to_enemies = -0.3
+	local_building_slots = -5
+	recruitable_population_factor = -1
+}
+micro_vatican_sarah = {
+	icon = GFX_modifiers_micro_vatican
+	
+	enable = { 
+		ITA = {
+			controls_state = 1449
+		}
+	}
+	remove_trigger = {
+		OR = {
+			AND = {
+				ITA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	disable_strategic_redeployment = 1
+	local_intel_to_enemies = -0.3
+	local_building_slots = -5
+	recruitable_population_factor = -1
+}
+micro_vatican_escada = {
+	icon = GFX_modifiers_micro_vatican
+	
+	enable = { 
+		OR = {
+			ITA = {
+				controls_state = 1449
+			}
+			FAF = {
+				controls_state = 1449
+			}			
+		}
+	}
+	remove_trigger = {
+		OR = {
+			AND = {
+				ITA = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+				FAF = {
+					THIS = {
+						is_controlled_by_ROOT_or_ally = no
+					}
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+		}
+	}
+	disable_strategic_redeployment = 1
+	local_intel_to_enemies = -0.3
+	local_building_slots = -5
+	recruitable_population_factor = -1
+}
+micro_liechtenstein = {
+	icon = GFX_modifiers_micro_liechtenstein
+	
+	enable = { 
+		SWI = {
+			controls_state = 1450
+		}
+	}
+	remove_trigger = {
+		OR = {
+			SWI = {
+				THIS = {
+					is_controlled_by_ROOT_or_ally = no
+				}
+			}
+			SWI = {
+				has_government = communist
+			}
+			SWI = {
+				has_government = totalitarian_socialist
+			}
+			GER = {
+				OR = {
+					has_government = libertarian_socialist
+					has_government = communist
+					has_government = totalitarian_socialist
+				}
+				controls_state = 153
+			}
+		}
+	}
+	state_resources_factor = 0.1
+	local_building_slots = 2
+	local_supplies = 0.1
+	mobilization_speed = 0.03
+    recruitable_population_factor = 0.03
+}
+micro_malta = {
+	icon = GFX_modifiers_micro_malta
+	
+	enable = { 
+		OR = {
+			FRA = {
+				controls_state = 116
+				NOT = {
+					OR = {
+						has_government = communist
+						has_government = totalitarian_socialist
+					}
+				}
+			}
+			ITA = {
+				controls_state = 116
+			}
+		}
+	}
+	remove_trigger = {
+		OR = {
+			ITA = {
+				THIS = {
+					is_controlled_by_ROOT_or_ally = no
+				}
+			}
+			ITA = {
+				has_government = communist
+			}
+			ITA = {
+				has_government = totalitarian_socialist
+			}
+			FPR = {
+				THIS = {
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+	}
+	local_building_slots = -2
+	local_supplies = 0.1
+    state_production_speed_bunker_factor = 0.05
+	state_production_speed_coastal_bunker_factor = 0.05
+    enemy_attrition = 0.10
+}

@@ -1,0 +1,28 @@
+	soundeffect = {
+		name = "TFR_se_sau_nuke_sevent"
+		sounds = {
+			sound = TFR_se_sau_nuke_sevent
+		}
+		volume = 5.0
+	}
+    soundeffect = {
+		name = "TFR_sau_arab_unifed"
+		sounds = {
+			sound = TFR_sau_arab_unifed
+		}
+		volume = 5.0
+	}
+    soundeffect = {
+		name = "TFR_sau_nationalist"
+		sounds = {
+			sound = TFR_sau_nationalist
+		}
+		volume = 5.0
+	}
+	soundeffect = {
+		name = "TFR_sau_unif"
+		sounds = {
+			sound = TFR_sau_unif
+		}
+		volume = 4.0
+	}

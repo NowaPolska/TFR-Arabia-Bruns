@@ -1,0 +1,418 @@
+defined_text = { #Election Decision Category Enabled
+	name = GetPoliticalEnable
+	text = {
+		trigger = {
+			original_tag = USA
+			OR = {
+				has_country_flag = USA_sided_with_trump_flag
+				has_country_flag = USA_sided_with_resistance_flag
+			}
+		}
+		localization_key = USA_political_enable_loc
+	}
+}
+	
+defined_text = { 
+	name = GetCurrentLeader
+	text = {
+		trigger = {
+			original_tag = USA
+			NOT = {
+				OR = {
+					has_country_flag = USA_sided_with_trump_flag
+					has_country_flag = USA_sided_with_resistance_flag
+				}
+			}
+		}
+		localization_key = USA_sided_neither_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		localization_key = USA_sided_resistance_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		localization_key = USA_sided_trump_loc
+	}
+}
+	
+defined_text = { 
+	name = GetFullStateName
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_northern_texas_state = yes
+			}
+		}
+		localization_key = USA_reintegrate_959_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_southern_texas_state = yes
+			}
+		}
+		localization_key = USA_southern_texas_state_loc
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_new_mexico_state
+			}
+		}
+		localization_key = USA_reintegrate_1183_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_arizona_state
+			}
+		}
+		localization_key = USA_reintegrate_983_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_nevada_state
+			}
+		}
+		localization_key = USA_reintegrate_1097_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_utah_state
+			}
+		}
+		localization_key = USA_reintegrate_1100_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_colorado_state
+			}
+		}
+		localization_key = USA_reintegrate_1142_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_montana_state
+			}
+		}
+		localization_key = USA_reintegrate_388_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_idaho_state
+			}
+		}
+		localization_key = USA_reintegrate_387_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_oklahoma_state
+			}
+		}
+		localization_key = USA_reintegrate_1236_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_iowa_state
+			}
+		}
+		localization_key = USA_reintegrate_1134_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_nebraska_state
+			}
+		}
+		localization_key = USA_reintegrate_1237_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_minnesota_state
+			}
+		}
+		localization_key = USA_reintegrate_1243_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_wisconsin_state
+			}
+		}
+		localization_key = USA_reintegrate_394_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_tennessee_state = yes
+			}
+		}
+		localization_key = USA_reintegrate_1248_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_ohio_state
+			}
+		}
+		localization_key = USA_reintegrate_1246_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_oregon_state
+			}
+		}
+		localization_key = USA_reintegrate_385_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_northern_california_state = yes
+			}
+		}
+		localization_key = USA_northern_california_state_loc
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_southern_california_state = yes
+			}
+		}
+		localization_key = USA_southern_california_state_loc
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_washington_state
+			}
+		}
+		localization_key = USA_reintegrate_386_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_wyoming_state
+			}
+		}
+		localization_key = USA_reintegrate_1143_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_michigan_state
+			}
+		}
+		localization_key = USA_reintegrate_1073_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_missouri_state
+			}
+		}
+		localization_key = USA_reintegrate_1071_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_illinois_state
+			}
+		}
+		localization_key = USA_reintegrate_1119_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_dakota_state = yes
+			}
+		}
+		localization_key = USA_dakota_state_loc
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_pennsylvania_state
+			}
+		}
+		localization_key = USA_reintegrate_360_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_vermont_state
+			}
+		}
+		localization_key = USA_reintegrate_793_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_massachusetts_state
+			}
+		}
+		localization_key = USA_reintegrate_357_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_connecticut_state
+			}
+		}
+		localization_key = USA_reintegrate_795_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_virginia_state
+			}
+		}
+		localization_key = USA_reintegrate_1070_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_indiana_state
+			}
+		}
+		localization_key = USA_reintegrate_1151_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_kentucky_state
+			}
+		}
+		localization_key = USA_reintegrate_1000_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_north_carolina_state
+			}
+		}
+		localization_key = USA_reintegrate_363_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_south_carolina_state
+			}
+		}
+		localization_key = USA_reintegrate_1024_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_georgia_state = yes
+			}
+		}
+		localization_key = USA_reintegrate_1017_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_alabama_state
+			}
+		}
+		localization_key = USA_reintegrate_1013_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_mississippi_state
+			}
+		}
+		localization_key = USA_reintegrate_1009_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_arkansas_state
+			}
+		}
+		localization_key = USA_reintegrate_372_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_kansas_state
+			}
+		}
+		localization_key = USA_reintegrate_1133_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_louisiana_state
+			}
+		}
+		localization_key = USA_reintegrate_978_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_florida_state
+			}
+		}
+		localization_key = USA_reintegrate_936_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_new_york_city_state = yes
+			}
+		}
+		localization_key = USA_new_york_city_state_loc
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_upstate_new_york_state = yes
+			}
+		}
+		localization_key = USA_upstate_new_york_state_loc
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_new_hampshire_state
+			}
+		}
+		localization_key = USA_reintegrate_794_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_state_flag = USA_maine_state
+			}
+		}
+		localization_key = USA_reintegrate_792_decision
+	}
+	text = {
+		trigger = {
+			FROM = {
+				USA_is_navajo_state = yes
+			}
+		}
+		localization_key = USA_navajo_state_loc
+	}
+	text = {
+		localization_key = USA_reintegrate_FROM_decision
+	}
+}

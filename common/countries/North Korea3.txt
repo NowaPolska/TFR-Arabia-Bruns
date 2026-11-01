@@ -1,0 +1,6 @@
+
+
+graphical_culture = PRK
+graphical_culture_2d = PRK
+
+color = { 176 178  119 }

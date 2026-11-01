@@ -1,0 +1,15 @@
+characters={
+	FIR_reza_pahlavi_char = {
+	    name = "Reza Pahlavi"
+		portraits={
+				civilian={
+					large = "gfx/Leaders/FIR/reza_pahlavi.png"
+				}
+			}
+		country_leader={
+			ideology = supervised_democracy
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

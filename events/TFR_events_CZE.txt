@@ -1,0 +1,38 @@
+###########################
+# czech events
+###########################
+add_namespace = czech
+
+#2023 presidental elections
+country_event = {
+	id = czech.1
+	title = czech.1.t
+	desc = czech.1.d
+	picture = GFX_Generic_Fight_Jet
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = CZE
+	}
+	option = {  #PETER
+		name = czech.1.a
+		retire_country_leader = yes
+		recruit_character = CZE_Petr_Pavel_char
+		promote_character = CZE_Petr_Pavel_char
+	}
+	option = { #Babis sigma
+	    name = czech.1.b
+		recruit_character = CZE_Andrej_babis_char
+		promote_character = CZE_Andrej_babis_char
+		set_politics = {
+				ruling_party = conservative
+				last_election = "2023.1.28"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.25
+        }
+	}
+}

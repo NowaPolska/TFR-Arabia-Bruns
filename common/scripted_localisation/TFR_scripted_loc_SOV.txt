@@ -1,0 +1,6652 @@
+	defined_text = {
+		name = get_election_choice
+		
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+				    	character = SOV_vladimir_putin
+				    	ruling_only = yes
+				    }
+				}
+			}
+			localization_key = "supporting_putin"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+					    has_country_leader = {
+							character = SOV_vladimir_putin
+							ruling_only = yes
+				        }
+					}
+					NOT = { has_country_flag = SOV_sided_with_cprf_flag }
+					NOT = { has_country_flag = SOV_sided_with_ldpr_flag }
+					NOT = { has_country_flag = SOV_sided_with_medvedev_flag }
+				}
+			}
+			localization_key = "supporting_none"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_cprf_flag
+				}
+			}
+			localization_key = "supporting_cprf"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_ldpr_flag
+				}
+			}
+			localization_key = "supporting_ldpr"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_eurasia_flag
+				}
+			}
+			localization_key = "supporting_ep"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_medvedev_flag
+				}
+			}
+			localization_key = "supporting_ur"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_navalny_flag
+				}
+			}
+			localization_key = "supporting_rf"
+		}
+	}
+	
+	defined_text = {
+		name = get_vilnius_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 96
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 96
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 96
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_kiev_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 1285
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 1285
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 1285
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_minsk_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 206
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 206
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 206
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_warsaw_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 855
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 855
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 855
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_budapest_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 854
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 854
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 854
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_bucharest_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 835
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 835
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 835
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_odessa_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 192
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 192
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 192
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_riga_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 12
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 12
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 12
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_krakow_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 88
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 88
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 88
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_donetsk_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 227
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 227
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 227
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_rostov_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 853
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 853
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 853
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_sevastopol_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 1059
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 1059
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 1059
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	defined_text = {
+		name = get_kaliningrad_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 741
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 741
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 741
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}	
+	
+	defined_text = {
+		name = get_berlin_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 1378
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 1378
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 1378
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+
+	defined_text = {
+		name = get_paris_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 16
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 16
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 16
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_london_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 126
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 126
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 126
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_rome_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 2
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 2
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 2
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_frankfurt_status
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 55
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 55
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 55
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_amsterdam_status_sov
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 7
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 7
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 7
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_strasbourg_status_sov
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 800
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 800
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 800
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_venice_status_sov
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 160
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 160
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 160
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_prague_status_sov
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 9
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 9
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 9
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_milan_status_sov
+		text = {
+			trigger = {
+				FROM = {
+					controls_state = 1492
+				}
+			}
+			localization_key = "our_control"
+		}
+		text = {
+			trigger = {
+				OR = {
+					any_country = {
+						is_ally_with = SOV
+						controls_state = 1492
+					}
+				}
+			}
+			localization_key = "friendly_control"
+		}
+		text = {
+			trigger = {
+				any_country = {
+					NOT = {
+						is_ally_with = SOV
+					}
+					controls_state = 1492
+				}
+			}
+			localization_key = "enemy_control"
+		}
+	}
+	
+	defined_text = {
+		name = get_british_nuke_status
+
+		text = { 
+			trigger = {
+				ENG = {
+					has_country_flag = activated_nuke_arsenal
+				}
+			}
+			localization_key = "ENG_nukes_activated"
+		}
+	}
+	
+	defined_text = {
+		name = get_french_nuke_status
+
+		text = { 
+			trigger = {
+				FRA = {
+					has_country_flag = activated_nuke_arsenal
+				}
+			}
+			localization_key = "FRA_nukes_activated"
+		}
+	}
+	
+	defined_text = {
+		name = get_russia_nuke_status
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = activated_nuke_arsenal
+				}
+			}
+			localization_key = "SOV_nukes_activated"
+		}
+	}
+	
+	defined_text = {
+		name = get_german_nuke_status
+
+		text = { 
+			trigger = {
+				GER = {
+					has_country_flag = activated_nuke_arsenal
+				}
+			}
+			localization_key = "GER_nukes_activated"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_mali_status
+
+		text = { 
+			trigger = {
+				MLI = {
+					has_government = nationalist
+				}
+			}
+			localization_key = "SOV_mali_status_yes"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_burkina_faso_status
+
+		text = {
+			trigger = {
+				VOL = {
+					has_government = nationalist
+					has_country_leader = {
+						character = VOL_Ibrahim_Traore_char
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_burkina_faso_status_yes"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_senegal_status
+
+		text = {
+			trigger = {
+				SEN = {
+					has_country_leader = {
+						character = SEN_Bassirou_Diomaye_Faye
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_senegal_status_yes"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_guinea_status
+
+		text = {
+			trigger = {
+				GNA = {
+					has_country_leader = {
+						character = GNA_Mamady_Doumbouya_char
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_guinea_status_yes"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_GNB_status
+
+		text = {
+			trigger = {
+				GNB = {
+					has_country_leader = {
+						character = GNB_umaro_sissoco_embalo_char
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_gnb_status_yes"
+		}
+	}
+	
+	defined_text = {
+		name = soviet_parliament
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_authsoc_parliament
+				}
+			}
+			localization_key = "SOV_supreme_soviet"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_libsoc_parliament
+				}
+			}
+			localization_key = "SOV_congress_of_peoples_deputies"
+		}
+	}
+	
+	defined_text = {
+		name = soviet_parliament_desc
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_authsoc_parliament
+				}
+			}
+			localization_key = "SOV_supreme_soviet_desc"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_libsoc_parliament
+				}
+			}
+			localization_key = "SOV_congress_of_peoples_deputies_desc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_union_state_co_chairman
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_union_state_co_chairman_lukashenko
+				}
+			}
+			localization_key = "SOV_union_state_co_chairman_lukashenko_1"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_union_state_co_chairman_lukashenko_1
+				}
+			}
+			localization_key = "SOV_union_state_co_chairman_lukashenko_2"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_union_state_co_chairman_kanapatskaya
+				}
+			}
+			localization_key = "SOV_union_state_co_chairman_kanapatskaya_loc"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_union_state_co_chairman_romanov
+				}
+			}
+			localization_key = "SOV_union_state_co_chairman_romanov_loc"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_union_state_co_chairman_ulakhovich
+				}
+			}
+			localization_key = "SOV_union_state_co_chairman_ulakhovich_loc"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_union_state_co_chairman_lukashenko_son
+				}
+			}
+			localization_key = "SOV_union_state_co_chairman_lukashenko_son_loc"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_union_state_co_chairman_empty
+				}
+			}
+			localization_key = "SOV_union_state_co_chairman_empty_idea"
+		}
+		text = {
+			localization_key = "SOV_union_state_co_chairman_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_duma_gui
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_chair_volodin
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_duma_chairman_volodin"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_chair_boyarsky
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_duma_chairman_boyarsky"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_chair_gordeev
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_duma_chairman_gordeev"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_chair_makarevich
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_duma_chairman_makarevich"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_chair_aksenenko
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_duma_chairman_aksenenko"
+		}		
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_chair_drapeko
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_duma_chairman_drapeko"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_chair_plyakin
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_duma_chairman_plyakin"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_nadezhdin_late_game_gui
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_nadezhdin_party_idea
+					NOT = { has_country_flag = SOV_onf_active_flag }
+				}
+			}
+			localization_key = "SOV_nadezhdin_party_loc"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_onf_gui
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_admin_kuznetsov
+					has_country_flag = SOV_onf_active_flag
+				}
+			}
+			localization_key = "SOV_onf_administrator_kuznetsov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_admin_yarovaya
+					has_country_flag = SOV_onf_active_flag
+				}
+			}
+			localization_key = "SOV_onf_administrator_yarovaya"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_admin_gromov
+					has_country_flag = SOV_onf_active_flag
+				}
+			}
+			localization_key = "SOV_onf_administrator_gromov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_admin_peskov
+					has_country_flag = SOV_onf_active_flag
+				}
+			}
+			localization_key = "SOV_onf_administrator_peskov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_admin_vayno
+					has_country_flag = SOV_onf_active_flag
+				}
+			}
+			localization_key = "SOV_onf_administrator_vayno"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_onf_political_advisor
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_pol_advisor_scholnik
+				}
+			}
+			localization_key = "SOV_onf_political_advisor_scholnik"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_pol_advisor_butina
+				}
+			}
+			localization_key = "SOV_onf_political_advisor_butina"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_pol_advisor_kosachev
+				}
+			}
+			localization_key = "SOV_onf_political_advisor_kosachev"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_pol_advisor_primakov
+				}
+			}
+			localization_key = "SOV_onf_political_advisor_primakov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_pol_advisor_isaev
+				}
+			}
+			localization_key = "SOV_onf_political_advisor_isaev"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_onf_youth_advisor
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_youth_advisor_potupchik_idea
+				}
+			}
+			localization_key = "SOV_onf_youth_advisor_potupchik"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_youth_advisor_nagorny_idea
+				}
+			}
+			localization_key = "SOV_onf_youth_advisor_nagorny"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_youth_advisor_demidov_idea
+				}
+			}
+			localization_key = "SOV_onf_youth_advisor_demidov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_youth_advisor_pavlyuchenkova_idea
+				}
+			}
+			localization_key = "SOV_onf_youth_advisor_pavlyuchenkova"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_youth_advisor_tranenko_idea
+				}
+			}
+			localization_key = "SOV_onf_youth_advisor_tranenko"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_onf_economic_advisor
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_eco_advisor_ryazansky
+				}
+			}
+			localization_key = "SOV_onf_economic_advisor_ryazansky"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_eco_advisor_komissarov
+				}
+			}
+			localization_key = "SOV_onf_economic_advisor_komissarov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_eco_advisor_kogogin
+				}
+			}
+			localization_key = "SOV_onf_economic_advisor_kogogin"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_eco_advisor_kiriyenko
+				}
+			}
+			localization_key = "SOV_onf_economic_advisor_kiriyenko"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_onf_eco_advisor_krasov
+				}
+			}
+			localization_key = "SOV_onf_economic_advisor_krasov"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ur_head_gui
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_ur_neverov
+				}
+			}
+			localization_key = "SOV_ur_head_neverov"
+		}			
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_ur_vasiliev
+				}
+			}
+			localization_key = "SOV_ur_head_vasiliev"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_ur_valyev
+				}
+			}
+			localization_key = "SOV_ur_head_valyev"
+		}		
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_ur_tolstoy
+				}
+			}
+			localization_key = "SOV_ur_head_tolstoy"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_cprf_head_gui
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_cprf_zyuganov
+				}
+			}
+			localization_key = "SOV_cprf_head_zyuganov"
+		}			
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_cprf_afonin
+				}
+			}
+			localization_key = "SOV_cprf_head_afonin"
+		}		
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_cprf_kalashnikov
+				}
+			}
+			localization_key = "SOV_cprf_head_kalashnikov"
+		}	
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_jr_head_gui
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_jr_mironov
+				}
+			}
+			localization_key = "SOV_jr_head_mironov"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_srzp_mironov
+				}
+			}
+			localization_key = "SOV_jr_head_mironov_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_people_russia_mironov
+				}
+			}
+			localization_key = "SOV_jr_head_mironov_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_people_russia_delyagin
+				}
+			}
+			localization_key = "SOV_jr_head_delyagin"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_people_russia_prilepin
+				}
+			}
+			localization_key = "SOV_jr_head_prilepin"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_people_russia_kabyshev
+				}
+			}
+			localization_key = "SOV_jr_head_kabyshev"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_people_russia_lantratova
+				}
+			}
+			localization_key = "SOV_jr_head_lantratova"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_people_russia_tatarinov
+				}
+			}
+			localization_key = "SOV_jr_head_tatarinov"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_minor_parties_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_controlled_right_opposition
+				}
+			}
+			localization_key = "SOV_controlled_rw_opposition"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_controlled_left_opposition
+				}
+			}
+			localization_key = "SOV_controlled_lw_opposition"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_minor_parties_1_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_controlled_liberal_opposition
+				}
+			}
+			localization_key = "SOV_controlled_lib_opposition"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ldpr_head_gui
+
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_ldpr_zhirinovsky
+				}
+			}
+			localization_key = "SOV_ldpr_head_zhirinovsky"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_ldpr_slutsky
+				}
+			}
+			localization_key = "SOV_ldpr_head_slutsky"
+		}		
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_ldpr_slutsky_1
+				}
+			}
+			localization_key = "SOV_ldpr_head_slutsky_1"
+		}	
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_new_people_head_gui
+
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_new_people_nechaev
+				}
+			}
+			localization_key = "SOV_new_people_head_nechaev"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_new_russia_nechaev
+				}
+			}
+			localization_key = "SOV_new_russia_head_nechaev"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_rascals_of_the_system_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rascals_enabled_flag
+				}
+			}
+			localization_key = "SOV_rascals_inside_the_system"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_new_russia_head_gui
+
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_new_people_nechaev_1
+				}
+			}
+			localization_key = "SOV_new_people_head_nechaev_1"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_national_russia_head_gui
+
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_nat_russia_alikhanov
+				}
+			}
+			localization_key = "SOV_duma_derzhros_alikhanov"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_red_russia_head_gui
+
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_red_russia_suraykin
+				}
+			}
+			localization_key = "SOV_duma_redrus_suraykin"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_duma_red_russia_malinkovich
+				}
+			}
+			localization_key = "SOV_duma_redrus_malinkovich"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_kremlin_towers
+
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_siloviki_idea
+				}
+			}
+			localization_key = "SOV_kremlin_tower_siloviki"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_neo_tsarists_idea
+				}
+			}
+			localization_key = "SOV_kremlin_tower_neo_tsarists"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_state_liberals_idea
+				}
+			}
+			localization_key = "SOV_kremlin_tower_state_lib"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_technocrats_idea
+				}
+			}
+			localization_key = "SOV_kremlin_tower_technocrats"
+		}
+		text = {
+			localization_key = "SOV_kremlin_tower_none"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_oligarchs_gui
+
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_oligarch_support_dynamic
+					}
+					NOT = { has_country_flag = SOV_medve_oligarchs_disabled }
+				}
+			}
+			localization_key = "SOV_oligarch_otstup"
+		}
+		text = {
+			localization_key = "SOV_oligarch_none"
+		}
+	}		
+	
+	defined_text = {
+		name = SOV_integralist_score_loc
+
+		text = {
+			trigger = {
+				is_in_array = {
+					array = SOV_factions_onf
+					value = FRA.id
+				}
+			}
+			localization_key = "SOV_integralist_score_text"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_national_patriots_score_loc
+
+		text = {
+			trigger = {
+				is_in_array = {
+					array = SOV_factions_onf
+					value = BOL.id
+				}
+			}
+			localization_key = "SOV_national_patriots_score_text"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_left_statists_score_loc
+
+		text = {
+			trigger = {
+				is_in_array = {
+					array = SOV_factions_onf
+					value = BRA.id
+				}
+			}
+			localization_key = "SOV_left_statists_score_text"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_reformers_score_loc
+
+		text = {
+			trigger = {
+				is_in_array = {
+					array = SOV_factions_onf
+					value = ARG.id
+				}
+			}
+			localization_key = "SOV_reformers_score_text"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_picture_russia_state_machine
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_duma_active_flag
+				}
+			}
+			localization_key = "SOV_background_duma"
+		}
+		text = {
+			localization_key = "SOV_background_onf"
+		}
+	}
+	
+	defined_text = {
+		name = belarus_unification
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_annexed_belarus
+				}
+			}
+			localization_key = "SOV_further_integration"
+		}
+		text = {
+			trigger = {
+				BLR = {
+					NOT = {
+						has_country_flag = SOV_annexed_belarus
+					}
+					NOT = {
+						has_country_flag = BLR_maidan
+					}
+				}
+			}
+			localization_key = "SOV_belarus_unification"
+		}
+		text = {
+			trigger = {
+				BLR = {
+					NOT = {
+						has_country_flag = SOV_annexed_belarus
+					}
+				    has_country_flag = BLR_maidan
+			    }
+			}
+			localization_key = "SOV_belarus_operation"
+		}
+	}	
+	
+	defined_text = {
+		name = belarus_unification_desc
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_annexed_belarus
+				}
+			}
+			localization_key = "SOV_further_integration_desc"
+		}
+		text = {
+			trigger = {
+				BLR = {
+					NOT = {
+						has_country_flag = SOV_annexed_belarus
+					}
+					NOT = {
+						has_country_flag = BLR_maidan
+					}
+				}
+			}
+			localization_key = "SOV_belarus_unification_desc"
+		}
+		text = {
+			trigger = {
+				BLR = {
+					NOT = {
+						has_country_flag = SOV_annexed_belarus
+					}
+				    has_country_flag = BLR_maidan
+			    }
+			}
+			localization_key = "SOV_belarus_operation_desc"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_soft_decommunization_scripted_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_derzhavnik_smenovekhovtsy_flag
+				}
+			}
+			localization_key = "SOV_soft_decommunization_2"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_derzhavnik_smenovekhovtsy_flag
+					}
+				}
+			}
+			localization_key = "SOV_soft_decommunization_1"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_soft_decommunization_scripted_loc_desc
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_derzhavnik_smenovekhovtsy_flag
+				}
+			}
+			localization_key = "SOV_soft_decommunization_desc_1"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_derzhavnik_smenovekhovtsy_flag
+					}
+				}
+			}
+			localization_key = "SOV_soft_decommunization_desc_2"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_slutsky_path_focus_1
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_yuneman_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_loc_1"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_girkin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_loc_2"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rogozin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_loc_3"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_pushilin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_loc_5"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rpss_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_loc_6"
+		}	
+		text = {
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = SOV_yuneman_won
+						has_country_flag = SOV_girkin_won
+						has_country_flag = SOV_rogozin_won
+						has_country_flag = SOV_pushilin_won
+						has_country_flag = SOV_rpss_won
+					}
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_loc_4"
+		}
+	}		
+	
+	defined_text = {
+		name = SOV_slutsky_path_focus_desc_1
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_yuneman_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_desc_1"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_girkin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_desc_2"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rogozin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_desc_3"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_pushilin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_desc_5"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rpss_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_desc_6"
+		}	
+		text = {
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = SOV_yuneman_won
+						has_country_flag = SOV_girkin_won
+						has_country_flag = SOV_rogozin_won
+						has_country_flag = SOV_pushilin_won
+						has_country_flag = SOV_rpss_won
+					}
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_1_desc_4"
+		}
+	}		
+	defined_text = {
+		name = SOV_slutsky_path_focus_2
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rpss_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_loc_6"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_pushilin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_loc_5"
+		}		
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_yuneman_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_loc_4"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_girkin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_loc_3"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rogozin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_loc_2"
+		}	
+		text = {
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = SOV_yuneman_won
+						has_country_flag = SOV_girkin_won
+						has_country_flag = SOV_rogozin_won
+						has_country_flag = SOV_pushilin_won
+						has_country_flag = SOV_rpss_won
+					}
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_loc_1"
+		}
+	}
+	defined_text = {
+		name = SOV_slutsky_path_focus_desc_1
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_yuneman_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_desc_4"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_girkin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_desc_3"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rogozin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_desc_2"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_pushilin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_desc_5"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rpss_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_desc_6"
+		}	
+		text = {
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = SOV_yuneman_won
+						has_country_flag = SOV_girkin_won
+						has_country_flag = SOV_rogozin_won
+						has_country_flag = SOV_pushilin_won
+						has_country_flag = SOV_rpss_won
+					}
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_2_desc_1"
+		}
+	}
+	defined_text = {
+		name = SOV_slutsky_path_focus_3
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rpss_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_loc_6"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_pushilin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_loc_5"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_yuneman_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_loc_4"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_girkin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_loc_3"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rogozin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_loc_2"
+		}
+		text = {
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = SOV_yuneman_won
+						has_country_flag = SOV_girkin_won
+						has_country_flag = SOV_rogozin_won
+						has_country_flag = SOV_pushilin_won
+						has_country_flag = SOV_rpss_won
+					}
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_loc_1"
+		}
+	}	
+	defined_text = {
+		name = SOV_slutsky_path_focus_desc_1
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_yuneman_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_desc_4"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_girkin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_desc_3"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rogozin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_desc_2"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_pushilin_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_desc_5"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rpss_won
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_desc_6"
+		}	
+		text = {
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = SOV_yuneman_won
+						has_country_flag = SOV_girkin_won
+						has_country_flag = SOV_rogozin_won
+						has_country_flag = SOV_pushilin_won
+						has_country_flag = SOV_rpss_won
+					}
+				}
+			}
+			localization_key = "SOV_slutsky_path_focus_3_desc_1"
+		}
+	}
+	defined_text = {
+		name = ldpr_zhir_focus_scripted_loc_name
+
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { 
+						OR = {
+							has_country_flag = SOV_bout_zhir_flag 
+							has_country_flag = SOV_starovoitov_zhir_flag 
+						}
+					}
+				}
+			}
+			localization_key = "SOV_youth_recruitment_drive_1"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_bout_zhir_flag
+				}
+			}
+			localization_key = "SOV_youth_recruitment_drive_2"
+		}		
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_starovoitov_zhir_flag
+				}
+			}
+			localization_key = "SOV_youth_recruitment_drive_3"
+		}
+	}
+	defined_text = {
+		name = ldpr_zhir_focus_scripted_loc_desc
+
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { 
+						OR = {
+							has_country_flag = SOV_bout_zhir_flag 
+							has_country_flag = SOV_starovoitov_zhir_flag 
+						}
+					}
+				}
+			}
+			localization_key = "SOV_youth_recruitment_drive_desc_1"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_bout_zhir_flag
+				}
+			}
+			localization_key = "SOV_youth_recruitment_drive_desc_2"
+		}		
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_starovoitov_zhir_flag
+				}
+			}
+			localization_key = "SOV_youth_recruitment_drive_desc_3"
+		}
+	}	
+	defined_text = {
+		name = ldpr_zhir_focus_1_scripted_loc_name
+
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { has_country_flag = SOV_starovoitov_zhir_flag }
+				}
+			}
+			localization_key = "SOV_party_popular_media_1"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_starovoitov_zhir_flag
+				}
+			}
+			localization_key = "SOV_party_popular_media_2"
+		}
+	}
+	defined_text = {
+		name = ldpr_zhir_focus_1_scripted_loc_desc
+
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { has_country_flag = SOV_starovoitov_zhir_flag }
+				}
+			}
+			localization_key = "SOV_party_popular_media_desc_1"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_starovoitov_zhir_flag
+				}
+			}
+			localization_key = "SOV_party_popular_media_desc_2"
+		}
+	}
+	defined_text = {
+		name = SOV_new_oligarchs_scripted_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_able_to_refuse_oligarchs_flag
+				}
+			}
+			localization_key = "SOV_refuse_new_oligarchs"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_able_to_refuse_oligarchs_flag
+					}
+				}
+			}
+			localization_key = "SOV_cannot_refuse_new_oligarchs"
+		}
+	}
+	defined_text = {
+		name = SOV_refine_the_constitution
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_constitution_russian_voting_good
+				}
+			}
+			localization_key = "SOV_reinforce_putin_constitution"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_constitution_russian_voting_good
+					}
+				}
+			}
+			localization_key = "SOV_refine_the_constitution_loc"
+		}
+	}	
+	defined_text = {
+		name = SOV_anti_alikhanov_opposition_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_anti_alikhanov_opposition_enabled_flag
+				}
+			}
+			localization_key = "SOV_anti_alikhanov_opposition_enabled_loc"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_anti_alikhanov_opposition_enabled_flag
+					}
+				}
+			}
+			localization_key = "SOV_anti_alikhanov_opposition_disabled_loc"
+		}
+	}
+	defined_text = {
+		name = navalny_fake_focus_loc
+
+		text = {
+			trigger = {
+				has_global_flag = SOV_nav_cucked
+			}
+			localization_key = "SOV_real_nav_focus"
+		}
+		text = {
+			trigger = {
+			    NOT =  { has_global_flag = SOV_nav_cucked }
+			}
+			localization_key = "SOV_fake_nav_focus"
+		}
+	}	
+	defined_text = {
+		name = SOV_afganistan_focus_medvedev
+
+		text = {
+			trigger = {
+				OR = {
+					has_country_flag = SOV_PRC_afghanistan_treaty
+					has_completed_focus = SOV_true_multipolarity
+				}
+			}
+			localization_key = "SOV_afganistan_focus_medvedev_friends"
+		}
+		text = {
+			trigger = {
+			    NOT = {
+					OR = {
+						has_country_flag = SOV_PRC_afghanistan_treaty
+						has_completed_focus = SOV_true_multipolarity
+					}
+				}
+			}
+			localization_key = "SOV_afganistan_focus_medvedev_enemy"
+		}
+	}
+	defined_text = {
+		name = SOV_afganistan_focus_communist
+
+		text = {
+			trigger = {
+				has_country_flag = SOV_PRC_afghanistan_treaty
+			}
+			localization_key = "SOV_afganistan_focus_communist_friends"
+		}
+		text = {
+			trigger = {
+			    NOT = {
+					has_country_flag = SOV_PRC_afghanistan_treaty
+				}
+			}
+			localization_key = "SOV_afganistan_focus_communist_enemy"
+		}
+	}
+	defined_text = {
+		name = srzp_alliance
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_cprf_flag
+				}
+			}
+			localization_key = "SOV_cprf_srzp_union"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_medvedev_flag
+				}
+			}
+			localization_key = "SOV_ur_srzp_deal"
+		}
+	}
+	defined_text = {
+		name = SOV_oligarch_tooltip
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_2
+				}
+			}
+			localization_key = "SOV_peoples_entrepreneurs_tooltip"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_1
+				}
+			}
+			localization_key = "SOV_red_directors_tooltip"
+		}	
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "SOV_nav_oligarchs_tooltip"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						has_completed_focus = SOV_developed_socialism
+						has_completed_focus = SOV_adapt_to_chinese_socialism
+						has_country_flag = SOV_navalny_oligarchs_enabled_flag
+					}
+				}
+			}
+			localization_key = "SOV_usual_oligarch_tooltip"
+		}
+	}	
+	defined_text = {
+		name = SOV_just_russia_rating_tooltip
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_srzp_merged_flag
+				}
+			}
+			localization_key = "SOV_srzp_rating_tooltip"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { has_country_flag = SOV_srzp_merged_flag }
+				}
+			}
+			localization_key = "SOV_sr_rating_tooltip"
+		}
+	}	
+	defined_text = {
+		name = SOV_navalich_oligarchs_scripted_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "SOV_navalich_oligarchs_enabled_loc"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { has_country_flag = SOV_navalny_oligarchs_enabled_flag }
+				}
+			}
+			localization_key = "SOV_navalich_oligarchs_disabled_loc"
+		}
+	}	
+	defined_text = {
+		name = SOV_sr_party_name_dynamic
+
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_srzp_merged_flag
+				}
+			}
+			localization_key = "SOV_srzp_merged_party_dynamic"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { has_country_flag = SOV_srzp_merged_flag }
+				}
+			}
+			localization_key = "SOV_sr_normal_party_dynamic"
+		}
+	}	
+	defined_text = {
+		name = SOV_sr_support_loc_dynamic
+
+		text = {
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_flag = SOV_cprf_srzp_alliance
+						has_country_flag = SOV_UR_JR_alliance
+					}
+				}
+			}
+			localization_key = "SOV_sr_support_loc_1_dynamic"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { 
+						OR = {
+							has_country_flag = SOV_cprf_srzp_alliance 
+							has_country_flag = SOV_UR_JR_alliance 
+						}
+					}
+				}
+			}
+			localization_key = "SOV_sr_support_loc_2_dynamic"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_LRD_activity_scripted_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					OR = {
+						has_idea = SOV_league_of_russian_democracy_0_idea
+						has_idea = SOV_league_of_russian_democracy_idea
+						has_idea = SOV_league_of_russian_democracy_2_idea
+						has_idea = SOV_league_of_russian_democracy_3_idea
+						has_idea = SOV_league_of_russian_democracy_4_idea
+					}
+				}
+			}
+			localization_key = "SOV_lrd_active_dynamic"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { 
+						OR = {
+							has_idea = SOV_league_of_russian_democracy_0_idea
+							has_idea = SOV_league_of_russian_democracy_idea
+							has_idea = SOV_league_of_russian_democracy_2_idea
+							has_idea = SOV_league_of_russian_democracy_3_idea
+							has_idea = SOV_league_of_russian_democracy_4_idea
+						}
+					}
+				}
+			}
+			localization_key = "SOV_lrd_eliminated_dynamic"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_TNR_activity_scripted_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					OR = {
+						has_idea = SOV_the_new_restoration_idea
+						has_idea = SOV_the_new_restoration_2_idea
+						has_idea = SOV_the_new_restoration_3_idea
+						has_idea = SOV_the_new_restoration_4_idea
+					}
+				}
+			}
+			localization_key = "SOV_tnr_active_dynamic"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { 
+						OR = {
+							has_idea = SOV_the_new_restoration_idea
+							has_idea = SOV_the_new_restoration_2_idea
+							has_idea = SOV_the_new_restoration_3_idea
+							has_idea = SOV_the_new_restoration_4_idea
+						}
+					}
+				}
+			}
+			localization_key = "SOV_tnr_eliminated_dynamic"
+		}
+	}
+	defined_text = {
+		name = SOV_zhir_oligarch_mechanic_loc
+
+		text = {
+			trigger = {
+				SOV = {
+					OR = {
+						has_completed_focus = SOV_transform_oligarchy
+						has_completed_focus = SOV_annihilate_parasitic_elements
+						has_country_flag = SOV_zhir_oligarchs_disabled
+					}
+				}
+			}
+			localization_key = "SOV_zhir_oligarch_disabled"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { 
+						OR = {
+							has_completed_focus = SOV_transform_oligarchy
+							has_completed_focus = SOV_annihilate_parasitic_elements
+							has_country_flag = SOV_zhir_oligarchs_disabled
+						}
+					}
+				}
+			}
+			localization_key = "SOV_zhir_oligarch_enabled"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_political_power_gain_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_political_power_gain_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_political_power_gain_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_political_power_gain_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_political_power_gain_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_non_core_manpower_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_non_core_manpower_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_non_core_manpower_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_non_core_manpower_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_non_core_manpower_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_mobilization_speed_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_mobilization_speed_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_mobilization_speed_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_mobilization_speed_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_mobilization_speed_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_conscription_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_conscription_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_conscription_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_conscription_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_conscription_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_stability_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_stability_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_stability_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_stability_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_stability_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_party_popularity_stability_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_party_popularity_stability_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_party_popularity_stability_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_party_popularity_stability_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_party_popularity_stability_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_army_attack_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_army_attack_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_army_attack_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_army_attack_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_army_attack_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_army_defence_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_army_defence_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_army_defence_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_army_defence_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_army_defence_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_trade_opinion_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_trade_opinion_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_trade_opinion_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_trade_opinion_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_trade_opinion_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_compliance_growth_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_compliance_growth_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_compliance_growth_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_compliance_growth_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_compliance_growth_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_army_attack_against_major_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_army_attack_against_major_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_army_attack_against_major_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_army_attack_against_major_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_army_attack_against_major_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_army_defence_against_major_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_army_defence_against_major_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_army_defence_against_major_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_army_defence_against_major_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_army_defence_against_major_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_business_value_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_business_value_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_business_value_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_business_value_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_business_value_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_personal_value_factor_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_personal_value_factor_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_personal_value_factor_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_personal_value_factor_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_personal_value_factor_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_society_development_monthly_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_society_development_monthly_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_society_development_monthly_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_society_development_monthly_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_society_development_monthly_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_totalitarian_socialist_acceptance_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_totalitarian_socialist_acceptance_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_totalitarian_socialist_acceptance_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_totalitarian_socialist_acceptance_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_totalitarian_socialist_acceptance_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_libertarian_socialist_acceptance_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_libertarian_socialist_acceptance_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_libertarian_socialist_acceptance_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_libertarian_socialist_acceptance_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_libertarian_socialist_acceptance_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_social_democrat_acceptance_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_social_democrat_acceptance_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_social_democrat_acceptance_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_social_democrat_acceptance_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_social_democrat_acceptance_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_social_liberal_acceptance_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_social_liberal_acceptance_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_social_liberal_acceptance_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_social_liberal_acceptance_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_social_liberal_acceptance_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_authoritarian_democrat_acceptance_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_authoritarian_democrat_acceptance_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_authoritarian_democrat_acceptance_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_authoritarian_democrat_acceptance_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_authoritarian_democrat_acceptance_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_communist_drift_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_communist_drift_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_communist_drift_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_communist_drift_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_communist_drift_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_libertarian_socialist_drift_var_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_communist_party_libertarian_socialist_drift_var = 0 }
+				}
+			}
+			localization_key = "SOV_communist_party_libertarian_socialist_drift_var_text_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						check_variable = { SOV_communist_party_libertarian_socialist_drift_var = 0 }
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_libertarian_socialist_drift_var_text_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_ideology_loc
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_renewed_program
+				}
+			}
+			localization_key = "SOV_communist_party_ideology_loc_renewed_program"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_course_continuation
+				}
+			}
+			localization_key = "SOV_communist_party_ideology_loc_course_continuation"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_back_to_revolutionary_roots
+				}
+			}
+			localization_key = "SOV_communist_party_ideology_loc_back_to_revolutionary_roots"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_pragmatic_approach
+				}
+			}
+			localization_key = "SOV_communist_party_ideology_loc_pragmatic_approach"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_reinvent_democracy
+				}
+			}
+			localization_key = "SOV_communist_party_ideology_loc_reinvent_democracy"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_guarantor_of_stability
+				}
+			}
+			localization_key = "SOV_communist_party_ideology_loc_guarantor_of_stability"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_new_public_dialogue
+				}
+			}
+			localization_key = "SOV_communist_party_ideology_loc_new_public_dialogue"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_election_date_loc
+		
+		text = { 
+			trigger = {
+				always = yes #YES!!!
+			}
+			localization_key = "SOV_election_date"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_gosplan_idea_tooltip_loc
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_gosplan_idea
+				}
+			}
+			localization_key = "SOV_gosplan_idea_tooltip_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ACCTU_idea_tooltip_loc
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_ACCTU_idea_1
+				}
+			}
+			localization_key = "SOV_ACCTU_idea_tooltip_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_ACCTU_idea_2
+				}
+			}
+			localization_key = "SOV_ACCTU_idea_tooltip_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_madeinussr_idea_tooltip_loc
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_made_in_USSR_strong
+				}
+			}
+			localization_key = "SOV_madeinussr_idea_tooltip_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_economic_sovereignty_tooltip_loc
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_idea = SOV_economic_sovereignty_idea
+				}
+			}
+			localization_key = "SOV_economicsovereignity_idea_tooltip_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_leaders_rashkin_trait
+		
+		text = { 
+			trigger = {
+				SOV_valery_rashkin = {
+					has_trait = hos_scandalous_reformer 
+				}
+			}
+			localization_key = "SOV_party_leaders_rashkin_trait_1"
+		}
+		text = { 
+			trigger = {
+				SOV_valery_rashkin = {
+					has_trait = hos_lenin_of_xxi_century
+				}
+			}
+			localization_key = "SOV_party_leaders_rashkin_trait_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_portrait_rashkin
+		
+		text = { 
+			trigger = {
+				has_global_flag = SOV_first_nato_war_victory
+			}
+			localization_key = "SOV_rashkin_portrait_2"
+		}
+		text = { 
+			trigger = {
+				NOT = {
+					has_global_flag = SOV_first_nato_war_victory
+				}
+			}
+			localization_key = "SOV_rashkin_portrait_1"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_leaders_name_loc
+		
+		text = {
+			trigger = {
+				tag = SOV
+				has_country_flag = SOV_zyuganov_supreme_soviet_leader_flag
+				NOT = {
+					has_completed_focus = SOV_first_soviet_election
+				}
+			}
+			localization_key = "SOV_party_leaders_zyuganov_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				OR = {
+					AND = {
+						has_country_flag = SOV_afonin_supreme_soviet_leader_flag
+						NOT = {
+							has_completed_focus = SOV_first_soviet_election
+						}
+					}
+					has_country_flag = SOV_congress_2_afonin_elected
+				}
+			}
+			localization_key = "SOV_party_leaders_afonin_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				OR = {
+					AND = {
+						has_country_flag = SOV_rashkin_supreme_soviet_leader_flag
+						NOT = {
+							has_completed_focus = SOV_first_soviet_election
+						}
+					}
+					has_country_flag = SOV_congress_2_rashkin_elected
+				}
+			}
+			localization_key = "SOV_party_leaders_rashkin_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_country_flag = SOV_congress_2_pasechnik_elected
+			}
+			localization_key = "SOV_party_leaders_pasechnik_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_country_flag = SOV_congress_2_grudinin_elected
+			}
+			localization_key = "SOV_party_leaders_grudinin_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_country_flag = SOV_congress_2_levchenko_elected
+			}
+			localization_key = "SOV_party_leaders_levchenko_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_completed_focus = SOV_new_lukashenko_era
+				has_completed_focus = SOV_gospodin_president
+			}
+			localization_key = "SOV_party_leaders_nikolai_lukashenko_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_completed_focus = SOV_new_lukashenko_era
+				has_completed_focus = SOV_iron_hand
+			}
+			localization_key = "SOV_party_leaders_lukashenko_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_completed_focus = SOV_new_lukashenko_era
+				NOT = {
+					OR = {
+						has_completed_focus = SOV_gospodin_president
+						has_completed_focus = SOV_iron_hand
+					}
+				}
+			}
+			localization_key = "SOV_party_leaders_lukashenko_TEXT"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_cprf_ruling_party_loc
+		
+		text = {
+			trigger = {
+				SOV = {
+					has_cosmetic_tag = SOV_SovietUnion
+				}
+			}
+			localization_key = "SOV_party_cpsu_name_TEXT"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						has_cosmetic_tag = SOV_SovietUnion
+					}
+				}
+			}
+			localization_key = "SOV_party_cp_rsfsr_name_TEXT"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_leader_tooltip_name_loc
+		
+		text = {
+			trigger = {
+				tag = SOV
+				has_country_flag = SOV_zyuganov_supreme_soviet_leader_flag
+				NOT = {
+					has_completed_focus = SOV_first_soviet_election
+				}
+			}
+			localization_key = "SOV_party_leaders_zyuganov_tooltip_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				OR = {
+					AND = {
+						has_country_flag = SOV_afonin_supreme_soviet_leader_flag
+						NOT = {
+							has_completed_focus = SOV_first_soviet_election
+						}
+					}
+					has_country_flag = SOV_congress_2_afonin_elected
+				}
+			}
+			localization_key = "SOV_party_leaders_afonin_tooltip_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				OR = {
+					AND = {
+						has_country_flag = SOV_rashkin_supreme_soviet_leader_flag
+						NOT = {
+							has_completed_focus = SOV_first_soviet_election
+						}
+					}
+					has_country_flag = SOV_congress_2_rashkin_elected
+				}
+			}
+			localization_key = "SOV_party_leaders_rashkin_tooltip_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_country_flag = SOV_congress_2_pasechnik_elected
+			}
+			localization_key = "SOV_party_leaders_pasechnik_tooltip_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_country_flag = SOV_congress_2_grudinin_elected
+			}
+			localization_key = "SOV_party_leaders_grudinin_tooltip_TEXT"
+		}
+		text = {
+			trigger = {
+				tag = SOV
+				has_completed_focus = SOV_first_soviet_election
+				has_country_flag = SOV_congress_2_levchenko_elected
+			}
+			localization_key = "SOV_party_leaders_levchenko_tooltip_TEXT"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_president_of_rsfsr_loc
+		
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						AND = {
+							has_idea = SOV_Yuri_Afonin_president_party
+							has_country_leader = SOV_yuri_afonin
+						}
+						AND = {
+							has_idea = SOV_Sergey_Levchenko_president_party
+							has_country_leader = SOV_sergey_levchenko
+						}
+					}
+				}
+			}
+			localization_key = "SOV_president_of_rsfsr_tooltip"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_resources_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_leader = {
+								character = SOV_alexei_navalny
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = SOV_Vladimir_Solovyov
+								ruling_only = yes
+							}
+						}
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_text_usual"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_alexei_navalny
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_text_navalny"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_Vladimir_Solovyov
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_text_solovyov"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_resources_tooltip_name
+		
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_leader = {
+								character = SOV_alexei_navalny
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = SOV_Vladimir_Solovyov
+								ruling_only = yes
+							}
+						}
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_tooltip_name_usual"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_alexei_navalny
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_tooltip_name_navalny"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_Vladimir_Solovyov
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_tooltip_name_solovyov"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_resources_tooltip
+		
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_leader = {
+								character = SOV_alexei_navalny
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = SOV_Vladimir_Solovyov
+								ruling_only = yes
+							}
+						}
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_tooltip_usual"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_alexei_navalny
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_tooltip_navalny"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_Vladimir_Solovyov
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resources_tooltip_solovyov"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_add_party_resource
+		
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_leader = {
+								character = SOV_alexei_navalny
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = SOV_Vladimir_Solovyov
+								ruling_only = yes
+							}
+						}
+					}
+				}
+			}
+			localization_key = "SOV_add_party_resource_usual"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_alexei_navalny
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_add_party_resource_navalny"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_Vladimir_Solovyov
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_add_party_resource_solovyov"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_resource_cost
+		
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_leader = {
+								character = SOV_alexei_navalny
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = SOV_Vladimir_Solovyov
+								ruling_only = yes
+							}
+						}
+					}
+				}
+			}
+			localization_key = "SOV_party_resource_cost_usual"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_alexei_navalny
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resource_cost_navalny"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_Vladimir_Solovyov
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_party_resource_cost_solovyov"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_sezs_leningrad
+		text = {
+			trigger = {
+				SOV = {
+					check_variable = { SOV_sez_count = 0 }
+				}
+			}
+			localization_key = "SOV_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					check_variable = { SOV_sez_count > 0 }
+				}
+			}
+			localization_key = "SOV_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_sezs_novorossiysk
+		text = {
+			trigger = {
+				SOV = {
+					check_variable = { SOV_sez_count < 2 }
+				}
+			}
+			localization_key = "SOV_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					check_variable = { SOV_sez_count > 1 }
+				}
+			}
+			localization_key = "SOV_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_sezs_irkutsk
+		text = {
+			trigger = {
+				SOV = {
+					check_variable = { SOV_sez_count < 3 }
+				}
+			}
+			localization_key = "SOV_no"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					check_variable = { SOV_sez_count > 2 }
+				}
+			}
+			localization_key = "SOV_yes"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_oligarch_text
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_2
+				}
+			}
+			localization_key = "SOV_peoples_entrepreneurs_influence"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_1
+				}
+			}
+			localization_key = "SOV_red_directors_influence"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "SOV_new_oligarchs_influence"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_medve_oligarchs_disabled
+						has_completed_focus = SOV_developed_socialism
+						has_completed_focus = SOV_adapt_to_chinese_socialism
+						has_completed_focus = SOV_nothing_but_bloodsucking_parasites
+						has_country_flag = SOV_navalny_oligarchs_enabled_flag
+					}
+				}
+			}
+			localization_key = "SOV_usual_oligarch_influence"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_flag = SOV_medve_oligarchs_disabled
+						has_completed_focus = SOV_nothing_but_bloodsucking_parasites
+					}
+				}
+			}
+			localization_key = ""
+		}
+	}
+	
+	defined_text = {
+		name = SOV_oligarch_tooltip_name
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_2
+				}
+			}
+			localization_key = "SOV_peoples_entrepreneurs_info_tooltip"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_1
+				}
+			}
+			localization_key = "SOV_red_directors_info_tooltip"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "SOV_new_oligarchs_info_tooltip"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT  = {
+						has_country_flag = SOV_medve_oligarchs_disabled
+						has_completed_focus = SOV_developed_socialism
+						has_completed_focus = SOV_adapt_to_chinese_socialism
+					}
+				}
+			}
+			localization_key = "SOV_usual_oligarch_info_tooltip"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_pr_name
+		text = { 
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_homogeneous_left_wing_front
+				}
+			}
+			localization_key = "[SOV.GetRulingParty]"
+		}
+		text = {
+			localization_key = "SOV_peoples_russia_normal"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_oligarch_tooltip_gui
+		
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_2
+				}
+			}
+			localization_key = "SOV_peoples_entrepreneurs_info"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_1
+				}
+			}
+			localization_key = "SOV_red_directors_info"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "SOV_new_oligarchs_info"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT  = {
+						has_country_flag = SOV_medve_oligarchs_disabled
+						has_completed_focus = SOV_developed_socialism
+						has_completed_focus = SOV_adapt_to_chinese_socialism
+					}
+				}
+			}
+			localization_key = "SOV_usual_oligarch_info"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_oligarch_influence_monthly
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_2
+				}
+			}
+			localization_key = "SOV_peoples_entrepreneurs_influence_monthly"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_nationalization_flag_1
+				}
+			}
+			localization_key = "SOV_red_directors_influence_monthly"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_navalny_oligarchs_enabled_flag
+				}
+			}
+			localization_key = "SOV_new_oligarchs_influence_monthly"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						has_completed_focus = SOV_developed_socialism
+						has_completed_focus = SOV_adapt_to_chinese_socialism
+					}
+				}
+			}
+			localization_key = "SOV_usual_oligarch_influence_monthly"
+		}
+	}
+	defined_text = {
+		name = SOV_reform_russian_empire_loc_dynamic
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_great_victory
+				}
+			}
+			localization_key = "SOV_reform_russian_empire_post_war_loc"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { has_completed_focus = SOV_great_victory }
+				}
+			}
+			localization_key = "SOV_reform_russian_empire_normal_loc"
+		}
+	}
+	defined_text = {
+		name = SOV_ldpr_alliance_category_loc_dynamic
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_holy_union_reborn
+				}
+			}
+			localization_key = "SOV_holy_union_category"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_reform_csto
+					OR = {
+					    has_country_flag = SOV_pushilin_won
+					    has_country_flag = SOV_rodina_left_won
+					    has_country_flag = SOV_rodina_won
+					}
+				}
+			}
+			localization_key = "SOV_ces_category"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_reform_csto
+					NOT = {
+						OR = {
+						    has_country_flag = SOV_pushilin_won
+						    has_country_flag = SOV_rodina_left_won
+						    has_country_flag = SOV_rodina_won
+						}
+					}
+				}
+			}
+			localization_key = "SOV_esto_category"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ldpr_alliance_loc_dynamic
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_holy_union_reborn
+				}
+			}
+			localization_key = "SOV_holy_union_category"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_reform_csto
+					OR = {
+					    has_country_flag = SOV_pushilin_won
+					    has_country_flag = SOV_rodina_left_won
+					    has_country_flag = SOV_rodina_won
+					}
+				}
+			}
+			localization_key = "SOV_ces_ces_category"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_reform_csto
+					NOT = {
+						OR = {
+						    has_country_flag = SOV_pushilin_won
+						    has_country_flag = SOV_rodina_left_won
+						    has_country_flag = SOV_rodina_won
+						}
+					}
+				}
+			}
+			localization_key = "SOV_esto_esto_category"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_let_a_hundred_flowers_bloom_dynamic
+
+		#text = { 
+		#	trigger = {
+		#		SOV = {
+		#			has_completed_focus = SOV_restore_the_1977_constitution
+		#		}
+		#	}
+		#	localization_key = "SOV_let_a_hundred_flowers_bloom_old_guard"
+		#}
+		text = {
+			trigger = {
+				SOV = {
+					has_completed_focus = SOV_draft_new_constitution
+				}
+			}
+			localization_key = "SOV_let_a_hundred_flowers_bloom_new_guard"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_CPRF_SRZP_ministers
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_cprf_srzp_alliance
+				}
+			}
+			localization_key = "SOV_cprf_srzp_alliance_yes"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					NOT = { has_country_flag = SOV_cprf_srzp_alliance }
+				}
+			}
+			localization_key = "SOV_cprf_srzp_alliance_no"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_defence_line_scripted_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_aleksandr_lukashenko
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_lukashenko_line"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					has_government = communist
+				}
+			}
+			localization_key = "SOV_afonin_line"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_pavel_grudinin
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_grudinin_line"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_leonid_pasechnik
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_pasechnik_line"
+		}	
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_Vladimir_Solovyov
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_solovyov_line"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_government = libertarian_socialist
+				}
+			}
+			localization_key = "SOV_levchenko_line"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_leader = {
+							character = SOV_valery_rashkin
+							ruling_only = yes
+						}
+						has_country_flag = SOV_bondarenko_coup
+					}
+				}
+			}
+			localization_key = "SOV_rashkin_line"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_alexei_navalny
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_navalny_line"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_valery_gerasimov
+						ruling_only = yes
+					}
+				}
+			}
+			localization_key = "SOV_gerasimov_line"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_line_rashkin_loc
+
+		text = { #Party Line Approval
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_parfenov
+				}
+			}
+			localization_key = "SOV_party_line_approval"
+		}
+		text = { #The Leading Role of the Party
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_levchenko
+				}
+			}
+			localization_key = "SOV_leading_role_party"
+		}
+		text = { #Moderate Platformism
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_kagarlitsky
+				}
+			}
+			localization_key = "SOV_moderate_platformism"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ministries_reform_loc
+
+		text = { #Enshrine Democratic Centralism
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_parfenov
+				}
+			}
+			localization_key = "SOV_strengthen_democratic_centralism"
+		}
+		text = { #Rejuvenate Ministries
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_levchenko
+				}
+			}
+			localization_key = "SOV_rejuvenate_ministries"
+		}
+		text = { #Sovereignity of the Soviets
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_kagarlitsky
+				}
+			}
+			localization_key = "SOV_full_soviet_power"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ideological_rashkin_loc
+
+		text = { #The Triumph of Orthodoxy
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_parfenov
+				}
+			}
+			localization_key = "SOV_orthodoxy_triumph"
+		}
+		text = { #Siberian Model
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_levchenko
+				}
+			}
+			localization_key = "SOV_siberian_model"
+		}
+		text = { #The Great Philosophy of Marxism
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_kagarlitsky
+				}
+			}
+			localization_key = "SOV_great_philosophy_marxism"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_president_adl_loc
+
+		text = { #Shein
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+			}
+			localization_key = "SOV_shein_president"
+		}
+		text = { #Golov
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+			}
+			localization_key = "SOV_golov_president"
+		}
+		text = { #Sakhnin
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_sakhnin_president"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_elections_loc
+
+		text = { #Snap Elections
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_adl_progress_communist_compromise
+					}
+				}
+			}
+			localization_key = "SOV_adl_early_elections"
+		}
+		text = { #Majority Government
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_communist_compromise
+				}
+			}
+			localization_key = "SOV_majority_government"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_campaign_loc
+
+		text = { #Unions
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_raise_trade_unions"
+		}
+		text = { #Humanist Campaign
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+			}
+			localization_key = "SOV_humanist_campaign"
+		}
+		text = { #Radicals
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_release_radicals"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_triumph_adl_loc
+
+		text = { #Unions
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_people"
+		}
+		text = { #Humanist Campaign
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_democracy"
+		}
+		text = { #Radicals
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_socialism_loc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_legacy_adl_loc
+
+		text = { #Unions
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_just_russia"
+		}
+		text = { #Humanist Campaign
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_perestroika"
+		}
+		text = { #Radicals
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_revolution"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_socialism_adl_loc
+
+		text = { #Unions
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_municipal"
+		}
+		text = { #Humanist Campaign
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_neoliberal"
+		}
+		text = { #Radicals
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_radical"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_internal_future_rashkin_loc
+
+		text = { #Eternal October
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_parfenov
+				}
+			}
+			localization_key = "SOV_eternal_october"
+		}
+		text = { #Soviet Normalization
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_levchenko
+				}
+			}
+			localization_key = "SOV_soviet_normalization"
+		}
+		text = { #Kagarlitsky's Reforms
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_rashkin_second_in_command_kagarlitsky
+				}
+			}
+			localization_key = "SOV_kagarlitsky_reforms"
+		}
+	}
+
+	
+	defined_text = {
+		name = SOV_party_line_afon_loc
+
+		text = { #Strengthen the Party's Course
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_party_line_afon1
+				}
+			}
+			localization_key = "SOV_strengthen_party_course"
+		}
+		text = { #The Leading Role of the Party
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_party_line_afon2
+				}
+			}
+			localization_key = "SOV_leading_role_party"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_bureaucratic_afonin_loc
+
+		text = { #Bureaucratic Reform
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_party_line_afon1
+				}
+			}
+			localization_key = "SOV_bureaucratic_reform"
+		}
+		text = { #Deal With the Decrepit Bureaucracy
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_party_line_afon2
+				}
+			}
+			localization_key = "SOV_deal_decrepit_bureaucracy"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ideology_afon_loc
+
+		text = { #Unity of Ideology
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_party_line_afon1
+				}
+			}
+			localization_key = "SOV_unity_of_ideology"
+		}
+		text = { #Deal With the Decrepit Bureaucracy
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_party_line_afon2
+				}
+			}
+			localization_key = "SOV_siberian_pragmatism"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_election_time_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_sided_with_medvedev_flag
+				}
+			}
+			localization_key = "SOV_election_time_loc_medvedev"
+		}
+		text = {
+			trigger = {
+				SOV = {
+					OR = { 
+						has_country_flag = SOV_sided_with_ldpr_flag 
+						has_country_flag = SOV_sided_with_cprf_flag
+					}
+				}
+			}
+			localization_key = "SOV_election_time_loc_not_medvedev"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_integralist_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_integralist_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_integralist_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_integralist_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_soviet_revivalists_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_soviet_revivalists_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_soviet_revivalists_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_soviet_revivalists_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_overpowered_faction_modifier_loc
+		text = {
+			trigger = {
+				SOV = {
+					has_idea = SOV_overpowered_faction_idea
+				}
+			}
+			localization_key = "SOV_overpowered_faction_modifier"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_kadyrovites_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_kadyrovites_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_kadyrovites_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_kadyrovites_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_populists_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_populists_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_populists_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_populists_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_z_patriots_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_z_patriots_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_z_patriots_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_z_patriots_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_left_statesmen_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_left_statesmen_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_left_statists_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_left_statesmen_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_national_patriots_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_national_patriots_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_national_patriots_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_national_patriots_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_reformers_status_idea_apf
+		text = {
+			trigger = {
+				SOV = {
+					has_dynamic_modifier = {
+						modifier = SOV_reformers_strength_dynamic
+					}
+					NOT = {
+						check_variable = {
+							SOV_reformers_score_var = 0
+						}
+					}
+				}
+			}
+			localization_key = "SOV_reformers_1_apf_idea"
+		}
+		text = {
+			localization_key = "SOV_duma_empty"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_army_loc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_soviet_army_loc"
+		}
+		text = {
+			trigger = {
+				OR = { 
+					has_global_flag = SOV_ldpr_won
+					has_global_flag = SOV_medvedev_won
+				}
+			}
+			localization_key = "SOV_russian_army_loc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_anti_soviet_resistance_loc
+
+		text = { 
+			trigger = {
+				NOT = { has_country_flag = SOV_dissolved_ldpr }
+			}
+			localization_key = "SOV_anti_soviet_resistance_ldpr_loc"
+		}
+		text = {
+			trigger = {
+				has_country_flag = SOV_dissolved_ldpr
+			}
+			localization_key = "SOV_anti_soviet_resistance_nationaloids_loc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_anti_soviet_resistance_decision_loc
+
+		text = { 
+			trigger = {
+				NOT = { has_country_flag = SOV_dissolved_ldpr }
+			}
+			localization_key = "SOV_anti_soviet_resistance_decision_ldpr_loc"
+		}
+		text = {
+			trigger = {
+				has_country_flag = SOV_dissolved_ldpr
+			}
+			localization_key = "SOV_anti_soviet_resistance_decision_nationaloids_loc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_patriotic_zealousy_loc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_patriotic_zealousy_cprf"
+		}
+		text = {
+			trigger = {
+				has_global_flag = SOV_medvedev_won
+			}
+			localization_key = "SOV_patriotic_zealousy_medvedev"
+		}		
+		text = {
+			trigger = {
+				has_global_flag = SOV_ldpr_won
+			}
+			localization_key = "SOV_patriotic_zealousy_ldpr"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_patriotic_zealousy_loc_desc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_patriotic_zealousy_cprf_desc"
+		}
+		text = {
+			trigger = {
+				has_global_flag = SOV_medvedev_won
+			}
+			localization_key = "SOV_patriotic_zealousy_medvedev_desc"
+		}		
+		text = {
+			trigger = {
+				has_global_flag = SOV_ldpr_won
+			}
+			localization_key = "SOV_patriotic_zealousy_ldpr_desc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_unify_command_structures_loc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_unify_command_structures_normal"
+		}
+		text = {
+			trigger = {
+				has_global_flag = SOV_medvedev_won
+			}
+			localization_key = "SOV_unify_command_structures_normal"
+		}		
+		text = {
+			trigger = {
+				has_global_flag = SOV_ldpr_won
+			}
+			localization_key = "SOV_unify_command_structures_rosgvardia"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_unify_command_structures_loc_desc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_unify_command_structures_normal_desc"
+		}
+		text = {
+			trigger = {
+				has_global_flag = SOV_medvedev_won
+			}
+			localization_key = "SOV_unify_command_structures_normal_desc"
+		}		
+		text = {
+			trigger = {
+				has_global_flag = SOV_ldpr_won
+			}
+			localization_key = "SOV_unify_command_structures_rosgvardia_desc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_promote_reliable_cadres_loc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_promote_reliable_cadres_cprf"
+		}
+		text = {
+			trigger = {
+				OR = { 
+					has_global_flag = SOV_ldpr_won
+					has_global_flag = SOV_medvedev_won
+				}
+			}
+			localization_key = "SOV_promote_reliable_cadres_medvedev"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_promote_reliable_cadres_loc_desc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_promote_reliable_cadres_cprf_desc"
+		}
+		text = {
+			trigger = {
+				OR = { 
+					has_global_flag = SOV_ldpr_won
+					has_global_flag = SOV_medvedev_won
+				}
+			}
+			localization_key = "SOV_promote_reliable_cadres_medvedev_desc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_rollback_serdykovs_reforms_loc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_rollback_serdykovs_reforms_cprf"
+		}
+		text = {
+			trigger = {
+				OR = { 
+					has_global_flag = SOV_ldpr_won
+					has_global_flag = SOV_medvedev_won
+				}
+			}
+			localization_key = "SOV_rollback_serdykovs_reforms_medvedev"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_rollback_serdykovs_reforms_loc_desc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_rollback_serdykovs_reforms_cprf_desc"
+		}
+		text = {
+			trigger = {
+				OR = { 
+					has_global_flag = SOV_ldpr_won
+					has_global_flag = SOV_medvedev_won
+				}
+			}
+			localization_key = "SOV_rollback_serdykovs_reforms_medvedev_desc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_new_russian_army_loc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_new_russian_army_cprf"
+		}
+		text = {
+			trigger = {
+				OR = { 
+					has_global_flag = SOV_ldpr_won
+					has_global_flag = SOV_medvedev_won
+				}
+			}
+			localization_key = "SOV_new_russian_army_medvedev"
+		}
+	}	
+	
+	defined_text = {
+		name = SOV_new_russian_army_loc_desc
+
+		text = { 
+			trigger = {
+				has_global_flag = SOV_cprf_won
+			}
+			localization_key = "SOV_new_russian_army_cprf_desc"
+		}
+		text = {
+			trigger = {
+				OR = { 
+					has_global_flag = SOV_ldpr_won
+					has_global_flag = SOV_medvedev_won
+				}
+			}
+			localization_key = "SOV_new_russian_army_medvedev_desc"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_leader_russia_needs_loc
+
+		text = { 
+			trigger = {
+				has_country_flag = SOV_grudinin_coup
+			}
+			localization_key = "SOV_leader_russia_needs_1"
+		}
+		text = {
+			trigger = {
+				has_country_flag = SOV_klychkov_coup
+			}
+			localization_key = "SOV_leader_russia_needs_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_release_navalny_loc
+
+		text = { 
+			trigger = {
+				has_country_flag = SOV_grudinin_coup
+			}
+			localization_key = "SOV_release_navalny_1"
+		}
+		text = {
+			trigger = {
+				has_country_flag = SOV_klychkov_coup
+			}
+			localization_key = "SOV_release_navalny_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_utilize_rashkinites_loc
+
+		text = { 
+			trigger = {
+				has_country_flag = SOV_grudinin_coup
+			}
+			localization_key = "SOV_utilize_rashkinites_1"
+		}
+		text = {
+			trigger = {
+				has_country_flag = SOV_klychkov_coup
+			}
+			localization_key = "SOV_utilize_rashkinites_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_form_the_new_government_loc
+
+		text = { 
+			trigger = {
+				has_country_flag = SOV_grudinin_coup
+			}
+			localization_key = "SOV_form_the_new_government_1"
+		}
+		text = {
+			trigger = {
+				has_country_flag = SOV_klychkov_coup
+			}
+			localization_key = "SOV_form_the_new_government_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_emergency_privatization_loc
+
+		text = { 
+			trigger = {
+				has_country_flag = SOV_grudinin_coup
+			}
+			localization_key = "SOV_emergency_privatization_1"
+		}
+		text = {
+			trigger = {
+				has_country_flag = SOV_klychkov_coup
+			}
+			localization_key = "SOV_emergency_privatization_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_cprf_candidate
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_afonin_selected_flag
+				}
+			}
+			localization_key = "russia.530.a"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_grudinin_selected_flag
+				}
+			}
+			localization_key = "russia.530.b"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_levchenko_selected_flag
+				}
+			}
+			localization_key = "russia.530.c"
+		}
+		text = {
+			trigger = {
+				NOT = {
+					SOV = {
+						has_country_flag = SOV_afonin_selected_flag
+						has_country_flag = SOV_grudinin_selected_flag
+						has_country_flag = SOV_levchenko_selected_flag
+					}
+				}
+			}
+			localization_key = "russia.530.c2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_soviet_election_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_soviet_election_result_var = 1 }
+				}
+			}
+			localization_key = "SOV_soviet_election_result_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_soviet_election_result_var = 2 }
+				}
+			}
+			localization_key = "SOV_soviet_election_result_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_soviet_election_result_var = 3 }
+				}
+			}
+			localization_key = "SOV_soviet_election_result_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_soviet_election_result_var = 4 }
+				}
+			}
+			localization_key = "SOV_soviet_election_result_4"
+		}
+	}
+	defined_text = {
+		name = SOV_soviet_economy_category_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = -1
+						compare = greater_than_or_equals
+					}
+					check_variable = { SOV_soviet_economic_school_var < -0.8 }
+				}
+			}
+			localization_key = "SOV_soviet_economy_category_loc_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = -0.8
+						compare = greater_than_or_equals
+					}
+					check_variable = { SOV_soviet_economic_school_var < -0.4 }
+				}
+			}
+			localization_key = "SOV_soviet_economy_category_loc_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = -0.4
+						compare = greater_than_or_equals
+					}
+					check_variable = { SOV_soviet_economic_school_var < -0.2 }
+				}
+			}
+			localization_key = "SOV_soviet_economy_category_loc_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = -0.2
+						compare = greater_than_or_equals
+					}
+					check_variable = { SOV_soviet_economic_school_var < 0.2 }
+				}
+			}
+			localization_key = "SOV_soviet_economy_category_loc_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = 0.2
+						compare = greater_than_or_equals
+					}
+					check_variable = { SOV_soviet_economic_school_var < 0.4 }
+				}
+			}
+			localization_key = "SOV_soviet_economy_category_loc_5"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = 0.4
+						compare = greater_than_or_equals
+					}
+					check_variable = { SOV_soviet_economic_school_var < 0.8 }
+				}
+			}
+			localization_key = "SOV_soviet_economy_category_loc_6"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = 0.8
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = SOV_soviet_economic_school_var
+						value = 1
+						compare = less_than_or_equals
+					}
+				}
+			}
+			localization_key = "SOV_soviet_economy_category_loc_7"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_communist_party_dynamic_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_cpsu_established
+					}
+				}
+			}
+			localization_key = "SOV_communist_party_dynamic_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_cpsu_established
+				}
+			}
+			localization_key = "SOV_communist_party_dynamic_2"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_glushkov_vision_dynamic_name
+
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_ogas_stage3_completed
+					}
+				}
+			}
+			localization_key = "SOV_glushkov_vision_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_ogas_stage3_completed
+				}
+			}
+			localization_key = "SOV_glushkov_vision_ogas"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_model_economy_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_flag = SOV_labour_party_formed_flag
+						has_country_flag = SOV_union_of_social_democrats_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_scandinavian_model"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_economic_democracy"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_nat_stat_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_flag = SOV_labour_party_formed_flag
+						has_country_flag = SOV_union_of_social_democrats_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_community_service"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_campaign_nationalization"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_concept_economy_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_flag = SOV_labour_party_formed_flag
+						has_country_flag = SOV_union_of_social_democrats_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_concept_people_state"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_class_warfare"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_economic_theory_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_flag = SOV_labour_party_formed_flag
+						has_country_flag = SOV_union_of_social_democrats_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_financial_liberalism"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_modern_monetary_theory"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_legitimacy_level_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_party_legitimacy > 45 }
+				}
+			}
+			localization_key = "SOV_party_legitimacy_level_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_party_legitimacy
+						value = 45
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = SOV_party_legitimacy
+						value = 25
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			localization_key = "SOV_party_legitimacy_level_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_party_legitimacy < 25 }
+				}
+			}
+			localization_key = "SOV_party_legitimacy_level_3"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_party_legitimacy_number_level
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_party_legitimacy > 60 }
+				}
+			}
+			localization_key = "SOV_party_legitimacy_number_level_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = {
+						var = SOV_party_legitimacy
+						value = 60
+						compare = less_than_or_equals
+					}
+					check_variable = {
+						var = SOV_party_legitimacy
+						value = 30
+						compare = greater_than_or_equals
+					}
+				}
+			}
+			localization_key = "SOV_party_legitimacy_number_level_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_party_legitimacy < 30 }
+				}
+			}
+			localization_key = "SOV_party_legitimacy_number_level_3"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_premier_communist
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_cosmetic_tag = SOV_rsfsr
+				}
+			}
+			localization_key = "SOV_premier_communist_rsfsr"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_cosmetic_tag = SOV_SovietUnion
+				}
+			}
+			localization_key = "SOV_premier_communist_ussr"
+		}
+	}
+
+	defined_text = {
+		name = SOV_navalny_econ_minister
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_global_flag = SOV_nabiullina
+				}
+			}
+			localization_key = "SOV_best_of_two_systems_loc"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_global_flag = SOV_zimin
+				}
+			}
+			localization_key = "SOV_nemtsovs_legacy"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_global_flag = SOV_svetov
+				}
+			}
+			localization_key = "SOV_libertarian_dream"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_global_flag = SOV_grudinin
+				}
+			}
+			localization_key = "SOV_new_gosplan"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_cprf_local_problem_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_cprf_local_problem_flag_1
+				}
+			}
+			localization_key = "SOV_cprf_local_problem_loc_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_cprf_local_problem_flag_2
+				}
+			}
+			localization_key = "SOV_cprf_local_problem_loc_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_cprf_local_problem_flag_3
+				}
+			}
+			localization_key = "SOV_cprf_local_problem_loc_3"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_progress_name_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					always = yes
+				}
+			}
+			localization_key = "SOV_adl_progress_name_og"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_labor_fatherland_name_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					always = yes
+				}
+			}
+			localization_key = "SOV_labor_fatherland_name_og"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_peoples_front_name_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					always = yes
+				}
+			}
+			localization_key = "SOV_peoples_front_name_og"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ldpr_name_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					always = yes
+				}
+			}
+			localization_key = "SOV_ldpr_name_og"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_patriots_party_name_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					always = yes
+				}
+			}
+			localization_key = "SOV_patriots_party_name_og"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_progress_tooltip_leader
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_shein_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_shein"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_golov_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_golov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_sakhnin_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_sakhnin"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						has_country_flag = SOV_adl_progress_shein
+						has_country_flag = SOV_adl_progress_sakhnov
+						has_country_flag = SOV_adl_progress_golov
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_shevchenko"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_progress_tooltip_faction
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_shein_flag
+					NOT = {
+						has_country_flag = SOV_labour_party_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_faction_shein"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_golov_flag
+					NOT = {
+						has_country_flag = SOV_union_of_social_democrats_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_faction_golov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_sakhnin_flag
+					NOT = {
+						has_country_flag = SOV_new_socialists_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_faction_sakhnin"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_flag = SOV_adl_progress_shein
+							has_country_flag = SOV_adl_progress_sakhnov
+							has_country_flag = SOV_adl_progress_golov
+							has_country_flag = SOV_labour_party_formed_flag
+							has_country_flag = SOV_union_of_social_democrats_formed_flag
+							has_country_flag = SOV_new_socialists_formed_flag
+						}
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_faction_shevchenko"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						has_country_flag = SOV_labour_party_formed_flag
+						has_country_flag = SOV_union_of_social_democrats_formed_flag
+						has_country_flag = SOV_new_socialists_logo_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_faction_nothing"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_progress_tooltip_desc
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_shein_flag
+					NOT = {
+						has_country_flag = SOV_labour_party_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_desc_shein"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_shein_flag
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_desc_shein_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_golov_flag
+					NOT = {
+						has_country_flag = SOV_union_of_social_democrats_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_desc_golov"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_golov_flag
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_desc_golov_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_sakhnin_flag
+					NOT = {
+						has_country_flag = SOV_new_socialists_formed_flag
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_desc_sakhnin"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_adl_progress_sakhnin_flag
+					has_country_flag = SOV_new_socialists_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_desc_sakhnin_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_flag = SOV_adl_progress_shein
+							has_country_flag = SOV_adl_progress_sakhnov
+							has_country_flag = SOV_adl_progress_golov
+							has_country_flag = SOV_labour_party_formed_flag
+							has_country_flag = SOV_union_of_social_democrats_formed_flag
+							has_country_flag = SOV_new_socialists_logo_formed_flag
+						}
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_desc_shevchenko"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_progress_tooltip_name
+
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_labour_party_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_name_labour_party"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_union_of_social_democrats_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_name_union_of_social_democrats"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					has_country_flag = SOV_new_socialists_logo_formed_flag
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_name_new_socialists"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					NOT = {
+						OR = {
+							has_country_flag = SOV_labour_party_formed_flag
+							has_country_flag = SOV_union_of_social_democrats_formed_flag
+							has_country_flag = SOV_new_socialists_logo_formed_flag
+						}
+					}
+				}
+			}
+			localization_key = "SOV_adl_progress_tooltip_name_og"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ads_progress_opinion
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_labor_fatherland_opinion
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_peoples_front_opinion
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ldpr_opinion
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_patriots_party_opinion
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_adl_progress_opinion_trigger_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var_trigger_temp = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var_trigger_temp = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var_trigger_temp = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var_trigger_temp = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_adl_progress_opinion_var_trigger_temp = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_labor_fatherland_opinion_trigger_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var_trigger_temp = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var_trigger_temp = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var_trigger_temp = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var_trigger_temp = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_labor_fatherland_opinion_var_trigger_temp = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_peoples_front_opinion_trigger_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var_trigger_temp = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var_trigger_temp = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var_trigger_temp = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var_trigger_temp = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_peoples_front_opinion_var_trigger_temp = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_ldpr_opinion_trigger_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var_trigger_temp = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var_trigger_temp = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var_trigger_temp = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var_trigger_temp = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_ldpr_opinion_var_trigger_temp = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_patriots_party_opinion_trigger_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var_trigger_temp = 1 }
+				}
+			}
+			localization_key = "SOV_party_opinion_1"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var_trigger_temp = 2 }
+				}
+			}
+			localization_key = "SOV_party_opinion_2"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var_trigger_temp = 3 }
+				}
+			}
+			localization_key = "SOV_party_opinion_3"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var_trigger_temp = 4 }
+				}
+			}
+			localization_key = "SOV_party_opinion_4"
+		}
+		text = { 
+			trigger = {
+				SOV = {
+					check_variable = { SOV_patriots_party_opinion_var_trigger_temp = 5 }
+				}
+			}
+			localization_key = "SOV_party_opinion_5"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_supreme_soviet_other_parties_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					OR = {
+						is_in_array = {
+							array = SOV_other_parties
+							value = BOL.id #ADL Progress
+						}
+						is_in_array = {
+							array = SOV_other_parties
+							value = BRA.id #Labor Fatherland
+						}
+						is_in_array = {
+							array = SOV_other_parties
+							value = ARG.id #Peoples Front
+						}
+						is_in_array = {
+							array = SOV_other_parties
+							value = GER.id #LDPR
+						}
+						is_in_array = {
+							array = SOV_other_parties
+							value = FRA.id #Patriots Party
+						}
+					}
+				}
+			}
+			localization_key = "SOV_supreme_soviet_other_parties_exist"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_supreme_soviet_adl_progress_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					is_in_array = {
+						array = SOV_other_parties
+						value = BOL.id #ADL Progress
+					}
+				}
+			}
+			localization_key = "SOV_supreme_soviet_adl_progress"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_supreme_soviet_labor_fatherland_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					is_in_array = {
+						array = SOV_other_parties
+						value = BRA.id #Labor Fatherland
+					}
+				}
+			}
+			localization_key = "SOV_supreme_soviet_labor_fatherland"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_supreme_soviet_peoples_front_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					is_in_array = {
+						array = SOV_other_parties
+						value = ARG.id #Peoples Front
+					}
+				}
+			}
+			localization_key = "SOV_supreme_soviet_peoples_front"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_supreme_soviet_ldpr_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					is_in_array = {
+						array = SOV_other_parties
+						value = GER.id #LDPR
+					}
+				}
+			}
+			localization_key = "SOV_supreme_soviet_ldpr"
+		}
+	}
+	
+	defined_text = {
+		name = SOV_supreme_soviet_patriots_party_loc
+
+		text = { 
+			trigger = {
+				SOV = {
+					is_in_array = {
+						array = SOV_other_parties
+						value = FRA.id #Patriots Party
+					}
+				}
+			}
+			localization_key = "SOV_supreme_soviet_patriots_party"
+		}
+	}
+	
+	defined_text = {
+		name = get_nato_war_status
+		text = {
+			trigger = {
+				has_global_flag = nato_nato_won_nato_war
+			}
+			localization_key = "SOV_revenge_tt"
+		}
+		text = {
+			trigger = {
+				has_global_flag = SOV_first_nato_war_victory
+			}
+			localization_key = "SOV_defend_the_motherland_tt"
+		}
+	}

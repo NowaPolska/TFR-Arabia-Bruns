@@ -1,0 +1,26 @@
+state={
+	id=38
+	name="STATE_38" #Norrbotten
+	provinces={
+		49 125 3045 6023 9051 9117 11040 11091 11147 11209 
+	}
+	resources={
+		steel=22.000
+		aluminium=8.000
+		chromium=14.000
+	}
+	history = {
+		owner = SWE
+		add_core_of = SWE
+		victory_points = { 11091 5 } #Gävle
+		buildings = {
+			infrastructure = 3
+			energy_farm = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=281141
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

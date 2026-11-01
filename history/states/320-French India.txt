@@ -1,0 +1,24 @@
+state = {
+	id = 320
+	name = "STATE_320"
+	manpower = 34630000
+	state_category = large_town
+	
+	history = {
+		owner = RAJ
+		add_core_of = RAJ
+		victory_points = { 1238 7 }
+		victory_points = { 1321 5 }
+		victory_points = { 7391 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			dockyard = 1
+			1321 = { naval_base = 3 }
+		}
+	}
+	
+	provinces = {
+		1238 1321 7391 7447
+	}
+}

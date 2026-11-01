@@ -1,0 +1,14 @@
+state={
+	id=1437
+	name="STATE_1437"
+	provinces={
+		14966 
+	}
+	state_category = wasteland
+	history = {
+		owner = ZZZ
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,19 @@
+state={
+	id=1434
+	name="STATE_1434"
+	provinces={
+		711 3689 9668 9670 
+	}
+	history = {
+		owner = ROM
+		add_core_of = ROM
+		victory_points = { 711 3 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	manpower=539935
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

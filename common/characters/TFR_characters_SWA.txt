@@ -1,0 +1,30 @@
+# HERE COME ALL 2ND SAUDI CIVIL WAR LEADERS!!!!!!!! #
+
+characters = {
+SWA_Fahd_bin_Abdullah_Al_Mutair_char = {
+	    name = "Fahd bin Abdullah Al-Mutair"
+		portraits = {
+		
+		    civilian = {
+				large = "gfx/leaders/SWA/Fahd_bin_Abdullah_Al_Mutair.png"
+			}
+		
+            army = {
+                large = "gfx/leaders/SWA/Fahd_bin_Abdullah_Al_Mutair.png"
+            }
+        }
+		can_be_captured = no
+		corps_commander = {
+		    traits = {  Organizer, Engineer, Panzer_Leader, old_guard }
+            skill = 6                  
+            attack_skill = 6           
+            defense_skill = 4           
+            planning_skill = 2            
+            logistics_skill = 3   
+        }
+		
+		country_leader = {
+        ideology = military_junta
+        expire = "1.1.1.1"
+        }
+	}

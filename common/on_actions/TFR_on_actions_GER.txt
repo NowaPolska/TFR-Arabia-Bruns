@@ -1,0 +1,656 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GER = {
+				set_power_balance = {
+					id = GER_trust_bop
+					left_side = GER_bad_side
+					right_side = GER_good_side
+					set_value = -0.1
+				}
+				add_dynamic_modifier = {
+					modifier = GER_federalization_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_sepratism_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_bundestag_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_peoples_economy_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_die_linke_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_greens_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_spd_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_fdp_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_cdu_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = GER_afd_dynamic
+				}
+				set_variable = {
+					var = eu_fed_var
+					value = 0
+				}
+				set_temp_variable = {
+					var = eu_fed_var_temp
+					value = 0.07
+				}
+				GER_add_eu_fed = yes
+				set_variable = { 
+					var = GER_support_die_linke_var
+					value = 0.15
+				}
+				set_variable = { 
+					var = GER_support_greens_var
+					value = 0.3
+				}
+				set_variable = { 
+					var = GER_support_spd_var
+					value = 0.65
+				}
+				set_variable = { 
+					var = GER_support_fdp_var
+					value = 0.4
+				}
+				set_variable = { 
+					var = GER_support_cdu_var
+					value = 0.85
+				}
+				set_variable = { 
+					var = GER_support_afd_var
+					value = 0.4
+				}
+				set_variable = { 
+					var = GER_support_bundestag_total_var
+					value = 0
+				}
+				set_variable = {
+					var = eu_euroskepticism_var
+					value = 0.28
+				}
+				set_variable = {
+					var = eu_visregard_sepratism_var
+					value = 0
+				}
+				set_temp_variable = {
+					var = eu_visregard_sepratism_var_temp
+					value = 0.34
+				}
+				GER_add_eu_visregard_sepratism = yes
+				set_variable = {
+					var = GER_good_agenda_decision_cost_var
+					value = 150
+				}
+				set_variable = {
+					var = GER_bad_agenda_decision_cost_var
+					value = 150
+				}
+				GER_popularity_change = yes
+				country_event = { # Floods
+					id = germany.4
+					days = 480
+				}
+				country_event = { # First COVID Cases
+					id = germany.11
+					days = 50
+				}
+				country_event = { # Flood Recovery
+					id = germany.109
+					days = 912
+				}
+				country_event = { # Nuclear Phase Out
+					id = germany.206
+					days = 14
+				}
+				country_event = {
+					# Election Season
+					id = germany.322
+					days = 269
+				}
+				country_event = {
+					# Green Convention
+					id = germany.344
+					days = 474
+				}
+				country_event = {
+					# AfD Convention
+					id = germany.346
+					days = 502
+				}
+				country_event = {
+					# TV debates
+					id = germany.320
+					days = 609
+				}
+				country_event = { # AfD Endorse Max Otte
+					id = germany.208
+					days = 740
+				}
+				country_event = { # 2022 Presidential election
+					id = germany.209
+					days = 774
+				}
+				country_event = {
+					# NPD renames itself
+					id = germany.1000
+					days = 1255
+				}
+			}
+		}
+	}
+	on_weekly_GER = {
+		effect = {
+			GER_popularity_change = yes
+			#Agenda
+			if = { #Anti-Extremism
+				limit = {
+					has_country_flag = GER_anti_extremism_agenda_flag
+				}
+				set_temp_variable = {
+					var = GER_anti_extremism_agenda_var_temp
+					value = party_popularity@fascist
+				}
+				add_to_temp_variable = {
+					var = GER_anti_extremism_agenda_var_temp
+					value = party_popularity@authoritarian_democrat
+				}
+				add_to_temp_variable = {
+					var = GER_anti_extremism_agenda_var_temp
+					value = party_popularity@communist
+				}
+				add_to_temp_variable = {
+					var = GER_anti_extremism_agenda_var_temp
+					value = party_popularity@totalitarian_socialist
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = GER_anti_extremism_agenda_var_temp
+							value = 0.05
+							compare = less_than_or_equals
+						}
+					}
+					#Add modifier (only once)
+					if = {
+						limit = {
+							NOT = {
+								has_power_balance_modifier = {
+									id = GER_trust_bop
+									modifier = GER_anti_extremism_agenda_bop_modifier
+								}
+							}
+						}
+						add_power_balance_modifier = {
+							id = GER_trust_bop
+							modifier = GER_anti_extremism_agenda_bop_modifier
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							tag = GER
+							has_power_balance_modifier = {
+								id = GER_trust_bop
+								modifier = GER_anti_extremism_agenda_bop_modifier
+							}
+						}
+						remove_power_balance_modifier = {
+							id = GER_trust_bop
+							modifier = GER_anti_extremism_agenda_bop_modifier
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_power_balance_modifier = {
+						id = GER_trust_bop
+						modifier = GER_anti_extremism_agenda_bop_modifier
+					}
+				}
+				remove_power_balance_modifier = {
+					id = GER_trust_bop
+					modifier = GER_anti_extremism_agenda_bop_modifier
+				}
+			}
+			if = { #Bundeswehr Revitalization
+				limit = {
+					has_country_flag = GER_bundeswehr_revitalization_agenda_flag
+				}
+				#set_temp_variable = {
+				#	var = GER_bundeswehr_revitalization_var_temp
+				#	value = max_manpower_k
+				#}
+				#multiply_temp_variable = {
+				#	var = GER_bundeswehr_revitalization_var_temp
+				#	value = 0.035
+				#}
+				if = {
+					limit = {
+						NOT = {
+							has_army_manpower = {
+								size < 3118150
+							}
+						}
+					}
+					#Add modifier (only once)
+					if = {
+						limit = {
+							NOT = {
+								has_power_balance_modifier = {
+									id = GER_trust_bop
+									modifier = GER_bundeswehr_revitalization_agenda_bop_modifier
+								}
+							}
+						}
+						add_power_balance_modifier = {
+							id = GER_trust_bop
+							modifier = GER_bundeswehr_revitalization_agenda_bop_modifier
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							tag = GER
+							has_power_balance_modifier = {
+								id = GER_trust_bop
+								modifier = GER_bundeswehr_revitalization_agenda_bop_modifier
+							}
+						}
+						remove_power_balance_modifier = {
+							id = GER_trust_bop
+							modifier = GER_bundeswehr_revitalization_agenda_bop_modifier
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_power_balance_modifier = {
+						id = GER_trust_bop
+						modifier = GER_bundeswehr_revitalization_agenda_bop_modifier
+					}
+				}
+				remove_power_balance_modifier = {
+					id = GER_trust_bop
+					modifier = GER_bundeswehr_revitalization_agenda_bop_modifier
+				}
+			}
+			generic_weekly_agenda_check = yes
+		}
+	}
+	on_new_term_election = {
+		random_events = { 
+			100 = germany.57
+			100 = germany.250
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_completed_focus = GER_a_new_october
+					}
+					ROOT = {
+						is_ally_with = GER
+					}
+					FROM = {
+						tag = SOV
+					}
+					FROM.FROM = {
+						is_core_of = SOV
+					}
+				}
+				GER = {
+					country_event = {
+						id = germany.269
+					}
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_completed_focus = GER_a_new_october
+					}
+					ROOT = {
+						is_ally_with = GER
+					}
+					FROM = {
+						is_ally_with = SOV
+					}
+					FROM.FROM = {
+						state = 855
+					}
+				}
+				GER = {
+					country_event = {
+						id = germany.270
+					}
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_completed_focus = GER_rehabilitate_the_kaiser
+					}
+					ROOT = {
+						is_ally_with = GER
+					}
+					FROM = {
+						is_ally_with = SOV
+					}
+					FROM.FROM = {
+						state = 94
+					}
+				}
+				GER = {
+					country_event = {
+						id = germany.278
+					}
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_completed_focus = GER_facit_omnia_voluntas
+					}
+					ROOT = {
+						is_ally_with = GER
+					}
+					FROM = {
+						is_ally_with = SOV
+					}
+					FROM.FROM = {
+						state = 1285
+					}
+				}
+				GER = {
+					country_event = {
+						id = germany.279
+						days = 35
+					}
+				}
+			}
+		}
+	}
+	on_declare_war = { #Gunther's Subscriber Count
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							has_completed_focus = GER_democracy_now
+						}
+						FROM = {
+							NOT = { tag = GER }
+						}
+					}
+					news_event = {
+						id = news.589
+						hours = 12
+					}
+					if = {
+						limit = {
+							check_variable = {
+								var = GER_gunthers_followers_var
+								value = 1000
+								compare = less_than
+							}
+						}
+						random_list = {
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 4.8
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 5.0
+								}
+							}
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 9.9
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 13.3
+								}
+							}
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 15.4
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 19.7
+								}
+							}
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 25.2
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 28.1
+								}
+							}
+						}
+						else = {
+							random_list = {
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.1
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.2
+									}
+								}
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.3
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.4
+									}
+								}
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.5
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.6
+									}
+								}
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.7
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.9
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = GER
+							has_completed_focus = GER_democracy_now
+						}
+						FROM = {
+							NOT = { tag = GER }
+						}
+					}
+					if = {
+						limit = {
+							check_variable = {
+								var = GER_gunthers_followers_var
+								value = 1000
+								compare = less_than
+							}
+						}
+						random_list = {
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 4.8
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 5.0
+								}
+							}
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 9.9
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 13.3
+								}
+							}
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 15.4
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 19.7
+								}
+							}
+							25 = {
+								add_to_variable = {
+									var = GER_gunthers_following_var
+									value = 25.2
+								}
+								add_to_variable = {
+									var = GER_gunthers_followers_var
+									value = 28.1
+								}
+							}
+						}
+						else = {
+							random_list = {
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.1
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.2
+									}
+								}
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.3
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.4
+									}
+								}
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.5
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.6
+									}
+								}
+								25 = {
+									add_to_variable = {
+										var = GER_gunthers_following_M_var
+										value = 0.7
+									}
+									add_to_variable = {
+										var = GER_gunthers_followers_M_var
+										value = 0.9
+									}
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = GER_mass_catharsis_event_global
+						ROOT = {
+							original_tag = GER
+						}
+						FROM = {
+							original_tag = ZZZ
+						}
+					}
+					GER = {
+						news_event = {
+							id = news.587
+							days = 1
+						}
+						country_event = {
+							id = germany.341
+							days = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = GER_mass_catharsis_event_global
+						ROOT = {
+							original_tag = ZZZ
+						}
+						FROM = {
+							original_tag = GER
+						}
+					}
+					ZZZ = {
+						news_event = {
+							id = news.588
+							days = 1
+						}
+					}
+				}
+			}
+		}
+	}
+}

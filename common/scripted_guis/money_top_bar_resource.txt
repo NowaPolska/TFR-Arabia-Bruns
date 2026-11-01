@@ -1,0 +1,125 @@
+scripted_gui = {
+
+	money = {
+		context_type = player_context
+		
+		window_name = "money_container"
+		
+		parent_window_token = top_bar
+		
+		visible = {
+            NOT = {
+				has_country_flag = TFR_money_element_small
+			}
+		}
+		
+		effects = {
+			
+		}
+	}
+	
+	debt_money = {
+		context_type = player_context
+		
+		window_name = "money_debt_container"
+		
+		parent_window_token = top_bar
+		
+		visible = {
+			NOT = {
+				has_country_flag = TFR_money_element_small
+			}
+		}
+		
+		effects = {
+			
+		}
+	}
+	
+	money_small = {
+		context_type = player_context
+		
+		window_name = "money_small_container"
+		
+		parent_window_token = top_bar
+		
+		visible = {
+            has_country_flag = TFR_money_element_small
+		}
+		
+		effects = {
+			
+		}
+	}
+	
+	debt_money_small = {
+		context_type = player_context
+		
+		window_name = "money_debt_small_container"
+		
+		parent_window_token = top_bar
+		
+		visible = {
+            has_country_flag = TFR_money_element_small
+		}
+		
+		effects = {
+			
+		}
+	}
+	
+	money_element_size = {
+		context_type = player_context
+		
+		window_name = "money_element_size_container"
+		
+		parent_window_token = top_bar
+		
+		visible = {
+            always = yes
+		}
+		
+		effects = {
+			money_element_size_button_click = {
+				if = {
+					limit = { 
+						NOT = { 
+							has_country_flag = TFR_money_element_small
+						}
+					}
+					set_country_flag = TFR_money_element_small
+				}
+				
+				else_if = {
+					limit = { has_country_flag = TFR_money_element_small }
+					clr_country_flag = TFR_money_element_small
+				}
+			}
+		}
+	}
+	
+	TFR_econ_1_gui = {
+		context_type = player_context
+		window_name = "TFR_econ_gdp_gui_container"
+		
+		visible = {
+            has_country_flag = TFR_econ_1_gui_open
+		}
+		
+		effects = {
+		}
+	}
+	
+	TFR_econ_2_gui = {
+		context_type = player_context
+		window_name = "TFR_econ_debt_gui_container"
+		
+		visible = {
+            has_country_flag = TFR_econ_2_gui_open
+		}
+		
+		effects = {
+		}
+	}
+}
+

@@ -1,0 +1,621 @@
+﻿add_namespace = algeria
+add_namespace = morocco
+
+# Fuck you morocco go die
+country_event = {
+	id = algeria.1
+	title = algeria.1.t
+	desc = algeria.1.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ALG
+	}
+	immediate = {
+		WES = {
+			transfer_state = 882
+		}
+	}
+
+	option = {
+		name = algeria.1.a
+		set_global_flag = ALG_maghreb_war_global
+		ALG = {
+			create_faction = "ALG_Faction_Name"
+		}
+		MOR = {
+			create_faction = "MOR_Faction_Name"
+		}
+		if = {
+			limit = {
+				has_global_flag = TUN_pro_algeria_flag
+			}
+			add_to_faction = TUN
+		}
+		if = {
+			limit = {
+				has_global_flag = MRT_algeria_pressured_global
+			}
+			add_to_faction = MRT
+		}
+		if = {
+			limit = {
+				has_global_flag = HRL_pro_algeria_global
+			}
+			add_to_faction = HRL
+			add_to_faction = LBA
+		}
+		MOR = {
+			if = {
+				limit = {
+					has_global_flag = TUN_pro_morocco_flag
+				}
+				add_to_faction = TUN
+			}
+			if = {
+				limit = {
+					has_global_flag = LBA_pro_morocco_global
+				}
+				add_to_faction = HRL
+				add_to_faction = LBA
+			}
+		}
+		ZZZ = {
+			activate_mission = ZZZ_mor_alg_war_timer
+		}
+		declare_war_on = { 
+			target = MOR 
+			type = annex_everything 
+		}
+		puppet = WES
+		WES = {
+			declare_war_on = { 
+				target = MOR 
+				type = annex_everything 
+			}
+			set_politics = {	
+				ruling_party = nationalist
+				last_election = "2020.2.1"
+				election_frequency = 72
+				elections_allowed = yes
+			}
+			load_oob = "WES_2020"
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.15
+			}
+			add_country_leader_role = {
+				character = WES_Brahim_Ghali
+				promote_leader = yes
+				country_leader = {
+					ideology = military_junta
+					traits = {
+					}
+				}
+			}
+		}	
+		news_event = news.183
+		#HRL = {
+			#load_oob = "HRL_2020"
+			#add_ai_strategy = {
+			#	type = prepare_for_war
+			#	id = ALG
+			#	value = 100
+			#}
+			#country_event = {
+			#	id = libya.15
+			#	days = 40
+			#}
+		#}
+	}
+}
+#Algerian Civil War
+country_event = {
+	id = algeria.2
+	title = algeria.2.t
+	desc = algeria.2.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ALG
+	}
+
+	option = {
+		name = algeria.2.a
+		set_global_flag = Algerian_Civil_War_Flag
+		set_cosmetic_tag = ALG_prov_gov
+		every_core_state = {
+			add_core_of = AG1
+			add_core_of = AG2
+		}
+		set_nationality = {
+			target_country = AG1
+			character = ALG_Karim_Tabbou_char
+		}
+		set_nationality = {
+			target_country = AG2
+			character = ALG_Abdelhak_Layada_char
+		}
+		ALG = {
+			country_event = {
+				id = algeria.11
+				days = 150
+			}
+			create_country_leader = {
+				name = ALG_interim_government
+				picture = "gfx/leaders/ALG/ALG_interim_government.png"
+				expire = "1.1.1.1"
+				ideology = military_democracy
+			}
+		}
+		AG1 = {
+			transfer_state = 460
+			ALG_Karim_Tabbou_char = {
+				promote_character = yes
+			}
+		}
+		AG2 = {
+			transfer_state = 514
+			transfer_state = 1331
+			create_country_leader = {
+				name = ALG_ali_benhadj
+				picture = "gfx/leaders/ALG/ALG_ali_benhadj.png"
+				expire = "1.1.1.1"
+				ideology = salafi
+			}
+		}
+		#TAU = {
+		#	transfer_state = 1331
+		#	1331 = {
+		#		add_core_of = ROOT
+		#	}
+		#}
+		HRL = {
+			country_event = { id = libya.15 days = 25 }
+		}
+		FRA = {
+			country_event = { id = france.50 days = 3 }
+		}
+		transfer_units_fraction= {
+			target = AG1
+			size = 0.3
+			stockpile_ratio = 0.3
+			army_ratio = 0.3
+			air_ratio = 0.3
+		}
+		transfer_units_fraction= {
+			target = AG2
+			size = 0.3
+			stockpile_ratio = 0.3
+			army_ratio = 0.3
+			air_ratio = 0.3
+		}
+		declare_war_on = { 
+			target = AG1
+			type = civil_war 
+		}	
+		declare_war_on = { 
+			target = AG2
+			type = civil_war 
+		}	
+		declare_war_on = { 
+			target = AG3
+			type = civil_war 
+		}	
+		declare_war_on = { 
+			target = TAU
+			type = civil_war 
+		}	
+		AG1 = {
+			declare_war_on = { 
+				target = ALG
+				type = civil_war 
+			}	
+			declare_war_on = { 
+				target = AG2
+				type = civil_war 
+			}
+		}
+		AG2 = {
+			declare_war_on = { 
+				target = ALG
+				type = civil_war 
+			}	
+			declare_war_on = { 
+				target = AG1
+				type = civil_war 
+			}
+		}
+		news_event = { id = news.283 }
+	}
+}
+country_event = { #Peaceful protests in Algiers
+	id = algeria.3
+	title = algeria.3.t
+	desc = algeria.3.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = algeria.3.a
+		add_ideas = ALG_Peaceful_Protests
+		country_event = { id = algeria.4 days = 30 }
+		
+	}
+}
+country_event = { #Protests become violent
+	id = algeria.4
+	title = algeria.4.t
+	desc = algeria.4.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = algeria.4.a
+		swap_ideas = {
+			remove_idea = ALG_Peaceful_Protests
+			add_idea = ALG_Violent_Protests
+		}
+		random_owned_controlled_state = {
+			prioritize = { 513 460 514 1331 } 
+			LIMIT = {
+				is_demilitarized_zone = no
+			}
+			set_demilitarized_zone = yes
+		}
+		country_event = { id = algeria.6 days = 100 }
+		hidden_effect = {
+			country_event = { id = algeria.5 days = 70 }
+		}
+	}
+}
+country_event = { #Islamic fundamentalism hits peak
+	id = algeria.5
+	title = algeria.5.t
+	desc = algeria.5.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = algeria.5.a
+		add_ideas = ALG_Islamic_Extremism
+		random_owned_controlled_state = {
+			prioritize = { 513 460 514 1331 } 
+			set_demilitarized_zone = yes
+		}
+		country_event = { id = algeria.10 days = 10 } #Muslim Brotherhood declares Pan-Islamic Experiment 
+		
+	}
+}
+country_event = { #Islamic fundamentalism hits peak
+	id = algeria.10
+	title = algeria.10.t
+	desc = algeria.10.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = algeria.10.a
+		random_owned_controlled_state = {
+			prioritize = { 513 460 514 1331 } 
+			LIMIT = {
+				is_demilitarized_zone = no
+			}
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = { #Karim Tabbou broken out of prison
+	id = algeria.6
+	title = algeria.6.t
+	desc = algeria.6.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = algeria.6.a
+		random_owned_controlled_state = {
+			prioritize = { 513 460 514 1331 } 
+			LIMIT = {
+				is_demilitarized_zone = no
+			}
+			set_demilitarized_zone = yes
+		}
+		swap_ideas = {
+			remove_idea = ALG_Violent_Protests
+			add_idea = ALG_Revolutionary_Fervor_bad
+		}
+		#country_event = { id = algeria.2 days = 20 }
+		
+	}
+}
+country_event = {
+	id = algeria.7
+	title = algeria.7.t
+	desc = algeria.7.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		HRL = {
+			country_event = { id = libya.15 }
+		}
+	}
+	
+	option = { #Too late bud
+		name = algeria.7.a
+		trigger = {
+			has_war_with = WES
+			WES = {
+				surrender_progress < 0.5
+			}
+		}
+		white_peace = WES
+		country_event = { id = algeria.9 days = 15 }
+
+		
+	}
+	option = { #Conrats, you survived
+		name = algeria.7.b
+		trigger = {
+			NOT = {
+				has_war_with = WES
+				country_exists = WES
+			}
+		}
+		annex_country = {
+   			target = WES
+    		transfer_troops = no
+		}
+		transfer_state = 699
+		transfer_state = 882
+		add_stability = 0.15
+	}
+	option = {
+		name = algeria.7.c
+		trigger = { #Too late bud - EVIL COLLAPSE
+			NOT = {
+				has_war_with = WES
+			}
+			country_exists = WES
+		}
+		clr_country_flag = MOR_Retake_the_SADR
+		country_event = { id = algeria.8 days = 15 }
+	}
+}
+country_event = {
+	id = algeria.8
+	title = algeria.8.t
+	desc = algeria.8.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Rip crakkka
+		name = algeria.8.a
+		every_core_state = {
+			add_core_of = CRM
+			
+		}
+		CRM = {
+			transfer_state = 462
+			transfer_state = 290
+			add_ideas = {
+				low_poverty
+				low_conscription
+			}
+			set_politics = {	
+				ruling_party = libertarian_socialist
+				last_election = "2016.10.7"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				totalitarian_socialist = 4
+				communist = 8
+				libertarian_socialist = 28
+				social_democrat = 10
+				social_liberal = 9
+				market_liberal = 30
+				conservative = 0
+				authoritarian_democrat = 1
+				nationalist = 13
+				fascist = 3
+				national_socialist = 2
+			}
+		}
+		declare_war_on = { 
+			target = CRM 
+			type = annex_everything 
+		}
+	}
+}
+country_event = {
+	id = algeria.9
+	title = algeria.9.t
+	desc = algeria.9.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Rip crakkka
+		name = algeria.9.a
+		every_core_state = {
+			add_core_of = CRM
+		}
+		CRM = {
+			transfer_state = 462
+			add_ideas = {
+				low_poverty
+				low_conscription
+			}
+			set_politics = {	
+				ruling_party = communist
+				last_election = "2016.10.7"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				totalitarian_socialist = 4
+				communist = 38
+				libertarian_socialist = 20
+				social_democrat = 14
+				social_liberal = 15
+				market_liberal = 0
+				conservative = 0
+				authoritarian_democrat = 1
+				nationalist = 5
+				fascist = 3
+				national_socialist = 0
+			}
+		}
+		RRF = {
+			transfer_state = 290
+			set_capital = { state = 290 }
+			declare_war_on = { 
+				target = MOR 
+				type = annex_everything 
+			}
+			declare_war_on = { 
+				target = CRM 
+				type = annex_everything 
+			}
+			290 = {
+				add_core_of = RRF
+			}
+			
+			set_popularities = {
+				totalitarian_socialist = 3
+				communist = 4
+				libertarian_socialist = 9
+				social_democrat = 12
+				social_liberal = 24
+				market_liberal = 36
+				conservative = 12
+				authoritarian_democrat = 0
+				nationalist = 0
+				fascist = 0
+				national_socialist = 0
+			}
+			set_politics = {	
+				ruling_party = market_liberal
+				last_election = "2016.10.7"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			add_ideas = {
+				low_poverty
+				low_conscription
+			}
+		}
+		declare_war_on = { 
+			target = CRM 
+			type = annex_everything 
+		}
+	}
+}
+
+#Fate of Morocco
+country_event = {
+	id = morocco.1
+	title = morocco.1.t
+	desc = morocco.1.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = morocco.1.a
+		set_cosmetic_tag = MOR_peoples_republic
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+		}
+		set_popularities = {
+			authoritarian_democrat = 45
+			social_democrat = 15
+			communist = 25
+			nationalist = 15
+		}
+		create_country_leader = {
+			name = MOR_nabila_mounib
+			picture = "gfx/leaders/MOR/MOR_nabila_mounib.png"
+			expire = "1.1.1.1"
+			ideology = hybrid_regime
+		}
+	}
+	option = { 
+		name = morocco.1.b
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = MOR_Belkhir_El_Farouk
+			picture = "gfx/leaders/MOR/Belkhir El Farouk.png"
+			expire = "1.1.1.1"
+			ideology = military_junta
+		}
+	}
+	option = { 
+		name = morocco.1.c
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+		}
+	}
+}
+
+#Fate of Algeria
+country_event = {
+	id = algeria.11
+	title = algeria.11.t
+	desc = algeria.11.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = algeria.11.a
+		create_country_leader = {
+			name = ALG_aymen_benabderrahmane
+			picture = "gfx/leaders/ALG/ALG_aymen_benabderrahmane.png"
+			expire = "1.1.1.1"
+			ideology = hybrid_regime
+		}
+	}
+	option = { 
+		name = algeria.11.b
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = ALG_said_chengriha
+			picture = "gfx/leaders/ALG/ALG_said_chengriha.png"
+			expire = "1.1.1.1"
+			ideology = military_junta
+		}
+	}
+}

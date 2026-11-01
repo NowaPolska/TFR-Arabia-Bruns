@@ -1,0 +1,21 @@
+state={
+	id=1455
+	name="STATE_1455"
+	provinces={
+		10 111 133 179 3021 3105 3136 6042 6114 6136 6160 9032 9135 9227 11028 11113 11135 11206 
+	}
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			energy_farm = 1
+		}
+	}
+	state_category=rural
+	manpower=370517
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

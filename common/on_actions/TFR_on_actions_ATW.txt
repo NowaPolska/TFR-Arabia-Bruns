@@ -1,0 +1,112 @@
+on_actions = {
+	on_weekly_ATW = {
+		effect = {
+			set_temp_variable = {
+				var = ATW_desperation_var_temp
+				value = modifier@desperation_weekly
+			}
+			ATW_add_desperation = yes
+			set_temp_variable = {
+				var = ATW_devotion_var_temp
+				value = modifier@devotion_weekly
+			}
+			ATW_add_devotion = yes
+			set_temp_variable = {
+				var = ATW_despair_var_temp
+				value = modifier@despair_weekly
+			}
+			ATW_add_despair = yes
+			set_temp_variable = {
+				var = ATW_suspicion_var_temp
+				value = modifier@suspicion_weekly
+			}
+			ATW_add_suspicion = yes
+		}
+	}
+	on_monthly_ATW = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					NOT = {
+						is_in_faction_with = NSM
+						is_in_faction_with = PTF
+						has_completed_focus = ATW_lacrimosa
+					}
+					OR = {
+						has_country_flag = ATW_national_conference_breaks_down_flag
+						has_country_flag = NSM_left_faction_flag
+					}
+					USA_has_states_secured = yes
+					USA_has_militias_secured = yes
+					USA_has_gangs_secured = yes
+					USA_has_separatists_secured = yes
+					USA_has_rivals_secured = yes
+				}
+				complete_national_focus = ATW_lacrimosa
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			if = {
+				#ATW Florida Victory
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+					ROOT = {
+						tag = ATW
+					}
+					FROM = {
+						OR = {
+							original_tag = FLA
+							original_tag = FLM
+							original_tag = MMS
+							original_tag = ZOE
+							original_tag = LRA
+						}
+					}
+					NOT = {
+						country_exists = FLA
+						country_exists = FLM
+						country_exists = MMS
+						country_exists = ZOE
+						country_exists = LRA
+					}
+				}
+				ROOT = {
+					country_event = {
+						id = atom.8
+					}
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = ATW
+						controls_state = 1070
+						controls_state = 362
+						controls_state = 1123
+						controls_state = 1122
+					}
+					FROM = {
+						NOT = {
+							tag = ATW
+						}
+					}
+					FROM.FROM = {
+						USA_is_virginia_state = yes
+					}
+				}
+				ROOT = {
+					country_event = {
+						id = atom.103
+					}
+				}
+			}
+		}
+	}
+}

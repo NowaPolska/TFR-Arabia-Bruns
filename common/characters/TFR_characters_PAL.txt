@@ -1,0 +1,185 @@
+	characters={
+		PAL_mahmoud_abbas_char = {
+			portraits = {
+				civilian = {
+					large = GFX_portrait_PAL_mahmoud_abbas
+				}
+			}
+			country_leader = {
+				ideology = progressivism
+				expire = "1.1.1.1"
+				traits = {
+					hos_successor
+				}
+				id=-1
+			}
+		}
+		PAL_wappen_char = {
+		name = "Palestinian Legislative Council"
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/PAL_wappen.png"
+				}
+			}
+			country_leader = {
+				ideology = progressivism
+				expire = "1.1.1.1"
+				traits = {
+				}
+				id=-1
+			}
+		}
+		PAL_Abu_Obaida_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/PAL_Abu_Obaida.png"
+				}
+			}
+			country_leader = {
+				ideology = military_junta
+				traits = {
+					hos_commander_of_chaos
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+			can_be_captured = no
+			field_marshal={
+				skill=4
+				attack_skill=3
+				defense_skill=3
+				planning_skill=4
+				logistics_skill=3
+				traits = {
+					war_hero
+					media_personality
+					career_officer
+					desert_fox
+					offensive_doctrine
+					organizer
+				}
+			}
+		}
+		PAL_mohammed_deif_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/PAL_mohammed_deif.png"
+				}
+			}
+			country_leader = {
+				ideology = islamic_authoritarian
+				traits = {
+					hos_commander_in_chief
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+			can_be_captured = no
+			field_marshal={
+				skill=5
+				attack_skill=5
+				defense_skill=3
+				planning_skill=4
+				logistics_skill=4
+				traits = {
+					war_hero
+					media_personality
+					trickster
+					commando
+					paratrooper
+					desert_fox
+				}
+			}
+		}		
+		PAL_mohammed_qeis_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/PAL_mohammed_qeis.png"
+				}
+			}
+			country_leader = {
+				ideology = left_baathism
+				traits = {
+			    PAL_arab_revolutianary
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}	
+		PAL_bassam_as_salhi_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/PAL_bassam_as_salhi.png"
+				}
+			}
+			country_leader = {
+				ideology = reformist_socialism
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		PAL_ismail_haniyeh_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/PAL_ismail_haniyeh.png"
+				}
+			}
+			country_leader = {
+				ideology = radical_nationalism
+				traits = {
+					hos_commander_in_chief
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		PAL_Rakad_Salem_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/Rakad Salem.png"
+				}
+			}
+			country_leader = {
+				ideology = left_baathism
+				traits = {
+			    PAL_proud_baathist_pan_arabist
+			    }
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology = assadist_baathism
+				traits = {
+			    PAL_proud_baathist_pan_arabist
+			    }
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology = iraqi_baathism
+				traits = {
+			    PAL_proud_baathist_pan_arabist
+			    }
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		PAL_Salam_Fayyad_char = {
+		    name = "Salem Fayyad"
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/PAL/PAL_Salam_Fayyad.png"
+				}
+			}
+			country_leader = {
+				ideology = centrist
+				traits = {
+				PAL_the_third_contender
+				}
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+	}

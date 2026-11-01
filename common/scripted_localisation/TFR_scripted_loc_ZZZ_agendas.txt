@@ -1,0 +1,124 @@
+#Agendas
+
+#Good Agendas
+defined_text = {
+	#National Stabilization
+	name = generic_national_stabilization_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_national_stabilization_agenda_flag
+		}
+		localization_key = generic_national_stabilization_agenda_loc
+	}
+}
+
+defined_text = {
+	#Low Taxation
+	name = generic_low_taxation_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_low_taxation_agenda_flag
+		}
+		localization_key = generic_low_taxation_agenda_loc
+	}
+}
+
+defined_text = {
+	#Sacred Endeavor
+	name = generic_sacred_endeavor_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_sacred_endeavor_agenda_flag
+		}
+		localization_key = generic_sacred_endeavor_agenda_loc
+	}
+}
+
+defined_text = {
+	#For the Common Man
+	name = generic_for_the_common_man_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_for_the_common_man_agenda_flag
+		}
+		localization_key = generic_for_the_common_man_agenda_loc
+	}
+}
+
+defined_text = {
+	#Bread and Circuses
+	name = generic_bread_and_circuses_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_bread_and_circuses_agenda_flag
+		}
+		localization_key = generic_bread_and_circuses_agenda_loc
+	}
+}
+
+#Bad Agendas
+defined_text = {
+	#Consumer Advocacy
+	name = generic_consumer_advocacy_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_consumer_advocacy_agenda_flag
+		}
+		localization_key = generic_consumer_advocacy_agenda_loc
+	}
+}
+
+defined_text = {
+	#Political Unity
+	name = generic_political_unity_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_political_unity_agenda_flag
+		}
+		localization_key = generic_political_unity_agenda_loc
+	}
+}
+
+defined_text = {
+	#Anti-Welfare
+	name = generic_anti_welfare_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_anti_welfare_agenda_flag
+		}
+		localization_key = generic_anti_welfare_agenda_loc
+	}
+}
+
+defined_text = {
+	#Upholding Expectations
+	name = generic_upholding_expectations_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_upholding_expectations_agenda_flag
+		}
+		localization_key = generic_upholding_expectations_agenda_loc
+	}
+}
+
+defined_text = {
+	#Practical Finances
+	name = generic_practical_finances_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_practical_finances_agenda_flag
+		}
+		localization_key = generic_practical_finances_agenda_loc
+	}
+}
+
+defined_text = {
+	#Eyes Wide Shut
+	name = generic_eyes_wide_shut_agenda_text
+	text = {
+		trigger = {
+			has_country_flag = generic_eyes_wide_shut_agenda_flag
+		}
+		localization_key = generic_eyes_wide_shut_agenda_loc
+	}
+}
