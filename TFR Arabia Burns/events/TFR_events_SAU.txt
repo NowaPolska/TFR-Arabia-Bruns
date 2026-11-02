@@ -2483,7 +2483,7 @@ country_event = {
 
     set_politics = {
 		ruling_party = authoritarian_democrat
-		last_election = "2015.5.24"
+		last_election = "2020.5.24"
 		election_frequency = 48
 		elections_allowed = no
 	}
@@ -4736,7 +4736,6 @@ country_event = {
 			add_ideas = SYR_devistated_economy
 			add_ideas = Dreams_of_greater_syria
 			add_ideas = Assadist_reminanst
-			# Einheiten löschen: siehe Hinweis unten
 			set_politics = {
 				ruling_party = nationalist
 				last_election = "2022.04.10"
@@ -4761,7 +4760,7 @@ country_event = {
 		HTS = { load_oob = "hts_post_nuke" }
 		ROJ = { load_oob = "rojava_post_nuke" }
 
-		# Syria
+		# Syria war declearation
 		ISS = {
 			declare_war_on = { target = FSA type = annex_everything }
 			declare_war_on = { target = SYR type = annex_everything }
@@ -4783,7 +4782,7 @@ country_event = {
 	}
 }
 
-# idf coup after israeli loses to the arabs
+# idf coup after israeli loses to the damascus pact
 country_event = {
     id = saudi.120
     title = saudi.120.t
@@ -4819,6 +4818,31 @@ country_event = {
 		long_name = "Israeli Defence Forces"
 		name = "Israeli Defense Forces"
 	    }
+	}
+}
+
+# changing portrait of MBS, yes or no?
+country_event = {
+    id = saudi.121
+    title = saudi.121.t
+    desc = saudi.121.d
+    picture = GFX_SAU_mbs_portrait_change
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	name = saudi.121.a # yes
+	add_political_power = 1
+	hidden_effect = {
+	retire_character = SAU_mohammed_bin_salman_char
+	recruit_character = SAU_mohammed_bin_salman_happy_char
+	promote_character = SAU_mohammed_bin_salman_happy_char
+	    }
+	}
+	option = {
+	name = saudi.121.b # no
+	add_political_power = -1
 	}
 }
 	

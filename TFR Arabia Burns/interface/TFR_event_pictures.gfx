@@ -13040,6 +13040,10 @@ spriteTypes = {
 		name = "GFX_SAU_jihadists_take_riad"
 		texturefile = "gfx/event_pictures/SAU_jihadists_take_riad.png"
 	}
+	SpriteType = {
+		name = "GFX_SAU_mbs_portrait_change"
+		texturefile = "gfx/event_pictures/SAU_mbs_portrait_change.png"
+	}
     #VERY ITALIAN PICS
 	#--------------------------------------------------------------------------
 	SpriteType = {

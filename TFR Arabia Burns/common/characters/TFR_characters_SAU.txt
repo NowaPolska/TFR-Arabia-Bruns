@@ -40,6 +40,26 @@ SAU_salman_bin_abdulaziz_char = {
         expire = "1.1.1.1"
     }
 }
+    SAU_mohammed_bin_salman_happy_char = {
+	    name = "Mohammad bin Salman Al Saud"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/SAU/MBS_happy.png" 
+			}
+			army = {
+				large = "gfx/Leaders/SAU/MBS_happy.png" 
+			}
+		}
+	country_leader = {
+        ideology = absolute_monarchist
+        expire = "1.1.1.1"
+    }
+
+    country_leader = {
+        ideology = reformed_saudi_monarchism
+        expire = "1.1.1.1"
+    }
+}
     SAU_Army_logo_char = {
 	name = "Collapsed Authority"
 		portraits={

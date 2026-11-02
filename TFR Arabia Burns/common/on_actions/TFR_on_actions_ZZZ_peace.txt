@@ -1256,6 +1256,29 @@ on_actions = {
 				}
 				set_global_flag = skip_default_capitulation
 			}
+			# SAU kill IRQ
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = SAU
+						}
+					}
+					ROOT = {
+						original_tag = IRQ
+					}
+				}
+				FROM = {
+				    white_peace = ROOT
+					SAU = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
 			#SAU kill HRL
 			if = {
 				limit = {

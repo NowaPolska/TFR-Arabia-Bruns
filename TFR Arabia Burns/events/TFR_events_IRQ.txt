@@ -262,7 +262,7 @@ country_event = {
 			}
 		}
 		SAU = {
-		set_cosmetic_tag = iraq_invades_kuwait_focus_bypass
+		set_country_flag = iraq_invades_kuwait_focus_bypass
 		}
 	}
 }

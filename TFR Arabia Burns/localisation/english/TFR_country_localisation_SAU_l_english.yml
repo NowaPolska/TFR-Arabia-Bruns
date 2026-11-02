@@ -314,6 +314,18 @@
  SAU_Form_the_United_Arab_Kingdom_desc: "For the first time since the 11th century, the Arab nations are a single unified entity, we have done the impossible, we became the master of Arabia. All sins and enemies have been cleansed, a new Arab Golden Age is around the corner."
  SAU_Return_of_the_past: "Return Of The Past"
  SAU_Return_of_the_past_desc: "For the first time since the 11th century, the Arab nations are a single unified entity, we have done the impossible, we became the master of Arabia. All sins and enemies have been cleansed, a new Arab Golden Age is around the corner."
+ ROC_Allah_is_with_us: "Allah is with us"
+ ROC_Allah_is_with_us_desc: "We are on the rigth side of History!, Allah, give us streangh to save Saudi arabia from the traitors!"
+ ROC_Restart_the_Economy: "Restart the economy"
+ ROC_Restart_the_Economy_desc: ""
+ ROC_same_same_but_diffrent: "Same Same, but diffrent"
+ ROC_same_same_but_diffrent_desc: ""
+ ROC_request_further_military_aid: "Request further military aid"
+ ROC_request_further_military_aid_desc: ""
+ ROC_emergency_army_mobilisation: "Emergency Army mobilization"
+ ROC_emergency_army_mobilisation_desc: "Jihadists terrorists have taken the holy city of Mecca!, TAKE IT BACK RIGHT NOW! IT WAS AN ORDER!!!!"
+ ROC_national_recruitment_drive: "National Recruitment drive"
+ ROC_national_recruitment_drive_desc: ""
  #Threats
  SAU_saudi_civil_war_threat: "Saudi Civil War"
  #Global Flags
@@ -605,6 +617,10 @@
  saudi.118.t: "More Troubels in Yemen"
  saudi.118.d: "The fragile peace forged under the Riyadh Agreement between the Southern Transition Council (STC) and the Yemeni government has completely shattered.. As internal political violence and economic stagnation paralyze our administration, both the STC and various Yemeni factional militias have taken advantage of our distraction to launch fresh offensives across the border territories.\n\nReports from our STC advisors in Aden confirm total collapse in their coordination. Shelling has began along their supply lines, and tribal loyalties are shifting once again. With domestic unrest mounting at home, Our grip on the Yemeni peninsula grows weaker by the day."
  saudi.118.a: "I think we have more important problems then Yemen rigth now..."
+ saudi.121.t: "MBS with more drip?"
+ saudi.121.d: "Hey Kid, want to change the portait of MBS?\nIts only in a 15$ DLC!!!!!!!!!!"
+ saudi.121.a: "Sure, why not"
+ saudi.121.b: "NO, MBS shmeagh is allways Red and White!!!!"
  ###DECISIONS###
  SAU_civil_war_preparations: "Civil War Preparation"
  SAU_civil_war_preparations_desc: "Internal dissent is growing against Mohammed bin Salman despite his legal authority to succeed Salman Abdulaziz. Opposition factions have sprung up in the wake of the King's death and seem to be coluding to topple Mohammed. The return of Yahya Assiri hasn't calmed the situation either, as Liberals have also begun to organize and spread their influence. Regiments are ignoring orders, requests for reinforcements aren't being fufilled, strange movemnts are being recorded. There's only one possibility..."
@@ -996,6 +1012,8 @@
  SAU_pal_pot_of_rage_desc: "While peace in the Levant existed for centuries under the Ottoman Empire, the British takeover and the utter incompetence of the British colonial occupation of the Mandate of Palestine, subsequently led to its inevitable collapse. In the fires of chaos, the Palestinian people rose up to fight for our homeland, to fight against injustice and Zionist suppression. But we failed... backstabbed by our Arab 'allies'. In the end, when the smoke settled, the entirety of Palestine was either conquered by Israel or by Jordan and Egypt. The Israelis had no mercy for the mere existence of the Palestinian people; following our defeat, the Israelis began a rampage of ethnic cleansing, later called the Nakba (the catastrophe), at the end of which more than 80% of Palestinians ended up being deported, expelled, or straight up dying—either directly killed by Israeli soldiers or starving to death in overfilled refugee camps. The scars of oppression have never healed, as the Israeli ethnic-cleansing campaign never ended; while it slowed down for a few decades, it still continued and is continuing to this day. All peaceful and violent ways of resistance have been crushed by Israel... Today, the West Bank is a boiling pot on the brink of explosion... All it needs is one single incident..."
  SAU_money_from_lebanon: "Money from Lebanon"
  SAU_money_from_lebanon_desc: ""
+ SAU_military_factory_donations: "industrial Donations"
+ SAU_military_factory_donations_desc: "5 Trillion dollars to saudi arabia (:"
  ### opinion modyfiers ###
  our_saudi_brothers: "Our Saudi Brothers"
  stands_with_palestine: "Stands with Palestine"

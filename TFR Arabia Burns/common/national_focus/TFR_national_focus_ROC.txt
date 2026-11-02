@@ -9,7 +9,7 @@ focus_tree = {
 	}
 focus = {
     id = ROC_Allah_is_with_us
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_GER_Back_the_Arabian_Republic
 	
 	x = 10
 	y = 0
@@ -23,7 +23,7 @@ focus = {
 }
 focus = {
     id = ROC_Restart_the_Economy
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
 	x = 9
 	y = 1
@@ -40,7 +40,7 @@ focus = {
 }
 focus = {
     id = ROC_same_same_but_diffrent
-    icon = GFX_goal_generic_position_army
+    icon = GFX_focus_SAU_generic
 	
 	x = 11
 	y = 1
@@ -55,3 +55,80 @@ focus = {
 	add_ideas = { ZZZ_absolute_monarchy }
 	}
 }
+focus = {
+    id = ROC_request_further_military_aid
+    icon = GFX_focus_SAU_generic
+	
+	x = 8
+	y = 2
+	
+	prerequisite = {
+	focus = ROC_Restart_the_Economy
+	}
+	prerequisite = {
+	focus = ROC_same_same_but_diffrent
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_military_factory_donations
+	}
+}
+focus = {
+    id = ROC_emergency_army_mobilisation
+    icon = GFX_focus_SAU_generic
+	
+	x = 10
+	y = 2
+	
+	prerequisite = {
+	focus = ROC_Restart_the_Economy
+	}
+	prerequisite = {
+	focus = ROC_same_same_but_diffrent
+	}
+	
+	ai_will_do = { 
+        factor = 100
+    }
+	
+	cost = 1
+	
+	completion_reward = {
+	895 = {
+	create_unit = {
+			division = "name = \"6th Armored Brigade\" division_template = \"Liwa Mudarae\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+			owner = ROC
+		}
+	}
+	679 = {
+	create_unit = {
+			division = "name = \"75th Liwa Militia\" division_template = \"Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+			owner = ROC
+			}
+		}
+	}
+}
+focus = {
+    id = ROC_national_recruitment_drive
+    icon = GFX_focus_SAU_generic
+	
+	x = 12
+	y = 2
+	
+	prerequisite = {
+	focus = ROC_Restart_the_Economy
+	}
+	prerequisite = {
+	focus = ROC_same_same_but_diffrent
+	}
+	
+	cost = 5
+	
+	completion_reward = {
+	add_manpower = 25000
+	add_war_support = 0.05
+	}
+}
+

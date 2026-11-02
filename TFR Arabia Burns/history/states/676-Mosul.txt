@@ -15,6 +15,8 @@ state={
 			air_base = 2
 		}
 		victory_points = { 10106 20 }	#Mosul
+		victory_points = { 1938 4 }  # Tal Afar
+		victory_points = { 14005 1 } # Hammam al-Alil
 		add_core_of = IRQ
 	}
 

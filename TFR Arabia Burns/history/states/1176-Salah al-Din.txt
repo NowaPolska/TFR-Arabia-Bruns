@@ -11,6 +11,7 @@ state = {
 	history = {
 		owner = IRQ
 		add_core_of = IRQ
+		victory_points = { 3795 5 }
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

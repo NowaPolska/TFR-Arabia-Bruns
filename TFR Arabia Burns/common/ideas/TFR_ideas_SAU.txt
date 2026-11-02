@@ -1892,6 +1892,7 @@
 			}
 		}
 	#### Remaining Bs Ideas ####
+	
 	    SAU_houti_help_from_iran = {
 		picture = ZZZ_blank_idea_trait
 		
@@ -1924,6 +1925,22 @@
 			
 		    modifier = {
 			send_volunteer_size = 10
+			}
+		}
+		#### OTHER SAUDI CIVIL WAR FACTIONS ####
+		
+		SAU_military_factory_donations = {
+		picture = ZZZ_blank_idea_trait
+		
+		    allowed = {
+		    has_war = yes
+		    }
+			
+	        removal_cost = -1
+			
+		    modifier = {
+			industrial_capacity_factory = 0.05
+			military_factory_donations = 1
 			}
 		}
 	}
