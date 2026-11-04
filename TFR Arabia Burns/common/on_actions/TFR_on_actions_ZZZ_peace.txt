@@ -919,7 +919,140 @@ on_actions = {
 					}
 					set_global_flag = skip_default_capitulation
 				}
-				
+if = {
+	# Salman Victory
+	limit = {
+		FROM = {
+			original_tag = SAU
+		}
+		ROOT = {
+			OR = {
+				original_tag = ROC
+				original_tag = ARR
+				original_tag = JAH
+				original_tag = SAR
+			}
+		}
+	}
+	FROM = {
+	    clr_global_flag = saudi_civil_war_flag
+		white_peace = ROOT
+		annex_country = {
+			target = ROOT
+			transfer_troops = no
+		}
+	}
+	FRA = {
+		if = {
+			limit = {
+				has_country_flag = SAU_Support_flag
+				has_completed_focus = FRA_If_We_cant_have_it
+			}
+			country_event = france.209
+		}
+	}
+	set_global_flag = skip_default_capitulation
+}
+if = {
+	# Liberal Victory
+	limit = {
+		FROM = {
+			original_tag = ARR
+		}
+		ROOT = {
+			OR = {
+				original_tag = ROC
+				original_tag = SAU
+				original_tag = JAH
+				original_tag = SAR
+			}
+		}
+	}
+	FROM = {
+	    clr_global_flag = saudi_civil_war_flag
+		white_peace = ROOT
+		annex_country = {
+			target = ROOT
+			transfer_troops = no
+		}
+	}
+	set_global_flag = skip_default_capitulation
+}
+if = {
+	# Coalition Victory
+	limit = {
+		FROM = {
+			original_tag = ROC
+		}
+		ROOT = {
+			OR = {
+				original_tag = SAU
+				original_tag = ARR
+				original_tag = SAR
+				original_tag = JAH
+			}
+		}
+	}
+	FROM = {
+	    clr_global_flag = saudi_civil_war_flag
+		white_peace = ROOT
+		annex_country = {
+			target = ROOT
+			transfer_troops = no
+		}
+	}
+	set_global_flag = skip_default_capitulation
+}
+if = {
+	# Hezbollah Victory
+	limit = {
+		FROM = {
+			original_tag = SAR
+		}
+		ROOT = {
+			OR = {
+				original_tag = ROC
+				original_tag = ARR
+				original_tag = JAH
+				original_tag = SAU
+			}
+		}
+	}
+	FROM = {
+	    clr_global_flag = saudi_civil_war_flag
+		white_peace = ROOT
+		annex_country = {
+			target = ROOT
+			transfer_troops = no
+		}
+	}
+	set_global_flag = skip_default_capitulation
+}
+if = {
+	# Jihadist Victory
+	limit = {
+		FROM = {
+			original_tag = JAH
+		}
+		ROOT = {
+			OR = {
+				original_tag = SAU
+				original_tag = ARR
+				original_tag = SAR
+				original_tag = ROC
+			}
+		}
+	}
+	FROM = {
+	    clr_global_flag = saudi_civil_war_flag
+		white_peace = ROOT
+		annex_country = {
+			target = ROOT
+			transfer_troops = no
+		}
+	}
+	set_global_flag = skip_default_capitulation
+	}
 				if = {
 					# PRC kill SIA
 					limit = {
@@ -1494,7 +1627,7 @@ on_actions = {
             }
 
            set_global_flag = skip_default_capitulation
-           }
+            }
 				if = {
 					# PRC kill LAO
 					limit = {
@@ -18089,7 +18222,7 @@ on_actions = {
 			else = {
 				
 			#saudi win against egypt alliance
-			if = {
+			    if = {
 				limit = {
 					FROM = {
 						OR = {
@@ -18123,6 +18256,9 @@ on_actions = {
 					ROOT = { original_tag = ISR }
 				}
 				FROM = {
+				    SAU = {
+					country_event = saudi.71
+					}
 					white_peace = ROOT
 					annex_country = {
 						target = ROOT
@@ -28237,10 +28373,9 @@ on_actions = {
 							}
 
 						}
+					}
 					set_global_flag = skip_default_capitulation
-				    }
-	            set_global_flag = skip_default_capitulation
-	            }
+				}
 				#Capitulation block
 				set_global_flag = war_continuing
 				#some other wars are supposed to be here, I don't fucking understand it. this is literally TNO black magic bullshit. if these wars are placed with the rest then they suddenly do not work. do not ask me why

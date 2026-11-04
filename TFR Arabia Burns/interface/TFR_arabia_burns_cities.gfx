@@ -1,0 +1,26 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_terrain_jeddah
+        textureFile = gfx/interface/terrains/jeddah_city.png
+    }
+    spriteType = {
+        name = GFX_terrain_jeddah_winter
+        textureFile = gfx/interface/terrains/jeddah_city.png
+    }
+	spriteType = {
+        name = GFX_terrain_damman
+        textureFile = gfx/interface/terrains/damman.png
+    }
+    spriteType = {
+        name = GFX_terrain_damman_winter
+        textureFile = gfx/interface/terrains/damman.png
+    }
+	spriteType = {
+        name = GFX_terrain_medina
+        textureFile = gfx/interface/terrains/medina.png
+    }
+    spriteType = {
+        name = GFX_terrain_medina_winter
+        textureFile = gfx/interface/terrains/medina.png
+    }
+}

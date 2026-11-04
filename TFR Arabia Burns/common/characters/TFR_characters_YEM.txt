@@ -81,7 +81,7 @@ characters={
             original_tag = YEM
         }
         
-        cost = 50            
+        cost = 100       
         
         traits = {
             army_chief_defensive_2 
@@ -114,6 +114,29 @@ characters={
 			id=-1
 		}
 	}
+	HOU_Muhammad_Abd_al_Karim_al_Ghamari_char = {
+    name = "Muhammad Abd al Karim al Ghamari"
+    
+    portraits = {
+        civilian = {
+            large = "gfx/Leaders/YEM/Muhammad_Abd_al_Karim_al_Ghamari.png" 
+        }
+        army = {
+            large = "gfx/Leaders/YEM/Muhammad_Abd_al_Karim_al_Ghamari.png" 
+        }
+    }
+
+    can_be_captured = no
+
+    corps_commander = {
+        skill = 3                     
+        attack_skill = 3        
+        defense_skill = 4         
+        planning_skill = 2          
+        logistics_skill = 3      
+        traits = { skirmisher, Adaptable, camouflage_expert }
+		}
+    }
 	#AAS
 	AAS_aidarus_char = {
 		portraits={

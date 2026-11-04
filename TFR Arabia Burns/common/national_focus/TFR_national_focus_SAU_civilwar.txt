@@ -1068,7 +1068,7 @@ focus = {
 	available = {
 	NOT = {
 	has_idea = SAU_mass_scale_economic_diversification
-	     }
+	    }
 	}
 	
 	cost = 5

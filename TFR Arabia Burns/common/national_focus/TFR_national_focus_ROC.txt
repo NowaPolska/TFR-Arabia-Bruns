@@ -93,6 +93,10 @@ focus = {
         factor = 100
     }
 	
+	available = {
+	has_war_with = JAH
+	}
+	
 	cost = 1
 	
 	completion_reward = {

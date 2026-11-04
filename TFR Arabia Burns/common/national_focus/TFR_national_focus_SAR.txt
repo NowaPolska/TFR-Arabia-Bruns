@@ -24,7 +24,7 @@ focus = {
 }
 focus = {
     id = SAR_the_faliuare_of_Western_capital_imperalism
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
 	x = 9
 	y = 1
@@ -41,7 +41,7 @@ focus = {
 	}
 focus = {
     id = SAR_Adapting_the_Iranian_System
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
 	x = 11
 	y = 1

@@ -1198,6 +1198,11 @@ on_actions = {
 				add_ideas = PRC_aircraft_carrier_programme_idea
 			}
 			SAU = {
+			    country_event = {
+					# country info event
+					id = saudi.122
+					days = 2
+				}
 				country_event = {
 					# Oil Deal Fails
 					id = saudi.12

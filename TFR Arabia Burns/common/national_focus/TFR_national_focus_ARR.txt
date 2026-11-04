@@ -1,5 +1,5 @@
 focus_tree = {
-	id = SAU_initial_tree
+	id = ARR_initial_tree
 	country = {
 		base = 0
 		modifier = {
@@ -23,7 +23,7 @@ focus = {
 }
 focus = {
     id = ARR_Reconnect_our_economy
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
 	x = 9
 	y = 1
@@ -40,7 +40,7 @@ focus = {
 	}
 focus = {
     id = ARR_Build_the_goverment_from_the_ground_up
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
 	x = 11
 	y = 1
@@ -53,13 +53,13 @@ focus = {
 	
 	completion_reward = {
 		add_ideas = { ZZZ_presidential_republic }
-			}
 		}
+	}
 focus = {
     id = AAR_An_Militia_Army
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
-	x = 2
+	x = 1
 	y = 2
 	
 	prerequisite = {
@@ -67,7 +67,7 @@ focus = {
 	}
 	prerequisite = {
     focus = ARR_Reconnect_our_economy
-}
+    }
 	mutually_exclusive = {
         focus = ARR_An_Profesonal_Army
     }
@@ -91,9 +91,9 @@ focus = {
     }
 focus = {
     id = ARR_An_Profesonal_Army
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
-	x = 6
+	x = 5
 	y = 2
 	
 	prerequisite = {
@@ -103,7 +103,7 @@ focus = {
     focus = ARR_Reconnect_our_economy
 }
 
-mutually_exclusive = {
+    mutually_exclusive = {
         focus = AAR_An_Militia_Army
     }
 
@@ -132,4 +132,65 @@ mutually_exclusive = {
 			}
 		}
 	}
-}
+	focus = {
+    id = ARR_uniting_the_nation
+	icon = GFX_focus_SAU_generic
+	
+	x = 8
+	y = 2
+	
+	prerequisite = {
+    focus = ARR_Build_the_goverment_from_the_ground_up
+	}
+	prerequisite = {
+    focus = ARR_Reconnect_our_economy
+    }
+	
+	cost = 5
+	
+	completion_reward = {
+	remove_ideas = SAU_divided_nation
+	    }
+    }
+	focus = {
+    id = ARR_help_from_israel
+	icon = GFX_focus_SAU_generic
+	
+	x = 10
+	y = 2
+	
+	prerequisite = {
+    focus = ARR_Build_the_goverment_from_the_ground_up
+	}
+	prerequisite = {
+    focus = ARR_Reconnect_our_economy
+    }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = ISR_Military_Advisors_to_Saudi_Arabia
+	    }
+	}
+	focus = {
+    id = ARR_shining_example_of_western_democracy
+	icon = GFX_focus_SAU_generic
+	
+	x = 12
+	y = 2
+	
+	prerequisite = {
+    focus = ARR_Build_the_goverment_from_the_ground_up
+	}
+	prerequisite = {
+    focus = ARR_Reconnect_our_economy
+    }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = SAU_streangth_in_diversity
+	    }
+	}
+	
+	

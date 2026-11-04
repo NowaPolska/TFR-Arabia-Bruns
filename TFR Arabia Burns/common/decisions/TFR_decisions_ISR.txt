@@ -528,7 +528,7 @@ iran_israel_war_ISR = {
 
 		timeout_effect = {
 		clr_global_flag = iran_israel_war_active
-		set_country_flag = iran_israel_war_over
+		set_global_flag = iran_israel_war_over
 		
 	        if = {
             limit = {
@@ -586,6 +586,38 @@ iran_israel_war_ISR = {
 			}
 		}
 	}
+	# HEZBOLLAH WINS, aka white peace
+	hez_we_win = {
+		icon = GFX_decision_Make_Nukes
+		cost = 0
+		fire_only_once = yes
+
+		visible = {
+			tag = LEB
+		}
+
+		available = {
+			has_war_with = ISR
+			has_global_flag = iran_israel_war_active
+			controls_state = 1111
+		}
+
+		days_remove = 1
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+		clr_global_flag = iran_israel_war_active
+		set_global_flag = iran_israel_war_over
+		ISR = {
+		    white_peace = LEB
+			white_peace = PER
+			remove_ideas = ISR_iran_israel_war
+		}
+			PER = {
+			remove_ideas = ISR_iran_israel_war
+			}
+		}
+	}
 }
 
 #Hummus israel war  #### The peace deal has been moved to the on_actions peace treaty file, here will go future content when we intergrate with the israel mod ####
@@ -594,7 +626,7 @@ iran_israel_war_ISR = {
 #Hamas_war_countdown = {
 #
 
-Israel_arab_war_win_sigma = {
+Israel_arab_war_win_sigma = { # <---- THIS IS THE REWORKED ARAB ISRAELI WAR; NO LONGER IN THE SYRIAN EVENT FILE!
     
 	isr_you_lost_again = {
 		icon = GFX_decision_Make_Nukes
@@ -611,6 +643,9 @@ Israel_arab_war_win_sigma = {
 			controls_state = 455
 			controls_state = 929
 			controls_state = 1032
+			NOT = {
+			has_government = nationalist
+			}
 		}
 
 		days_remove = 1

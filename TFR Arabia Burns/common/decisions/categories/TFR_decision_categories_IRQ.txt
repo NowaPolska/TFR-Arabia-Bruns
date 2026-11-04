@@ -1,0 +1,18 @@
+IRQ_civil_war = {
+	icon = united_states
+	priority = 12
+	visible_when_empty = yes
+	allowed = {
+		OR = {
+			tag = IRQ
+			tag = FIA
+			tag = BUK
+			tag = ABK
+			tag = IAI
+		}
+	}
+	
+	visible = {
+		has_global_flag = IRQ_civil_war_flag
+	}
+}

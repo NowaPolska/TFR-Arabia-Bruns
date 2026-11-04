@@ -39,8 +39,8 @@ iran_israel_war_ISR = {
     }
 
     visible = {
-        has_country_flag = iran_israel_war_active
-        NOT = { has_country_flag = iran_israel_war_over }
+        has_global_flag = iran_israel_war_active
+        NOT = { has_global_flag = iran_israel_war_over }
     }
 }
 

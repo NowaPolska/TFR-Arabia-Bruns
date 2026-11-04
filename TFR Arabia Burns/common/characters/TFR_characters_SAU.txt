@@ -72,48 +72,30 @@ SAU_salman_bin_abdulaziz_char = {
         expire = "1.1.1.1"
     }
 }
-	SAU_Fayyadh_Al_Ruwaili_char = {
-    name = "Fayyadh Al Ruwaili"
-    
-    portraits = {
-        civilian = {
-            large = "gfx/Leaders/SAU/Fayyadh_Al_Ruwaili.png" 
-        }
-        army = {
-            large = "gfx/Leaders/SAU/Fayyadh_Al_Ruwaili.png" 
-        }
-    }
-
-    can_be_captured = no
-
-    field_marshal = {
-        skill = 4                     
-        attack_skill = 4         
-        defense_skill = 4         
-        planning_skill = 2          
-        logistics_skill = 3       
-        traits = { old_guard thorough_planner }
-    }
-
-    advisor = {
-        slot = army_chief          
-        idea_token = SAU_fayyadh_al_ruwaili_advisor
-        
-        allowed = {
-            original_tag = SAU
-        }
-        
-        cost = 100                 
-        
-        traits = {
-            army_chief_defensive_2 
-        }
-        
-        ai_will_do = {
-            factor = 10
-        }
-    }
-}
+	#SAU_Fayyadh_Al_Ruwaili_char = {
+    #name = "Fayyadh Al Ruwaili"
+    #
+    #portraits = {
+        #civilian = {
+            #large = "gfx/Leaders/SAU/Fayyadh_Al_Ruwaili.png" 
+        #}
+        #army = {
+            #large = "gfx/Leaders/SAU/Fayyadh_Al_Ruwaili.png" 
+        #}
+    #}
+#
+    #can_be_captured = no
+#
+    #field_marshal = {
+       # skill = 4                     
+       # attack_skill = 4         
+        #defense_skill = 4         
+       # planning_skill = 2          
+       # logistics_skill = 3       
+        #traits = { old_guard thorough_planner }
+		#}
+    #}
+#
     SAU_Hamad_al_Ohali_char = {
         name = "Fahd bin Saud bin Dhuwaihir Al Juhani"
         
@@ -333,13 +315,32 @@ SAU_salman_bin_abdulaziz_char = {
 		   large = "gfx/leaders/SAU/fattyTFR.png"
             }
         }
-		corps_commander = {
+		field_marshal = {
 		    traits = { Adaptable, camouflage_expert }
             skill = 4              
             attack_skill = 4            
-            defense_skill = 2            
+            defense_skill = 3           
             planning_skill = 5           
             logistics_skill = 3   
+        }
+		
+		advisor = {
+        slot = army_chief          
+        idea_token = SAU_fattyTFR_advisor
+        
+        allowed = {
+            original_tag = SAU
+        }
+        
+        cost = 100                 
+        
+        traits = {
+            army_chief_defensive_2 
+        }
+        
+        ai_will_do = {
+            factor = 10
+            }
         }
 	}
 	SAU_fatassTFR_char = {
@@ -405,7 +406,7 @@ SAU_salman_bin_abdulaziz_char = {
 			original_tag = SAU
 		}
 		traits = {
-			air_air_superiority_2
+			air_air_superiority_3
 		}
 		cost = 100
 		ai_will_do = {

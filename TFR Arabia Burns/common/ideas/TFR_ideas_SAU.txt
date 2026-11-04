@@ -1943,6 +1943,45 @@
 			military_factory_donations = 1
 			}
 		}
+		SAU_divided_nation = {
+		picture = ZZZ_blank_idea_trait
+		
+		    allowed = {
+		    has_war = yes
+		    }
+			
+	        removal_cost = -1
+			
+		    modifier = {
+			army_org_factor = -0.075
+			planning_speed = -0.35
+			stability_factor = -0.15
+			war_support_factor = -0.15
+			social_liberal_drift = 0.03
+			market_liberal_drift = 0.03
+			social_democrat_drift = 0.03
+			conservative_drift = 0.03
+			}
+		}
+		SAU_streangth_in_diversity = {
+		picture = ZZZ_blank_idea_trait
+		
+		    allowed = {
+		    always = yes
+		    }
+			
+	        removal_cost = -1
+			
+		    modifier = {
+			stability_factor = 0.25
+			war_support_factor = 0.15
+			income_growth_factor = 0.125
+	        market_liberal_drift = 0.03
+			social_liberal_drift = 0.01
+			social_democrat_drift  = 0.01
+			conservative_drift = 0.01
+			}
+		}
 	}
 	head_minister = {
 	SAU_salman_bin_abdulaziz_hog = {

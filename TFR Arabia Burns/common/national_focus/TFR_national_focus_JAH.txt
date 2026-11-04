@@ -9,7 +9,7 @@ focus_tree = {
 	}
 focus = {
     id = JAH_cleanse_Arabia_from_degenracy
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
 	x = 10
 	y = 0
@@ -30,7 +30,7 @@ focus = {
 }
 focus = {
     id = JAH_Jihadists_Economics
-    icon = GFX_goal_generic_position_army
+    icon = GFX_focus_SAU_generic
 	
 	x = 9
 	y = 1
@@ -55,7 +55,7 @@ focus = {
 }
 focus = {
     id = JAH_the_first_pillar_of_jihaddism
-	icon = GFX_goal_generic_position_army
+	icon = GFX_focus_SAU_generic
 	
 	x = 11
 	y = 1

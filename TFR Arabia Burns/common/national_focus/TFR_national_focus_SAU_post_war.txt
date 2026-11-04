@@ -1456,6 +1456,12 @@ focus = {
 	has_war = no
 	}
 	
+	bypass = {
+	PER = {
+	exists = no
+	    }
+	}
+	
 	cost = 5
 	
 	completion_reward = {
@@ -1483,6 +1489,12 @@ focus = {
 	
 	prerequisite = {
 		focus = SAU_Operation_Abu_Musa_al_Ash_ari
+	}
+	
+	bypass = {
+	PER = {
+	exists = no
+	    }
 	}
 	
 	cost = 5
@@ -1517,6 +1529,12 @@ focus = {
 		focus = SAU_Operation_Abu_Musa_al_Ash_ari
 	}
 	
+	bypass = {
+	PER = {
+	exists = no
+	    }
+	}
+	
 	completion_reward = {
      random_list = {
         50 = {
@@ -1544,12 +1562,15 @@ focus = {
 	}
 	
 	available = {
-		has_war = no
+		PER = {
+		exists = no
+		}
 	}
 	
 	cost = 7
 	
 	completion_reward = {
+	white_peace = LEB
 	country_event = { id = saudi.76 }
 	remove_ideas = SAU_Strait_of_Hormuz_Blockade
 	country_event = { id = saudi.70 days = 5 }
@@ -1857,6 +1878,10 @@ focus = {
     type = annex_everything
 	}
 	hidden_effect = {
+	declare_war_on = {
+    target = HAM
+    type = annex_everything
+	}
 	news_event = { id = news.2017 hours = 6 }
 	ISR = {
 	add_manpower = 250000

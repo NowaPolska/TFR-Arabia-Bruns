@@ -273,5 +273,37 @@ UAE_saudi_cw_news_events = {
 	news_event = { id = news.124 }
 	    }
 	}
+	
+	sau_hezbollahkirked = {
+	icon = generic_prepare_civil_war
+	
+	allowed = {
+	    original_tag = UAE
+	}
+	
+	available = {
+	has_global_flag = SAU_saudi_civil_war_global
+    tag = UAE
+	HEZ = {
+    exists = no
+        }
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	
+	cost = 0
+	
+	fire_only_once = yes
+	cancel_if_not_visible = yes
+	
+	days_remove = 1
+	
+	remove_effect = {
+	SAU = {
+	country_event = { id = saudi.97 }
+	    }
+	}
 }
 	
