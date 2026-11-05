@@ -284,7 +284,7 @@ UAE_saudi_cw_news_events = {
 	available = {
 	has_global_flag = SAU_saudi_civil_war_global
     tag = UAE
-	HEZ = {
+	SAR = {
     exists = no
         }
 	}

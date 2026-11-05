@@ -1,22 +1,9 @@
 on_actions = {
-    on_capitulation = {
+    on_startup = {
         effect = {
-            if = {
-                limit = {
-                    tag = SAR
-                }
-                SAU = {
-                    country_event = { id = saudi.97 days = 1 }
-                }
-            }
-            if = {
-                limit = {
-                    tag = ISR
-                    FROM = { tag = SAU }
-                }
-                SAU = {
-                    country_event = { id = saudi.71 days = 1 }
-                }
+            SAU = {
+                set_variable = { SAU_development_points = 0 }
+                set_variable = { SAU_agenda_2030_progress = 15 }
             }
         }
     }

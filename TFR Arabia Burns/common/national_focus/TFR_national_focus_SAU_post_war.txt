@@ -797,7 +797,7 @@ focus = {
 	    }
 	}
 	
-	cost = 35
+	cost = 7
 	
 	completion_reward = {
 	YEM = {

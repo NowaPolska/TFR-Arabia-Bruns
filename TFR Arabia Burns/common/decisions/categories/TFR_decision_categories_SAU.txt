@@ -209,3 +209,17 @@ YEM_unification = {
 		#}
     #}
 #}
+
+SAU_agenda_2030 = {
+    icon = generic_political_actions
+	picture = ""
+    allowed = {
+        original_tag = SAU
+    }
+    
+    visible = {
+	NOT = {
+	has_global_flag = saudi_civil_war_flag
+	    }
+	}
+}

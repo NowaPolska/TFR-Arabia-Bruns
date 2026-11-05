@@ -22,4 +22,17 @@ spriteTypes = {
 		texturefile = "gfx/super_events/SAU_unif_super.png"
 		legacy_lazy_load = no
 	}
+	
+	### Economy Decisions ###
+	
+	spriteType = {
+		name = "GFX_green_economy_points_texticon"
+		texturefile = "gfx/texticons/SAU/green_economy_points_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_vision_2030"
+		texturefile = "gfx/texticons/SAU/vision_2030.png"
+		legacy_lazy_load = no
+	}
 }

@@ -309,10 +309,11 @@ SAU_salman_bin_abdulaziz_char = {
         }
 	}
 	SAU_fattyTFR_char = {
-	   name = "Fayyad bin Hamad Al-Ruwaili"
-	   portraits = {
-	       army = {
-		   large = "gfx/leaders/SAU/fattyTFR.png"
+	    name = "Fayyad bin Hamad Al-Ruwaili"
+	    portraits = {
+            army = {
+                large = "gfx/leaders/SAU/fattyTFR.png"
+                small = "gfx/interface/ideas/SAU/advisors/SAU_fatty_advisor.png"
             }
         }
 		field_marshal = {
