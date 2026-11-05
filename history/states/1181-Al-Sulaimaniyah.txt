@@ -1,0 +1,23 @@
+state = {
+	id = 1181
+	name = "STATE_1181"
+	manpower = 2380241
+	state_category = town
+	
+	history = {
+		owner = KUR
+		add_core_of = KUR
+		add_core_of = IRQ
+		victory_points = { 6826 10 }
+		victory_points = { 14006 1 }
+		buildings = {
+		    industrial_complex = 1
+			infrastructure = 2
+			6826 = { bunker = 1 }
+		}
+	}
+	
+	provinces = {
+		5014 14006 6826
+	}
+}
