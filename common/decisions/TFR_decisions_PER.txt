@@ -67,9 +67,7 @@ covid_19_outbreak_PER = {
 	}
 	
 }
-
-PER_saudi_civil_war_cat = {
-
+PER_yemeni_civil_war_cat = {
 	PER_send_Advisors_to_yemen = {
 		icon = generic_prepare_civil_war
 
@@ -105,8 +103,8 @@ PER_saudi_civil_war_cat = {
 			}
 		}
 	}
-}
-    PER_anti_saudi_intervention = {
+	}
+	 PER_anti_saudi_intervention = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
@@ -115,11 +113,11 @@ PER_saudi_civil_war_cat = {
 
 		available = {
 			HOU = {
-			OR = {
-			has_war_with = SAU
-			has_war_with = ARR
-			has_war_with = ROC
-			has_war_with = JAH
+				OR = {
+					has_war_with = SAU
+					has_war_with = ARR
+					has_war_with = ROC
+					has_war_with = JAH
 			    }
 			}
 		}
@@ -143,9 +141,118 @@ PER_saudi_civil_war_cat = {
 			}
 		}
 	}
+	PER_create_yemen_islamic_republic = {
+
+		icon = china
+
+		available = {
+			HOU = {
+				has_war = no
+				exists = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			HOU = {
+				set_cosmetic_tag = HOU_islamic_republic
+				add_ideas = PER_islamic_republic_stronghold_idea
+				change_government_type_islamic_republic = yes
+				every_state = {
+					remove_core_of = YEM
+					remove_core_of = AAS
+				}
+			}
+			news_event = {
+				id = news.117
+				hours = 6
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	PER_gib_drones = {
+
+		icon = china
+
+		available = {
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = guided_missile_equipment_1
+				amount = 50
+				producer = PER
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = rocket_site
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}	
+	
+	PER_rebuild_yemen = {
+
+		icon = china
+
+		available = {
+			HOU = {
+				has_war = no
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = PER
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			HOU = {
+				remove_ideas = HOU_famine
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+PER_saudi_civil_war_cat = {
 	
 	# invite assad into the alliance
-	PER_anti_saudi_intervention = {
+	PER_invite_assad = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
@@ -178,7 +285,7 @@ PER_saudi_civil_war_cat = {
 		add_to_faction = SYR
 		}
 	}
-}
+	}
 		
 	PER_send_heavy_equipment = {
 		icon = generic_prepare_civil_war
@@ -407,126 +514,6 @@ PER_saudi_civil_war_cat = {
 			factor = 1
 		}
 	}	
-	
-	PER_create_yemen_islamic_republic = {
-
-		icon = china
-
-		available = {
-			HOU = {
-				has_war = no
-				exists = yes
-			YEM ={
-			    exists = no
-			}
-			AAS = {
-			    exists = no
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		visible = {
-			tag = PER
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			HOU = {
-			    set_country_flag = AOR_Member
-				set_cosmetic_tag = HOU_islamic_republic
-				add_ideas = PER_islamic_republic_stronghold_idea
-				change_government_type_islamic_republic = yes
-				every_state = {
-					remove_core_of = YEM
-					remove_core_of = AAS
-				}
-			}
-			PER = { 
-			add_to_faction = HOU
-		    }
-
-			news_event = {
-				id = news.117
-				hours = 6
-			}
-		}
-
-		ai_will_do = {
-			base = 100
-		}
-	}
-
-	PER_gib_drones = {
-
-		icon = china
-
-		available = {
-		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			tag = PER
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = guided_missile_equipment_1
-				amount = 50
-				producer = PER
-			}
-			random_owned_state = {
-				add_building_construction = {
-					type = rocket_site
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 100
-		}
-	}	
-	
-	PER_rebuild_yemen = {
-
-		icon = china
-
-		available = {
-			HOU = {
-				has_war = no
-				exists = yes
-			}
-		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			tag = PER
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			HOU = {
-				remove_ideas = HOU_famine
-			}
-		}
-
-		ai_will_do = {
-			base = 100
-		}
-	}
 	
 	PER_create_arabian_islamic_republic = {
 

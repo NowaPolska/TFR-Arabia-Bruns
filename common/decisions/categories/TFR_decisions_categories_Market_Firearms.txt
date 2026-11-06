@@ -1,0 +1,38 @@
+small_arms_market = {
+	icon = GFX_decision_black_market_category
+	visible_when_empty = yes
+
+	visible = {
+		has_country_flag = developed_country
+		NOT = {
+			has_country_flag = shithole_country
+			OR = {
+				tag = USA
+				tag = ISR
+				tag = GER
+				tag = FRA
+				tag = ITA
+				tag = ENG
+				tag = SOV
+				tag = PRC
+				tag = FPR
+				tag = FAF
+				tag = PER
+			}
+		}
+	}
+
+	priority = 1
+}
+
+Small_arms_market_black = {
+	icon = GFX_decision_black_market_category
+	visible_when_empty = yes
+
+	visible = {
+		has_country_flag = shithole_country
+		NOT = {
+			has_country_flag = developed_country
+		}
+	}
+}

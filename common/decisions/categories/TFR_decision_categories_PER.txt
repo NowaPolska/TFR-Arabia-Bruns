@@ -1,0 +1,46 @@
+covid_19_outbreak_PER = {
+	icon = power_struggle
+	
+	allowed = {
+		original_tag = PER
+	}
+	
+	on_map_area = {
+		state = 266
+		name = PRC_covid19
+		zoom = 250
+	}
+	
+}
+
+PER_yemeni_civil_war_cat = {
+	icon = power_struggle
+	
+	allowed = {
+		original_tag = PER
+	}
+}
+
+PER_saudi_civil_war_cat = {
+	icon = power_struggle
+	
+	allowed = {
+		original_tag = PER
+	}
+	visible = {
+	has_global_flag = saudi_civil_war_flag
+	}
+	visible_when_empty = yes
+}
+
+PER_iraq_intervention_category = {
+	icon = GFX_decision_germany
+	priority = 98
+	allowed = {
+		tag = PER
+	}
+	visible = {
+	has_global_flag = IRQ_civil_war_flag
+	}
+	visible_when_empty = yes
+}
