@@ -621,6 +621,9 @@
  saudi.121.d: "Hey Kid, want to change the portait of MBS?\nIts only in a 15$ DLC!!!!!!!!!!"
  saudi.121.a: "Sure, why not"
  saudi.121.b: "NO, MBS shmeagh is allways Red and White!!!!"
+ saudi.122.t: "A Decade of Change"
+ saudi.122.d: "Founded upon the historic 1932 unification by King Abdulaziz Al Saud, the Kingdom of Saudi Arabia stands as the custodian of the Two Holy Mosques and a cornerstone of the Islamic world. For decades, the nation's political structure has been defined by an absolute monarchy navigating a delicate balance between traditional tribal governance, religious institutions, and vast wealth.\n\nHowever, a dynamic wave of socio-economic transformation is sweeping across the Peninsula. Driven by ambitious national initiatives, most notably Vision 2030, the Kingdom is actively working to diversify its economy away from hydrocarbon dependency, invest in major infrastructure, and modernize daily life. Yet, these rapid developments bring complex internal and external dynamics: balancing rapid modern reforms with centuries-old traditions, maintaining regional security, and steering the nation toward a post-oil future."
+ saudi.122.a: "Lil Majdi Wal'alyaa!"
  ###DECISIONS###
  SAU_civil_war_preparations: "Civil War Preparation"
  SAU_civil_war_preparations_desc: "Internal dissent is growing against Mohammed bin Salman despite his legal authority to succeed Salman Abdulaziz. Opposition factions have sprung up in the wake of the King's death and seem to be coluding to topple Mohammed. The return of Yahya Assiri hasn't calmed the situation either, as Liberals have also begun to organize and spread their influence. Regiments are ignoring orders, requests for reinforcements aren't being fufilled, strange movemnts are being recorded. There's only one possibility..."
@@ -1074,3 +1077,18 @@
  SAU_country_summary: "§YCountry Summary§!:\nThe never-ending economic growth which has lasted since the discovery of oil in 1938 is coming to its end. While Saudi Arabia has a massive investment fund, oil is running out faster than we thought.\n\nWhile the Kingdom is stable, many anti-Saud terror resistance groups have formed: §YLiberals§!, the Iranian-sponsored §GHezbollah Al-Hejaz§!, and §BTraitor princes§! within the House of Saud. They are weak and disorganised, but it is still necessary to deal with them as soon as possible.\nThe Saudi Royal Family is in good shape despite the old age of Salman ibn Abd al-Aziz, and the status quo is being upheld strongly. Mohammed bin Salman is already ruling from behind the curtain and it is a fact that he will be the throne successor. Geopolitically, Saudi Arabia is an uncertain place... Iran and Israel's terror proxies have been spreading like cancer, and globally our influence has begun to fade as many major nations have begun to diversify their economies away from oil."
  SAU_country_paths: "\n\n\n§YCountry Paths§!:\nAvailable paths for §GSaudi Arabia§!\n\nCivil war factions: Legitimate Government - Mohammed bin Salman\n\n§G-House of Saud conservative faction§!\n\n§Y-House of Saud Reformist faction§!"
  SAU_country_other: ""
+  # ===== Category =====
+ SAU_agenda_2030:0 "Agenda 2030"
+ SAU_agenda_2030_desc:0 "£vision_2030 §BSaudi Vision 2030§! aims to diversify our economy away from oil.\n\nAgenda 2030 Progress: §Y[?SAU_agenda_2030_progress|0]%§!\n§GCurrent Development Points: [?SAU_development_points|0]§! £green_economy_points_texticon"
+
+ # ===== Decision: Invest in Agenda 2030 (gives points) =====
+ SAU_invest_in_agenda_2030:0 "Invest in Agenda 2030"
+ SAU_invest_in_agenda_2030_desc:0 "We will fund new projects as part of £vision_2030 §BVision 2030§!.\n\nAgenda 2030 Progress: §Y[?SAU_agenda_2030_progress|0]%§!\n§GYour Development Points: [?SAU_development_points|0]§! £green_economy_points_texticon"
+ SAU_gain_2_dev_points_tt:0 "Gain §G+2 Development Points§! £green_economy_points_texticon"
+
+ # ===== Decision: Invest in Green Energy (costs points) =====
+ SAU_invest_green_energy:0 "Invest in Green Energy"
+ SAU_invest_green_energy_desc:0 "We will build renewable energy capacity as part of £vision_2030 §BVision 2030§!.\n\nAgenda 2030 Progress: §Y[?SAU_agenda_2030_progress|0]%§!\n§GYour Development Points: [?SAU_development_points|0]§! £green_economy_points_texticon"
+ SAU_dev_points_cost_2:0 "§G2§! £green_economy_points_texticon"
+ SAU_dev_points_cost_2_blocked:0 "§R2§! £green_economy_points_texticon"
+ SAU_lose_2_dev_point_tt:0 "Spend §R2 Development Points§! £green_economy_points_texticon\nAgenda 2030 Progress: §G+1%§!"
