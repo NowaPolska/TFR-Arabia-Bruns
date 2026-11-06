@@ -34,7 +34,24 @@
 			texturefile = "gfx/interface/france_bg.png"
 			alwaystransparent = yes
 		}
-		
+
+		SpriteType = {
+			name = "GFX_Israel_BG"
+			texturefile = "gfx/interface/israel_bg.png"
+			alwaystransparent = yes
+		}
+
+		SpriteType = {
+			name = "GFX_Saud_BG"
+			texturefile = "gfx/interface/saud_bg.png"
+			alwaystransparent = yes
+		}
+
+		SpriteType = {
+			name = "GFX_Iran_BG"
+			texturefile = "gfx/interface/iran_bg.png"
+			alwaystransparent = yes
+		}
 		SpriteType = {
 			name = "GFX_USA_BG"
 			texturefile = "gfx/interface/USA.dds"

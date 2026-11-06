@@ -1,5 +1,25 @@
 	ideas = {
 		country = {
+			PER_yemen_volunteers = {
+				picture = "GFX_idea_florida_siege"
+			    traits = {
+			        ZZZ_blank_idea_trait
+			    }
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					send_volunteer_size = 5
+				}
+			}
 			PER_saudi_volunteers = {
 				picture = "GFX_idea_florida_siege"
 			    traits = {
@@ -17,7 +37,7 @@
 				removal_cost = -1
 				
 				modifier = {
-					send_volunteer_size = 2
+					send_volunteer_size = 4
 				}
 			}
 			

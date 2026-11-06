@@ -272,12 +272,12 @@ scripted_gui = {
 			}
 			
 			# DEINE NEUEN SAU-TRIGGER HIER:
-			SAU_country_summary_visible = {
-				tag = SAU
-			}
-			SAU_country_paths_visible = {
-				tag = SAU
-			}
+			#SAU_country_summary_visible = {
+			#	tag = SAU
+			#}
+			#SAU_country_paths_visible = {
+			#	tag = SAU
+			#}
 		}
 	}
 	open_startup_gui = {

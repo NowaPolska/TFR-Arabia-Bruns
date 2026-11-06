@@ -120,6 +120,24 @@
 			}
 			localization_key = "USA_country_summary"
 		}
+	    text = {
+			trigger = {
+				tag = PER
+			}
+			localization_key = "PER_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = ISR
+			}
+			localization_key = "ISR_country_summary"
+		}
+		text = { 
+			trigger = {
+				tag = SAU
+			}
+			localization_key = "SAU_country_summary"
+		}
 		text = { 
 			trigger = {
 				tag = GER
@@ -186,6 +204,24 @@
 			}
 			localization_key = "GER_country_paths"
 		}
+        text = { 
+			trigger = {
+				tag = ISR
+			}
+			localization_key = "ISR_country_paths"
+		}
+		text = { 
+			trigger = {
+				tag = SAU
+			}
+			localization_key = "SAU_country_paths"
+		}
+        text = { 
+			trigger = {
+				tag = PER
+			}
+			localization_key = "PER_country_paths"
+		}
 		text = { 
 			trigger = {
 				tag = SOV
@@ -240,6 +276,24 @@
 			}
 			localization_key = "USA_country_other"
 		}
+        text = { 
+			trigger = {
+				tag = ISR
+			}
+			localization_key = "ISR_country_other"
+		}
+		text = { 
+			trigger = {
+				tag = SAU
+			}
+			localization_key = "SAU_country_other"
+		}
+    	text = { 
+			trigger = {
+				tag = PER
+			}
+			localization_key = "PER_country_other"
+		}
 		text = { 
 			trigger = {
 				tag = GER
@@ -287,7 +341,25 @@
 	
 	defined_text = {
 		name = GET_BACKGROUND
-		
+
+		text = { 
+			trigger = {
+				tag = ISR
+			}
+			localization_key = "GFX_Israel_BG"
+		}
+		text = { 
+			trigger = {
+				tag = SAU
+			}
+			localization_key = "GFX_Saud_BG"
+		}
+		text = { 
+			trigger = {
+				tag = PER
+			}
+			localization_key = "GFX_Iran_BG"
+		}
 		text = { 
 			trigger = {
 				tag = SOV

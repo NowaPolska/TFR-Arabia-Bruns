@@ -408,10 +408,10 @@ guiTypes = {
 		
 		#Put whatever you want about the country here
 		instantTextboxType = {
-			name = "SAU_country_summary" 
+			name = "Country_Summary" 
 			position = {x = 50 y = 250}
 			font = "VCR02_14"
-			text = "SAU_country_summary"    
+			text = "COUNTRY_SUMMARY"    
 			maxWidth = 1000
 			maxHeight = 500
 			format = left
@@ -419,10 +419,10 @@ guiTypes = {
 		
 		#Self explanitory
 		instantTextboxType = {
-			name = "SAU_country_paths"     
+			name = "Country_Paths"     
 			position = {x = 50 y = 400}
 			font = "VCR02_14"
-			text = "SAU_country_paths"
+			text = "COUNTRY_PATHS"
 			maxWidth = 1000
 			maxHeight = 500
 			format = left

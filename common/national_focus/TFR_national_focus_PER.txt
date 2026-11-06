@@ -1,0 +1,1470 @@
+focus_tree = {
+	id = PER_tree_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = PER
+		}
+	}
+	focus = {
+		id = PER_end_2019_protests
+		icon = GFX_focus_GER_negotiate_with_iran
+		x = 0
+		y = 0
+		cost = 3
+		ai_will_do = {
+			base = 50
+		}
+		available = {
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = mahsa_amini_crisis
+			}
+		}
+		completion_reward = {
+			#custom_effect_tooltip = PER_secure_the_streets_tt
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_exporting_the_islamic_revolution
+		icon = GFX_focus_PER_exporting_the_islamic_revolution
+		relative_position_id = PER_end_2019_protests
+		x = -17
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_end_2019_protests
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_saudi_king_gone
+		icon = GFX_focus_PER_saudi_king_gone
+		relative_position_id = PER_exporting_the_islamic_revolution
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_exporting_the_islamic_revolution
+		}
+		available = {
+			has_global_flag = saudi_civil_war_flag
+		}
+		completion_reward = {
+			add_ideas = PER_saudi_volunteers
+		}
+	}
+	focus = {
+		id = PER_revolution_in_the_arabian_peninsula
+		icon = GFX_focus_PER_revolution_in_the_arabian_peninsula
+		relative_position_id = PER_saudi_king_gone
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_saudi_king_gone
+		}
+		available = {
+			has_global_flag = saudi_civil_war_flag
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_shia_across_the_gulf
+		icon = GFX_focus_PER_shia_across_the_gulf
+		relative_position_id = PER_revolution_in_the_arabian_peninsula
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_revolution_in_the_arabian_peninsula
+		}
+		available = {
+			NOT = {
+				OR = {
+					country_exists = ARR
+					country_exists = SAU
+					country_exists = ROC
+					country_exists = JAH
+				}
+			}
+		}
+		mutually_exclusive = { focus = PER_bomb_the_sauds }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_bomb_the_sauds
+		icon = GFX_focus_PER_bomb_the_sauds
+		relative_position_id = PER_revolution_in_the_arabian_peninsula
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_revolution_in_the_arabian_peninsula
+		}
+		available = {
+			NOT = {
+				country_exists = SAR
+			}
+		}
+		mutually_exclusive = { focus = PER_shia_across_the_gulf }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_show_our_dominance_over_hormuz
+		icon = GFX_focus_PER_show_our_dominance_over_hormuz
+		relative_position_id = PER_revolution_in_the_arabian_peninsula
+		x = 0
+		y = 2
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_bomb_the_sauds
+			focus = PER_shia_across_the_gulf
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_our_friend_assad
+		icon = GFX_focus_PER_our_friend_assad
+		relative_position_id = PER_exporting_the_islamic_revolution
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_exporting_the_islamic_revolution
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_assist_syrian_chud
+		icon = GFX_focus_PER_assist_syrian_chud
+		relative_position_id = PER_our_friend_assad
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_our_friend_assad
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_our_closest_ally
+		icon = GFX_focus_PER_our_closest_ally
+		relative_position_id = PER_our_friend_assad
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_our_friend_assad
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_condemn_abraham_accords
+		icon = GFX_focus_PER_condemn_abraham_accords
+		relative_position_id = PER_assist_syrian_chud
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_assist_syrian_chud
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_the_iraqi_bridge
+		icon = GFX_focus_PER_the_iraqi_bridge
+		relative_position_id = PER_assist_syrian_chud
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_assist_syrian_chud
+		}
+		prerequisite = {
+			focus = PER_our_closest_ally
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_helping_yemeni_brothers
+		icon = GFX_focus_PER_helping_yemeni_brothers
+		relative_position_id = PER_exporting_the_islamic_revolution
+		x = -3
+		y = 1
+		cost = 2
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_exporting_the_islamic_revolution
+		}
+		completion_reward = {
+			add_ideas = PER_yemen_volunteers
+		}
+	}
+	focus = {
+		id = PER_yem_focus_saud_backed
+		icon = GFX_focus_PER_yem_focus_saud_backed
+		relative_position_id = PER_helping_yemeni_brothers
+		x = -3
+		y = 1
+		cost = 2
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_helping_yemeni_brothers
+		}
+		mutually_exclusive = { focus = PER_yem_focus_uae_backed }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_yem_focus_uae_backed
+		icon = GFX_focus_PER_yem_focus_uae_backed
+		relative_position_id = PER_helping_yemeni_brothers
+		x = -1
+		y = 1
+		cost = 2
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_helping_yemeni_brothers
+		}
+		mutually_exclusive = { focus = PER_yem_focus_saud_backed }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_yem_rebuild_them
+		icon = GFX_focus_PER_yem_rebuild_them
+		relative_position_id = PER_yem_focus_uae_backed
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_yem_focus_uae_backed
+			focus = PER_yem_focus_saud_backed
+		}
+		available = {
+			HOU = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_the_two_armies
+		icon = GFX_focus_PRC_redefine_people_protection
+		relative_position_id = PER_end_2019_protests
+		x = -9
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_end_2019_protests
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = military_development_var_temp
+				value = 0.1
+			}
+			add_military_development = yes
+			hidden_effect = {
+				add_to_variable = {
+					var = PER_military_army_org_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PER_military_army_defence_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = PER_favour_the_artesh
+		icon = GFX_focus_PER_favour_the_artesh
+		relative_position_id = PER_the_two_armies
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_two_armies
+		}
+		mutually_exclusive = { focus = PER_favour_the_irgc }
+		completion_reward = {
+			set_temp_variable = {
+				var = academic_development_var_temp
+				value = 0.10
+			}
+			add_academic_development = yes
+		}
+	}
+	focus = {
+		id = PER_buy_equipment_from_russia
+		icon = GFX_focus_PER_buy_equipment_from_russia
+		relative_position_id = PER_favour_the_artesh
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_favour_the_artesh
+			focus = PER_favour_the_irgc
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 100
+				producer = SOV
+			}
+		}
+	}
+	focus = {
+		id = PER_modernize_our_guns
+		icon = GFX_focus_PER_modernize_our_guns
+		relative_position_id = PER_favour_the_artesh
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_favour_the_artesh
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_improve_the_eurocopter
+				bonus = 0.4
+				uses = 2
+				category = infantry_weapons
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PER_military_army_attack_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PER_military_army_defence_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = PER_iranian_helicopter_fleet
+		icon = GFX_focus_PER_iranian_helicopter_fleet
+		relative_position_id = PER_modernize_our_guns
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_modernize_our_guns
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_improve_the_eurocopter
+				bonus = 0.75
+				uses = 1
+				category = cat_helicopter_modules
+			}
+		}
+	}
+	focus = {
+		id = PER_our_southern_shore
+		icon = GFX_focus_PER_our_southern_shore
+		relative_position_id = PER_modernize_our_guns
+		x = -1
+		y = 1
+		cost = 6
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_modernize_our_guns
+		}
+		prerequisite = { focus = PER_buy_equipment_from_russia }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_an_eastern_doctrine
+		icon = GFX_focus_PER_an_eastern_doctrine
+		relative_position_id = PER_our_southern_shore
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_our_southern_shore
+		}
+		prerequisite = { focus = PER_iranian_helicopter_fleet }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_redefined_german_doctrine
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+	focus = {
+		id = PER_favour_the_irgc
+		icon = GFX_focus_PER_favour_the_irgc
+		relative_position_id = PER_the_two_armies
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_two_armies
+		}
+		mutually_exclusive = { focus = PER_favour_the_artesh }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_increase_drone_production
+		icon = GFX_focus_APA_utilize_captured_drones
+		relative_position_id = PER_favour_the_irgc
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_favour_the_irgc
+			focus = PER_favour_the_artesh
+		}
+		prerequisite = {
+			focus = PER_saudi_king_gone
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = guided_missile_equipment_1
+				amount = 500
+				producer = PER
+			}
+		}
+	}
+	focus = {
+		id = PER_learn_from_our_allies
+		icon = GFX_focus_PER_learn_from_our_allies
+		relative_position_id = PER_favour_the_irgc
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		available = {
+			has_completed_focus = PER_exporting_the_islamic_revolution
+		}
+		prerequisite = {
+			focus = PER_favour_the_irgc
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_institutionalized_smuggling
+		icon = GFX_focus_PER_institutionalized_smuggling
+		relative_position_id = PER_learn_from_our_allies
+		x = -1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_learn_from_our_allies
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_increase_our_range
+		icon = GFX_focus_PER_increase_our_range
+		relative_position_id = PER_learn_from_our_allies
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_learn_from_our_allies
+		}
+		prerequisite = { focus = PER_buy_equipment_from_russia }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_doctrine_of_our_own
+		icon = GFX_focus_PER_doctrine_of_our_own
+		relative_position_id = PER_increase_our_range
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_increase_our_range
+		}
+		prerequisite = { focus = PER_institutionalized_smuggling }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_beyond_the_gulf
+		icon = GFX_focus_PER_beyond_the_gulf
+		relative_position_id = PER_increase_our_range
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_increase_our_range
+			focus = PER_our_southern_shore
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_send_arms_to_americans
+		icon = GFX_focus_PER_send_arms_to_americans
+		relative_position_id = PER_beyond_the_gulf
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_beyond_the_gulf
+		}
+		prerequisite = { focus = PER_doctrine_of_our_own }
+		mutually_exclusive = { focus = PER_attache_to_china }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_attache_to_china
+		icon = GFX_focus_PER_attache_to_china
+		relative_position_id = PER_beyond_the_gulf
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_beyond_the_gulf
+		}
+		prerequisite = { focus = PER_an_eastern_doctrine }
+		mutually_exclusive = { focus = PER_send_arms_to_americans }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_ready_and_locked
+		icon = GFX_focus_PRC_redefine_people_protection
+		relative_position_id = PER_beyond_the_gulf
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_attache_to_china
+			focus = PER_send_arms_to_americans
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_political_crackdown_continue
+		icon = GFX_focus_generic_anti_guerilla
+		relative_position_id = PER_end_2019_protests
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_end_2019_protests
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_commemorate_soleimani
+		icon = GFX_focus_SOV_strengthen_ties_with_iran
+		relative_position_id = PER_political_crackdown_continue
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_political_crackdown_continue
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_islamic_education
+		icon = GFX_focus_SOV_strengthen_ties_with_iran
+		relative_position_id = PER_political_crackdown_continue
+		x = 0
+		y = 3
+		cost = 2
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_commemorate_soleimani
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_crackdown_on_domestic_abuse
+		icon = GFX_focus_SOV_strengthen_ties_with_iran
+		relative_position_id = PER_islamic_education
+		x = 0
+		y = 2
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_we_are_a_nation
+		}
+		prerequisite = { focus = PER_persian_ciricullums }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_compulsry_hijab
+		icon = GFX_focus_generic_education_system
+		relative_position_id = PER_political_crackdown_continue
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_political_crackdown_continue
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_family_support_act
+		icon = GFX_focus_generic_education_system
+		relative_position_id = PER_compulsry_hijab
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_compulsry_hijab
+		}
+		mutually_exclusive = { focus = PER_bring_shia_immigrants }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_bring_shia_immigrants
+		icon = GFX_focus_generic_education_system
+		relative_position_id = PER_compulsry_hijab
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_compulsry_hijab
+		}
+		mutually_exclusive = { focus = PER_family_support_act }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_more_people_now
+		icon = GFX_focus_generic_education_system
+		relative_position_id = PER_compulsry_hijab
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_bring_shia_immigrants
+			focus = PER_family_support_act
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_persian_ciricullums
+		icon = GFX_focus_generic_education_system
+		relative_position_id = PER_islamic_education
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_islamic_education
+		}
+		prerequisite = { focus = PER_more_people_now }
+		mutually_exclusive = { focus = PER_we_are_a_nation }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_online_education
+		icon = GFX_focus_generic_education_system
+		relative_position_id = PER_islamic_education
+		x = 2
+		y = 2
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = { focus = PER_persian_ciricullums }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_the_great_web
+		icon = GFX_focus_USA_emergency_measures
+		relative_position_id = PER_political_crackdown_continue
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_political_crackdown_continue
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_islamic_online_principles
+		icon = GFX_focus_USA_emergency_measures
+		relative_position_id = PER_the_great_web
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_great_web
+		}
+		mutually_exclusive = { focus = PER_internet_propaganda_front }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_internet_propaganda_front
+		icon = GFX_focus_USA_emergency_measures
+		relative_position_id = PER_the_great_web
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_great_web
+		}
+		mutually_exclusive = { focus = PER_islamic_online_principles }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_remember_your_enemy
+		icon = GFX_focus_USA_emergency_measures
+		relative_position_id = PER_the_great_web
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_internet_propaganda_front
+			focus = PER_islamic_online_principles
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_we_are_a_nation
+		icon = GFX_focus_USA_emergency_measures
+		relative_position_id = PER_islamic_education
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_remember_your_enemy
+		}
+		prerequisite = { focus = PER_islamic_education }
+		mutually_exclusive = { focus = PER_persian_ciricullums }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_crack_on_foreign_agents
+		icon = GFX_focus_USA_emergency_measures
+		relative_position_id = PER_islamic_education
+		x = -2
+		y = 2
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = { focus = PER_we_are_a_nation }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_secured_from_within
+		icon = GFX_focus_generic_anti_guerilla
+		relative_position_id = PER_islamic_education
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = { focus = PER_crackdown_on_domestic_abuse }
+		prerequisite = { 
+			focus = PER_crack_on_foreign_agents 
+			focus = PER_online_education
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_the_islamic_economy
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_end_2019_protests
+		x = 11
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_end_2019_protests
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_assert_economic_independence
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_the_islamic_economy
+		x = 2
+		y = 1
+		cost = 6
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_islamic_economy
+		}
+		mutually_exclusive = { focus = PER_fight_the_corruption }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_made_in_iran
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_assert_economic_independence
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_assert_economic_independence
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_encurage_local_consumption
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_made_in_iran
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_made_in_iran
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_increase_enrichment
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_assert_economic_independence
+		x = 2
+		y = 1
+		cost = 6
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_assert_economic_independence
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_our_black_gold
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_assert_economic_independence
+		x = 4
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_assert_economic_independence
+		}
+		completion_reward = {
+			add_resource = {
+                type = oil
+                amount = 80
+                state = 414
+            }
+            set_temp_variable = {
+                var = debt_var_temp
+                value = 20
+            }
+            add_debt_with_inflation = yes
+		}
+	}
+	focus = {
+		id = PER_parkour_energy_program
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_our_black_gold
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_our_black_gold
+		}
+		prerequisite = {
+			focus = PER_increase_enrichment
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_islamic_money
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_parkour_energy_program
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_parkour_energy_program
+		}
+		prerequisite = { focus = PER_encurage_local_consumption }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_inflation_is_manageable
+		icon = GFX_focus_FRA_support_nuclear_power_villiers
+		relative_position_id = PER_islamic_money
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_islamic_money
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_fight_the_corruption
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_the_islamic_economy
+		x = -2
+		y = 1
+		cost = 6
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_islamic_economy
+		}
+		mutually_exclusive = { focus = PER_assert_economic_independence }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_the_chinese_example
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_fight_the_corruption
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_fight_the_corruption
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_advise_from_putin
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_the_chinese_example
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_chinese_example
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_qatar_energy_deal
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_fight_the_corruption
+		x = -2
+		y = 1
+		cost = 6
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_fight_the_corruption
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_break_down_monopolies
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_fight_the_corruption
+		x = -4
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_fight_the_corruption
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_railway_imrpovement
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_break_down_monopolies
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_break_down_monopolies
+		}
+		prerequisite = {
+			focus = PER_qatar_energy_deal
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_national_connectivity_project
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_railway_imrpovement
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_advise_from_putin
+		}
+		prerequisite = {
+			focus = PER_railway_imrpovement
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_expand_stock_exchange
+		icon = GFX_focus_USC_employ_our_veterans
+		relative_position_id = PER_national_connectivity_project
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_national_connectivity_project
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_the_eastern_pandemic
+		icon = GFX_focus_FRA_Form_A_Scientific_Commitee
+		relative_position_id = PER_the_islamic_economy
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_islamic_economy
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_continue_the_lockdown
+		icon = GFX_focus_FRA_Form_A_Scientific_Commitee
+		relative_position_id = PER_the_eastern_pandemic
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_eastern_pandemic
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_mandate_masks
+		icon = GFX_focus_FRA_Form_A_Scientific_Commitee
+		relative_position_id = PER_the_eastern_pandemic
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_the_eastern_pandemic
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_homemade_vaccine
+		icon = GFX_focus_FRA_Form_A_Scientific_Commitee
+		relative_position_id = PER_the_eastern_pandemic
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_mandate_masks
+		}
+		prerequisite = { 
+			focus = PER_continue_the_lockdown
+		}
+		prerequisite = { 
+			focus = PER_made_in_iran
+		}
+		mutually_exclusive = { focus = PER_trust_the_chinavac }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_trust_the_chinavac
+		icon = GFX_focus_FRA_Form_A_Scientific_Commitee
+		relative_position_id = PER_the_eastern_pandemic
+		x = -2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_mandate_masks
+		}
+		prerequisite = { 
+			focus = PER_continue_the_lockdown
+		}
+		prerequisite = { focus = PER_the_chinese_example }
+		mutually_exclusive = { focus = PER_homemade_vaccine }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_vaccination_fatwah
+		icon = GFX_focus_FRA_Form_A_Scientific_Commitee
+		relative_position_id = PER_the_eastern_pandemic
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_trust_the_chinavac
+			focus = PER_homemade_vaccine
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_success_despite_struggle
+		icon = GFX_focus_GER_prioritize_the_machinery_industry 
+		relative_position_id = PER_the_eastern_pandemic
+		x = 0
+		y = 4
+		cost = 4
+		ai_will_do = {
+			base = 40
+		}
+		prerequisite = {
+			focus = PER_vaccination_fatwah
+		}
+		prerequisite = {
+			focus = PER_inflation_is_manageable
+			focus = PER_expand_stock_exchange
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PER_a_bright_future
+		icon = GFX_focus_SOV_iran_problem 
+		relative_position_id = PER_end_2019_protests
+		x = 0
+		y = 8
+		cost = 30
+		ai_will_do = {
+			base = 40
+		}
+		cancelable = no
+		prerequisite = {
+			focus = PER_success_despite_struggle
+		}
+		prerequisite = { focus = PER_ready_and_locked }
+		prerequisite = { focus = PER_secured_from_within }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	# MAHSA AMINI CRISIS TREE
+	focus = {
+		id = PER_mahsa_amimi_dead
+		icon = GFX_focus_GER_negotiate_with_iran
+		x = 0
+		y = 0
+		cost = 1
+		ai_will_do = {
+			base = 50
+		}
+		available = {
+		}
+		allow_branch = {
+			has_country_flag = mahsa_amini_crisis
+		}
+		completion_reward = {
+			custom_effect_tooltip = PER_mahsa_amini_crisis_tt
+			add_political_power = 50
+		}
+	}
+}

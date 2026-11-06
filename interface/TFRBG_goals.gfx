@@ -1,0 +1,130 @@
+spriteTypes = {
+	#Organize by TAG or group like generic, milita, etc
+	# IRAN
+	SpriteType = {
+		name = "GFX_focus_PER_helping_yemeni_brothers"
+		texturefile = "gfx/interface/goals/PER/PER_helping_yemeni_brothers.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_exporting_the_islamic_revolution"
+		texturefile = "gfx/interface/goals/PER/PER_exporting_the_islamic_revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_saudi_king_gone"
+		texturefile = "gfx/interface/goals/PER/PER_saudi_king_gone.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_revolution_in_the_arabian_peninsula"
+		texturefile = "gfx/interface/goals/PER/PER_revolution_in_the_arabian_peninsula.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_shia_across_the_gulf"
+		texturefile = "gfx/interface/goals/PER/PER_shia_across_the_gulf.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_bomb_the_sauds"
+		texturefile = "gfx/interface/goals/PER/PER_bomb_the_sauds.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_show_our_dominance_over_hormuz"
+		texturefile = "gfx/interface/goals/PER/PER_show_our_dominance_over_hormuz.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_our_friend_assad"
+		texturefile = "gfx/interface/goals/PER/PER_our_friend_assad.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_assist_syrian_chud"
+		texturefile = "gfx/interface/goals/PER/PER_assist_syrian_chud.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_our_closest_ally"
+		texturefile = "gfx/interface/goals/PER/PER_our_closest_ally.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_condemn_abraham_accords"
+		texturefile = "gfx/interface/goals/PER/PER_condemn_abraham_accords.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_the_iraqi_bridge"
+		texturefile = "gfx/interface/goals/PER/PER_the_iraqi_bridge.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_yem_focus_saud_backed"
+		texturefile = "gfx/interface/goals/PER/PER_yem_focus_saud_backed.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_yem_focus_uae_backed"
+		texturefile = "gfx/interface/goals/PER/PER_yem_focus_uae_backed.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_yem_rebuild_them"
+		texturefile = "gfx/interface/goals/PER/PER_yem_rebuild_them.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_favour_the_artesh"
+		texturefile = "gfx/interface/goals/PER/PER_favour_the_artesh.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_buy_equipment_from_russia"
+		texturefile = "gfx/interface/goals/PER/PER_buy_equipment_from_russia.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_modernize_our_guns"
+		texturefile = "gfx/interface/goals/PER/PER_modernize_our_guns.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_iranian_helicopter_fleet"
+		texturefile = "gfx/interface/goals/PER/PER_iranian_helicopter_fleet.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_our_southern_shore"
+		texturefile = "gfx/interface/goals/PER/PER_our_southern_shore.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_an_eastern_doctrine"
+		texturefile = "gfx/interface/goals/PER/PER_an_eastern_doctrine.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_favour_the_irgc"
+		texturefile = "gfx/interface/goals/PER/PER_favour_the_irgc.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_learn_from_our_allies"
+		texturefile = "gfx/interface/goals/PER/PER_learn_from_our_allies.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_institutionalized_smuggling"
+		texturefile = "gfx/interface/goals/PER/PER_institutionalized_smuggling.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_increase_our_range"
+		texturefile = "gfx/interface/goals/PER/PER_increase_our_range.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_doctrine_of_our_own"
+		texturefile = "gfx/interface/goals/PER/PER_doctrine_of_our_own.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_beyond_the_gulf"
+		texturefile = "gfx/interface/goals/PER/PER_beyond_the_gulf.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_send_arms_to_americans"
+		texturefile = "gfx/interface/goals/PER/PER_send_arms_to_americans.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PER_attache_to_china"
+		texturefile = "gfx/interface/goals/PER/PER_attache_to_china.png"
+	}
+	######Don't put shit down here, organize it!############
+	SpriteType = {
+		name = "GFX_NRT_SRN_califas_unidas"
+		texturefile = "gfx/interface/goals/califas_unidas.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_unknown_2"
+		texturefile = "gfx/interface/goals/goal_unknown_2.dds"
+		legacy_lazy_load = no
+	}
+}

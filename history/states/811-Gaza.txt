@@ -4,6 +4,7 @@ state={
 	history = {
 		owner = PAL
 		add_core_of = PAL
+		add_core_of = HAM
 		add_claim_by = ISR
 		
 		buildings = {
