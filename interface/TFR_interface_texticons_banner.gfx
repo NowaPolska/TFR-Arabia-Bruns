@@ -4171,6 +4171,26 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	spriteType = {
+		name = "GFX_SAU_mbs_path_banner"
+		texturefile = "gfx/texticons/banners/SAU_mbs_path_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SAU_hezbollah_path_banner"
+		texturefile = "gfx/texticons/banners/SAU_hezbollah_path_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SAU_republic_path_banner"
+		texturefile = "gfx/texticons/banners/SAU_republic_path_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SAU_roc_path_banner"
+		texturefile = "gfx/texticons/banners/SAU_roc_path_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_APA_path_banner"
 		texturefile = "gfx/texticons/banners/APA_path_banner.png"
 		legacy_lazy_load = no

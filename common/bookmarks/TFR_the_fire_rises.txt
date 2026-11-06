@@ -61,77 +61,6 @@ bookmarks = {
 			}
 		}
 		
-		#"RAJ" = {
-		#	history = "RAJ_GATHERING_STORM_DESC"
-		#	ideology = conservative
-		#	ideas = {
-		#
-		#	}
-		#	focuses = {
-		#
-		#	}
-		#}
-		
-		"FRA" = {
-			minor = no
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = social_liberal
-			version = base_game
-			available = {
-				always = yes
-			}
-			ideas = {
-				FRA_french_spirit_idea
-				FRA_mass_migration_idea
-				FRA_ENA_idea
-			}
-			focuses = {
-				FRA_criticize_the_eu
-				FRA_support_european_federalization
-				FRA_the_french_armed_forces
-			}
-		}
-		
-		"GER" = {
-			minor = no
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = conservative
-			version = base_game
-			available = {
-				always = yes
-			}
-			ideas = {
-				GER_german_legacy_idea
-				GER_bundeswehr_shortcomings_idea
-				GER_merkelreich_idea
-			}
-			focuses = {
-				GER_a_green_future
-				GER_align_to_the_right
-				GER_europe_united_strong
-			}
-		}
-		
-		"SOV" = {
-			minor = no
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = authoritarian_democrat
-			version = base_game
-			available = {
-				always = yes
-			}
-			ideas = {
-				SOV_heavy_sanctions 
-				SOV_kleptocratic_state 
-				SOV_The_Petrol_Economy
-			}
-			focuses = {
-				SOV_1000_years_of_putinism
-				SOV_the_russian_dream
-				SOV_sanction_proof_economy
-			}
-		}
-		
 		"PRC" = {
 			minor = no
 			history = "PRC_GATHERING_STORM_DESC"
@@ -151,9 +80,39 @@ bookmarks = {
 				PRC_finish_what_mao_started
 			}
 		}
+		#"RAJ" = {
+		#	history = "RAJ_GATHERING_STORM_DESC"
+		#	ideology = conservative
+		#	ideas = {
+		#
+		#	}
+		#	focuses = {
+		#
+		#	}
+		#}
 		
+		
+        "ISR" = {
+			minor = no
+			history = "ISR_GATHERING_STORM_DESC"
+			ideology = conservative
+			version = base_game
+			available = {
+				always = yes
+			}
+			ideas = {
+				idea_ISR_vanguard_of_judaism
+                idea_ISR_american_funding
+				idea_ISR_haredi_conscription_question
+			}
+			focuses = {
+				FRA_If_We_cant_have_it
+				GER_uphold_democracy
+				PRC_finish_what_mao_started
+			}
+		}
 		"SAU" = {
-			minor = yes
+			minor = no
 			history = "SAU_GATHERING_STORM_DESC"
 			ideology = nationalist
 			version = base_game
@@ -169,6 +128,83 @@ bookmarks = {
 				SAU_Gather_Supports_From_the_Imams
 				SAU_Uneasy_20ies
 				SAU_Never_ending_oil_money
+			}
+		}
+
+		 "PER" = {
+			minor = no
+			history = "PER_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			version = base_game
+			available = {
+				always = yes
+			}
+			ideas = {
+				PER_glory_of_islamic_revolution
+				PER_limited_nuclear_program
+                PER_islamic_revolutionary_guard_corps
+			}
+			focuses = {
+				GER_negotiate_with_the_iranians
+				PER_exporting_the_islamic_revolution
+				PRC_military_industries_renewal
+			}
+		}
+		"GER" = {
+			minor = no
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = conservative
+			version = base_game
+			available = {
+				always = yes
+			}
+			ideas = {
+				GER_german_legacy_idea
+				GER_bundeswehr_shortcomings_idea
+				GER_merkelreich_idea
+			}
+			focuses = {
+				GER_a_green_future
+				GER_align_to_the_right
+				GER_europe_united_strong
+			}
+		}
+		"FRA" = {
+			minor = no
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			version = base_game
+			available = {
+				always = yes
+			}
+			ideas = {
+				FRA_french_spirit_idea
+				FRA_mass_migration_idea
+				FRA_ENA_idea
+			}
+			focuses = {
+				FRA_criticize_the_eu
+				FRA_support_european_federalization
+				FRA_the_french_armed_forces
+			}
+		}
+		"SOV" = {
+			minor = no
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			version = base_game
+			available = {
+				always = yes
+			}
+			ideas = {
+				SOV_heavy_sanctions 
+				SOV_kleptocratic_state 
+				SOV_The_Petrol_Economy
+			}
+			focuses = {
+				SOV_1000_years_of_putinism
+				SOV_the_russian_dream
+				SOV_sanction_proof_economy
 			}
 		}
 		

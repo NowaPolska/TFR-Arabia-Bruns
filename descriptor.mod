@@ -9,5 +9,3 @@ dependencies={
 	"The Fire Rises"
 }
 supported_version="1.19.*"
-path="C:/Users/rafal/Documents/Paradox Interactive/Hearts of Iron IV/mod/TFR Arabia Burns"
-remote_file_id="3833744724"

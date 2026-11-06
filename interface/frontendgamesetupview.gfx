@@ -1,0 +1,648 @@
+spriteTypes = {
+
+
+
+	spriteType = {
+		name = "GFX_country_selection_minor_entry"
+		texturefile = "gfx/interface/country_selection_minor_entry.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_minor_portrait_overlay"
+		texturefile = "gfx/interface/minor_portrait_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_enabled_achievement_icons"
+		texturefile = "gfx/interface/enabled_achievement_icons.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_game_rule_option_disallow_achievements"
+		texturefile = "gfx/interface/game_rule_option_disallow_achievements.dds"
+	}
+
+	spriteType = {
+		name = "GFX_game_settings_bg"
+		texturefile = "gfx/interface/game_settings_bg.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_strip_selected"
+		texturefile = "gfx/interface/lobby_country_mapmode_strip_selected.dds"
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_strip"
+		texturefile = "gfx/interface/lobby_country_mapmode_strip.dds"
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_save_load_file_btn"
+		textureFile = "gfx/interface/save_load_file_disconnected_3frames.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_lobby_player_mapmode_button"
+		texturefile = "gfx/interface/lobby_player_mapmode_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lobby_player_mapmode_button_selected"
+		texturefile = "gfx/interface/lobby_player_mapmode_button_selected.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_button"
+		texturefile = "gfx/interface/lobby_country_mapmode_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_button_selected"
+		texturefile = "gfx/interface/lobby_country_mapmode_button_selected.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_generic_checkbox3"
+		texturefile = "gfx/interface/generic_checkbox3.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_generic_checkbox2"
+		texturefile = "gfx/interface/generic_checkbox2.dds"
+		noOfFrames = 2
+	}
+		
+	spriteType = {
+		name = "GFX_generic_checkbox3_orange"
+		texturefile = "gfx/interface/division_equipment/generic_checkbox3_orange.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_checkbox_small4"
+		texturefile = "gfx/interface/decisionview/checkbox_small4.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_checkbox_small5"
+		texturefile = "gfx/interface/decisionview/checkbox_small5.dds"
+		noOfFrames = 3
+	}
+
+	SpriteType = {
+		name = "GFX_play_button_ready"
+		texturefile = "gfx/interface/play_button_ready.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/play_button_mask.dds"
+			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture3.dds"
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 2.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_play_button"
+		textureFile = "gfx/interface/play_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"		
+	}
+
+	corneredTileSpriteType = {
+                name = "GFX_tiled_frontend_upper_bar"
+                size= { x=484 y=128 }
+                textureFile = "gfx/interface/tiles/tiled_frontend_upper_bar.dds"
+                borderSize = { x=70 y=70 }
+                tilingCenter = yes
+                effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+        }
+	
+        spriteType = {
+                name = "GFX_extended_country_button"
+                textureFile = "gfx/interface/extended_country_button.dds"
+                noOfFrames = 2
+        }
+
+        corneredTileSpriteType = {
+                name = "GFX_tiled_frontend_lower_bar"
+                size= { x=484 y=128 }
+                textureFile = "gfx//interface//tiles//tiled_frontend_lower_bar.dds"
+                borderSize = { x=70 y=70 }
+                tilingCenter = yes
+                effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+        }
+	
+	spriteType = {
+                name = "GFX_frontend_task_force_composition_editor_upper_bar"
+                texturefile = "gfx/interface/frontend_task_force_composition_editor_upper_bar.dds"
+        }
+
+	spriteType = {
+                name = "GFX_load_save_top_screen"
+                texturefile = "gfx/interface/load_save_top_screen.dds"
+        }
+
+        spriteType = {
+                name = "GFX_load_save_bottom"
+                texturefile = "gfx/interface/load_save_bottom.dds"
+        }		
+		
+        spriteType = {
+                name = "GFX_load_save_bottom_screen"
+                texturefile = "gfx/interface/load_save_bottom_screen.dds"
+        }
+
+        spriteType = {
+                name = "GFX_load_save_entry2"
+                texturefile = "gfx/interface/load_save_entry2.dds"
+				noOfFrames = 2
+        }		
+		
+        spriteType = {
+                name = "GFX_load_save_entry"
+                texturefile = "gfx/interface/load_save_entry.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_recruit"
+                texturefile = "gfx/interface/difficulty_button_recruit.dds"
+				noOfFrames = 2
+        }
+
+		spriteType = {
+                name = "GFX_difficulty_button_civilian"
+                texturefile = "gfx/interface/difficulty_button_civilian.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_veteran"
+                texturefile = "gfx/interface/difficulty_button_veteran.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_regular"
+                texturefile = "gfx/interface/difficulty_button_regular.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_elite"
+                texturefile = "gfx/interface/difficulty_button_elite.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_custom_set_button_2"
+                texturefile = "gfx/interface/custom_set_button_2.dds"
+				noOfFrames = 2
+        }
+		
+        spriteType = {
+                name = "GFX_lobby_lower_right_sidepanel_bg"
+                texturefile = "gfx/interface/lobby_lower_right_sidepanel_bg.dds"
+                effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+        }
+
+        spriteType = {
+                name = "GFX_lobby_right_sidepanel_bg"
+                texturefile = "gfx/interface/lobby_right_sidepanel_bg.dds"
+        }
+
+        spriteType = {
+                name = "GFX_bookmark_entry_bg"
+                texturefile = "gfx/interface/bookmark_entry_bg.dds"
+                noOfFrames = 2
+                effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+        }
+	
+	spriteType = {
+		name = "GFX_select_date_bg"
+		texturefile = "gfx/interface/select_date_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_select_date_1936"
+		texturefile = "gfx/interface/select_date_1936.dds"
+	}
+	spriteType = {
+		name = "GFX_select_date_1939"
+		texturefile = "gfx/interface/select_date_1939.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_disconnected_button"
+		textureFile = "gfx/interface/save_game_disconnected.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_menu_top_bg_bg"
+		textureFile = "gfx//interface//menu_top_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_country_selection_entry"
+		texturefile = "gfx/interface/country_selection_entry.dds"
+		noOfFrames = 2		
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}
+	
+	spriteType = {
+		name = "GFX_country_selection_bg"
+		texturefile = "gfx/interface/country_selection_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"				
+	}
+	
+	spriteType = {
+		name = "GFX_custom_setting_slider_bg"
+		texturefile = "gfx/interface/custom_difficulty_slider_bg.dds"
+			
+	}
+	
+	spriteType = {
+		name = "GFX_changed_slider_indicator"
+		texturefile = "gfx/interface/changed_slider_indicator.dds"
+		noOfFrames = 2
+			
+	}
+	
+	spriteType = {
+		name = "GFX_custom_set_button"
+		texturefile = "gfx/interface/custom_set_button.dds"
+		noOfFrames = 2
+			
+	}
+	
+	spriteType = {
+		name = "GFX_mini_country_selector"
+		texturefile = "gfx/interface/diplo_countrylist_flag_frame_mini.dds"
+		noOfFrames = 2
+			
+	}
+
+	spriteType = {
+        name = "GFX_missing_dlc_warning_sign"
+        texturefile = "gfx/interface/unsafe_savegame_icon.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_USA_intro"
+        texturefile = "gfx/menu_setup_image/USA_intro.png"
+    }
+	
+	spriteType = {
+        name = "GFX_SOV_intro" 
+        texturefile = "gfx/menu_setup_image/SOV_intro.png"
+    }
+	
+	spriteType = {
+        name = "GFX_JAP_intro" 
+        texturefile = "gfx/menu_setup_image/JAP_intro.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_PRC_intro" 
+        texturefile = "gfx/menu_setup_image/PRC_intro.png"
+    }
+	
+    spriteType = {
+        name = "GFX_PER_intro" 
+        texturefile = "gfx/menu_setup_image/PER_intro.png"
+    }
+
+    spriteType = {
+        name = "GFX_ISR_intro" 
+        texturefile = "gfx/menu_setup_image/ISR_intro.png"
+    }
+
+    spriteType = {
+        name = "GFX_SAU_intro" 
+        texturefile = "gfx/menu_setup_image/SAU_intro.png"
+    }
+    
+	spriteType = {
+        name = "GFX_FRA_intro" 
+        texturefile = "gfx/menu_setup_image/FRA_intro.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_GER_intro" 
+        texturefile = "gfx/menu_setup_image/GER_intro.png"
+    }
+	
+	spriteType = {
+        name = "GFX_USA_usc_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_usc_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_apla_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_apla_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_usb_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_usb_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_ptf_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_ptf_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_nsm_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_nsm_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_atw_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_atw_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_SOV_ur_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SOV_ur_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_SOV_cprf_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SOV_cprf_path.png"
+    }	
+		
+	spriteType = {
+        name = "GFX_SOV_ldpr_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SOV_ldpr_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_SOV_eurasia_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SOV_eurasia_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_SOV_navalny_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SOV_navalny_path.png"
+    }	
+
+    	spriteType = {
+        name = "GFX_FRA_democratic_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_democratic_path.png"
+    }	
+
+     	spriteType = {
+        name = "GFX_FRA_communist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_communist_path.png"
+    }	
+
+     	spriteType = {
+        name = "GFX_FRA_nationalist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_nationalist_path.png"
+    }	
+
+     	spriteType = {
+        name = "GFX_FRA_eu_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_eu_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FRA_conservative_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_conservative_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FRA_liberal_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_liberal_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FRA_socialist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_socialist_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FPR_socialism_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FPR_socialism_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FPR_anarchism_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FPR_anarchism_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FPR_trotskyist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FPR_trotskyist_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FPR_rev_guard_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FPR_rev_guard_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FAF_ultranat_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FAF_ultranat_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FAF_identitarian_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FAF_identitarian_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FAF_juntists_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FAF_juntists_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FAF_democrats_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FAF_democrats_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FRA_eu_unified_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_eu_unified_path.png"
+    }	
+    spriteType = {
+        name = "GFX_FRA_EU_iberian_fed_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/FRA_EU_iberian_fed_path.png"
+    }	
+    
+	
+	spriteType = {
+        name = "GFX_GER_democratic_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/GER_democratic_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_GER_communist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/GER_communist_path.png"
+    }
+	
+	spriteType = {
+        name = "GFX_GER_fascist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/GER_fascist_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_GER_ultraliberal_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/GER_ultraliberal_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_cascadia_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_cascadia_inwork.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_SOV_nazbol_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SOV_nazbol_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_SOV_srzp_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SOV_srzp_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_los_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_los_inwork.png"
+    }
+	
+	spriteType = {
+        name = "GFX_USA_rrr_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_rrr_inwork.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_USA_bla_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_bla_inwork.png"
+    }
+
+	spriteType = {
+        name = "GFX_USA_slb_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_slb_inwork.png"
+    }
+	
+	spriteType = {
+        name = "GFX_USA_gma_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/USA_gma_inwork.png"
+    }
+
+	spriteType = {
+        name = "GFX_JAP_ldp_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/JAP_ldp_path.png"
+    }
+	
+	spriteType = {
+        name = "GFX_JAP_liberal_civil_coalition_1_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/JAP_liberal_civil_coalition_1_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_JAP_liberal_civil_coalition_2_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/JAP_liberal_civil_coalition_2_path.png"
+    }
+	
+	spriteType = {
+        name = "GFX_JAP_junta_inwork_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/JAP_junta_inwork_path.png"
+    }	 
+	
+	spriteType = {
+        name = "GFX_JAP_republic_inwork_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/JAP_republic_inwork_path.png"
+    }
+	
+	spriteType = {
+        name = "GFX_PRC_nationalist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/PRC_nationalist_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_PRC_centrist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/PRC_centrist_path.png"
+    }	
+	
+	spriteType = {
+        name = "GFX_PRC_liberal_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/PRC_liberal_path.png"
+    }
+	
+	spriteType = {
+        name = "GFX_PRC_new_left_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/PRC_new_left_path.png"
+    }
+	
+    spriteType = {
+        name = "GFX_PER_conservative_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/PER_conservative_path.png"
+    }
+    
+    spriteType = {
+        name = "GFX_PER_reformist_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/PER_reformist_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_PER_IRGC_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/PER_IRGC_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_ISR_likud_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/ISR_bibi_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_ISR_opposition_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/ISR_lapid_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_ISR_IDF_centcom_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/ISR_army_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_SAU_mbs_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SAU_mbs_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_SAU_republic_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SAU_republic_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_SAU_hezbollah_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SAU_hezbollah_path.png"
+    }
+
+    spriteType = {
+        name = "GFX_SAU_roc_path"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/SAU_roc_path.png"
+    }
+ 
+	spriteType = {
+        name = "GFX_more_content_mark"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/more_content_mark.png"
+    }
+	
+	spriteType = {
+        name = "GFX_new_this_update"
+        texturefile = "gfx/menu_setup_image/Major_Path_Flags/new_this_update.png"
+    }
+	
+}
