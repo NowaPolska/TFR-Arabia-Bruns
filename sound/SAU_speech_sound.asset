@@ -14,3 +14,22 @@
 		name = "TFR_sau_unif"
 		file = "Super_Events/TFR_sau_unif.wav"
 	}
+	sound = {
+		name = "TFR_se_israel_two_states_solution"
+		file = "Super_Events/TFR_se_israel_two_states_solution.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_iran_irgc_victory"
+		file = "Super_Events/TFR_se_iran_irgc_victory.wav"
+	}
+
+	sound = {
+		name = "TFR_se_iran_principalist_victory"
+		file = "Super_Events/TFR_se_iran_principalist_victory.wav"
+	}
+
+	sound = {
+		name = "TFR_se_iran_reformist_victory"
+		file = "Super_Events/TFR_se_iran_reformist_victory.wav"
+	}

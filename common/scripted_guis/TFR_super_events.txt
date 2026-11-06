@@ -351,7 +351,167 @@
 				}
 			}
 		}
+		israel_iran_war_super_event = {
+			context_type = player_context
+			window_name = "israel_iran_war_super_event"
+
+			visible = {
+				has_country_flag = israel_iran_war_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = israel_iran_war_super
+				}
+			}
+		}
 		
+		kahane_irgc_war_super_event = {
+			context_type = player_context
+			window_name = "kahane_irgc_war_super_event"
+
+			visible = {
+				has_country_flag = kahane_irgc_war_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = kahane_irgc_war_super
+				}
+			}
+		}
+		
+		iran_irgc_victory_super_event = {
+			context_type = player_context
+			window_name = "iran_irgc_victory_super_event"
+
+			visible = {
+				has_country_flag = iran_irgc_victory_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = iran_irgc_victory_super
+				}
+			}
+		}
+		
+		iran_principalist_victory_super_event = {
+			context_type = player_context
+			window_name = "iran_principalist_victory_super_event"
+
+			visible = {
+				has_country_flag = iran_principalist_victory_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = iran_principalist_victory_super
+				}
+			}
+		}
+		
+		iran_reformist_victory_super_event = {
+			context_type = player_context
+			window_name = "iran_reformist_victory_super_event"
+
+			visible = {
+				has_country_flag = iran_reformist_victory_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = iran_reformist_victory_super
+				}
+			}
+		}
+		
+		israel_bibi_victory_super_event = {
+			context_type = player_context
+			window_name = "israel_bibi_victory_super_event"
+
+			visible = {
+				has_country_flag = israel_bibi_victory_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = israel_bibi_victory_super
+				}
+			}
+		}
+		
+		israel_kahane_victory_super_event = {
+			context_type = player_context
+			window_name = "israel_kahane_victory_super_event"
+
+			visible = {
+				has_country_flag = israel_kahane_victory_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = israel_kahane_victory_super
+				}
+			}
+		}
+		
+		israel_two_states_solution_super_event = {
+			context_type = player_context
+			window_name = "israel_two_states_solution_super_event"
+
+			visible = {
+				has_country_flag = israel_two_states_solution_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = israel_two_states_solution_super
+				}
+			}
+		}
+		
+		middleeast_nuclear_super_event = {
+			context_type = player_context
+			window_name = "middleeast_nuclear_super_event"
+
+			visible = {
+				has_country_flag = middleeast_nuclear_super
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = middleeast_nuclear_super
+				}
+			}
+		}
 		USA_civil_war_trump_victory_super_event = {
 			context_type = player_context
 			window_name = "USA_civil_war_trump_victory_super_event"

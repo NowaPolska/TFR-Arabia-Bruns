@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = iran
+add_namespace = mahsa
 
 # Qasem Soleimani Assassinated
 country_event = {
@@ -651,6 +652,46 @@ country_event = {
 				target = IRQ
 				type = annex_everything 
 			}
+		}
+	}
+}
+country_event = {
+	id = iran.35
+	title = iran.35.t
+	desc = iran.35.d
+	picture = GFX_Iranian_Intervention
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+
+	}
+		
+	option = {
+		name = iran.35.a
+		hidden_effect = {
+			set_country_flag = iran_principalist_victory_super
+			sound_effect = TFR_se_iran_principalist_victory
+			play_song = "one_minute_of_silence"
+		}
+	}
+}
+##MAHSA AMINI CRISIS##
+country_event = {
+	id = mahsa.1
+	title = mahsa.1.t
+	desc = mahsa.1.d
+	picture = GFX_mahsa_amini_is_dead
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+		
+	option = {
+		name = mahsa.1.a
+		add_stability = -0.1
+		hidden_effect = {
+			set_country_flag = mahsa_amini_crisis
+			mark_focus_tree_layout_dirty = yes	
 		}
 	}
 }

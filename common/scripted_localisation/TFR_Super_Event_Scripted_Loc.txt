@@ -13,7 +13,68 @@
 			}
 			localization_key = "super_alikhanov_war"
 		}	
+		text = { 
+			trigger = {
+				has_country_flag = israel_iran_war_super
+			}
+			localization_key = "israel_iran_war_super"
+		}	
 		
+		text = { 
+			trigger = {
+				has_country_flag = kahane_irgc_war_super
+			}
+			localization_key = "kahane_irgc_war_super"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_irgc_victory_super
+			}
+			localization_key = "iran_irgc_victory_super"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_principalist_victory_super
+			}
+			localization_key = "iran_principalist_victory_super"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_reformist_victory_super
+			}
+			localization_key = "iran_reformist_victory_super"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_bibi_victory_super
+			}
+			localization_key = "israel_bibi_victory_super"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_kahane_victory_super
+			}
+			localization_key = "israel_kahane_victory_super"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_two_states_solution_super
+			}
+			localization_key = "israel_two_states_solution_super"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = middleeast_nuclear_super
+			}
+			localization_key = "middleeast_nuclear_super"
+		}	
 		text = { 
 			trigger = {
 				has_country_flag = TFR_se_second_nato_victory_alikhanov_flag
@@ -624,7 +685,69 @@
 			}
 			localization_key = "super_alikhanov_war_text"
 		}
+		text = { 
+			trigger = {
+				has_country_flag = israel_iran_war_super
+			}
+			localization_key = "israel_iran_war_super_text"
+		}	
 		
+		text = { 
+			trigger = {
+				has_country_flag = kahane_irgc_war_super
+			}
+			localization_key = "kahane_irgc_war_super_text"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_irgc_victory_super
+			}
+			localization_key = "iran_irgc_victory_super_text"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_principalist_victory_super
+			}
+			localization_key = "iran_principalist_victory_super_text"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_reformist_victory_super
+			}
+			localization_key = "iran_reformist_victory_super_text"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_bibi_victory_super
+			}
+			localization_key = "israel_bibi_victory_super_text"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_kahane_victory_super
+			}
+			localization_key = "israel_kahane_victory_super_text"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_two_states_solution_super
+			}
+			localization_key = "israel_two_states_solution_super_text"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = middleeast_nuclear_super
+			}
+			localization_key = "middleeast_nuclear_super_text"
+		}	
+
 		text = {
 			trigger = {
 				has_country_flag = TFR_se_second_nato_victory_alikhanov_flag
@@ -1167,6 +1290,68 @@
 			}
 			localization_key = "super_alikhanov_war_button"
 		}
+		text = { 
+			trigger = {
+				has_country_flag = israel_iran_war_super
+			}
+			localization_key = "israel_iran_war_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = kahane_irgc_war_super
+			}
+			localization_key = "kahane_irgc_war_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_irgc_victory_super
+			}
+			localization_key = "iran_irgc_victory_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_principalist_victory_super
+			}
+			localization_key = "iran_principalist_victory_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = iran_reformist_victory_super
+			}
+			localization_key = "iran_reformist_victory_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_bibi_victory_super
+			}
+			localization_key = "israel_bibi_victory_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_kahane_victory_super
+			}
+			localization_key = "israel_kahane_victory_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = israel_two_states_solution_super
+			}
+			localization_key = "israel_two_states_solution_super_button"
+		}	
+		
+		text = { 
+			trigger = {
+				has_country_flag = middleeast_nuclear_super
+			}
+			localization_key = "middleeast_nuclear_super_button"
+		}	
 		
 		text = {
 			trigger = {

@@ -2,23 +2,12 @@
 		name = "Super_Event"
 		soundeffects = {
 			TFR_se_sau_nuke_sevent
-		}
-	}
-	category = {
-		name = "Super_Event"
-		soundeffects = {
+			TFR_se_iran_reformist_victory
+			TFR_se_iran_principalist_victory
+			TFR_se_iran_irgc_victory
+			TFR_se_israel_two_states_solution
 			TFR_sau_arab_unifed
-		}
-	}
-	category = {
-		name = "Super_Event"
-		soundeffects = {
 			TFR_sau_nationalist
-		}
-	}
-	category = {
-		name = "Super_Event"
-		soundeffects = {
 			TFR_sau_unif
 		}
 	}
