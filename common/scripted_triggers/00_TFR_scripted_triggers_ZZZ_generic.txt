@@ -18,6 +18,8 @@ has_content_tag = {
 		tag = FRA
 		tag = GER
 		tag = FPR
+		tag = PER
+		tag = ISR
 	}
 }
 
@@ -34,7 +36,6 @@ has_skeleton_tag = {
 		tag = PRK
 		tag = KOR
 		tag = SAF
-		tag = SAU
 		tag = SER
 		tag = BLR
 		tag = HAM
@@ -44,13 +45,11 @@ has_skeleton_tag = {
 		tag = MEX
 		tag = EGY
 		tag = HRL
-		tag = PER
 		tag = ETH
 		tag = TZN
 		tag = COG
 		tag = SUD
 		tag = SYR
-		tag = ISR
 		tag = NOV
 		tag = NIC
 		#tag = ELS

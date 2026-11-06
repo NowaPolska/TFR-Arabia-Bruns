@@ -22,7 +22,69 @@ spriteTypes = {
 		texturefile = "gfx/super_events/SAU_unif_super.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_super_israel_iran_war"
+		texturefile = "gfx/super_events/super_israel_iran_war.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 	
+	spriteType = {
+		name = "GFX_super_kahane_irgc_war"
+		texturefile = "gfx/super_events/super_kahane_irgc_war.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_super_iran_irgc_victory"
+		texturefile = "gfx/super_events/super_iran_irgc_victory.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_super_iran_principalist_victory"
+		texturefile = "gfx/super_events/super_iran_principalist_victory.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_super_iran_reformist_victory"
+		texturefile = "gfx/super_events/super_iran_reformist_victory.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_super_israel_bibi_victory"
+		texturefile = "gfx/super_events/super_israel_bibi_victory.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_super_israel_kahane_victory"
+		texturefile = "gfx/super_events/super_israel_kahane_victory.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_super_israel_two_states_solution"
+		texturefile = "gfx/super_events/super_israel_two_states_solution.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_super_middleeast_nuclear"
+		texturefile = "gfx/super_events/super_middleeast_nuclear.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
 	### Economy Decisions ###
 	
 	spriteType = {

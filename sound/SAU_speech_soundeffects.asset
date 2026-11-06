@@ -26,3 +26,34 @@
 		}
 		volume = 4.0
 	}
+	soundeffect = {
+		name = "TFR_se_israel_two_states_solution"
+		sounds = {
+			sound = TFR_se_israel_two_states_solution
+		}
+		volume = 3.0
+	}
+
+	soundeffect = {
+		name = "TFR_se_iran_irgc_victory"
+		sounds = {
+			sound = TFR_se_iran_irgc_victory
+		}
+		volume = 3.0
+	}
+
+	soundeffect = {
+		name = "TFR_se_iran_principalist_victory"
+		sounds = {
+			sound = TFR_se_iran_principalist_victory
+		}
+		volume = 3.0
+	}
+
+	soundeffect = {
+		name = "TFR_se_iran_reformist_victory"
+		sounds = {
+			sound = TFR_se_iran_reformist_victory
+		}
+		volume = 3.0
+	}
