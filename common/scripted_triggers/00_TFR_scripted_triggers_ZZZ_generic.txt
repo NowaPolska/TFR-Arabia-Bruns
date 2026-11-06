@@ -20,6 +20,7 @@ has_content_tag = {
 		tag = FPR
 		tag = PER
 		tag = ISR
+		tag = SAU
 	}
 }
 
@@ -29,6 +30,9 @@ has_skeleton_tag = {
 	OR = {
 		tag = ENG		#Sad
 		tag = UKR
+		tag = ARR
+		tag = SAR
+		tag = ROC
 		tag = PLD
 		tag = AST
 		tag = ITA

@@ -545,9 +545,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		is_ai = no
-		NOT = {
-		tag = SAU
-		}
 	}
 	option = {
 		name = generic.20.a
