@@ -1,8 +1,4 @@
 ﻿l_english:
- ### STARTUP ##
- SAU_country_summary: "§YCountry Summary§!:\nThe never-ending economic growth which has lasted since the discovery of oil in 1938 is coming to its end. While Saudi Arabia has a massive investment fund, oil is running out faster than we thought.\n\nWhile the Kingdom is stable, many anti-Saud terror resistance groups have formed: §YLiberals§!, the Iranian-sponsored §GHezbollah Al-Hejaz§!, and §BTraitor princes§! within the House of Saud. They are weak and disorganised, but it is still necessary to deal with them as soon as possible.\nThe Saudi Royal Family is in good shape despite the old age of Salman ibn Abd al-Aziz, and the status quo is being upheld strongly. Mohammed bin Salman is already ruling from behind the curtain and it is a fact that he will be the throne successor. Geopolitically, Saudi Arabia is an uncertain place... Iran and Israel's terror proxies have been spreading like cancer, and globally our influence has begun to fade as many major nations have begun to diversify their economies away from oil."
- SAU_country_paths: "\n\n\n§YCountry Paths§!:\nAvailable paths for §GSaudi Arabia§!\n\nCivil war factions: Legitimate Government - Mohammed bin Salman\n\n§G-House of Saud conservative faction§!\n\n§Y-House of Saud Reformist faction§!"
- SAU_country_other: ""
  ###FOCUSES###
  SAU_Uneasy_20ies: "Uneasy '20s"
  SAU_Uneasy_20ies_desc: "The beginning of the 2020s marks an uneasy era for the Kingdom of Saudi Arabia. While our economic growth is declining, Godless Traitors and Liberal Retards have begun to plot against the Royal Family of Saud, may Allah protect us and give strength to us and the people of Saudi Arabia. But as long as our oil exports continue to flow, nothing bad can happen."
@@ -1055,8 +1051,8 @@
  VICTORY_POINTS_14145: "Dawadmi"
  VICTORY_POINTS_4074: "Arar"
  ### Military Loyalty Minigame ###
- SAU_army_loyalty_modifier: "Armee-Loyalität: [?SAU_army_loyalty|0]%"
- SAU_public_opinion_modifier: "Öffentliche Meinung: [?SAU_public_opinion|0]%"
+ #SAU_army_loyalty_modifier: "Armee-Loyalität: [?SAU_army_loyalty|0]%"
+ #SAU_public_opinion_modifier: "Öffentliche Meinung: [?SAU_public_opinion|0]%"
  ### Lebanon Election Minigame + events ###
  Lebanese_Elections: "Lebanese Elections"
  Lebanese_Elections_desc: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n               §HVotes:§!\n               §GSaudi candidate:§! [?LEB.leb_election_sau|0]%\n               §HLebanese candidate:§! [?LEB.leb_election_leb|0]%\n               §RHezbollah candidate:§! [?LEB.leb_election_hez|0]%"
@@ -1070,7 +1066,11 @@
  ### start up shit and rest ###
  SAU_GATHERING_STORM_DESC: "Saudi Arabia stands at a tense crossroads as the fires of regional instability creep closer to its borders, with Iranian proxies expanding their reach and ballistic missiles threatening critical infrastructure. Recently, ambitious modernization and defense reforms have been accelerated to secure the kingdom's sovereignty and project power across the Peninsular\n\nWhile this aggressive military and economic transformation strains traditional alliances, it may be crucial for maintaining national security and regional hegemony in the coming years."
  peninsula_defence_force: "Peninsula Defence Force"
- SAU_mbs_path_tt: "§YKingdom of Saudi Arabia§!\n---------------\n\n\n\n\n£GFX_SAU_mbs_path_banner\n\n\n\n\n\n§gSave France from Nationalism and Imperialism through the only way France knows how... Revolution\n\nContre nous de la tyrannie,\nL'étendard sanglant est levé!§!"
- SAU_republic_path_tt: "§YArabian Republic§! - §RIN DEVELOPMENT!§!\n---------------\n\n\n\n\n£GFX_SAU_republic_path_banner\n\n\n\n\n\n§gThen I wish I was in Dixie, hooray! hooray!\nIn Dixie Land I'll take my stand to live and die in Dixie,\nAway, away, away down South in Dixie,\nAway, away, away down South in Dixie§!"
- SAU_hezbollah_path_tt: "§YHezbollah Al-Hejaz§! - §RIN DEVELOPMENT!§!\n---------------\n\n\n\n\n£GFX_SAU_hezbollah_path_banner\n\n\n\n\n\n§gThen I wish I was in Dixie, hooray! hooray!\nIn Dixie Land I'll take my stand to live and die in Dixie,\nAway, away, away down South in Dixie,\nAway, away, away down South in Dixie§!"
- SAU_roc_path_tt: "§YRoyal Arabian Coalition§! - §RIN DEVELOPMENT!§!\n---------------\n\n\n\n\n£GFX_SAU_roc_path_banner\n\n\n\n\n\n§gThen I wish I was in Dixie, hooray! hooray!\nIn Dixie Land I'll take my stand to live and die in Dixie,\nAway, away, away down South in Dixie,\nAway, away, away down South in Dixie§!"
+ SAU_mbs_path_tt: "§YKingdom of Saudi Arabia§!\n---------------\n\n\n\n\n£GFX_SAU_mbs_path_banner\n\n\n\n\n\nIn God we trust!"
+ SAU_republic_path_tt: "§YArabian Republic§! - §RIN DEVELOPMENT!§!\n---------------\n\n\n\n\n£GFX_SAU_republic_path_banner\n\n\n\n\n\n"
+ SAU_hezbollah_path_tt: "§YHezbollah Al-Hejaz§! - §RIN DEVELOPMENT!§!\n---------------\n\n\n\n\n£GFX_SAU_hezbollah_path_banner\n\n\n\n\n\n"
+ SAU_roc_path_tt: "§YRoyal Arabian Coalition§! - §RIN DEVELOPMENT!§!\n---------------\n\n\n\n\n£GFX_SAU_roc_path_banner\n\n\n\n\n\n"
+ ### STARTUP ##
+ SAU_country_summary: "§YCountry Summary§!:\nThe never-ending economic growth which has lasted since the discovery of oil in 1938 is coming to its end. While Saudi Arabia has a massive investment fund, oil is running out faster than we thought.\n\nWhile the Kingdom is stable, many anti-Saud terror resistance groups have formed: §YLiberals§!, the Iranian-sponsored §GHezbollah Al-Hejaz§!, and §BTraitor princes§! within the House of Saud. They are weak and disorganised, but it is still necessary to deal with them as soon as possible.\nThe Saudi Royal Family is in good shape despite the old age of Salman ibn Abd al-Aziz, and the status quo is being upheld strongly. Mohammed bin Salman is already ruling from behind the curtain and it is a fact that he will be the throne successor. Geopolitically, Saudi Arabia is an uncertain place... Iran and Israel's terror proxies have been spreading like cancer, and globally our influence has begun to fade as many major nations have begun to diversify their economies away from oil."
+ SAU_country_paths: "\n\n\n§YCountry Paths§!:\nAvailable paths for §GSaudi Arabia§!\n\nCivil war factions: Legitimate Government - Mohammed bin Salman\n\n§G-House of Saud conservative faction§!\n\n§Y-House of Saud Reformist faction§!"
+ SAU_country_other: ""
