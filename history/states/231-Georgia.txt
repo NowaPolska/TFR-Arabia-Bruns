@@ -2,13 +2,7 @@ state = {
 	id = 231
 	name = "STATE_231"
 	manpower = 3720200
-	state_category = city
-	
-	resources = {
-	steel = 14
-	oil = 3
-	aluminum = 2
-	}
+	state_category = large_suburb
 	
 	history = {
 		owner = GEO
@@ -17,10 +11,9 @@ state = {
 		victory_points = { 3653 3 }
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 5
-			arms_factory = 2
+			industrial_complex = 3
+			arms_factory = 1
 			dockyard = 1
-			power_plant = 1
 			air_base = 4
 			3653 = { naval_base = 3 }
 		}

@@ -3,18 +3,11 @@ state={
 	id=194
 	name="STATE_194"
 
-    resources = {
-	steel = 5
-	oil = 1
-	}
-
 	history={
 		owner = BLR
 		add_core_of = BLR
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-	        industrial_complex = 1
 			air_base = 2
 		}
 		victory_points = {
@@ -23,6 +16,7 @@ state={
 		victory_points = {
 			6373 2
 		}
+
 	}
 
 	provinces={

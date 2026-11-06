@@ -3,11 +3,6 @@ state={
 	id=1182
 	name="STATE_1182"
 
-	resources = {
-	steel = 2
-	aluminum = 3
-	}
-	
 	history={
 		owner = LAT
 		add_core_of = LAT
@@ -37,7 +32,7 @@ state={
 				bunker = 2
 
 			}
-            arms_factory = 1
+
 		}
 
 	}

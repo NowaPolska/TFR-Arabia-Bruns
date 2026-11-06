@@ -1,14 +1,6 @@
 state={
 	id=926
 	name="STATE_926"
-	
-	resources = {
-		oil = 1
-		steel = 3
-		aluminium = 6
-		chromium = 3
-	}
-	
 	history = {
 		owner = YEM
 		add_core_of = HOU
@@ -21,7 +13,7 @@ state={
 		}
 	}
 	provinces={
-		12894 13079 15025
+		12894 13079
 	}
 	manpower=443522
 	buildings_max_level_factor=1.000

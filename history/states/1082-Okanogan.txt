@@ -8,7 +8,7 @@ state = {
 		owner = USA
 		add_core_of = USA
 		add_core_of = WAS
-		victory_points = { 10157 1 }	#Everett
+		victory_points = { 10157 1 }	#Bellingham
 		buildings = {
 			infrastructure = 3
 		}

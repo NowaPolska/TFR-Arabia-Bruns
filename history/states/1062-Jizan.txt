@@ -10,11 +10,10 @@ state = {
 		victory_points = { 8073 1 }
 		buildings = {
 			infrastructure = 3
-			dockyard = 1
 		}
 	}
 	
 	provinces = {
-		8073 15006
+		8073
 	}
 }

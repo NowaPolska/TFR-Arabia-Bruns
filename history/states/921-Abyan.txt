@@ -2,7 +2,7 @@ state={
 	id=921
 	name="STATE_921"
 	history = {
-		owner = YEM
+		owner = AAS
 		add_core_of = HOU
 		add_core_of = YEM
 		add_core_of = AAS
@@ -10,10 +10,10 @@ state={
 			infrastructure = 3
 			13274 = { naval_base = 3 }
 		}
-		victory_points = { 13274 1 }
+		
 	}
 	provinces={
-		13275 13274 15017
+		13275 13274
 	}
 	manpower=1512645
 	buildings_max_level_factor=1.000

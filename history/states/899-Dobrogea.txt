@@ -1,12 +1,6 @@
 state={
 	id=899
 	name="STATE_899"
-	
-	resources = {
-	steel = 5
-	oil = 9
-	}
-	
 	provinces={
 		657 687 3076 9635 
 	}
@@ -16,8 +10,7 @@ state={
 		victory_points = { 657 3 }
 		victory_points = { 687 2 }
 		buildings = {
-			industrial_complex = 3
-			office_park = 1
+			industrial_complex = 1
 			dockyard = 1
 			657 = { naval_base = 8 }
 			687 = { naval_base = 1 }

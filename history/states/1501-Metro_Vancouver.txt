@@ -1,0 +1,31 @@
+state = {
+	id = 1501
+	name = "STATE_1501"
+	manpower = 3190000
+
+	state_category = large_suburb
+
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		#add_core_of = CAS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 2
+			dockyard = 2
+			1408 = {
+				naval_base = 5
+			}
+		}
+		victory_points = { 1408 20 }		#Vancouver
+		victory_points = { 4428 7 }			#Surrey
+	}
+
+	buildings_max_level_factor = 1.000
+
+	provinces = {
+		1408 4428 15067 15068 15069 15070 15071 15072 15073 15074
+	}
+}

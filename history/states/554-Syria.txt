@@ -6,10 +6,6 @@ state={
 	
 	state_category = village
 	
-	resources = {
-	steel = 3
-	}
-	
 	history={
 		owner = SYR
 		add_core_of = SYR
@@ -17,7 +13,6 @@ state={
 		buildings = {
 			infrastructure = 2
 			synthetic_refinery = 1
-			arms_factory = 1
 		}
 
 	}

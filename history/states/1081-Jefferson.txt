@@ -8,8 +8,9 @@ state = {
 		owner = USA
 		add_core_of = USA
 		add_core_of = WAS
-		victory_points = { 4398 2 }		#Vancouver
-		victory_points = { 7386 3 }		#Tacoma
+		victory_points = { 10271 2 }	#Vancouver
+		victory_points = { 7386 2 }		#Olympia
+		victory_points = { 4398 1 }		#Aberdeen
 		buildings = {
 			infrastructure = 3
 		}

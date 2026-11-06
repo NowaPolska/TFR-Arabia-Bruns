@@ -1,21 +1,13 @@
 state = {
 	id = 1126
 	name = "STATE_1126"
-	manpower = 7046866
-	state_category = conurbation
-	
-	resources = {
-	oil = 4
-	steel = 5
-	}
+	manpower = 8446866
+	state_category = large_city
 	
 	history = {
 		owner = SAU
 		add_core_of = SAU
 		victory_points = { 13790 25 }
-		victory_points = { 13784 3 }
-		victory_points = { 13913 2 }
-		victory_points = { 13912 3 }
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3

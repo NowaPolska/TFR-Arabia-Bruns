@@ -3,8 +3,7 @@ state={
 	id=192
 	name="STATE_192"
 	resources={
-		steel= 29
-		oil = 7
+		steel=25.000
 	}
 
 	history={
@@ -17,10 +16,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 4
 			arms_factory = 2
-			dockyard = 3
-			power_plant = 2
-			synthetic_refinery = 1
-			air_base = 3
+			air_base = 1
 			11670 = {
 				naval_base = 3
 				coastal_bunker = 1
@@ -36,6 +32,6 @@ state={
 	}
 	manpower=1800318
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category = large_suburb
 	local_supplies=0.000
 }

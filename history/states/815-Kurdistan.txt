@@ -4,23 +4,17 @@ state={
 	
 	resources = {
 		oil=28
-		steel=4
 	}
 	
 	history = {
 		owner = KUR
-		victory_points = { 3916 15 }	#Erbil
-		victory_points = { 14010 10 }
-		victory_points = { 10811 5 }
-		victory_points = { 14007 2 }
+		victory_points = { 3916 5 }	#Erbil
 		add_core_of = IRQ
 		add_core_of = KUR
 		
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 1
-			office_park = 1
+			infrastructure = 1
+			industrial_complex = 1
 			air_base = 2
 		}
 		
@@ -34,7 +28,7 @@ state={
 		}
 	}
 	
-	state_category = city
+	state_category = large_town
 	provinces={
 		3916 10804 10811 14007 14009 14010 14008
 	}

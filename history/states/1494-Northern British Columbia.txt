@@ -1,0 +1,32 @@
+
+state={
+	id=1494
+	name="STATE_1494"
+
+	resources = {
+		oil = 12
+		steel = 6
+	}
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 1
+			917 = { #W. A. C. Bennett Dam
+				dam_mountain = 1
+			}
+		}
+		add_core_of = CAN
+		victory_points = { 917 2 }			#Fort St. John
+		victory_points = { 7858 1 }			#Fort Nelson
+	}
+
+	provinces={
+		917 1872 4678 5403 7858 12508 14992 14993 14994 14995 14996 14997 14998 14999 15000 15001
+		15002 15003 15004 15005 15006 15007 15008 15009 15010 15011 15012 15013 15014 15015 15016 15017
+		15018 15019 15020 15021 15022 15023 15024 15025 15026 15027
+	}
+	manpower=75000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -6,12 +6,11 @@
 		
 		resources = {
 			oil = 15
-			steel = 2
 		}
 		
 		history = {
 			owner = SOV
-			add_core_of = UKR
+			add_claim_by = UKR
 			add_core_of = SOV
 			victory_points = { 9680 1 }
 			victory_points = { 3722 1 }

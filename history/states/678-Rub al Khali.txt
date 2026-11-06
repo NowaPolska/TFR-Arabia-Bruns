@@ -16,7 +16,6 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = { 8030 3 }
-		victory_points = { 5081 1 }
 		add_core_of = SAU
 	}
 

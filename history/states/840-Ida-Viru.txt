@@ -1,12 +1,6 @@
 state={
 	id=840
 	name="STATE_840"
-	
-	resources = {
-	steel = 2
-	oil = 3
-	}
-	
 	provinces={
 		4640 11443 
 	}
@@ -20,9 +14,6 @@ state={
 			4640 = {
 				naval_base = 2
 				bunker = 2
-			      air__base = 2
-				  arms_factory = 1
-				  industrial_complex = 1
 			}
 		}
 	}

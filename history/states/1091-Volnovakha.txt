@@ -3,10 +3,6 @@ state={
 	id=1091
 	name="STATE_1091"
 
-	resources = {
-	steel = 12
-	}
-	
 	history={
 		owner = UKR
 		add_core_of = UKR
@@ -14,7 +10,6 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			arms_factory = 1
 			power_plant = 2
 			14596 = { bunker = 3 }
 			3479 = { bunker = 4 }
@@ -41,6 +36,6 @@ state={
 	}
 	manpower=1354562
 	buildings_max_level_factor=1.000
-	state_category= suburb
+	state_category=town
 	local_supplies=0.000
 }

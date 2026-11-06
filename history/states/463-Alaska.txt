@@ -4,7 +4,7 @@ state={
 
 	resources = {
 		oil = 208
-		steel = 3
+		steel = 2
 	}
 	
 	history={
@@ -23,14 +23,13 @@ state={
 		victory_points = { 13069 3 }	#Fairbanks
 		victory_points = { 13090 1 }	#Unalaska
 		victory_points = { 13091 5 }	#Anchorage
-		victory_points = { 13203 3 }	#Juneau
 
 	}
 
 	provinces={
-		1135 1830 4833 4848 7855 7884 10679 10694 10707 12661 13069 13090 13091 13202 13203 
+		1135 1830 4833 4848 7855 7884 10679 10694 12661 13069 13090 13091
 	}
-	manpower=638151
+	manpower=575151
 	buildings_max_level_factor=1
 	state_category = town
 }

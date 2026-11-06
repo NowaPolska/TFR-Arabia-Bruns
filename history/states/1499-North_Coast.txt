@@ -1,0 +1,23 @@
+state = {
+	id = 1499
+	name = "STATE_1499"
+	manpower = 66000
+	
+	state_category = rural
+	
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 1799 1 }
+	}
+	
+	local_supplies = 0.0
+	buildings_max_level_factor = 1.000
+	
+	provinces = {
+		15039 1799 10548 15040 15041 15042 15043
+	}
+}

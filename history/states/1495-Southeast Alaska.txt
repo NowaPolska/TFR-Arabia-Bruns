@@ -1,0 +1,30 @@
+state={
+	id=1495
+	name="STATE_1495"
+
+	resources = {
+		steel = 1
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			13203 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = USA
+		#add_core_of = CAC
+		victory_points = { 13203 3 }	#Juneau
+		victory_points = { 13202 1 }	#Ketchikan
+	}
+
+	provinces={
+		10707 13202 13203 15028 15029 15030 15031 15044 15045 15046 15066
+	}
+	manpower=63000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

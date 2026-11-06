@@ -3,11 +3,6 @@ state={
 	id=12
 	name="STATE_12"
 
-    reasources = {
-	steel = 15
-	oil = 1
-	}
-
 	history={
 		owner = LAT
 		add_core_of = LAT
@@ -19,10 +14,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 4
+			industrial_complex = 3
 			arms_factory = 1
 			dockyard = 1
-			power_plant = 1
 			air_base = 3
 			9340 = {
 				naval_base = 3
@@ -38,6 +32,6 @@ state={
 	}
 	manpower=1300000
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category = large_suburb
 	local_supplies=0.000
 }

@@ -3,10 +3,6 @@ state={
 	id=212
 	name="STATE_212"
 
-    resources = {
-	steel = 7
-	}
-
 	history={
 		owner = BUL
 		add_core_of = BUL
@@ -16,7 +12,6 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			arms_factory = 1
 			air_base = 2
 
 		}
@@ -28,6 +23,6 @@ state={
 	}
 	manpower=2424191
 	buildings_max_level_factor=1.000
-	state_category=suburb
+	state_category=town
 	local_supplies=0.000
 }

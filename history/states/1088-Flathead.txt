@@ -1,18 +1,21 @@
 state = {
 	id = 1088
 	name = "STATE_1088"
-	manpower = 259784
+	manpower = 409784
 	state_category = town
-	
+
 	history = {
 		owner = USA
 		add_core_of = USA
+		victory_points = { 6742 2 }		#Missoula
+		victory_points = { 11712 3 }	#Great Falls
+		victory_points = { 4838 1 }		#Kalispell
 		buildings = {
 			infrastructure = 3
 		}
 	}
-	
+
 	provinces = {
-		4838 1854 12676 11712 1857
+		1854 1857 4838 6742 11712 12676 15058 15064
 	}
 }

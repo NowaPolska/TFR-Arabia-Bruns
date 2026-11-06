@@ -2,8 +2,8 @@
 state={
 	id=740
 	name="STATE_740"
-	manpower = 259612
-	
+	manpower = 140612
+
 	state_category = town
 
 	history={
@@ -14,11 +14,10 @@ state={
 		}
 		add_core_of = CAN
 		#add_core_of = CAS
-		victory_points = { 7259 2 }		#Victoria
 	}
 
-	provinces={
-		7259 1214 12259 12272 1420 
+	provinces = {
+		1214 1420 12259 12272 15075 15076 15077 15078
 	}
 	
 }

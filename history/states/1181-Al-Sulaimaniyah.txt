@@ -8,10 +8,8 @@ state = {
 		owner = KUR
 		add_core_of = KUR
 		add_core_of = IRQ
-		victory_points = { 6826 10 }
-		victory_points = { 14006 1 }
+		victory_points = { 6826 1 }
 		buildings = {
-		    industrial_complex = 1
 			infrastructure = 2
 			6826 = { bunker = 1 }
 		}

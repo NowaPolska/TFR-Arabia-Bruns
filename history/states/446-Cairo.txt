@@ -4,10 +4,10 @@ state=
 	name="STATE_446"
 	manpower = 49879980
 	
-	state_category = megalopolis
+	state_category = conurbation
 	
 	resources = {
-		steel = 27
+		steel = 13
 	}
 
 	history=
@@ -15,9 +15,8 @@ state=
 		owner = EGY
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 8
+			industrial_complex = 7
 			arms_factory = 3
-			office_park = 1
 			dockyard = 1
 			air_base = 4
 			

@@ -14,8 +14,6 @@ state={
 			infrastructure = 1
 			energy_farm = 1
 		}
-		victory_points = { 4974 3 }
-		victory_points = { 10815 2 }
 	}
 	
 	state_category = rural

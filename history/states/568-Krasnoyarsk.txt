@@ -14,6 +14,9 @@ state={
 			infrastructure = 1
 			air_base = 1
 			power_plant = 1
+			12691 = { # Krasnoyarsk Hydroelectric Power Station
+				dam = 1
+			}
 		}
 		victory_points = {
 			4724 15

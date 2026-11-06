@@ -12,11 +12,10 @@ state={
 		owner = QAT
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 5
+			industrial_complex = 4
 			arms_factory = 1
 			dockyard = 2
 			air_base = 3
-			office_park = 2
 			8051 = { naval_base = 9 }
 		}
 		victory_points = { 8051 20 }
@@ -24,8 +23,8 @@ state={
 	provinces={
 		8051 13253 13255 
 	}
-	manpower=2570250
+	manpower=1900250
 	buildings_max_level_factor=1.000
 	
-	state_category = conurbation
+	state_category = large_suburb
 }

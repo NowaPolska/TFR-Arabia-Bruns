@@ -13,10 +13,9 @@ state={
 		add_core_of = UAE
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 6
-			arms_factory = 1
+			industrial_complex = 4
 			air_base = 4
-			energy_farm = 3
+			energy_farm = 2
 			7960 = { naval_base = 5 }
 		}
 		victory_points = { 7960 10 }
@@ -28,7 +27,7 @@ state={
 	provinces={
 		2048 8108 7960 13252 13251 
 	}
-	manpower=4025000
+	manpower=2025000
 	buildings_max_level_factor=1.000
-	state_category = large_city
+	state_category = suburb
 }

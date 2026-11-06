@@ -6,7 +6,7 @@ state={
 	history={
 		owner = SOV
 		victory_points = {
-			4797 7
+			4797 10
 		}
 		victory_points = {
 			12540 5
@@ -14,6 +14,9 @@ state={
 		buildings = {
 			infrastructure = 2
 			air_base = 1
+			4797 = { # Irkutsk Hydroelectric Power Station
+				dam = 1
+			}
 		}
 		add_core_of = SOV
 	}

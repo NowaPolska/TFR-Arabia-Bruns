@@ -1,0 +1,26 @@
+state = {
+	id = 1502
+	name = "STATE_1502"
+	manpower = 119000
+
+	state_category = town
+
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		#add_core_of = CAS
+		buildings = {
+			infrastructure = 4
+			7259 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 7259 2 }			#Victoria
+	}
+
+	buildings_max_level_factor = 1.000
+
+	provinces = {
+		7259
+	}
+}

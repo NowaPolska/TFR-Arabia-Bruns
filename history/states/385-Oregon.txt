@@ -18,7 +18,7 @@ state = {
 		}
 		add_core_of = USA
 		add_core_of = ORE
-		victory_points = { 4328 5 }		#Salem
+		victory_points = { 4328 5 }		#Eugene
 		victory_points = { 1414 1 }		#Bend
 		victory_points = { 3471 1 }		#Medford
 	}

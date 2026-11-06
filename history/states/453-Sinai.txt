@@ -15,11 +15,10 @@ state={
 		add_core_of = EGY
 		victory_points = { 10099 1 }
 		victory_points = { 1112 1 }
-		
 	}
 
 	provinces={
-		1112 10002 10099 11922 12073 15020 15021
+		1112 10002 10099 11922 12073 
 	}
 	manpower=865359
 	buildings_max_level_factor=1.000

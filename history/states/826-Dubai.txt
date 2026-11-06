@@ -13,18 +13,18 @@ state={
 			infrastructure = 4
 			industrial_complex = 4
 			office_park = 2
-			arms_factory = 2
+			arms_factory = 1
 			dockyard = 1
 			air_base = 4
-			energy_farm = 2
+			energy_farm = 1
 		}
 		victory_points = { 10904 20 }
 	}
 	provinces={
 		10904 13254 
 	}
-	manpower=5225000
+	manpower=3225000
 	buildings_max_level_factor=1.000
 	
-	state_category = metropolis
+	state_category = city
 }

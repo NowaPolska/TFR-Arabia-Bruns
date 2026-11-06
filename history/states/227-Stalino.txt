@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = DPR
-		add_core_of = UKR
+		add_claim_by = UKR
 		add_core_of = DPR
 		victory_points = {
 			6474 20 
@@ -24,7 +24,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
 			power_plant = 1
 			3421 = { bunker = 2 }

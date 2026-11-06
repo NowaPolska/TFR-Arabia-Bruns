@@ -11,10 +11,10 @@ state={
 		}
 	}
 	provinces={
-		13289 15016
+		13289
 	}
 	manpower=713645
 	buildings_max_level_factor=1.000
 	
-	state_category = town
+	state_category = pastoral
 }

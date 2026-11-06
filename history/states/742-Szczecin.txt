@@ -10,7 +10,7 @@ state={
 		owner = PLD
 		add_core_of = PLD
 		victory_points = {
-			6282 4
+			6282 2 
 		}
 		victory_points = {
 			9334 3 

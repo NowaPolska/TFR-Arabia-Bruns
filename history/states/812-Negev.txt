@@ -3,9 +3,7 @@ state={
 	name="STATE_812"
 	
 	resources={
-		oil = 7
-		tungsten = 3
-		aluminium = 5
+		oil = 1
 	}
 
 	history={
@@ -24,11 +22,10 @@ state={
 			13220 = { bunker = 1 }
 		}
 		victory_points = { 7176 3 }
-		victory_points = { 1015 3 }
 	}
 
 	provinces={
-		1015 7176 11970 13219 13220 15013
+		1015 7176 11970 13219 13220 
 	}
 	
 	manpower= 630000 
