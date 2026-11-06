@@ -669,8 +669,8 @@ country_event = {
 	option = {
 		name = iran.35.a
 		hidden_effect = {
-			set_country_flag = iran_principalist_victory_super
-			sound_effect = TFR_se_iran_principalist_victory
+			set_country_flag = iran_irgc_victory_super
+			sound_effect = TFR_se_iran_irgc_victory
 			play_song = "one_minute_of_silence"
 		}
 	}
