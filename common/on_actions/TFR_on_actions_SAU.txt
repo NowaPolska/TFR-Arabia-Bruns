@@ -4,6 +4,9 @@ on_actions = {
             SAU = {
                 set_variable = { SAU_development_points = 0 }
                 set_variable = { SAU_agenda_2030_progress = 15 }
+				
+				add_dynamic_modifier = { modifier = SAU_vision_2030_dynamic_modifier }
+                SAU_update_vision_2030_modifier = yes
             }
         }
     }
