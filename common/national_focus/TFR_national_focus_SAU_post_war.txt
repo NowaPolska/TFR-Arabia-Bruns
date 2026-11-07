@@ -1795,7 +1795,7 @@ focus = {
 	}
 }
 focus = {
-    id = SAU_Form_the_Triange_alliance #IRL, Türkei, s. arabien und pakistan defensive alliance
+    id = SAU_Form_the_Triange_alliance # Sigma we are all social democrats damm is (((::::::::::::::: #
 	icon = GFX_focus_SAU_generic
 	
 	x = 16
@@ -2365,7 +2365,6 @@ focus = {
 	available = {
 		has_government = authoritarian_democrat
 		has_war = no
-
 		448 = {
 			OR = {
 				is_owned_by = ROOT
@@ -2447,7 +2446,6 @@ focus = {
 
 	available = {
 		has_war = no
-
 		448 = {
 			OR = {
 				is_owned_by = ROOT
@@ -2530,7 +2528,6 @@ focus = {
 	available = {
 		has_government = nationalist
 		has_war = no
-
 		448 = {
 			OR = {
 				is_owned_by = ROOT
