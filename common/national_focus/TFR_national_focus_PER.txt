@@ -2,10 +2,10 @@ focus_tree = {
 	id = PER_tree_initial
 	country = {
 		factor = 0
-		modifier = {
-			add = 20
-			original_tag = PER
-		}
+		#modifier = {
+		#	add = 20
+		#	original_tag = PER
+		#}
 	}
 	focus = {
 		id = PER_end_2019_protests

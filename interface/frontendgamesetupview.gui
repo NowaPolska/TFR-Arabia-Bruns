@@ -127,7 +127,7 @@ guiTypes = {
 	### country entry
 	containerWindowType = {
 		name = "country_entry"
-		position = { x = 0 y = 170 }
+		position = { x = 205 y = 170 }
 		buttonType = {
 			name = "country_leader"
 			quadTextureSprite = "GFX_leader_unknown"
@@ -649,18 +649,18 @@ guiTypes = {
 		
 	### SETUP FOR FACTION BACKDROP TEXTURES ###
 
-		containerWindowType = {
-			name = "backdrop_0"
-			position = { x = 2 y = 30 }
-			size = { width = 175  height = 300 }
+		#containerWindowType = {
+		#	name = "backdrop_0"
+		#	position = { x = 2 y = 30 }
+		#	size = { width = 175  height = 300 }
 			
 
-			iconType = {
-				name = "backdrop_texture_0"
-				quadTextureSprite = "GFX_USA_intro"
-				position = { x = 2  y = 2 }
-			}
-		}
+		#	iconType = {
+		#		name = "backdrop_texture_0"
+		#		quadTextureSprite = "GFX_ISR_intro"
+		#		position = { x = 2  y = 2 }
+		#	}
+		#}
 
 		containerWindowType = {
 			name = "backdrop_1"
@@ -694,7 +694,7 @@ guiTypes = {
 
 			iconType = {
 				name = "backdrop_texture_3"
-				quadTextureSprite = "GFX_ISR_intro"
+				quadTextureSprite = "GFX_USA_intro"
 				position = { x = 2  y = 2 }
 			}
 		}
@@ -720,7 +720,7 @@ guiTypes = {
 
 			iconType = {
 				name = "backdrop_texture_5"
-				quadTextureSprite = "GFX_PER_intro"
+				quadTextureSprite = "GFX_SOV_intro"
 				position = { x = 2  y = 2 }
 			}
 		}
@@ -749,18 +749,18 @@ guiTypes = {
 			}
 		}
 
-		containerWindowType = {
-			name = "backdrop_8"
-			position = { x = 1636  y = 30 }
-			size = { width = 172  height = 380 }
+		#containerWindowType = {
+		#	name = "backdrop_8"
+		#	position = { x = 1636  y = 30 }
+		#	size = { width = 172  height = 380 }
 			
 
-			iconType = {
-				name = "backdrop_texture_8"
-				quadTextureSprite = "GFX_SOV_intro"
-				position = { x = 2  y = 2 }
-			}
-		}
+		#	iconType = {
+		#		name = "backdrop_texture_8"
+		#		quadTextureSprite = "GFX_PER_intro"
+		#		position = { x = 2  y = 2 }
+		#	}
+		#}
 
 	### END of SECTION ###
 	
@@ -768,7 +768,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = highlight_paths
-			position = { x = 15 y = 50 }
+			position = { x = 636 y = 50 }
 			## x: ± 172 to move one slot left or right
 			## y: ± 95 to move one slot up or down
 
@@ -952,7 +952,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = highlight_paths_5
-			position = { x = 1647 y = 50 }
+			position = { x = 1040 y = 50 } 
 			## x: ± 172 to move one slot left or right
 			## y: ± 95 to move one slot up or down
 
@@ -1035,63 +1035,63 @@ guiTypes = {
 		}
 		
 
-        containerWindowType = {
-			name = highlight_paths_7
-			position = { x = 1040 y = 50 }
+        #containerWindowType = {
+		#	name = highlight_paths_7
+		#	position = { x = 1647 y = 50 }
+		#	## x: ± 172 to move one slot left or right
+		#	## y: ± 95 to move one slot up or down
+
+		#	iconType = {
+		#		name = "PER_conservative_path"
+		#		quadTextureSprite = "GFX_PER_conservative_path"
+		#		position = { x = 0  y = -5 }
+		#		pdx_tooltip = PER_conservative_path_tt
+		#	}	
+		#	iconType = {
+		#		name = "PER_reformist_path"
+		#		quadTextureSprite = "GFX_PER_reformist_path"
+		#		position = { x = 0  y = 24 }
+		#		pdx_tooltip = PER_reformist_path_tt
+		#	}	
+		#	iconType = {
+		#		name = "PER_IRGC_path"
+		#		quadTextureSprite = "GFX_PER_IRGC_path"
+		#		position = { x = 0  y = 53 }
+		#		pdx_tooltip = PER_IRGC_path_tt
+		#	}
+        #    iconType = {
+		#		name = "PER_shah_path"
+		#		quadTextureSprite = "GFX_SOV_nazbol_path"
+		#		position = { x = 0  y = 82 }
+		#		pdx_tooltip = PER_shah_path_tt
+		#	}
+		#}
+
+        #containerWindowType = {
+		#	name = highlight_paths_8
+		#	position = { x = 15 y = 50 } 
 			## x: ± 172 to move one slot left or right
 			## y: ± 95 to move one slot up or down
 
-			iconType = {
-				name = "PER_conservative_path"
-				quadTextureSprite = "GFX_PER_conservative_path"
-				position = { x = 0  y = -5 }
-				pdx_tooltip = PER_conservative_path_tt
-			}	
-			iconType = {
-				name = "PER_reformist_path"
-				quadTextureSprite = "GFX_PER_reformist_path"
-				position = { x = 0  y = 24 }
-				pdx_tooltip = PER_reformist_path_tt
-			}	
-			iconType = {
-				name = "PER_IRGC_path"
-				quadTextureSprite = "GFX_PER_IRGC_path"
-				position = { x = 0  y = 53 }
-				pdx_tooltip = PER_IRGC_path_tt
-			}
-            iconType = {
-				name = "PER_shah_path"
-				quadTextureSprite = "GFX_SOV_nazbol_path"
-				position = { x = 0  y = 82 }
-				pdx_tooltip = PER_shah_path_tt
-			}
-		}
-
-        containerWindowType = {
-			name = highlight_paths_8
-			position = { x = 636 y = 50 }
-			## x: ± 172 to move one slot left or right
-			## y: ± 95 to move one slot up or down
-
-			iconType = {
-				name = "ISR_likud_path"
-				quadTextureSprite = "GFX_ISR_likud_path"
-				position = { x = 0  y = -5 }
-				pdx_tooltip = ISR_likud_path_tt
-			}		
-			iconType = {
-				name = "ISR_opposition_path"
-				quadTextureSprite = "GFX_ISR_opposition_path"
-				position = { x = 0  y = 24 }
-				pdx_tooltip = ISR_opposition_path_tt
-			}	
-			iconType = {
-				name = "ISR_IDF_centcom_path"
-				quadTextureSprite = "GFX_ISR_IDF_centcom_path"
-				position = { x = 0  y = 53 }
-				pdx_tooltip = ISR_IDF_centcom_path_tt
-			}
-		}
+		#	iconType = {
+		#		name = "ISR_likud_path"
+		#		quadTextureSprite = "GFX_ISR_likud_path"
+		#		position = { x = 0  y = -5 }
+		#		pdx_tooltip = ISR_likud_path_tt
+		#	}		
+		#	iconType = {
+		#		name = "ISR_opposition_path"
+		#		quadTextureSprite = "GFX_ISR_opposition_path"
+		#		position = { x = 0  y = 24 }
+		#		pdx_tooltip = ISR_opposition_path_tt
+		#	}	
+		#	iconType = {
+		#		name = "ISR_IDF_centcom_path"
+		#		quadTextureSprite = "GFX_ISR_IDF_centcom_path"
+		#		position = { x = 0  y = 53 }
+		#		pdx_tooltip = ISR_IDF_centcom_path_tt
+		#	}
+		#}
 		containerWindowType = {
 			name = highlight_paths_9
 			position = { x = 838 y = 50 }
@@ -1130,12 +1130,12 @@ guiTypes = {
 			## x: ± 172 to move one slot left or right
 			## y: ± 95 to move one slot up or down
 
-			iconType = {
-				name = "ZZZ_more_content_coming_1"
-				quadTextureSprite = "GFX_more_content_mark"
-				position = { x = 29  y = -7 }
-				pdx_tooltip = ZZZ_more_content_soon_tt
-			}	
+			#iconType = {
+			#	name = "ZZZ_more_content_coming_1"
+			#	quadTextureSprite = "GFX_more_content_mark"
+			#	position = { x = 29  y = -7 }
+			#	pdx_tooltip = ZZZ_more_content_soon_tt
+			#}	
 			iconType = {
 				name = "ZZZ_more_content_coming_2"
 				quadTextureSprite = "GFX_more_content_mark"
@@ -1145,7 +1145,7 @@ guiTypes = {
 			iconType = {
 				name = "ZZZ_more_content_coming_3"
 				quadTextureSprite = "GFX_more_content_mark"
-				position = { x = 1663  y = 112 }
+				position = { x = 1055  y = 112 } ##{ x = 1663  y = 112 }##
 				pdx_tooltip = ZZZ_more_content_soon_tt
 			}
             iconType = {
