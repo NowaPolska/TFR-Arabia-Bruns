@@ -1428,7 +1428,7 @@ country_event = {
 	}
 }
 
-#covid_19
+#covid 19 holy moly
 country_event = {
     id = saudi.31
 	title = saudi.31.t
@@ -1510,7 +1510,7 @@ country_event = {
     }
 }
 
-# Rückmeldung an Saudi-Arabien: Deutschland hat JA gesagt
+# To arabia, germany said yes
 country_event = {
     id = saudi.34
     title = saudi.34.t
@@ -1551,7 +1551,7 @@ country_event = {
     }
 }
 
-# Rückmeldung an Saudi-Arabien: Deutschland hat NEIN gesagt
+# to arabia, germany said no you bitch
 country_event = {
     id = saudi.35
     title = saudi.35.t
@@ -1567,7 +1567,7 @@ country_event = {
     }
 }
 
-# China Öl-Deal Event
+# China oil event
 country_event = {
     id = saudi.36
     title = saudi.36.t
@@ -3805,7 +3805,7 @@ country_event = {
         IRQ = { load_oob = "iraq_post_nuke" }
         FIA = { load_oob = "islam_irq_post_nuke" }
 
-        # Syria (ISS, FSA, SYR, HTS, ROJ)
+        # 10574th Syrian civil war
         ISS = {
             declare_war_on = { target = FSA type = annex_everything }
             declare_war_on = { target = SYR type = annex_everything }
@@ -3825,7 +3825,7 @@ country_event = {
             declare_war_on = { target = ROJ type = annex_everything }
         }
 
-        # Iraq (KUR, HZK, IRQ, FIA)
+        # Iraq fucking explodes
         KUR = {
             declare_war_on = { target = HZK type = annex_everything }
             declare_war_on = { target = IRQ type = annex_everything }
