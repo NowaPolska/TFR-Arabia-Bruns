@@ -92,25 +92,25 @@ bookmarks = {
 		#}
 		
 		
-        "ISR" = {
-			minor = no
-			history = "ISR_GATHERING_STORM_DESC"
-			ideology = conservative
-			version = base_game
-			available = {
-				always = yes
-			}
-			ideas = {
-				idea_ISR_vanguard_of_judaism
-                idea_ISR_american_funding
-				idea_ISR_haredi_conscription_question
-			}
-			focuses = {
-				FRA_If_We_cant_have_it
-				GER_uphold_democracy
-				PRC_finish_what_mao_started
-			}
-		}
+        #"ISR" = {
+		#	minor = no
+		#	history = "ISR_GATHERING_STORM_DESC"
+		#	ideology = conservative
+		#	version = base_game
+		#	available = {
+		#		always = yes
+		#	}
+		#	ideas = {
+		#		idea_ISR_vanguard_of_judaism
+        #        idea_ISR_american_funding
+		#		idea_ISR_haredi_conscription_question
+		#	}
+		#	focuses = {
+		#		FRA_If_We_cant_have_it
+		#		GER_uphold_democracy
+		#		PRC_finish_what_mao_started
+		#	}
+		#}
 		"SAU" = {
 			minor = no
 			history = "SAU_GATHERING_STORM_DESC"
@@ -131,25 +131,25 @@ bookmarks = {
 			}
 		}
 
-		 "PER" = {
-			minor = no
-			history = "PER_GATHERING_STORM_DESC"
-			ideology = authoritarian_democrat
-			version = base_game
-			available = {
-				always = yes
-			}
-			ideas = {
-				PER_glory_of_islamic_revolution
-				PER_limited_nuclear_program
-                PER_islamic_revolutionary_guard_corps
-			}
-			focuses = {
-				GER_negotiate_with_the_iranians
-				PER_exporting_the_islamic_revolution
-				PRC_military_industries_renewal
-			}
-		}
+		#"PER" = {
+		#	minor = no
+		#	history = "PER_GATHERING_STORM_DESC"
+		#	ideology = authoritarian_democrat
+		#	version = base_game
+		#	available = {
+		#		always = yes
+		#	}
+		#	ideas = {
+		#		PER_glory_of_islamic_revolution
+		#		PER_limited_nuclear_program
+        #        PER_islamic_revolutionary_guard_corps
+		#	}
+		#	focuses = {
+		#		GER_negotiate_with_the_iranians
+		#		PER_exporting_the_islamic_revolution
+		#		PRC_military_industries_renewal
+		#	}
+		#}
 		"GER" = {
 			minor = no
 			history = "GER_GATHERING_STORM_DESC"
