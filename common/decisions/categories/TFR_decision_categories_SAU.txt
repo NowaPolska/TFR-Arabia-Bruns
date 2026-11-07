@@ -133,37 +133,7 @@ Saudi_covid_decisions = {
 		has_idea = SAU_devestating_covid_cases
     }
 }
-#SAU_Nucleare_Programm = { #### scraped ####
-    #icon = russia
 
-   # allowed = {
-       # original_tag = SAU
-    #}
-    
-    #visible = {
-	#has_completed_focus = SAU_Saudi_Nucleare_Programm
-	#}
-#}
-#SAU_Nuke_luanching_decisions = {
-    #icon = russia
-
-    #allowed = {
-        #original_tag = SAU
-    #}
-    
-    #visible = {
-	#has_idea = SAU_nuke_progress_five
-	#}
-#}
-#SAU_Joining_the_secound_European_war = {
-    #allowed = {
-        #original_tag = SAU
-    #}
-    
-    #visible = {
-	#has_completed_focus = SAU_Dreams_of_Arab_Unification
-	#}
-#}
 SAU_Saudi_Iran_war_decisions = {
 icon = Saudi-civilprep
 picture = GFX_decision_category_SAU_iran_war
@@ -196,30 +166,3 @@ YEM_unification = {
 	        }
 	    }
 	}
-}
-
-#SAU_army_loyalty_bop_decisions = {
-    #icon = generic_political_actions
-    #picture = ""
-#
-    #allowed = { }
-   # visible = {
-       # NOT = {
-		#has_global_flag = SAU_saudi_civil_war_over_global
-		#}
-    #}
-#}
-
-SAU_agenda_2030 = {
-    icon = generic_political_actions
-	picture = ""
-    allowed = {
-        original_tag = SAU
-    }
-    
-    visible = {
-	NOT = {
-	has_global_flag = saudi_civil_war_flag
-	    }
-	}
-}
